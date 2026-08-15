@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { contactEmail } from '../../data/contact';
+
+const subject = encodeURIComponent('【全国神社ポータル】お問い合わせ');
+const mailtoHref = `mailto:${contactEmail}?subject=${subject}`;
+---
+
+<Layout title="お問い合わせ" description="掲載内容の誤りのご指摘や訂正のご依頼、ご意見・ご感想など、お気軽にお問い合わせください。">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">お問い合わせ</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        掲載内容についてのご指摘や、ご意見・ご感想などをお寄せください。
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-2xl px-4 py-14 sm:px-6">
+    <div class="rounded-lg border border-shrine-gold/25 bg-white p-8">
+      <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">掲載内容に誤りがあれば教えてください</h2>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        神社の由緒やアクセス情報、参拝時間などは変更されることがあります。当サイトの内容に誤りや古い情報、訂正すべき点がございましたら、下記よりお気軽にお問い合わせください。
+      </p>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        「どのページの」「どの部分について」かをあわせてお知らせいただけますと、確認がスムーズです。掲載してほしい神社のリクエストや、サイトへのご感想も歓迎です。
+      </p>
+
+      <a
+        href={mailtoHref}
+        class="mt-6 flex items-center justify-center gap-2 rounded-full bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+      >
+        メールでお問い合わせする
+      </a>
+      <p class="mt-3 text-center text-xs text-shrine-ink-soft">{contactEmail}</p>
+    </div>
+  </section>
+</Layout>

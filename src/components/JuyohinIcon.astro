@@ -1,0 +1,108 @@
+---
+interface Props {
+  type: 'omamori' | 'goshuin' | 'goshuincho' | 'hamaya' | 'ema' | 'omikuji' | 'ofuda' | 'kumade' | 'omiki';
+  theme?: 'vermillion' | 'indigo' | 'gold';
+  class?: string;
+}
+
+const { type, theme = 'vermillion', class: className = '' } = Astro.props;
+
+const gradients: Record<string, [string, string]> = {
+  vermillion: ['#c1453c', '#7c211c'],
+  indigo: ['#2c4d78', '#101d31'],
+  gold: ['#c4a06a', '#7a5f38'],
+};
+
+const [from, to] = gradients[theme];
+const gradientId = `juyohin-grad-${type}`;
+---
+
+<svg viewBox="0 0 120 120" class={`h-full w-full ${className}`} xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color={from} />
+      <stop offset="100%" stop-color={to} />
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill={`url(#${gradientId})`} />
+
+  <g stroke="#faf6ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    {type === 'omamori' && (
+      <>
+        <path d="M40 45 h40 a4 4 0 0 1 4 4 v28 a4 4 0 0 1 -4 4 h-40 a4 4 0 0 1 -4 -4 v-28 a4 4 0 0 1 4 -4 z" />
+        <path d="M52 45 v-6 a8 8 0 0 1 16 0 v6" />
+        <path d="M50 60 h20 M50 68 h20" stroke-width="2" opacity="0.8" />
+      </>
+    )}
+
+    {type === 'goshuin' && (
+      <>
+        <path d="M60 35 L30 41 V90 L60 84 L90 90 V41 Z" />
+        <path d="M60 35 V84" stroke-width="2" opacity="0.6" />
+        <path d="M40 56 h13 M40 64 h13 M40 72 h9" stroke-width="2" opacity="0.75" />
+        <circle cx="73" cy="61" r="11" fill="#faf6ef" stroke="none" opacity="0.9" />
+      </>
+    )}
+
+    {type === 'goshuincho' && (
+      <>
+        <rect x="34" y="30" width="52" height="62" rx="3" />
+        <path d="M34 38 h52 M34 84 h52" stroke-width="2" opacity="0.7" />
+        <path d="M68 30 v62" stroke-width="2" opacity="0.5" />
+        <path d="M70 30 v18 l-5 -5 -5 5 v-18" fill="#faf6ef" stroke="none" opacity="0.9" />
+      </>
+    )}
+
+    {type === 'hamaya' && (
+      <>
+        <line x1="32" y1="88" x2="88" y2="32" stroke-width="3.5" />
+        <path d="M88 32 l-14 2 4 -12 z" fill="#faf6ef" stroke="none" />
+        <path d="M40 80 l-10 4 4 -10" />
+        <path d="M46 74 l-10 4 4 -10" opacity="0.7" />
+      </>
+    )}
+
+    {type === 'ema' && (
+      <>
+        <path d="M35 50 l25 -18 l25 18 v34 a3 3 0 0 1 -3 3 h-44 a3 3 0 0 1 -3 -3 z" />
+        <circle cx="60" cy="60" r="4" fill="#faf6ef" stroke="none" />
+        <path d="M60 32 v-6" />
+        <path d="M46 78 h28" stroke-width="2" opacity="0.6" />
+        <path d="M46 68 h28" stroke-width="2" opacity="0.6" />
+      </>
+    )}
+
+    {type === 'omikuji' && (
+      <>
+        <path d="M45 30 v55 a15 10 0 0 0 30 0 v-55" />
+        <path d="M45 30 a15 6 0 0 0 30 0" />
+        <path d="M52 50 h16 M52 58 h16" stroke-width="2" opacity="0.7" />
+      </>
+    )}
+
+    {type === 'ofuda' && (
+      <>
+        <path d="M42 28 h36 v58 l-18 10 l-18 -10 z" />
+        <path d="M60 40 v42" stroke-width="2" opacity="0.8" />
+        <path d="M52 46 v20 M68 46 v20" stroke-width="1.5" opacity="0.6" />
+      </>
+    )}
+
+    {type === 'kumade' && (
+      <>
+        <path d="M60 92 v-30" stroke-width="3.5" />
+        <path d="M60 62 l-22 -30 M60 62 l-11 -34 M60 62 l11 -34 M60 62 l22 -30" stroke-width="2.5" />
+        <path d="M38 32 a24 24 0 0 1 44 0" stroke-width="2" opacity="0.6" />
+      </>
+    )}
+
+    {type === 'omiki' && (
+      <>
+        <path d="M52 30 h16 v10 l6 10 v34 a3 3 0 0 1 -3 3 h-26 a3 3 0 0 1 -3 -3 v-34 l6 -10 z" />
+        <path d="M46 62 h28" stroke-width="2" opacity="0.7" />
+        <ellipse cx="86" cy="82" rx="10" ry="5" />
+        <path d="M76 82 v6 a10 4 0 0 0 20 0 v-6" />
+      </>
+    )}
+  </g>
+</svg>

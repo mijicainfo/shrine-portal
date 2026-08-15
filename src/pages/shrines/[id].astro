@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ToriiArt from '../../components/ToriiArt.astro';
+import PhotoGallery from '../../components/PhotoGallery.astro';
+import GoogleMap from '../../components/GoogleMap.astro';
+import AccommodationSection from '../../components/AccommodationSection.astro';
+import FavoriteButton from '../../components/FavoriteButton.astro';
+import VisitedButton from '../../components/VisitedButton.astro';
+import { Image } from 'astro:assets';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const shrines = await getCollection('shrines');
+  return shrines.map((shrine) => ({
+    params: { id: shrine.id },
+    props: { shrine },
+  }));
+}
+
+const { shrine } = Astro.props;
+const { data } = shrine;
+const { Content } = await render(shrine);
+
+const photos = [
+  ...(data.image ? [{ image: data.image, alt: data.name, credit: data.imageCredit }] : []),
+  ...data.gallery.map((g, i) => ({ image: g.image, alt: `${data.name} ${i + 2}`, credit: g.credit })),
+];
+---
+
+<Layout title={data.name} description={`${data.name}（${data.prefecture}）の由緒・アクセス・御朱印情報をご紹介します。`}>
+  <!-- Hero -->
+  <section class="relative h-64 overflow-hidden sm:h-80">
+    {data.image ? (
+      <Image
+        src={data.image}
+        alt={data.name}
+        width={1600}
+        height={800}
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+    ) : (
+      <ToriiArt theme={data.themeColor} class="absolute inset-0" />
+    )}
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+    <div class="relative mx-auto flex h-full max-w-6xl flex-col justify-end px-4 pb-8 sm:px-6">
+      <nav class="text-xs text-white/80">
+        <a href="/" class="hover:underline">トップ</a>
+        <span class="mx-1.5">/</span>
+        <a href="/shrines/" class="hover:underline">神社を探す</a>
+        <span class="mx-1.5">/</span>
+        <span>{data.name}</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-3xl font-black text-white sm:text-4xl">{data.name}</h1>
+      <p class="mt-1 text-sm text-white/85">{data.kana}・{data.prefecture}{data.city}</p>
+    </div>
+    {data.imageCredit && (
+      <p class="absolute bottom-1.5 right-2 text-[10px] text-white/70">
+        写真: <a href={data.imageCredit.sourceUrl} target="_blank" rel="noopener noreferrer" class="underline hover:text-white">{data.imageCredit.author}</a> / {data.imageCredit.license}
+      </p>
+    )}
+  </section>
+
+  <PhotoGallery photos={photos} />
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <!-- 本文 -->
+    <article class="min-w-0 flex-1">
+      <div class="prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion">
+        <Content />
+      </div>
+    </article>
+
+    <!-- サイドバー：基本情報 -->
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-80">
+      <div class="flex gap-3">
+        <FavoriteButton shrineId={shrine.id} label />
+        <VisitedButton shrineId={shrine.id} />
+      </div>
+
+      <div class="mt-6 rounded-lg border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">基本情報</h2>
+        <dl class="mt-4 space-y-4 text-sm">
+          <div>
+            <dt class="font-bold text-shrine-vermillion-dark">ご祭神</dt>
+            <dd class="mt-1 text-shrine-ink-soft">
+              {data.deities.join('、')}
+              <a href="/deities/" class="mt-1 block text-xs text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+                御祭神について詳しく →
+              </a>
+            </dd>
+          </div>
+          {data.benefits && data.benefits.length > 0 && (
+            <div>
+              <dt class="font-bold text-shrine-vermillion-dark">ご利益</dt>
+              <dd class="mt-1 flex flex-wrap gap-1.5">
+                {data.benefits.map((b) => (
+                  <span class="rounded-full bg-shrine-vermillion-light px-2.5 py-0.5 text-xs text-shrine-vermillion-dark">{b}</span>
+                ))}
+              </dd>
+            </div>
+          )}
+          {data.founded && (
+            <div>
+              <dt class="font-bold text-shrine-vermillion-dark">創建</dt>
+              <dd class="mt-1 text-shrine-ink-soft">{data.founded}</dd>
+            </div>
+          )}
+          <div>
+            <dt class="font-bold text-shrine-vermillion-dark">所在地</dt>
+            <dd class="mt-1 text-shrine-ink-soft">{data.address}</dd>
+          </div>
+          {data.hours && (
+            <div>
+              <dt class="font-bold text-shrine-vermillion-dark">参拝時間</dt>
+              <dd class="mt-1 text-shrine-ink-soft">{data.hours}</dd>
+            </div>
+          )}
+          {data.access && (
+            <div>
+              <dt class="font-bold text-shrine-vermillion-dark">アクセス</dt>
+              <dd class="mt-1 text-shrine-ink-soft">{data.access}</dd>
+            </div>
+          )}
+          {data.parking && (
+            <div>
+              <dt class="font-bold text-shrine-vermillion-dark">駐車場</dt>
+              <dd class="mt-1 text-shrine-ink-soft">{data.parking}</dd>
+            </div>
+          )}
+        </dl>
+      </div>
+
+      <div class="mt-6">
+        <h2 class="mb-3 font-serif-jp text-lg font-bold text-shrine-ink">地図</h2>
+        <GoogleMap query={`${data.name} ${data.address}`} />
+      </div>
+
+      <div class="mt-6">
+        <AccommodationSection shrineName={data.name} city={data.city} prefecture={data.prefecture} />
+      </div>
+
+      {data.goshuin && (
+        <div class="mt-6 rounded-lg border border-shrine-gold/30 bg-shrine-vermillion-light p-6">
+          <h2 class="font-serif-jp text-lg font-bold text-shrine-vermillion-dark">御朱印情報</h2>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="font-bold text-shrine-ink">授与</dt>
+              <dd class="mt-1 text-shrine-ink-soft">{data.goshuin.available ? 'あり' : 'なし'}</dd>
+            </div>
+            {data.goshuin.hours && (
+              <div>
+                <dt class="font-bold text-shrine-ink">受付時間</dt>
+                <dd class="mt-1 text-shrine-ink-soft">{data.goshuin.hours}</dd>
+              </div>
+            )}
+            {data.goshuin.fee && (
+              <div>
+                <dt class="font-bold text-shrine-ink">初穂料</dt>
+                <dd class="mt-1 text-shrine-ink-soft">{data.goshuin.fee}</dd>
+              </div>
+            )}
+          </dl>
+        </div>
+      )}
+
+      {data.officialUrl && (
+        <a
+          href={data.officialUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 block rounded-full bg-shrine-vermillion px-6 py-3 text-center text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          公式サイトを見る ↗
+        </a>
+      )}
+
+      <a
+        href="/shrines/"
+        class="mt-4 block rounded-full border border-shrine-gold/40 px-6 py-3 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+      >
+        ← 一覧に戻る
+      </a>
+    </aside>
+  </div>
+</Layout>

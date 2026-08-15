@@ -1,0 +1,120 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import JuyohinIcon from '../../components/JuyohinIcon.astro';
+import ArrangementDiagram from '../../components/ArrangementDiagram.astro';
+import PlacementDiagram from '../../components/PlacementDiagram.astro';
+
+const proseClass = 'prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion';
+---
+
+<Layout title="神棚の祀り方" description="自宅に神棚をお祀りする際の基本と、御札の並べ方・置き場所・日々のお参りの作法を、写真とイラストでわかりやすく解説します。">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <nav class="text-xs text-white/70">
+        <a href="/items/" class="hover:underline">授与品ガイド</a>
+        <span class="mx-1.5">/</span>
+        <span>神棚の祀り方</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-2xl font-bold sm:text-3xl">神棚の祀り方</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        自宅にいただいた御札を、どのようにお祀りすればよいのか。神棚の基本から、御札の並べ方、日々のお参りの作法までご紹介します。
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <article class="min-w-0 flex-1">
+      <div class={proseClass}>
+        <h2>神棚とは</h2>
+        <p>
+          神棚（かみだな）は、家庭で神様をお祀りするための小さな祭壇です。もともとは文字どおり「棚」に幣帛（へいはく）や神饌（しんせん）をお供えしたことに由来し、現在では「宮形（みやがた）」と呼ばれる小さなお社の形をした入れ物に御札を納めてお祀りするのが一般的です。神棚があることで、日々の暮らしの中で神様に手を合わせ、感謝の気持ちを伝える習慣が生まれます。
+        </p>
+      </div>
+
+      <div class={proseClass}>
+        <h2>神棚の種類</h2>
+        <p>宮形には、扉の数によっていくつかの種類があります。</p>
+        <ul>
+          <li>
+            <strong>一社造（いっしゃづくり）</strong>：扉がひとつのシンプルなタイプ。複数の御札を重ねて納めます。省スペースで、はじめて神棚をお祀りする方にも選ばれています。
+          </li>
+          <li>
+            <strong>三社造（さんしゃづくり）</strong>：扉が3つ並んだタイプ。複数の御札を横に並べてお祀りできるため、御札の格が視覚的にもわかりやすいのが特徴です。
+          </li>
+        </ul>
+
+        <h2>御札の並べ方</h2>
+        <p>
+          神棚には、複数の御札をあわせてお祀りするのが一般的です。基本となるのは「神宮大麻（じんぐうたいま・伊勢神宮の御札）」「氏神様（住んでいる地域を守る神社）の御札」「崇敬神社（個人的に大切にしている神社）の御札」の3種類で、並べ方には決まりがあります。
+        </p>
+      </div>
+
+      <div class="my-6">
+        <ArrangementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <p>
+          御札が1体だけの場合は、難しく考えず、いただいた御札を中央（一社造の場合は正面）に納めれば問題ありません。
+        </p>
+
+        <h2>神棚を置く場所</h2>
+        <p>神棚は次のような点を意識して設置するとよいとされています。</p>
+        <ul>
+          <li>家族が集まるリビングや、明るく清潔な部屋を選ぶ</li>
+          <li>目線より高い位置に、南向きまたは東向きになるように置く</li>
+          <li>人が頻繁に出入りするドアの真上や、トイレ・洗面所の近くは避ける</li>
+          <li>
+            2階建て以上の家で、神棚の真上の階を人が歩く場合は、天井に「雲」「天」「空」などの文字を貼ることで、「その上には何もありません」という意味を表す風習もあります
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-6">
+        <PlacementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <h2>お供え物</h2>
+        <p>
+          神棚には、米・塩・水を基本のお供え物として、毎日新しいものに取り替えるのが理想とされています。難しい場合は、無理のない範囲で続けることが大切です。
+        </p>
+        <ul>
+          <li><strong>米・塩・水</strong>：小さな器（三方や神具）に入れて、毎朝取り替えます。</li>
+          <li><strong>榊（さかき）</strong>：神棚の両脇に飾る常緑樹の枝。月2回（1日・15日）を目安に新しいものに替えます。</li>
+          <li><strong>御神酒（おみき）</strong>：正月やお祝いごとなど、特別な日にお供えします。</li>
+        </ul>
+      </div>
+
+      <div class={proseClass}>
+        <h2>日々のお参り</h2>
+        <p>
+          毎朝、お供え物を新しくしたら、神棚の前で「二礼二拍手一礼」の作法にならい、一日の始まりの挨拶と日頃の感謝を伝えます。難しい作法よりも、日々神様に手を合わせる気持ちそのものが大切にされています。
+        </p>
+
+        <h2>御札の交換時期</h2>
+        <p>
+          御札は、基本的に1年に一度、年末から新年にかけて新しいものにお取り替えします。1年間お守りいただいた感謝を込めて、古い御札はいただいた神社（または近くの神社）に納め、お焚き上げをしてもらいましょう。多くの神社では、年末年始に古い御札やお守りを納める場所が設けられています。
+        </p>
+      </div>
+    </article>
+
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-72">
+      <div class="rounded-lg border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <div class="h-16 w-16">
+          <JuyohinIcon type="ofuda" theme="indigo" />
+        </div>
+        <h2 class="mt-3 font-serif-jp text-base font-bold text-shrine-ink">御札について詳しく</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+          御札そのものの意味や種類については、授与品ガイドでもご紹介しています。
+        </p>
+        <a
+          href="/items/"
+          class="mt-4 block rounded-full border border-shrine-gold/40 px-5 py-2.5 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          授与品ガイドを見る
+        </a>
+      </div>
+    </aside>
+  </div>
+</Layout>

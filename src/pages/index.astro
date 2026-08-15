@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ShrineCard from '../components/ShrineCard.astro';
+import { getCollection } from 'astro:content';
+
+const shrines = await getCollection('shrines');
+const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+
+const benefitCategories = ['縁結び', '商売繁盛', '学業成就', '厄除け', '家内安全', '開運'];
+---
+
+<Layout title="トップページ">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <div class="absolute inset-0 opacity-25" style="background-image: radial-gradient(circle at 20% 20%, #b7312c 0, transparent 45%), radial-gradient(circle at 80% 60%, #b08d57 0, transparent 40%);"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <p class="font-sans-jp text-sm tracking-[0.3em] text-shrine-gold">JAPAN SHRINE PORTAL</p>
+      <h1 class="mt-4 font-serif-jp text-3xl font-black leading-snug sm:text-5xl">
+        日本全国の神社を、<br class="sm:hidden" />もっと身近に。
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-sm text-shrine-paper/80 sm:text-base">
+        由緒・アクセス・御朱印情報まで、初めての参拝でも安心してお参りできるように。
+      </p>
+
+      <form action="/shrines/" method="get" class="mx-auto mt-10 flex max-w-lg overflow-hidden rounded-full bg-shrine-paper shadow-lg">
+        <input
+          type="text"
+          name="q"
+          placeholder="神社名・地名・ご利益で検索"
+          class="w-full bg-transparent px-5 py-3 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="shrink-0 bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          検索
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 神社と神様について -->
+  <section id="shinto" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="text-center">
+        <p class="font-sans-jp text-xs tracking-[0.3em] text-shrine-vermillion">SHINTO &amp; KAMI</p>
+        <h2 class="mt-2 font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">神社と神様について</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-shrine-ink-soft">
+          「神社ってそもそも何だろう？」「神様ってどんな存在？」——神社めぐりがはじめての方に向けて、日本の神社と神様の基本をやさしくご紹介します。
+        </p>
+        <a href="/deities/" class="mt-3 inline-block text-sm text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+          掲載神社の御祭神を詳しく見る →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-lg border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">⛩</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">神社とは</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            神社は、日本古来の信仰である神道（しんとう）にもとづき、神様をお祀りする場所です。鳥居から社殿へと続く参道は、日常の世界から神様のいらっしゃる神聖な空間へと入っていく道とされています。山や森、滝、巨石など自然そのものが神域とされていることも多く、全国には数万社ともいわれる神社があります。
+          </p>
+        </div>
+        <div class="rounded-lg border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🌿</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">八百万の神（やおよろずのかみ）</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            日本の神道では、たったひとつの神様だけを信仰するのではなく、太陽や山、海、風といった自然そのものから、稲作・商売・学問などをつかさどる神様、さらには歴史上の人物まで、数えきれないほど多くの神様（八百万の神）が信仰されてきました。神社によってお祀りされている神様やご利益が異なるのはこのためです。
+          </p>
+        </div>
+        <div class="rounded-lg border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🏯</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">神社とお寺の違い</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            神社が神道の神様をお祀りする場所であるのに対し、お寺は仏教の仏様をお祀りする場所です。入り口の目印も、神社は「鳥居」、お寺は「山門」と異なります。参拝作法も違いがあり、神社では手を合わせたあとに「拍手（かしわで）」を打ちますが、お寺では拍手をせず静かに手を合わせるのが一般的です。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 都道府県から探す -->
+  <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">都道府県から探す</h2>
+    <p class="mt-1 text-sm text-shrine-ink-soft">気になる地域の神社をチェックしてみましょう。</p>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {prefectures.map((pref) => (
+        <a
+          href={`/shrines/?pref=${encodeURIComponent(pref)}`}
+          class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          {pref}
+        </a>
+      ))}
+      <a
+        href="/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        すべての都道府県を見る →
+      </a>
+    </div>
+  </section>
+
+  <!-- 新着神社 -->
+  <section class="bg-shrine-paper-dark py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">新着神社</h2>
+          <p class="mt-1 text-sm text-shrine-ink-soft">新しく掲載された神社をご紹介します。</p>
+        </div>
+        <a href="/shrines/" class="hidden text-sm text-shrine-vermillion hover:underline sm:block">一覧を見る →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((shrine) => (
+          <ShrineCard shrine={shrine} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ご利益から探す -->
+  <section id="benefits" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">ご利益から探す</h2>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {benefitCategories.map((benefit) => (
+        <a
+          href={`/shrines/?q=${encodeURIComponent(benefit)}`}
+          class="rounded-full bg-shrine-vermillion-light px-4 py-2 text-sm text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+        >
+          {benefit}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- 初心者向けガイド -->
+  <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">はじめての参拝ガイド</h2>
+      <p class="mt-1 text-sm text-shrine-paper/70">
+        参拝の作法には地域や神社によって細かな違いもありますが、まずはこの流れを覚えておけば安心です。難しく考えすぎず、神様への感謝の気持ちを込めてお参りしましょう。
+      </p>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">01</p>
+          <h3 class="mt-2 font-bold">鳥居の前で一礼</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            鳥居は神域と俗世を分ける結界であり、神様の家の玄関にあたります。くぐる前に軽く一礼を。また、参道の中央（正中）は神様の通り道とされるため、少し端に寄って歩くとより丁寧です。
+          </p>
+        </div>
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">02</p>
+          <h3 class="mt-2 font-bold">手水舎で心身を清める</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            柄杓で水をすくい、左手→右手の順に清めたら、左手に水を受けて口をすすぎます。最後に柄杓を立てて残った水で柄を洗い流すと、次に使う人への心配りにもなります。
+          </p>
+        </div>
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">03</p>
+          <h3 class="mt-2 font-bold">お賽銭を納めて鈴を鳴らす</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            静かにお賽銭を入れ、鈴があれば鳴らします。鈴の音には、自分の参拝を神様に知らせるとともに、邪気を払う意味もあるといわれています。
+          </p>
+        </div>
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">04</p>
+          <h3 class="mt-2 font-bold">二礼二拍手一礼</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            深いお辞儀を2回、胸の高さで拍手を2回、最後にもう一度深いお辞儀を1回。拍手のあとに、日頃の感謝と願いごとを静かに心の中で伝えるとよいでしょう（出雲大社など一部の神社は作法が異なります）。
+          </p>
+        </div>
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">05</p>
+          <h3 class="mt-2 font-bold">授与所で御朱印をいただく</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            参拝を終えたら、授与所で御朱印やお守りをいただくことができます。御朱印は神社ごとに異なる印と墨書きが特徴で、参拝の記念になります。事前に御朱印帳を用意しておきましょう。
+          </p>
+        </div>
+        <div class="rounded-lg bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">06</p>
+          <h3 class="mt-2 font-bold">鳥居を出たら振り返って一礼</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            境内を出る際、鳥居をくぐったところで社殿の方向へ向き直り、一礼するのも丁寧な習わしです。訪れた神社への感謝を込めて締めくくりましょう。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

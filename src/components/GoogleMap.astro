@@ -1,0 +1,30 @@
+---
+interface Props {
+  query: string;
+  class?: string;
+}
+
+const { query, class: className = '' } = Astro.props;
+const embedSrc = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+---
+
+<div class={`overflow-hidden rounded-lg border border-shrine-gold/30 bg-white shadow-sm ${className}`}>
+  <iframe
+    src={embedSrc}
+    width="100%"
+    height="220"
+    style="border:0; display:block;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title={`${query}の地図`}
+  ></iframe>
+  <a
+    href={linkHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="block px-4 py-2.5 text-center text-xs text-shrine-vermillion transition hover:bg-shrine-vermillion-light hover:text-shrine-vermillion-dark"
+  >
+    Googleマップで大きな地図を見る ↗
+  </a>
+</div>

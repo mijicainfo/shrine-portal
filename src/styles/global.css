@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-shrine-vermillion: #b7312c;
+  --color-shrine-vermillion-dark: #8f2620;
+  --color-shrine-vermillion-light: #e8ded3;
+  --color-shrine-indigo: #1f3a5f;
+  --color-shrine-indigo-dark: #142743;
+  --color-shrine-gold: #b08d57;
+  --color-shrine-paper: #faf6ef;
+  --color-shrine-paper-dark: #f2ebdd;
+  --color-shrine-ink: #2b2521;
+  --color-shrine-ink-soft: #5c5349;
+
+  --font-serif-jp: "Noto Serif JP", "Yu Mincho", serif;
+  --font-sans-jp: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+body {
+  background-color: var(--color-shrine-paper);
+  color: var(--color-shrine-ink);
+}

@@ -1,0 +1,62 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import JuyohinIcon from '../../components/JuyohinIcon.astro';
+import { juyohinItems } from '../../data/juyohin';
+---
+
+<Layout title="授与品ガイド" description="お守り、御朱印帳、破魔矢、絵馬など、神社でいただける授与品をイラストつきでご紹介します。">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">授与品ガイド</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        神社の授与所でいただける、お守りや縁起物のあれこれ。それぞれの意味や扱い方をご紹介します。
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {juyohinItems.map((item) => (
+        <div class="overflow-hidden rounded-lg border border-shrine-gold/25 bg-white shadow-sm">
+          <div class="flex items-center gap-4 bg-shrine-paper-dark p-5">
+            <div class="h-20 w-20 shrink-0">
+              <JuyohinIcon type={item.id} theme={item.theme} />
+            </div>
+            <div>
+              <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{item.name}</h2>
+              <p class="mt-0.5 text-xs text-shrine-ink-soft">{item.reading}</p>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-sm font-medium text-shrine-vermillion-dark">{item.summary}</p>
+            <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">{item.description}</p>
+
+            <dl class="mt-4 space-y-2 border-t border-shrine-gold/15 pt-4 text-xs">
+              <div>
+                <dt class="font-bold text-shrine-ink">いただき方・扱い方</dt>
+                <dd class="mt-1 leading-relaxed text-shrine-ink-soft">{item.howTo}</dd>
+              </div>
+              <div>
+                <dt class="font-bold text-shrine-ink">目安</dt>
+                <dd class="mt-1 text-shrine-ink-soft">{item.priceRange}</dd>
+              </div>
+            </dl>
+
+            {item.link && (
+              <a
+                href={item.link.href}
+                class="mt-4 block rounded-full bg-shrine-vermillion-light px-4 py-2 text-center text-xs font-medium text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+              >
+                {item.link.label} →
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="mt-10 text-center text-xs text-shrine-ink-soft">
+      ※ 授与品の内容や初穂料の目安は神社によって異なります。詳しくは各神社の授与所にお問い合わせください。
+    </p>
+  </section>
+</Layout>

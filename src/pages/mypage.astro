@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+
+const shrines = await getCollection('shrines');
+const shrineData = await Promise.all(
+  shrines.map(async (s) => {
+    let imageSrc: string | null = null;
+    if (s.data.image) {
+      const optimized = await getImage({ src: s.data.image, width: 480, height: 320, format: 'webp' });
+      imageSrc = optimized.src;
+    }
+    return {
+      id: s.id,
+      name: s.data.name,
+      kana: s.data.kana,
+      prefecture: s.data.prefecture,
+      city: s.data.city,
+      image: imageSrc,
+    };
+  }),
+);
+---
+
+<Layout title="マイページ" description="お気に入り登録した神社や、参拝済みの記録を確認できます。">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">マイページ</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">お気に入りの神社と、参拝の記録をまとめて確認できます。</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">お気に入りの神社</h2>
+    <div id="favorites-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="favorites-empty" class="mt-4 hidden rounded-lg border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+      まだお気に入りの神社がありません。<a href="/shrines/" class="text-shrine-vermillion underline">神社を探して</a>♡マークを押してみましょう。
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">参拝記録</h2>
+    <div id="visited-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="visited-empty" class="mt-4 hidden rounded-lg border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+      まだ参拝記録がありません。神社の詳細ページで「参拝済みにする」を押すと、ここに記録されます。
+    </p>
+  </section>
+</Layout>
+
+<script define:vars={{ shrineData }}>
+  const FAVORITES_KEY = 'shrine-portal:favorites';
+  const VISITED_KEY = 'shrine-portal:visited';
+
+  function getList(key) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function cardHtml(shrine) {
+    const img = shrine.image
+      ? `<img src="${shrine.image}" alt="${shrine.name}" class="h-40 w-full object-cover" />`
+      : `<div class="flex h-40 items-center justify-center bg-shrine-indigo text-4xl text-shrine-paper">⛩</div>`;
+    return `
+      <a href="/shrines/${shrine.id}/" class="block overflow-hidden rounded-lg border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        ${img}
+        <div class="p-5">
+          <p class="text-xs font-medium tracking-wide text-shrine-vermillion">${shrine.prefecture}・${shrine.city}</p>
+          <h3 class="mt-1 font-serif-jp text-lg font-bold text-shrine-ink">${shrine.name}</h3>
+          <p class="mt-1 text-xs text-shrine-ink-soft">${shrine.kana}</p>
+        </div>
+      </a>
+    `;
+  }
+
+  function renderSection(key, gridId, emptyId) {
+    const ids = getList(key);
+    const grid = document.getElementById(gridId);
+    const empty = document.getElementById(emptyId);
+    const items = shrineData.filter((s) => ids.includes(s.id));
+
+    if (items.length === 0) {
+      grid.innerHTML = '';
+      empty.classList.remove('hidden');
+      return;
+    }
+    empty.classList.add('hidden');
+    grid.innerHTML = items.map(cardHtml).join('');
+  }
+
+  renderSection(FAVORITES_KEY, 'favorites-grid', 'favorites-empty');
+  renderSection(VISITED_KEY, 'visited-grid', 'visited-empty');
+</script>

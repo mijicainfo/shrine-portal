@@ -1,0 +1,130 @@
+---
+import { Image, getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Photo {
+  image: ImageMetadata;
+  alt: string;
+  credit?: { author: string; license: string; sourceUrl: string };
+}
+
+interface Props {
+  photos: Photo[];
+}
+
+const { photos } = Astro.props;
+
+const fullImages = await Promise.all(
+  photos.map((photo) => getImage({ src: photo.image, width: 1400, format: 'webp' })),
+);
+
+const lightboxData = photos.map((photo, i) => ({
+  src: fullImages[i].src,
+  alt: photo.alt,
+  credit: photo.credit ?? null,
+}));
+---
+
+{photos.length > 0 && (
+  <section class="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
+    <h2 class="font-serif-jp text-lg font-bold text-shrine-ink sm:text-xl">写真</h2>
+    <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      {photos.map((photo, i) => (
+        <button
+          type="button"
+          class="gallery-thumb group relative aspect-[4/3] overflow-hidden rounded-lg border border-shrine-gold/20"
+          data-index={i}
+          aria-label={`${photo.alt}を拡大表示`}
+        >
+          <Image
+            src={photo.image}
+            alt={photo.alt}
+            width={480}
+            height={360}
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+          />
+        </button>
+      ))}
+    </div>
+  </section>
+)}
+
+<div
+  id="gallery-lightbox"
+  class="fixed inset-0 z-100 hidden items-center justify-center bg-black/90 p-4"
+  role="dialog"
+  aria-modal="true"
+  aria-label="写真拡大表示"
+>
+  <button id="gallery-close" type="button" aria-label="閉じる" class="absolute right-4 top-4 text-3xl text-white/80 transition hover:text-white">
+    &times;
+  </button>
+  <button id="gallery-prev" type="button" aria-label="前の写真" class="absolute left-2 text-4xl text-white/70 transition hover:text-white sm:left-6">
+    &lsaquo;
+  </button>
+  <button id="gallery-next" type="button" aria-label="次の写真" class="absolute right-2 text-4xl text-white/70 transition hover:text-white sm:right-6">
+    &rsaquo;
+  </button>
+  <figure class="max-w-[90vw]">
+    <img id="gallery-image" src="" alt="" class="max-h-[75vh] max-w-[90vw] rounded object-contain" />
+    <figcaption id="gallery-caption" class="mt-3 text-center text-xs text-white/70"></figcaption>
+  </figure>
+</div>
+
+<script define:vars={{ lightboxData }}>
+  const lightbox = document.getElementById('gallery-lightbox');
+  const imgEl = document.getElementById('gallery-image');
+  const captionEl = document.getElementById('gallery-caption');
+  const closeBtn = document.getElementById('gallery-close');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  const thumbs = document.querySelectorAll('.gallery-thumb');
+  let current = 0;
+
+  function captionFor(item) {
+    if (!item.credit) return '';
+    return `写真: ${item.credit.author} / ${item.credit.license}`;
+  }
+
+  function openAt(index) {
+    current = index;
+    const item = lightboxData[current];
+    imgEl.src = item.src;
+    imgEl.alt = item.alt;
+    captionEl.textContent = captionFor(item);
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.classList.add('overflow-hidden');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  function shift(delta) {
+    openAt((current + delta + lightboxData.length) % lightboxData.length);
+  }
+
+  if (lightboxData.length <= 1) {
+    prevBtn.classList.add('hidden');
+    nextBtn.classList.add('hidden');
+  }
+
+  thumbs.forEach((btn) => {
+    btn.addEventListener('click', () => openAt(Number(btn.dataset.index)));
+  });
+  closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', () => shift(-1));
+  nextBtn.addEventListener('click', () => shift(1));
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') shift(-1);
+    if (e.key === 'ArrowRight') shift(1);
+  });
+</script>
