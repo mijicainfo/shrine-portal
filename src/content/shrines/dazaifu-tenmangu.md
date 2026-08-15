@@ -19,6 +19,7 @@ goshuin:
   hours: "9:00〜17:00頃"
   fee: "初穂料 500円"
 officialUrl: "https://www.dazaifutenmangu.or.jp/"
+twitterHandle: "dazaifutenmangu"
 themeColor: "gold"
 featured: true
 order: 5

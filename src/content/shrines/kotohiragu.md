@@ -20,6 +20,7 @@ goshuin:
   hours: "8:30〜17:00頃"
   fee: "初穂料 500円"
 officialUrl: "https://www.konpira.or.jp/"
+twitterHandle: "kotohiranomiya"
 themeColor: "vermillion"
 featured: true
 order: 9

@@ -23,6 +23,7 @@ const shrines = defineCollection({
       })
       .optional(),
     officialUrl: z.string().optional(),
+    twitterHandle: z.string().optional(),
     themeColor: z.enum(['vermillion', 'indigo', 'gold']).default('vermillion'),
     featured: z.boolean().default(false),
     order: z.number().default(999),

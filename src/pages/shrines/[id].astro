@@ -4,6 +4,7 @@ import ToriiArt from '../../components/ToriiArt.astro';
 import PhotoGallery from '../../components/PhotoGallery.astro';
 import GoogleMap from '../../components/GoogleMap.astro';
 import AccommodationSection from '../../components/AccommodationSection.astro';
+import TwitterTimeline from '../../components/TwitterTimeline.astro';
 import FavoriteButton from '../../components/FavoriteButton.astro';
 import VisitedButton from '../../components/VisitedButton.astro';
 import { Image } from 'astro:assets';
@@ -129,6 +130,12 @@ const photos = [
           )}
         </dl>
       </div>
+
+      {data.twitterHandle && (
+        <div class="mt-6">
+          <TwitterTimeline handle={data.twitterHandle} shrineName={data.name} />
+        </div>
+      )}
 
       <div class="mt-6">
         <h2 class="mb-3 font-serif-jp text-lg font-bold text-shrine-ink">地図</h2>

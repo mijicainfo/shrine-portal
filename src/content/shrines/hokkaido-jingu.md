@@ -22,6 +22,7 @@ goshuin:
   hours: "9:00〜16:00頃"
   fee: "初穂料 500円"
 officialUrl: "https://www.hokkaidojingu.or.jp/"
+twitterHandle: "hokkaido_jingu"
 themeColor: "indigo"
 featured: true
 order: 7
