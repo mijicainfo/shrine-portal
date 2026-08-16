@@ -12,13 +12,18 @@ const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
-// 日本語は「三重県伊勢市」のように区切りなしで自然に読めるが、
-// 英語では単語の間にスペースが必要（例: "Mie Prefecture, Ise, Japan"）
-const query = lang === 'en'
-  ? `${shrineName}, ${cleanCity}, ${prefecture}, Japan`
+// Booking.comの地名データベースは「Mie Prefecture」のような「Prefecture」付きの
+// 表記や、「Fushimi-ku」のような区レベルの地名を認識できず、検索結果ではなく
+// トップページにリダイレクトされてしまうことが確認できたため、英語版の検索クエリ
+// では市区町村（city）を含めず、神社名＋都道府県（Prefecture抜き）＋Japanのみを使う
+const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
+const bookingQuery = lang === 'en'
+  ? `${shrineName}, ${bookingPrefecture}, Japan`
   : `${shrineName} ${prefecture}${cleanCity}`;
-const bookingUrl = buildBookingSearchUrl(query);
-const rakutenUrl = buildRakutenSearchUrl(query);
+const bookingUrl = buildBookingSearchUrl(bookingQuery);
+// 楽天トラベルのキーワード検索は日本語専用で、英語のクエリでは
+// 地名が一致せず常に検索結果0件になるため、英語版では表示しない
+const rakutenUrl = buildRakutenSearchUrl(`${shrineName} ${prefecture}${cleanCity}`);
 const t = {
   ja: {
     heading: '周辺の宿泊施設',
@@ -59,18 +64,20 @@ const t = {
       <span aria-hidden="true">↗</span>
     </a>
 
-    <a
-      href={rakutenUrl}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
-    >
-      <span>
-        <span class="font-bold">{t.rakutenLabel}</span>
-        <span class="block text-xs text-shrine-ink-soft">{t.rakutenSub}</span>
-      </span>
-      <span aria-hidden="true">↗</span>
-    </a>
+    {lang === 'ja' && (
+      <a
+        href={rakutenUrl}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+      >
+        <span>
+          <span class="font-bold">{t.rakutenLabel}</span>
+          <span class="block text-xs text-shrine-ink-soft">{t.rakutenSub}</span>
+        </span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    )}
   </div>
 
   <p class="mt-3 text-[11px] leading-relaxed text-shrine-ink-soft/80">
