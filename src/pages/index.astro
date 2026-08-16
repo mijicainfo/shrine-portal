@@ -3,9 +3,38 @@ import Layout from '../layouts/Layout.astro';
 import ShrineCard from '../components/ShrineCard.astro';
 import SeigaihaWave from '../components/SeigaihaWave.astro';
 import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
 
 const shrines = await getCollection('shrines');
 const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const heroCandidateIds = [
+  'fujisan-sengen-taisha',
+  'itsukushima',
+  'ise-jingu',
+  'fushimi-inari',
+  'meiji-jingu',
+  'kirishima-jingu',
+  'izumo-taisha',
+  'nikko-toshogu',
+  'kotohiragu',
+  'tsurugaoka-hachimangu',
+];
+const heroShrines = heroCandidateIds
+  .map((id) => shrines.find((s) => s.id === id))
+  .filter((s) => s && s.data.image);
+const heroPhotos = await Promise.all(
+  heroShrines.map(async (s) => {
+    const optimized = await getImage({ src: s!.data.image!, width: 1920, height: 1080 });
+    return {
+      src: optimized.src,
+      alt: s!.data.name,
+      name: s!.data.name,
+      href: `/shrines/${s!.id}/`,
+      credit: s!.data.imageCredit ?? null,
+    };
+  })
+);
 
 const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
 
@@ -34,6 +63,8 @@ const benefitCategories = [
 <Layout title="トップページ">
   <!-- Hero -->
   <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <img id="hero-photo" alt="" class="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-opacity duration-700" />
+    <div class="absolute inset-0 bg-gradient-to-t from-shrine-indigo-dark via-shrine-indigo-dark/70 to-shrine-indigo-dark/40"></div>
     <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 20% 20%, #e8887a 0, transparent 45%), radial-gradient(circle at 80% 60%, #ddb877 0, transparent 40%);"></div>
     <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
       <p class="font-script text-xl text-shrine-gold">Japan Shrine Portal</p>
@@ -59,7 +90,28 @@ const benefitCategories = [
         </button>
       </form>
     </div>
+    <p id="hero-photo-credit" class="relative hidden px-4 pb-2 text-right text-[10px] text-shrine-paper/60 sm:px-6"></p>
     <SeigaihaWave color="#fdf8f1" class="relative h-6" />
+
+    <script type="application/json" id="hero-photo-data" set:html={JSON.stringify(heroPhotos)} />
+    <script>
+      const data = document.getElementById('hero-photo-data');
+      const photos = data ? JSON.parse(data.textContent || '[]') : [];
+      if (photos.length > 0) {
+        const photo = photos[Math.floor(Math.random() * photos.length)];
+        const img = document.getElementById('hero-photo') as HTMLImageElement | null;
+        if (img) {
+          img.src = photo.src;
+          img.alt = photo.name;
+          img.addEventListener('load', () => img.classList.remove('opacity-0'));
+        }
+        const credit = document.getElementById('hero-photo-credit');
+        if (credit && photo.credit) {
+          credit.textContent = `写真：${photo.name} / ${photo.credit.author} (${photo.credit.license})`;
+          credit.classList.remove('hidden');
+        }
+      }
+    </script>
   </section>
 
   <!-- 神社と神様について -->
