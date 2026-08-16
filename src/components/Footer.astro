@@ -66,6 +66,7 @@ const t = lang === 'en'
       correction: 'correction',
       correctionPrefix: 'Spot an error or something out of date? Please let us know via our',
       correctionSuffix: 'page.',
+      privacy: 'Privacy Policy',
       copyright: '© 2026 Shrine The Pantheon (site in development)',
     }
   : {
@@ -73,6 +74,7 @@ const t = lang === 'en'
       correction: 'お問い合わせ',
       correctionPrefix: '掲載内容に誤りや訂正すべき点がございましたら、',
       correctionSuffix: 'よりお知らせください。',
+      privacy: 'プライバシーポリシー',
       copyright: '© 2026 神社 The Pantheon（開発中サイト）',
     };
 ---
@@ -106,6 +108,7 @@ const t = lang === 'en'
       <p class="text-xs text-shrine-paper/60">
         {t.correctionPrefix}<a href={`${base}/contact/`} class="text-shrine-gold underline hover:text-white">{t.correction}</a>{t.correctionSuffix}
       </p>
+      <a href={`${base}/privacy/`} class="text-xs text-shrine-paper/60 underline hover:text-white">{t.privacy}</a>
       <p class="text-xs text-shrine-paper/50">
         {t.copyright}
       </p>
