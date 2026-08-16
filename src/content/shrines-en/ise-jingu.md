@@ -77,7 +77,7 @@ Beyond the main sanctuary, the approach path through the Naiku passes several sm
 - **Minie-chosha**: The building where the ritual preparation of food offerings (mike) takes place.
 - **Mishine no Mikura**: A storehouse for the sacred rice offered during the "Three Great Festivals" (Sansetsu-sai), including Kanname-sai.
 - **Geheiden**: A shinmei-zukuri style building where dedicated offerings are stored.
-- **Miya no Meguri no Kami**: A shrine to the deity guarding the entire sacred precinct of the Naiku.
+- **Miya no Meguri no Kami**: A shrine to the deity guarding the entire sacred precinct of the Naiku, often described as one of Ise Jingu's hidden power spots.
 - **Miumaya**: The stable housing the shinme, sacred horses said to serve the kami — two each are kept at the Naiku and the Geku, four in total.
 - **Sanshuden**: A rest hall for visitors, which also includes a stage used for dedicated Noh and court dance performances.
 - **Oyamatsumi Jinja / Koyasu Jinja**: Long revered by the local people of Ise as guardians of safe childbirth and the blessing of children.
