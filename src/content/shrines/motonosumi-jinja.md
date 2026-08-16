@@ -18,6 +18,7 @@ goshuin:
   available: true
   hours: "参拝時間内（無人の社務所にて書き置きを頒布）"
   fee: "初穂料 500円程度（賽銭箱に納める形式）"
+officialUrl: "https://nanavi.jp/sightseeing/motonosumiinarijinja/"
 themeColor: "vermillion"
 featured: true
 order: 38

@@ -18,6 +18,7 @@ goshuin:
   available: true
   hours: "During visiting hours (pre-printed stamps distributed from an unstaffed office)"
   fee: "Around ¥500 (deposited in an offering box)"
+officialUrl: "https://nanavi.jp/sightseeing/motonosumiinarijinja/"
 themeColor: "vermillion"
 featured: true
 order: 38
