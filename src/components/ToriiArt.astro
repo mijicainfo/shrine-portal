@@ -7,9 +7,9 @@ interface Props {
 const { theme = 'vermillion', class: className = '' } = Astro.props;
 
 const gradients: Record<string, [string, string]> = {
-  vermillion: ['#c1453c', '#7c211c'],
-  indigo: ['#2c4d78', '#101d31'],
-  gold: ['#c4a06a', '#7a5f38'],
+  vermillion: ['#f0a89b', '#e0806f'],
+  indigo: ['#a9d2e6', '#6fa8c9'],
+  gold: ['#ecd2a0', '#ddb877'],
 };
 
 const [from, to] = gradients[theme];
@@ -31,8 +31,8 @@ const gradientId = `torii-grad-${theme}`;
     </linearGradient>
   </defs>
   <rect width="400" height="240" fill={`url(#${gradientId})`} />
-  <circle cx="330" cy="55" r="28" fill="#faf6ef" opacity="0.18" />
-  <g stroke="#faf6ef" stroke-width="7" stroke-linecap="round" opacity="0.92">
+  <circle cx="330" cy="55" r="28" fill="#fdf8f1" opacity="0.25" />
+  <g stroke="#fdf8f1" stroke-width="7" stroke-linecap="round" opacity="0.92">
     <line x1="90" y1="70" x2="80" y2="200" />
     <line x1="310" y1="70" x2="320" y2="200" />
     <line x1="70" y1="80" x2="330" y2="80" />

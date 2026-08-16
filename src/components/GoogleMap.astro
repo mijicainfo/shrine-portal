@@ -9,7 +9,7 @@ const embedSrc = `https://www.google.com/maps?q=${encodeURIComponent(query)}&out
 const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 ---
 
-<div class={`overflow-hidden rounded-lg border border-shrine-gold/30 bg-white shadow-sm ${className}`}>
+<div class={`overflow-hidden rounded-2xl border border-shrine-gold/30 bg-white shadow-sm ${className}`}>
   <iframe
     src={embedSrc}
     width="100%"

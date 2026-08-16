@@ -8,9 +8,9 @@ interface Props {
 const { type, theme = 'vermillion', class: className = '' } = Astro.props;
 
 const gradients: Record<string, [string, string]> = {
-  vermillion: ['#c1453c', '#7c211c'],
-  indigo: ['#2c4d78', '#101d31'],
-  gold: ['#c4a06a', '#7a5f38'],
+  vermillion: ['#f0a89b', '#e0806f'],
+  indigo: ['#a9d2e6', '#6fa8c9'],
+  gold: ['#ecd2a0', '#ddb877'],
 };
 
 const [from, to] = gradients[theme];

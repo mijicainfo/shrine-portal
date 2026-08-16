@@ -1,0 +1,31 @@
+---
+interface Props {
+  color?: string;
+  class?: string;
+}
+
+const { color = '#ffffff', class: className = '' } = Astro.props;
+---
+
+<svg
+  viewBox="0 0 280 28"
+  preserveAspectRatio="none"
+  class={`block w-full ${className}`}
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+>
+  <defs>
+    <pattern id="seigaiha-pattern" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="28" r="14" fill="none" stroke={color} stroke-width="1.4" opacity="0.28" />
+      <circle cx="14" cy="28" r="10" fill="none" stroke={color} stroke-width="1.4" opacity="0.42" />
+      <circle cx="14" cy="28" r="6" fill="none" stroke={color} stroke-width="1.4" opacity="0.6" />
+      <circle cx="0" cy="28" r="14" fill="none" stroke={color} stroke-width="1.4" opacity="0.28" />
+      <circle cx="0" cy="28" r="10" fill="none" stroke={color} stroke-width="1.4" opacity="0.42" />
+      <circle cx="0" cy="28" r="6" fill="none" stroke={color} stroke-width="1.4" opacity="0.6" />
+      <circle cx="28" cy="28" r="14" fill="none" stroke={color} stroke-width="1.4" opacity="0.28" />
+      <circle cx="28" cy="28" r="10" fill="none" stroke={color} stroke-width="1.4" opacity="0.42" />
+      <circle cx="28" cy="28" r="6" fill="none" stroke={color} stroke-width="1.4" opacity="0.6" />
+    </pattern>
+  </defs>
+  <rect width="280" height="28" fill="url(#seigaiha-pattern)" />
+</svg>

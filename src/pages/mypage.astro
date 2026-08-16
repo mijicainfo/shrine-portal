@@ -34,7 +34,7 @@ const shrineData = await Promise.all(
   <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">お気に入りの神社</h2>
     <div id="favorites-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
-    <p id="favorites-empty" class="mt-4 hidden rounded-lg border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+    <p id="favorites-empty" class="mt-4 hidden rounded-2xl border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
       まだお気に入りの神社がありません。<a href="/shrines/" class="text-shrine-vermillion underline">神社を探して</a>♡マークを押してみましょう。
     </p>
   </section>
@@ -42,7 +42,7 @@ const shrineData = await Promise.all(
   <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">参拝記録</h2>
     <div id="visited-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
-    <p id="visited-empty" class="mt-4 hidden rounded-lg border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+    <p id="visited-empty" class="mt-4 hidden rounded-2xl border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
       まだ参拝記録がありません。神社の詳細ページで「参拝済みにする」を押すと、ここに記録されます。
     </p>
   </section>
@@ -66,7 +66,7 @@ const shrineData = await Promise.all(
       ? `<img src="${shrine.image}" alt="${shrine.name}" class="h-40 w-full object-cover" />`
       : `<div class="flex h-40 items-center justify-center bg-shrine-indigo text-4xl text-shrine-paper">⛩</div>`;
     return `
-      <a href="/shrines/${shrine.id}/" class="block overflow-hidden rounded-lg border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <a href="/shrines/${shrine.id}/" class="block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
         ${img}
         <div class="p-5">
           <p class="text-xs font-medium tracking-wide text-shrine-vermillion">${shrine.prefecture}・${shrine.city}</p>

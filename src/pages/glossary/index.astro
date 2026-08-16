@@ -25,7 +25,7 @@ import { glossaryTerms, glossaryCategories } from '../../data/glossary';
       {glossaryCategories.map((category) => (
         <div class="glossary-category">
           <h2 class="font-serif-jp text-lg font-bold text-shrine-vermillion-dark">{category}</h2>
-          <dl class="mt-4 divide-y divide-shrine-gold/15 rounded-lg border border-shrine-gold/20 bg-white">
+          <dl class="mt-4 divide-y divide-shrine-gold/15 rounded-2xl border border-shrine-gold/20 bg-white">
             {glossaryTerms
               .filter((t) => t.category === category)
               .map((t) => (
