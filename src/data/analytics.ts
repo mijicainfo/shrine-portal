@@ -9,4 +9,4 @@
  * 取得方法: https://analytics.google.com/ でプロパティを作成し、
  * 「データストリーム」からウェブストリームを追加すると発行されます。
  */
-export const gaMeasurementId = ''; // 例: 'G-XXXXXXXXXX'
+export const gaMeasurementId = 'G-PKZ19ENYMK';
