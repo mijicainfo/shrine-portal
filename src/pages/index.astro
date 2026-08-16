@@ -9,7 +9,26 @@ const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0,
 
 const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
 
-const benefitCategories = ['縁結び', '商売繁盛', '学業成就', '厄除け', '家内安全', '開運'];
+const benefitCategories = [
+  '縁結び',
+  '商売繁盛',
+  '学業成就',
+  '合格祈願',
+  '厄除け',
+  '家内安全',
+  '開運',
+  '安産',
+  '子授け',
+  '交通安全',
+  '金運',
+  '無病息災',
+  '必勝祈願',
+  '夫婦円満',
+  '五穀豊穣',
+  '海上安全',
+  '武運長久',
+  '芸能上達',
+];
 ---
 
 <Layout title="トップページ">
