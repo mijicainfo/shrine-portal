@@ -39,6 +39,11 @@ gallery:
       author: "Brakeet"
       license: "CC0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Naiku_Ise_Shrine_04.jpg"
+  - image: "../shrines/ise-jingu-4.jpg"
+    credit:
+      author: "Site staff"
+      license: "Courtesy photo"
+      sourceUrl: "https://www.isejingu.or.jp/about/naiku/others.html"
 ---
 
 ## History
@@ -62,6 +67,20 @@ Just past the Uji Bridge at the entrance to the Naiku, the Isuzu River has long 
 ## Highlights
 
 Photography is not permitted inside the sacred fence surrounding the main sanctuary of the Naiku, so visitors are asked to pay their respects quietly. The grounds are lined with towering trees said to be centuries old, and many visitors say that simply walking among them, amid the solemn atmosphere, is enough to calm the mind.
+
+Beyond the main sanctuary, the approach path through the Naiku passes several smaller buildings and shrines worth pausing at, each adding a little more depth to a visit:
+
+- **Takimatsuri no Kami**: A shrine to the guardian deity of the Isuzu River, distinctive for having no building at all — it's enshrined directly on a stone platform behind a low fence and gate.
+- **Gojoden**: A hall used for purification rites and remote-worship ceremonies on rainy days.
+- **Misakadono / Yuki no Mikura**: Auxiliary shrines connected with the sacred sake and food offerings presented at the Naiku.
+- **Imibiyaden / Haraedo**: Known as the "kami's kitchen," where food offerings are prepared using ritually pure fire.
+- **Minie-chosha**: The building where the ritual preparation of food offerings (mike) takes place.
+- **Mishine no Mikura**: A storehouse for the sacred rice offered during the "Three Great Festivals" (Sansetsu-sai), including Kanname-sai.
+- **Geheiden**: A shinmei-zukuri style building where dedicated offerings are stored.
+- **Miya no Meguri no Kami**: A shrine to the deity guarding the entire sacred precinct of the Naiku.
+- **Miumaya**: The stable housing the shinme, sacred horses said to serve the kami — two each are kept at the Naiku and the Geku, four in total.
+- **Sanshuden**: A rest hall for visitors, which also includes a stage used for dedicated Noh and court dance performances.
+- **Oyamatsumi Jinja / Koyasu Jinja**: Long revered by the local people of Ise as guardians of safe childbirth and the blessing of children.
 
 ## Annual Festivals
 
