@@ -1,0 +1,120 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import JuyohinIcon from '../../../components/JuyohinIcon.astro';
+import ArrangementDiagram from '../../../components/ArrangementDiagram.astro';
+import PlacementDiagram from '../../../components/PlacementDiagram.astro';
+
+const proseClass = 'prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion';
+---
+
+<Layout title="Home Altar (Kamidana) Guide" description="How to set up a kamidana at home — where to place it, how to arrange your ofuda, and the basics of daily worship, explained with photos and diagrams.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <nav class="text-xs text-white/70">
+        <a href="/en/items/" class="hover:underline">Amulets & Charms Guide</a>
+        <span class="mx-1.5">/</span>
+        <span>Home Altar (Kamidana) Guide</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-2xl font-bold sm:text-3xl">Home Altar (Kamidana) Guide</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        How should you enshrine an ofuda you've received at home? Here's an introduction to the basics of a kamidana, how to arrange your ofuda, and the etiquette of daily worship.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <article class="min-w-0 flex-1">
+      <div class={proseClass}>
+        <h2>What Is a Kamidana?</h2>
+        <p>
+          A kamidana is a small household altar for enshrining kami at home. The word literally means "kami shelf," originating from the practice of offering sacred objects (heihaku) and food offerings (shinsen) on a shelf. Today it's common to place an ofuda inside a small shrine-shaped case called a miyagata. Having a kamidana creates a daily habit of pressing your palms together and expressing gratitude to the kami.
+        </p>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Types of Kamidana</h2>
+        <p>Miyagata come in a few types, distinguished by the number of doors.</p>
+        <ul>
+          <li>
+            <strong>Issha-zukuri (one-door style)</strong>: A simple design with a single door, where multiple ofuda are stacked together. Compact and popular with first-time kamidana owners.
+          </li>
+          <li>
+            <strong>Sansha-zukuri (three-door style)</strong>: A design with three doors side by side, letting you enshrine multiple ofuda next to each other — making the relative status of each ofuda visually clear.
+          </li>
+        </ul>
+
+        <h2>How to Arrange Your Ofuda</h2>
+        <p>
+          It's common to enshrine multiple ofuda together on a kamidana. The three basic types are the jingu taima (Ise Jingu's ofuda), your ujigami's ofuda (from the shrine guarding the area you live in), and your sukei-jinja's ofuda (from a shrine you personally hold dear) — and there's a set order for arranging them.
+        </p>
+      </div>
+
+      <div class="my-6">
+        <ArrangementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <p>
+          If you only have one ofuda, there's no need to overthink it — simply place it in the center (or at the front, for an issha-zukuri altar).
+        </p>
+
+        <h2>Where to Place Your Kamidana</h2>
+        <p>A few things to keep in mind when choosing a spot:</p>
+        <ul>
+          <li>Choose a bright, clean room where the family gathers, such as the living room</li>
+          <li>Place it above eye level, facing south or east</li>
+          <li>Avoid placing it directly above a frequently used door, or near a bathroom</li>
+          <li>
+            In a multi-story home, if people walk on the floor directly above the kamidana, it's customary to place a paper reading "cloud," "heaven," or "sky" on the ceiling — signifying that there is nothing above
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-6">
+        <PlacementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <h2>Daily Offerings</h2>
+        <p>
+          Ideally, rice, salt, and water are offered on the kamidana and replaced fresh every day. If that's not practical, it's more important to keep up whatever routine feels sustainable.
+        </p>
+        <ul>
+          <li><strong>Rice, salt, and water</strong>: Placed in small vessels (sanbo or ritual dishware) and replaced each morning.</li>
+          <li><strong>Sakaki</strong>: Evergreen branches placed on either side of the kamidana, typically replaced twice a month (around the 1st and 15th).</li>
+          <li><strong>Omiki (sacred sake)</strong>: Offered on special occasions such as New Year's or celebrations.</li>
+        </ul>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Daily Worship</h2>
+        <p>
+          Each morning, after refreshing the offerings, follow the "two bows, two claps, one bow" form in front of the kamidana to greet the new day and express your everyday gratitude. What matters most isn't strict form, but the simple habit of pressing your palms together for the kami each day.
+        </p>
+
+        <h2>When to Replace Your Ofuda</h2>
+        <p>
+          Ofuda are generally replaced once a year, around the New Year. With thanks for a year of protection, return the old ofuda to the shrine you received it from (or a nearby shrine) to be ritually burned. Many shrines set up a collection point for old ofuda and omamori around the New Year period.
+        </p>
+      </div>
+    </article>
+
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-72">
+      <div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <div class="h-16 w-16">
+          <JuyohinIcon type="ofuda" theme="indigo" />
+        </div>
+        <h2 class="mt-3 font-serif-jp text-base font-bold text-shrine-ink">More About Ofuda</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+          You can learn more about ofuda themselves and their different types in the Amulets & Charms Guide.
+        </p>
+        <a
+          href="/en/items/"
+          class="mt-4 block rounded-full border border-shrine-gold/40 px-5 py-2.5 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          View the Amulets & Charms Guide
+        </a>
+      </div>
+    </aside>
+  </div>
+</Layout>

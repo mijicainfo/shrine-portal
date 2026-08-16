@@ -5,16 +5,18 @@ import FavoriteButton from './FavoriteButton.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  shrine: CollectionEntry<'shrines'>;
+  shrine: CollectionEntry<'shrines' | 'shrinesEn'>;
 }
 
 const { shrine } = Astro.props;
 const { id, data } = shrine;
 const tags = [...(data.benefits ?? [])].slice(0, 3);
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const base = lang === 'en' ? '/en' : '';
 ---
 
 <a
-  href={`/shrines/${id}/`}
+  href={`${base}/shrines/${id}/`}
   class="group block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
 >
   <div class="relative h-40 overflow-hidden">
@@ -34,7 +36,7 @@ const tags = [...(data.benefits ?? [])].slice(0, 3);
     )}
   </div>
   <div class="p-5">
-    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}・{data.city}</p>
+    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}{lang === 'en' ? ', ' : '・'}{data.city}</p>
     <h3 class="mt-1 font-serif-jp text-lg font-bold text-shrine-ink">{data.name}</h3>
     <p class="mt-1 text-xs text-shrine-ink-soft">{data.kana}</p>
     {tags.length > 0 && (

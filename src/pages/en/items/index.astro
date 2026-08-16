@@ -1,0 +1,62 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import JuyohinIcon from '../../../components/JuyohinIcon.astro';
+import { juyohinItemsEn } from '../../../data/juyohin.en';
+---
+
+<Layout title="Amulets & Charms Guide" description="An illustrated guide to omamori, goshuincho, hamaya, ema, and other items you can receive at a shrine.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Amulets & Charms Guide</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        A look at the charms and lucky items you can receive at a shrine's office, along with what they mean and how to use them.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {juyohinItemsEn.map((item) => (
+        <div class="overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm">
+          <div class="flex items-center gap-4 bg-shrine-paper-dark p-5">
+            <div class="h-20 w-20 shrink-0">
+              <JuyohinIcon type={item.id} theme={item.theme} />
+            </div>
+            <div>
+              <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{item.name}</h2>
+              <p class="mt-0.5 text-xs text-shrine-ink-soft">{item.reading}</p>
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-sm font-medium text-shrine-vermillion-dark">{item.summary}</p>
+            <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">{item.description}</p>
+
+            <dl class="mt-4 space-y-2 border-t border-shrine-gold/15 pt-4 text-xs">
+              <div>
+                <dt class="font-bold text-shrine-ink">How to Receive & Use It</dt>
+                <dd class="mt-1 leading-relaxed text-shrine-ink-soft">{item.howTo}</dd>
+              </div>
+              <div>
+                <dt class="font-bold text-shrine-ink">Typical Cost</dt>
+                <dd class="mt-1 text-shrine-ink-soft">{item.priceRange}</dd>
+              </div>
+            </dl>
+
+            {item.link && (
+              <a
+                href={item.link.href}
+                class="mt-4 block rounded-full bg-shrine-vermillion-light px-4 py-2 text-center text-xs font-medium text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+              >
+                {item.link.label} →
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="mt-10 text-center text-xs text-shrine-ink-soft">
+      ※ The items available and their suggested offering amounts vary by shrine. Please check with each shrine's office for details.
+    </p>
+  </section>
+</Layout>

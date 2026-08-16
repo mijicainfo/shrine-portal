@@ -5,12 +5,20 @@ interface Props {
 }
 
 const { handle, shrineName } = Astro.props;
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const t = lang === 'en'
+  ? { heading: 'Latest Updates (Official X)', loading: `Loading posts from ${shrineName}…` }
+  : { heading: '最新情報（公式X）', loading: `${shrineName}の投稿を読み込み中…` };
 ---
 
 <div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
-  <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">最新情報（公式X）</h2>
+  <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{t.heading}</h2>
   <p class="mt-1 text-xs text-shrine-ink-soft">
-    {shrineName}の公式Xアカウント（<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>）の投稿です。
+    {lang === 'en' ? (
+      <>Posts from {shrineName}'s official X account (<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>).</>
+    ) : (
+      <>{shrineName}の公式Xアカウント（<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>）の投稿です。</>
+    )}
   </p>
   <div class="mt-4 max-h-[500px] overflow-y-auto">
     <a
@@ -20,7 +28,7 @@ const { handle, shrineName } = Astro.props;
       data-chrome="noheader nofooter noborders transparent"
       href={`https://twitter.com/${handle}?ref_src=twsrc%5Etfw`}
     >
-      {shrineName}の投稿を読み込み中…
+      {t.loading}
     </a>
   </div>
 </div>

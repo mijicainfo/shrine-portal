@@ -5,21 +5,25 @@ interface Props {
 }
 
 const { shrineId, class: className = '' } = Astro.props;
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const t = lang === 'en'
+  ? { active: 'Visited', inactive: 'Mark as Visited' }
+  : { active: '参拝済み', inactive: '参拝済みにする' };
 ---
 
 <button
   type="button"
   data-visited-btn
   data-shrine-id={shrineId}
-  data-label-active="参拝済み"
-  data-label-inactive="参拝済みにする"
+  data-label-active={t.active}
+  data-label-inactive={t.inactive}
   aria-pressed="false"
   class={`visited-btn flex w-full items-center justify-center gap-2 rounded-full border border-shrine-gold/40 px-6 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion ${className}`}
 >
   <svg class="h-4 w-4 shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" aria-hidden="true">
     <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
   </svg>
-  <span data-label>参拝済みにする</span>
+  <span data-label>{t.inactive}</span>
 </button>
 
 <style>

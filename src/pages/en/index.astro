@@ -1,0 +1,272 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ShrineCard from '../../components/ShrineCard.astro';
+import SeigaihaWave from '../../components/SeigaihaWave.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import { benefitTranslations } from '../../data/benefitTranslations';
+
+const shrines = await getCollection('shrinesEn');
+const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const heroCandidateIds = [
+  'fujisan-sengen-taisha',
+  'itsukushima',
+  'ise-jingu',
+  'fushimi-inari',
+  'meiji-jingu',
+  'kirishima-jingu',
+  'izumo-taisha',
+  'nikko-toshogu',
+  'kotohiragu',
+  'tsurugaoka-hachimangu',
+];
+const heroShrines = heroCandidateIds
+  .map((id) => shrines.find((s) => s.id === id))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s && s.data.image));
+const heroPhotos = await Promise.all(
+  heroShrines.map(async (s) => {
+    const optimized = await getImage({ src: s.data.image!, width: 1920, height: 1080 });
+    return {
+      src: optimized.src,
+      alt: s.data.name,
+      name: s.data.name,
+      href: `/en/shrines/${s.id}/`,
+      credit: s.data.imageCredit ?? null,
+    };
+  })
+);
+
+const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+
+const benefitCategoriesJa = [
+  '縁結び', '商売繁盛', '学業成就', '合格祈願', '厄除け', '家内安全',
+  '開運', '安産', '子授け', '交通安全', '金運', '無病息災',
+  '必勝祈願', '夫婦円満', '五穀豊穣', '海上安全', '武運長久', '芸能上達',
+];
+const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslations[b] ?? b);
+---
+
+<Layout title="Home">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <img id="hero-photo" alt="" class="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-opacity duration-700" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #e8887a 0, transparent 45%), radial-gradient(circle at 80% 60%, #ddb877 0, transparent 40%);"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <p class="font-script text-xl text-shrine-gold">The Pantheon</p>
+      <h1 class="mt-3 font-serif-jp text-3xl font-black leading-snug sm:text-5xl">
+        Japan's Shrines,<br class="sm:hidden" />Closer Than You Think.
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-sm text-shrine-paper/80 sm:text-base">
+        History, access, and goshuin info — everything a first-time visitor needs to feel at ease.
+      </p>
+
+      <form action="/en/shrines/" method="get" class="mx-auto mt-10 flex max-w-lg overflow-hidden rounded-full bg-shrine-paper shadow-lg">
+        <input
+          type="text"
+          name="q"
+          placeholder="Search by shrine, place, or blessing"
+          class="w-full bg-transparent px-5 py-3 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="shrink-0 bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <p id="hero-photo-credit" class="relative hidden px-4 pb-2 text-right text-[10px] text-shrine-paper/60 sm:px-6"></p>
+    <SeigaihaWave color="#fdf8f1" class="relative h-6" />
+
+    <script type="application/json" id="hero-photo-data" set:html={JSON.stringify(heroPhotos)} />
+    <script>
+      const data = document.getElementById('hero-photo-data');
+      const photos = data ? JSON.parse(data.textContent || '[]') : [];
+      if (photos.length > 0) {
+        const photo = photos[Math.floor(Math.random() * photos.length)];
+        const img = document.getElementById('hero-photo') as HTMLImageElement | null;
+        if (img) {
+          img.src = photo.src;
+          img.alt = photo.name;
+          img.addEventListener('load', () => img.classList.remove('opacity-0'));
+        }
+        const credit = document.getElementById('hero-photo-credit');
+        if (credit && photo.credit) {
+          credit.textContent = `Photo: ${photo.name} / ${photo.credit.author} (${photo.credit.license})`;
+          credit.classList.remove('hidden');
+        }
+      }
+    </script>
+  </section>
+
+  <!-- About Shrines & Kami -->
+  <section id="shinto" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="text-center">
+        <p class="font-script text-xl text-shrine-vermillion">Shinto &amp; Kami</p>
+        <h2 class="mt-2 font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">About Shrines &amp; Kami</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-shrine-ink-soft">
+          "What exactly is a shrine?" "What are kami?" — a gentle introduction to the basics of Japan's shrines and deities for anyone visiting for the first time.
+        </p>
+        <a href="/en/deities/" class="mt-3 inline-block text-sm text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+          See the kami enshrined at each listed shrine →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">⛩</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">What Is a Shrine?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            A shrine (jinja) is a place where kami are enshrined, rooted in Shinto, Japan's indigenous faith. The approach from the torii gate to the main hall is considered a path from the everyday world into the kami's sacred space. Natural features such as mountains, forests, waterfalls, and boulders are often themselves treated as sacred ground, and Japan is home to tens of thousands of shrines nationwide.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🌿</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">Yaoyorozu no Kami — The Myriad Gods</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            Shinto does not center on a single deity. From natural forces like the sun, mountains, the sea, and the wind, to gods overseeing rice farming, commerce, and scholarship, to deified historical figures — countless kami (yaoyorozu no kami, "eight million gods") have been venerated throughout Japan's history. That's why the deities and blessings associated with each shrine differ.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🏯</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">Shrines vs. Temples</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            Shrines enshrine Shinto kami, while temples enshrine Buddhist figures. Their entrance markers differ too — a torii gate for shrines, a sanmon gate for temples — as does visiting etiquette: at a shrine you clap your hands together after bowing, while at a temple you press your palms together quietly without clapping.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Prefecture -->
+  <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Browse by Prefecture</h2>
+    <p class="mt-1 text-sm text-shrine-ink-soft">Find shrines in a region you're interested in.</p>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {prefectures.map((pref) => (
+        <a
+          href={`/en/shrines/?pref=${encodeURIComponent(pref)}`}
+          class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          {pref}
+        </a>
+      ))}
+      <a
+        href="/en/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        See all prefectures →
+      </a>
+    </div>
+  </section>
+
+  <!-- Shrines of Japan -->
+  <section class="bg-shrine-paper-dark py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Shrines of Japan</h2>
+          <p class="mt-1 text-sm text-shrine-ink-soft">Where a thousand years of prayer meet the stillness of the seasons.</p>
+        </div>
+        <a href="/en/shrines/" class="hidden text-sm text-shrine-vermillion hover:underline sm:block">View all →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((shrine) => (
+          <ShrineCard shrine={shrine} />
+        ))}
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/en/shrines/" class="text-sm text-shrine-vermillion hover:underline">View all →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search by Blessing -->
+  <section id="benefits" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Search by Blessing</h2>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {benefitCategories.map((benefit) => (
+        <a
+          href={`/en/shrines/?q=${encodeURIComponent(benefit)}`}
+          class="rounded-full bg-shrine-vermillion-light px-4 py-2 text-sm text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+        >
+          {benefit}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Beginner's Visiting Guide -->
+  <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">Beginner's Visiting Guide</h2>
+      <p class="mt-1 text-sm text-shrine-paper/70">
+        Etiquette can vary slightly by region and shrine, but knowing this basic flow will put you at ease. Don't overthink it — the important thing is a sense of gratitude toward the kami.
+      </p>
+
+      <div class="mt-8 overflow-hidden rounded-2xl bg-black/20 shadow-lg">
+        <div class="aspect-video w-full">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/RKWpIV8rUT8"
+            title="How to Worship at a Shrine: The Spirit and Form of Worship"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="bg-black/20 px-4 py-2 text-xs text-shrine-paper/70">
+          Video by the <a href="https://www.youtube.com/@jinjahoncho6712" target="_blank" rel="noopener noreferrer" class="underline hover:text-shrine-paper">Jinja Honcho (Association of Shinto Shrines) official channel</a> — "The Spirit and Form of Worship" (in Japanese).
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">01</p>
+          <h3 class="mt-2 font-bold">Bow before the torii gate</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            The torii marks the boundary between the sacred and the everyday world — think of it as the front door to the kami's home. Give a light bow before passing through. The center of the approach path is considered the kami's own route, so it's more polite to walk slightly to one side.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">02</p>
+          <h3 class="mt-2 font-bold">Purify yourself at the temizuya</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Scoop water with the ladle, rinse your left hand, then your right. Pour water into your left hand and rinse your mouth. Finally, tilt the ladle upright so the remaining water rinses the handle — a small courtesy for the next visitor.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">03</p>
+          <h3 class="mt-2 font-bold">Offer a coin and ring the bell</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Quietly place a coin in the offertory box and ring the bell if there is one. The sound is said both to announce your visit to the kami and to ward off negative influences.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">04</p>
+          <h3 class="mt-2 font-bold">Two bows, two claps, one bow</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Bow deeply twice, clap twice at chest height, then bow deeply once more. After clapping, silently offer your thanks and any wishes (a few shrines, such as Izumo Taisha, follow a different form).
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">05</p>
+          <h3 class="mt-2 font-bold">Receive a goshuin at the shrine office</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            After paying your respects, you can receive a goshuin (seal stamp) or omamori (charm) at the shrine office. Each goshuin features a unique stamp and hand-brushed calligraphy, making a wonderful memento — bring a goshuincho (stamp book) if you'd like to collect them.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">06</p>
+          <h3 class="mt-2 font-bold">Turn and bow again as you leave</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            As you exit through the torii gate, it's a polite custom to turn back toward the main hall and offer one more bow — a final gesture of gratitude for your visit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -6,16 +6,20 @@ interface Props {
 }
 
 const { shrineId, label = false, class: className = '' } = Astro.props;
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const t = lang === 'en'
+  ? { active: 'Saved to Favorites', inactive: 'Add to Favorites' }
+  : { active: 'お気に入り済み', inactive: 'お気に入りに追加' };
 ---
 
 <button
   type="button"
   data-favorite-btn
   data-shrine-id={shrineId}
-  data-label-active="お気に入り済み"
-  data-label-inactive="お気に入りに追加"
+  data-label-active={t.active}
+  data-label-inactive={t.inactive}
   aria-pressed="false"
-  aria-label="お気に入りに追加"
+  aria-label={t.inactive}
   class={`favorite-btn group flex items-center justify-center gap-2 rounded-full transition ${
     label
       ? 'w-full border border-shrine-gold/40 px-6 py-3 text-sm text-shrine-ink hover:border-shrine-vermillion hover:text-shrine-vermillion'
@@ -29,7 +33,7 @@ const { shrineId, label = false, class: className = '' } = Astro.props;
       stroke-linejoin="round"
     />
   </svg>
-  {label && <span data-label>お気に入りに追加</span>}
+  {label && <span data-label>{t.inactive}</span>}
 </button>
 
 <style>

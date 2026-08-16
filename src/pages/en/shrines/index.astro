@@ -1,0 +1,171 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ShrineCard from '../../../components/ShrineCard.astro';
+import { getCollection } from 'astro:content';
+
+const shrines = (await getCollection('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
+const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+const allBenefits = [...new Set(shrines.flatMap((s) => s.data.benefits ?? []))].sort();
+const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].sort();
+---
+
+<Layout title="Find Shrines" description="Search shrines across Japan by prefecture, blessing, goshuin availability, or enshrined kami.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Find Shrines</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">Discover shrines by region, keyword, or blessing.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search by shrine, place, blessing, or kami"
+        class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none focus:ring-2 focus:ring-shrine-vermillion sm:max-w-xs"
+      />
+      <select
+        id="pref-select"
+        class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink focus:outline-none focus:ring-2 focus:ring-shrine-vermillion sm:w-auto"
+      >
+        <option value="">All Prefectures</option>
+        {prefectures.map((pref) => (
+          <option value={pref}>{pref}</option>
+        ))}
+      </select>
+      <p id="result-count" class="text-sm text-shrine-ink-soft sm:ml-auto"></p>
+    </div>
+
+    <!-- Advanced filters -->
+    <div class="mt-4 rounded-2xl border border-shrine-gold/25 bg-white p-5">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="mr-1 text-sm font-bold text-shrine-ink">Filter by blessing:</span>
+        {allBenefits.map((benefit) => (
+          <label class="flex cursor-pointer items-center gap-1.5 rounded-full border border-shrine-gold/30 px-3 py-1.5 text-xs text-shrine-ink-soft transition has-[:checked]:border-shrine-vermillion has-[:checked]:bg-shrine-vermillion-light has-[:checked]:text-shrine-vermillion-dark">
+            <input type="checkbox" name="benefit" value={benefit} class="benefit-checkbox sr-only" />
+            {benefit}
+          </label>
+        ))}
+      </div>
+
+      <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-shrine-gold/15 pt-4">
+        <label class="flex items-center gap-2 text-sm text-shrine-ink">
+          <input id="goshuin-only" type="checkbox" class="h-4 w-4 accent-shrine-vermillion" />
+          Goshuin available only
+        </label>
+
+        <label class="flex items-center gap-2 text-sm text-shrine-ink">
+          <span>Kami:</span>
+          <select
+            id="deity-select"
+            class="rounded-full border border-shrine-gold/40 px-3 py-1.5 text-sm text-shrine-ink focus:outline-none focus:ring-2 focus:ring-shrine-vermillion"
+          >
+            <option value="">All</option>
+            {allDeities.map((deity) => (
+              <option value={deity}>{deity}</option>
+            ))}
+          </select>
+        </label>
+
+        <button
+          type="button"
+          id="clear-filters"
+          class="ml-auto text-xs text-shrine-vermillion underline hover:text-shrine-vermillion-dark"
+        >
+          Clear filters
+        </button>
+      </div>
+    </div>
+
+    <div id="shrine-grid" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {shrines.map((shrine) => (
+        <div
+          class="shrine-item"
+          data-name={`${shrine.data.name} ${shrine.data.kana}`}
+          data-prefecture={shrine.data.prefecture}
+          data-location={`${shrine.data.prefecture} ${shrine.data.city} ${shrine.data.address}`}
+          data-benefits={(shrine.data.benefits ?? []).join('|')}
+          data-deities={(shrine.data.deities ?? []).join('|')}
+          data-goshuin={String(shrine.data.goshuin?.available ?? false)}
+        >
+          <ShrineCard shrine={shrine} />
+        </div>
+      ))}
+    </div>
+
+    <p id="empty-message" class="mt-16 hidden text-center text-sm text-shrine-ink-soft">
+      No shrines matched your search. Try adjusting your filters.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const prefSelect = document.getElementById('pref-select') as HTMLSelectElement;
+  const goshuinOnly = document.getElementById('goshuin-only') as HTMLInputElement;
+  const deitySelect = document.getElementById('deity-select') as HTMLSelectElement;
+  const clearBtn = document.getElementById('clear-filters') as HTMLButtonElement;
+  const benefitCheckboxes = Array.from(document.querySelectorAll<HTMLInputElement>('.benefit-checkbox'));
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.shrine-item'));
+  const resultCount = document.getElementById('result-count') as HTMLElement;
+  const emptyMessage = document.getElementById('empty-message') as HTMLElement;
+
+  if (params.get('q')) searchInput.value = params.get('q') ?? '';
+  if (params.get('pref')) prefSelect.value = params.get('pref') ?? '';
+
+  function applyFilter() {
+    const query = searchInput.value.trim().toLowerCase();
+    const pref = prefSelect.value;
+    const selectedBenefits = benefitCheckboxes.filter((cb) => cb.checked).map((cb) => cb.value);
+    const requireGoshuin = goshuinOnly.checked;
+    const deity = deitySelect.value;
+    let visibleCount = 0;
+
+    for (const item of items) {
+      const name = (item.dataset.name ?? '').toLowerCase();
+      const benefitsStr = item.dataset.benefits ?? '';
+      const deitiesStr = item.dataset.deities ?? '';
+      const location = (item.dataset.location ?? '').toLowerCase();
+      const prefecture = item.dataset.prefecture ?? '';
+      const hasGoshuin = item.dataset.goshuin === 'true';
+      const itemBenefits = benefitsStr ? benefitsStr.split('|') : [];
+      const itemDeities = deitiesStr ? deitiesStr.split('|') : [];
+
+      const matchesQuery =
+        !query ||
+        name.includes(query) ||
+        location.includes(query) ||
+        benefitsStr.toLowerCase().includes(query) ||
+        deitiesStr.toLowerCase().includes(query);
+      const matchesPref = !pref || prefecture === pref;
+      const matchesBenefits = selectedBenefits.length === 0 || selectedBenefits.some((b) => itemBenefits.includes(b));
+      const matchesGoshuin = !requireGoshuin || hasGoshuin;
+      const matchesDeity = !deity || itemDeities.includes(deity);
+
+      const visible = matchesQuery && matchesPref && matchesBenefits && matchesGoshuin && matchesDeity;
+      item.style.display = visible ? '' : 'none';
+      if (visible) visibleCount += 1;
+    }
+
+    resultCount.textContent = `${visibleCount} shrines`;
+    emptyMessage.classList.toggle('hidden', visibleCount !== 0);
+  }
+
+  searchInput.addEventListener('input', applyFilter);
+  prefSelect.addEventListener('change', applyFilter);
+  goshuinOnly.addEventListener('change', applyFilter);
+  deitySelect.addEventListener('change', applyFilter);
+  benefitCheckboxes.forEach((cb) => cb.addEventListener('change', applyFilter));
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    prefSelect.value = '';
+    goshuinOnly.checked = false;
+    deitySelect.value = '';
+    benefitCheckboxes.forEach((cb) => (cb.checked = false));
+    applyFilter();
+  });
+
+  applyFilter();
+</script>

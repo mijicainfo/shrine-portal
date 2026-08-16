@@ -1,0 +1,22 @@
+---
+const path = Astro.url.pathname;
+const isEn = path === '/en' || path.startsWith('/en/');
+
+const jaPath = isEn ? path.replace(/^\/en/, '') || '/' : path;
+const enPath = isEn ? path : `/en${path === '/' ? '' : path}` || '/en';
+---
+
+<div class="flex items-center gap-1 rounded-full border border-shrine-gold/30 p-0.5 text-xs">
+  <a
+    href={jaPath}
+    class={`rounded-full px-2.5 py-1 transition ${!isEn ? 'bg-shrine-vermillion text-white' : 'text-shrine-ink-soft hover:text-shrine-vermillion'}`}
+  >
+    日本語
+  </a>
+  <a
+    href={enPath}
+    class={`rounded-full px-2.5 py-1 transition ${isEn ? 'bg-shrine-vermillion text-white' : 'text-shrine-ink-soft hover:text-shrine-vermillion'}`}
+  >
+    EN
+  </a>
+</div>

@@ -1,0 +1,79 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { glossaryTermsEn, glossaryCategoriesEn } from '../../../data/glossary.en';
+---
+
+<Layout title="Glossary" description="A friendly mini-dictionary of shrine terminology — torii, goshuin, yaoyorozu no kami, and more.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Glossary</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        Terms you'll come across when visiting a shrine. Knowing what they mean makes visiting even more enjoyable.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+    <input
+      id="glossary-search"
+      type="text"
+      placeholder="Search terms (e.g. torii, goshuin)"
+      class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none focus:ring-2 focus:ring-shrine-vermillion"
+    />
+
+    <div class="mt-8 space-y-10">
+      {glossaryCategoriesEn.map((category) => (
+        <div class="glossary-category">
+          <h2 class="font-serif-jp text-lg font-bold text-shrine-vermillion-dark">{category}</h2>
+          <dl class="mt-4 divide-y divide-shrine-gold/15 rounded-2xl border border-shrine-gold/20 bg-white">
+            {glossaryTermsEn
+              .filter((t) => t.category === category)
+              .map((t) => (
+                <div class="glossary-item p-5" data-term={`${t.term} ${t.reading} ${t.description}`}>
+                  <dt class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-serif-jp text-base font-bold text-shrine-ink">{t.term}</span>
+                    <span class="text-xs text-shrine-ink-soft">{t.reading}</span>
+                  </dt>
+                  <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{t.description}</dd>
+                </div>
+              ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+
+    <p id="glossary-empty" class="mt-16 hidden text-center text-sm text-shrine-ink-soft">
+      No matching terms found.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const searchInput = document.getElementById('glossary-search') as HTMLInputElement;
+  const categories = Array.from(document.querySelectorAll<HTMLElement>('.glossary-category'));
+  const emptyMessage = document.getElementById('glossary-empty') as HTMLElement;
+
+  function applyFilter() {
+    const query = searchInput.value.trim().toLowerCase();
+    let anyVisible = false;
+
+    for (const category of categories) {
+      const items = Array.from(category.querySelectorAll<HTMLElement>('.glossary-item'));
+      let categoryHasVisible = false;
+
+      for (const item of items) {
+        const text = (item.dataset.term ?? '').toLowerCase();
+        const visible = !query || text.includes(query);
+        item.style.display = visible ? '' : 'none';
+        if (visible) categoryHasVisible = true;
+      }
+
+      category.style.display = categoryHasVisible ? '' : 'none';
+      if (categoryHasVisible) anyVisible = true;
+    }
+
+    emptyMessage.classList.toggle('hidden', anyVisible);
+  }
+
+  searchInput.addEventListener('input', applyFilter);
+</script>

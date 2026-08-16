@@ -7,6 +7,10 @@ interface Props {
 const { query, class: className = '' } = Astro.props;
 const embedSrc = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
 const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const t = lang === 'en'
+  ? { title: `Map of ${query}`, link: 'Open larger map on Google Maps ↗' }
+  : { title: `${query}の地図`, link: 'Googleマップで大きな地図を見る ↗' };
 ---
 
 <div class={`overflow-hidden rounded-2xl border border-shrine-gold/30 bg-white shadow-sm ${className}`}>
@@ -17,7 +21,7 @@ const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
     style="border:0; display:block;"
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade"
-    title={`${query}の地図`}
+    title={t.title}
   ></iframe>
   <a
     href={linkHref}
@@ -25,6 +29,6 @@ const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURICom
     rel="noopener noreferrer"
     class="block px-4 py-2.5 text-center text-xs text-shrine-vermillion transition hover:bg-shrine-vermillion-light hover:text-shrine-vermillion-dark"
   >
-    Googleマップで大きな地図を見る ↗
+    {t.link}
   </a>
 </div>
