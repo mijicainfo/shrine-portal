@@ -84,6 +84,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
           class="shrine-item"
           data-name={`${shrine.data.name} ${shrine.data.kana}`}
           data-prefecture={shrine.data.prefecture}
+          data-location={`${shrine.data.prefecture} ${shrine.data.city} ${shrine.data.address}`}
           data-benefits={(shrine.data.benefits ?? []).join('|')}
           data-deities={(shrine.data.deities ?? []).join('|')}
           data-goshuin={String(shrine.data.goshuin?.available ?? false)}
@@ -126,6 +127,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
       const name = (item.dataset.name ?? '').toLowerCase();
       const benefitsStr = item.dataset.benefits ?? '';
       const deitiesStr = item.dataset.deities ?? '';
+      const location = (item.dataset.location ?? '').toLowerCase();
       const prefecture = item.dataset.prefecture ?? '';
       const hasGoshuin = item.dataset.goshuin === 'true';
       const itemBenefits = benefitsStr ? benefitsStr.split('|') : [];
@@ -134,6 +136,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
       const matchesQuery =
         !query ||
         name.includes(query) ||
+        location.includes(query) ||
         benefitsStr.toLowerCase().includes(query) ||
         deitiesStr.toLowerCase().includes(query);
       const matchesPref = !pref || prefecture === pref;
