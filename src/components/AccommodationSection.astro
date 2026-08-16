@@ -8,13 +8,17 @@ interface Props {
 }
 
 const { shrineName, city, prefecture } = Astro.props;
+const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
-const query = `${shrineName} ${prefecture}${cleanCity}`;
+// 日本語は「三重県伊勢市」のように区切りなしで自然に読めるが、
+// 英語では単語の間にスペースが必要（例: "Mie Prefecture, Ise, Japan"）
+const query = lang === 'en'
+  ? `${shrineName}, ${cleanCity}, ${prefecture}, Japan`
+  : `${shrineName} ${prefecture}${cleanCity}`;
 const bookingUrl = buildBookingSearchUrl(query);
 const rakutenUrl = buildRakutenSearchUrl(query);
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
 const t = {
   ja: {
     heading: '周辺の宿泊施設',
