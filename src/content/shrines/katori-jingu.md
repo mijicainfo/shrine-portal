@@ -55,6 +55,6 @@ imageCredit:
 
 隣接する水郷佐原の街並みは「小江戸」とも呼ばれ、伝統的な町家が並ぶ観光地として、香取神宮とあわせて訪れる観光客が多く見られます。
 
-- **亀甲堂**：参道に面した老舗で、甘さ控えめのタレが特徴の厄落としだんごが名物です。
-- **わらび餅 岩立本店**：伝統的な製法で作られる、とろけるような食感のわらび餅が評判の名店です。
-- **梅乃家本店**：表参道沿いのお食事処で、草団子セットのほか、そばやもつ煮込みなど軽食も楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E4%BA%80%E7%94%B2%E5%A0%82%20%E5%8D%83%E8%91%89%E7%9C%8C%E9%A6%99%E5%8F%96%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>亀甲堂</strong></a>：参道に面した老舗で、甘さ控えめのタレが特徴の厄落としだんごが名物です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%8F%E3%82%89%E3%81%B3%E9%A4%85%20%E5%B2%A9%E7%AB%8B%E6%9C%AC%E5%BA%97%20%E5%8D%83%E8%91%89%E7%9C%8C%E9%A6%99%E5%8F%96%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>わらび餅 岩立本店</strong></a>：伝統的な製法で作られる、とろけるような食感のわらび餅が評判の名店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%A2%85%E4%B9%83%E5%AE%B6%E6%9C%AC%E5%BA%97%20%E5%8D%83%E8%91%89%E7%9C%8C%E9%A6%99%E5%8F%96%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>梅乃家本店</strong></a>：表参道沿いのお食事処で、草団子セットのほか、そばやもつ煮込みなど軽食も楽しめます。

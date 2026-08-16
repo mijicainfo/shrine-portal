@@ -56,6 +56,6 @@ imageCredit:
 
 ## 周辺のグルメ・観光
 
-- **あつた蓬莱軒 神宮店**: 名古屋名物ひつまぶしの老舗として知られる鰻店で、南門近くに位置します。
-- **宮きしめん 神宮店**: 境内にある茶屋で、かつお節の効いた出汁が特徴の名古屋名物きしめんを味わえます。
-- **名古屋城**: 熱田神宮からもアクセスしやすく、名古屋観光の定番として多くの参拝者があわせて訪れます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%82%E3%81%A4%E3%81%9F%E8%93%AC%E8%8E%B1%E8%BB%92%20%E7%A5%9E%E5%AE%AE%E5%BA%97%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%86%B1%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>あつた蓬莱軒 神宮店</strong></a>: 名古屋名物ひつまぶしの老舗として知られる鰻店で、南門近くに位置します。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E3%81%8D%E3%81%97%E3%82%81%E3%82%93%20%E7%A5%9E%E5%AE%AE%E5%BA%97%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%86%B1%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>宮きしめん 神宮店</strong></a>: 境内にある茶屋で、かつお節の効いた出汁が特徴の名古屋名物きしめんを味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%9F%8E%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E7%86%B1%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>名古屋城</strong></a>: 熱田神宮からもアクセスしやすく、名古屋観光の定番として多くの参拝者があわせて訪れます。

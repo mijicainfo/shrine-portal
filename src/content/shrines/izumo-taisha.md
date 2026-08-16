@@ -71,6 +71,6 @@ gallery:
 
 参道沿いには出雲そばの名店が並び、割子そばや釜揚げそばなど、参拝後の食事も楽しみのひとつです。門前町には土産物店やカフェも多く、ゆっくり散策するのもおすすめです。
 
-- **そば処 田中屋** ― 出雲大社から徒歩約1分、厳選した国産そば粉を粗挽きにした出雲そばが味わえる名店です。
-- **奥出雲そば処 一福 神門通り店** ― コシと香りが際立つ「一本挽き」の奥出雲そばが楽しめる、神門通り沿いの人気店です。
-- **神門通り**（宇迦橋の大鳥居から出雲大社正門まで続く約700mの表参道）― 甘味処や土産物店が軒を連ね、食べ歩きを楽しみながら参拝前後を過ごせます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%9D%E3%81%B0%E5%87%A6%20%E7%94%B0%E4%B8%AD%E5%B1%8B%20%E5%B3%B6%E6%A0%B9%E7%9C%8C%E5%87%BA%E9%9B%B2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>そば処 田中屋</strong></a> ― 出雲大社から徒歩約1分、厳選した国産そば粉を粗挽きにした出雲そばが味わえる名店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%A5%A5%E5%87%BA%E9%9B%B2%E3%81%9D%E3%81%B0%E5%87%A6%20%E4%B8%80%E7%A6%8F%20%E7%A5%9E%E9%96%80%E9%80%9A%E3%82%8A%E5%BA%97%20%E5%B3%B6%E6%A0%B9%E7%9C%8C%E5%87%BA%E9%9B%B2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>奥出雲そば処 一福 神門通り店</strong></a> ― コシと香りが際立つ「一本挽き」の奥出雲そばが楽しめる、神門通り沿いの人気店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E9%96%80%E9%80%9A%E3%82%8A%20%E5%B3%B6%E6%A0%B9%E7%9C%8C%E5%87%BA%E9%9B%B2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>神門通り</strong></a>（宇迦橋の大鳥居から出雲大社正門まで続く約700mの表参道）― 甘味処や土産物店が軒を連ね、食べ歩きを楽しみながら参拝前後を過ごせます。

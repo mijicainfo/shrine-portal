@@ -55,6 +55,6 @@ imageCredit:
 
 利根川を挟んで隣接する香取神宮とあわせて参拝する「東国三社参り」が古くからの習わしとして知られ、あわせて巡る参拝者が多く見られます。
 
-- **大町通り・仲町通り**― 鹿島神宮の参道沿いに飲食店や甘味処が並び、食べ歩きを楽しめるエリアです。
-- **鈴章（すずしょう）**― 参道近くにある老舗の日本料理店で、地元食材を使った定食料理が味わえます。
-- **甘太郎焼き**― 参道の甘味処で親しまれている、あずきやクリームなどの餡を包んだ大判焼きです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E7%94%BA%E9%80%9A%E3%82%8A%E3%83%BB%E4%BB%B2%E7%94%BA%E9%80%9A%E3%82%8A%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%B9%BF%E5%B6%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>大町通り・仲町通り</strong></a>― 鹿島神宮の参道沿いに飲食店や甘味処が並び、食べ歩きを楽しめるエリアです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E9%88%B4%E7%AB%A0%EF%BC%88%E3%81%99%E3%81%9A%E3%81%97%E3%82%87%E3%81%86%EF%BC%89%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%B9%BF%E5%B6%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>鈴章（すずしょう）</strong></a>― 参道近くにある老舗の日本料理店で、地元食材を使った定食料理が味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%94%98%E5%A4%AA%E9%83%8E%E7%84%BC%E3%81%8D%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E9%B9%BF%E5%B6%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>甘太郎焼き</strong></a>― 参道の甘味処で親しまれている、あずきやクリームなどの餡を包んだ大判焼きです。

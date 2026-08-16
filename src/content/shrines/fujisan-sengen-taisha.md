@@ -72,6 +72,6 @@ gallery:
 
 ## 周辺のグルメ・観光
 
-- **お宮横丁**: 浅間大社の目の前にある屋外フードコートで、富士宮やきそばや静岡おでんなど地元グルメを味わえます。
-- **ここずらよ**: 浅間大社の駐車場敷地内にあるアンテナショップで、もちもち食感の富士宮やきそばが名物です。
-- **富士山世界遺産センター**: 浅間大社に隣接し、逆さ富士を思わせるユニークな建築とともに、富士山信仰の歴史や文化を学べる施設です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E5%AE%AE%E6%A8%AA%E4%B8%81%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>お宮横丁</strong></a>: 浅間大社の目の前にある屋外フードコートで、富士宮やきそばや静岡おでんなど地元グルメを味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%81%93%E3%81%9A%E3%82%89%E3%82%88%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>ここずらよ</strong></a>: 浅間大社の駐車場敷地内にあるアンテナショップで、もちもち食感の富士宮やきそばが名物です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E9%9D%99%E5%B2%A1%E7%9C%8C%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>富士山世界遺産センター</strong></a>: 浅間大社に隣接し、逆さ富士を思わせるユニークな建築とともに、富士山信仰の歴史や文化を学べる施設です。

@@ -55,6 +55,6 @@ imageCredit:
 
 ## 周辺のグルメ・観光
 
-- **しらす問屋 とびっちょ**: 生しらす丼や釜揚げしらす丼が名物の人気店で、江の島名物のしらす料理を存分に楽しめます。
-- **江の島サムエル・コッキング苑**: 明治期の洋風庭園を整備した施設で、温室遺構や四季の花々を楽しめます。
-- **江の島シーキャンドル（展望灯台）**: サムエル・コッキング苑内にある展望灯台で、晴れた日には富士山や相模湾を一望できます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%97%E3%82%89%E3%81%99%E5%95%8F%E5%B1%8B%20%E3%81%A8%E3%81%B3%E3%81%A3%E3%81%A1%E3%82%87%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%97%A4%E6%B2%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>しらす問屋 とびっちょ</strong></a>: 生しらす丼や釜揚げしらす丼が名物の人気店で、江の島名物のしらす料理を存分に楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B1%9F%E3%81%AE%E5%B3%B6%E3%82%B5%E3%83%A0%E3%82%A8%E3%83%AB%E3%83%BB%E3%82%B3%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E8%8B%91%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%97%A4%E6%B2%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>江の島サムエル・コッキング苑</strong></a>: 明治期の洋風庭園を整備した施設で、温室遺構や四季の花々を楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B1%9F%E3%81%AE%E5%B3%B6%E3%82%B7%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB%EF%BC%88%E5%B1%95%E6%9C%9B%E7%81%AF%E5%8F%B0%EF%BC%89%20%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%97%A4%E6%B2%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>江の島シーキャンドル（展望灯台）</strong></a>: サムエル・コッキング苑内にある展望灯台で、晴れた日には富士山や相模湾を一望できます。

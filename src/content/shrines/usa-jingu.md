@@ -57,6 +57,6 @@ imageCredit:
 
 境内には大きな社叢（しゃそう）が広がり、四季を通じて豊かな自然を感じられます。参道周辺には、大分名物のとり天や、宇佐特産のからあげを味わえる飲食店も点在しています。
 
-- **八ちゃん堂神宮店**：宇佐神宮から徒歩約4分のお好み焼き・鉄板焼き店。
-- **宇佐神宮杜の茶屋かくまさ**：宇佐神宮から徒歩約4分のカフェで、参拝の合間の休憩に便利です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E3%81%A1%E3%82%83%E3%82%93%E5%A0%82%E7%A5%9E%E5%AE%AE%E5%BA%97%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%AE%87%E4%BD%90%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>八ちゃん堂神宮店</strong></a>：宇佐神宮から徒歩約4分のお好み焼き・鉄板焼き店。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%AE%87%E4%BD%90%E7%A5%9E%E5%AE%AE%E6%9D%9C%E3%81%AE%E8%8C%B6%E5%B1%8B%E3%81%8B%E3%81%8F%E3%81%BE%E3%81%95%20%E5%A4%A7%E5%88%86%E7%9C%8C%E5%AE%87%E4%BD%90%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>宇佐神宮杜の茶屋かくまさ</strong></a>：宇佐神宮から徒歩約4分のカフェで、参拝の合間の休憩に便利です。
 - 宇佐は唐揚げ専門店発祥の地のひとつともいわれ、参道周辺には宇佐からあげを提供する店が多く見られます。

@@ -55,6 +55,6 @@ imageCredit:
 
 多武峰への道中は美しい山道が続き、桜井市街からのドライブや、明日香村とあわせた歴史散策にもおすすめです。
 
-- **多武峰観光ホテル**：境内近くに位置し、展望レストランでは多武峰の山並みを望みながら食事を楽しめます。
-- **グリル紅葉**：談山神社周辺で紅葉を眺めながらランチを楽しめると人気の飲食店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%9A%E6%AD%A6%E5%B3%B0%E8%A6%B3%E5%85%89%E3%83%9B%E3%83%86%E3%83%AB%20%E5%A5%88%E8%89%AF%E7%9C%8C%E6%A1%9C%E4%BA%95%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>多武峰観光ホテル</strong></a>：境内近くに位置し、展望レストランでは多武峰の山並みを望みながら食事を楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B0%E3%83%AA%E3%83%AB%E7%B4%85%E8%91%89%20%E5%A5%88%E8%89%AF%E7%9C%8C%E6%A1%9C%E4%BA%95%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>グリル紅葉</strong></a>：談山神社周辺で紅葉を眺めながらランチを楽しめると人気の飲食店です。
 - 参道の茶屋では、井戸水で淹れたコーヒーなど、山あいならではの一服を楽しめます。

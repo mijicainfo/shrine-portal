@@ -64,6 +64,6 @@ gallery:
 
 ## 周辺のグルメ・観光
 
-- **祢ざめ家**: 天文9年（1540年）創業と伝わる老舗で、麻の実入りいなり寿司やうずらの焼き鳥が名物です。
-- **お食事処 稲福**: 参道沿いにあり、うずらの焼き鳥を通年提供する人気店として知られています。
-- **稲荷山**: 千本鳥居の先に広がる標高233mの山で、山頂の一ノ峰まで巡拝できる「お山めぐり」が楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%A5%A2%E3%81%96%E3%82%81%E5%AE%B6%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>祢ざめ家</strong></a>: 天文9年（1540年）創業と伝わる老舗で、麻の実入りいなり寿司やうずらの焼き鳥が名物です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%20%E7%A8%B2%E7%A6%8F%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>お食事処 稲福</strong></a>: 参道沿いにあり、うずらの焼き鳥を通年提供する人気店として知られています。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%A8%B2%E8%8D%B7%E5%B1%B1%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BC%8F%E8%A6%8B%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>稲荷山</strong></a>: 千本鳥居の先に広がる標高233mの山で、山頂の一ノ峰まで巡拝できる「お山めぐり」が楽しめます。

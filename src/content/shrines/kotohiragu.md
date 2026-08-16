@@ -58,6 +58,6 @@ imageCredit:
 
 参道沿いには、名物の讃岐うどん店や、こんぴら名物「灸まん」を扱う和菓子店が軒を連ねます。石段の途中にある「金丸座」は、現存する日本最古の芝居小屋として知られています。
 
-- **こんぴらうどん 本店**: 表参道にある趣のある建物のうどん店で、しょうゆうどんなど讃岐うどんの名物メニューが味わえます。
-- **てんてこ舞**: 参道入口近くの完全セルフサービスのうどん店で、提供の早さでも人気です。
-- **灸まん本舗石段や**: こんぴら名物の銘菓「灸まん」を製造・販売する老舗和菓子店。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%93%E3%82%93%E3%81%B4%E3%82%89%E3%81%86%E3%81%A9%E3%82%93%20%E6%9C%AC%E5%BA%97%20%E9%A6%99%E5%B7%9D%E7%9C%8C%E4%BB%B2%E5%A4%9A%E5%BA%A6%E9%83%A1%E7%90%B4%E5%B9%B3%E7%94%BA" target="_blank" rel="noopener noreferrer"><strong>こんぴらうどん 本店</strong></a>: 表参道にある趣のある建物のうどん店で、しょうゆうどんなど讃岐うどんの名物メニューが味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%A6%E3%82%93%E3%81%A6%E3%81%93%E8%88%9E%20%E9%A6%99%E5%B7%9D%E7%9C%8C%E4%BB%B2%E5%A4%9A%E5%BA%A6%E9%83%A1%E7%90%B4%E5%B9%B3%E7%94%BA" target="_blank" rel="noopener noreferrer"><strong>てんてこ舞</strong></a>: 参道入口近くの完全セルフサービスのうどん店で、提供の早さでも人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%81%B8%E3%81%BE%E3%82%93%E6%9C%AC%E8%88%97%E7%9F%B3%E6%AE%B5%E3%82%84%20%E9%A6%99%E5%B7%9D%E7%9C%8C%E4%BB%B2%E5%A4%9A%E5%BA%A6%E9%83%A1%E7%90%B4%E5%B9%B3%E7%94%BA" target="_blank" rel="noopener noreferrer"><strong>灸まん本舗石段や</strong></a>: こんぴら名物の銘菓「灸まん」を製造・販売する老舗和菓子店。

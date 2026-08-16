@@ -56,5 +56,5 @@ imageCredit:
 
 糺の森の中を流れる小川沿いは散策にぴったりで、参道は「みたらし団子」発祥の地としても知られています。
 
-- **加茂みたらし茶屋**：大正11年（1922年）創業、みたらし団子発祥の店として知られる老舗で、香ばしい醤油だれの団子が名物です。
-- **糺の森**：境内を包む原生林の散策路で、四季を通じて豊かな自然を楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%8A%A0%E8%8C%82%E3%81%BF%E3%81%9F%E3%82%89%E3%81%97%E8%8C%B6%E5%B1%8B%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>加茂みたらし茶屋</strong></a>：大正11年（1922年）創業、みたらし団子発祥の店として知られる老舗で、香ばしい醤油だれの団子が名物です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%B3%BA%E3%81%AE%E6%A3%AE%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>糺の森</strong></a>：境内を包む原生林の散策路で、四季を通じて豊かな自然を楽しめます。

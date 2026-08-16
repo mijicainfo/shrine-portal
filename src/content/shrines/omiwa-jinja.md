@@ -56,5 +56,5 @@ imageCredit:
 
 門前には、三輪山の名産である三輪そうめんを味わえる老舗が軒を連ねています。あわせて訪れる観光客も多いスポットです。
 
-- **そうめん処 森正**: 大神神社の二の鳥居脇にある、築100年の民家を改装した三輪そうめんの店で、冷やしそうめんやにゅうめんが名物です。
-- **池利三輪素麺茶屋 千寿亭**: 三輪そうめんの老舗「池利」の直営茶屋で、大鳥居からほど近く、冷やしそうめんやにゅうめんが味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%9D%E3%81%86%E3%82%81%E3%82%93%E5%87%A6%20%E6%A3%AE%E6%AD%A3%20%E5%A5%88%E8%89%AF%E7%9C%8C%E6%A1%9C%E4%BA%95%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>そうめん処 森正</strong></a>: 大神神社の二の鳥居脇にある、築100年の民家を改装した三輪そうめんの店で、冷やしそうめんやにゅうめんが名物です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B1%A0%E5%88%A9%E4%B8%89%E8%BC%AA%E7%B4%A0%E9%BA%BA%E8%8C%B6%E5%B1%8B%20%E5%8D%83%E5%AF%BF%E4%BA%AD%20%E5%A5%88%E8%89%AF%E7%9C%8C%E6%A1%9C%E4%BA%95%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>池利三輪素麺茶屋 千寿亭</strong></a>: 三輪そうめんの老舗「池利」の直営茶屋で、大鳥居からほど近く、冷やしそうめんやにゅうめんが味わえます。

@@ -55,6 +55,6 @@ imageCredit:
 
 周辺には霧島温泉郷が広がり、参拝とあわせて温泉やハイキングを楽しむ観光客も多く訪れます。
 
-- **霧島民芸村**：参道沿いにある茶屋・お土産処で、そばやぜんざいなど軽食も楽しめます。
-- **薩摩蒸気屋**：参道バス停前にある人気菓子店で、名物のかるかん饅頭が知られています。
-- **霧花**：参道にあるテイクアウト専門店で、スイーツやサンドイッチが人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E9%9C%A7%E5%B3%B6%E6%B0%91%E8%8A%B8%E6%9D%91%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%9C%A7%E5%B3%B6%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>霧島民芸村</strong></a>：参道沿いにある茶屋・お土産処で、そばやぜんざいなど軽食も楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E8%96%A9%E6%91%A9%E8%92%B8%E6%B0%97%E5%B1%8B%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%9C%A7%E5%B3%B6%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>薩摩蒸気屋</strong></a>：参道バス停前にある人気菓子店で、名物のかるかん饅頭が知られています。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E9%9C%A7%E8%8A%B1%20%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%9C%A7%E5%B3%B6%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>霧花</strong></a>：参道にあるテイクアウト専門店で、スイーツやサンドイッチが人気です。

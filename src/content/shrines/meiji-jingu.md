@@ -70,6 +70,6 @@ gallery:
 
 隣接する明治神宮外苑には、絵画館やイチョウ並木といった見どころがあります。また、原宿・表参道エリアはファッションやグルメの人気スポットが集まっており、参拝とあわせての散策にぴったりです。
 
-- **カフェ「杜のテラス」**: 原宿駅そば、明治神宮の玄関口にあるカフェで、境内で伐採された樹木を店内に使用し、森の雰囲気の中で一休みできます。
-- **竹下通り**: 原宿駅前から続く若者文化の発信地で、食べ歩きグルメやファッション店が軒を連ねます。
-- **表参道ヒルズ**: 表参道沿いにある商業施設で、ショッピングやカフェ巡りに人気のスポットです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%80%8C%E6%9D%9C%E3%81%AE%E3%83%86%E3%83%A9%E3%82%B9%E3%80%8D%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>カフェ「杜のテラス」</strong></a>: 原宿駅そば、明治神宮の玄関口にあるカフェで、境内で伐採された樹木を店内に使用し、森の雰囲気の中で一休みできます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%AB%B9%E4%B8%8B%E9%80%9A%E3%82%8A%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>竹下通り</strong></a>: 原宿駅前から続く若者文化の発信地で、食べ歩きグルメやファッション店が軒を連ねます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E8%A1%A8%E5%8F%82%E9%81%93%E3%83%92%E3%83%AB%E3%82%BA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>表参道ヒルズ</strong></a>: 表参道沿いにある商業施設で、ショッピングやカフェ巡りに人気のスポットです。

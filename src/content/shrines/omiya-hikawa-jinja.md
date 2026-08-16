@@ -56,5 +56,5 @@ imageCredit:
 
 大宮公園には小動物園や大宮第二公園などもあり、参拝とあわせて家族で楽しめるスポットとなっています。
 
-- **氷川だんご屋**: 氷川参道沿いにある老舗の甘味処で、名物の氷川醤油だんごや、いそべ焼きだんごが人気です。
-- **大宮公園**: 神社に隣接する県立公園で、桜の名所としても知られ、小動物園も併設されています。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B0%B7%E5%B7%9D%E3%81%A0%E3%82%93%E3%81%94%E5%B1%8B%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E5%A4%A7%E5%AE%AE%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>氷川だんご屋</strong></a>: 氷川参道沿いにある老舗の甘味処で、名物の氷川醤油だんごや、いそべ焼きだんごが人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E5%AE%AE%E5%85%AC%E5%9C%92%20%E5%9F%BC%E7%8E%89%E7%9C%8C%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E5%A4%A7%E5%AE%AE%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>大宮公園</strong></a>: 神社に隣接する県立公園で、桜の名所としても知られ、小動物園も併設されています。

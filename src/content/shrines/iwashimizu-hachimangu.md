@@ -55,5 +55,5 @@ imageCredit:
 
 背割堤（せわりてい）の桜並木や、木津川・宇治川・桂川の三川合流地点を望む景色も、あわせて楽しめるスポットです。
 
-- **朝日屋** ― 京阪「石清水八幡宮駅」前に店を構える創業100年以上の老舗で、名物の鯖の棒寿司が参拝帰りに人気です。
-- **背割堤の桜並木** ― 三川合流地点に約1.4kmにわたって桜が続く名所で、春には多くの花見客で賑わいます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%9C%9D%E6%97%A5%E5%B1%8B%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E5%85%AB%E5%B9%A1%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>朝日屋</strong></a> ― 京阪「石清水八幡宮駅」前に店を構える創業100年以上の老舗で、名物の鯖の棒寿司が参拝帰りに人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E8%83%8C%E5%89%B2%E5%A0%A4%E3%81%AE%E6%A1%9C%E4%B8%A6%E6%9C%A8%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E5%85%AB%E5%B9%A1%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>背割堤の桜並木</strong></a> ― 三川合流地点に約1.4kmにわたって桜が続く名所で、春には多くの花見客で賑わいます。

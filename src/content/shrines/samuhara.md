@@ -64,5 +64,5 @@ gallery:
 
 大阪の中心部・本町エリアに近く、御堂筋や心斎橋などの繁華街からもアクセスしやすい立地です。ビジネス街での参拝の合間や、大阪観光の途中に立ち寄る参拝者も多く見られます。
 
-- **牡蠣酒場 佐々木孫べぇ**：神社から徒歩約6分、立売堀エリアで海鮮料理を楽しめる人気店です。
-- **酒中花 空心**：立売堀にある中華料理店で、リーズナブルな価格帯が魅力です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%89%A1%E8%A0%A3%E9%85%92%E5%A0%B4%20%E4%BD%90%E3%80%85%E6%9C%A8%E5%AD%AB%E3%81%B9%E3%81%87%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>牡蠣酒場 佐々木孫べぇ</strong></a>：神社から徒歩約6分、立売堀エリアで海鮮料理を楽しめる人気店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E9%85%92%E4%B8%AD%E8%8A%B1%20%E7%A9%BA%E5%BF%83%20%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>酒中花 空心</strong></a>：立売堀にある中華料理店で、リーズナブルな価格帯が魅力です。

@@ -55,7 +55,7 @@ imageCredit:
 
 下鴨神社とあわせて「賀茂社」と呼ばれ、両社を巡る参拝者も多くいます。門前には葵祭にちなんだ和菓子店も並びます。
 
-- **なり田** ― 創業1804年、社家町にある老舗漬物店で、名物の「すぐき漬」を伝統の製法で作り続けています。
-- **葵家やきもち総本舗** ― 上賀茂神社の名物「やきもち」を製造・販売する老舗和菓子店です。
-- **今井食堂** ― 3日かけて骨まで柔らかく煮込む「サバ煮定食」が人気の食堂です。
-- **社家町** ― 神社の南側に室町時代から続く神職の屋敷町で、明神川沿いの静かな町並みを散策できます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%AA%E3%82%8A%E7%94%B0%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>なり田</strong></a> ― 創業1804年、社家町にある老舗漬物店で、名物の「すぐき漬」を伝統の製法で作り続けています。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E8%91%B5%E5%AE%B6%E3%82%84%E3%81%8D%E3%82%82%E3%81%A1%E7%B7%8F%E6%9C%AC%E8%88%97%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>葵家やきもち総本舗</strong></a> ― 上賀茂神社の名物「やきもち」を製造・販売する老舗和菓子店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E4%BB%8A%E4%BA%95%E9%A3%9F%E5%A0%82%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>今井食堂</strong></a> ― 3日かけて骨まで柔らかく煮込む「サバ煮定食」が人気の食堂です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E7%A4%BE%E5%AE%B6%E7%94%BA%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8C%97%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>社家町</strong></a> ― 神社の南側に室町時代から続く神職の屋敷町で、明神川沿いの静かな町並みを散策できます。

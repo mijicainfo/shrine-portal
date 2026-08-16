@@ -53,6 +53,6 @@ imageCredit:
 
 弥彦山にはロープウェイもあり、山頂からは日本海や佐渡島を望む絶景を楽しめます。門前町には温泉旅館も多く、湯治とあわせて訪れる参拝者も見られます。
 
-- **清水屋**：一の鳥居のすぐ前にある老舗宿併設の食事処。揚げたての天ぷらやだしの効いたうどん・そばが評判です。
-- **吉田屋**：弥彦産の米を使った名物「わっぱ飯」を30年以上提供する老舗店。
-- **おもてなし広場**：弥彦駅から徒歩約5分の複合施設で、フードコートのほか、天然温泉を使った無料の足湯・手湯も楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%B1%8B%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E8%A5%BF%E8%92%B2%E5%8E%9F%E9%83%A1%E5%BC%A5%E5%BD%A6%E6%9D%91" target="_blank" rel="noopener noreferrer"><strong>清水屋</strong></a>：一の鳥居のすぐ前にある老舗宿併設の食事処。揚げたての天ぷらやだしの効いたうどん・そばが評判です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%90%89%E7%94%B0%E5%B1%8B%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E8%A5%BF%E8%92%B2%E5%8E%9F%E9%83%A1%E5%BC%A5%E5%BD%A6%E6%9D%91" target="_blank" rel="noopener noreferrer"><strong>吉田屋</strong></a>：弥彦産の米を使った名物「わっぱ飯」を30年以上提供する老舗店。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%82%82%E3%81%A6%E3%81%AA%E3%81%97%E5%BA%83%E5%A0%B4%20%E6%96%B0%E6%BD%9F%E7%9C%8C%E8%A5%BF%E8%92%B2%E5%8E%9F%E9%83%A1%E5%BC%A5%E5%BD%A6%E6%9D%91" target="_blank" rel="noopener noreferrer"><strong>おもてなし広場</strong></a>：弥彦駅から徒歩約5分の複合施設で、フードコートのほか、天然温泉を使った無料の足湯・手湯も楽しめます。

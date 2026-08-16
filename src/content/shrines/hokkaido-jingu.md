@@ -58,6 +58,6 @@ imageCredit:
 
 ## 周辺のグルメ・観光
 
-- **六花亭 神宮茶屋店**: 境内にある茶屋で、北海道銘菓「判官さま」などを味わいながらひと休みできます。
-- **六花亭 円山店**: 円山公園そばにある直営店で、1階では人気の菓子、2階の喫茶室では焼きたてピザなどが楽しめます。
-- **円山動物園**: 徒歩圏内にあり、参拝とあわせて訪れる家族連れも多いスポットです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%85%AD%E8%8A%B1%E4%BA%AD%20%E7%A5%9E%E5%AE%AE%E8%8C%B6%E5%B1%8B%E5%BA%97%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>六花亭 神宮茶屋店</strong></a>: 境内にある茶屋で、北海道銘菓「判官さま」などを味わいながらひと休みできます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%85%AD%E8%8A%B1%E4%BA%AD%20%E5%86%86%E5%B1%B1%E5%BA%97%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>六花亭 円山店</strong></a>: 円山公園そばにある直営店で、1階では人気の菓子、2階の喫茶室では焼きたてピザなどが楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%86%86%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92%20%E5%8C%97%E6%B5%B7%E9%81%93%E6%9C%AD%E5%B9%8C%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>円山動物園</strong></a>: 徒歩圏内にあり、参拝とあわせて訪れる家族連れも多いスポットです。

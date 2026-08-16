@@ -59,6 +59,6 @@ imageCredit:
 
 東大寺・興福寺など奈良を代表する古社寺が徒歩圏内にあり、奈良公園を散策しながらあわせて巡る観光客が多く見られます。
 
-- **春日大社 カフェ・ショップ 鹿音（かおん）**― 境内の国宝殿1階にあるカフェで、本葛入りぜんざいなどの甘味や、にゅうめんセットが味わえます。
-- **浮見堂（うきみどう）**― 春日大社の参道から奈良公園内へ少し足を延ばした鷺池に浮かぶ、檜皮葺きの六角堂。水辺の散策スポットとして人気です。
-- **奈良公園**― 境内から続く広大な公園で、野生の鹿とふれあいながら散策を楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE%20%E3%82%AB%E3%83%95%E3%82%A7%E3%83%BB%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%20%E9%B9%BF%E9%9F%B3%EF%BC%88%E3%81%8B%E3%81%8A%E3%82%93%EF%BC%89%20%E5%A5%88%E8%89%AF%E7%9C%8C%E5%A5%88%E8%89%AF%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>春日大社 カフェ・ショップ 鹿音（かおん）</strong></a>― 境内の国宝殿1階にあるカフェで、本葛入りぜんざいなどの甘味や、にゅうめんセットが味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B5%AE%E8%A6%8B%E5%A0%82%EF%BC%88%E3%81%86%E3%81%8D%E3%81%BF%E3%81%A9%E3%81%86%EF%BC%89%20%E5%A5%88%E8%89%AF%E7%9C%8C%E5%A5%88%E8%89%AF%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>浮見堂（うきみどう）</strong></a>― 春日大社の参道から奈良公園内へ少し足を延ばした鷺池に浮かぶ、檜皮葺きの六角堂。水辺の散策スポットとして人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%A5%88%E8%89%AF%E5%85%AC%E5%9C%92%20%E5%A5%88%E8%89%AF%E7%9C%8C%E5%A5%88%E8%89%AF%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>奈良公園</strong></a>― 境内から続く広大な公園で、野生の鹿とふれあいながら散策を楽しめます。

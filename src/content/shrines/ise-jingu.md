@@ -71,7 +71,7 @@ gallery:
 
 ## 周辺のグルメ・観光
 
-- **おかげ横丁**: 内宮前の門前町で、伊勢名物の赤福餅や伊勢うどん、手こね寿司などのグルメやお土産探しが楽しめます。
-- **赤福本店**: 宝永4年（1707年）創業と伝わる老舗で、名物の赤福餅を茶屋で味わえます。
-- **ふくすけ**: おかげ横丁にある伊勢うどんの人気店です。
-- **せんぐう館**: 外宮に隣接する式年遷宮の記念博物館で、社殿の造替技術や神宝についてより詳しく学べます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E3%81%8B%E3%81%92%E6%A8%AA%E4%B8%81%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>おかげ横丁</strong></a>: 内宮前の門前町で、伊勢名物の赤福餅や伊勢うどん、手こね寿司などのグルメやお土産探しが楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E8%B5%A4%E7%A6%8F%E6%9C%AC%E5%BA%97%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>赤福本店</strong></a>: 宝永4年（1707年）創業と伝わる老舗で、名物の赤福餅を茶屋で味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%B5%E3%81%8F%E3%81%99%E3%81%91%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>ふくすけ</strong></a>: おかげ横丁にある伊勢うどんの人気店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%9B%E3%82%93%E3%81%90%E3%81%86%E9%A4%A8%20%E4%B8%89%E9%87%8D%E7%9C%8C%E4%BC%8A%E5%8B%A2%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>せんぐう館</strong></a>: 外宮に隣接する式年遷宮の記念博物館で、社殿の造替技術や神宝についてより詳しく学べます。

@@ -55,6 +55,6 @@ imageCredit:
 
 参道周辺には長五郎餅など、北野天満宮ゆかりの和菓子を扱う老舗が並びます。金閣寺へも比較的近く、あわせて観光する参拝者も多いスポットです。
 
-- **エポケカフェ**: 北野白梅町駅から徒歩約5分、ブランコ席やこたつ席もあるアットホームな雰囲気のカフェ。
-- **北野ラボ**: 境内からほど近い、各地の農家から直接仕入れたフルーツで作るコンフィチュール・シロップの専門店。
-- **Hyde & Away**: 北野白梅町にあるフルーツタルト専門店で、国産フルーツを使ったタルトが人気。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%A8%E3%83%9D%E3%82%B1%E3%82%AB%E3%83%95%E3%82%A7%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>エポケカフェ</strong></a>: 北野白梅町駅から徒歩約5分、ブランコ席やこたつ席もあるアットホームな雰囲気のカフェ。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E9%87%8E%E3%83%A9%E3%83%9C%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>北野ラボ</strong></a>: 境内からほど近い、各地の農家から直接仕入れたフルーツで作るコンフィチュール・シロップの専門店。
+- <a href="https://www.google.com/maps/search/?api=1&query=Hyde%20%26%20Away%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8A%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>Hyde & Away</strong></a>: 北野白梅町にあるフルーツタルト専門店で、国産フルーツを使ったタルトが人気。

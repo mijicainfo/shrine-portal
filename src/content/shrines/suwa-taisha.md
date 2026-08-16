@@ -54,5 +54,5 @@ imageCredit:
 
 諏訪湖周辺には温泉地も広がり、参拝とあわせて日帰り温泉や諏訪湖の景色を楽しむ観光客で賑わいます。上社本宮の参道周辺には、そば処や甘味処などの飲食店が点在し、参拝の合間に立ち寄る参拝者の姿も見られます。
 
-- **金子茶房**：上社本宮のすぐそばにあるカフェ。ハンドドリップのコーヒーやハーブティーが楽しめます。
-- **峠の茶屋**：信州産のそば粉を使った手打ちそばが評判の人気店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E9%87%91%E5%AD%90%E8%8C%B6%E6%88%BF%20%E9%95%B7%E9%87%8E%E7%9C%8C%E8%AB%8F%E8%A8%AA%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>金子茶房</strong></a>：上社本宮のすぐそばにあるカフェ。ハンドドリップのコーヒーやハーブティーが楽しめます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%B3%A0%E3%81%AE%E8%8C%B6%E5%B1%8B%20%E9%95%B7%E9%87%8E%E7%9C%8C%E8%AB%8F%E8%A8%AA%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>峠の茶屋</strong></a>：信州産のそば粉を使った手打ちそばが評判の人気店です。

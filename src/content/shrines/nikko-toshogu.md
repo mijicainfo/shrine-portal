@@ -53,6 +53,6 @@ imageCredit:
 
 隣接する日光二荒山神社・輪王寺とあわせて「二社一寺」と呼ばれ、あわせて参拝・拝観する観光客が多く見られます。日光の街には湯波（ゆば）料理など、ご当地グルメも充実しています。
 
-- **油源**: 150年続く老舗の湯波料理店で、刺身や煮付けなどが楽しめる湯波づくし膳が人気です。
-- **きしの**: 東照宮から徒歩約1分と近く、湯波料理を味わえる食事処を併設しています。
-- **お食事処 栞**: 日光名物の湯葉料理を中心とした御膳が味わえる和食店です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E6%B2%B9%E6%BA%90%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E6%97%A5%E5%85%89%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>油源</strong></a>: 150年続く老舗の湯波料理店で、刺身や煮付けなどが楽しめる湯波づくし膳が人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8D%E3%81%97%E3%81%AE%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E6%97%A5%E5%85%89%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>きしの</strong></a>: 東照宮から徒歩約1分と近く、湯波料理を味わえる食事処を併設しています。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%20%E6%A0%9E%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E6%97%A5%E5%85%89%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>お食事処 栞</strong></a>: 日光名物の湯葉料理を中心とした御膳が味わえる和食店です。

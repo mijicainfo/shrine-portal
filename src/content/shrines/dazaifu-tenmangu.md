@@ -67,6 +67,6 @@ gallery:
 
 ## 周辺のグルメ・観光
 
-- **かさの家**: 大正11年創業、太宰府名物「梅ヶ枝餅」の老舗として知られ、参道の鳥居をくぐってすぐの場所にあります。
-- **スターバックスコーヒー 太宰府天満宮表参道店**: 建築家・隈研吾氏が設計した、木組みの意匠が印象的な店舗で、表参道の名所のひとつです。
-- **九州国立博物館**: 太宰府天満宮に隣接し、アジア諸地域との文化交流の歴史をテーマにした展示を鑑賞できます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%8B%E3%81%95%E3%81%AE%E5%AE%B6%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>かさの家</strong></a>: 大正11年創業、太宰府名物「梅ヶ枝餅」の老舗として知られ、参道の鳥居をくぐってすぐの場所にあります。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%20%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%A4%A9%E6%BA%80%E5%AE%AE%E8%A1%A8%E5%8F%82%E9%81%93%E5%BA%97%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>スターバックスコーヒー 太宰府天満宮表参道店</strong></a>: 建築家・隈研吾氏が設計した、木組みの意匠が印象的な店舗で、表参道の名所のひとつです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E4%B9%9D%E5%B7%9E%E5%9B%BD%E7%AB%8B%E5%8D%9A%E7%89%A9%E9%A4%A8%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%A4%AA%E5%AE%B0%E5%BA%9C%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>九州国立博物館</strong></a>: 太宰府天満宮に隣接し、アジア諸地域との文化交流の歴史をテーマにした展示を鑑賞できます。

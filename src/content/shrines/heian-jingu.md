@@ -54,6 +54,6 @@ imageCredit:
 
 ## 周辺のグルメ・観光
 
-- **京都モダンテラス**: 平安神宮のそばにあるカフェで、フルーツサンドなどが人気です。
-- **岡北（おかきた）**: 岡崎公園近くにあるうどん・そばの店で、だしにこだわった丼ものも味わえます。
-- **京都市京セラ美術館・京都国立近代美術館**: 隣接する岡崎公園内にあり、文化施設をあわせて巡る観光客も多いエリアです。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E3%83%A2%E3%83%80%E3%83%B3%E3%83%86%E3%83%A9%E3%82%B9%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>京都モダンテラス</strong></a>: 平安神宮のそばにあるカフェで、フルーツサンドなどが人気です。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%B2%A1%E5%8C%97%EF%BC%88%E3%81%8A%E3%81%8B%E3%81%8D%E3%81%9F%EF%BC%89%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>岡北（おかきた）</strong></a>: 岡崎公園近くにあるうどん・そばの店で、だしにこだわった丼ものも味わえます。
+- <a href="https://www.google.com/maps/search/?api=1&query=%E4%BA%AC%E9%83%BD%E5%B8%82%E4%BA%AC%E3%82%BB%E3%83%A9%E7%BE%8E%E8%A1%93%E9%A4%A8%E3%83%BB%E4%BA%AC%E9%83%BD%E5%9B%BD%E7%AB%8B%E8%BF%91%E4%BB%A3%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>京都市京セラ美術館・京都国立近代美術館</strong></a>: 隣接する岡崎公園内にあり、文化施設をあわせて巡る観光客も多いエリアです。
