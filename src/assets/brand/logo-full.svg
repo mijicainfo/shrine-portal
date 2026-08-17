@@ -1,7 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 680 680">
 <title>神社 The Pantheon 公式ロゴマーク</title>
 <defs>
-<path id="arcBottom" d="M 200 470 A 192 192 0 0 0 480 470" fill="none"/>
 <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
 <stop offset="0%" stop-color="#f6dd94"/>
 <stop offset="45%" stop-color="#cda233"/>
@@ -23,7 +22,17 @@ M 13.4,-50 A 100,100 0 1,0 -186.6,-50 A 100,100 0 1,0 13.4,-50
 M 186.6,-50 A 100,100 0 1,0 -13.4,-50 A 100,100 0 1,0 186.6,-50
 Z"/>
 </g>
-<text font-family="sans-serif" font-size="26" font-weight="600" letter-spacing="8" fill="#1c3552">
-<textPath href="#arcBottom" startOffset="50%" text-anchor="middle">THE PANTHEON</textPath>
-</text>
+<g font-family="sans-serif" font-size="26" font-weight="600" fill="#1c3552" text-anchor="middle">
+<text transform="translate(221.7,488.7) rotate(38.5)">T</text>
+<text transform="translate(240.7,502.0) rotate(31.5)">H</text>
+<text transform="translate(261.2,512.9) rotate(24.5)">E</text>
+<text transform="translate(305.4,526.8) rotate(10.5)">P</text>
+<text transform="translate(328.4,529.6) rotate(3.5)">A</text>
+<text transform="translate(351.6,529.6) rotate(-3.5)">N</text>
+<text transform="translate(374.6,526.8) rotate(-10.5)">T</text>
+<text transform="translate(397.1,521.2) rotate(-17.5)">H</text>
+<text transform="translate(418.8,512.9) rotate(-24.5)">E</text>
+<text transform="translate(439.3,502.0) rotate(-31.5)">O</text>
+<text transform="translate(458.3,488.7) rotate(-38.5)">N</text>
+</g>
 </svg>
