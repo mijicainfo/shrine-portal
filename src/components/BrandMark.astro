@@ -1,0 +1,32 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<svg viewBox="0 0 680 680" class={className} role="img" aria-label="神社 The Pantheon">
+  <defs>
+    <linearGradient id="brandmark-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6dd94" />
+      <stop offset="45%" stop-color="#cda233" />
+      <stop offset="100%" stop-color="#8a6414" />
+    </linearGradient>
+  </defs>
+  <circle cx="340" cy="340" r="230" fill="#f8f2e4" />
+  <circle cx="340" cy="340" r="230" fill="none" stroke="#1c3552" stroke-width="6" />
+  <circle cx="340" cy="340" r="208" fill="none" stroke="#1c3552" stroke-width="3" />
+  <g transform="translate(340,340) scale(1.05)">
+    <path
+      fill-rule="evenodd"
+      fill="url(#brandmark-gold)"
+      d="
+        M 200,0 A 200,200 0 1,0 -200,0 A 200,200 0 1,0 200,0
+        M 100,100 A 100,100 0 1,0 -100,100 A 100,100 0 1,0 100,100
+        M 13.4,-50 A 100,100 0 1,0 -186.6,-50 A 100,100 0 1,0 13.4,-50
+        M 186.6,-50 A 100,100 0 1,0 -13.4,-50 A 100,100 0 1,0 186.6,-50
+        Z"
+    />
+  </g>
+</svg>
