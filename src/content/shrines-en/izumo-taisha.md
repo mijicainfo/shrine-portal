@@ -39,6 +39,17 @@ gallery:
       author: "Blue Lotus"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Izumo-taisha_121538651_f69f257ed0_o.jpg"
+faq:
+  - question: "Is the worship style different at Izumo Taisha?"
+    answer: "Yes. Instead of the usual \"two bows, two claps, one bow,\" Izumo Taisha uses \"two bows, four claps, one bow.\" Signs on the grounds explain the steps."
+  - question: "When can I get a goshuin?"
+    answer: "The goshuin office is open 8:30–17:00, and the fee is ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, a large free parking lot is available."
+  - question: "What is Kamiarizuki?"
+    answer: "In the 10th lunar month, deities from across Japan are said to gather at Izumo — the only region that calls this month \"Kamiarizuki\" (the month the gods are present) rather than \"Kannazuki.\""
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Izumo-taisha-mae Station on the Ichibata Electric Railway."
 ---
 
 ## History

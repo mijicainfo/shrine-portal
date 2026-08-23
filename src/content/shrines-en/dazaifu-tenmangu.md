@@ -40,6 +40,17 @@ gallery:
       author: "そらみみ"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Romon_of_Dazaifu_Temman_Shrine_20150101.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 6:00–19:00, varying by season."
+  - question: "How can I avoid the crowds?"
+    answer: "The shrine gets especially busy during exam season — an early morning visit is your best bet."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–17:00, for ¥500."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Dazaifu Station on the Nishitetsu Dazaifu Line."
+  - question: "What is the \"rubbing ox\" statue?"
+    answer: "A bronze ox said to serve Michizane-ko — visitors rub the part of the ox corresponding to their own ailment, hoping for healing."
 ---
 
 ## History

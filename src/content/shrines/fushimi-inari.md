@@ -39,6 +39,17 @@ gallery:
       author: "Stanislaus"
       license: "パブリックドメイン"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hushimi-inari-taisha_honden.jpg"
+faq:
+  - question: "千本鳥居はどのくらい歩きますか？"
+    answer: "稲荷山の山頂まで一周するとおよそ2時間かかります。時間がなければ「四ツ辻」までの往復でも十分に鳥居のトンネルを楽しめます。"
+  - question: "参拝時間に制限はありますか？"
+    answer: "境内は終日参拝可能ですが、御朱印などの授与所は8:30〜16:30頃までです。"
+  - question: "アクセス方法は？"
+    answer: "JR奈良線「稲荷駅」から徒歩すぐ、京阪本線「伏見稲荷駅」から徒歩約5分です。"
+  - question: "御朱印の初穂料はいくらですか？"
+    answer: "300円からです。"
+  - question: "どんな靴で行くべきですか？"
+    answer: "稲荷山の山道を歩くことになるため、歩きやすいスニーカーなどがおすすめです。"
 ---
 
 ## 由緒

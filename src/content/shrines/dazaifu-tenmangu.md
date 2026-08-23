@@ -40,6 +40,17 @@ gallery:
       author: "そらみみ"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Romon_of_Dazaifu_Temman_Shrine_20150101.JPG"
+faq:
+  - question: "太宰府天満宮の参拝時間は？"
+    answer: "6:00〜19:00を基本に、季節により変動します。"
+  - question: "混雑を避けるにはどうすればいいですか？"
+    answer: "受験シーズンは特に混み合うため、早朝の参拝がおすすめです。"
+  - question: "御朱印の受付時間は？"
+    answer: "9:00〜17:00頃、初穂料500円です。"
+  - question: "アクセス方法は？"
+    answer: "西鉄太宰府線「太宰府駅」から徒歩約5分です。"
+  - question: "「なで牛」とは何ですか？"
+    answer: "道真公の使いとされる牛の像で、自分の体の悪い部分と同じ場所を撫でると良くなるといわれています。"
 ---
 
 ## 由緒

@@ -39,6 +39,17 @@ gallery:
       author: "Stanislaus"
       license: "Public Domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hushimi-inari-taisha_honden.jpg"
+faq:
+  - question: "How long does it take to walk through the Senbon Torii?"
+    answer: "A full loop to the summit of Inari-san takes about 2 hours. If you're short on time, walking to the Yotsutsuji junction and back is still rewarding."
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open all day, but the amulet office is only open around 8:30–16:30."
+  - question: "How do I get there?"
+    answer: "Right by foot from Inari Station (JR Nara Line), or about 5 minutes from Fushimi-Inari Station (Keihan Main Line)."
+  - question: "How much is the goshuin?"
+    answer: "From ¥300."
+  - question: "What should I wear?"
+    answer: "Comfortable walking shoes are recommended, since parts of the trail climb the mountain."
 ---
 
 ## History

@@ -40,6 +40,17 @@ gallery:
       author: "Fanghong"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tokyo_Meiji_Shrine_Torii.jpg"
+faq:
+  - question: "What are Meiji Jingu's opening hours?"
+    answer: "From sunrise to sunset, which varies by month."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for a fee of ¥500."
+  - question: "How far is it from the station?"
+    answer: "About a 1-minute walk from JR Harajuku Station or Meiji-jingumae Station."
+  - question: "Where is Kiyomasa's Well?"
+    answer: "It's inside the Gyoen garden within the shrine grounds — a spring said to have been dug by Kato Kiyomasa, and a popular \"power spot.\""
+  - question: "Is parking available?"
+    answer: "Paid parking is available nearby."
 ---
 
 ## History

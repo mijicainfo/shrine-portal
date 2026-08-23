@@ -39,6 +39,17 @@ gallery:
       author: "yuki5287"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Motonosumi_Shrine,_Nagato;_March_2017_(21).jpg"
+faq:
+  - question: "Can I reach Motonosumi Jinja by public transport alone?"
+    answer: "It's difficult — it's about a 20-minute taxi ride from Nagato-Furuichi Station, so arriving by car is standard."
+  - question: "What are the visiting hours?"
+    answer: "7:00–16:30 (visitors are asked to leave by 16:30); hours can vary by season and crowds."
+  - question: "How much is parking?"
+    answer: "¥300 for the first hour, then ¥100 per additional hour, capped at ¥500."
+  - question: "What's the best time of day for photos?"
+    answer: "Late morning to around noon, when the light angle suits the torii tunnel best."
+  - question: "Can I get a goshuin here?"
+    answer: "Yes — pre-printed stamps are available from an unstaffed office, with about ¥500 deposited in an offering box."
 ---
 
 ## History

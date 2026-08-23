@@ -40,6 +40,17 @@ gallery:
       author: "Fanghong"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tokyo_Meiji_Shrine_Torii.jpg"
+faq:
+  - question: "明治神宮の参拝時間は？"
+    answer: "日の出から日の入りまでで、月により変動します。"
+  - question: "御朱印はいつもらえますか？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "最寄り駅からどのくらいですか？"
+    answer: "JR原宿駅または地下鉄明治神宮前駅から徒歩約1分です。"
+  - question: "清正井はどこにありますか？"
+    answer: "境内の御苑内にあり、加藤清正が掘ったと伝わるパワースポットとして知られています。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
 ---
 
 ## 由緒

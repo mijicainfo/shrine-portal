@@ -39,6 +39,17 @@ gallery:
       author: "Blue Lotus"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Izumo-taisha_121538651_f69f257ed0_o.jpg"
+faq:
+  - question: "出雲大社の参拝作法は他の神社と違うのですか？"
+    answer: "はい。一般的な「二礼二拍手一礼」とは異なり、出雲大社では「二礼四拍手一礼」で参拝します。境内の案内板にも作法が記載されているので安心です。"
+  - question: "御朱印の受付時間は？"
+    answer: "8:30〜17:00で、初穂料は500円です。"
+  - question: "駐車場はありますか？"
+    answer: "大型の無料駐車場があります。"
+  - question: "「神在月」とは何ですか？"
+    answer: "旧暦10月、全国の神々が出雲に集まるとされる特別な期間で、出雲地方だけこの月を「神在月」と呼びます。"
+  - question: "アクセス方法は？"
+    answer: "一畑電車「出雲大社前駅」から徒歩約5分です。"
 ---
 
 ## 由緒

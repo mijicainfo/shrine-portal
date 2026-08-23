@@ -44,6 +44,17 @@ gallery:
       author: "Site staff"
       license: "Courtesy photo"
       sourceUrl: "https://www.isejingu.or.jp/about/naiku/others.html"
+faq:
+  - question: "What are Ise Jingu's visiting hours?"
+    answer: "The Naiku (Inner Shrine) is generally open 5:00–18:00, though hours vary by season — check the official site for the current schedule."
+  - question: "Where can I get a goshuin (shrine stamp)?"
+    answer: "At the amulet office near the main hall, during visiting hours. It costs from ¥300."
+  - question: "Should I visit the Outer Shrine (Geku) or Inner Shrine (Naiku) first?"
+    answer: "Tradition holds that visitors should pray at Geku before Naiku. If you're visiting both, plan for about 2–3 hours."
+  - question: "Can I take photos at the main sanctuary?"
+    answer: "No — photography is prohibited inside the sacred fence (mikakiuchi) surrounding the main hall. Please pray quietly instead."
+  - question: "Is parking available?"
+    answer: "Yes, several paid parking lots are available nearby."
 ---
 
 ## History
