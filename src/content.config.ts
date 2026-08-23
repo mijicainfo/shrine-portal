@@ -6,6 +6,10 @@ const shrineSchema = ({ image }: { image: () => z.ZodType<any> }) => z.object({
   kana: z.string(),
   prefecture: z.string(),
   city: z.string(),
+  // Overrides `city` in the Booking.com search query only (display text still uses `city`).
+  // Set to "" to fall back to a prefecture-only search when Booking.com's destination
+  // matcher doesn't reliably resolve a small/rural municipality name.
+  bookingCity: z.string().optional(),
   address: z.string(),
   deities: z.array(z.string()),
   benefits: z.array(z.string()).default([]),

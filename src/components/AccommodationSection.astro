@@ -5,13 +5,16 @@ interface Props {
   shrineName: string;
   city: string;
   prefecture: string;
+  bookingCity?: string;
 }
 
-const { shrineName, city, prefecture } = Astro.props;
+const { shrineName, city, prefecture, bookingCity } = Astro.props;
 const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
-const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
+// bookingCityが指定されている場合は、地図表示用のcityではなくこちらを検索に使う
+// （小規模な町村名がBooking.comの地名データベースで正しく認識されない場合の回避策）
+const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
 // Booking.comの目的地検索は、Rakutenのような自由語検索ではなく地名データベースとの
 // 突き合わせに近い挙動で、①「Mie Prefecture」のような「Prefecture」付き表記や
 // 「Fushimi-ku」のような区レベルの地名、②都道府県と市区町村の間にスペースが無い表記
@@ -21,8 +24,8 @@ const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
 // そのため神社名は含めず、都道府県と市区町村をスペースで区切った形のみを使う。
 const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
 const bookingQuery = lang === 'en'
-  ? `${cleanCity}, ${bookingPrefecture}, Japan`
-  : `${prefecture} ${cleanCity}`;
+  ? (cleanCity ? `${cleanCity}, ${bookingPrefecture}, Japan` : `${bookingPrefecture}, Japan`)
+  : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
 const bookingUrl = buildBookingSearchUrl(bookingQuery);
 // 楽天トラベルのキーワード検索は日本語専用で、英語のクエリでは
 // 地名が一致せず常に検索結果0件になるため、英語版では表示しない
