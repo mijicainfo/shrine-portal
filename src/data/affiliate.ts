@@ -15,7 +15,7 @@
  */
 export const affiliateConfig = {
   bookingAid: '', // 例: '000000'
-  rakutenAffiliateId: '', // 例: '0000000.00000000.0000000.00000000'
+  rakutenAffiliateId: '56c886ca.b45eb0da.56c886cb.c7bcc58d',
 };
 
 /**
