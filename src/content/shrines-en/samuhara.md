@@ -55,7 +55,7 @@ Samuhara Shrine sits in the middle of an office district in Osaka's Nishi Ward â
 
 The shrine's history began with the 1935 rebuilding of an old, small shrine that had stood in Okayama Prefecture. In 1950, its spirit was divided and enshrined as a subsidiary shrine of Hokoku Shrine on Nakanoshima in Osaka. Later, when Hokoku Shrine relocated to the grounds of Osaka Castle, Samuhara Shrine was in turn relocated to its present site in Itachibori, Nishi Ward, in 1961, where it remains today.
 
-Word-of-mouth tales of protection from disaster spread over the years, and after the war the shrine grew into one revered nationwide as a guardian against misfortune and danger. In recent years its ring-shaped amulets have become a topic of conversation on social media, drawing worshippers from far and wide.
+A reputation as a guardian against misfortune and danger spread by word of mouth over the years, and after the war the shrine grew into one revered nationwide for that protection. In recent years its ring-shaped amulets have become a topic of conversation on social media, drawing worshippers from far and wide.
 
 ## The Sacred Character "Samuhara"
 
