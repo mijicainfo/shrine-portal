@@ -39,6 +39,17 @@ gallery:
       author: "shankar s."
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Itsukushima_Shrine_Torii_seen_from_the_east_corridor_at_low_tide_-_spring_2019.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:30〜18:00を基本に、季節により変動します。"
+  - question: "御朱印はいただけますか？"
+    answer: "参拝時間内にいただけます。初穂料は300円です。"
+  - question: "宮島には車で行けますか？"
+    answer: "島内は車両の乗り入れが制限されているため、宮島口周辺に駐車し、フェリーで渡るのが基本です。"
+  - question: "大鳥居はいつ見るのがおすすめですか？"
+    answer: "満潮時は海に浮かぶように、干潮時は根元まで歩いて近づけます。参拝前に潮見表を確認しておくと、より楽しめます。"
+  - question: "アクセス方法は？"
+    answer: "JRまたはフェリーで宮島口から宮島へ渡り、桟橋から徒歩約10分です。"
 ---
 
 ## 由緒

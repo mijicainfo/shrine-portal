@@ -32,6 +32,17 @@ imageCredit:
   author: "Daigaku2051"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Hokkaido_Jingu.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜17:00頃を基本に、季節により変動します。"
+  - question: "御朱印はいつもらえますか？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に無料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "地下鉄東西線「円山公園駅」から徒歩約15分です。"
+  - question: "桜の見頃はいつですか？"
+    answer: "例年5月頃、エゾヤマザクラを中心に見頃を迎えます。"
 ---
 
 ## 由緒

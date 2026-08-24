@@ -30,6 +30,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg"
+faq:
+  - question: "How many steps are there to the main shrine?"
+    answer: "785 steps to the main shrine, or 1,368 including the inner shrine — about a 40-minute climb for most adults."
+  - question: "What are the visiting hours?"
+    answer: "Generally 6:00–18:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available near the approach."
+  - question: "How do I get there?"
+    answer: "About a 20-minute walk from JR Kotohira Station or Kotoden Kotohira Station to the main shrine."
 ---
 
 ## History

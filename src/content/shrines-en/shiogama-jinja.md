@@ -30,6 +30,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:211030_Shiogama-jinja_Shiogama_Miyagi_pref_Japan03bs5.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 5:00–18:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available on the grounds."
+  - question: "Is the Omote-zaka stairway difficult?"
+    answer: "It's a steep 202-step staircase. If you're not confident in your stamina, the gentler Higashi-sando approach is a good alternative."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from JR Senseki Line Hon-Shiogama Station."
 ---
 
 ## History

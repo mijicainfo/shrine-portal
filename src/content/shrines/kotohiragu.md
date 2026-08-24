@@ -30,6 +30,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kotohira-gu07n4500.jpg"
+faq:
+  - question: "本宮までどのくらい石段を上りますか？"
+    answer: "本宮までは785段、奥社まで含めると1,368段あります。大人の足で本宮まで40分ほどかかります。"
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00を基本に、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "参道周辺に有料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "JR土讃線「琴平駅」またはことでん「琴電琴平駅」から本宮まで徒歩約20分です。"
 ---
 
 ## 由緒

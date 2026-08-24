@@ -36,6 +36,17 @@ gallery:
       author: "瑞雲"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E3%82%B5%E3%83%A0%E3%83%8F%E3%83%A9%E7%A5%9E%E7%A4%BE%E5%A4%96%E3%81%8B%E3%82%89.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "9:00〜16:30です。時間が限られているため、余裕をもって訪れましょう。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "ありません。公共交通機関のご利用がおすすめです。"
+  - question: "アクセス方法は？"
+    answer: "Osaka Metro中央線「阿波座駅」から徒歩約6分、または長堀鶴見緑地線「西大橋駅」から徒歩約8分です。"
+  - question: "指輪型のお守りはいつでも手に入りますか？"
+    answer: "人気のため入手困難な場合があります。授与状況は時期により変動するので、事前に公式サイトでのご確認をおすすめします。"
 ---
 
 ## 由緒

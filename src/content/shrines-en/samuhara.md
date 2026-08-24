@@ -36,6 +36,17 @@ gallery:
       author: "瑞雲"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E3%82%B5%E3%83%A0%E3%83%8F%E3%83%A9%E7%A5%9E%E7%A4%BE%E5%A4%96%E3%81%8B%E3%82%89.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "9:00–16:30 — since the window is limited, plan your visit with some margin."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–16:30, for ¥300."
+  - question: "Is there parking?"
+    answer: "No parking is available — public transport is recommended."
+  - question: "How do I get there?"
+    answer: "About a 6-minute walk from Awaza Station (Osaka Metro Chuo Line), or about 8 minutes from Nishi-Ohashi Station (Nagahori Tsurumi-ryokuchi Line)."
+  - question: "Can I always get the ring-shaped charm?"
+    answer: "It's popular and can be hard to find in stock — availability varies, so check the official site before visiting."
 ---
 
 ## History

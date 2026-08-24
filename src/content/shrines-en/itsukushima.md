@@ -39,6 +39,17 @@ gallery:
       author: "shankar s."
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Itsukushima_Shrine_Torii_seen_from_the_east_corridor_at_low_tide_-_spring_2019.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 6:30–18:00, varying by season."
+  - question: "Can I get a goshuin?"
+    answer: "Yes, during visiting hours, for ¥300."
+  - question: "Can I drive to Miyajima?"
+    answer: "Vehicle access to the island itself is restricted — park near Miyajimaguchi and take the ferry across."
+  - question: "When's the best time to see the Great Torii?"
+    answer: "At high tide it appears to float on the sea; at low tide you can walk right up to its base. Check a tide table before you go."
+  - question: "How do I get there?"
+    answer: "Take JR or a ferry from Miyajimaguchi to Miyajima, then about a 10-minute walk from the pier."
 ---
 
 ## History

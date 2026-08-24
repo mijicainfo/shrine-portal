@@ -30,6 +30,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:211030_Shiogama-jinja_Shiogama_Miyagi_pref_Japan03bs5.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "5:00〜18:00を基本に、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に無料駐車場があります。"
+  - question: "表坂の石段はきついですか？"
+    answer: "202段の急な石段です。体力に自信がない方は、緩やかな東参道の利用がおすすめです。"
+  - question: "アクセス方法は？"
+    answer: "JR仙石線「本塩釜駅」から徒歩約15分です。"
 ---
 
 ## 由緒

@@ -30,6 +30,17 @@ imageCredit:
   author: "そらみみ"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kurehashi_Bridge_and_torii_of_Usa_Shrine.JPG"
+faq:
+  - question: "参拝作法に特徴はありますか？"
+    answer: "出雲大社と同じ「二礼四拍手一礼」で参拝します。"
+  - question: "参拝時間は？"
+    answer: "5:30〜21:00ですが、授与所の時間はこれと異なり、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内周辺に無料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "JR日豊本線「宇佐駅」からバス約10分です。"
 ---
 
 ## 由緒

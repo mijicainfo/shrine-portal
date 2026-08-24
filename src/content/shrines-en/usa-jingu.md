@@ -30,6 +30,17 @@ imageCredit:
   author: "そらみみ"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kurehashi_Bridge_and_torii_of_Usa_Shrine.JPG"
+faq:
+  - question: "Is the worship style different here?"
+    answer: "Yes — like Izumo Taisha, Usa Jingu uses \"two bows, four claps, one bow.\""
+  - question: "What are the visiting hours?"
+    answer: "5:30–21:00, though the amulet office keeps different hours that vary by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available near the grounds."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus ride from JR Usa Station on the Nippo Main Line."
 ---
 
 ## History

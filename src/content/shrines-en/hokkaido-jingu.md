@@ -32,6 +32,17 @@ imageCredit:
   author: "Daigaku2051"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Hokkaido_Jingu.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Around 6:00–17:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available on the grounds."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from Maruyama-koen Station on the subway Tozai Line."
+  - question: "When's the best time to visit for cherry blossoms?"
+    answer: "Around May, when the Ezo-yamazakura cherry trees on the grounds come into full bloom."
 ---
 
 ## History
