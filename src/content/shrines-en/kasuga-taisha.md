@@ -32,6 +32,17 @@ imageCredit:
   author: "Dariusz Jemielniak"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kasuga_Grand_Shrine.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00–18:00 (6:30–17:00 from October to March)."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "When can I see the Mantoro lantern lighting?"
+    answer: "Three times a year — during Setsubun and on August 14–15 — when every lantern on the grounds is lit."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus ride from Kintetsu Nara Station to the \"Kasuga Taisha Honden\" stop, or about a 25-minute walk."
 ---
 
 ## History

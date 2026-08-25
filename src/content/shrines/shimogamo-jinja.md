@@ -30,6 +30,17 @@ imageCredit:
   author: "Mikel Lizarralde"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Shimogamo_Shrine;_August_2008_(01).jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:30〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "糺の森はどのくらいの広さですか？"
+    answer: "約12万平方メートル、東京ドーム約3個分の原生林が境内を包んでいます。"
+  - question: "アクセス方法は？"
+    answer: "叡山電鉄「出町柳駅」から徒歩約11分、京阪鴨東線「出町柳駅」から徒歩約13分です。"
 ---
 
 ## 由緒

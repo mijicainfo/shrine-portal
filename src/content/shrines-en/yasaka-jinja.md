@@ -30,6 +30,17 @@ imageCredit:
   author: "Domenico Convertini"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Yasaka-Jinja_Shrine,_Kyoto,_Japan_(48923326768).jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open around the clock, but the amulet office keeps hours of 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "What is the Gion Matsuri?"
+    answer: "A month-long festival held throughout July with over a thousand years of history — on July 17, portable shrines process through the parish alongside the float procession."
+  - question: "How do I get there?"
+    answer: "Get off at the \"Gion\" city bus stop, or about a 5-minute walk from Keihan Gion-Shijo Station."
 ---
 
 ## History

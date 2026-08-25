@@ -29,6 +29,17 @@ imageCredit:
   author: "Outside147"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:TanzanJinja.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "8:30–16:30 (last admission 16:00)."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "What is the wooden thirteen-story pagoda?"
+    answer: "It's the only surviving wooden thirteen-story pagoda in the world, and the shrine's signature landmark."
+  - question: "How do I get there?"
+    answer: "About a 25-minute bus ride from Kintetsu/JR Sakurai Station, getting off at the \"Tanzan Jinja\" stop."
 ---
 
 ## History

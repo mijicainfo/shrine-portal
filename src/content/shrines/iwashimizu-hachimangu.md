@@ -30,6 +30,17 @@ imageCredit:
   author: "KENPEI"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwashimizu_Hachimangu4.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00、授与所は9:00〜16:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "山麓に有料駐車場があります。"
+  - question: "男山山上へはどう行きますか？"
+    answer: "参道ケーブル（ケーブルカー）を利用すると便利で、「八幡宮山上駅」下車すぐです。徒歩での登拝路もあります。"
+  - question: "アクセス方法は？"
+    answer: "石清水八幡宮参道ケーブル「八幡宮山上駅」下車すぐです。"
 ---
 
 ## 由緒

@@ -41,6 +41,17 @@ gallery:
       author: "江戸村のとくぞう"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Fujisan_Hong%C5%AB_Sengen_Taisha_20220724e.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "5:00–20:00 (6:00–19:00 from November to February)."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, dedicated paid visitor parking is available."
+  - question: "Is the Okumiya at the summit of Mt. Fuji part of the same shrine?"
+    answer: "Yes — everything above the 8th station of Mt. Fuji is part of this shrine's grounds, with the Okumiya (inner shrine) enshrined at the summit."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from Fujinomiya Station on the JR Minobu Line."
 ---
 
 ## History

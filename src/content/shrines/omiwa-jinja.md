@@ -29,6 +29,17 @@ imageCredit:
   author: "Saigen Jiro"
   license: "パブリックドメイン"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Omiwa-jinja_ootorii.JPG"
+faq:
+  - question: "なぜ本殿がないのですか？"
+    answer: "三輪山そのものをご神体としているため、本殿を持たず、拝殿奥の三ツ鳥居を通して直接三輪山を拝む古代の神まつりの形を伝えています。"
+  - question: "参拝時間は？"
+    answer: "6:30〜19:00、社務所は9:00〜16:00頃です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に無料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "JR桜井線「三輪駅」から徒歩約5分です。"
 ---
 
 ## 由緒

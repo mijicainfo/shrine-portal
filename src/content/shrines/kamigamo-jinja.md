@@ -28,6 +28,17 @@ imageCredit:
   author: "mrhayata"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyoto_Kamigamo_Shrine.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "5:30〜17:00（特別参拝は10:00〜16:00）です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "下鴨神社との違いは？"
+    answer: "上賀茂神社と下鴨神社はあわせて「賀茂社」と呼ばれ、どちらも賀茂氏の氏神を祀る神社です。両社を巡る参拝者も多くいます。"
+  - question: "アクセス方法は？"
+    answer: "市バス「上賀茂神社前」下車すぐです。"
 ---
 
 ## 由緒

@@ -29,6 +29,17 @@ imageCredit:
   author: "Tomomarusan"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Honden_Kitano-tenmangu-shrine.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "5:00–18:00 (5:30–17:30 October to March; shrine office 9:00–17:00)."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "What is the Tenjin-ichi market?"
+    answer: "A market held on the 25th of every month, marking Michizane's birth and death dates and filled with stalls — the \"Hatsu Tenjin\" market on January 25 is especially busy."
+  - question: "How do I get there?"
+    answer: "Get off right outside the \"Kitano Tenmangu-mae\" city bus stop, or about a 5-minute walk from Kitano-Hakubaicho Station on the Keifuku Electric Railroad."
 ---
 
 ## History

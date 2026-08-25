@@ -41,6 +41,17 @@ gallery:
       author: "江戸村のとくぞう"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Fujisan_Hong%C5%AB_Sengen_Taisha_20220724e.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "5:00〜20:00（11月〜2月は6:00〜19:00）です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "参拝者専用の有料駐車場があります。"
+  - question: "富士山頂の奥宮も同じ神社ですか？"
+    answer: "はい。富士山八合目より上は当社の境内地で、山頂には奥宮が鎮座しています。"
+  - question: "アクセス方法は？"
+    answer: "JR身延線「富士宮駅」から徒歩約10分です。"
 ---
 
 ## 由緒

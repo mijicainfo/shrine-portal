@@ -30,6 +30,17 @@ imageCredit:
   author: "Hirayuki1886"
   license: "パブリックドメイン"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Heian_Shrine_Torii_Gate.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00（季節により変動、授与所7:30〜17:00）です。"
+  - question: "御朱印は？"
+    answer: "7:30〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "神苑は別料金ですか？"
+    answer: "本殿の参拝は無料ですが、池泉回遊式庭園「神苑」の拝観には別途料金が必要です。詳細は公式サイトでご確認ください。"
+  - question: "アクセス方法は？"
+    answer: "市バス「岡崎公園 美術館・平安神宮前」下車徒歩約5分、地下鉄東西線「東山駅」下車徒歩約10分です。"
 ---
 
 ## 由緒

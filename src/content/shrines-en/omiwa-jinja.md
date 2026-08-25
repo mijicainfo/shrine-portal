@@ -29,6 +29,17 @@ imageCredit:
   author: "Saigen Jiro"
   license: "Public Domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Omiwa-jinja_ootorii.JPG"
+faq:
+  - question: "Why doesn't the shrine have a main hall?"
+    answer: "Mount Miwa itself is worshipped as the shrine's sacred body, so there's no main hall — visitors pray directly toward the mountain through the triple torii behind the worship hall, preserving an ancient form of Shinto worship."
+  - question: "What are the visiting hours?"
+    answer: "6:30–19:00; the shrine office is open around 9:00–16:00."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available nearby."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Miwa Station on the JR Sakurai Line."
 ---
 
 ## History

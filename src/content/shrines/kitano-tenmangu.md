@@ -29,6 +29,17 @@ imageCredit:
   author: "Tomomarusan"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Honden_Kitano-tenmangu-shrine.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "5:00〜18:00（10月〜3月は5:30〜17:30、社務所9:00〜17:00）です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "天神市とは何ですか？"
+    answer: "道真公の誕生日・命日にちなみ毎月25日に開かれる縁日で、多くの露店で賑わいます。特に1月25日の「初天神」は多くの人で賑わいます。"
+  - question: "アクセス方法は？"
+    answer: "市バス「北野天満宮前」下車すぐ、または京福電鉄「北野白梅町駅」から徒歩約5分です。"
 ---
 
 ## 由緒

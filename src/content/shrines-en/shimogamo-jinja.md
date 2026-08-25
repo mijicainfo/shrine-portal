@@ -30,6 +30,17 @@ imageCredit:
   author: "Mikel Lizarralde"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Shimogamo_Shrine;_August_2008_(01).jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "How large is the Tadasu no Mori forest?"
+    answer: "About 120,000 square meters of primeval forest — roughly three Tokyo Domes — surrounding the shrine."
+  - question: "How do I get there?"
+    answer: "About an 11-minute walk from Demachiyanagi Station on the Eizan Electric Railway, or about 13 minutes from Demachiyanagi Station on the Keihan Main Line."
 ---
 
 ## History

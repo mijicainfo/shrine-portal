@@ -32,6 +32,17 @@ imageCredit:
   author: "Dariusz Jemielniak"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kasuga_Grand_Shrine.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00（10月〜3月は6:30〜17:00）です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "万灯籠はいつ見られますか？"
+    answer: "節分と8月14・15日の年3回、境内すべての灯籠に火が灯されます。"
+  - question: "アクセス方法は？"
+    answer: "近鉄「奈良駅」からバス約10分「春日大社本殿」下車すぐ、または徒歩約25分です。"
 ---
 
 ## 由緒

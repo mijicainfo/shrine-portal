@@ -30,6 +30,17 @@ imageCredit:
   author: "KENPEI"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwashimizu_Hachimangu4.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00–18:00; the amulet office is open 9:00–16:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available at the foot of the mountain."
+  - question: "How do I get up to the summit of Otokoyama?"
+    answer: "The funicular cable railway is the easiest way — get off right at Hachimangu-sanjo Station. A walking trail up the mountain is also available."
+  - question: "How do I get there?"
+    answer: "Get off right outside Hachimangu-sanjo Station on the Iwashimizu Hachimangu Sandō Cable."
 ---
 
 ## History

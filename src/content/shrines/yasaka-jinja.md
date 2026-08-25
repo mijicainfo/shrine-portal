@@ -30,6 +30,17 @@ imageCredit:
   author: "Domenico Convertini"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Yasaka-Jinja_Shrine,_Kyoto,_Japan_(48923326768).jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、授与所は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "祇園祭とはどんな祭りですか？"
+    answer: "7月の1か月間にわたって行われる八坂神社の祭礼で、千百年以上の歴史を持つとされ、7月17日には山鉾巡行にあわせて神輿が氏子区域を巡行します。"
+  - question: "アクセス方法は？"
+    answer: "市バス「祇園」下車すぐ、または京阪「祇園四条駅」から徒歩約5分です。"
 ---
 
 ## 由緒

@@ -28,6 +28,17 @@ imageCredit:
   author: "mrhayata"
   license: "CC BY-SA 2.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyoto_Kamigamo_Shrine.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "5:30–17:00 (special viewing 10:00–16:00)."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "How does this differ from Shimogamo Jinja?"
+    answer: "Kamigamo Jinja and Shimogamo Jinja are together known as the \"Kamo shrines,\" both venerating deities of the Kamo clan — many visitors pair a visit to both."
+  - question: "How do I get there?"
+    answer: "Get off right outside the \"Kamigamo-jinja-mae\" city bus stop."
 ---
 
 ## History

@@ -29,6 +29,17 @@ imageCredit:
   author: "Outside147"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:TanzanJinja.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "8:30〜16:30（最終受付16:00）です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "木造十三重塔はどんな建物ですか？"
+    answer: "現存する木造の十三重塔としては世界で唯一のもので、談山神社を象徴する建造物です。"
+  - question: "アクセス方法は？"
+    answer: "近鉄・JR「桜井駅」からバス約25分「談山神社」下車すぐです。"
 ---
 
 ## 由緒

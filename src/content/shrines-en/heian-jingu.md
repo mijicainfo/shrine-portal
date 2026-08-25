@@ -30,6 +30,17 @@ imageCredit:
   author: "Hirayuki1886"
   license: "Public Domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Heian_Shrine_Torii_Gate.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00–18:00 (varies by season; amulet office 7:30–17:00)."
+  - question: "When is the goshuin office open?"
+    answer: "7:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "Is the garden a separate admission?"
+    answer: "Visiting the main shrine is free, but the Shin'en strolling garden requires an admission fee — check the official site for current details."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from the Okazaki Koen Bijutsukan/Heian Jingu-mae city bus stop, or about a 10-minute walk from Higashiyama Station on the subway Tozai Line."
 ---
 
 ## History
