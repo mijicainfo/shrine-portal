@@ -12,10 +12,14 @@
  * - 楽天アフィリエイト:
  *   https://affiliate.rakuten.co.jp/
  *   （登録・承認後に発行される「アフィリエイトID」をrakutenAffiliateIdに設定）
+ * - Klook アフィリエイトプログラム:
+ *   https://affiliate.klook.com/
+ *   （登録・承認後に発行される「aid」をklookAffiliateIdに設定）
  */
 export const affiliateConfig = {
   bookingAid: '', // 例: '000000'
   rakutenAffiliateId: '56c886ca.b45eb0da.56c886cb.c7bcc58d',
+  klookAffiliateId: '132325',
 };
 
 /**
@@ -41,6 +45,21 @@ export function buildRakutenSearchUrl(query: string): string {
   if (affiliateConfig.rakutenAffiliateId) {
     const wrapped = new URLSearchParams({ pc: targetUrl, m: targetUrl });
     return `https://hb.afl.rakuten.co.jp/hgc/${affiliateConfig.rakutenAffiliateId}/?${wrapped.toString()}`;
+  }
+  return targetUrl;
+}
+
+/**
+ * Klookの検索結果ページURLを生成します。
+ * klookAffiliateIdが設定されている場合は、アフィリエイトのリダイレクト経由になります。
+ */
+export function buildKlookSearchUrl(query: string, lang: 'ja' | 'en'): string {
+  const klookLocale = lang === 'en' ? 'en-US' : 'ja';
+  const targetUrl = `https://www.klook.com/${klookLocale}/search/result/?query=${encodeURIComponent(query)}`;
+
+  if (affiliateConfig.klookAffiliateId) {
+    const params = new URLSearchParams({ aid: affiliateConfig.klookAffiliateId, k_site: targetUrl });
+    return `https://affiliate.klook.com/redirect?${params.toString()}`;
   }
   return targetUrl;
 }

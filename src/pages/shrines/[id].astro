@@ -4,6 +4,7 @@ import ToriiArt from '../../components/ToriiArt.astro';
 import PhotoGallery from '../../components/PhotoGallery.astro';
 import GoogleMap from '../../components/GoogleMap.astro';
 import AccommodationSection from '../../components/AccommodationSection.astro';
+import ActivitiesSection from '../../components/ActivitiesSection.astro';
 import TwitterTimeline from '../../components/TwitterTimeline.astro';
 import FavoriteButton from '../../components/FavoriteButton.astro';
 import VisitedButton from '../../components/VisitedButton.astro';
@@ -178,6 +179,10 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
 
       <div class="mt-6">
         <AccommodationSection shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} />
+      </div>
+
+      <div class="mt-6">
+        <ActivitiesSection city={data.city} prefecture={data.prefecture} />
       </div>
 
       {data.goshuin && (
