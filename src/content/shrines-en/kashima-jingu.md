@@ -29,6 +29,17 @@ imageCredit:
   author: "Kiku-zou"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kashima-jingu_romon_gate.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open all day, but the amulet office is open 8:30–16:30."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "What is the \"Togoku Sansha Mairi\"?"
+    answer: "A traditional pilgrimage visiting Kashima Jingu, Katori Jingu, and Ikisu Jinja together, which spread among ordinary people from the Edo period onward."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from Kashima-jingu Station on the JR Kashima Line."
 ---
 
 ## History

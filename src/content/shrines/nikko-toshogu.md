@@ -28,6 +28,17 @@ imageCredit:
   author: "Koichi Sato"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Nikko_toshogu_shrine.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "9:00〜17:00（11月〜3月は9:00〜16:00）です。"
+  - question: "拝観にはどのくらい時間がかかりますか？"
+    answer: "見どころが多いため、1〜2時間ほど見ておくのがおすすめです。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "東武またはJR「日光駅」からバス約7分「表参道」下車徒歩約10分です。"
 ---
 
 ## 由緒

@@ -29,6 +29,17 @@ imageCredit:
   author: "Gnsin"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Atsuta_Shrine_01.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open all day; the Treasure Hall is open 9:00–16:30."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (gates close at 17:00)."
+  - question: "What is the Nobunaga Wall?"
+    answer: "An earthen wall said to have been donated by Oda Nobunaga in thanks for his victory at the Battle of Okehazama — one of Japan's \"three great earthen walls.\""
+  - question: "How do I get there?"
+    answer: "About a 3-minute walk from Meitetsu Jingu-mae Station, or about a 7-minute walk from Atsuta-jingu-Denmacho Station on the subway."
 ---
 
 ## History

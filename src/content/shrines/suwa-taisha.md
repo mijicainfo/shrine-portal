@@ -28,6 +28,17 @@ imageCredit:
   author: "Pat457"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:諏訪大社上社本宮_拝殿・拝所_-_Suwa_Taisha_Honmiya.jpg"
+faq:
+  - question: "諏訪大社にはいくつ宮がありますか？"
+    answer: "諏訪湖を挟んで上社（本宮・前宮）と下社（春宮・秋宮）の4つの宮があります。ここに掲載のアクセス情報は上社本宮のものです。"
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、社務所の時間は宮により異なります。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に無料駐車場があります。"
+  - question: "アクセス方法は？"
+    answer: "JR「上諏訪駅」からバスまたはタクシーで約15分（上社本宮）です。"
 ---
 
 ## 由緒

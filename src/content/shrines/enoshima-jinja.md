@@ -31,6 +31,17 @@ imageCredit:
   author: "Aimaimyi"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Enoshimajinja_-05.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "8:30〜17:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00、初穂料は3宮それぞれ300円です。"
+  - question: "駐車場はありますか？"
+    answer: "江の島島内に有料駐車場があります。"
+  - question: "島内の移動は大変ですか？"
+    answer: "起伏があるため、歩きやすい靴がおすすめです。有料の屋外エスカレーター「エスカー」を使えば坂道を避けられます。"
+  - question: "アクセス方法は？"
+    answer: "小田急「片瀬江ノ島駅」から徒歩約15分、江ノ電「江ノ島駅」から徒歩約20分です。"
 ---
 
 ## 由緒

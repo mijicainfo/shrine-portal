@@ -28,6 +28,17 @@ imageCredit:
   author: "Koichi Sato"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Nikko_toshogu_shrine.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "9:00–17:00 (9:00–16:00 from November to March)."
+  - question: "How long should I plan for a visit?"
+    answer: "With so much to see, 1–2 hours is recommended."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "How do I get there?"
+    answer: "About a 7-minute bus ride from Tobu or JR Nikko Station to the \"Omotesando\" stop, then about a 10-minute walk."
 ---
 
 ## History

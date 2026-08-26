@@ -27,6 +27,17 @@ imageCredit:
   author: "Leonard V Carlson"
   license: "Public Domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Yasukuni_1st_Torii_20050201.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 6:00–18:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "Is it known for cherry blossoms?"
+    answer: "Yes — the grounds include the Japan Meteorological Agency's official cherry blossom reference tree for Tokyo."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Kudanshita Station (subway)."
 ---
 
 ## History

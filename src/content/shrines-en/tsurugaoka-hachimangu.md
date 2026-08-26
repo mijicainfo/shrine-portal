@@ -30,6 +30,17 @@ imageCredit:
   author: "Ocdp"
   license: "Public Domain"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 6:00–20:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "What is Dankazura?"
+    answer: "A cherry-tree-lined approach along Wakamiya Oji, said to be the first horse-racing track ever built in Japan."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from JR/Enoden Kamakura Station."
 ---
 
 ## History

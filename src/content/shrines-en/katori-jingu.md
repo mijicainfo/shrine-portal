@@ -28,6 +28,17 @@ imageCredit:
   author: "Katorisi"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Autumn_colors,katori-jingu-shrine,katori-city,japan.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open all day, but the amulet office is open around 8:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "How is this related to Kashima Jingu's kaname-ishi stone?"
+    answer: "Katori Jingu's kaname-ishi is said to form a pair with Kashima Jingu's, together holding down the catfish believed to cause earthquakes."
+  - question: "How do I get there?"
+    answer: "About a 15-minute bus ride from JR Sawara Station to \"Katori Jingu,\" then about a 1-minute walk."
 ---
 
 ## History

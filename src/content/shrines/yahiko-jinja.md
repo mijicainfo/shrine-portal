@@ -28,6 +28,17 @@ imageCredit:
   author: "Kakidai"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Iyahiko-jinja_1.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "8:30〜16:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に無料駐車場があります。"
+  - question: "参拝作法に特徴はありますか？"
+    answer: "全国でも珍しい「二礼四拍手一礼」で参拝します。"
+  - question: "アクセス方法は？"
+    answer: "JR弥彦線「弥彦駅」から徒歩約10分です。"
 ---
 
 ## 由緒

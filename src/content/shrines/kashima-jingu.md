@@ -29,6 +29,17 @@ imageCredit:
   author: "Kiku-zou"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kashima-jingu_romon_gate.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、授与所は8:30〜16:30です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "「東国三社詣」とは何ですか？"
+    answer: "鹿島神宮・香取神宮・息栖神社の3社を巡る古くからの参拝習わしで、江戸時代から庶民の間に広まりました。"
+  - question: "アクセス方法は？"
+    answer: "JR鹿島線「鹿島神宮駅」から徒歩約10分です。"
 ---
 
 ## 由緒

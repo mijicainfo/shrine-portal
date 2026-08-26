@@ -30,6 +30,17 @@ imageCredit:
   author: "Mytho88"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Hikawa-jinja_Omiya_Saitama_01.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Generally 5:00–18:00, varying by season."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available nearby."
+  - question: "How long is the approach to the shrine?"
+    answer: "The path from the third torii to the shrine grounds runs about 2 kilometers — one of the longest shrine approaches in Japan."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from Tobu Noda Line Omiya-koen Station, or about a 20-minute walk from the East Exit of JR Omiya Station."
 ---
 
 ## History

@@ -31,6 +31,17 @@ imageCredit:
   author: "Aimaimyi"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Enoshimajinja_-05.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "8:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–17:00, ¥300 for each of the three shrines."
+  - question: "Is there parking?"
+    answer: "Yes, paid parking is available on Enoshima island."
+  - question: "Is it hard to get around the island?"
+    answer: "The terrain has some steep sections, so comfortable shoes are recommended. The paid outdoor \"Escar\" escalators let you skip the hills."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from Katase-Enoshima Station (Odakyu Line), or about a 20-minute walk from Enoshima Station (Enoden Line)."
 ---
 
 ## History

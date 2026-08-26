@@ -27,6 +27,17 @@ imageCredit:
   author: "Leonard V Carlson"
   license: "パブリックドメイン"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Yasukuni_1st_Torii_20050201.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00を基本に、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "桜の名所として知られていますか？"
+    answer: "はい。境内には気象庁の東京の桜の開花基準木があり、桜の名所としても知られています。"
+  - question: "アクセス方法は？"
+    answer: "地下鉄「九段下駅」から徒歩約5分です。"
 ---
 
 ## 由緒

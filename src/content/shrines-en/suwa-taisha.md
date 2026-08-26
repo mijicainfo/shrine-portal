@@ -28,6 +28,17 @@ imageCredit:
   author: "Pat457"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:諏訪大社上社本宮_拝殿・拝所_-_Suwa_Taisha_Honmiya.jpg"
+faq:
+  - question: "How many shrines make up Suwa Taisha?"
+    answer: "Four, split across the two shores of Lake Suwa: Kamisha (Hongu and Maemiya) and Shimosha (Harumiya and Akimiya). The access details listed here are for Kamisha Hongu."
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open around the clock, though shrine office hours vary by which of the four shrines you visit."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available nearby."
+  - question: "How do I get there?"
+    answer: "About a 15-minute bus or taxi ride from JR Kami-Suwa Station (to Kamisha Hongu)."
 ---
 
 ## History

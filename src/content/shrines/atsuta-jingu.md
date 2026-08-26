@@ -29,6 +29,17 @@ imageCredit:
   author: "Gnsin"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Atsuta_Shrine_01.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、宝物館は9:00〜16:30です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（17:00閉門）。"
+  - question: "信長塀とは何ですか？"
+    answer: "桶狭間の戦いの勝利に感謝して織田信長が奉納したと伝わる築地塀で、「日本三大土塀」のひとつに数えられます。"
+  - question: "アクセス方法は？"
+    answer: "名鉄「神宮前駅」から徒歩約3分、地下鉄「熱田神宮伝馬町駅」から徒歩約7分です。"
 ---
 
 ## 由緒

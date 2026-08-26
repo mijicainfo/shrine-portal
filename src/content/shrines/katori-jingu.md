@@ -28,6 +28,17 @@ imageCredit:
   author: "Katorisi"
   license: "CC BY 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Autumn_colors,katori-jingu-shrine,katori-city,japan.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、授与所は8:30〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "鹿島神宮の要石との関係は？"
+    answer: "香取神宮の要石は、鹿島神宮の要石と対をなすとされ、地震を鎮める伝説が残っています。"
+  - question: "アクセス方法は？"
+    answer: "JR「佐原駅」からバス約15分「香取神宮」下車徒歩約1分です。"
 ---
 
 ## 由緒

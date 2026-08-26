@@ -28,6 +28,17 @@ imageCredit:
   author: "Kakidai"
   license: "CC BY-SA 4.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Iyahiko-jinja_1.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "8:30–16:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available nearby."
+  - question: "Is the worship style different here?"
+    answer: "Yes — Yahiko Jinja uses the unusual \"two bows, four claps, one bow,\" rarely seen elsewhere in Japan."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from JR Yahiko Line Yahiko Station."
 ---
 
 ## History

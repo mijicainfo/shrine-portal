@@ -30,6 +30,17 @@ imageCredit:
   author: "Ocdp"
   license: "パブリックドメイン"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜20:00を基本に、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "段葛（だんかずら）とは何ですか？"
+    answer: "若宮大路に続く桜並木の参道で、日本で最初に造られた馬場跡と伝わります。"
+  - question: "アクセス方法は？"
+    answer: "JR・江ノ電「鎌倉駅」から徒歩約10分です。"
 ---
 
 ## 由緒

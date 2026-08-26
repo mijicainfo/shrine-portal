@@ -30,6 +30,17 @@ imageCredit:
   author: "Mytho88"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Hikawa-jinja_Omiya_Saitama_01.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "5:00〜18:00を基本に、季節により変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に有料駐車場があります。"
+  - question: "参道はどのくらいの長さですか？"
+    answer: "三の鳥居から境内まで続く参道は約2キロメートルにおよび、日本でも有数の長さです。"
+  - question: "アクセス方法は？"
+    answer: "東武野田線「大宮公園駅」から徒歩約15分、JR「大宮駅」東口から徒歩約20分です。"
 ---
 
 ## 由緒
