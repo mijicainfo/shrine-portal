@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%C5%8Cyamazumi-jinja_houkyou-into.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The gate opens around sunrise and closes at 17:00; the shrine office and goshuin desk are open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available."
+  - question: "What's notable about the treasure hall?"
+    answer: "It holds roughly 40% of all nationally designated National Treasure and Important Cultural Property armor in Japan, including 8 National Treasures among its 85 designated items (separate admission fee applies)."
+  - question: "How do I get there?"
+    answer: "About a 10-minute drive from the Omishima IC on the Shimanami Kaido, or get off at the Oyamazumi-jinja-mae island bus stop."
 ---
 
 ## History

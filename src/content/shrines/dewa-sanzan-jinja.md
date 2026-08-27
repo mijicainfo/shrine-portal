@@ -40,6 +40,17 @@ gallery:
       author: "Mimissu"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Haguro_pagoda.jpg"
+faq:
+  - question: "山頂まではどのくらいかかりますか？"
+    answer: "随神門から徒歩で約50分、2446段の石段を登ります。羽黒山有料道路を使えば車で約10分です。"
+  - question: "御朱印は？"
+    answer: "山頂参集殿・随神門授与所で8:30〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "羽黒山有料道路（普通車400円）を利用して山頂駐車場へ。随神門周辺にも駐車場があります。"
+  - question: "冬季でも参拝できますか？"
+    answer: "積雪が多いため、訪れる際は事前に道路状況や参集殿の開所状況を確認しておくと安心です。"
+  - question: "アクセス方法は？"
+    answer: "JR羽越本線「鶴岡駅」からバスで約40分「随神門」下車です。"
 ---
 
 ## 由緒

@@ -36,6 +36,17 @@ gallery:
       author: "inunami"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Fujiyoshida_20190126144046_(48314933441).jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open year-round, free to enter; the shrine office is open roughly 9:00–16:00."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:00; ¥300 each for the three available types (the main shrine, Suwa Jinja, and Otsukayama)."
+  - question: "Is there parking?"
+    answer: "Yes, there are seven to eight free parking areas around the grounds (about 140 car spaces)."
+  - question: "How long should I plan for a visit?"
+    answer: "Taking in the great torii and the inner shrine as well takes about an hour."
+  - question: "How do I get there?"
+    answer: "About a 5-minute bus ride from Fujisan Station on the Fujikyu Railway to the \"Sengen-jinja-mae\" stop, then about a 1-minute walk."
 ---
 
 ## History

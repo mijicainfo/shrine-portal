@@ -36,6 +36,17 @@ gallery:
       author: "Rickard Törnblad (Rt26)"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Naminoue_Shrine,_Naha,_Okinawa,_Japan_-_October_2015.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝自由ですが、社務所は9:00〜16:30です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（約20台、混雑時は近隣の有料駐車場をご利用ください）。"
+  - question: "どんな立地にありますか？"
+    answer: "那覇の海に面した断崖の上に鎮座し、眼下に波之上ビーチを一望できる、琉球八社で最も格式高い神社です。"
+  - question: "アクセス方法は？"
+    answer: "ゆいレール「旭橋駅」から徒歩約15〜20分です。"
 ---
 
 ## 由緒

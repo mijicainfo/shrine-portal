@@ -35,6 +35,17 @@ gallery:
       author: "go.biwako"
       license: "CC BY-SA 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Torii_of_Hiyoshi_Shrine,_Sakamoto,_Otsu_-_Nov_27,_2010.jpg"
+faq:
+  - question: "拝観時間は？"
+    answer: "9:00〜16:30です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料300円から（金泥の御朱印は500円、期間限定の特別御朱印は1000円など全16種類）。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場が約50台分あります（紅葉シーズンなどは臨時駐車場とシャトルバスを運行）。"
+  - question: "拝観にはどのくらい時間がかかりますか？"
+    answer: "主要な社殿だけでも1時間程度、じっくり巡る場合は2時間ほど見ておくと安心です。"
+  - question: "アクセス方法は？"
+    answer: "JR湖西線「比叡山坂本駅」から徒歩約20分、京阪石山坂本線「坂本駅」から徒歩約10分です。"
 ---
 
 ## 由緒

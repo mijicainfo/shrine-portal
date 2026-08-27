@@ -42,6 +42,17 @@ gallery:
       author: "Immanuelle"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Aso_Shrine_Torii.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜18:00（授与所9:00〜17:00）です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（約115台、30分無料・以降有料）。隣接に市営駐車場（有料・約70台）もあります。"
+  - question: "楼門は震災の影響を受けましたか？"
+    answer: "はい。2016年の熊本地震で倒壊しましたが、2023年12月に復旧工事が完了し、震災前の姿を取り戻しています。"
+  - question: "アクセス方法は？"
+    answer: "JR豊肥本線「宮地駅」から徒歩約15分です。"
 ---
 
 ## 由緒

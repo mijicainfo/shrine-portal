@@ -29,6 +29,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kirishima-jingu09n4500.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open all day, but the amulet office is open 8:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available."
+  - question: "Why is it associated with new beginnings?"
+    answer: "The enshrined deity Ninigi no Mikoto is said to have descended to a new land in the myth of the heavenly grandson's descent, so the shrine is venerated for blessing new ventures."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus ride from JR Kirishima-jingu Station."
 ---
 
 ## History

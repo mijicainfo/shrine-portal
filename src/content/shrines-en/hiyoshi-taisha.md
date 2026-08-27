@@ -35,6 +35,17 @@ gallery:
       author: "go.biwako"
       license: "CC BY-SA 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Torii_of_Hiyoshi_Shrine,_Sakamoto,_Otsu_-_Nov_27,_2010.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "9:00–16:30."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00–16:30; from ¥300 (¥500 for the gold-ink goshuin, ¥1,000 for limited-time special ones — 16 varieties in total)."
+  - question: "Is there parking?"
+    answer: "Yes, about 50 free spaces (with overflow parking and a shuttle bus during busy periods like the autumn foliage season)."
+  - question: "How long should I plan for a visit?"
+    answer: "About an hour for the main halls alone, or around 2 hours to see everything at a relaxed pace."
+  - question: "How do I get there?"
+    answer: "About a 20-minute walk from Hieizanzakamoto Station on the JR Kosei Line, or about a 10-minute walk from Sakamoto Station on the Keihan line."
 ---
 
 ## History

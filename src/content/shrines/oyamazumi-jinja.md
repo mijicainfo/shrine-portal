@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%C5%8Cyamazumi-jinja_houkyou-into.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "開門は日の出頃〜17:00、社務所・御朱印は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります。"
+  - question: "宝物館の見どころは？"
+    answer: "全国の国宝・重要文化財指定の甲冑類のおよそ4割が集まっており、国宝8点を含む85件の文化財を収蔵しています（別途拝観料が必要）。"
+  - question: "アクセス方法は？"
+    answer: "しまなみ海道「大三島IC」から車で約10分、または島内バス「大山祇神社前」下車すぐです。"
 ---
 
 ## 由緒

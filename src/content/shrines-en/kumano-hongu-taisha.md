@@ -42,6 +42,17 @@ gallery:
       author: "Nekosuki"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kumanohongu_taisya2.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "7:00–17:00. The grounds are free to enter."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available at about 6 lots nearby."
+  - question: "What is Oyunohara?"
+    answer: "The shrine's former site, about a 10-minute walk from the current shrine, marked by Japan's largest torii gate at 33.9 meters tall."
+  - question: "How do I get there?"
+    answer: "About a 2-hour bus ride from JR Kii-Tanabe Station or Shingu Station, getting off at \"Hongu Taisha-mae.\""
 ---
 
 ## History

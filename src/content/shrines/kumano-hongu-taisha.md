@@ -42,6 +42,17 @@ gallery:
       author: "Nekosuki"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kumanohongu_taisya2.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "7:00〜17:00です。境内参拝は無料です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "周辺に無料駐車場が計6か所ほどあります。"
+  - question: "大斎原（おおゆのはら）とは何ですか？"
+    answer: "熊野本宮大社の旧社地で、本宮から徒歩約10分。高さ33.9メートルの日本一大きな大鳥居がそびえています。"
+  - question: "アクセス方法は？"
+    answer: "JR「紀伊田辺駅」または「新宮駅」からバスで約2時間、「本宮大社前」下車すぐです。"
 ---
 
 ## 由緒

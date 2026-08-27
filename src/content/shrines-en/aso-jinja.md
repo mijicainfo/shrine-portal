@@ -42,6 +42,17 @@ gallery:
       author: "Immanuelle"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Aso_Shrine_Torii.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00 AM–6:00 PM (shrine office 9:00 AM–5:00 PM)."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (about 115 spaces, free for the first 30 minutes, paid after that), plus an adjacent paid municipal lot (about 70 spaces)."
+  - question: "Was the tower gate damaged by an earthquake?"
+    answer: "Yes — it collapsed in the 2016 Kumamoto earthquake, but restoration was completed in December 2023, returning it to its pre-quake appearance."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from Miyaji Station on the JR Hohi Line."
 ---
 
 ## History

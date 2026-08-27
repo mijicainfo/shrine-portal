@@ -29,6 +29,17 @@ imageCredit:
   author: "663highland"
   license: "CC BY-SA 3.0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Kirishima-jingu09n4500.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は終日参拝可能ですが、授与所は8:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります。"
+  - question: "なぜ「事始めの神様」と呼ばれるのですか？"
+    answer: "ご祭神の瓊瓊杵尊が天孫降臨で新たな地に降り立ったことにちなみ、新しいことを始める際のご利益で信仰されています。"
+  - question: "アクセス方法は？"
+    answer: "JR「霧島神宮駅」からバス約10分です。"
 ---
 
 ## 由緒

@@ -36,6 +36,17 @@ gallery:
       author: "Rickard Törnblad (Rt26)"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Naminoue_Shrine,_Naha,_Okinawa,_Japan_-_October_2015.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open anytime; the shrine office is open 9:00 AM–4:30 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–4:30 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (about 20 spaces; use nearby paid lots if full)."
+  - question: "What makes its setting distinctive?"
+    answer: "It sits atop a cliff facing the sea in Naha, overlooking Naminoue Beach — the highest-ranked of the \"Ryukyu Eight Shrines.\""
+  - question: "How do I get there?"
+    answer: "About a 15–20 minute walk from Asahibashi Station on the Okinawa Urban Monorail (Yui Rail)."
 ---
 
 ## History

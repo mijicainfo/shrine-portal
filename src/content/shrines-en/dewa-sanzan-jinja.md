@@ -40,6 +40,17 @@ gallery:
       author: "Mimissu"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Haguro_pagoda.jpg"
+faq:
+  - question: "How long does it take to reach the summit?"
+    answer: "About a 50-minute walk up 2,446 stone steps from the Zuishinmon gate, or about 10 minutes by car via the Haguro-san toll road."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:30–16:30 at the summit Sanshuden hall or the Zuishinmon gate office, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes — take the Haguro-san toll road (¥400 for standard cars) to reach parking near the summit; parking is also available near the Zuishinmon gate."
+  - question: "Can I visit in winter?"
+    answer: "Heavy snowfall is common, so it's a good idea to check road conditions and the reception hall's opening status before visiting."
+  - question: "How do I get there?"
+    answer: "About a 40-minute bus ride from JR Tsuruoka Station to the \"Zuishinmon\" stop."
 ---
 
 ## History

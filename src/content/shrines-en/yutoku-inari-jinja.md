@@ -41,6 +41,17 @@ gallery:
       author: "AdamMillerchip"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Yutoku_Inari_Shrine_Autumn_2015.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times (the main hall is illuminated at night; the Japanese garden and museum charge admission)."
+  - question: "When is the goshuin office open?"
+    answer: "8:00–16:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, outer garden parking is available (some paid car spaces, free for large buses)."
+  - question: "How long does a full visit take, including the inner shrine?"
+    answer: "About 30–60 minutes for the main hall alone, or 1.5–2 hours to also reach the inner shrine (Oku-no-in)."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus or taxi ride from JR Hizen-Kashima Station to the Yutoku-jinja-mae stop."
 ---
 
 ## History

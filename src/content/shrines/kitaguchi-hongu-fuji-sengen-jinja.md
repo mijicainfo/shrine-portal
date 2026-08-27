@@ -36,6 +36,17 @@ gallery:
       author: "inunami"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Fujiyoshida_20190126144046_(48314933441).jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は終日自由ですが、社務所受付は9:00〜16:00頃です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00頃、初穂料は3種類（当社・諏訪神社・大塚丘）それぞれ300円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内周辺に無料駐車場が7〜8か所あります（普通車約140台）。"
+  - question: "拝観にはどのくらい時間がかかりますか？"
+    answer: "大鳥居や奥宮まで含めてゆっくり巡ると1時間ほどかかります。"
+  - question: "アクセス方法は？"
+    answer: "富士急行線「富士山駅」からバスで約5分「浅間神社前」下車徒歩約1分です。"
 ---
 
 ## 由緒

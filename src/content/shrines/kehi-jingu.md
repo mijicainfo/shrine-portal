@@ -40,6 +40,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kehi-jingu_honden.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由ですが、授与所は8:30〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（正面大鳥居横に約10台、本殿東側に約50台・大型バス約10台）。"
+  - question: "大鳥居はどんな鳥居ですか？"
+    answer: "高さ10.9メートルの朱塗りの大鳥居で、春日大社・厳島神社の鳥居とあわせて「日本三大木造鳥居」のひとつに数えられます。"
+  - question: "アクセス方法は？"
+    answer: "JR北陸本線「敦賀駅」から徒歩約15分です。"
 ---
 
 ## 由緒

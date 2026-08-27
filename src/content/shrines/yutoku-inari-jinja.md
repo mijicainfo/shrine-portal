@@ -41,6 +41,17 @@ gallery:
       author: "AdamMillerchip"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Yutoku_Inari_Shrine_Autumn_2015.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由です（御本殿は夜間ライトアップあり、日本庭園・博物館は有料）。"
+  - question: "御朱印は？"
+    answer: "8:00〜16:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "外苑駐車場があります（普通車は一部有料、大型バスは無料）。"
+  - question: "奥の院まで含めるとどのくらい時間がかかりますか？"
+    answer: "本殿までなら30〜60分ほど、奥の院まで含めたフルコースは1.5〜2時間ほど見ておくと安心です。"
+  - question: "アクセス方法は？"
+    answer: "JR「肥前鹿島駅」からバスまたはタクシーで約10分、バス停「祐徳神社前」下車すぐです。"
 ---
 
 ## 由緒

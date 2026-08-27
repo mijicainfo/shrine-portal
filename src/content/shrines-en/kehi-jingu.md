@@ -40,6 +40,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kehi-jingu_honden.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at any time; the reception office is open around 8:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–17:00, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (about 10 spaces beside the great torii, and about 50 car spaces plus 10 bus spaces east of the main hall)."
+  - question: "What makes the great torii notable?"
+    answer: "At 10.9 meters tall, it's counted among Japan's \"three great wooden torii,\" alongside those at Kasuga Taisha and Itsukushima Shrine."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from JR Tsuruga Station."
 ---
 
 ## History
