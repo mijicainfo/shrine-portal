@@ -40,6 +40,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Mishima-taisha_kinmokusei.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open around the clock, but the shrine office and goshuin desk are open 8:30–16:30 (until 17:00 on weekends and holidays)."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:30 (until 17:00 on weekends/holidays), for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking is available (from ¥200/hour for cars), though it closes during New Year (Jan 1–3) and the annual festival (Aug 15–17)."
+  - question: "When does the sacred fragrant olive tree bloom?"
+    answer: "The tree, said to be over 1,200 years old, blooms twice — in September and October."
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from the south exit of JR Mishima Station."
 ---
 
 ## History

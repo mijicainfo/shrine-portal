@@ -40,6 +40,17 @@ gallery:
       author: "京浜にけ"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Mitsumine_Shrine_approach_looking_towards_the_Shrine.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は6:00〜19:30頃、社務所・御朱印受付は8:00〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00頃、初穂料300円〜500円（種類により異なる）です。"
+  - question: "駐車場はありますか？"
+    answer: "秩父市営駐車場があります（約280台、普通車520円）。週末・繁忙期は早朝から満車になることもあります。"
+  - question: "なぜ狼の像があるのですか？"
+    answer: "日本武尊を山中で導いたという狼が「大口真神」として神の使いに位置づけられ、狛犬の位置に狼の像が配されています。"
+  - question: "アクセス方法は？"
+    answer: "西武秩父線「西武秩父駅」から西武観光バスで約75分、終点下車すぐです。"
 ---
 
 ## 由緒

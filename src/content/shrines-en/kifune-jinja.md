@@ -39,6 +39,17 @@ gallery:
       author: "inunami"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyoto_20220827135121_(52650053171).jpg"
+faq:
+  - question: "What is the \"three-shrine pilgrimage\"?"
+    answer: "Kifune Jinja's traditional visiting route through the main shrine, Yui-no-Yashiro, and the inner shrine — walking all three takes about 1.5–2 hours."
+  - question: "What are the visiting hours?"
+    answer: "The main shrine gates are open 6:00–20:00 (May–Nov) or 6:00–18:00 (Dec–Apr); the amulet office is open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes — 8 spaces at the main shrine and 10 at the inner shrine (¥800 per 2 hours), though lots fill quickly during peak seasons like autumn foliage, so public transport is recommended."
+  - question: "How do I get there?"
+    answer: "Take the Kyoto Bus from Kibuneguchi Station to the Kibune stop, then about a 5-minute walk."
 ---
 
 ## History

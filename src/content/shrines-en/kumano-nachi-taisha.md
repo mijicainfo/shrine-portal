@@ -39,6 +39,17 @@ gallery:
       author: "Zairon"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nachikatsuura_Kumano-Nachi-taisha_Courtyard_2.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00–16:30. Visiting the grounds is free."
+  - question: "When is the goshuin office open?"
+    answer: "Around 7:30–16:30, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes — paid parking below the shrine office (¥800 per car), or free parking at the entrance to the Daimonzaka pilgrimage path (about a 50-minute walk to the main hall)."
+  - question: "How close is Nachi Falls?"
+    answer: "Hirou Jinja, which enshrines the falls, is about a 20-minute walk down a stone staircase from the main hall."
+  - question: "How do I get there?"
+    answer: "About a 30-minute bus ride from JR Kii-Katsuura Station, getting off at Nachisan."
 ---
 
 ## History

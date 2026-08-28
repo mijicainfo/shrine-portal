@@ -39,6 +39,17 @@ gallery:
       author: "Zairon"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nachikatsuura_Kumano-Nachi-taisha_Courtyard_2.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜16:30です。境内参拝は無料です。"
+  - question: "御朱印は？"
+    answer: "7:30〜16:30頃、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "社務所下に有料駐車場（1回800円）、大門坂入口に無料駐車場があります（本殿まで徒歩約50分）。"
+  - question: "那智の滝までは近いですか？"
+    answer: "本殿から石段を20分ほど下った場所に、滝を祀る飛瀧神社があります。"
+  - question: "アクセス方法は？"
+    answer: "JR「紀伊勝浦駅」から熊野交通バスで約30分、「那智山」下車すぐです。"
 ---
 
 ## 由緒

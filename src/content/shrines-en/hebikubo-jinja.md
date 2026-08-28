@@ -40,6 +40,17 @@ gallery:
       author: "Kentin"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kamishinmei_tenso_jinja_futaba_shinagawa_tokyo_2009.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, from ¥300 (limited goshuin on Snake Days and Tsuchinoto-mi Days cost ¥500–1,500)."
+  - question: "Is there parking?"
+    answer: "No on-site visitor parking — use nearby paid parking lots."
+  - question: "What is \"Tsuchinoto-mi Day\"?"
+    answer: "A special prayer day that comes around once every 60 days, when the Hakuja Benzaiten shrine's doors are opened, drawing visitors from far away."
+  - question: "How do I get there?"
+    answer: "About a 5–6 minute walk from Nakanobu Station."
 ---
 
 ## History

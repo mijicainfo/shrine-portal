@@ -41,6 +41,17 @@ gallery:
       author: "AT"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE_%E6%9C%AC%E6%AE%BF.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由ですが、授与所は8:30〜18:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00（時間外は社務所にて19:00まで対応可）、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "参拝者駐車場があります（約100台、1回400円）。"
+  - question: "太宰府天満宮からも行けますか？"
+    answer: "はい。徒歩約30分、または「まほろば号」バスでも行けます。あわせて巡る参拝者が多く見られます。"
+  - question: "アクセス方法は？"
+    answer: "西鉄太宰府駅からコミュニティバス「まほろば号」で約10分「内山」下車すぐです。"
 ---
 
 ## 由緒

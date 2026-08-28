@@ -41,6 +41,17 @@ gallery:
       author: "Immanuelle"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Isonokami_Jingu_chickens,_messengers_of_god-1.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は5:30〜17:30頃（季節により変動）、授与所は8:00〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00頃、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内周辺に第1〜第4駐車場があります（合計約200台、無料）。"
+  - question: "境内にいる鶏は何ですか？"
+    answer: "「神鶏」と呼ばれ、天照大神にまつわる伝承にちなみ、東天紅や烏骨鶏など約30羽が神の使いとして放し飼いにされています。"
+  - question: "アクセス方法は？"
+    answer: "JR・近鉄「天理駅」から徒歩約30分です。"
 ---
 
 ## 由緒

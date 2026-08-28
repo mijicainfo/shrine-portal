@@ -41,6 +41,17 @@ gallery:
       author: "Immanuelle"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Isonokami_Jingu_chickens,_messengers_of_god-1.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Worship is roughly 5:30–17:30 (varies by season); the shrine office is open roughly 8:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 8:00–17:00, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, four parking lots around the grounds offer about 200 free spaces total."
+  - question: "What are the chickens roaming the grounds?"
+    answer: "They're called \"shinkei\" (sacred chickens) — about 30 birds, including breeds like Toten-ko and silkies, kept as messengers of the gods in reference to a legend about Amaterasu."
+  - question: "How do I get there?"
+    answer: "About a 30-minute walk from JR/Kintetsu Tenri Station."
 ---
 
 ## History

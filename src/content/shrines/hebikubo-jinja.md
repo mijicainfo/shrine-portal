@@ -40,6 +40,17 @@ gallery:
       author: "Kentin"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kamishinmei_tenso_jinja_futaba_shinagawa_tokyo_2009.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、社務所・授与所は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円から（巳の日・己巳の日の限定御朱印は500円〜1,500円）。"
+  - question: "駐車場はありますか？"
+    answer: "境内に参拝者用駐車場はありません。周辺のコインパーキングをご利用ください。"
+  - question: "「己巳の日」とは何ですか？"
+    answer: "60日に一度巡ってくる特別な祈願日で、白蛇辨財天社の扉が開かれ、遠方から多くの参拝者が訪れます。"
+  - question: "アクセス方法は？"
+    answer: "都営浅草線・東急大井町線「中延駅」から徒歩5〜6分です。"
 ---
 
 ## 由緒

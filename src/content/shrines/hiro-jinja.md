@@ -39,6 +39,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hirou_shrine03bs2048.jpg"
+faq:
+  - question: "なぜ本殿や拝殿がないのですか？"
+    answer: "那智の滝そのものを御神体として祀っているため、社殿を持たない古代の自然信仰の形式を伝えています。"
+  - question: "参拝時間は？"
+    answer: "7:30〜16:30（境内参拝は無料）、お滝拝所舞台は8:00〜16:00です。"
+  - question: "お滝拝所舞台は有料ですか？"
+    answer: "はい。大人300円・小中学生200円で、滝つぼにより近づいて参拝できます。"
+  - question: "御朱印は？"
+    answer: "7:30〜16:30頃、初穂料300円です。"
+  - question: "アクセス方法は？"
+    answer: "JR「紀伊勝浦駅」から熊野交通バスで約30分「那智の滝前」下車すぐ、または熊野那智大社本殿から石段を徒歩約20分です。"
 ---
 
 ## 由緒

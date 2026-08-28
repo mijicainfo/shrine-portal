@@ -40,6 +40,17 @@ gallery:
       author: "京浜にけ"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Mitsumine_Shrine_approach_looking_towards_the_Shrine.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open roughly 6:00–19:30; the shrine office and goshuin desk are open roughly 8:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 8:00–17:00; ¥300–500 depending on the type."
+  - question: "Is there parking?"
+    answer: "Yes, Chichibu municipal parking is available (about 280 spaces, ¥520 for cars), though it can fill up early on weekends and during peak season."
+  - question: "Why are there wolf statues?"
+    answer: "A wolf is said to have guided Yamato Takeru through the mountains here; it was later enshrined as the deity's messenger, Okuchi-no-Magami, taking the place of the usual komainu guardian statues."
+  - question: "How do I get there?"
+    answer: "About a 75-minute bus ride from Seibu-Chichibu Station, getting off at the terminus."
 ---
 
 ## History

@@ -42,6 +42,17 @@ gallery:
       author: "Lombroso"
       license: "Public domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tokyo_Daijingu.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open 6:00 AM–9:00 PM; the amulet office is open 8:00 AM–7:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "No dedicated parking lot — use nearby coin-operated parking."
+  - question: "Why is it known for matchmaking?"
+    answer: "It enshrines the Three Creator Deities, who are believed to bind and bring all things into being, making it a popular destination for prayers for romance and good relationships."
+  - question: "How do I get there?"
+    answer: "About a 3-minute walk from the west exit of JR Iidabashi Station."
 ---
 
 ## History

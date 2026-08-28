@@ -39,6 +39,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hirou_shrine03bs2048.jpg"
+faq:
+  - question: "Why doesn't it have a main hall or worship hall?"
+    answer: "The waterfall itself is worshipped as the shrine's sacred body, preserving an ancient form of nature worship that predates shrine buildings."
+  - question: "What are the visiting hours?"
+    answer: "7:30–16:30 (visiting the grounds is free); the falls-viewing platform is open 8:00–16:00."
+  - question: "Does the viewing platform cost extra?"
+    answer: "Yes — ¥300 for adults and ¥200 for children, for a closer view near the base of the falls."
+  - question: "When is the goshuin office open?"
+    answer: "Around 7:30–16:30, for ¥300."
+  - question: "How do I get there?"
+    answer: "About a 30-minute bus ride from JR Kii-Katsuura Station to Nachi-no-taki-mae, or about a 20-minute walk down a stone staircase from the main hall of Kumano Nachi Taisha."
 ---
 
 ## History

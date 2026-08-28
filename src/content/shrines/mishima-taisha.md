@@ -40,6 +40,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Mishima-taisha_kinmokusei.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内は24時間開放されていますが、社務所・御朱印受付は8:30〜16:30（土日祝は17:00まで）です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:30（土日祝17:00まで）、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内駐車場があります（普通車1時間200円〜）が、正月三が日・例祭期間（8月15〜17日）は閉鎖されます。"
+  - question: "金木犀の御神木はいつ見頃ですか？"
+    answer: "樹齢1200年以上と伝わる御神木で、9月から10月にかけて二度開花します。"
+  - question: "アクセス方法は？"
+    answer: "JR「三島駅」南口から徒歩約15分です。"
 ---
 
 ## 由緒

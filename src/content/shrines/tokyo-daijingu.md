@@ -42,6 +42,17 @@ gallery:
       author: "Lombroso"
       license: "Public domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tokyo_Daijingu.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝時間は6:00〜21:00、授与所は8:00〜19:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "専用駐車場はありません。周辺のコインパーキングをご利用ください。"
+  - question: "なぜ縁結びで有名なのですか？"
+    answer: "万物を結び生み出す造化の三神を祀ることから、恋愛成就や良縁祈願の神社として親しまれています。"
+  - question: "アクセス方法は？"
+    answer: "JR「飯田橋駅」西口から徒歩3分です。"
 ---
 
 ## 由緒

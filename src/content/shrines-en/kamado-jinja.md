@@ -41,6 +41,17 @@ gallery:
       author: "AT"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E7%AB%88%E9%96%80%E7%A5%9E%E7%A4%BE_%E6%9C%AC%E6%AE%BF.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the amulet office is open 8:30–18:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00 (staff can sometimes accommodate requests until 19:00), for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, visitor parking is available (about 100 spaces, ¥400 per visit)."
+  - question: "Can I get here from Dazaifu Tenmangu?"
+    answer: "Yes — about a 30-minute walk, or via the Mahoroba-go community bus. Many visitors combine both shrines in one trip."
+  - question: "How do I get there?"
+    answer: "About a 10-minute ride from Nishitetsu Dazaifu Station on the Mahoroba-go community bus, getting off at the Uchiyama stop."
 ---
 
 ## History

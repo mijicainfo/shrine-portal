@@ -39,6 +39,17 @@ gallery:
       author: "kajikawa"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ukawa,_Takashima,_Shiga_Prefecture_520-1122,_Japan_-_panoramio_(1).jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、社務所は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（約50台、繁忙期は臨時駐車場を開設）。"
+  - question: "湖上大鳥居はどこから見られますか？"
+    answer: "境内前の国道161号を挟んだ琵琶湖の湖面に立っており、国道の反対側から眺めるのがおすすめです。撮影の際は交通量に注意してください。"
+  - question: "アクセス方法は？"
+    answer: "JR湖西線「近江高島駅」から徒歩約40分、または予約乗合タクシーで約10分です。"
 ---
 
 ## 由緒

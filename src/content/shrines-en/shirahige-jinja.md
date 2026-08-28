@@ -39,6 +39,17 @@ gallery:
       author: "kajikawa"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ukawa,_Takashima,_Shiga_Prefecture_520-1122,_Japan_-_panoramio_(1).jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is open 9:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (about 50 spaces; an overflow lot opens during busy periods)."
+  - question: "Where can I see the torii in the lake?"
+    answer: "It stands in Lake Biwa just across Route 161 from the shrine — the best view is from the opposite side of the road. Watch for traffic when taking photos."
+  - question: "How do I get there?"
+    answer: "About a 40-minute walk from JR Omi-Takashima Station, or about 10 minutes by reservation shared taxi."
 ---
 
 ## History
