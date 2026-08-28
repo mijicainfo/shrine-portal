@@ -36,7 +36,20 @@ const heroPhotos = await Promise.all(
   })
 );
 
-const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+const featuredPrefectures = [
+  '北海道',
+  '東京都',
+  '神奈川県',
+  '石川県',
+  '京都府',
+  '大阪府',
+  '奈良県',
+  '三重県',
+  '島根県',
+  '広島県',
+  '福岡県',
+  '沖縄県',
+];
 
 const benefitCategories = [
   '縁結び',
@@ -198,7 +211,7 @@ const benefitCategories = [
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">都道府県から探す</h2>
     <p class="mt-1 text-sm text-shrine-ink-soft">気になる地域の神社をチェックしてみましょう。</p>
     <div class="mt-6 flex flex-wrap gap-2.5">
-      {prefectures.map((pref) => (
+      {featuredPrefectures.map((pref) => (
         <a
           href={`/shrines/?pref=${encodeURIComponent(pref)}`}
           class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"

@@ -5,7 +5,10 @@ import { getCollection } from 'astro:content';
 import { regions, getRegionId } from '../../../data/regions';
 
 const shrines = (await getCollection('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
-const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+// Some shrine entries use "X Prefecture", others just "X" — normalize so both
+// resolve to the same filter option/value instead of appearing as duplicates.
+const normalizePref = (p: string) => p.replace(/\s*Prefecture$/i, '').trim();
+const prefectures = [...new Set(shrines.map((s) => normalizePref(s.data.prefecture)))].sort();
 const allBenefits = [...new Set(shrines.flatMap((s) => s.data.benefits ?? []))].sort();
 const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].sort();
 ---
@@ -99,7 +102,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
         <div
           class="shrine-item"
           data-name={`${shrine.data.name} ${shrine.data.kana}`}
-          data-prefecture={shrine.data.prefecture}
+          data-prefecture={normalizePref(shrine.data.prefecture)}
           data-region={getRegionId(shrine.data.prefecture, 'en') ?? ''}
           data-location={`${shrine.data.prefecture} ${shrine.data.city} ${shrine.data.address}`}
           data-benefits={(shrine.data.benefits ?? []).join('|')}

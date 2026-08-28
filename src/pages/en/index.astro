@@ -37,7 +37,20 @@ const heroPhotos = await Promise.all(
   })
 );
 
-const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
+const featuredPrefectures = [
+  'Hokkaido',
+  'Tokyo',
+  'Kanagawa',
+  'Ishikawa',
+  'Kyoto',
+  'Osaka',
+  'Nara',
+  'Mie',
+  'Shimane',
+  'Hiroshima',
+  'Fukuoka',
+  'Okinawa',
+];
 
 const benefitCategoriesJa = [
   '縁結び', '商売繁盛', '学業成就', '合格祈願', '厄除け', '家内安全',
@@ -185,7 +198,7 @@ const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslations[b] 
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Browse by Prefecture</h2>
     <p class="mt-1 text-sm text-shrine-ink-soft">Find shrines in a region you're interested in.</p>
     <div class="mt-6 flex flex-wrap gap-2.5">
-      {prefectures.map((pref) => (
+      {featuredPrefectures.map((pref) => (
         <a
           href={`/en/shrines/?pref=${encodeURIComponent(pref)}`}
           class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
