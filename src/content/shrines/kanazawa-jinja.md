@@ -43,6 +43,17 @@ gallery:
       author: "Daderot"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Stream_-_Kanizawa_Shrine_-_Kanazawa,_Japan_-_DSC09958.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由ですが、社務所・御朱印受付は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円（金箔付き）です。"
+  - question: "駐車場はありますか？"
+    answer: "神社専用の駐車場はありません。兼六園周辺の有料駐車場をご利用ください。"
+  - question: "兼六園から近いですか？"
+    answer: "はい。兼六園の随身坂口を出てすぐで、徒歩1分ほどです。"
+  - question: "アクセス方法は？"
+    answer: "北陸鉄道バス「広坂・21世紀美術館」下車徒歩約3分です。"
 ---
 
 ## 由緒

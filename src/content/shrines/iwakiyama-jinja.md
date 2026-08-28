@@ -43,6 +43,17 @@ gallery:
       author: "あおもりくま"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwakiyama_Jinja_Torii.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、社務所受付は4月〜10月8:00〜17:00、11月〜3月8:30〜16:00です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00頃（季節・行事により変動）、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "大鳥居前に無料駐車場があります（初詣・お山参詣期間中は混雑）。"
+  - question: "なぜ「奥日光」と呼ばれるのですか？"
+    answer: "極彩色の彫刻に彩られた社殿群が日光東照宮を思わせることから、そう呼ばれています。"
+  - question: "アクセス方法は？"
+    answer: "JR「弘前駅」から弘南バスで約40分「岩木山神社前」下車すぐです。"
 ---
 
 ## 由緒

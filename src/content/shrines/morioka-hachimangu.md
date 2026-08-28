@@ -39,6 +39,17 @@ gallery:
       author: "掬茶"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Main_avenue_of_Morioka_Hachiman_Shrine.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "24時間参拝可能です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に約250台収容の無料駐車場があります（正月三が日は大変混雑）。"
+  - question: "「チャグチャグ馬コ」とは何ですか？"
+    answer: "毎年6月、彩り豊かな馬装の農用馬約80頭が約14キロを練り歩き、盛岡八幡宮をゴールとする国の重要無形民俗文化財の行事です。"
+  - question: "アクセス方法は？"
+    answer: "JR「盛岡駅」東口からバスで「盛岡バスセンター」下車徒歩約8分です。"
 ---
 
 ## 由緒

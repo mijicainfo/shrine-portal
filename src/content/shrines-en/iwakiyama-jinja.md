@@ -43,6 +43,17 @@ gallery:
       author: "Aomorikuma"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Iwakiyama_Jinja_Torii.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is open 8:00–17:00 (April–October) or 8:30–16:00 (November–March)."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 8:00–17:00, varying by season, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available in front of the great torii (very crowded during New Year and the Oyama-sankei festival)."
+  - question: "Why is it called \"Oku-Nikko\"?"
+    answer: "Its brightly painted, richly carved buildings recall Nikko Toshogu, earning it this nickname."
+  - question: "How do I get there?"
+    answer: "About a 40-minute bus ride from JR Hirosaki Station to the Iwakiyama-jinja-mae stop."
 ---
 
 ## History

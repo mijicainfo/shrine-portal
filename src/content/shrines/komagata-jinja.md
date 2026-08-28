@@ -40,6 +40,17 @@ gallery:
       author: "Sato S"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:駒形神社の立派な狛犬_-_panoramio.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由です。常駐の社務所はありません。"
+  - question: "御朱印は？"
+    answer: "白羽神社の社務所でいただけます（事前連絡推奨）。初穂料500円（見開き御朱印は1,400円）。"
+  - question: "駐車場はありますか？"
+    answer: "境内前に数台分の駐車スペースがあります。御前埼灯台の有料駐車場も利用できます。"
+  - question: "社名の由来は？"
+    answer: "沖合で難破した90頭の馬のうち1頭だけがこの浜にたどり着いたという伝説にちなみます。"
+  - question: "アクセス方法は？"
+    answer: "白羽神社から車で約5分、御前埼灯台から徒歩約8分です。"
 ---
 
 ## 由緒

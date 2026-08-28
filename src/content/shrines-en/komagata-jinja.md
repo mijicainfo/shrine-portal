@@ -40,6 +40,17 @@ gallery:
       author: "Sato S"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:駒形神社の立派な狛犬_-_panoramio.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; there's no shrine office on site."
+  - question: "When is the goshuin office open?"
+    answer: "Goshuin are issued at the Shiraha Jinja shrine office (calling ahead is recommended). From ¥500 (¥1,400 for a combined goshuin)."
+  - question: "Is there parking?"
+    answer: "Yes, a few spaces are available in front of the shrine, and the paid lot at Omaezaki Lighthouse can also be used."
+  - question: "What's the origin of the name?"
+    answer: "It comes from a legend of 90 horses shipwrecked offshore, of which only one made it ashore here."
+  - question: "How do I get there?"
+    answer: "About a 5-minute drive from Shiraha Jinja, or an 8-minute walk from Omaezaki Lighthouse."
 ---
 
 ## History

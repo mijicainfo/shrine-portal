@@ -41,6 +41,17 @@ gallery:
       author: "掬茶"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiheizan_Miyoshi_Jinja_20190814a.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由（年中無休）、御祈祷受付8:45〜16:00、授与所8:30〜17:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内東側・西側に無料駐車場があります。東側は階段があるため、足元が不安な方は西側がおすすめです。"
+  - question: "どんなご利益がありますか？"
+    answer: "必勝祈願・勝負運の神様として、力士や武道家、スポーツ選手からも篤く信仰されています。"
+  - question: "アクセス方法は？"
+    answer: "JR「秋田駅」からバスで約10分「三吉神社入口」下車徒歩約5分です。"
 ---
 
 ## 由緒

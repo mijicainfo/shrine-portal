@@ -39,6 +39,17 @@ gallery:
       author: "掬茶"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Main_avenue_of_Morioka_Hachiman_Shrine.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors 24 hours a day."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking for about 250 cars is available on the grounds (very crowded during the first three days of the New Year)."
+  - question: "What is \"Chagu Chagu Umakko\"?"
+    answer: "An annual June event where about 80 colorfully decorated farm horses parade roughly 14 km, finishing at Morioka Hachimangu — designated a National Important Intangible Folk Cultural Property."
+  - question: "How do I get there?"
+    answer: "About an 8-minute walk from the Morioka Bus Center bus stop, reached by bus from the east exit of JR Morioka Station."
 ---
 
 ## History

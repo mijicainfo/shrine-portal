@@ -40,6 +40,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tosa-jinja21s3872.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、祈願受付は9:00〜16:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（参拝料も無料）。"
+  - question: "「しなね造り」とは何ですか？"
+    answer: "本殿・幣殿・拝殿が回廊で結ばれた独特の建築様式で、上から見るとトンボが本殿へ飛び込む形に見えると伝えられています。"
+  - question: "アクセス方法は？"
+    answer: "とさでん交通バス「土佐神社前」下車徒歩約5分です。"
 ---
 
 ## 由緒

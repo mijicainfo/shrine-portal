@@ -26,6 +26,17 @@ featured: true
 order: 65
 publishDate: 2026-08-21
 gallery: []
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; shrine office hours vary, so it's best to check ahead."
+  - question: "When is the goshuin office open?"
+    answer: "Hand-written goshuin are available from ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free on-site parking is available (about 20 spaces; crowded during the first three days of the New Year)."
+  - question: "Is there really a cat theme here?"
+    answer: "Yes — a cat lives on the grounds, and cat-themed amulets, including a black-cat protection charm, are popular."
+  - question: "How do I get there?"
+    answer: "About a 15-minute drive from JR Uwajima Station."
 ---
 
 ## History

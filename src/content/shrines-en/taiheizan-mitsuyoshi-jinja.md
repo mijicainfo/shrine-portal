@@ -41,6 +41,17 @@ gallery:
       author: "Kikucha"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Taiheizan_Miyoshi_Jinja_20190814a.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times, year-round; prayer reception is 8:45–16:00, and the amulet office is open 8:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available on both the east and west sides — the east lot has stairs, so the west side is easier if that's a concern."
+  - question: "What is it known for?"
+    answer: "It's revered as a deity of victory and competition, drawing devoted followers among sumo wrestlers, martial artists, and athletes."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus ride from JR Akita Station, then a 5-minute walk from the Miyoshi-jinja-iriguchi stop."
 ---
 
 ## History

@@ -43,6 +43,17 @@ gallery:
       author: "Daderot"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Stream_-_Kanizawa_Shrine_-_Kanazawa,_Japan_-_DSC09958.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office and goshuin desk are open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500 (includes a gold leaf accent)."
+  - question: "Is there parking?"
+    answer: "No dedicated shrine parking — use the paid lots around Kenroku-en Garden."
+  - question: "Is it close to Kenroku-en Garden?"
+    answer: "Yes — it's right outside the garden's Zuishin-zaka exit, about a 1-minute walk."
+  - question: "How do I get there?"
+    answer: "About a 3-minute walk from the \"Hirosaka / 21st Century Museum\" bus stop."
 ---
 
 ## History

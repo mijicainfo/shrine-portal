@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ube-jinja,_sekihi.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、社務所は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に無料駐車場があります（観光バスは事前連絡が望ましい）。"
+  - question: "「お金に縁のある神社」と言われるのはなぜですか？"
+    answer: "明治時代の五円紙幣や一円紙幣に、御祭神・武内宿禰命や社殿の姿が繰り返し描かれたことに由来します。"
+  - question: "アクセス方法は？"
+    answer: "JR「鳥取駅」から日ノ丸バスで約20分「宮ノ下」下車徒歩約3分です。"
 ---
 
 ## 由緒

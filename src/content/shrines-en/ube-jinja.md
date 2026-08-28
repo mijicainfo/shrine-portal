@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ube-jinja,_sekihi.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free visitor parking is available on the grounds (tour buses should call ahead)."
+  - question: "Why is it called the \"money shrine\"?"
+    answer: "Its enshrined deity, Takenouchi no Sukune, and the shrine buildings were repeatedly featured on Meiji-era 5-yen and 1-yen banknotes."
+  - question: "How do I get there?"
+    answer: "About a 20-minute bus ride from JR Tottori Station, getting off at Miyanoshita."
 ---
 
 ## History

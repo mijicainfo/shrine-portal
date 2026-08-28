@@ -40,6 +40,17 @@ gallery:
       author: "ChiefHira"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Maedate-shadan_Omote-shinmon.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "8:30〜16:30です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "神社わきの常願寺川沿いに無料駐車場があります。"
+  - question: "峰本社にも参拝できますか？"
+    answer: "峰本社は雄山山頂にあり、参拝は夏山シーズン（7月上旬〜9月上旬）に限られる本格的な登山になります。前立社壇は実質的な里宮として通年参拝できます。"
+  - question: "アクセス方法は？"
+    answer: "富山地方鉄道立山線「岩峅寺駅」から徒歩約10分です。"
 ---
 
 ## 由緒

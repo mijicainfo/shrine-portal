@@ -40,6 +40,17 @@ gallery:
       author: "Sato S"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:白羽神社神馬像_-_panoramio.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は自由ですが、社務所は8:00〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "8:00〜17:00頃ですが不在の場合もあるため、事前連絡が確実です。初穂料500円（駒形神社との見開き御朱印は1,400円）。"
+  - question: "駐車場はありますか？"
+    answer: "神社前に無料駐車場があります（約20台）。"
+  - question: "駒形神社との関係は？"
+    answer: "駒形神社は白羽神社の「元宮」で、837年にこの地へ遷座したと伝わります。車で約5分の距離です。"
+  - question: "アクセス方法は？"
+    answer: "新東名高速道路「相良牧之原IC」から車で約30分です。"
 ---
 
 ## 由緒

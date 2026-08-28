@@ -40,6 +40,17 @@ gallery:
       author: "ChiefHira"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Maedate-shadan_Omote-shinmon.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "8:30–16:30."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available along the Jokanji River beside the shrine."
+  - question: "Can I visit the summit shrine too?"
+    answer: "The summit shrine (Mine-honsha) sits atop Mt. Oyama and is only reachable via a full mountain hike, roughly July to September. This shrine, Maetate-shadan, serves as the year-round satoyama shrine for most visitors."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from Iwakuraji Station on the Toyama Chiho Railway Tateyama Line."
 ---
 
 ## History

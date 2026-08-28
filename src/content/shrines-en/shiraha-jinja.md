@@ -40,6 +40,17 @@ gallery:
       author: "Sato S"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:白羽神社神馬像_-_panoramio.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is generally staffed 8:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:00–17:00, though the office isn't always staffed — calling ahead is recommended. From ¥500 (¥1,400 for a combined goshuin with Komagata Jinja)."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available in front of the shrine (about 20 spaces)."
+  - question: "What's the connection to Komagata Jinja?"
+    answer: "Komagata Jinja is Shiraha Jinja's original site — the shrine relocated here in 837. It's about a 5-minute drive away."
+  - question: "How do I get there?"
+    answer: "About a 30-minute drive from the Sagara-Makinohara IC on the Shin-Tomei Expressway."
 ---
 
 ## History

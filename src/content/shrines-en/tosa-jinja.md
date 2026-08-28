@@ -40,6 +40,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tosa-jinja21s3872.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; prayer reception is 9:00–16:00."
+  - question: "When is the goshuin office open?"
+    answer: "8:30–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available, and admission to the shrine is also free."
+  - question: "What is \"Shinane-zukuri\"?"
+    answer: "A distinctive style where the main hall, offering hall, and worship hall are linked by a covered corridor — said to resemble a dragonfly diving into the main hall when viewed from above."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from the Tosa-jinja-mae stop on Tosaden Kotsu buses."
 ---
 
 ## History
