@@ -39,6 +39,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:250505_Kibitsu-jinja_Okayama_Japan11s3.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は5:00〜18:00、授与所は9:00〜16:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:00、初穂料300円（直書きは500円）です。"
+  - question: "駐車場はありますか？"
+    answer: "第1・第2駐車場があります（有料、最初の20分無料・以降60分300円）。"
+  - question: "桃太郎伝説との関係は？"
+    answer: "ご祭神・大吉備津彦命による鬼退治の伝説が「桃太郎」の物語の原型になったとされ、境内には温羅にまつわる史跡が点在しています。"
+  - question: "アクセス方法は？"
+    answer: "JR吉備線「吉備津駅」から徒歩約10分です。"
 ---
 
 ## 由緒

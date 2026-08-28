@@ -39,6 +39,17 @@ gallery:
       author: "Sanjo"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Udo_Jingu_Undama.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00開門〜18:00閉門です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内周辺に3ヶ所の無料駐車場があります。"
+  - question: "「運玉」とは何ですか？"
+    answer: "本殿前の亀石の窪みに向かって投げ入れる素焼きの玉で、男性は左手・女性は右手で投げ入れると願いが叶うとされています。5個100円程度で授与所にて購入できます。"
+  - question: "アクセス方法は？"
+    answer: "宮崎市内から国道220号線で車約1時間、宮崎空港から車約45分です。"
 ---
 
 ## 由緒

@@ -43,6 +43,17 @@ gallery:
       author: "＋－"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E4%BB%8A%E5%AE%AE%E6%88%8E%E7%A5%9E%E7%A4%BE.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "6:00–17:00 (the south side gate stays open until 22:00); the amulet office is open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking is available on the north side of the grounds, though it's unavailable on weekends in January, July, and November, and throughout December."
+  - question: "What is \"ura-mairi\"?"
+    answer: "After praying at the main worship hall, many visitors walk around to the back and strike a gong there to make sure their prayer is heard — a distinctly Osaka custom based on the belief that Ebisu is a little hard of hearing."
+  - question: "How do I get there?"
+    answer: "Immediately east of Nankai Koya Line Imamiya-ebisu Station."
 ---
 
 ## History

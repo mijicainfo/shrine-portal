@@ -42,6 +42,17 @@ gallery:
       author: "Yanajin33"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nishinomiya-jinja_Torii.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "開門時間は季節により4〜8月5:00〜19:00、9月/3月5:00〜18:30、10〜2月5:00〜18:00で、授与所は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内南西部に参拝者用駐車場がありますが、十日えびすなど祭事期間中は利用できません。"
+  - question: "「福男選び」とは何ですか？"
+    answer: "毎年1月10日、表大門が開くと同時に参拝者が本殿まで約230メートルを走り、一番から三番までに到着した男性が「福男」に認定される名物神事です。"
+  - question: "アクセス方法は？"
+    answer: "阪神本線「西宮駅」（えびす口）から徒歩約5分です。"
 ---
 
 ## 由緒

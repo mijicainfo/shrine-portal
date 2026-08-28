@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "Public Domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:一之宮貫前神社_不明門・勅額鳥居.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The outer gate is open at all times; the area inside the inner gate is open 6:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "Around 9:00 AM–4:30 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available in front of and to the west of the outer gate."
+  - question: "What does \"descending shrine\" mean?"
+    answer: "Unlike most shrines, visitors walk down a staircase after passing through the torii to reach the main hall — one of Japan's \"three great descending shrines.\""
+  - question: "How do I get there?"
+    answer: "About a 15-minute walk from Joshu-Ichinomiya Station on the Joshin Dentetsu Line."
 ---
 
 ## History

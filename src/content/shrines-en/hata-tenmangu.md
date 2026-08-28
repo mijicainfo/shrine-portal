@@ -34,6 +34,17 @@ gallery:
       author: "Bittercup"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tenmangu-ikeda_02.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is generally open 9:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 9:00 AM–5:00 PM when the shrine office is staffed, for around ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, parking is available in front of the approach and within the grounds."
+  - question: "Was it affected by the Great Hanshin Earthquake?"
+    answer: "Yes — the main hall collapsed in the 1995 earthquake, and the current building was rebuilt in 2000 with support from parishioners and worshippers."
+  - question: "How do I get there?"
+    answer: "About a 20-minute bus ride or walk from Hankyu Ikeda Station."
 ---
 
 ## History

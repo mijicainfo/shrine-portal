@@ -39,6 +39,17 @@ gallery:
       author: "Sanjo"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Udo_Jingu_Undama.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Gates open at 6:00 AM and close at 6:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, three free parking lots are available on the grounds."
+  - question: "What is \"undama\"?"
+    answer: "Small unglazed clay balls thrown at a hollow in the turtle-shaped rock in front of the main hall — men throw with their left hand, women with their right — said to grant a wish if it lands inside. Sets of five cost around ¥100 at the amulet office."
+  - question: "How do I get there?"
+    answer: "About 1 hour by car from central Miyazaki via Route 220, or about 45 minutes from Miyazaki Airport."
 ---
 
 ## History

@@ -34,6 +34,17 @@ gallery:
       author: "Bittercup"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tenmangu-ikeda_02.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由ですが、社務所は9:00〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "社務所在駐時に9:00〜17:00頃、初穂料500円程度です。"
+  - question: "駐車場はありますか？"
+    answer: "参道前および境内に駐車スペースがあります。"
+  - question: "阪神・淡路大震災の影響は？"
+    answer: "1995年の震災で本殿が倒壊しましたが、氏子・崇敬者の支援により2000年に現在の社殿が再建されました。"
+  - question: "アクセス方法は？"
+    answer: "阪急宝塚線「池田駅」からバスまたは徒歩約20分です。"
 ---
 
 ## 由緒

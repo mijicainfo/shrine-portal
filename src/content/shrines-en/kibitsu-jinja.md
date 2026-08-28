@@ -39,6 +39,17 @@ gallery:
       author: "663highland"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:250505_Kibitsu-jinja_Okayama_Japan11s3.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open 5:00 AM–6:00 PM; the amulet office is open 9:00 AM–4:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–4:00 PM, from ¥300 (¥500 for a hand-written stamp)."
+  - question: "Is there parking?"
+    answer: "Yes, two paid lots are available (first 20 minutes free for cars, then ¥300 per 60 minutes)."
+  - question: "What's the connection to the Momotaro legend?"
+    answer: "The enshrined deity Okibitsuhiko no Mikoto's legendary defeat of the demon Ura is considered the origin of the Momotaro folk tale, and sites tied to the legend are scattered across the grounds."
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk from JR Kibitsu Station."
 ---
 
 ## History

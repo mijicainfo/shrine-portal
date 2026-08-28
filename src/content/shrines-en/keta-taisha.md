@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Keta-taisha_zuishinmon.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Worship is 8:30 AM–4:00 PM; the shrine office is open 8:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "Around 8:30 AM–4:30 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available (about 300 spaces)."
+  - question: "What is the \"Forbidden Forest\"?"
+    answer: "A primeval forest behind the main hall that even priests may only enter once a year during the grand festival. It's a designated national natural monument, viewable from a worship point outside its boundary."
+  - question: "How do I get there?"
+    answer: "About a 10-minute bus ride from JR Hakui Station, getting off at the Ichinomiya stop, then about a 3-minute walk."
 ---
 
 ## History

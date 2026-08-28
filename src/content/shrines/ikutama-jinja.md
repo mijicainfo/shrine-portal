@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikukunitama-jinja_torii.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に参拝者用駐車場があります。"
+  - question: "上方落語発祥の地というのは本当ですか？"
+    answer: "はい。元禄から正徳期にかけて初代・米沢彦八がこの境内で演じた「軽口噺」が今日の落語の原型になったと伝えられ、境内には「彦八の碑」もあります。"
+  - question: "アクセス方法は？"
+    answer: "大阪メトロ谷町線・千日前線「谷町九丁目駅」から徒歩約5分です。"
 ---
 
 ## 由緒

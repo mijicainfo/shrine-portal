@@ -39,6 +39,17 @@ gallery:
       author: "KENPEI"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikuta_Jinja_Ikuta_no_mori.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times (gates open around 7:00 AM); the amulet office is open 9:00 AM–4:30 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–4:30 PM, for ¥500 (seasonal limited-edition goshuin ¥1,000)."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking is available (partly paid)."
+  - question: "What is Ikuta no Mori?"
+    answer: "A historic forest behind the main hall, famous as a battlefield of the Genpei War and mentioned in \"The Tale of the Heike.\""
+  - question: "How do I get there?"
+    answer: "About a 10-minute walk north from Sannomiya Station (JR, Hanshin, Hankyu lines)."
 ---
 
 ## History

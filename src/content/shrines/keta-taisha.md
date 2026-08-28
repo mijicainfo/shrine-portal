@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Keta-taisha_zuishinmon.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "参拝は8:30〜16:00、社務所は8:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "無料駐車場があります（約300台）。"
+  - question: "「入らずの森」とは何ですか？"
+    answer: "本殿背後に広がる原生林で、神職でさえ年に一度の大祭時にしか立ち入りが許されない神域です。国の天然記念物に指定されており、遥拝所から眺めることができます。"
+  - question: "アクセス方法は？"
+    answer: "JR七尾線「羽咋駅」からバスで約10分「一の宮」下車、徒歩約3分です。"
 ---
 
 ## 由緒

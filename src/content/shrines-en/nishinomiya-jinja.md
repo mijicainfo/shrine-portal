@@ -42,6 +42,17 @@ gallery:
       author: "Yanajin33"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Nishinomiya-jinja_Torii.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Gates open 5:00–19:00 (Apr–Aug), 5:00–18:30 (Sep, Mar), or 5:00–18:00 (Oct–Feb); the amulet office is open 9:00–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, visitor parking is available in the southwest of the grounds, though it's unavailable during major festivals like Toka Ebisu."
+  - question: "What is the \"Fukuotoko\" race?"
+    answer: "Every January 10, when the front gate opens, participants race about 230 meters to the main hall — the first three to arrive are crowned \"Fukuotoko\" (lucky men)."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Hanshin Main Line Nishinomiya Station (Ebisu exit)."
 ---
 
 ## History

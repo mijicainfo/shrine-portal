@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikukunitama-jinja_torii.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "9:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–4:30 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking is available for worshippers."
+  - question: "Is it really the birthplace of Kamigata rakugo?"
+    answer: "Yes — comic storytelling performed here in the late 17th century by Yonezawa Hikohachi I is considered the origin of today's rakugo, and a monument to him stands on the grounds."
+  - question: "How do I get there?"
+    answer: "About a 5-minute walk from Tanimachi-kyuchome Station."
 ---
 
 ## History

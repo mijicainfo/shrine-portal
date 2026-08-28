@@ -40,6 +40,17 @@ gallery:
       author: "KENPEI"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kureha-jinja_Ebisu-jija.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times; the shrine office is generally open 9:00 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 9:00 AM–5:00 PM when the shrine office is staffed, for around ¥500."
+  - question: "Is there parking?"
+    answer: "No dedicated shrine parking — use paid parking lots near Ikeda Station."
+  - question: "Why does it have stained glass?"
+    answer: "It was added during the 1969 rebuilding of the worship hall to blend traditional architecture with modern design — a rare sight at a Shinto shrine."
+  - question: "How do I get there?"
+    answer: "About a 3-minute walk from Hankyu Ikeda Station."
 ---
 
 ## History

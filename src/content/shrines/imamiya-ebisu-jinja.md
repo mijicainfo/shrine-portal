@@ -43,6 +43,17 @@ gallery:
       author: "＋－"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E4%BB%8A%E5%AE%AE%E6%88%8E%E7%A5%9E%E7%A4%BE.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "6:00〜17:00（南側脇門は22:00まで）、授与所・御朱印は9:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料300円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内北側に駐車場がありますが、1月・7月・11月の土日・12月は利用できません。"
+  - question: "「裏参り」とは何ですか？"
+    answer: "拝殿での参拝の後、本殿裏手の銅鑼を叩いて再度祈願を伝える大阪ならではの風習で、「えびす様は耳が少し遠い」という言い伝えに由来します。"
+  - question: "アクセス方法は？"
+    answer: "南海高野線「今宮戎駅」から東へすぐです。"
 ---
 
 ## 由緒

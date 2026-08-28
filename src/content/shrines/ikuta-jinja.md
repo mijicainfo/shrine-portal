@@ -39,6 +39,17 @@ gallery:
       author: "KENPEI"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikuta_Jinja_Ikuta_no_mori.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由（開門7:00頃）、授与所・御朱印受付は9:00〜16:30です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30、初穂料500円（季節限定御朱印は1,000円）です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に駐車場があります（一部有料）。"
+  - question: "「生田の森」とは何ですか？"
+    answer: "本殿裏手に広がる歴史ある森で、一ノ谷の戦いの舞台として『平家物語』にも登場します。"
+  - question: "アクセス方法は？"
+    answer: "JR・阪神・阪急「三宮駅」から北へ徒歩約10分です。"
 ---
 
 ## 由緒

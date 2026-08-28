@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "Public Domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:一之宮貫前神社_不明門・勅額鳥居.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "総門は終日参拝可能ですが、楼門内は6:00〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30頃、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "総門前および西側に無料駐車場があります。"
+  - question: "「下り宮」とはどういう意味ですか？"
+    answer: "一般的な神社と異なり、鳥居をくぐった先で石段を下って社殿に至る全国でも珍しい様式で、「日本三大下り宮」の一つに数えられます。"
+  - question: "アクセス方法は？"
+    answer: "上信電鉄「上州一ノ宮駅」下車、徒歩約15分です。"
 ---
 
 ## 由緒

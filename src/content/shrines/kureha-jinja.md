@@ -40,6 +40,17 @@ gallery:
       author: "KENPEI"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kureha-jinja_Ebisu-jija.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由ですが、社務所は9:00〜17:00頃です。"
+  - question: "御朱印は？"
+    answer: "社務所在駐時に9:00〜17:00頃、初穂料500円程度です。"
+  - question: "駐車場はありますか？"
+    answer: "神社専用の駐車場はありません。池田駅周辺のコインパーキングをご利用ください。"
+  - question: "ステンドグラスがあるのはなぜですか？"
+    answer: "昭和44年（1969年）の拝殿建て替えの際、伝統建築と近代デザインを融合させる意匠として取り入れられ、神社建築では珍しい光景として知られています。"
+  - question: "アクセス方法は？"
+    answer: "阪急宝塚線「池田駅」から徒歩約3分です。"
 ---
 
 ## 由緒
