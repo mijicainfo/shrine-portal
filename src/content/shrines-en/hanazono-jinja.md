@@ -41,6 +41,17 @@ gallery:
       author: "Alexandar Vujadinovic"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Hanazono_shrine_in_Shinjuku,_Tokyo.jpg"
+faq:
+  - question: "What are the visiting hours at Hanazono Jinja?"
+    answer: "The grounds are open to visitors at all times (the shrine office and goshuin reception are open roughly 8:00–20:00)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office roughly 8:00–20:00, for ¥500 (¥1,000 for the cut-paper kirie goshuin)."
+  - question: "Is there parking at Hanazono Jinja?"
+    answer: "No, there is no parking for visitors on the grounds. Nearby pay parking lots are the best option."
+  - question: "Where exactly is Hanazono Jinja located?"
+    answer: "It sits right in the heart of Shinjuku's entertainment district, a stone's throw from Kabukicho. Its Geino Asama Jinja sub-shrine draws a steady stream of entertainers praying for success in the performing arts."
+  - question: "How do I get to Hanazono Jinja?"
+    answer: "Immediately outside Exit E2 of Shinjuku-sanchome Station (Tokyo Metro Marunouchi Line / Toei Shinjuku Line); about 7 minutes on foot from the east exit of JR Shinjuku Station."
 ---
 
 ## History

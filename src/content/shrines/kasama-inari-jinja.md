@@ -39,6 +39,17 @@ gallery:
       author: "Suikotei"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kasama_Inari-jinja_Honden_01.jpg"
+faq:
+  - question: "笠間稲荷神社の参拝時間は？"
+    answer: "境内参拝は6:00〜日没頃です（授与所は8:30〜17:00頃）。"
+  - question: "御朱印は何時から？初穂料は？"
+    answer: "授与所にて8:30〜17:00頃の受付、初穂料は500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内駐車場（普通車25台・大型車不可）と地蔵前駐車場（90台・大型車可）が無料で利用できます。"
+  - question: "笠間のフジの見頃はいつ？"
+    answer: "境内に茂る2本の藤「笠間のフジ」は茨城県指定天然記念物で、例年5月上旬から中旬にかけて紫の花房を咲かせます。"
+  - question: "アクセス方法は？"
+    answer: "JR水戸線「笠間駅」から徒歩約20分・タクシーで約5分です。北関東自動車道「友部IC」からは車で約15分です。"
 ---
 
 ## 由緒

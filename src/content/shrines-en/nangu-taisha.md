@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "Public Domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:南宮大社_舞殿.JPG"
+faq:
+  - question: "What are the visiting hours at Nangu Taisha?"
+    answer: "The grounds are open to visitors from 6:00 to 17:30."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 9:00 to 17:00, for ¥300 (a goshuin book costs ¥1,500)."
+  - question: "Is there parking at Nangu Taisha?"
+    answer: "Yes, free parking is available on the grounds."
+  - question: "What is the Kinzan Matsuri (bellows festival) at Nangu Taisha?"
+    answer: "Held every November 8, it's a tradition in which swordsmiths, blacksmiths, and foundry workers from across Japan take the day off work to visit the shrine — a fitting rite for a shrine dedicated to the god of mining and metal."
+  - question: "How do I get to Nangu Taisha?"
+    answer: "About a 20-minute walk from JR Tarui Station on the Tokaido Main Line; about 15 minutes by car from the Sekigahara IC on the Meishin Expressway, or via the Yoro SA smart IC."
 ---
 
 ## History

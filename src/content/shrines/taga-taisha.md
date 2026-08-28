@@ -40,6 +40,17 @@ gallery:
       author: "先従隗始"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Taga_Shrine_20210305_03.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "8:30〜17:00です。"
+  - question: "御朱印は？"
+    answer: "8:30〜17:00、初穂料300円です（切り絵御朱印は500円）。"
+  - question: "駐車場はありますか？"
+    answer: "表参道周辺に参拝者用駐車場が複数あります（一部有料）。"
+  - question: "「おたまじゃくし」の語源は多賀大社と関係がある？"
+    answer: "しゃもじ型のお守り「お多賀杓子」が由来とされ、これがなまって「お玉杓子」となり、形の似たカエルの幼生「オタマジャクシ」の語源になったとも伝えられています。"
+  - question: "アクセス方法は？"
+    answer: "近江鉄道本線「多賀大社前駅」から徒歩10分、名神高速道路「彦根IC」から車で約15分です。"
 ---
 
 ## 由緒

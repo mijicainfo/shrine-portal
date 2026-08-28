@@ -41,6 +41,17 @@ gallery:
       author: "Bachstelze"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Zuishinmon-gate_of_Takekoma-jinja_shrine.JPG"
+faq:
+  - question: "竹駒神社の参拝時間は？"
+    answer: "境内参拝は自由です（開門6:00〜17:00頃、社務所受付は9:00〜16:30）。"
+  - question: "御朱印は何時から？初穂料は？"
+    answer: "社務所にて9:00〜16:30の受付、初穂料は500円〜です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に参拝者用の無料駐車場があります。"
+  - question: "竹駒神社は日本三稲荷のひとつ？"
+    answer: "京都の伏見稲荷大社を筆頭に「三大稲荷」を名乗る神社は各地にありますが、竹駒神社も東北の地で古くから「日本三稲荷」の一社として数えられてきました（顔ぶれには諸説あり、笠間稲荷神社や祐徳稲荷神社が数えられることもあります）。"
+  - question: "アクセス方法は？"
+    answer: "JR東北本線・常磐線「岩沼駅」東口から徒歩約15〜20分、または仙台東部道路「岩沼インターチェンジ」から車で約10分です。"
 ---
 
 ## 由緒

@@ -46,6 +46,17 @@ gallery:
       author: "TANAKA Juuyoh（田中十洋）"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Haruna_Shrine_panorama_April_2010.jpg"
+faq:
+  - question: "榛名神社の参拝時間は？"
+    answer: "参拝時間は7:00〜18:00（冬期は17:00まで）です。"
+  - question: "御朱印は何時から？初穂料は？"
+    answer: "境内の授与所にて8:45〜16:00頃の受付、初穂料は500円です。"
+  - question: "駐車場はありますか？"
+    answer: "参道入口周辺に町営駐車場（有料）があります。紅葉シーズンなどは混雑・渋滞することがあります。"
+  - question: "矢立杉とは？"
+    answer: "参道に立つ杉の巨木の一つで、武田信玄が箕輪城攻めの際に矢を立てて武運を祈願したと伝わり、国指定天然記念物になっています。"
+  - question: "アクセス方法は？"
+    answer: "JR高崎駅西口から群馬バス（榛名湖行、本郷経由）で「榛名神社」バス停下車、徒歩約15分です。関越自動車道「渋川伊香保IC」からは車で約40分です。"
 ---
 
 ## 由緒

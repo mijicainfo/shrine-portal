@@ -45,6 +45,17 @@ gallery:
       author: "squeuei"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sand%C5%8D_of_Suwa-jinja,_Nagasaki.jpg"
+faq:
+  - question: "諏訪神社（長崎）の参拝時間は？"
+    answer: "境内参拝は自由（24時間参拝可）です。社務所・御朱印受付は8:00〜17:00です。"
+  - question: "御朱印は何時から？初穂料は？"
+    answer: "社務所にて8:00〜17:00の受付、初穂料は500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に駐車場があります（普通車約100台・大型バス5台）。ただし正月や長崎くんち期間中は利用が制限されます。"
+  - question: "長崎くんちとは？"
+    answer: "毎年10月7日〜9日に奉納される諏訪神社の秋の例大祭で、龍踊や唐人船など中国・オランダの異国情緒を反映した演し物が各踊町から奉納される、国の重要無形民俗文化財です。"
+  - question: "アクセス方法は？"
+    answer: "長崎電気軌道（路面電車）「諏訪神社」電停下車すぐです（JR長崎駅から路面電車で約8分）。"
 ---
 
 ## 由緒

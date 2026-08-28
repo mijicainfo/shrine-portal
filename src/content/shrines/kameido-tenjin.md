@@ -39,6 +39,17 @@ gallery:
       author: "Takuro1202"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kameido_Tenjin_Shrine_and_Tokyo_sky_tree.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "正式な参拝時間は6:00〜17:00です（境内は終日参拝可能）。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "東門駐車場があります（8:00〜17:00ごろ、約30台）。"
+  - question: "藤の見頃はいつ？"
+    answer: "例年4月中旬から5月上旬にかけてが見頃で、50株以上の藤が心字池の太鼓橋を覆うように咲き誇る「東京一の藤の名所」です。"
+  - question: "アクセス方法は？"
+    answer: "JR総武線・亀戸駅から徒歩約12分、都バス「亀戸天神前」下車すぐです。"
 ---
 
 ## 由緒

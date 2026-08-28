@@ -39,6 +39,17 @@ gallery:
       author: "くろふね"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:%E6%88%B8%E9%9A%A0%E7%A5%9E%E7%A4%BE%E4%B8%AD%E7%A4%BE_-_panoramio_(3).jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times. The office is open roughly 9:00–17:00, with shorter hours in winter."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 9:00–17:00 (shorter hours, to around 16:00, in winter), for ¥300."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available at the entrance to Chusha's west approach, with overflow lots nearby when full."
+  - question: "Is it true that Togakushi Jinja is made up of five separate shrines?"
+    answer: "Yes. The complex consists of Okusha, Chusha, Hokosha, Kuzuryusha, and Hinomiko-sha, and the roughly 2-kilometer approach path between Chusha and Okusha is lined with cedars over 400 years old."
+  - question: "How do I get there?"
+    answer: "About 60 minutes by Alpico Kotsu bus from JR/Hokuriku Shinkansen Nagano Station, alighting at the Chusha stop right by the shrine; about 40 minutes by car from Shinano-machi IC or Nagano IC on the Joshin-etsu Expressway."
 ---
 
 ## History

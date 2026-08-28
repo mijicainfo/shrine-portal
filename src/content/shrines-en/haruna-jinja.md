@@ -46,6 +46,17 @@ gallery:
       author: "TANAKA Juuyoh"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Haruna_Shrine_panorama_April_2010.jpg"
+faq:
+  - question: "What are the visiting hours at Haruna Jinja?"
+    answer: "The grounds are open 7:00–18:00 (until 17:00 in winter)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office on the grounds roughly 8:45–16:00, for ¥500."
+  - question: "Is there parking at Haruna Jinja?"
+    answer: "Yes, paid town-operated parking is available near the approach entrance, though it can get congested during the autumn foliage season."
+  - question: "What is the Yatate Sugi tree at Haruna Jinja?"
+    answer: "One of the towering cedars along the approach, where the warlord Takeda Shingen is said to have shot an arrow into the trunk to pray for victory before his assault on Minowa Castle. It is a nationally designated natural monument."
+  - question: "How do I get to Haruna Jinja?"
+    answer: "From JR Takasaki Station west exit, take the Gunma Bus bound for Lake Haruna via Hongo and get off at the Haruna-jinja bus stop, then walk about 15 minutes; about 40 minutes by car from the Shibukawa-Ikaho IC on the Kan-etsu Expressway."
 ---
 
 ## History

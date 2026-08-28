@@ -41,6 +41,17 @@ gallery:
       author: "Σ64"
       license: "CC BY 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Oyama_Afuri_Shrine_in_snow.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds of the Lower Shrine are open to visitors at all times (office hours 9:00–17:00). The Upper Shrine at the summit is generally visited during the Oyama Cable Car's operating hours."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500. Four types are available: Lower Shrine, Upper Shrine, shamukyoku office, and Sengen-sha."
+  - question: "Is there parking?"
+    answer: "Yes, the Oyama Daiichi parking lot (weekdays ¥900, weekends/holidays ¥1,000 for cars) and several Isehara municipal lots (¥600–¥1,500) are located near the entrance to Koma-sando."
+  - question: "What is the 'Oyama-mairi' pilgrimage tradition?"
+    answer: "A pilgrimage custom that became enormously popular among Edo-period commoners, drawing an estimated 200,000 visitors a year — it was said that no true child of Edo could call themselves complete without having made the journey."
+  - question: "How do I get there?"
+    answer: "About 25 minutes by bus from Odakyu Line Isehara Station to the Oyama Cable bus stop, then a 15-minute walk up Koma-sando to the cable car's base station, followed by a 6-minute cable car ride to Afuri-jinja Station (Lower Shrine)."
 ---
 
 ## History

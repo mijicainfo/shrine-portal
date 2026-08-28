@@ -39,6 +39,17 @@ gallery:
       author: "Atelier Verde"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kurumazaki_Shrine140517NI1.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times. The goshuin office is open 9:30–17:00."
+  - question: "When is the goshuin office open?"
+    answer: "9:30–17:00, for ¥500. Two types are available: Kurumazaki Jinja and the subsidiary Geino Shrine."
+  - question: "Is there parking?"
+    answer: "Yes, visitor parking is available, but it closes at 16:30."
+  - question: "What is the Geino Jinja subsidiary shrine?"
+    answer: "Founded in 1957 and dedicated to Ame-no-Uzume no Mikoto, goddess of the performing arts, its approach is lined with more than 4,000 vermilion tamagushi stakes bearing the names of actors, musicians, and other entertainers who have prayed there."
+  - question: "How do I get there?"
+    answer: "Directly outside Kurumazaki-jinja Station on the Randen (Keifuku Electric Railroad) Arashiyama Main Line, or right at the Kurumazaki-jinja-mae city/Kyoto bus stop."
 ---
 
 ## History

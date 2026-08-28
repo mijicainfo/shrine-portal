@@ -40,6 +40,17 @@ gallery:
       author: "先従隗始"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Taga_Shrine_20210305_03.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "8:30 AM–5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "8:30 AM–5:00 PM, for ¥300 (¥500 for the cut-paper goshuin)."
+  - question: "Is there parking?"
+    answer: "Yes, several parking lots are available around the main approach (some paid)."
+  - question: "Is the word 'tadpole' (otamajakushi) really connected to Taga Taisha?"
+    answer: "According to legend, it comes from the shrine's rice-paddle-shaped charm 'Otaga-jakushi,' whose name is said to have shifted to 'Otama-jakushi' and then given its name to the tadpole for its similar shape."
+  - question: "How do I get there?"
+    answer: "10 minutes on foot from Taga-Taishamae Station on the Omi Railway Main Line; about 15 minutes by car from Hikone IC on the Meishin Expressway."
 ---
 
 ## History

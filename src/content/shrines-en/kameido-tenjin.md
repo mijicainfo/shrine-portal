@@ -39,6 +39,17 @@ gallery:
       author: "Takuro1202"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kameido_Tenjin_Shrine_and_Tokyo_sky_tree.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The shrine's official visiting hours are 6:00–17:00 (grounds accessible at all times)."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, east gate parking is available (roughly 8:00–17:00, about 30 spaces)."
+  - question: "When is the best time to see the wisteria?"
+    answer: "Usually mid-April to early May, when more than 50 wisteria vines drape the Shinji-ike pond and drum bridge, earning the shrine its reputation as 'Edo's number one wisteria spot.'"
+  - question: "How do I get there?"
+    answer: "About a 12-minute walk from JR Sobu Line Kameido Station, or directly at the Kameido Tenjin-mae Toei bus stop."
 ---
 
 ## History

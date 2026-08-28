@@ -45,6 +45,17 @@ gallery:
       author: "squeuei"
       license: "CC BY 2.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sand%C5%8D_of_Suwa-jinja,_Nagasaki.jpg"
+faq:
+  - question: "What are the visiting hours at Suwa Jinja in Nagasaki?"
+    answer: "The grounds are open to visitors at all times. The shrine office and goshuin reception are open 8:00–17:00."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 8:00 to 17:00, for ¥500."
+  - question: "Is there parking at Suwa Jinja?"
+    answer: "Yes, parking is available on the grounds for about 100 cars and 5 large buses, though access is restricted during New Year and the Nagasaki Kunchi festival."
+  - question: "What is Nagasaki Kunchi?"
+    answer: "Suwa Jinja's autumn grand festival, held every year from October 7 to 9, featuring dragon dances and Chinese-style boat processions reflecting Nagasaki's Chinese and Dutch influences, dedicated in turn by the city's neighborhoods. It's a National Important Intangible Folk Cultural Property."
+  - question: "How do I get to Suwa Jinja?"
+    answer: "Right at the Suwa-jinja stop on the Nagasaki Electric Tramway, about 8 minutes by tram from JR Nagasaki Station."
 ---
 
 ## History

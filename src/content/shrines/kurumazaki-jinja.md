@@ -39,6 +39,17 @@ gallery:
       author: "Atelier Verde"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kurumazaki_Shrine140517NI1.JPG"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由です。授与所は9:30〜17:00です。"
+  - question: "御朱印は？"
+    answer: "9:30〜17:00、初穂料500円です。「車折神社」「芸能神社」の2種類がいただけます。"
+  - question: "駐車場はありますか？"
+    answer: "参拝者駐車場があります（16:30閉鎖）。"
+  - question: "境内社「芸能神社」とはどんな神社？"
+    answer: "昭和32年（1957年）創建の芸能の女神・天宇受売命を祀る境内社で、参道には俳優や歌手など芸能人・文化人が奉納した朱塗りの玉垣が4000枚以上並んでいます。"
+  - question: "アクセス方法は？"
+    answer: "嵐電（京福電鉄）嵐山本線「車折神社駅」下車すぐ、または市バス・京都バス「車折神社前」下車すぐです。"
 ---
 
 ## 由緒

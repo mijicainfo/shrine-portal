@@ -39,6 +39,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hirota-jinja,_tsutsuji-1.jpg"
+faq:
+  - question: "What are the visiting hours at Hirota Jinja?"
+    answer: "The grounds are open to visitors at all times (the shrine office is open 8:30–16:30)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 8:30 to 16:30, for ¥500 (¥1,000 for the special goshuin)."
+  - question: "Is there parking at Hirota Jinja?"
+    answer: "Yes, free visitor parking is available on the grounds."
+  - question: "What is the connection between Hirota Jinja and the Hanshin Tigers?"
+    answer: "Hirota Jinja has long been known as a deity of victory. Since the team's founding, the Hanshin Tigers professional baseball team has made it a tradition for the entire roster, manager, and coaching staff to visit together every March before the season opener to pray for victory."
+  - question: "How do I get to Hirota Jinja?"
+    answer: "By bus bound for Koto-en from the south exit of Hankyu Nishinomiya-Kitaguchi Station, get off at Hirota-jinja-mae; or by Hanshin bus on the Yamate-Higashi route from the north exit of Hanshin Nishinomiya Station, same stop."
 ---
 
 ## History

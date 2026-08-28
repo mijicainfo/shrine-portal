@@ -39,6 +39,17 @@ gallery:
       author: "sk01"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:高千穂神社の夫婦杉_-_panoramio.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times. Nightly Takachiho Kagura performances at the kagura hall run 20:00–21:00, with reception from 19:00."
+  - question: "When is the goshuin office open?"
+    answer: "Roughly 9:00–17:00, available at two reception points near the parking lot and beside the kagura hall, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available adjacent to the grounds (space for about 80 cars)."
+  - question: "Can you see Takachiho Kagura every night?"
+    answer: "The full all-night sequence of 33 sacred dances is tied to a specific season, but the kagura hall distills four representative dances into a one-hour program staged every night of the year at 20:00 (admission ¥1,000)."
+  - question: "How do I get there?"
+    answer: "About 2.5 hours by car from Miyazaki city, or about 1 hour by highway bus ('Takachiho-go') from JR Nobeoka Station to Takachiho Bus Center, then about a 15-minute walk."
 ---
 
 ## History

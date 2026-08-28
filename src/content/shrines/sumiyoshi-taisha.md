@@ -42,6 +42,17 @@ gallery:
       author: "Hyppolyte de Saint-Rambert"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sumiyoshi-taisha_(Osaka_Sumiyoshi-ku)_Shrine_hdsr_S5_g17.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "開門6:00（10〜3月は6:30）、閉門17:00（外周門は16:00）です。正月三が日・住吉祭期間は時間が変動します。"
+  - question: "御朱印は？"
+    answer: "9:00〜17:00、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "参拝者専用駐車場があります（約200台、普通車30分200円、御祈祷者は2時間無料）。正月三が日〜2月初旬・住吉祭期間は料金・利用方法が変動します。"
+  - question: "本殿の「住吉造」とはどんな建築様式？"
+    answer: "4棟すべてが国宝に指定された神社建築最古の部類の様式で、切妻・直線的な屋根の社殿が横並びでなく縦に連なって配置される、他に類を見ない配置が特徴です。"
+  - question: "アクセス方法は？"
+    answer: "南海本線「住吉大社駅」・阪堺電気軌道上町線「住吉鳥居前駅」から徒歩3分、南海高野線「住吉東駅」から徒歩5分です。"
 ---
 
 ## 由緒

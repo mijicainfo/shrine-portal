@@ -41,6 +41,17 @@ gallery:
       author: "Bachstelze"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Zuishinmon-gate_of_Takekoma-jinja_shrine.JPG"
+faq:
+  - question: "What are the visiting hours at Takekoma Jinja?"
+    answer: "The grounds are open to visitors at all times (the gates are open roughly 6:00–17:00; the shrine office is open 9:00–16:30)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 9:00 to 16:30, from ¥500."
+  - question: "Is there parking at Takekoma Jinja?"
+    answer: "Yes, free visitor parking is available on the grounds."
+  - question: "Is Takekoma Jinja one of Japan's Three Great Inari Shrines?"
+    answer: "Fushimi Inari Taisha in Kyoto is the head shrine of Inari worship, but Takekoma Jinja has long been counted, by local and regional tradition, among Japan's \"Three Great Inari Shrines\" (the exact membership varies by source, with shrines such as Kasama Inari or Yutoku Inari sometimes named instead)."
+  - question: "How do I get to Takekoma Jinja?"
+    answer: "About 15–20 minutes on foot from the east exit of JR Iwanuma Station (Tohoku Main Line / Joban Line), or about 10 minutes by car from the Iwanuma Interchange on the Sendai-Tobu Road."
 ---
 
 ## History

@@ -41,6 +41,17 @@ gallery:
       author: "Alexandar Vujadinovic"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Entrance_to_the_Hanazono_shrine_in_Shinjuku,_Tokyo.jpg"
+faq:
+  - question: "花園神社の参拝時間は？"
+    answer: "境内参拝は自由です（社務所・御朱印受付は8:00〜20:00頃）。"
+  - question: "御朱印は何時から？初穂料は？"
+    answer: "社務所にて8:00〜20:00頃の受付、初穂料は500円です（切り絵御朱印は1,000円）。"
+  - question: "駐車場はありますか？"
+    answer: "境内に参拝者用駐車場はありません。周辺のコインパーキングをご利用ください。"
+  - question: "花園神社はどんな場所にある？"
+    answer: "歌舞伎町にほど近い新宿の歓楽街のただ中に鎮座しており、境内社の芸能浅間神社には芸能上達を願う芸能人からの参拝が絶えないことでも知られています。"
+  - question: "アクセス方法は？"
+    answer: "東京メトロ丸ノ内線・都営新宿線「新宿三丁目駅」E2出口すぐです。JR新宿駅東口からは徒歩約7分です。"
 ---
 
 ## 由緒

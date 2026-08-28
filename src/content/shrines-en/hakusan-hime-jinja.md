@@ -41,6 +41,17 @@ gallery:
       author: "Saigen Jiro"
       license: "Public Domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:白山比咩神社_奥宮遙拝所.JPG"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times. The Treasure Hall is open 9:00–16:00 (9:30–15:30 in November) and closed entirely from December through March."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–17:00, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, parking is available at the front approach (about 30 spaces), north approach (about 300 spaces), and south approach (about 130 spaces)."
+  - question: "Is Hakusan Hime Jinja the head shrine of all Hakusan shrines in Japan?"
+    answer: "Yes. It is the head shrine of roughly 3,000 Hakusan and Shirayama shrines nationwide, and holds the prestigious rank of ichinomiya of former Kaga Province."
+  - question: "How do I get there?"
+    answer: "About 5 minutes by taxi from Tsurugi Station on the Hokuriku Railroad Ishikawa Line, or the Kaga Hakusan bus bound for Sena to the Ichinomiya stop, then about a 5-minute walk."
 ---
 
 ## History

@@ -40,6 +40,17 @@ gallery:
       author: "nnh"
       license: "Public domain"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Doitsu-bashi.jpeg"
+faq:
+  - question: "What are the visiting hours at Oasahiko Jinja?"
+    answer: "The grounds are open 6:00–17:00 (the shrine office and goshuin reception are open 8:00–17:00)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 8:00 to 17:00, for ¥300."
+  - question: "Is there parking at Oasahiko Jinja?"
+    answer: "Yes, free parking is available on the grounds with space for about 1,000 cars."
+  - question: "What is the German Bridge (Doitsu-bashi) at Oasahiko Jinja?"
+    answer: "A stone arch bridge said to have been built around 1919 by German prisoners of war interned at the nearby Bando POW camp during World War I, using German engineering techniques that hold the stones together without mortar. It is designated a historic site by Tokushima Prefecture."
+  - question: "How do I get to Oasahiko Jinja?"
+    answer: "About 20–25 minutes on foot (or about 6 minutes by taxi) from Bando Station on the JR Kotoku Line, or by Tokushima Bus to the Oasa-jinja-mae stop, then about 6 minutes on foot."
 ---
 
 ## History

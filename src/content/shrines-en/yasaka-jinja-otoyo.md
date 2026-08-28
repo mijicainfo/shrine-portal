@@ -38,6 +38,17 @@ gallery:
       author: "Saigen Jiro"
       license: "CC0 1.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sugi_no_Osugi,_gaikan-2.jpg"
+faq:
+  - question: "What are the visiting hours at Yasaka Jinja (the great cedar)?"
+    answer: "The shrine grounds are open to visitors at all times."
+  - question: "What are the hours and fee for viewing the great cedar?"
+    answer: "The fenced viewing area around the great cedar is open 8:00–18:00 (8:30–17:00 from October to March), and a facility maintenance fee of ¥200 for adults and ¥100 for elementary/middle school students applies."
+  - question: "Is there parking at Yasaka Jinja?"
+    answer: "Yes, dedicated parking is available for the great cedar (20 spaces for cars, 1 for large buses, 3 for accessible parking), with the fee included in the facility maintenance charge."
+  - question: "What is the connection to Misora Hibari?"
+    answer: "In 1947, the then nine-year-old singer Misora Hibari survived a serious bus accident near this site and is said to have prayed at the great cedar to become Japan's number one singer. After her death, a memorial stone and song monument were erected beside the tree in 1993 in a small garden called Osugi no Sono."
+  - question: "How do I get to Yasaka Jinja (the great cedar)?"
+    answer: "About 15 minutes on foot from JR Osugi Station on the Dosan Line; about 5 minutes by car from the Otoyo IC on the Kochi Expressway; or about a 5-minute walk from Michi-no-Eki Osugi roadside station on Route 32, directly across the road."
 ---
 
 ## History

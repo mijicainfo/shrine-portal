@@ -39,6 +39,17 @@ gallery:
       author: "Suikotei"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kasama_Inari-jinja_Honden_01.jpg"
+faq:
+  - question: "What are the visiting hours at Kasama Inari Jinja?"
+    answer: "The grounds are open 6:00 to around sunset (the shrine office is open roughly 8:30–17:00)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office roughly 8:30 to 17:00, for ¥500."
+  - question: "Is there parking at Kasama Inari Jinja?"
+    answer: "Yes, free parking is available at both the shrine-grounds lot (25 spaces, no large buses) and the Jizo-mae lot (90 spaces, buses OK)."
+  - question: "When do the wisteria at Kasama Inari Jinja bloom?"
+    answer: "The two wisteria vines on the grounds, known as the Kasama Fuji and designated a prefectural natural monument, burst into purple bloom each year from early to mid-May."
+  - question: "How do I get to Kasama Inari Jinja?"
+    answer: "About 20 minutes on foot or 5 minutes by taxi from JR Kasama Station on the Mito Line; about 15 minutes by car from the Tomobe IC on the Kita-Kanto Expressway."
 ---
 
 ## History

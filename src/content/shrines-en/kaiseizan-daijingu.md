@@ -41,6 +41,17 @@ gallery:
       author: "藍原あおい"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:桜まつり（開成山大神宮）.JPG"
+faq:
+  - question: "What are the visiting hours at Kaiseizan Daijingu?"
+    answer: "The grounds are open to visitors at all times (the shrine office is open 8:30–17:00)."
+  - question: "When can I get a goshuin, and how much does it cost?"
+    answer: "Goshuin are available at the shrine office from 8:30 to 17:00, for ¥300 (limited-edition goshuin are ¥500)."
+  - question: "Is there parking at Kaiseizan Daijingu?"
+    answer: "Yes, about 50 free parking spaces are available on the grounds. During New Year and the cherry blossom season, the free lots at Kaiseizan Park across the street (448 spaces in total) are also available."
+  - question: "When is cherry blossom season at Kaiseizan Daijingu?"
+    answer: "Together with adjoining Kaiseizan Park, the shrine is lined with roughly 1,300 cherry trees, one of Tohoku's premier destinations, at their best from late March through April. Some of Japan's oldest surviving Somei Yoshino cherry trees, planted around 1878, still stand here."
+  - question: "How do I get to Kaiseizan Daijingu?"
+    answer: "About 15 minutes by bus from JR Koriyama Station, getting off at Koriyama Joshi Daigaku and walking about 2 minutes; about 15 minutes by car from the Koriyama IC on the Tohoku Expressway."
 ---
 
 ## History

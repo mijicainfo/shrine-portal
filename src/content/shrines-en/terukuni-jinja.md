@@ -39,6 +39,17 @@ gallery:
       author: "Soramimi"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sculpture_of_Shimazu_Nariakira_near_Terukuni_Shrine.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open to visitors at all times. Prayer requests and amulet reception run 9:00–16:30."
+  - question: "When is the goshuin office open?"
+    answer: "9:00–16:30, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, free parking is available on the grounds (24 spaces on weekdays, 40 on weekends/holidays, plus 2 bus spaces; 8:30–17:00)."
+  - question: "Who is the deity enshrined at Terukuni Jinja?"
+    answer: "It enshrines Shimazu Nariakira, the 11th lord of the Satsuma domain, who introduced advanced Western technology through his Shuseikan industrial complex and modernized Satsuma. That project was inscribed as a UNESCO World Heritage site in 2015."
+  - question: "How do I get there?"
+    answer: "About a 20-minute walk from JR Kagoshima-Chuo Station, or by tram/bus to the Tenmonkan-dori stop, about a 5-minute walk from there."
 ---
 
 ## History

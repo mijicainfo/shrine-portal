@@ -41,6 +41,17 @@ gallery:
       author: "Zairon"
       license: "CC BY-SA 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanda_Myojin_Honden_Innen_7.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "The grounds are open 24 hours a day. The shrine office and shop are open roughly 9:00 AM to 5:00 PM."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking is available (about 10 spaces, free, entrance to the right of the Zuishin-mon gate). Nearby coin parking is recommended when full."
+  - question: "Does Kanda Myojin have anime or game collaboration goshuincho and charms?"
+    answer: "Yes, the shrine offers collaboration goshuincho and charms tied to popular franchises such as Love Live! and Is the Order a Rabbit?, along with a popular amulet for IT and information security blessings."
+  - question: "How do I get there?"
+    answer: "5 minutes on foot from Ochanomizu Station (JR Chuo Line/Tokyo Metro Marunouchi Line), Shin-Ochanomizu Station (Tokyo Metro Chiyoda Line), or Suehirocho Station (Tokyo Metro Ginza Line); 7 minutes on foot from Akihabara Station (JR/Tokyo Metro Hibiya Line)."
 ---
 
 ## History

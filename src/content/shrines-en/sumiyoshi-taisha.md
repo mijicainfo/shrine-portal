@@ -42,6 +42,17 @@ gallery:
       author: "Hyppolyte de Saint-Rambert"
       license: "CC BY 4.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sumiyoshi-taisha_(Osaka_Sumiyoshi-ku)_Shrine_hdsr_S5_g17.jpg"
+faq:
+  - question: "What are the visiting hours?"
+    answer: "Gates open at 6:00 AM (6:30 AM October–March) and close at 5:00 PM (outer gates 4:00 PM). Hours vary during New Year's and the Sumiyoshi Festival."
+  - question: "When is the goshuin office open?"
+    answer: "9:00 AM–5:00 PM, for ¥500."
+  - question: "Is there parking?"
+    answer: "Yes, on-site parking for worshippers is available (about 200 spaces; ¥200 per 30 minutes for cars, free for 2 hours with a prayer service). Rates and availability change during New Year's and the Sumiyoshi Festival."
+  - question: "What is distinctive about the shrine's 'Sumiyoshi-zukuri' architecture?"
+    answer: "All four main sanctuary buildings are designated National Treasures, built in one of the oldest styles of Japanese shrine architecture, with straight-roofed, gable-ended halls lined up one behind the other rather than side by side."
+  - question: "How do I get there?"
+    answer: "3 minutes on foot from Sumiyoshi-taisha Station (Nankai Main Line) or Sumiyoshi-toriimae Station (Hankai Uemachi Line); 5 minutes on foot from Sumiyoshi-higashi Station (Nankai Koya Line)."
 ---
 
 ## History

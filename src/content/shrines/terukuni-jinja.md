@@ -39,6 +39,17 @@ gallery:
       author: "そらみみ"
       license: "CC BY-SA 3.0"
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Sculpture_of_Shimazu_Nariakira_near_Terukuni_Shrine.jpg"
+faq:
+  - question: "参拝時間は？"
+    answer: "境内参拝は自由です。御祈祷・授与所の受付は9:00〜16:30です。"
+  - question: "御朱印は？"
+    answer: "9:00〜16:30、初穂料500円です。"
+  - question: "駐車場はありますか？"
+    answer: "境内に無料駐車場があります（平日24台・土日祝40台、大型バス2台、8:30〜17:00）。"
+  - question: "照國神社の御祭神はどんな人物？"
+    answer: "薩摩藩第11代藩主・島津齊彬公その人で、集成館事業により西洋の先進技術を導入し薩摩藩を近代化させた名君です。この事業は2015年に世界文化遺産に登録されています。"
+  - question: "アクセス方法は？"
+    answer: "JR「鹿児島中央駅」から徒歩約20分、または市電・バスで「天文館通」下車徒歩約5分です。"
 ---
 
 ## 由緒
