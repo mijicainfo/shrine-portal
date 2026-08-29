@@ -1,6 +1,6 @@
 ---
 name: "北海道神宮"
-kana: "ほっかいどうじんぐう"
+kana: "Hokkaidō-jingū"
 prefecture: "北海道"
 city: "札幌市中央区"
 bookingCity: "Sapporo"

@@ -1,6 +1,6 @@
 ---
 name: "厳島神社"
-kana: "いつくしまじんじゃ"
+kana: "Itsukushima-jinja"
 prefecture: "広島県"
 city: "廿日市市（宮島）"
 bookingCity: "Miyajima, Hatsukaichi"

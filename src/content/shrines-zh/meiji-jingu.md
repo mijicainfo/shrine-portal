@@ -1,6 +1,6 @@
 ---
 name: "明治神宮"
-kana: "めいじじんぐう"
+kana: "Meiji-jingū"
 prefecture: "東京都"
 city: "渋谷区"
 bookingCity: "Shibuya"

@@ -1,6 +1,6 @@
 ---
 name: "金刀比羅宮"
-kana: "ことひらぐう"
+kana: "Kotohira-gū"
 prefecture: "香川県"
 city: "仲多度郡琴平町"
 bookingCity: "Kotohira"

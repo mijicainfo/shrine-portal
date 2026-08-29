@@ -1,6 +1,6 @@
 ---
 name: "鹽竈神社"
-kana: "しおがまじんじゃ"
+kana: "Shiogama-jinja"
 prefecture: "宮城県"
 city: "塩竈市"
 bookingCity: "Shiogama"

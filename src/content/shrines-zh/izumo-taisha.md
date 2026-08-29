@@ -1,6 +1,6 @@
 ---
 name: "出雲大社"
-kana: "いずもおおやしろ"
+kana: "Izumo Ōyashiro"
 prefecture: "島根県"
 city: "出雲市"
 bookingCity: "Izumo"

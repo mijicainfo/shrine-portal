@@ -1,6 +1,6 @@
 ---
 name: "伊勢神宮"
-kana: "いせじんぐう"
+kana: "Ise-jingū"
 prefecture: "三重県"
 city: "伊勢市"
 bookingCity: "Ise"

@@ -1,6 +1,6 @@
 ---
 name: "伏見稲荷大社"
-kana: "ふしみいなりたいしゃ"
+kana: "Fushimi Inari Taisha"
 prefecture: "京都府"
 city: "京都市伏見区"
 bookingCity: "Fushimi-ku, Kyoto"

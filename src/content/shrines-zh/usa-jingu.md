@@ -1,6 +1,6 @@
 ---
 name: "宇佐神宮"
-kana: "うさじんぐう"
+kana: "Usa-jingū"
 prefecture: "大分県"
 city: "宇佐市"
 bookingCity: "Usa"

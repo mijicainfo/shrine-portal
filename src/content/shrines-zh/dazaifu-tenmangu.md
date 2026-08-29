@@ -1,6 +1,6 @@
 ---
 name: "太宰府天満宮"
-kana: "だざいふてんまんぐう"
+kana: "Dazaifu Tenmangū"
 prefecture: "福岡県"
 city: "太宰府市"
 bookingCity: "Dazaifu"
