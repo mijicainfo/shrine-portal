@@ -1,22 +1,29 @@
 ---
 const path = Astro.url.pathname;
-const isEn = path === '/en' || path.startsWith('/en/');
+const currentLang = path === '/en' || path.startsWith('/en/')
+  ? 'en'
+  : path === '/zh' || path.startsWith('/zh/')
+    ? 'zh'
+    : 'ja';
 
-const jaPath = isEn ? path.replace(/^\/en/, '') || '/' : path;
-const enPath = isEn ? path : `/en${path === '/' ? '' : path}` || '/en';
+const basePath = currentLang === 'ja' ? path : path.replace(/^\/(en|zh)/, '') || '/';
+const buildPath = (lang: 'ja' | 'en' | 'zh') =>
+  lang === 'ja' ? basePath : `/${lang}${basePath === '/' ? '' : basePath}`;
+
+const links = [
+  { lang: 'ja' as const, label: '日本語' },
+  { lang: 'en' as const, label: 'EN' },
+  { lang: 'zh' as const, label: '繁體中文' },
+];
 ---
 
 <div class="flex items-center gap-1 rounded-full border border-shrine-gold/30 p-0.5 text-xs">
-  <a
-    href={jaPath}
-    class={`rounded-full px-2.5 py-1 transition ${!isEn ? 'bg-shrine-vermillion text-white' : 'text-shrine-ink-soft hover:text-shrine-vermillion'}`}
-  >
-    日本語
-  </a>
-  <a
-    href={enPath}
-    class={`rounded-full px-2.5 py-1 transition ${isEn ? 'bg-shrine-vermillion text-white' : 'text-shrine-ink-soft hover:text-shrine-vermillion'}`}
-  >
-    EN
-  </a>
+  {links.map((link) => (
+    <a
+      href={buildPath(link.lang)}
+      class={`rounded-full px-2.5 py-1 transition ${currentLang === link.lang ? 'bg-shrine-vermillion text-white' : 'text-shrine-ink-soft hover:text-shrine-vermillion'}`}
+    >
+      {link.label}
+    </a>
+  ))}
 </div>

@@ -22,3 +22,11 @@ body {
   background-color: var(--color-shrine-paper);
   color: var(--color-shrine-ink);
 }
+
+/* Traditional Chinese pages: prefer TC-tuned glyph shapes over the JP fonts' fallback,
+   since Han characters shared between the two scripts render with different stroke
+   variants (e.g. shinjitai vs traditional forms) depending on which font is picked. */
+:lang(zh-Hant) {
+  --font-serif-jp: "Noto Serif TC", "Noto Serif JP", serif;
+  --font-sans-jp: "Noto Sans TC", "Noto Sans JP", sans-serif;
+}

@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://shrine-jp.net',
   i18n: {
-    locales: ['ja', 'en'],
+    locales: ['ja', 'en', 'zh'],
     defaultLocale: 'ja',
     routing: {
       prefixDefaultLocale: false,

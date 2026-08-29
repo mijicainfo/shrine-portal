@@ -5,14 +5,14 @@ import FavoriteButton from './FavoriteButton.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  shrine: CollectionEntry<'shrines' | 'shrinesEn'>;
+  shrine: CollectionEntry<'shrines' | 'shrinesEn' | 'shrinesZh'>;
 }
 
 const { shrine } = Astro.props;
 const { id, data } = shrine;
 const tags = [...(data.benefits ?? [])].slice(0, 3);
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
-const base = lang === 'en' ? '/en' : '';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+const base = lang === 'en' ? '/en' : lang === 'zh' ? '/zh' : '';
 ---
 
 <a
@@ -36,7 +36,7 @@ const base = lang === 'en' ? '/en' : '';
     )}
   </div>
   <div class="p-5">
-    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}{lang === 'en' ? ', ' : '・'}{data.city}</p>
+    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}{lang === 'en' ? ', ' : lang === 'zh' ? '、' : '・'}{data.city}</p>
     <h3 class="mt-1 font-serif-jp text-lg font-bold text-shrine-ink">{data.name}</h3>
     <p class="mt-1 text-xs text-shrine-ink-soft">{data.kana}</p>
     {tags.length > 0 && (

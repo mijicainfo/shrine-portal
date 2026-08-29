@@ -2,8 +2,8 @@
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import BrandMark from './BrandMark.astro';
 
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
-const base = lang === 'en' ? '/en' : '';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+const base = lang === 'en' ? '/en' : lang === 'zh' ? '/zh' : '';
 const t = lang === 'en'
   ? {
       brand: 'Shrine The Pantheon',
@@ -15,6 +15,18 @@ const t = lang === 'en'
       mypage: 'My Page',
       openMenu: 'Open menu',
       closeMenu: 'Close menu',
+    }
+  : lang === 'zh'
+  ? {
+      brand: '神社 The Pantheon',
+      top: '首頁',
+      shrines: '尋找神社',
+      guide: '參拜指南',
+      items: '御守與授與品',
+      glossary: '用語集',
+      mypage: '我的頁面',
+      openMenu: '開啟選單',
+      closeMenu: '關閉選單',
     }
   : {
       brand: '神社 The Pantheon',

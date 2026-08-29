@@ -1,7 +1,9 @@
 ---
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const t = lang === 'en'
   ? { kamidana: 'Kamidana', eyeline: 'Eye level', above: 'Above eye level', footer: 'Facing south or east is considered ideal.' }
+  : lang === 'zh'
+  ? { kamidana: '神棚', eyeline: '視線高度', above: '高於視線', footer: '一般認為朝南或朝東的位置最為理想。' }
   : { kamidana: '神棚', eyeline: '目線', above: '目線より高く', footer: '南向き、または東向きになる場所が理想的とされています' };
 ---
 

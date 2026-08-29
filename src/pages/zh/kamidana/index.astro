@@ -1,0 +1,120 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import JuyohinIcon from '../../../components/JuyohinIcon.astro';
+import ArrangementDiagram from '../../../components/ArrangementDiagram.astro';
+import PlacementDiagram from '../../../components/PlacementDiagram.astro';
+
+const proseClass = 'prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion';
+---
+
+<Layout title="神棚指南" description="如何在家中設置神棚——擺放位置、御札的排列方式，以及日常參拜的基本知識，搭配照片與圖解說明。">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <nav class="text-xs text-white/70">
+        <a href="/zh/items/" class="hover:underline">授與品指南</a>
+        <span class="mx-1.5">/</span>
+        <span>神棚指南</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-2xl font-bold sm:text-3xl">神棚指南</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        領取回家的御札該如何供奉才好呢？以下為您介紹神棚的基本知識、御札的排列方式，以及日常參拜的禮儀。
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <article class="min-w-0 flex-1">
+      <div class={proseClass}>
+        <h2>神棚是什麼？</h2>
+        <p>
+          神棚是在家中供奉神明的小型祭壇。這個詞原意就是「神明的架子」，源自於在架上供奉幣帛（神聖的供物）與神饌（食物供品）的習俗。現今普遍的作法是將御札安放在稱為「宮形」的小型神社造型盒子中。設置神棚，能讓人養成每天合掌向神明表達感謝的習慣。
+        </p>
+      </div>
+
+      <div class={proseClass}>
+        <h2>神棚的種類</h2>
+        <p>宮形依門扇數量可分為幾種類型。</p>
+        <ul>
+          <li>
+            <strong>一社造（單門式）</strong>：只有一扇門的簡單設計，多張御札會疊放在一起供奉。體積小巧，深受初次設置神棚者的喜愛。
+          </li>
+          <li>
+            <strong>三社造（三門式）</strong>：並排設有三扇門的設計，可將多張御札分別安放，一目了然地呈現各御札之間的地位關係。
+          </li>
+        </ul>
+
+        <h2>御札的排列方式</h2>
+        <p>
+          在神棚上同時供奉多張御札是很常見的作法。基本上有三種類型：神宮大麻（伊勢神宮的御札）、氏神御札（守護您居住地區的神社所發放）、以及崇敬神社御札（您個人特別崇敬的神社所發放）——這些御札的排列有固定的順序規則。
+        </p>
+      </div>
+
+      <div class="my-6">
+        <ArrangementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <p>
+          如果只有一張御札，不必想得太複雜——只要安放在正中央（若是一社造，則放在最前面）即可。
+        </p>
+
+        <h2>神棚的擺放位置</h2>
+        <p>選擇擺放地點時，有幾項要點可以留意：</p>
+        <ul>
+          <li>選擇明亮、乾淨、家人經常聚集的房間，例如客廳</li>
+          <li>安放於視線高度以上，並朝向南方或東方</li>
+          <li>避免設置在經常使用的門的正上方，也應避開浴室附近</li>
+          <li>
+            若是多層樓住宅，當神棚正上方樓層有人走動時，習慣上會在天花板貼上寫有「雲」「天」或「空」字樣的紙張，象徵上方已無他物
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-6">
+        <PlacementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <h2>日常供品</h2>
+        <p>
+          理想上，米、鹽、水應每天更換新鮮的供奉於神棚上。若難以每天做到，比起嚴格的形式，維持一套自己能持續下去的節奏更為重要。
+        </p>
+        <ul>
+          <li><strong>米、鹽、水</strong>：分別盛裝於小容器（三方或祭祀器皿）中，每天早上更換。</li>
+          <li><strong>榊（神聖常青樹枝）</strong>：擺放於神棚兩側，通常每月更換兩次（約在初一與十五前後）。</li>
+          <li><strong>御神酒</strong>：於新年或喜慶場合等特別日子供奉。</li>
+        </ul>
+      </div>
+
+      <div class={proseClass}>
+        <h2>日常參拜</h2>
+        <p>
+          每天早上更新供品之後，在神棚前依「二拜二拍手一拜」的作法參拜，迎接新的一天並表達日常的感謝之意。最重要的不是嚴謹的形式，而是每天合掌向神明致意的簡單習慣。
+        </p>
+
+        <h2>御札更換的時機</h2>
+        <p>
+          御札一般以一年為週期更換，多在新年前後進行。感謝御札一整年的守護後，將舊的御札送回原本領取的神社（或附近的神社）進行焚燒儀式。許多神社會在新年期間設置舊御札、舊御守的回收處。
+        </p>
+      </div>
+    </article>
+
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-72">
+      <div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <div class="h-16 w-16">
+          <JuyohinIcon type="ofuda" theme="indigo" />
+        </div>
+        <h2 class="mt-3 font-serif-jp text-base font-bold text-shrine-ink">深入了解御札</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+          想進一步認識御札本身及其種類，歡迎參閱授與品指南。
+        </p>
+        <a
+          href="/zh/items/"
+          class="mt-4 block rounded-full border border-shrine-gold/40 px-5 py-2.5 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          查看授與品指南
+        </a>
+      </div>
+    </aside>
+  </div>
+</Layout>

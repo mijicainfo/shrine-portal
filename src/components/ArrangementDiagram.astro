@@ -1,5 +1,5 @@
 ---
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const t = lang === 'en'
   ? {
       threeGate: 'Three-Door Style (Sansha-zukuri)',
@@ -11,6 +11,18 @@ const t = lang === 'en'
       ujiSub: '(right)',
       oneGate: 'One-Door Style (Issha-zukuri), Stacking Order',
       stackOrder: 'Front: Jingu Taima → 2nd: Local Shrine → Back: Personal Shrine',
+    }
+  : lang === 'zh'
+  ? {
+      threeGate: '三社造（三扇門）的情況',
+      sukeiLabel: '崇敬神社',
+      sukeiSub: '（面向左側）',
+      jinguLabel: '神宮大麻',
+      jinguSub: '（中央）',
+      ujiLabel: '氏神',
+      ujiSub: '（面向右側）',
+      oneGate: '一社造（單扇門）的情況（疊放順序）',
+      stackOrder: '最前：神宮大麻 → 第二：氏神 → 最後：崇敬神社',
     }
   : {
       threeGate: '三社造の場合',

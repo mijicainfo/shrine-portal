@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { shrineName, city, prefecture, bookingCity } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
 // bookingCityが指定されている場合は、地図表示用のcityではなくこちらを検索に使う
@@ -23,12 +23,12 @@ const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
 // 済み（例:「元乃隅神社 山口県長門市」→スペイン・マラガ県のホテル一覧に誤誘導）。
 // そのため神社名は含めず、都道府県と市区町村をスペースで区切った形のみを使う。
 const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
-const bookingQuery = lang === 'en'
+const bookingQuery = lang === 'en' || lang === 'zh'
   ? (cleanCity ? `${cleanCity}, ${bookingPrefecture}, Japan` : `${bookingPrefecture}, Japan`)
   : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
 const bookingUrl = buildBookingSearchUrl(bookingQuery);
-// 楽天トラベルのキーワード検索は日本語専用で、英語のクエリでは
-// 地名が一致せず常に検索結果0件になるため、英語版では表示しない
+// 楽天トラベルのキーワード検索は日本語専用で、英語や中国語のクエリでは
+// 地名が一致せず常に検索結果0件になるため、英語版・中国語版では表示しない
 const rakutenUrl = buildRakutenSearchUrl(`${shrineName} ${prefecture}${cleanCity}`);
 const t = {
   ja: {
@@ -46,6 +46,14 @@ const t = {
     rakutenLabel: 'Rakuten Travel',
     rakutenSub: `Search stays near ${city}, ${prefecture} (Japanese site)`,
     note: '※ Opens an external booking site.',
+  },
+  zh: {
+    heading: '周邊住宿',
+    body: '想安排參拜行程順道住宿的話，可以搜尋神社周邊的飯店與旅館。海外旅客也能直接以多國語言完成預訂。',
+    bookingSub: `搜尋${city}、${prefecture}周邊的住宿`,
+    rakutenLabel: '樂天旅遊',
+    rakutenSub: `搜尋${city}、${prefecture}周邊的住宿（日文網站）`,
+    note: '※ 將前往外部訂房網站。',
   },
 }[lang];
 ---

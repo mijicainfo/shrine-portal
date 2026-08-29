@@ -5,9 +5,11 @@ interface Props {
 }
 
 const { handle, shrineName } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const t = lang === 'en'
   ? { heading: 'Latest Updates (Official X)', loading: `Loading posts from ${shrineName}…` }
+  : lang === 'zh'
+  ? { heading: '最新消息（官方X）', loading: `正在載入${shrineName}的貼文…` }
   : { heading: '最新情報（公式X）', loading: `${shrineName}の投稿を読み込み中…` };
 ---
 
@@ -16,6 +18,8 @@ const t = lang === 'en'
   <p class="mt-1 text-xs text-shrine-ink-soft">
     {lang === 'en' ? (
       <>Posts from {shrineName}'s official X account (<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>).</>
+    ) : lang === 'zh' ? (
+      <>來自{shrineName}官方X帳號（<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>）的貼文。</>
     ) : (
       <>{shrineName}の公式Xアカウント（<a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" class="text-shrine-vermillion underline">@{handle}</a>）の投稿です。</>
     )}

@@ -10,14 +10,20 @@ interface Props {
   image?: string;
 }
 
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+
+const htmlLang = lang === 'en' ? 'en' : lang === 'zh' ? 'zh-Hant' : 'ja';
 
 const defaultDescription = lang === 'en'
   ? 'A guide to shrines across Japan — history, access, and goshuin info, along with nearby accommodation, written for first-time visitors.'
+  : lang === 'zh'
+  ? '介紹日本全國神社的入口網站，從由緒沿革、交通方式到御朱印資訊一應俱全，並附上周邊住宿資訊，獻給第一次參拜的旅人。'
   : '日本全国の神社を紹介するポータルサイト。由緒、アクセス、御朱印情報まで、参拝の初心者にもわかりやすくお届けします。';
 
 const titleSuffix = lang === 'en'
   ? 'Shrine The Pantheon — Japan Shrine Guide & Nearby Stays'
+  : lang === 'zh'
+  ? '神社 The Pantheon——日本神社導覽與周邊住宿資訊'
   : '日本の神社情報・近隣宿泊施設なども紹介する神社 The Pantheon';
 
 const siteName = lang === 'en' ? 'Shrine The Pantheon' : '神社 The Pantheon';
@@ -29,7 +35,7 @@ const ogImageUrl = new URL(image, Astro.site).toString();
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={htmlLang}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -43,7 +49,7 @@ const ogImageUrl = new URL(image, Astro.site).toString();
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Yomogi&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&family=Yomogi&display=swap"
       rel="stylesheet"
     />
     <title>{fullTitle}</title>
@@ -56,7 +62,7 @@ const ogImageUrl = new URL(image, Astro.site).toString();
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ja_JP'} />
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : lang === 'zh' ? 'zh_TW' : 'ja_JP'} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@shrine2026" />

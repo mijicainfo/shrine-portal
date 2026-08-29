@@ -13,11 +13,11 @@ interface ShrineDescriptionData {
 }
 
 /** Max length (in characters) a meta description is allowed to reach with the optional "founded" clause included. */
-const MAX_DESCRIPTION_LENGTH = { ja: 110, en: 170 } as const;
+const MAX_DESCRIPTION_LENGTH = { ja: 110, en: 170, zh: 110 } as const;
 /** Hard cap applied as a final safety net, in case a data field (e.g. a very long deity name) alone blows the budget. */
-const HARD_CAP = { ja: 130, en: 200 } as const;
+const HARD_CAP = { ja: 130, en: 200, zh: 130 } as const;
 /** A single deity name is truncated to this length before being embedded in a sentence. */
-const MAX_DEITY_LENGTH = { ja: 30, en: 60 } as const;
+const MAX_DEITY_LENGTH = { ja: 30, en: 60, zh: 30 } as const;
 
 function truncate(text: string, maxLength: number): string {
   const chars = [...text];
@@ -25,7 +25,7 @@ function truncate(text: string, maxLength: number): string {
   return chars.slice(0, maxLength - 1).join('').trimEnd() + '…';
 }
 
-export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' | 'en'): string {
+export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' | 'en' | 'zh'): string {
   const rawDeity = data.deities[0] ? stripReading(data.deities[0]) : '';
   const deity = truncate(rawDeity, MAX_DEITY_LENGTH[lang]);
   const benefits = (data.benefits ?? []).slice(0, 2);
@@ -41,6 +41,18 @@ export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' |
       if (withFounded.length <= maxLength) return withFounded;
     }
     return truncate(base, HARD_CAP.en);
+  }
+
+  if (lang === 'zh') {
+    const parts = [`${data.name}（${data.prefecture}${data.city}）是${deity ? `供奉${deity}的` : ''}神社。`];
+    if (benefits.length > 0) parts.push(`以${benefits.join('、')}等庇佑聞名。`);
+    parts.push('為您介紹由緒、交通方式與御朱印資訊。');
+    const base = parts.join('');
+    if (data.founded) {
+      const withFounded = `${parts[0]}創建於${data.founded}。${parts.slice(1).join('')}`;
+      if (withFounded.length <= maxLength) return withFounded;
+    }
+    return truncate(base, HARD_CAP.zh);
   }
 
   const parts = [`${data.name}（${data.prefecture}${data.city}）は${deity ? `${deity}をお祀りする` : ''}神社です。`];

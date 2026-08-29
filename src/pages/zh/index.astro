@@ -1,0 +1,330 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ShrineCard from '../../components/ShrineCard.astro';
+import SeigaihaWave from '../../components/SeigaihaWave.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import { benefitTranslationsZh } from '../../data/benefitTranslationsZh';
+
+const shrines = await getCollection('shrinesZh');
+const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const heroCandidateIds = [
+  'fujisan-sengen-taisha',
+  'itsukushima',
+  'ise-jingu',
+  'fushimi-inari',
+  'meiji-jingu',
+  'kirishima-jingu',
+  'izumo-taisha',
+  'nikko-toshogu',
+  'kotohiragu',
+  'tsurugaoka-hachimangu',
+];
+const heroShrines = heroCandidateIds
+  .map((id) => shrines.find((s) => s.id === id))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s && s.data.image));
+const heroPhotos = await Promise.all(
+  heroShrines.map(async (s) => {
+    const optimized = await getImage({ src: s.data.image!, width: 1920, height: 1080 });
+    return {
+      src: optimized.src,
+      alt: s.data.name,
+      name: s.data.name,
+      href: `/zh/shrines/${s.id}/`,
+      credit: s.data.imageCredit ?? null,
+    };
+  })
+);
+
+const featuredPrefectures = [
+  '北海道',
+  '東京都',
+  '神奈川県',
+  '石川県',
+  '京都府',
+  '大阪府',
+  '奈良県',
+  '三重県',
+  '島根県',
+  '広島県',
+  '福岡県',
+  '沖縄県',
+];
+
+const benefitCategoriesJa = [
+  '縁結び', '商売繁盛', '学業成就', '合格祈願', '厄除け', '家内安全',
+  '開運', '安産', '子授け', '交通安全', '金運', '無病息災',
+  '必勝祈願', '夫婦円満', '五穀豊穣', '海上安全', '武運長久', '芸能上達',
+];
+const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsZh[b] ?? b);
+---
+
+<Layout title="首頁">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <img id="hero-photo" alt="" class="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-opacity duration-700" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #e8887a 0, transparent 45%), radial-gradient(circle at 80% 60%, #ddb877 0, transparent 40%);"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <p class="font-script text-xl text-shrine-gold">The Pantheon</p>
+      <h1 class="mt-3 font-serif-jp text-3xl font-black leading-snug sm:text-5xl">
+        走進日本<br class="sm:hidden" />美麗而神秘的神社世界
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-sm text-shrine-paper/80 sm:text-base">
+        由緒、交通方式、御朱印資訊——初次參拜也能安心上手的完整指南。
+      </p>
+
+      <form action="/zh/shrines/" method="get" class="mx-auto mt-10 flex max-w-lg overflow-hidden rounded-full bg-shrine-paper shadow-lg">
+        <input
+          type="text"
+          name="q"
+          placeholder="輸入神社名稱、地點或御利益搜尋"
+          class="w-full bg-transparent px-5 py-3 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="shrink-0 bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          搜尋
+        </button>
+      </form>
+    </div>
+    <button
+      id="hero-photo-next"
+      type="button"
+      aria-label="下一張照片"
+      class="absolute right-4 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur transition hover:bg-white/30 sm:right-8"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <p id="hero-photo-credit" class="relative hidden px-4 pb-2 text-right text-[10px] text-shrine-paper/60 sm:px-6"></p>
+    <SeigaihaWave color="#fdf8f1" class="relative h-6" />
+
+    <script type="application/json" id="hero-photo-data" set:html={JSON.stringify(heroPhotos)} />
+    <script>
+      const data = document.getElementById('hero-photo-data');
+      const photos = data ? JSON.parse(data.textContent || '[]') : [];
+      const img = document.getElementById('hero-photo') as HTMLImageElement | null;
+      const credit = document.getElementById('hero-photo-credit');
+      const nextBtn = document.getElementById('hero-photo-next');
+
+      if (photos.length > 0 && img) {
+        let index = Math.floor(Math.random() * photos.length);
+        let timer: ReturnType<typeof setInterval>;
+
+        img.addEventListener('load', () => img.classList.remove('opacity-0'));
+
+        function applyPhoto(photo: (typeof photos)[number]) {
+          img!.src = photo.src;
+          img!.alt = photo.name;
+          if (credit && photo.credit) {
+            credit.textContent = `照片：${photo.name} / ${photo.credit.author}（${photo.credit.license}）`;
+            credit.classList.remove('hidden');
+          }
+        }
+
+        function goTo(i: number, fade = true) {
+          index = ((i % photos.length) + photos.length) % photos.length;
+          const photo = photos[index];
+          if (fade) {
+            img!.classList.add('opacity-0');
+            window.setTimeout(() => applyPhoto(photo), 300);
+          } else {
+            applyPhoto(photo);
+          }
+        }
+
+        function startAutoplay() {
+          clearInterval(timer);
+          timer = setInterval(() => goTo(index + 1), 5000);
+        }
+
+        goTo(index, false);
+        startAutoplay();
+
+        nextBtn?.addEventListener('click', () => {
+          goTo(index + 1);
+          startAutoplay();
+        });
+      }
+    </script>
+  </section>
+
+  <!-- About Shrines & Kami -->
+  <section id="shinto" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="text-center">
+        <p class="font-script text-xl text-shrine-vermillion">Shinto &amp; Kami</p>
+        <h2 class="mt-2 font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">關於神社與神明</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-shrine-ink-soft">
+          「神社究竟是什麼？」「神明又是什麼樣的存在？」——為初次造訪的旅人，溫和地介紹日本神社與神祇的基礎知識。
+        </p>
+        <a href="/zh/deities/" class="mt-3 inline-block text-sm text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+          查看各神社所供奉的神明 →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">⛩</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">神社是什麼？</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            神社是根植於日本本土信仰「神道」、供奉神明的場所。從鳥居到本殿的參道，被視為由俗世通往神明神聖空間的一段路程。山岳、森林、瀑布、巨石等自然景觀也常被視為神聖之地，日本全國的神社數以萬計。
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🌿</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">八百萬神明——數不清的眾神</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            神道信仰並非以單一神明為中心。從太陽、山岳、海洋、風等自然力量，到掌管稻作、生意與學問的神明，乃至被奉為神明的歷史人物——日本歷史上信仰著數不清的神明（八百萬神明）。因此每座神社所供奉的神明與所祈求的御利益也各不相同。
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🏯</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">神社與寺廟的差異</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            神社供奉神道的神明，寺廟則供奉佛教的佛菩薩。兩者的入口標誌也不同——神社是鳥居，寺廟則是山門；參拜禮儀也有差異：神社參拜時鞠躬後會拍手，寺廟參拜則是靜靜合掌、不拍手。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Prefecture -->
+  <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">依都道府縣尋找</h2>
+    <p class="mt-1 text-sm text-shrine-ink-soft">尋找您感興趣地區的神社。</p>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {featuredPrefectures.map((pref) => (
+        <a
+          href={`/zh/shrines/?pref=${encodeURIComponent(pref)}`}
+          class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          {pref}
+        </a>
+      ))}
+      <a
+        href="/zh/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        查看所有都道府縣 →
+      </a>
+    </div>
+  </section>
+
+  <!-- Shrines of Japan -->
+  <section class="bg-shrine-paper-dark py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">日本的神社</h2>
+          <p class="mt-1 text-sm text-shrine-ink-soft">千年祈願與四季靜謐交會之處。</p>
+        </div>
+        <a href="/zh/shrines/" class="hidden text-sm text-shrine-vermillion hover:underline sm:block">查看全部 →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((shrine) => (
+          <ShrineCard shrine={shrine} />
+        ))}
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/zh/shrines/" class="text-sm text-shrine-vermillion hover:underline">查看全部 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search by Blessing -->
+  <section id="benefits" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">依御利益搜尋</h2>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {benefitCategories.map((benefit) => (
+        <a
+          href={`/zh/shrines/?q=${encodeURIComponent(benefit)}`}
+          class="rounded-full bg-shrine-vermillion-light px-4 py-2 text-sm text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+        >
+          {benefit}
+        </a>
+      ))}
+      <a
+        href="/zh/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        查看所有御利益 →
+      </a>
+    </div>
+  </section>
+
+  <!-- Beginner's Visiting Guide -->
+  <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">新手參拜指南</h2>
+      <p class="mt-1 text-sm text-shrine-paper/70">
+        禮儀作法可能因地區或神社略有不同，但只要掌握以下基本流程，就能安心參拜。不必想得太複雜，最重要的是心懷對神明的感謝之意。
+      </p>
+
+      <div class="mt-8 overflow-hidden rounded-2xl bg-black/20 shadow-lg">
+        <div class="aspect-video w-full">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/RKWpIV8rUT8"
+            title="参拝の心と形（参拜的心與形）"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="bg-black/20 px-4 py-2 text-xs text-shrine-paper/70">
+          影片來自<a href="https://www.youtube.com/@jinjahoncho6712" target="_blank" rel="noopener noreferrer" class="underline hover:text-shrine-paper">神社本廳官方頻道</a>——「參拝の心と形」（日文影片）。
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">01</p>
+          <h3 class="mt-2 font-bold">於鳥居前行禮</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            鳥居標誌著神域與俗世的界線，可想像成神明居所的大門。穿過鳥居前先輕輕行一禮。參道正中央被認為是神明的通道，因此稍微靠邊行走較為禮貌。
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">02</p>
+          <h3 class="mt-2 font-bold">於手水舍淨身</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            用杓子舀水，先洗左手，再洗右手。接著將水倒入左手掌心漱口。最後將杓子豎起，讓剩餘的水沿柄流下清洗杓柄——這是留給下一位參拜者的貼心禮節。
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">03</p>
+          <h3 class="mt-2 font-bold">投賽錢、搖鈴</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            輕輕將硬幣投入賽錢箱，若設有鈴鐺則搖響它。鈴聲一方面向神明宣告自己的到來，另一方面也被認為具有驅散邪氣的作用。
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">04</p>
+          <h3 class="mt-2 font-bold">二拜二拍手一拜</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            深深鞠躬兩次，在胸前拍手兩次，再深深鞠躬一次。拍手之後，靜靜在心中表達謝意或許下心願（部分神社如出雲大社的作法略有不同）。
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">05</p>
+          <h3 class="mt-2 font-bold">在社務所領取御朱印</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            參拜完成後，可以在社務所領取御朱印（參拜印記）或御守（護身符）。每一份御朱印都有獨特的印章與手寫墨跡，是絕佳的參拜紀念——若想收集，建議準備一本御朱印帳。
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">06</p>
+          <h3 class="mt-2 font-bold">離開前再次回頭行禮</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            穿過鳥居離開前，習慣上會回頭望向本殿方向再行一禮，作為此次參拜的最後致謝。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

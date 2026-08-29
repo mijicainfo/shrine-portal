@@ -2,8 +2,8 @@
 import SocialLinks from './SocialLinks.astro';
 import BrandMark from './BrandMark.astro';
 
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
-const base = lang === 'en' ? '/en' : '';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+const base = lang === 'en' ? '/en' : lang === 'zh' ? '/zh' : '';
 
 const linkColumns = lang === 'en'
   ? [
@@ -30,6 +30,34 @@ const linkColumns = lang === 'en'
         links: [
           { href: `${base}/items/`, label: 'Amulets & Charms Guide' },
           { href: `${base}/kamidana/`, label: 'Home Altar (Kamidana) Guide' },
+        ],
+      },
+    ]
+  : lang === 'zh'
+  ? [
+      {
+        title: '尋找神社',
+        links: [
+          { href: `${base}/shrines/`, label: '瀏覽與搜尋神社' },
+          { href: `${base}/#prefectures`, label: '依都道府縣搜尋' },
+          { href: `${base}/#benefits`, label: '依御利益搜尋' },
+          { href: `${base}/mypage/`, label: '我的頁面（收藏與參拜紀錄）' },
+        ],
+      },
+      {
+        title: '參拜指南',
+        links: [
+          { href: `${base}/#guide`, label: '新手參拜指南' },
+          { href: `${base}/#shinto`, label: '關於神社與神明' },
+          { href: `${base}/deities/`, label: '御祭神導覽' },
+          { href: `${base}/glossary/`, label: '用語集' },
+        ],
+      },
+      {
+        title: '御守與授與品',
+        links: [
+          { href: `${base}/items/`, label: '御守與授與品指南' },
+          { href: `${base}/kamidana/`, label: '神棚供奉指南' },
         ],
       },
     ]
@@ -69,6 +97,15 @@ const t = lang === 'en'
       correctionSuffix: 'page.',
       privacy: 'Privacy Policy',
       copyright: '© 2026 Shrine The Pantheon',
+    }
+  : lang === 'zh'
+  ? {
+      tagline: '讓日本全國的神社，離每個人更近一些。',
+      correction: '聯絡我們',
+      correctionPrefix: '如發現內容有誤或需要更新之處，歡迎透過',
+      correctionSuffix: '頁面告訴我們。',
+      privacy: '隱私權政策',
+      copyright: '© 2026 神社 The Pantheon',
     }
   : {
       tagline: '日本全国の神社を、もっと身近に。',

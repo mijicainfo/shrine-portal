@@ -7,9 +7,11 @@ interface Props {
 const { query, class: className = '' } = Astro.props;
 const embedSrc = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
 const linkHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const t = lang === 'en'
   ? { title: `Map of ${query}`, link: 'Open larger map on Google Maps ↗' }
+  : lang === 'zh'
+  ? { title: `${query}的地圖`, link: '在Google地圖查看更大範圍 ↗' }
   : { title: `${query}の地図`, link: 'Googleマップで大きな地図を見る ↗' };
 ---
 

@@ -5,9 +5,11 @@ interface Props {
 }
 
 const { shrineId, class: className = '' } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const t = lang === 'en'
   ? { active: 'Visited', inactive: 'Mark as Visited' }
+  : lang === 'zh'
+  ? { active: '已參拜', inactive: '標記為已參拜' }
   : { active: '参拝済み', inactive: '参拝済みにする' };
 ---
 

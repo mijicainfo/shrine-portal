@@ -53,8 +53,8 @@ export function buildRakutenSearchUrl(query: string): string {
  * Klookの検索結果ページURLを生成します。
  * klookAffiliateIdが設定されている場合は、アフィリエイトのリダイレクト経由になります。
  */
-export function buildKlookSearchUrl(query: string, lang: 'ja' | 'en'): string {
-  const klookLocale = lang === 'en' ? 'en-US' : 'ja';
+export function buildKlookSearchUrl(query: string, lang: 'ja' | 'en' | 'zh'): string {
+  const klookLocale = lang === 'en' ? 'en-US' : lang === 'zh' ? 'zh-TW' : 'ja';
   const targetUrl = `https://www.klook.com/${klookLocale}/search/result/?query=${encodeURIComponent(query)}`;
 
   if (affiliateConfig.klookAffiliateId) {

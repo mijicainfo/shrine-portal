@@ -2,17 +2,18 @@ export interface Region {
   id: string;
   nameJa: string;
   nameEn: string;
+  nameZh: string;
 }
 
 export const regions: Region[] = [
-  { id: 'hokkaido', nameJa: '北海道', nameEn: 'Hokkaido' },
-  { id: 'tohoku', nameJa: '東北', nameEn: 'Tohoku' },
-  { id: 'kanto', nameJa: '関東', nameEn: 'Kanto' },
-  { id: 'chubu', nameJa: '中部', nameEn: 'Chubu' },
-  { id: 'kinki', nameJa: '近畿', nameEn: 'Kinki' },
-  { id: 'chugoku', nameJa: '中国', nameEn: 'Chugoku' },
-  { id: 'shikoku', nameJa: '四国', nameEn: 'Shikoku' },
-  { id: 'kyushu-okinawa', nameJa: '九州・沖縄', nameEn: 'Kyushu & Okinawa' },
+  { id: 'hokkaido', nameJa: '北海道', nameEn: 'Hokkaido', nameZh: '北海道' },
+  { id: 'tohoku', nameJa: '東北', nameEn: 'Tohoku', nameZh: '東北' },
+  { id: 'kanto', nameJa: '関東', nameEn: 'Kanto', nameZh: '關東' },
+  { id: 'chubu', nameJa: '中部', nameEn: 'Chubu', nameZh: '中部' },
+  { id: 'kinki', nameJa: '近畿', nameEn: 'Kinki', nameZh: '近畿' },
+  { id: 'chugoku', nameJa: '中国', nameEn: 'Chugoku', nameZh: '中國（山陰山陽）' },
+  { id: 'shikoku', nameJa: '四国', nameEn: 'Shikoku', nameZh: '四國' },
+  { id: 'kyushu-okinawa', nameJa: '九州・沖縄', nameEn: 'Kyushu & Okinawa', nameZh: '九州・沖繩' },
 ];
 
 /** JA prefecture name (as stored in the `shrines` collection) → region id. Covers all 47 prefectures so future additions are pre-categorized. */
@@ -39,8 +40,11 @@ const prefectureToRegionEn: Record<string, string> = {
   Fukuoka: 'kyushu-okinawa', Saga: 'kyushu-okinawa', Nagasaki: 'kyushu-okinawa', Kumamoto: 'kyushu-okinawa', Oita: 'kyushu-okinawa', Miyazaki: 'kyushu-okinawa', Kagoshima: 'kyushu-okinawa', Okinawa: 'kyushu-okinawa',
 };
 
-export function getRegionId(prefecture: string, lang: 'ja' | 'en'): string | undefined {
-  if (lang === 'ja') return prefectureToRegionJa[prefecture];
+export function getRegionId(prefecture: string, lang: 'ja' | 'en' | 'zh'): string | undefined {
+  // Traditional Chinese shrine content uses the original Japanese kanji prefecture
+  // names (standard practice in Chinese-language Japan travel writing), so it shares
+  // the JA lookup table rather than needing its own translated one.
+  if (lang === 'ja' || lang === 'zh') return prefectureToRegionJa[prefecture];
   const base = prefecture.replace(/\s*Prefecture$/i, '').trim();
   return prefectureToRegionEn[base];
 }

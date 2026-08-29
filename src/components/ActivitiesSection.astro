@@ -7,10 +7,10 @@ interface Props {
 }
 
 const { city, prefecture } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : 'ja';
+const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
 const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
-const klookQuery = lang === 'en' ? `${cleanCity}, ${bookingPrefecture}` : `${prefecture}${cleanCity}`;
+const klookQuery = lang === 'en' || lang === 'zh' ? `${cleanCity}, ${bookingPrefecture}` : `${prefecture}${cleanCity}`;
 const klookUrl = buildKlookSearchUrl(klookQuery, lang);
 const t = {
   ja: {
@@ -24,6 +24,12 @@ const t = {
     body: 'Find tours, activities, and attraction tickets near the shrine to round out your visit.',
     klookSub: `Search tours & tickets near ${city}, ${prefecture}`,
     note: '※ Opens an external booking site.',
+  },
+  zh: {
+    heading: '周邊觀光體驗',
+    body: '搭配參拜行程，探索神社周邊的觀光票券與各式體驗活動。',
+    klookSub: `搜尋${city}、${prefecture}周邊的行程、體驗與門票`,
+    note: '※ 將前往外部訂購網站。',
   },
 }[lang];
 ---
