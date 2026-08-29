@@ -3,17 +3,20 @@ export interface Region {
   nameJa: string;
   nameEn: string;
   nameZh: string;
+  nameEs: string;
+  nameFr: string;
+  nameKo: string;
 }
 
 export const regions: Region[] = [
-  { id: 'hokkaido', nameJa: '北海道', nameEn: 'Hokkaido', nameZh: '北海道' },
-  { id: 'tohoku', nameJa: '東北', nameEn: 'Tohoku', nameZh: '東北' },
-  { id: 'kanto', nameJa: '関東', nameEn: 'Kanto', nameZh: '關東' },
-  { id: 'chubu', nameJa: '中部', nameEn: 'Chubu', nameZh: '中部' },
-  { id: 'kinki', nameJa: '近畿', nameEn: 'Kinki', nameZh: '近畿' },
-  { id: 'chugoku', nameJa: '中国', nameEn: 'Chugoku', nameZh: '中國（山陰山陽）' },
-  { id: 'shikoku', nameJa: '四国', nameEn: 'Shikoku', nameZh: '四國' },
-  { id: 'kyushu-okinawa', nameJa: '九州・沖縄', nameEn: 'Kyushu & Okinawa', nameZh: '九州・沖繩' },
+  { id: 'hokkaido', nameJa: '北海道', nameEn: 'Hokkaido', nameZh: '北海道', nameEs: 'Hokkaido', nameFr: 'Hokkaido', nameKo: '홋카이도' },
+  { id: 'tohoku', nameJa: '東北', nameEn: 'Tohoku', nameZh: '東北', nameEs: 'Tohoku', nameFr: 'Tohoku', nameKo: '도호쿠' },
+  { id: 'kanto', nameJa: '関東', nameEn: 'Kanto', nameZh: '關東', nameEs: 'Kanto', nameFr: 'Kanto', nameKo: '간토' },
+  { id: 'chubu', nameJa: '中部', nameEn: 'Chubu', nameZh: '中部', nameEs: 'Chubu', nameFr: 'Chubu', nameKo: '주부' },
+  { id: 'kinki', nameJa: '近畿', nameEn: 'Kinki', nameZh: '近畿', nameEs: 'Kinki', nameFr: 'Kinki', nameKo: '긴키' },
+  { id: 'chugoku', nameJa: '中国', nameEn: 'Chugoku', nameZh: '中國（山陰山陽）', nameEs: 'Chugoku', nameFr: 'Chugoku', nameKo: '주고쿠' },
+  { id: 'shikoku', nameJa: '四国', nameEn: 'Shikoku', nameZh: '四國', nameEs: 'Shikoku', nameFr: 'Shikoku', nameKo: '시코쿠' },
+  { id: 'kyushu-okinawa', nameJa: '九州・沖縄', nameEn: 'Kyushu & Okinawa', nameZh: '九州・沖繩', nameEs: 'Kyushu y Okinawa', nameFr: 'Kyushu et Okinawa', nameKo: '규슈・오키나와' },
 ];
 
 /** JA prefecture name (as stored in the `shrines` collection) → region id. Covers all 47 prefectures so future additions are pre-categorized. */
@@ -40,11 +43,13 @@ const prefectureToRegionEn: Record<string, string> = {
   Fukuoka: 'kyushu-okinawa', Saga: 'kyushu-okinawa', Nagasaki: 'kyushu-okinawa', Kumamoto: 'kyushu-okinawa', Oita: 'kyushu-okinawa', Miyazaki: 'kyushu-okinawa', Kagoshima: 'kyushu-okinawa', Okinawa: 'kyushu-okinawa',
 };
 
-export function getRegionId(prefecture: string, lang: 'ja' | 'en' | 'zh'): string | undefined {
+export function getRegionId(prefecture: string, lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko'): string | undefined {
   // Traditional Chinese shrine content uses the original Japanese kanji prefecture
   // names (standard practice in Chinese-language Japan travel writing), so it shares
   // the JA lookup table rather than needing its own translated one.
   if (lang === 'ja' || lang === 'zh') return prefectureToRegionJa[prefecture];
+  // es/fr/ko shrine content keeps prefecture names romanized (like en), not translated
+  // or transliterated into each language's own script, so they share en's lookup table.
   const base = prefecture.replace(/\s*Prefecture$/i, '').trim();
   return prefectureToRegionEn[base];
 }

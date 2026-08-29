@@ -1,0 +1,42 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { contactFormUrl } from '../../../data/contact';
+---
+
+<Layout title="Contact" description="Signalez une erreur ou une information obsolète, ou envoyez-nous vos commentaires et suggestions.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Contact</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        Signalez-nous toute erreur, ou partagez vos commentaires et suggestions.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-2xl px-4 py-14 sm:px-6">
+    <div class="rounded-2xl border border-shrine-gold/25 bg-white p-8">
+      <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">Vous avez repéré quelque chose à corriger ?</h2>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        L'histoire des sanctuaires, les informations d'accès et les horaires de visite peuvent évoluer avec le temps. Si vous remarquez une erreur, une information obsolète, ou quoi que ce soit qui devrait être corrigé, merci de nous le signaler ci-dessous.
+      </p>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        Il est utile de préciser la page et la section concernées. Les demandes d'ajout de sanctuaires que vous aimeriez voir figurer sur le site, ainsi que les commentaires généraux, sont également les bienvenus.
+      </p>
+
+      {contactFormUrl ? (
+        <a
+          href={contactFormUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 flex items-center justify-center gap-2 rounded-full bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          Ouvrir le Formulaire de Contact ↗
+        </a>
+      ) : (
+        <p class="mt-6 rounded-2xl bg-shrine-paper-dark px-6 py-4 text-center text-sm text-shrine-ink-soft">
+          Le formulaire de contact est en cours de mise en place. Merci de revenir prochainement.
+        </p>
+      )}
+    </div>
+  </section>
+</Layout>

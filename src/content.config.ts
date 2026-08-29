@@ -79,4 +79,19 @@ const shrinesZh = defineCollection({
   schema: shrineSchema,
 });
 
-export const collections = { shrines, shrinesEn, shrinesZh };
+const shrinesEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/shrines-es' }),
+  schema: shrineSchema,
+});
+
+const shrinesFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/shrines-fr' }),
+  schema: shrineSchema,
+});
+
+const shrinesKo = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/shrines-ko' }),
+  schema: shrineSchema,
+});
+
+export const collections = { shrines, shrinesEn, shrinesZh, shrinesEs, shrinesFr, shrinesKo };

@@ -10,7 +10,9 @@ interface Props {
 }
 
 const { shrineName, city, prefecture, bookingCity, bookingPrefecture } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
 // bookingCityが指定されている場合は、地図表示用のcityではなくこちらを検索に使う
@@ -24,15 +26,15 @@ const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
 // 済み（例:「元乃隅神社 山口県長門市」→スペイン・マラガ県のホテル一覧に誤誘導）。
 // そのため神社名は含めず、都道府県と市区町村をスペースで区切った形のみを使う。
 // zh's `prefecture` prop is kept in Japanese kanji for display, so it can't be used
-// directly in a romanized Booking.com query the way en's already-romanized prefecture can;
-// bookingPrefecture supplies the romanized override in that case.
+// directly in a romanized Booking.com query the way en/es/fr/ko's already-romanized
+// prefecture can; bookingPrefecture supplies the romanized override in that case.
 const resolvedBookingPrefecture = (bookingPrefecture ?? prefecture).replace(/\s*Prefecture$/i, '');
-const bookingQuery = lang === 'en' || lang === 'zh'
+const bookingQuery = lang !== 'ja'
   ? (cleanCity ? `${cleanCity}, ${resolvedBookingPrefecture}, Japan` : `${resolvedBookingPrefecture}, Japan`)
   : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
 const bookingUrl = buildBookingSearchUrl(bookingQuery);
-// 楽天トラベルのキーワード検索は日本語専用で、英語や中国語のクエリでは
-// 地名が一致せず常に検索結果0件になるため、英語版・中国語版では表示しない
+// 楽天トラベルのキーワード検索は日本語専用で、日本語以外のクエリでは
+// 地名が一致せず常に検索結果0件になるため、日本語版以外では表示しない
 const rakutenUrl = buildRakutenSearchUrl(`${shrineName} ${prefecture}${cleanCity}`);
 const t = {
   ja: {
@@ -58,6 +60,30 @@ const t = {
     rakutenLabel: '樂天旅遊',
     rakutenSub: `搜尋${city}、${prefecture}周邊的住宿（日文網站）`,
     note: '※ 將前往外部訂房網站。',
+  },
+  es: {
+    heading: 'Alojamiento Cercano',
+    body: 'Busca hoteles y posadas cerca del santuario para planear tu estancia. Las reservas están disponibles en varios idiomas para visitantes del extranjero.',
+    bookingSub: `Buscar alojamiento cerca de ${city}, ${prefecture}`,
+    rakutenLabel: 'Rakuten Travel',
+    rakutenSub: `Buscar alojamiento cerca de ${city}, ${prefecture} (sitio en japonés)`,
+    note: '※ Se abrirá un sitio de reservas externo.',
+  },
+  fr: {
+    heading: 'Hébergements à Proximité',
+    body: 'Recherchez des hôtels et auberges près du sanctuaire pour organiser votre séjour. Les réservations sont disponibles en plusieurs langues pour les visiteurs venant de l’étranger.',
+    bookingSub: `Rechercher un hébergement près de ${city}, ${prefecture}`,
+    rakutenLabel: 'Rakuten Travel',
+    rakutenSub: `Rechercher un hébergement près de ${city}, ${prefecture} (site en japonais)`,
+    note: '※ Redirige vers un site de réservation externe.',
+  },
+  ko: {
+    heading: '주변 숙박 시설',
+    body: '참배와 함께 숙박을 계획하시는 분들을 위해, 주변 호텔과 료칸을 검색할 수 있습니다. 해외에서 오신 분들도 여러 언어로 그대로 예약하실 수 있습니다.',
+    bookingSub: `${prefecture} ${city} 주변 숙소 검색 (해외 예약 가능)`,
+    rakutenLabel: 'Rakuten Travel',
+    rakutenSub: `${prefecture} ${city} 주변 숙소 검색 (일본어 사이트)`,
+    note: '※ 외부 예약 사이트로 이동합니다.',
   },
 }[lang];
 ---

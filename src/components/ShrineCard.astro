@@ -5,18 +5,33 @@ import FavoriteButton from './FavoriteButton.astro';
 import type { CollectionEntry } from 'astro:content';
 import { benefitTranslations } from '../data/benefitTranslations';
 import { benefitTranslationsZh } from '../data/benefitTranslationsZh';
+import { benefitTranslationsEs } from '../data/benefitTranslationsEs';
+import { benefitTranslationsFr } from '../data/benefitTranslationsFr';
+import { benefitTranslationsKo } from '../data/benefitTranslationsKo';
 
 interface Props {
-  shrine: CollectionEntry<'shrines' | 'shrinesEn' | 'shrinesZh'>;
+  shrine: CollectionEntry<'shrines' | 'shrinesEn' | 'shrinesZh' | 'shrinesEs' | 'shrinesFr' | 'shrinesKo'>;
 }
 
 const { shrine } = Astro.props;
 const { id, data } = shrine;
 const tags = [...(data.benefits ?? [])].slice(0, 3);
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const base = lang === 'en' ? '/en' : lang === 'zh' ? '/zh' : '';
-const translateBenefit = (tag: string) =>
-  lang === 'en' ? (benefitTranslations[tag] ?? tag) : lang === 'zh' ? (benefitTranslationsZh[tag] ?? tag) : tag;
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+
+const benefitTranslationsByLang: Partial<Record<Lang, Record<string, string>>> = {
+  en: benefitTranslations,
+  zh: benefitTranslationsZh,
+  es: benefitTranslationsEs,
+  fr: benefitTranslationsFr,
+  ko: benefitTranslationsKo,
+};
+const translateBenefit = (tag: string) => benefitTranslationsByLang[lang]?.[tag] ?? tag;
+
+const locationSeparator: Record<Lang, string> = { ja: '・', en: ', ', zh: '、', es: ', ', fr: ', ', ko: '・' };
 ---
 
 <a
@@ -40,7 +55,7 @@ const translateBenefit = (tag: string) =>
     )}
   </div>
   <div class="p-5">
-    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}{lang === 'en' ? ', ' : lang === 'zh' ? '、' : '・'}{data.city}</p>
+    <p class="text-xs font-medium tracking-wide text-shrine-vermillion">{data.prefecture}{locationSeparator[lang]}{data.city}</p>
     <h3 class="mt-1 font-serif-jp text-lg font-bold text-shrine-ink">{data.name}</h3>
     <p class="mt-1 text-xs text-shrine-ink-soft">{data.kana}</p>
     {tags.length > 0 && (

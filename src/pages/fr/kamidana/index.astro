@@ -1,0 +1,120 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import JuyohinIcon from '../../../components/JuyohinIcon.astro';
+import ArrangementDiagram from '../../../components/ArrangementDiagram.astro';
+import PlacementDiagram from '../../../components/PlacementDiagram.astro';
+
+const proseClass = 'prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion';
+---
+
+<Layout title="Guide de l'Autel Domestique (Kamidana)" description="Comment installer un kamidana chez soi — où le placer, comment disposer ses ofuda, et les bases du culte quotidien, expliqué avec photos et schémas.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <nav class="text-xs text-white/70">
+        <a href="/fr/items/" class="hover:underline">Guide des Amulettes & Porte-Bonheur</a>
+        <span class="mx-1.5">/</span>
+        <span>Guide de l'Autel Domestique (Kamidana)</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-2xl font-bold sm:text-3xl">Guide de l'Autel Domestique (Kamidana)</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        Comment vénérer chez soi un ofuda que l'on a reçu ? Voici une introduction aux bases du kamidana, à la disposition des ofuda, et à l'étiquette du culte quotidien.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <article class="min-w-0 flex-1">
+      <div class={proseClass}>
+        <h2>Qu'est-ce qu'un Kamidana ?</h2>
+        <p>
+          Un kamidana est un petit autel domestique destiné à vénérer les kami chez soi. Le mot signifie littéralement « étagère des kami », tirant son origine de la pratique consistant à offrir des objets sacrés (heihaku) et des offrandes de nourriture (shinsen) sur une étagère. Aujourd'hui, il est courant de placer un ofuda à l'intérieur d'un petit boîtier en forme de sanctuaire appelé miyagata. Posséder un kamidana crée une habitude quotidienne de joindre les paumes et d'exprimer sa gratitude envers les kami.
+        </p>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Les Types de Kamidana</h2>
+        <p>Les miyagata se déclinent en quelques types, distingués par le nombre de portes.</p>
+        <ul>
+          <li>
+            <strong>Issha-zukuri (style à une porte)</strong> : Un modèle simple à une seule porte, où plusieurs ofuda sont empilés ensemble. Compact et apprécié des personnes qui possèdent un kamidana pour la première fois.
+          </li>
+          <li>
+            <strong>Sansha-zukuri (style à trois portes)</strong> : Un modèle à trois portes côte à côte, permettant de vénérer plusieurs ofuda l'un à côté de l'autre — rendant visuellement claire la hiérarchie relative de chaque ofuda.
+          </li>
+        </ul>
+
+        <h2>Comment Disposer ses Ofuda</h2>
+        <p>
+          Il est courant de vénérer plusieurs ofuda ensemble sur un kamidana. Les trois types de base sont le jingu taima (l'ofuda d'Ise Jingu), l'ofuda de son ujigami (le sanctuaire qui protège la région où l'on habite) et l'ofuda de son sukei-jinja (un sanctuaire qui vous est personnellement cher) — et il existe un ordre établi pour les disposer.
+        </p>
+      </div>
+
+      <div class="my-6">
+        <ArrangementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <p>
+          Si vous n'avez qu'un seul ofuda, pas besoin de trop y réfléchir — placez-le simplement au centre (ou à l'avant, pour un autel issha-zukuri).
+        </p>
+
+        <h2>Où Placer son Kamidana</h2>
+        <p>Quelques points à garder à l'esprit en choisissant un emplacement :</p>
+        <ul>
+          <li>Choisissez une pièce lumineuse et propre où la famille se réunit, comme le salon</li>
+          <li>Placez-le au-dessus du niveau des yeux, orienté vers le sud ou l'est</li>
+          <li>Évitez de le placer directement au-dessus d'une porte fréquemment utilisée, ou près d'une salle de bain</li>
+          <li>
+            Dans une maison à étages, si des personnes marchent au sol directement au-dessus du kamidana, il est de coutume de placer sur le plafond un papier portant l'inscription « nuage », « ciel » ou « paradis » — signifiant qu'il n'y a rien au-dessus
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-6">
+        <PlacementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <h2>Les Offrandes Quotidiennes</h2>
+        <p>
+          Idéalement, du riz, du sel et de l'eau sont offerts sur le kamidana et renouvelés chaque jour. Si cela n'est pas réalisable, il est plus important de maintenir une routine qui vous convient durablement.
+        </p>
+        <ul>
+          <li><strong>Riz, sel et eau</strong> : Placés dans de petits récipients (sanbo ou vaisselle rituelle) et renouvelés chaque matin.</li>
+          <li><strong>Sakaki</strong> : Des branches persistantes placées de chaque côté du kamidana, généralement renouvelées deux fois par mois (autour du 1er et du 15).</li>
+          <li><strong>Omiki (saké sacré)</strong> : Offert lors d'occasions spéciales telles que le Nouvel An ou des célébrations.</li>
+        </ul>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Le Culte Quotidien</h2>
+        <p>
+          Chaque matin, après avoir renouvelé les offrandes, suivez la forme « deux révérences, deux battements de mains, une révérence » devant le kamidana pour accueillir la nouvelle journée et exprimer votre gratitude quotidienne. Ce qui compte le plus n'est pas la forme stricte, mais la simple habitude de joindre les paumes pour les kami chaque jour.
+        </p>
+
+        <h2>Quand Remplacer son Ofuda</h2>
+        <p>
+          Les ofuda sont généralement remplacés une fois par an, autour du Nouvel An. En remerciement pour une année de protection, rapportez l'ancien ofuda au sanctuaire où vous l'avez reçu (ou à un sanctuaire proche) pour qu'il soit rituellement brûlé. De nombreux sanctuaires mettent en place un point de collecte pour les anciens ofuda et omamori autour de la période du Nouvel An.
+        </p>
+      </div>
+    </article>
+
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-72">
+      <div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <div class="h-16 w-16">
+          <JuyohinIcon type="ofuda" theme="indigo" />
+        </div>
+        <h2 class="mt-3 font-serif-jp text-base font-bold text-shrine-ink">En Savoir Plus sur les Ofuda</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+          Vous pouvez en apprendre davantage sur les ofuda eux-mêmes et leurs différents types dans le Guide des Amulettes & Porte-Bonheur.
+        </p>
+        <a
+          href="/fr/items/"
+          class="mt-4 block rounded-full border border-shrine-gold/40 px-5 py-2.5 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          Voir le Guide des Amulettes & Porte-Bonheur
+        </a>
+      </div>
+    </aside>
+  </div>
+</Layout>

@@ -7,10 +7,12 @@ interface Props {
 }
 
 const { city, prefecture } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
 const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
-const klookQuery = lang === 'en' || lang === 'zh' ? `${cleanCity}, ${bookingPrefecture}` : `${prefecture}${cleanCity}`;
+const klookQuery = lang !== 'ja' ? `${cleanCity}, ${bookingPrefecture}` : `${prefecture}${cleanCity}`;
 const klookUrl = buildKlookSearchUrl(klookQuery, lang);
 const t = {
   ja: {
@@ -30,6 +32,24 @@ const t = {
     body: '搭配參拜行程，探索神社周邊的觀光票券與各式體驗活動。',
     klookSub: `搜尋${city}、${prefecture}周邊的行程、體驗與門票`,
     note: '※ 將前往外部訂購網站。',
+  },
+  es: {
+    heading: 'Tours y Actividades Cercanas',
+    body: 'Encuentra tours, actividades y entradas a atracciones cerca del santuario para completar tu visita.',
+    klookSub: `Buscar tours y entradas cerca de ${city}, ${prefecture}`,
+    note: '※ Se abrirá un sitio de reservas externo.',
+  },
+  fr: {
+    heading: 'Visites et Activités à Proximité',
+    body: 'Trouvez des visites, activités et billets d’attractions près du sanctuaire pour compléter votre visite.',
+    klookSub: `Rechercher des visites et billets près de ${city}, ${prefecture}`,
+    note: '※ Redirige vers un site de réservation externe.',
+  },
+  ko: {
+    heading: '주변 투어 & 액티비티',
+    body: '참배와 함께 즐길 수 있는 주변 관광 티켓과 액티비티를 찾아보세요.',
+    klookSub: `${prefecture} ${city} 주변 투어・체험・입장권 검색`,
+    note: '※ 외부 예약 사이트로 이동합니다.',
   },
 }[lang];
 ---

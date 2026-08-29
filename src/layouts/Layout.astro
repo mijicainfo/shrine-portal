@@ -10,32 +10,51 @@ interface Props {
   image?: string;
 }
 
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
 
-const htmlLang = lang === 'en' ? 'en' : lang === 'zh' ? 'zh-Hant' : 'ja';
+const htmlLang: Record<Lang, string> = { ja: 'ja', en: 'en', zh: 'zh-Hant', es: 'es', fr: 'fr', ko: 'ko' };
 
-const defaultDescription = lang === 'en'
-  ? 'A guide to shrines across Japan — history, access, and goshuin info, along with nearby accommodation, written for first-time visitors.'
-  : lang === 'zh'
-  ? '介紹日本全國神社的入口網站，從由緒沿革、交通方式到御朱印資訊一應俱全，並附上周邊住宿資訊，獻給第一次參拜的旅人。'
-  : '日本全国の神社を紹介するポータルサイト。由緒、アクセス、御朱印情報まで、参拝の初心者にもわかりやすくお届けします。';
+const defaultDescription: Record<Lang, string> = {
+  ja: '日本全国の神社を紹介するポータルサイト。由緒、アクセス、御朱印情報まで、参拝の初心者にもわかりやすくお届けします。',
+  en: 'A guide to shrines across Japan — history, access, and goshuin info, along with nearby accommodation, written for first-time visitors.',
+  zh: '介紹日本全國神社的入口網站，從由緒沿革、交通方式到御朱印資訊一應俱全，並附上周邊住宿資訊，獻給第一次參拜的旅人。',
+  es: 'Un portal que presenta santuarios de todo Japón — historia, cómo llegar e información sobre el goshuin, además de alojamiento cercano, escrito para quienes visitan por primera vez.',
+  fr: 'Un portail présentant les sanctuaires du Japon — histoire, accès et informations sur le goshuin, ainsi que les hébergements à proximité, destiné aux visiteurs de première fois.',
+  ko: '일본 전국의 신사를 소개하는 포털 사이트. 유래, 교통편, 고슈인 정보는 물론 주변 숙박 정보까지, 처음 참배하는 분들도 이해하기 쉽게 안내합니다.',
+};
 
-const titleSuffix = lang === 'en'
-  ? 'Shrine The Pantheon — Japan Shrine Guide & Nearby Stays'
-  : lang === 'zh'
-  ? '神社 The Pantheon——日本神社導覽與周邊住宿資訊'
-  : '日本の神社情報・近隣宿泊施設なども紹介する神社 The Pantheon';
+const titleSuffix: Record<Lang, string> = {
+  ja: '日本の神社情報・近隣宿泊施設なども紹介する神社 The Pantheon',
+  en: 'Shrine The Pantheon — Japan Shrine Guide & Nearby Stays',
+  zh: '神社 The Pantheon——日本神社導覽與周邊住宿資訊',
+  es: 'Shrine The Pantheon — Guía de Santuarios de Japón y Alojamientos Cercanos',
+  fr: 'Shrine The Pantheon — Guide des Sanctuaires du Japon et Hébergements à Proximité',
+  ko: '神社 The Pantheon — 일본 신사 가이드 및 주변 숙박 정보',
+};
 
-const siteName = lang === 'en' ? 'Shrine The Pantheon' : '神社 The Pantheon';
+const titleSeparator: Record<Lang, string> = { ja: '｜', en: ' | ', zh: '｜', es: ' | ', fr: ' | ', ko: ' | ' };
 
-const { title, description = defaultDescription, image = '/og-image.png' } = Astro.props;
-const fullTitle = `${title}${lang === 'en' ? ' | ' : '｜'}${titleSuffix}`;
+const siteName: Record<Lang, string> = {
+  ja: '神社 The Pantheon',
+  en: 'Shrine The Pantheon',
+  zh: '神社 The Pantheon',
+  es: 'Shrine The Pantheon',
+  fr: 'Shrine The Pantheon',
+  ko: '神社 The Pantheon',
+};
+
+const ogLocale: Record<Lang, string> = { ja: 'ja_JP', en: 'en_US', zh: 'zh_TW', es: 'es_ES', fr: 'fr_FR', ko: 'ko_KR' };
+
+const { title, description = defaultDescription[lang], image = '/og-image.png' } = Astro.props;
+const fullTitle = `${title}${titleSeparator[lang]}${titleSuffix[lang]}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(image, Astro.site).toString();
 ---
 
 <!doctype html>
-<html lang={htmlLang}>
+<html lang={htmlLang[lang]}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -49,20 +68,20 @@ const ogImageUrl = new URL(image, Astro.site).toString();
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&family=Yomogi&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700;900&family=Yomogi&display=swap"
       rel="stylesheet"
     />
     <title>{fullTitle}</title>
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={siteName} />
+    <meta property="og:site_name" content={siteName[lang]} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content={lang === 'en' ? 'en_US' : lang === 'zh' ? 'zh_TW' : 'ja_JP'} />
+    <meta property="og:locale" content={ogLocale[lang]} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@shrine2026" />

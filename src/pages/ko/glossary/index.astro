@@ -1,0 +1,79 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { glossaryTermsKo, glossaryCategoriesKo } from '../../../data/glossary.ko';
+---
+
+<Layout title="용어 사전" description="도리이, 고슈인, 야오요로즈노카미 등 신사에서 만나는 용어를 정리한 친절한 미니 사전입니다.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">용어 사전</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        신사를 방문할 때 만나게 되는 용어들입니다. 뜻을 알아 두면 참배가 더욱 즐거워집니다.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+    <input
+      id="glossary-search"
+      type="text"
+      placeholder="용어 검색 (예: 도리이, 고슈인)"
+      class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none focus:ring-2 focus:ring-shrine-vermillion"
+    />
+
+    <div class="mt-8 space-y-10">
+      {glossaryCategoriesKo.map((category) => (
+        <div class="glossary-category">
+          <h2 class="font-serif-jp text-lg font-bold text-shrine-vermillion-dark">{category}</h2>
+          <dl class="mt-4 divide-y divide-shrine-gold/15 rounded-2xl border border-shrine-gold/20 bg-white">
+            {glossaryTermsKo
+              .filter((t) => t.category === category)
+              .map((t) => (
+                <div class="glossary-item p-5" data-term={`${t.term} ${t.reading} ${t.description}`}>
+                  <dt class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-serif-jp text-base font-bold text-shrine-ink">{t.term}</span>
+                    <span class="text-xs text-shrine-ink-soft">{t.reading}</span>
+                  </dt>
+                  <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{t.description}</dd>
+                </div>
+              ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+
+    <p id="glossary-empty" class="mt-16 hidden text-center text-sm text-shrine-ink-soft">
+      일치하는 용어를 찾을 수 없습니다.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const searchInput = document.getElementById('glossary-search') as HTMLInputElement;
+  const categories = Array.from(document.querySelectorAll<HTMLElement>('.glossary-category'));
+  const emptyMessage = document.getElementById('glossary-empty') as HTMLElement;
+
+  function applyFilter() {
+    const query = searchInput.value.trim().toLowerCase();
+    let anyVisible = false;
+
+    for (const category of categories) {
+      const items = Array.from(category.querySelectorAll<HTMLElement>('.glossary-item'));
+      let categoryHasVisible = false;
+
+      for (const item of items) {
+        const text = (item.dataset.term ?? '').toLowerCase();
+        const visible = !query || text.includes(query);
+        item.style.display = visible ? '' : 'none';
+        if (visible) categoryHasVisible = true;
+      }
+
+      category.style.display = categoryHasVisible ? '' : 'none';
+      if (categoryHasVisible) anyVisible = true;
+    }
+
+    emptyMessage.classList.toggle('hidden', anyVisible);
+  }
+
+  searchInput.addEventListener('input', applyFilter);
+</script>

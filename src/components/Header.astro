@@ -2,43 +2,79 @@
 import LanguageSwitcher from './LanguageSwitcher.astro';
 import BrandMark from './BrandMark.astro';
 
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const base = lang === 'en' ? '/en' : lang === 'zh' ? '/zh' : '';
-const t = lang === 'en'
-  ? {
-      brand: 'Shrine The Pantheon',
-      top: 'Home',
-      shrines: 'Find Shrines',
-      guide: 'Visiting Guide',
-      items: 'Amulets & Charms',
-      glossary: 'Glossary',
-      mypage: 'My Page',
-      openMenu: 'Open menu',
-      closeMenu: 'Close menu',
-    }
-  : lang === 'zh'
-  ? {
-      brand: '神社 The Pantheon',
-      top: '首頁',
-      shrines: '尋找神社',
-      guide: '參拜指南',
-      items: '御守與授與品',
-      glossary: '用語集',
-      mypage: '我的頁面',
-      openMenu: '開啟選單',
-      closeMenu: '關閉選單',
-    }
-  : {
-      brand: '神社 The Pantheon',
-      top: 'トップ',
-      shrines: '神社を探す',
-      guide: '参拝ガイド',
-      items: '授与品ガイド',
-      glossary: '用語集',
-      mypage: 'マイページ',
-      openMenu: 'メニューを開く',
-      closeMenu: 'メニューを閉じる',
-    };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+
+const t = {
+  ja: {
+    brand: '神社 The Pantheon',
+    top: 'トップ',
+    shrines: '神社を探す',
+    guide: '参拝ガイド',
+    items: '授与品ガイド',
+    glossary: '用語集',
+    mypage: 'マイページ',
+    openMenu: 'メニューを開く',
+    closeMenu: 'メニューを閉じる',
+  },
+  en: {
+    brand: 'Shrine The Pantheon',
+    top: 'Home',
+    shrines: 'Find Shrines',
+    guide: 'Visiting Guide',
+    items: 'Amulets & Charms',
+    glossary: 'Glossary',
+    mypage: 'My Page',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+  },
+  zh: {
+    brand: '神社 The Pantheon',
+    top: '首頁',
+    shrines: '尋找神社',
+    guide: '參拜指南',
+    items: '御守與授與品',
+    glossary: '用語集',
+    mypage: '我的頁面',
+    openMenu: '開啟選單',
+    closeMenu: '關閉選單',
+  },
+  es: {
+    brand: 'Shrine The Pantheon',
+    top: 'Inicio',
+    shrines: 'Buscar Santuarios',
+    guide: 'Guía de Visita',
+    items: 'Amuletos y Talismanes',
+    glossary: 'Glosario',
+    mypage: 'Mi Página',
+    openMenu: 'Abrir menú',
+    closeMenu: 'Cerrar menú',
+  },
+  fr: {
+    brand: 'Shrine The Pantheon',
+    top: 'Accueil',
+    shrines: 'Trouver un Sanctuaire',
+    guide: 'Guide de Visite',
+    items: 'Amulettes et Porte-bonheur',
+    glossary: 'Glossaire',
+    mypage: 'Ma Page',
+    openMenu: 'Ouvrir le menu',
+    closeMenu: 'Fermer le menu',
+  },
+  ko: {
+    brand: '神社 The Pantheon',
+    top: '홈',
+    shrines: '신사 찾기',
+    guide: '참배 가이드',
+    items: '오마모리 가이드',
+    glossary: '용어집',
+    mypage: '마이페이지',
+    openMenu: '메뉴 열기',
+    closeMenu: '메뉴 닫기',
+  },
+}[lang];
 
 const navLinks = [
   { href: `${base}/`, label: t.top },

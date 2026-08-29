@@ -6,12 +6,17 @@ interface Props {
 }
 
 const { shrineId, label = false, class: className = '' } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const t = lang === 'en'
-  ? { active: 'Saved to Favorites', inactive: 'Add to Favorites' }
-  : lang === 'zh'
-  ? { active: '已加入收藏', inactive: '加入收藏' }
-  : { active: 'お気に入り済み', inactive: 'お気に入りに追加' };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const t = {
+  ja: { active: 'お気に入り済み', inactive: 'お気に入りに追加' },
+  en: { active: 'Saved to Favorites', inactive: 'Add to Favorites' },
+  zh: { active: '已加入收藏', inactive: '加入收藏' },
+  es: { active: 'Guardado en Favoritos', inactive: 'Añadir a Favoritos' },
+  fr: { active: 'Ajouté aux Favoris', inactive: 'Ajouter aux Favoris' },
+  ko: { active: '즐겨찾기에 저장됨', inactive: '즐겨찾기에 추가' },
+}[lang];
 ---
 
 <button

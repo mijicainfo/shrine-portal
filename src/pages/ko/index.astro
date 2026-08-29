@@ -1,0 +1,344 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ShrineCard from '../../components/ShrineCard.astro';
+import SeigaihaWave from '../../components/SeigaihaWave.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import { benefitTranslationsKo } from '../../data/benefitTranslationsKo';
+
+const shrines = await getCollection('shrinesKo');
+const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const heroCandidateIds = [
+  'fujisan-sengen-taisha',
+  'itsukushima',
+  'ise-jingu',
+  'fushimi-inari',
+  'meiji-jingu',
+  'kirishima-jingu',
+  'izumo-taisha',
+  'nikko-toshogu',
+  'kotohiragu',
+  'tsurugaoka-hachimangu',
+];
+const heroShrines = heroCandidateIds
+  .map((id) => shrines.find((s) => s.id === id))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s && s.data.image));
+const heroPhotos = await Promise.all(
+  heroShrines.map(async (s) => {
+    const optimized = await getImage({ src: s.data.image!, width: 1920, height: 1080 });
+    return {
+      src: optimized.src,
+      alt: s.data.name,
+      name: s.data.name,
+      href: `/ko/shrines/${s.id}/`,
+      credit: s.data.imageCredit ?? null,
+    };
+  })
+);
+
+const featuredPrefectures = [
+  'Hokkaido',
+  'Tokyo',
+  'Kanagawa',
+  'Ishikawa',
+  'Kyoto',
+  'Osaka',
+  'Nara',
+  'Mie',
+  'Shimane',
+  'Hiroshima',
+  'Fukuoka',
+  'Okinawa',
+];
+
+const benefitCategoriesJa = [
+  '縁結び', '商売繁盛', '学業成就', '合格祈願', '厄除け', '家内安全',
+  '開運', '安産', '子授け', '交通安全', '金運', '無病息災',
+  '必勝祈願', '夫婦円満', '五穀豊穣', '海上安全', '武運長久', '芸能上達',
+];
+const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsKo[b] ?? b);
+---
+
+<Layout title="홈">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <img id="hero-photo" alt="" class="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-opacity duration-700" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #e8887a 0, transparent 45%), radial-gradient(circle at 80% 60%, #ddb877 0, transparent 40%);"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <p class="font-script text-xl text-shrine-gold">The Pantheon</p>
+      <h1 class="mt-3 font-serif-jp text-3xl font-black leading-snug sm:text-5xl">
+        일본의 아름답고 신비로운 <br class="sm:hidden" />신사를 만나는 여정
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-sm text-shrine-paper/80 sm:text-base">
+        유래, 교통편, 고슈인 정보까지 — 처음 참배하는 분도 안심할 수 있도록 안내합니다.
+      </p>
+
+      <form action="/ko/shrines/" method="get" class="mx-auto mt-10 flex max-w-lg overflow-hidden rounded-full bg-shrine-paper shadow-lg">
+        <input
+          type="text"
+          name="q"
+          placeholder="신사, 지역, 기원 내용으로 검색"
+          class="w-full bg-transparent px-5 py-3 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="shrink-0 bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          검색
+        </button>
+      </form>
+    </div>
+    <button
+      id="hero-photo-next"
+      type="button"
+      aria-label="다음 사진"
+      class="absolute right-4 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur transition hover:bg-white/30 sm:right-8"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <p id="hero-photo-credit" class="relative hidden px-4 pb-2 text-right text-[10px] text-shrine-paper/60 sm:px-6"></p>
+    <SeigaihaWave color="#fdf8f1" class="relative h-6" />
+
+    <script type="application/json" id="hero-photo-data" set:html={JSON.stringify(heroPhotos)} />
+    <script>
+      const data = document.getElementById('hero-photo-data');
+      const photos = data ? JSON.parse(data.textContent || '[]') : [];
+      const img = document.getElementById('hero-photo') as HTMLImageElement | null;
+      const credit = document.getElementById('hero-photo-credit');
+      const nextBtn = document.getElementById('hero-photo-next');
+
+      if (photos.length > 0 && img) {
+        let index = Math.floor(Math.random() * photos.length);
+        let timer: ReturnType<typeof setInterval>;
+
+        img.addEventListener('load', () => img.classList.remove('opacity-0'));
+
+        function applyPhoto(photo: (typeof photos)[number]) {
+          img!.src = photo.src;
+          img!.alt = photo.name;
+          if (credit && photo.credit) {
+            credit.textContent = `사진: ${photo.name} / ${photo.credit.author} (${photo.credit.license})`;
+            credit.classList.remove('hidden');
+          }
+        }
+
+        function goTo(i: number, fade = true) {
+          index = ((i % photos.length) + photos.length) % photos.length;
+          const photo = photos[index];
+          if (fade) {
+            img!.classList.add('opacity-0');
+            window.setTimeout(() => applyPhoto(photo), 300);
+          } else {
+            applyPhoto(photo);
+          }
+        }
+
+        function startAutoplay() {
+          clearInterval(timer);
+          timer = setInterval(() => goTo(index + 1), 5000);
+        }
+
+        goTo(index, false);
+        startAutoplay();
+
+        nextBtn?.addEventListener('click', () => {
+          goTo(index + 1);
+          startAutoplay();
+        });
+      }
+    </script>
+  </section>
+
+  <!-- Language selector -->
+  <div class="border-b border-shrine-gold/20 bg-shrine-paper-dark py-2.5 text-center text-xs text-shrine-ink-soft">
+    다른 언어로 읽기:
+    <a href="/" class="ml-1.5 font-medium text-shrine-vermillion hover:underline">日本語</a>
+    <span class="mx-1">/</span>
+    <a href="/en/" class="font-medium text-shrine-vermillion hover:underline">English</a>
+    <span class="mx-1">/</span>
+    <a href="/zh/" class="font-medium text-shrine-vermillion hover:underline">繁體中文</a>
+    <span class="mx-1">/</span>
+    <a href="/es/" class="font-medium text-shrine-vermillion hover:underline">Español</a>
+    <span class="mx-1">/</span>
+    <a href="/fr/" class="font-medium text-shrine-vermillion hover:underline">Français</a>
+  </div>
+
+  <!-- About Shrines & Kami -->
+  <section id="shinto" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="text-center">
+        <p class="font-script text-xl text-shrine-vermillion">Shinto &amp; Kami</p>
+        <h2 class="mt-2 font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">신사와 신(카미)에 대하여</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-shrine-ink-soft">
+          "신사란 정확히 무엇인가요?" "카미란 무엇인가요?" — 처음 방문하는 분들을 위해 일본 신사와 신에 대한 기본을 부드럽게 소개합니다.
+        </p>
+        <a href="/ko/deities/" class="mt-3 inline-block text-sm text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+          각 신사에 모셔진 신들 살펴보기 →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">⛩</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">신사란 무엇인가요?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            신사(진자)는 일본 고유의 신앙인 신도(神道)에 뿌리를 두고 신을 모시는 곳입니다. 도리이에서 본전에 이르는 참배로는 일상 세계에서 신의 신성한 공간으로 들어서는 길로 여겨집니다. 산, 숲, 폭포, 바위 같은 자연물 자체가 신성한 곳으로 여겨지는 경우도 많으며, 일본 전역에는 수만 개의 신사가 자리하고 있습니다.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🌿</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">야오요로즈노카미 — 수많은 신들</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            신도는 하나의 신만을 중심으로 하지 않습니다. 태양·산·바다·바람 같은 자연의 힘부터 벼농사·상업·학문을 관장하는 신, 신격화된 역사 속 인물에 이르기까지 — 헤아릴 수 없이 많은 신(야오요로즈노카미, "팔백만의 신")이 일본 역사 속에서 모셔져 왔습니다. 그래서 신사마다 모시는 신과 그 신이 내려 주는 은혜가 저마다 다릅니다.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🏯</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">신사와 사찰의 차이</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            신사는 신도의 신을 모시고, 사찰은 불교의 부처와 보살을 모십니다. 입구를 나타내는 문도 서로 달라, 신사는 도리이, 사찰은 산몬(山門)을 세웁니다. 참배 예절 또한 달라서, 신사에서는 절을 한 뒤 손뼉을 치지만, 사찰에서는 손뼉을 치지 않고 조용히 두 손을 모읍니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Prefecture -->
+  <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">지역별로 찾아보기</h2>
+    <p class="mt-1 text-sm text-shrine-ink-soft">관심 있는 지역의 신사를 찾아보세요.</p>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {featuredPrefectures.map((pref) => (
+        <a
+          href={`/ko/shrines/?pref=${encodeURIComponent(pref)}`}
+          class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          {pref}
+        </a>
+      ))}
+      <a
+        href="/ko/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        모든 지역 보기 →
+      </a>
+    </div>
+  </section>
+
+  <!-- Shrines of Japan -->
+  <section class="bg-shrine-paper-dark py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">일본의 신사들</h2>
+          <p class="mt-1 text-sm text-shrine-ink-soft">천 년의 기도와 사계절의 고요함이 만나는 곳.</p>
+        </div>
+        <a href="/ko/shrines/" class="hidden text-sm text-shrine-vermillion hover:underline sm:block">전체 보기 →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((shrine) => (
+          <ShrineCard shrine={shrine} />
+        ))}
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/ko/shrines/" class="text-sm text-shrine-vermillion hover:underline">전체 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search by Blessing -->
+  <section id="benefits" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">기원 내용으로 찾아보기</h2>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {benefitCategories.map((benefit) => (
+        <a
+          href={`/ko/shrines/?q=${encodeURIComponent(benefit)}`}
+          class="rounded-full bg-shrine-vermillion-light px-4 py-2 text-sm text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+        >
+          {benefit}
+        </a>
+      ))}
+      <a
+        href="/ko/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        모든 기원 내용 보기 →
+      </a>
+    </div>
+  </section>
+
+  <!-- Beginner's Visiting Guide -->
+  <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">초보자를 위한 참배 가이드</h2>
+      <p class="mt-1 text-sm text-shrine-paper/70">
+        예절은 지역과 신사에 따라 조금씩 다를 수 있지만, 이 기본적인 흐름만 알아 두어도 한결 편안하게 참배할 수 있습니다. 너무 어렵게 생각할 필요는 없습니다 — 중요한 것은 신에 대한 감사의 마음입니다.
+      </p>
+
+      <div class="mt-8 overflow-hidden rounded-2xl bg-black/20 shadow-lg">
+        <div class="aspect-video w-full">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/RKWpIV8rUT8"
+            title="신사 참배 방법: 참배의 마음가짐과 형식"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="bg-black/20 px-4 py-2 text-xs text-shrine-paper/70">
+          영상 제공: <a href="https://www.youtube.com/@jinjahoncho6712" target="_blank" rel="noopener noreferrer" class="underline hover:text-shrine-paper">진자혼초(신사본청) 공식 채널</a> — "참배의 마음가짐과 형식"(일본어 영상).
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">01</p>
+          <h3 class="mt-2 font-bold">도리이 앞에서 가볍게 인사하기</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            도리이는 신성한 세계와 일상 세계의 경계를 나타내는, 말하자면 신의 집 현관과도 같은 곳입니다. 지나가기 전에 가볍게 고개 숙여 인사합니다. 참배로의 한가운데는 신이 지나는 길로 여겨지므로, 살짝 옆으로 비켜서 걷는 것이 예의입니다.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">02</p>
+          <h3 class="mt-2 font-bold">데미즈야에서 몸을 정갈히 하기</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            국자로 물을 떠서 왼손, 그다음 오른손을 헹굽니다. 왼손에 물을 받아 입을 헹굽니다. 마지막으로 국자를 세워 남은 물이 손잡이를 타고 흘러내리게 하여 헹구는 것은 다음 사람을 위한 작은 배려입니다.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">03</p>
+          <h3 class="mt-2 font-bold">새전을 바치고 방울 울리기</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            새전함에 조용히 동전을 넣고, 방울이 있다면 울립니다. 이 소리는 신에게 참배를 알리는 동시에 나쁜 기운을 물리친다고 전해집니다.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">04</p>
+          <h3 class="mt-2 font-bold">두 번 절, 두 번 손뼉, 한 번 절</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            깊이 두 번 절한 뒤, 가슴 높이에서 두 번 손뼉을 치고, 마지막으로 다시 한 번 깊이 절합니다. 손뼉을 친 뒤에는 조용히 감사의 마음과 소원을 마음속으로 전합니다(이즈모 대사처럼 다른 방식을 따르는 신사도 일부 있습니다).
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">05</p>
+          <h3 class="mt-2 font-bold">사무소에서 고슈인 받기</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            참배를 마친 뒤에는 신사 사무소에서 고슈인(인장)이나 오마모리(부적)를 받을 수 있습니다. 고슈인마다 고유한 인장과 손으로 쓴 서체가 담겨 있어 훌륭한 기념품이 되니, 모아 보고 싶다면 고슈인초(전용 수첩)를 준비해 가세요.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">06</p>
+          <h3 class="mt-2 font-bold">나올 때 다시 한번 돌아서 인사하기</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            도리이를 지나 나올 때, 본전 쪽으로 몸을 돌려 다시 한번 인사를 올리는 것이 예의 바른 관례입니다 — 참배에 대한 마지막 감사의 표시입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

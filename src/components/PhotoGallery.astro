@@ -24,36 +24,65 @@ const lightboxData = photos.map((photo, i) => ({
   credit: photo.credit ?? null,
 }));
 
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const t = lang === 'en'
-  ? {
-      heading: 'Photos',
-      zoomAlt: (alt: string) => `View ${alt} larger`,
-      dialogLabel: 'Photo viewer',
-      close: 'Close',
-      prev: 'Previous photo',
-      next: 'Next photo',
-      creditPrefix: 'Photo:',
-    }
-  : lang === 'zh'
-  ? {
-      heading: '照片',
-      zoomAlt: (alt: string) => `放大檢視${alt}`,
-      dialogLabel: '照片檢視器',
-      close: '關閉',
-      prev: '上一張照片',
-      next: '下一張照片',
-      creditPrefix: '照片來源：',
-    }
-  : {
-      heading: '写真',
-      zoomAlt: (alt: string) => `${alt}を拡大表示`,
-      dialogLabel: '写真拡大表示',
-      close: '閉じる',
-      prev: '前の写真',
-      next: '次の写真',
-      creditPrefix: '写真:',
-    };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const t = {
+  ja: {
+    heading: '写真',
+    zoomAlt: (alt: string) => `${alt}を拡大表示`,
+    dialogLabel: '写真拡大表示',
+    close: '閉じる',
+    prev: '前の写真',
+    next: '次の写真',
+    creditPrefix: '写真:',
+  },
+  en: {
+    heading: 'Photos',
+    zoomAlt: (alt: string) => `View ${alt} larger`,
+    dialogLabel: 'Photo viewer',
+    close: 'Close',
+    prev: 'Previous photo',
+    next: 'Next photo',
+    creditPrefix: 'Photo:',
+  },
+  zh: {
+    heading: '照片',
+    zoomAlt: (alt: string) => `放大檢視${alt}`,
+    dialogLabel: '照片檢視器',
+    close: '關閉',
+    prev: '上一張照片',
+    next: '下一張照片',
+    creditPrefix: '照片來源：',
+  },
+  es: {
+    heading: 'Fotos',
+    zoomAlt: (alt: string) => `Ver ${alt} en grande`,
+    dialogLabel: 'Visor de fotos',
+    close: 'Cerrar',
+    prev: 'Foto anterior',
+    next: 'Foto siguiente',
+    creditPrefix: 'Foto:',
+  },
+  fr: {
+    heading: 'Photos',
+    zoomAlt: (alt: string) => `Agrandir ${alt}`,
+    dialogLabel: 'Visionneuse de photos',
+    close: 'Fermer',
+    prev: 'Photo précédente',
+    next: 'Photo suivante',
+    creditPrefix: 'Photo :',
+  },
+  ko: {
+    heading: '사진',
+    zoomAlt: (alt: string) => `${alt} 크게 보기`,
+    dialogLabel: '사진 뷰어',
+    close: '닫기',
+    prev: '이전 사진',
+    next: '다음 사진',
+    creditPrefix: '사진:',
+  },
+}[lang];
 ---
 
 {photos.length > 0 && (

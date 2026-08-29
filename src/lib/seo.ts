@@ -1,5 +1,8 @@
 import { benefitTranslations } from '../data/benefitTranslations';
 import { benefitTranslationsZh } from '../data/benefitTranslationsZh';
+import { benefitTranslationsEs } from '../data/benefitTranslationsEs';
+import { benefitTranslationsFr } from '../data/benefitTranslationsFr';
+import { benefitTranslationsKo } from '../data/benefitTranslationsKo';
 
 /** Strips a trailing full-width-paren reading/gloss, e.g. "天照大御神（あまてらすおおみかみ）" -> "天照大御神" */
 function stripReading(text: string): string {
@@ -16,11 +19,11 @@ interface ShrineDescriptionData {
 }
 
 /** Max length (in characters) a meta description is allowed to reach with the optional "founded" clause included. */
-const MAX_DESCRIPTION_LENGTH = { ja: 110, en: 170, zh: 110 } as const;
+const MAX_DESCRIPTION_LENGTH = { ja: 110, en: 170, zh: 110, es: 170, fr: 170, ko: 110 } as const;
 /** Hard cap applied as a final safety net, in case a data field (e.g. a very long deity name) alone blows the budget. */
-const HARD_CAP = { ja: 130, en: 200, zh: 130 } as const;
+const HARD_CAP = { ja: 130, en: 200, zh: 130, es: 200, fr: 200, ko: 130 } as const;
 /** A single deity name is truncated to this length before being embedded in a sentence. */
-const MAX_DEITY_LENGTH = { ja: 30, en: 60, zh: 30 } as const;
+const MAX_DEITY_LENGTH = { ja: 30, en: 60, zh: 30, es: 60, fr: 60, ko: 30 } as const;
 
 function truncate(text: string, maxLength: number): string {
   const chars = [...text];
@@ -28,7 +31,7 @@ function truncate(text: string, maxLength: number): string {
   return chars.slice(0, maxLength - 1).join('').trimEnd() + '…';
 }
 
-export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' | 'en' | 'zh'): string {
+export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko'): string {
   const rawDeity = data.deities[0] ? stripReading(data.deities[0]) : '';
   const deity = truncate(rawDeity, MAX_DEITY_LENGTH[lang]);
   const rawBenefits = (data.benefits ?? []).slice(0, 2);
@@ -58,6 +61,45 @@ export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' |
       if (withFounded.length <= maxLength) return withFounded;
     }
     return truncate(base, HARD_CAP.zh);
+  }
+
+  if (lang === 'es') {
+    const benefits = rawBenefits.map((b) => benefitTranslationsEs[b] ?? b);
+    const parts = [`${data.name} es un santuario sintoísta en ${data.prefecture}${deity ? ` dedicado a ${deity}` : ''}.`];
+    if (benefits.length > 0) parts.push(`Conocido por sus bendiciones de ${benefits.join(' y ')}.`);
+    parts.push('Descubre su historia, cómo llegar e información sobre el goshuin.');
+    const base = parts.join(' ');
+    if (data.founded) {
+      const withFounded = `${parts[0]} Historia de su fundación: ${data.founded}. ${parts.slice(1).join(' ')}`;
+      if (withFounded.length <= maxLength) return withFounded;
+    }
+    return truncate(base, HARD_CAP.es);
+  }
+
+  if (lang === 'fr') {
+    const benefits = rawBenefits.map((b) => benefitTranslationsFr[b] ?? b);
+    const parts = [`${data.name} est un sanctuaire shinto à ${data.prefecture}${deity ? ` dédié à ${deity}` : ''}.`];
+    if (benefits.length > 0) parts.push(`Connu pour ses bénédictions de ${benefits.join(' et ')}.`);
+    parts.push('Découvrez son histoire, son accès et les informations sur le goshuin.');
+    const base = parts.join(' ');
+    if (data.founded) {
+      const withFounded = `${parts[0]} Histoire de sa fondation : ${data.founded}. ${parts.slice(1).join(' ')}`;
+      if (withFounded.length <= maxLength) return withFounded;
+    }
+    return truncate(base, HARD_CAP.fr);
+  }
+
+  if (lang === 'ko') {
+    const benefits = rawBenefits.map((b) => benefitTranslationsKo[b] ?? b);
+    const parts = [`${data.name}은(는) ${data.prefecture}${data.city}에 있는${deity ? ` ${deity}을(를) 모시는` : ''} 신사입니다.`];
+    if (benefits.length > 0) parts.push(`${benefits.join('・')}(으)로 유명합니다.`);
+    parts.push('유래, 교통편, 고슈인 정보를 소개합니다.');
+    const base = parts.join('');
+    if (data.founded) {
+      const withFounded = `${parts[0]} 창건: ${data.founded}. ${parts.slice(1).join('')}`;
+      if (withFounded.length <= maxLength) return withFounded;
+    }
+    return truncate(base, HARD_CAP.ko);
   }
 
   const parts = [`${data.name}（${data.prefecture}${data.city}）は${deity ? `${deity}をお祀りする` : ''}神社です。`];

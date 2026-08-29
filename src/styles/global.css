@@ -30,3 +30,11 @@ body {
   --font-serif-jp: "Noto Serif TC", "Noto Serif JP", serif;
   --font-sans-jp: "Noto Sans TC", "Noto Sans JP", sans-serif;
 }
+
+/* Korean pages: the JP fonts have no Hangul glyphs at all (unlike the shared-Han-script
+   case above), so without this override Korean text falls back to the browser's generic
+   sans-serif/serif instead of a font matched to the rest of the site's look. */
+:lang(ko) {
+  --font-serif-jp: "Noto Serif KR", "Noto Serif JP", serif;
+  --font-sans-jp: "Noto Sans KR", "Noto Sans JP", sans-serif;
+}

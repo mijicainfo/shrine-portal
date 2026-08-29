@@ -1,23 +1,27 @@
 ---
 const path = Astro.url.pathname;
-const currentLang = path === '/en' || path.startsWith('/en/')
-  ? 'en'
-  : path === '/zh' || path.startsWith('/zh/')
-    ? 'zh'
-    : 'ja';
+const locales = ['en', 'zh', 'es', 'fr', 'ko'] as const;
+type Locale = 'ja' | (typeof locales)[number];
 
-const basePath = currentLang === 'ja' ? path : path.replace(/^\/(en|zh)/, '') || '/';
-const buildPath = (lang: 'ja' | 'en' | 'zh') =>
+const matched = locales.find((l) => path === `/${l}` || path.startsWith(`/${l}/`));
+const currentLang: Locale = matched ?? 'ja';
+
+const localePattern = new RegExp(`^/(${locales.join('|')})`);
+const basePath = currentLang === 'ja' ? path : path.replace(localePattern, '') || '/';
+const buildPath = (lang: Locale) =>
   lang === 'ja' ? basePath : `/${lang}${basePath === '/' ? '' : basePath}`;
 
 const links = [
   { lang: 'ja' as const, label: '日本語' },
   { lang: 'en' as const, label: 'EN' },
   { lang: 'zh' as const, label: '繁體中文' },
+  { lang: 'es' as const, label: 'ES' },
+  { lang: 'fr' as const, label: 'FR' },
+  { lang: 'ko' as const, label: '한국어' },
 ];
 ---
 
-<div class="flex items-center gap-1 rounded-full border border-shrine-gold/30 p-0.5 text-xs">
+<div class="flex flex-wrap items-center gap-1 rounded-full border border-shrine-gold/30 p-0.5 text-xs">
   {links.map((link) => (
     <a
       href={buildPath(link.lang)}

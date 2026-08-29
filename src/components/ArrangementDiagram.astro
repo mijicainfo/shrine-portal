@@ -1,40 +1,75 @@
 ---
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const t = lang === 'en'
-  ? {
-      threeGate: 'Three-Door Style (Sansha-zukuri)',
-      sukeiLabel: 'Personal Shrine',
-      sukeiSub: '(left)',
-      jinguLabel: 'Jingu Taima',
-      jinguSub: '(center)',
-      ujiLabel: "Local Shrine's",
-      ujiSub: '(right)',
-      oneGate: 'One-Door Style (Issha-zukuri), Stacking Order',
-      stackOrder: 'Front: Jingu Taima → 2nd: Local Shrine → Back: Personal Shrine',
-    }
-  : lang === 'zh'
-  ? {
-      threeGate: '三社造（三扇門）的情況',
-      sukeiLabel: '崇敬神社',
-      sukeiSub: '（面向左側）',
-      jinguLabel: '神宮大麻',
-      jinguSub: '（中央）',
-      ujiLabel: '氏神',
-      ujiSub: '（面向右側）',
-      oneGate: '一社造（單扇門）的情況（疊放順序）',
-      stackOrder: '最前：神宮大麻 → 第二：氏神 → 最後：崇敬神社',
-    }
-  : {
-      threeGate: '三社造の場合',
-      sukeiLabel: '崇敬神社',
-      sukeiSub: '（向かって左）',
-      jinguLabel: '神宮大麻',
-      jinguSub: '（中央）',
-      ujiLabel: '氏神様',
-      ujiSub: '（向かって右）',
-      oneGate: '一社造の場合（重ねる順）',
-      stackOrder: '手前：神宮大麻 → 2番目：氏神様 → 奥：崇敬神社',
-    };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const t = {
+  ja: {
+    threeGate: '三社造の場合',
+    sukeiLabel: '崇敬神社',
+    sukeiSub: '（向かって左）',
+    jinguLabel: '神宮大麻',
+    jinguSub: '（中央）',
+    ujiLabel: '氏神様',
+    ujiSub: '（向かって右）',
+    oneGate: '一社造の場合（重ねる順）',
+    stackOrder: '手前：神宮大麻 → 2番目：氏神様 → 奥：崇敬神社',
+  },
+  en: {
+    threeGate: 'Three-Door Style (Sansha-zukuri)',
+    sukeiLabel: 'Personal Shrine',
+    sukeiSub: '(left)',
+    jinguLabel: 'Jingu Taima',
+    jinguSub: '(center)',
+    ujiLabel: "Local Shrine's",
+    ujiSub: '(right)',
+    oneGate: 'One-Door Style (Issha-zukuri), Stacking Order',
+    stackOrder: 'Front: Jingu Taima → 2nd: Local Shrine → Back: Personal Shrine',
+  },
+  zh: {
+    threeGate: '三社造（三扇門）的情況',
+    sukeiLabel: '崇敬神社',
+    sukeiSub: '（面向左側）',
+    jinguLabel: '神宮大麻',
+    jinguSub: '（中央）',
+    ujiLabel: '氏神',
+    ujiSub: '（面向右側）',
+    oneGate: '一社造（單扇門）的情況（疊放順序）',
+    stackOrder: '最前：神宮大麻 → 第二：氏神 → 最後：崇敬神社',
+  },
+  es: {
+    threeGate: 'Estilo de Tres Puertas (Sansha-zukuri)',
+    sukeiLabel: 'Santuario Personal',
+    sukeiSub: '(izquierda)',
+    jinguLabel: 'Jingu Taima',
+    jinguSub: '(centro)',
+    ujiLabel: 'Santuario Local',
+    ujiSub: '(derecha)',
+    oneGate: 'Estilo de Una Puerta (Issha-zukuri), Orden de Apilado',
+    stackOrder: 'Frente: Jingu Taima → 2º: Santuario Local → Atrás: Santuario Personal',
+  },
+  fr: {
+    threeGate: 'Style à Trois Portes (Sansha-zukuri)',
+    sukeiLabel: 'Sanctuaire Personnel',
+    sukeiSub: '(à gauche)',
+    jinguLabel: 'Jingu Taima',
+    jinguSub: '(au centre)',
+    ujiLabel: 'Sanctuaire Local',
+    ujiSub: '(à droite)',
+    oneGate: 'Style à Une Porte (Issha-zukuri), Ordre d’Empilement',
+    stackOrder: 'Devant : Jingu Taima → 2e : Sanctuaire Local → Arrière : Sanctuaire Personnel',
+  },
+  ko: {
+    threeGate: '삼사조(三社造, 세 개의 문)의 경우',
+    sukeiLabel: '숭경신사',
+    sukeiSub: '(왼쪽)',
+    jinguLabel: '진구타이마',
+    jinguSub: '(중앙)',
+    ujiLabel: '우지가미',
+    ujiSub: '(오른쪽)',
+    oneGate: '잇샤즈쿠리(一社造, 한 개의 문)의 경우 (쌓는 순서)',
+    stackOrder: '앞: 진구타이마 → 두 번째: 우지가미 → 뒤: 숭경신사',
+  },
+}[lang];
 ---
 
 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">

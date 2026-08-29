@@ -1,0 +1,120 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import JuyohinIcon from '../../../components/JuyohinIcon.astro';
+import ArrangementDiagram from '../../../components/ArrangementDiagram.astro';
+import PlacementDiagram from '../../../components/PlacementDiagram.astro';
+
+const proseClass = 'prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion';
+---
+
+<Layout title="Guía del Altar Doméstico (Kamidana)" description="Cómo instalar un kamidana en casa — dónde colocarlo, cómo disponer tus ofuda y los fundamentos del culto diario, explicado con fotos y diagramas.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <nav class="text-xs text-white/70">
+        <a href="/es/items/" class="hover:underline">Guía de Amuletos y Talismanes</a>
+        <span class="mx-1.5">/</span>
+        <span>Guía del Altar Doméstico (Kamidana)</span>
+      </nav>
+      <h1 class="mt-3 font-serif-jp text-2xl font-bold sm:text-3xl">Guía del Altar Doméstico (Kamidana)</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        ¿Cómo debes consagrar en casa un ofuda que has recibido? Aquí tienes una introducción a los fundamentos del kamidana, cómo disponer tus ofuda y la etiqueta del culto diario.
+      </p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:flex">
+    <article class="min-w-0 flex-1">
+      <div class={proseClass}>
+        <h2>¿Qué es un Kamidana?</h2>
+        <p>
+          Un kamidana es un pequeño altar doméstico para consagrar a los kami en casa. La palabra significa literalmente "estante de los kami", y su origen está en la práctica de ofrecer objetos sagrados (heihaku) y ofrendas de alimentos (shinsen) sobre un estante. Hoy en día es común colocar un ofuda dentro de una pequeña caja con forma de santuario llamada miyagata. Tener un kamidana crea el hábito diario de juntar las palmas y expresar gratitud al kami.
+        </p>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Tipos de Kamidana</h2>
+        <p>Los miyagata vienen en algunos tipos, diferenciados por el número de puertas.</p>
+        <ul>
+          <li>
+            <strong>Issha-zukuri (estilo de una puerta)</strong>: Un diseño simple con una sola puerta, donde varios ofuda se apilan juntos. Compacto y popular entre quienes tienen un kamidana por primera vez.
+          </li>
+          <li>
+            <strong>Sansha-zukuri (estilo de tres puertas)</strong>: Un diseño con tres puertas una junto a otra, que permite consagrar varios ofuda uno al lado del otro, dejando visualmente clara la jerarquía relativa de cada ofuda.
+          </li>
+        </ul>
+
+        <h2>Cómo Disponer tus Ofuda</h2>
+        <p>
+          Es común consagrar varios ofuda juntos en un kamidana. Los tres tipos básicos son el jingu taima (el ofuda del Gran Santuario de Ise), el ofuda de tu ujigami (del santuario que protege la zona donde vives) y el ofuda de tu sukei-jinja (un santuario que aprecias personalmente) — y existe un orden establecido para disponerlos.
+        </p>
+      </div>
+
+      <div class="my-6">
+        <ArrangementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <p>
+          Si solo tienes un ofuda, no hace falta complicarse — simplemente colócalo en el centro (o al frente, en el caso de un altar issha-zukuri).
+        </p>
+
+        <h2>Dónde Colocar tu Kamidana</h2>
+        <p>Algunas cosas a tener en cuenta al elegir un lugar:</p>
+        <ul>
+          <li>Elige una habitación luminosa y limpia donde se reúna la familia, como la sala de estar</li>
+          <li>Colócalo por encima del nivel de los ojos, orientado hacia el sur o el este</li>
+          <li>Evita colocarlo justo encima de una puerta muy transitada, o cerca de un baño</li>
+          <li>
+            En una casa de varios pisos, si la gente camina por el suelo justo encima del kamidana, es costumbre colocar en el techo un papel con la palabra "nube", "cielo" o "firmamento" — indicando que no hay nada por encima
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-6">
+        <PlacementDiagram />
+      </div>
+
+      <div class={proseClass}>
+        <h2>Ofrendas Diarias</h2>
+        <p>
+          Idealmente, se ofrecen arroz, sal y agua en el kamidana y se reemplazan cada día. Si eso no es posible, lo más importante es mantener la rutina que te resulte sostenible.
+        </p>
+        <ul>
+          <li><strong>Arroz, sal y agua</strong>: Colocados en pequeños recipientes (sanbo o vajilla ritual) y reemplazados cada mañana.</li>
+          <li><strong>Sakaki</strong>: Ramas de hoja perenne colocadas a ambos lados del kamidana, reemplazadas normalmente dos veces al mes (alrededor del día 1 y el 15).</li>
+          <li><strong>Omiki (sake sagrado)</strong>: Ofrecido en ocasiones especiales como el Año Nuevo o celebraciones.</li>
+        </ul>
+      </div>
+
+      <div class={proseClass}>
+        <h2>Culto Diario</h2>
+        <p>
+          Cada mañana, después de renovar las ofrendas, sigue la forma de "dos reverencias, dos palmadas, una reverencia" frente al kamidana para recibir el nuevo día y expresar tu gratitud cotidiana. Lo que más importa no es la forma estricta, sino el simple hábito de juntar las palmas por el kami cada día.
+        </p>
+
+        <h2>Cuándo Reemplazar tu Ofuda</h2>
+        <p>
+          Los ofuda generalmente se reemplazan una vez al año, alrededor del Año Nuevo. En agradecimiento por un año de protección, devuelve el ofuda antiguo al santuario donde lo recibiste (o a uno cercano) para que sea quemado ritualmente. Muchos santuarios instalan un punto de recogida para ofuda y omamori antiguos alrededor del periodo de Año Nuevo.
+        </p>
+      </div>
+    </article>
+
+    <aside class="mt-10 w-full shrink-0 lg:mt-0 lg:w-72">
+      <div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
+        <div class="h-16 w-16">
+          <JuyohinIcon type="ofuda" theme="indigo" />
+        </div>
+        <h2 class="mt-3 font-serif-jp text-base font-bold text-shrine-ink">Más Sobre los Ofuda</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+          Puedes aprender más sobre los ofuda y sus diferentes tipos en la Guía de Amuletos y Talismanes.
+        </p>
+        <a
+          href="/es/items/"
+          class="mt-4 block rounded-full border border-shrine-gold/40 px-5 py-2.5 text-center text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          Ver la Guía de Amuletos y Talismanes
+        </a>
+      </div>
+    </aside>
+  </div>
+</Layout>

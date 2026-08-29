@@ -1,0 +1,242 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ShrineCard from '../../../components/ShrineCard.astro';
+import { getCollection } from 'astro:content';
+import { regions, getRegionId } from '../../../data/regions';
+import { benefitTranslationsEs } from '../../../data/benefitTranslationsEs';
+
+const shrines = (await getCollection('shrinesEs')).sort((a, b) => a.data.order - b.data.order);
+// Some shrine entries use "X Prefecture", others just "X" — normalize so both
+// resolve to the same filter option/value instead of appearing as duplicates.
+const normalizePref = (p: string) => p.replace(/\s*Prefecture$/i, '').trim();
+const prefectures = [...new Set(shrines.map((s) => normalizePref(s.data.prefecture)))].sort();
+const allBenefits = [...new Set(shrines.flatMap((s) => s.data.benefits ?? []))].sort();
+const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].sort();
+---
+
+<Layout title="Buscar Santuarios" description="Busca santuarios en todo Japón por prefectura, bendición, disponibilidad de goshuin o kami venerado.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Buscar Santuarios</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">Descubre santuarios por región, palabra clave o bendición.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Busca por santuario, lugar, bendición o kami"
+        class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none focus:ring-2 focus:ring-shrine-vermillion sm:max-w-xs"
+      />
+      <select
+        id="pref-select"
+        class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink focus:outline-none focus:ring-2 focus:ring-shrine-vermillion sm:w-auto"
+      >
+        <option value="">Todas las prefecturas</option>
+        {prefectures.map((pref) => (
+          <option value={pref}>{pref}</option>
+        ))}
+      </select>
+      <p id="result-count" class="text-sm text-shrine-ink-soft sm:ml-auto"></p>
+    </div>
+
+    <!-- Filter by region -->
+    <div class="mt-4 flex flex-wrap items-center gap-2">
+      <span class="mr-1 text-sm font-bold text-shrine-ink">Filtrar por región:</span>
+      {regions.map((region) => (
+        <button
+          type="button"
+          class="region-btn rounded-full border border-shrine-gold/30 px-3 py-1.5 text-xs text-shrine-ink-soft transition data-[active=true]:border-shrine-vermillion data-[active=true]:bg-shrine-vermillion-light data-[active=true]:text-shrine-vermillion-dark"
+          data-region={region.id}
+          data-active="false"
+        >
+          {region.nameEs}
+        </button>
+      ))}
+    </div>
+
+    <!-- Advanced filters -->
+    <div class="mt-4 rounded-2xl border border-shrine-gold/25 bg-white p-5">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="mr-1 text-sm font-bold text-shrine-ink">Filtrar por bendición:</span>
+        {allBenefits.map((benefit) => (
+          <label class="flex cursor-pointer items-center gap-1.5 rounded-full border border-shrine-gold/30 px-3 py-1.5 text-xs text-shrine-ink-soft transition has-[:checked]:border-shrine-vermillion has-[:checked]:bg-shrine-vermillion-light has-[:checked]:text-shrine-vermillion-dark">
+            <input type="checkbox" name="benefit" value={benefit} class="benefit-checkbox sr-only" />
+            {benefitTranslationsEs[benefit] ?? benefit}
+          </label>
+        ))}
+      </div>
+
+      <div class="mt-4 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-shrine-gold/15 pt-4">
+        <label class="flex items-center gap-2 text-sm text-shrine-ink">
+          <input id="goshuin-only" type="checkbox" class="h-4 w-4 accent-shrine-vermillion" />
+          Solo con goshuin disponible
+        </label>
+
+        <label class="flex items-center gap-2 text-sm text-shrine-ink">
+          <span>Kami:</span>
+          <select
+            id="deity-select"
+            class="rounded-full border border-shrine-gold/40 px-3 py-1.5 text-sm text-shrine-ink focus:outline-none focus:ring-2 focus:ring-shrine-vermillion"
+          >
+            <option value="">Todos</option>
+            {allDeities.map((deity) => (
+              <option value={deity}>{deity}</option>
+            ))}
+          </select>
+        </label>
+
+        <button
+          type="button"
+          id="clear-filters"
+          class="ml-auto text-xs text-shrine-vermillion underline hover:text-shrine-vermillion-dark"
+        >
+          Borrar filtros
+        </button>
+      </div>
+    </div>
+
+    <div id="shrine-grid" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {shrines.map((shrine) => (
+        <div
+          class="shrine-item"
+          data-name={`${shrine.data.name} ${shrine.data.kana}`}
+          data-prefecture={normalizePref(shrine.data.prefecture)}
+          data-region={getRegionId(shrine.data.prefecture, 'es') ?? ''}
+          data-location={`${shrine.data.prefecture} ${shrine.data.city} ${shrine.data.address}`}
+          data-benefits={(shrine.data.benefits ?? []).join('|')}
+          data-deities={(shrine.data.deities ?? []).join('|')}
+          data-goshuin={String(shrine.data.goshuin?.available ?? false)}
+        >
+          <ShrineCard shrine={shrine} />
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8 text-center">
+      <button
+        type="button"
+        id="load-more"
+        class="hidden rounded-full border border-shrine-gold/40 px-8 py-2.5 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+      >
+        Mostrar más
+      </button>
+    </div>
+
+    <p id="empty-message" class="mt-16 hidden text-center text-sm text-shrine-ink-soft">
+      Ningún santuario coincide con tu búsqueda. Intenta ajustar los filtros.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const PAGE_SIZE = 30;
+
+  const params = new URLSearchParams(window.location.search);
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const prefSelect = document.getElementById('pref-select') as HTMLSelectElement;
+  const goshuinOnly = document.getElementById('goshuin-only') as HTMLInputElement;
+  const deitySelect = document.getElementById('deity-select') as HTMLSelectElement;
+  const clearBtn = document.getElementById('clear-filters') as HTMLButtonElement;
+  const loadMoreBtn = document.getElementById('load-more') as HTMLButtonElement;
+  const benefitCheckboxes = Array.from(document.querySelectorAll<HTMLInputElement>('.benefit-checkbox'));
+  const regionButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.region-btn'));
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.shrine-item'));
+  const resultCount = document.getElementById('result-count') as HTMLElement;
+  const emptyMessage = document.getElementById('empty-message') as HTMLElement;
+
+  let selectedRegion = '';
+  let visibleLimit = PAGE_SIZE;
+
+  if (params.get('q')) searchInput.value = params.get('q') ?? '';
+  if (params.get('pref')) prefSelect.value = params.get('pref') ?? '';
+
+  function setRegion(regionId: string) {
+    selectedRegion = selectedRegion === regionId ? '' : regionId;
+    regionButtons.forEach((btn) => {
+      btn.dataset.active = String(btn.dataset.region === selectedRegion);
+    });
+    visibleLimit = PAGE_SIZE;
+    applyFilter();
+  }
+
+  function applyFilter(resetLimit = true) {
+    if (resetLimit) visibleLimit = PAGE_SIZE;
+
+    const query = searchInput.value.trim().toLowerCase();
+    const pref = prefSelect.value;
+    const selectedBenefits = benefitCheckboxes.filter((cb) => cb.checked).map((cb) => cb.value);
+    const requireGoshuin = goshuinOnly.checked;
+    const deity = deitySelect.value;
+
+    const matched: HTMLElement[] = [];
+
+    for (const item of items) {
+      const name = (item.dataset.name ?? '').toLowerCase();
+      const benefitsStr = item.dataset.benefits ?? '';
+      const deitiesStr = item.dataset.deities ?? '';
+      const location = (item.dataset.location ?? '').toLowerCase();
+      const prefecture = item.dataset.prefecture ?? '';
+      const region = item.dataset.region ?? '';
+      const hasGoshuin = item.dataset.goshuin === 'true';
+      const itemBenefits = benefitsStr ? benefitsStr.split('|') : [];
+      const itemDeities = deitiesStr ? deitiesStr.split('|') : [];
+
+      const matchesQuery =
+        !query ||
+        name.includes(query) ||
+        location.includes(query) ||
+        benefitsStr.toLowerCase().includes(query) ||
+        deitiesStr.toLowerCase().includes(query);
+      const matchesPref = !pref || prefecture === pref;
+      const matchesRegion = !selectedRegion || region === selectedRegion;
+      const matchesBenefits = selectedBenefits.length === 0 || selectedBenefits.some((b) => itemBenefits.includes(b));
+      const matchesGoshuin = !requireGoshuin || hasGoshuin;
+      const matchesDeity = !deity || itemDeities.includes(deity);
+
+      if (matchesQuery && matchesPref && matchesRegion && matchesBenefits && matchesGoshuin && matchesDeity) {
+        matched.push(item);
+      }
+    }
+
+    items.forEach((item) => {
+      item.style.display = 'none';
+    });
+    matched.slice(0, visibleLimit).forEach((item) => {
+      item.style.display = '';
+    });
+
+    const shownCount = Math.min(visibleLimit, matched.length);
+    resultCount.textContent =
+      matched.length > shownCount ? `Mostrando ${shownCount} de ${matched.length} santuarios` : `${matched.length} santuarios`;
+    emptyMessage.classList.toggle('hidden', matched.length !== 0);
+    loadMoreBtn.classList.toggle('hidden', matched.length <= visibleLimit);
+  }
+
+  searchInput.addEventListener('input', () => applyFilter());
+  prefSelect.addEventListener('change', () => applyFilter());
+  goshuinOnly.addEventListener('change', () => applyFilter());
+  deitySelect.addEventListener('change', () => applyFilter());
+  benefitCheckboxes.forEach((cb) => cb.addEventListener('change', () => applyFilter()));
+  regionButtons.forEach((btn) => {
+    btn.addEventListener('click', () => setRegion(btn.dataset.region ?? ''));
+  });
+  loadMoreBtn.addEventListener('click', () => {
+    visibleLimit += PAGE_SIZE;
+    applyFilter(false);
+  });
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    prefSelect.value = '';
+    goshuinOnly.checked = false;
+    deitySelect.value = '';
+    benefitCheckboxes.forEach((cb) => (cb.checked = false));
+    selectedRegion = '';
+    regionButtons.forEach((btn) => (btn.dataset.active = 'false'));
+    applyFilter();
+  });
+
+  applyFilter();
+</script>

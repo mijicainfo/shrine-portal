@@ -1,10 +1,15 @@
 ---
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const t = lang === 'en'
-  ? { kamidana: 'Kamidana', eyeline: 'Eye level', above: 'Above eye level', footer: 'Facing south or east is considered ideal.' }
-  : lang === 'zh'
-  ? { kamidana: '神棚', eyeline: '視線高度', above: '高於視線', footer: '一般認為朝南或朝東的位置最為理想。' }
-  : { kamidana: '神棚', eyeline: '目線', above: '目線より高く', footer: '南向き、または東向きになる場所が理想的とされています' };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const t = {
+  ja: { kamidana: '神棚', eyeline: '目線', above: '目線より高く', footer: '南向き、または東向きになる場所が理想的とされています' },
+  en: { kamidana: 'Kamidana', eyeline: 'Eye level', above: 'Above eye level', footer: 'Facing south or east is considered ideal.' },
+  zh: { kamidana: '神棚', eyeline: '視線高度', above: '高於視線', footer: '一般認為朝南或朝東的位置最為理想。' },
+  es: { kamidana: 'Kamidana', eyeline: 'Altura de los ojos', above: 'Por encima de la altura de los ojos', footer: 'Se considera ideal que esté orientado hacia el sur o el este.' },
+  fr: { kamidana: 'Kamidana', eyeline: 'Hauteur des yeux', above: 'Au-dessus de la hauteur des yeux', footer: 'Une orientation vers le sud ou l’est est considérée comme idéale.' },
+  ko: { kamidana: '가미다나', eyeline: '눈높이', above: '눈높이보다 높게', footer: '남향 또는 동향이 이상적이라고 여겨집니다.' },
+}[lang];
 ---
 
 <div class="mx-auto max-w-xs rounded-2xl border border-shrine-gold/25 bg-shrine-paper-dark p-6">

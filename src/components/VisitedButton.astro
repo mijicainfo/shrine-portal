@@ -5,12 +5,17 @@ interface Props {
 }
 
 const { shrineId, class: className = '' } = Astro.props;
-const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
-const t = lang === 'en'
-  ? { active: 'Visited', inactive: 'Mark as Visited' }
-  : lang === 'zh'
-  ? { active: '已參拜', inactive: '標記為已參拜' }
-  : { active: '参拝済み', inactive: '参拝済みにする' };
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const t = {
+  ja: { active: '参拝済み', inactive: '参拝済みにする' },
+  en: { active: 'Visited', inactive: 'Mark as Visited' },
+  zh: { active: '已參拜', inactive: '標記為已參拜' },
+  es: { active: 'Visitado', inactive: 'Marcar como Visitado' },
+  fr: { active: 'Visité', inactive: 'Marquer comme Visité' },
+  ko: { active: '참배 완료', inactive: '참배 완료로 표시' },
+}[lang];
 ---
 
 <button

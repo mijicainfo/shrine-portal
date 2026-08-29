@@ -1,0 +1,344 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ShrineCard from '../../components/ShrineCard.astro';
+import SeigaihaWave from '../../components/SeigaihaWave.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+import { benefitTranslationsFr } from '../../data/benefitTranslationsFr';
+
+const shrines = await getCollection('shrinesFr');
+const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const heroCandidateIds = [
+  'fujisan-sengen-taisha',
+  'itsukushima',
+  'ise-jingu',
+  'fushimi-inari',
+  'meiji-jingu',
+  'kirishima-jingu',
+  'izumo-taisha',
+  'nikko-toshogu',
+  'kotohiragu',
+  'tsurugaoka-hachimangu',
+];
+const heroShrines = heroCandidateIds
+  .map((id) => shrines.find((s) => s.id === id))
+  .filter((s): s is NonNullable<typeof s> => Boolean(s && s.data.image));
+const heroPhotos = await Promise.all(
+  heroShrines.map(async (s) => {
+    const optimized = await getImage({ src: s.data.image!, width: 1920, height: 1080 });
+    return {
+      src: optimized.src,
+      alt: s.data.name,
+      name: s.data.name,
+      href: `/fr/shrines/${s.id}/`,
+      credit: s.data.imageCredit ?? null,
+    };
+  })
+);
+
+const featuredPrefectures = [
+  'Hokkaido',
+  'Tokyo',
+  'Kanagawa',
+  'Ishikawa',
+  'Kyoto',
+  'Osaka',
+  'Nara',
+  'Mie',
+  'Shimane',
+  'Hiroshima',
+  'Fukuoka',
+  'Okinawa',
+];
+
+const benefitCategoriesJa = [
+  '縁結び', '商売繁盛', '学業成就', '合格祈願', '厄除け', '家内安全',
+  '開運', '安産', '子授け', '交通安全', '金運', '無病息災',
+  '必勝祈願', '夫婦円満', '五穀豊穣', '海上安全', '武運長久', '芸能上達',
+];
+const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsFr[b] ?? b);
+---
+
+<Layout title="Accueil">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-shrine-indigo-dark text-shrine-paper">
+    <img id="hero-photo" alt="" class="absolute inset-0 h-full w-full scale-105 object-cover opacity-0 transition-opacity duration-700" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/10"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 20%, #e8887a 0, transparent 45%), radial-gradient(circle at 80% 60%, #ddb877 0, transparent 40%);"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <p class="font-script text-xl text-shrine-gold">The Pantheon</p>
+      <h1 class="mt-3 font-serif-jp text-3xl font-black leading-snug sm:text-5xl">
+        Un Voyage à Travers <br class="sm:hidden" />les Sanctuaires Mystérieux et Sublimes du Japon.
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-sm text-shrine-paper/80 sm:text-base">
+        Histoire, accès et informations sur le goshuin — tout ce dont un visiteur néophyte a besoin pour se sentir à l'aise.
+      </p>
+
+      <form action="/fr/shrines/" method="get" class="mx-auto mt-10 flex max-w-lg overflow-hidden rounded-full bg-shrine-paper shadow-lg">
+        <input
+          type="text"
+          name="q"
+          placeholder="Rechercher un sanctuaire, un lieu ou une bénédiction"
+          class="w-full bg-transparent px-5 py-3 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none"
+        />
+        <button
+          type="submit"
+          class="shrink-0 bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          Rechercher
+        </button>
+      </form>
+    </div>
+    <button
+      id="hero-photo-next"
+      type="button"
+      aria-label="Photo suivante"
+      class="absolute right-4 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur transition hover:bg-white/30 sm:right-8"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <p id="hero-photo-credit" class="relative hidden px-4 pb-2 text-right text-[10px] text-shrine-paper/60 sm:px-6"></p>
+    <SeigaihaWave color="#fdf8f1" class="relative h-6" />
+
+    <script type="application/json" id="hero-photo-data" set:html={JSON.stringify(heroPhotos)} />
+    <script>
+      const data = document.getElementById('hero-photo-data');
+      const photos = data ? JSON.parse(data.textContent || '[]') : [];
+      const img = document.getElementById('hero-photo') as HTMLImageElement | null;
+      const credit = document.getElementById('hero-photo-credit');
+      const nextBtn = document.getElementById('hero-photo-next');
+
+      if (photos.length > 0 && img) {
+        let index = Math.floor(Math.random() * photos.length);
+        let timer: ReturnType<typeof setInterval>;
+
+        img.addEventListener('load', () => img.classList.remove('opacity-0'));
+
+        function applyPhoto(photo: (typeof photos)[number]) {
+          img!.src = photo.src;
+          img!.alt = photo.name;
+          if (credit && photo.credit) {
+            credit.textContent = `Photo : ${photo.name} / ${photo.credit.author} (${photo.credit.license})`;
+            credit.classList.remove('hidden');
+          }
+        }
+
+        function goTo(i: number, fade = true) {
+          index = ((i % photos.length) + photos.length) % photos.length;
+          const photo = photos[index];
+          if (fade) {
+            img!.classList.add('opacity-0');
+            window.setTimeout(() => applyPhoto(photo), 300);
+          } else {
+            applyPhoto(photo);
+          }
+        }
+
+        function startAutoplay() {
+          clearInterval(timer);
+          timer = setInterval(() => goTo(index + 1), 5000);
+        }
+
+        goTo(index, false);
+        startAutoplay();
+
+        nextBtn?.addEventListener('click', () => {
+          goTo(index + 1);
+          startAutoplay();
+        });
+      }
+    </script>
+  </section>
+
+  <!-- Language selector -->
+  <div class="border-b border-shrine-gold/20 bg-shrine-paper-dark py-2.5 text-center text-xs text-shrine-ink-soft">
+    Lire en :
+    <a href="/" class="ml-1.5 font-medium text-shrine-vermillion hover:underline">日本語</a>
+    <span class="mx-1">/</span>
+    <a href="/en/" class="font-medium text-shrine-vermillion hover:underline">English</a>
+    <span class="mx-1">/</span>
+    <a href="/zh/" class="font-medium text-shrine-vermillion hover:underline">繁體中文</a>
+    <span class="mx-1">/</span>
+    <a href="/es/" class="font-medium text-shrine-vermillion hover:underline">Español</a>
+    <span class="mx-1">/</span>
+    <a href="/ko/" class="font-medium text-shrine-vermillion hover:underline">한국어</a>
+  </div>
+
+  <!-- About Shrines & Kami -->
+  <section id="shinto" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="text-center">
+        <p class="font-script text-xl text-shrine-vermillion">Shintoïsme &amp; Kami</p>
+        <h2 class="mt-2 font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">À Propos des Sanctuaires et des Kami</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-shrine-ink-soft">
+          « Qu'est-ce qu'un sanctuaire, au juste ? » « Que sont les kami ? » — une introduction en douceur aux bases des sanctuaires et des divinités du Japon, pour ceux qui les découvrent pour la première fois.
+        </p>
+        <a href="/fr/deities/" class="mt-3 inline-block text-sm text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+          Découvrir les kami vénérés dans chaque sanctuaire répertorié →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">⛩</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">Qu'est-ce qu'un Sanctuaire ?</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            Un sanctuaire (jinja) est un lieu où résident les kami, ancré dans le shintoïsme, la religion indigène du Japon. L'allée menant du torii au bâtiment principal est considérée comme un chemin qui mène du monde ordinaire vers l'espace sacré des kami. Des éléments naturels tels que montagnes, forêts, cascades et rochers sont souvent eux-mêmes traités comme un sol sacré, et le Japon compte des dizaines de milliers de sanctuaires à travers tout le pays.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🌿</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">Yaoyorozu no Kami — Les Myriades de Dieux</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            Le shintoïsme ne s'organise pas autour d'une divinité unique. Des forces de la nature comme le soleil, les montagnes, la mer et le vent, aux dieux protecteurs de la riziculture, du commerce et des études, en passant par des figures historiques déifiées — d'innombrables kami (yaoyorozu no kami, « les huit millions de dieux ») ont été vénérés tout au long de l'histoire japonaise. C'est pourquoi les divinités et les bénédictions associées à chaque sanctuaire diffèrent.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-shrine-gold/20 p-6">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-shrine-vermillion-light text-2xl">🏯</div>
+          <h3 class="mt-4 font-serif-jp text-lg font-bold text-shrine-ink">Sanctuaires et Temples</h3>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
+            Les sanctuaires abritent des kami shinto, tandis que les temples abritent des figures bouddhiques. Leurs portails d'entrée diffèrent également — un torii pour les sanctuaires, un sanmon pour les temples — tout comme l'étiquette de visite : dans un sanctuaire, on frappe dans ses mains après s'être incliné, tandis que dans un temple, on joint les paumes en silence, sans applaudir.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Prefecture -->
+  <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Parcourir par Préfecture</h2>
+    <p class="mt-1 text-sm text-shrine-ink-soft">Trouvez des sanctuaires dans une région qui vous intéresse.</p>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {featuredPrefectures.map((pref) => (
+        <a
+          href={`/fr/shrines/?pref=${encodeURIComponent(pref)}`}
+          class="rounded-full border border-shrine-gold/40 bg-white px-4 py-2 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          {pref}
+        </a>
+      ))}
+      <a
+        href="/fr/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        Voir toutes les préfectures →
+      </a>
+    </div>
+  </section>
+
+  <!-- Shrines of Japan -->
+  <section class="bg-shrine-paper-dark py-16">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Les Sanctuaires du Japon</h2>
+          <p class="mt-1 text-sm text-shrine-ink-soft">Là où mille ans de prières rencontrent la quiétude des saisons.</p>
+        </div>
+        <a href="/fr/shrines/" class="hidden text-sm text-shrine-vermillion hover:underline sm:block">Tout voir →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {newest.map((shrine) => (
+          <ShrineCard shrine={shrine} />
+        ))}
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/fr/shrines/" class="text-sm text-shrine-vermillion hover:underline">Tout voir →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search by Blessing -->
+  <section id="benefits" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">Rechercher par Bénédiction</h2>
+    <div class="mt-6 flex flex-wrap gap-2.5">
+      {benefitCategories.map((benefit) => (
+        <a
+          href={`/fr/shrines/?q=${encodeURIComponent(benefit)}`}
+          class="rounded-full bg-shrine-vermillion-light px-4 py-2 text-sm text-shrine-vermillion-dark transition hover:bg-shrine-vermillion hover:text-white"
+        >
+          {benefit}
+        </a>
+      ))}
+      <a
+        href="/fr/shrines/"
+        class="rounded-full bg-shrine-ink px-4 py-2 text-sm text-white transition hover:bg-shrine-ink/80"
+      >
+        Voir toutes les bénédictions →
+      </a>
+    </div>
+  </section>
+
+  <!-- Beginner's Visiting Guide -->
+  <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">Guide de Visite pour Débutants</h2>
+      <p class="mt-1 text-sm text-shrine-paper/70">
+        L'étiquette peut varier légèrement selon la région et le sanctuaire, mais connaître ce déroulement de base vous mettra à l'aise. Ne vous inquiétez pas trop des détails — l'important est le sentiment de gratitude envers les kami.
+      </p>
+
+      <div class="mt-8 overflow-hidden rounded-2xl bg-black/20 shadow-lg">
+        <div class="aspect-video w-full">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/RKWpIV8rUT8"
+            title="Comment prier dans un sanctuaire : l'esprit et la forme du culte"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="bg-black/20 px-4 py-2 text-xs text-shrine-paper/70">
+          Vidéo de la <a href="https://www.youtube.com/@jinjahoncho6712" target="_blank" rel="noopener noreferrer" class="underline hover:text-shrine-paper">chaîne officielle du Jinja Honcho (Association des sanctuaires shinto)</a> — « L'esprit et la forme du culte » (en japonais).
+        </p>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">01</p>
+          <h3 class="mt-2 font-bold">Inclinez-vous devant le torii</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Le torii marque la frontière entre le sacré et le monde ordinaire — voyez-le comme la porte d'entrée de la demeure des kami. Inclinez-vous légèrement avant de le franchir. Le centre de l'allée est considéré comme le passage réservé aux kami eux-mêmes, il est donc plus poli de marcher légèrement sur le côté.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">02</p>
+          <h3 class="mt-2 font-bold">Purifiez-vous au temizuya</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Puisez de l'eau avec la louche, rincez votre main gauche, puis votre main droite. Versez de l'eau dans votre main gauche et rincez-vous la bouche. Enfin, inclinez la louche à la verticale pour que le reste de l'eau rince le manche — une petite marque de courtoisie envers le visiteur suivant.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">03</p>
+          <h3 class="mt-2 font-bold">Déposez une pièce et faites sonner la cloche</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Déposez discrètement une pièce dans le tronc des offrandes et faites sonner la cloche s'il y en a une. Le son est censé à la fois annoncer votre visite aux kami et repousser les influences négatives.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">04</p>
+          <h3 class="mt-2 font-bold">Deux révérences, deux battements de mains, une révérence</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Inclinez-vous profondément deux fois, frappez deux fois dans vos mains à hauteur de poitrine, puis inclinez-vous profondément une dernière fois. Après avoir applaudi, exprimez silencieusement votre gratitude et vos vœux (certains sanctuaires, comme Izumo Taisha, suivent une forme différente).
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">05</p>
+          <h3 class="mt-2 font-bold">Recevez un goshuin au bureau du sanctuaire</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            Après avoir présenté vos respects, vous pouvez recevoir un goshuin (tampon calligraphié) ou un omamori (amulette) au bureau du sanctuaire. Chaque goshuin comporte un tampon unique et une calligraphie tracée à la main, ce qui en fait un merveilleux souvenir — apportez un goshuincho (carnet de tampons) si vous souhaitez les collectionner.
+          </p>
+        </div>
+        <div class="rounded-2xl bg-white/5 p-6">
+          <p class="font-serif-jp text-3xl font-bold text-shrine-gold">06</p>
+          <h3 class="mt-2 font-bold">Retournez-vous et inclinez-vous à nouveau en partant</h3>
+          <p class="mt-2 text-sm text-shrine-paper/80">
+            En franchissant le torii pour sortir, il est de coutume de se retourner vers le bâtiment principal et d'offrir une dernière révérence — un ultime geste de gratitude pour votre visite.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

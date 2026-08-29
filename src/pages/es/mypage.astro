@@ -1,0 +1,97 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getImage } from 'astro:assets';
+
+const shrines = await getCollection('shrinesEs');
+const shrineData = await Promise.all(
+  shrines.map(async (s) => {
+    let imageSrc: string | null = null;
+    if (s.data.image) {
+      const optimized = await getImage({ src: s.data.image, width: 480, height: 320, format: 'webp' });
+      imageSrc = optimized.src;
+    }
+    return {
+      id: s.id,
+      name: s.data.name,
+      kana: s.data.kana,
+      prefecture: s.data.prefecture,
+      city: s.data.city,
+      image: imageSrc,
+    };
+  }),
+);
+---
+
+<Layout title="Mi Página" description="Consulta tus santuarios favoritos y tu historial de visitas.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Mi Página</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">Consulta tus santuarios favoritos y tu historial de visitas en un solo lugar.</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">Santuarios Favoritos</h2>
+    <div id="favorites-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="favorites-empty" class="mt-4 hidden rounded-2xl border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+      Todavía no has añadido ningún favorito. <a href="/es/shrines/" class="text-shrine-vermillion underline">Explora santuarios</a> y toca el icono ♡ para guardar uno.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">Historial de Visitas</h2>
+    <div id="visited-grid" class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="visited-empty" class="mt-4 hidden rounded-2xl border border-dashed border-shrine-gold/40 bg-shrine-paper-dark p-8 text-center text-sm text-shrine-ink-soft">
+      Aún no hay visitas registradas. Toca "Marcar como Visitado" en la página de un santuario para registrarla aquí.
+    </p>
+  </section>
+</Layout>
+
+<script define:vars={{ shrineData }}>
+  const FAVORITES_KEY = 'shrine-portal:favorites';
+  const VISITED_KEY = 'shrine-portal:visited';
+
+  function getList(key) {
+    try {
+      const raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function cardHtml(shrine) {
+    const img = shrine.image
+      ? `<img src="${shrine.image}" alt="${shrine.name}" class="h-40 w-full object-cover" />`
+      : `<div class="flex h-40 items-center justify-center bg-shrine-indigo text-4xl text-shrine-paper">⛩</div>`;
+    return `
+      <a href="/es/shrines/${shrine.id}/" class="block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        ${img}
+        <div class="p-5">
+          <p class="text-xs font-medium tracking-wide text-shrine-vermillion">${shrine.prefecture}, ${shrine.city}</p>
+          <h3 class="mt-1 font-serif-jp text-lg font-bold text-shrine-ink">${shrine.name}</h3>
+          <p class="mt-1 text-xs text-shrine-ink-soft">${shrine.kana}</p>
+        </div>
+      </a>
+    `;
+  }
+
+  function renderSection(key, gridId, emptyId) {
+    const ids = getList(key);
+    const grid = document.getElementById(gridId);
+    const empty = document.getElementById(emptyId);
+    const items = shrineData.filter((s) => ids.includes(s.id));
+
+    if (items.length === 0) {
+      grid.innerHTML = '';
+      empty.classList.remove('hidden');
+      return;
+    }
+    empty.classList.add('hidden');
+    grid.innerHTML = items.map(cardHtml).join('');
+  }
+
+  renderSection(FAVORITES_KEY, 'favorites-grid', 'favorites-empty');
+  renderSection(VISITED_KEY, 'visited-grid', 'visited-empty');
+</script>

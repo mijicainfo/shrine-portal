@@ -1,0 +1,42 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { contactFormUrl } from '../../../data/contact';
+---
+
+<Layout title="Contacto" description="Informa sobre un error o información desactualizada, o envíanos tus comentarios y solicitudes.">
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">Contacto</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        Cuéntanos si encuentras algún error, o comparte tus comentarios y opiniones.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-2xl px-4 py-14 sm:px-6">
+    <div class="rounded-2xl border border-shrine-gold/25 bg-white p-8">
+      <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">¿Detectaste algo que hay que corregir?</h2>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        La historia de los santuarios, la información de acceso y los horarios de visita pueden cambiar con el tiempo. Si notas un error, información desactualizada o algo que deba corregirse, avísanos a continuación.
+      </p>
+      <p class="mt-3 text-sm leading-relaxed text-shrine-ink-soft">
+        Es útil que indiques a qué página y sección te refieres. También son bienvenidas las solicitudes de santuarios que te gustaría ver añadidos, y los comentarios generales sobre el sitio.
+      </p>
+
+      {contactFormUrl ? (
+        <a
+          href={contactFormUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-6 flex items-center justify-center gap-2 rounded-full bg-shrine-vermillion px-6 py-3 text-sm font-bold text-white transition hover:bg-shrine-vermillion-dark"
+        >
+          Abrir Formulario de Contacto ↗
+        </a>
+      ) : (
+        <p class="mt-6 rounded-2xl bg-shrine-paper-dark px-6 py-4 text-center text-sm text-shrine-ink-soft">
+          El formulario de contacto está en preparación. Vuelve a comprobarlo pronto.
+        </p>
+      )}
+    </div>
+  </section>
+</Layout>
