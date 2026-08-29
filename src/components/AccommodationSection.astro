@@ -6,9 +6,10 @@ interface Props {
   city: string;
   prefecture: string;
   bookingCity?: string;
+  bookingPrefecture?: string;
 }
 
-const { shrineName, city, prefecture, bookingCity } = Astro.props;
+const { shrineName, city, prefecture, bookingCity, bookingPrefecture } = Astro.props;
 const lang = Astro.currentLocale === 'en' ? 'en' : Astro.currentLocale === 'zh' ? 'zh' : 'ja';
 // Booking.comの検索は括弧つきの補足地名（例:「廿日市市（宮島）」）が入ると
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
@@ -22,9 +23,12 @@ const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
 // クエリ、のいずれも正しく解釈できず、無関係な場所へリダイレクトされることを実機で確認
 // 済み（例:「元乃隅神社 山口県長門市」→スペイン・マラガ県のホテル一覧に誤誘導）。
 // そのため神社名は含めず、都道府県と市区町村をスペースで区切った形のみを使う。
-const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
+// zh's `prefecture` prop is kept in Japanese kanji for display, so it can't be used
+// directly in a romanized Booking.com query the way en's already-romanized prefecture can;
+// bookingPrefecture supplies the romanized override in that case.
+const resolvedBookingPrefecture = (bookingPrefecture ?? prefecture).replace(/\s*Prefecture$/i, '');
 const bookingQuery = lang === 'en' || lang === 'zh'
-  ? (cleanCity ? `${cleanCity}, ${bookingPrefecture}, Japan` : `${bookingPrefecture}, Japan`)
+  ? (cleanCity ? `${cleanCity}, ${resolvedBookingPrefecture}, Japan` : `${resolvedBookingPrefecture}, Japan`)
   : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
 const bookingUrl = buildBookingSearchUrl(bookingQuery);
 // 楽天トラベルのキーワード検索は日本語専用で、英語や中国語のクエリでは

@@ -3,6 +3,7 @@ name: "Hokkaido Jingu"
 kana: "Hokkaidō-jingū"
 prefecture: "Hokkaido"
 city: "Chuo-ku, Sapporo"
+bookingCity: "Sapporo"
 address: "474 Miyagaoka, Chuo-ku, Sapporo, Hokkaido, Japan"
 deities:
   - "Okunitama no Kami"

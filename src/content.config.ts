@@ -10,6 +10,10 @@ const shrineSchema = ({ image }: { image: () => z.ZodType<any> }) => z.object({
   // Set to "" to fall back to a prefecture-only search when Booking.com's destination
   // matcher doesn't reliably resolve a small/rural municipality name.
   bookingCity: z.string().optional(),
+  // Romanized prefecture name (no "Prefecture" suffix, e.g. "Shimane") for the zh locale's
+  // Booking.com query: zh's `prefecture` field is kept in Japanese kanji for display, but
+  // Booking.com's destination matcher cannot resolve a romanized city + kanji prefecture query.
+  bookingPrefecture: z.string().optional(),
   address: z.string(),
   deities: z.array(z.string()),
   benefits: z.array(z.string()).default([]),

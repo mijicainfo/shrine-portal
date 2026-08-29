@@ -3,6 +3,7 @@ name: "金刀比羅宮"
 kana: "ことひらぐう"
 prefecture: "香川県"
 city: "仲多度郡琴平町"
+bookingCity: "琴平町"
 address: "香川県仲多度郡琴平町892-1"
 deities:
   - "大物主神（おおものぬしのかみ）"

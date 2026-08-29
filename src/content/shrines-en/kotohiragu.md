@@ -3,6 +3,7 @@ name: "Kotohiragu"
 kana: "Kotohira-gū"
 prefecture: "Kagawa Prefecture"
 city: "Kotohira, Nakatado District"
+bookingCity: "Kotohira"
 address: "892-1 Kotohira-cho, Nakatado-gun, Kagawa, Japan"
 deities:
   - "Omononushi no Kami (god of the sea)"
