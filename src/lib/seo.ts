@@ -1,3 +1,6 @@
+import { benefitTranslations } from '../data/benefitTranslations';
+import { benefitTranslationsZh } from '../data/benefitTranslationsZh';
+
 /** Strips a trailing full-width-paren reading/gloss, e.g. "天照大御神（あまてらすおおみかみ）" -> "天照大御神" */
 function stripReading(text: string): string {
   return text.replace(/（[^）]*）/g, '').trim();
@@ -28,10 +31,11 @@ function truncate(text: string, maxLength: number): string {
 export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' | 'en' | 'zh'): string {
   const rawDeity = data.deities[0] ? stripReading(data.deities[0]) : '';
   const deity = truncate(rawDeity, MAX_DEITY_LENGTH[lang]);
-  const benefits = (data.benefits ?? []).slice(0, 2);
+  const rawBenefits = (data.benefits ?? []).slice(0, 2);
   const maxLength = MAX_DESCRIPTION_LENGTH[lang];
 
   if (lang === 'en') {
+    const benefits = rawBenefits.map((b) => benefitTranslations[b] ?? b);
     const parts = [`${data.name} is a Shinto shrine in ${data.prefecture}${deity ? ` dedicated to ${deity}` : ''}.`];
     if (benefits.length > 0) parts.push(`Known for ${benefits.join(' and ')} blessings.`);
     parts.push('Explore its history, access, and goshuin info.');
@@ -44,6 +48,7 @@ export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' |
   }
 
   if (lang === 'zh') {
+    const benefits = rawBenefits.map((b) => benefitTranslationsZh[b] ?? b);
     const parts = [`${data.name}（${data.prefecture}${data.city}）是${deity ? `供奉${deity}的` : ''}神社。`];
     if (benefits.length > 0) parts.push(`以${benefits.join('、')}等庇佑聞名。`);
     parts.push('為您介紹由緒、交通方式與御朱印資訊。');
@@ -56,7 +61,7 @@ export function buildShrineDescription(data: ShrineDescriptionData, lang: 'ja' |
   }
 
   const parts = [`${data.name}（${data.prefecture}${data.city}）は${deity ? `${deity}をお祀りする` : ''}神社です。`];
-  if (benefits.length > 0) parts.push(`${benefits.join('・')}のご利益で知られます。`);
+  if (rawBenefits.length > 0) parts.push(`${rawBenefits.join('・')}のご利益で知られます。`);
   parts.push('由緒・アクセス・御朱印情報をご紹介します。');
   const base = parts.join('');
   if (data.founded) {

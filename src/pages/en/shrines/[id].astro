@@ -11,6 +11,7 @@ import VisitedButton from '../../../components/VisitedButton.astro';
 import { Image, getImage } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 import { buildShrineDescription, buildShrineStructuredData, buildFaqStructuredData } from '../../../lib/seo';
+import { benefitTranslations } from '../../../data/benefitTranslations';
 
 export async function getStaticPaths() {
   const shrines = await getCollection('shrinesEn');
@@ -130,7 +131,7 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
               <dt class="font-bold text-shrine-vermillion-dark">Blessings</dt>
               <dd class="mt-1 flex flex-wrap gap-1.5">
                 {data.benefits.map((b) => (
-                  <span class="rounded-full bg-shrine-vermillion-light px-2.5 py-0.5 text-xs text-shrine-vermillion-dark">{b}</span>
+                  <span class="rounded-full bg-shrine-vermillion-light px-2.5 py-0.5 text-xs text-shrine-vermillion-dark">{benefitTranslations[b] ?? b}</span>
                 ))}
               </dd>
             </div>

@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import ShrineCard from '../../../components/ShrineCard.astro';
 import { getCollection } from 'astro:content';
 import { regions, getRegionId } from '../../../data/regions';
+import { benefitTranslationsZh } from '../../../data/benefitTranslationsZh';
 
 const shrines = (await getCollection('shrinesZh')).sort((a, b) => a.data.order - b.data.order);
 // Some shrine entries use "X県" etc, others just the base name — normalize so both
@@ -63,7 +64,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
         {allBenefits.map((benefit) => (
           <label class="flex cursor-pointer items-center gap-1.5 rounded-full border border-shrine-gold/30 px-3 py-1.5 text-xs text-shrine-ink-soft transition has-[:checked]:border-shrine-vermillion has-[:checked]:bg-shrine-vermillion-light has-[:checked]:text-shrine-vermillion-dark">
             <input type="checkbox" name="benefit" value={benefit} class="benefit-checkbox sr-only" />
-            {benefit}
+            {benefitTranslationsZh[benefit] ?? benefit}
           </label>
         ))}
       </div>
