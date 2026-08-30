@@ -54,8 +54,11 @@ export function buildRakutenSearchUrl(query: string): string {
  * klookAffiliateIdが設定されている場合は、アフィリエイトのリダイレクト経由になります。
  */
 export function buildKlookSearchUrl(query: string, lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko'): string {
+  // Verified live: Klook only has a locale path for some of these with a region suffix
+  // (en-US, zh-TW both resolve correctly) — es-ES/fr-FR/ko-KR 404 to a "page not found"
+  // redirect, but the bare es/fr/ko codes work correctly.
   const klookLocaleMap: Record<'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko', string> = {
-    ja: 'ja', en: 'en-US', zh: 'zh-TW', es: 'es-ES', fr: 'fr-FR', ko: 'ko-KR',
+    ja: 'ja', en: 'en-US', zh: 'zh-TW', es: 'es', fr: 'fr', ko: 'ko',
   };
   const klookLocale = klookLocaleMap[lang];
   const targetUrl = `https://www.klook.com/${klookLocale}/search/result/?query=${encodeURIComponent(query)}`;
