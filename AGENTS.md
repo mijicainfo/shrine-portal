@@ -25,6 +25,10 @@ For the pre-existing backlog of older shrines that predate this process, work th
 7. **Commit in meaningful units** (e.g. "SEO structured data + meta descriptions" separate from "shrine FAQs") rather than one big mixed commit.
 8. **After deploying, request re-indexing** for changed URLs via Search Console's URL Inspection tool ("インデックス登録をリクエスト") to speed up Google picking up the change. Note Search Console enforces a daily quota on these requests (roughly ~10-12/day) — expect to spread a large batch across multiple days.
 
+## Related-shrines links (engagement/exit-rate feature)
+
+Every shrine page automatically shows a "関連する神社" (Related Shrines) block linking to a few other shrines that share the same `prefecture` and/or `benefits` tags — see [src/lib/related.ts](src/lib/related.ts) and [src/components/RelatedShrines.astro](src/components/RelatedShrines.astro), wired into all six `src/pages/{,en/,zh/,es/,fr/,ko/}shrines/[id].astro` templates. This is fully automatic: it only reads `prefecture` and `benefits`, which every shrine already has, so newly added shrines (including ones authored outside this repo/session) get related links with zero extra work — never add manual "related shrine IDs" to frontmatter for this.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
