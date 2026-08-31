@@ -56,3 +56,35 @@ function initButtons(selector: string, key: string) {
 
 initButtons('[data-favorite-btn]', FAVORITES_KEY);
 initButtons('[data-visited-btn]', VISITED_KEY);
+
+type AffiliatePartner = 'booking' | 'rakuten' | 'klook';
+
+function detectAffiliatePartner(href: string): AffiliatePartner | null {
+  let hostname: string;
+  try {
+    hostname = new URL(href, window.location.href).hostname;
+  } catch {
+    return null;
+  }
+  if (hostname.includes('booking.com')) return 'booking';
+  if (hostname.includes('rakuten.co.jp')) return 'rakuten';
+  if (hostname.includes('klook.com')) return 'klook';
+  return null;
+}
+
+function initAffiliateClickTracking() {
+  document.addEventListener('click', (event) => {
+    const link = (event.target as HTMLElement).closest?.('a[href]') as HTMLAnchorElement | null;
+    if (!link) return;
+    const partner = detectAffiliatePartner(link.href);
+    if (!partner) return;
+    const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
+    gtag?.('event', 'affiliate_click', {
+      affiliate_partner: partner,
+      link_url: link.href,
+      page_path: window.location.pathname,
+    });
+  });
+}
+
+initAffiliateClickTracking();
