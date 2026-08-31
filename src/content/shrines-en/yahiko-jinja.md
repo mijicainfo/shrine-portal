@@ -3,6 +3,7 @@ name: "Yahiko Jinja"
 kana: "Yahiko-jinja"
 prefecture: "Niigata Prefecture"
 city: "Yahiko, Nishikanbara District"
+bookingCity: "Yahiko"
 address: "2887-2 Yahiko, Yahiko, Nishikanbara District, Niigata, Japan"
 deities:
   - "Amenokaguyama-no-mikoto (great-grandson of Amaterasu Omikami)"
