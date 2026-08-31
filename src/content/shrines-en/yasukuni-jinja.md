@@ -3,6 +3,7 @@ name: "Yasukuni Jinja"
 kana: "Yasukuni-jinja"
 prefecture: "Tokyo"
 city: "Chiyoda Ward"
+bookingCity: "Chiyoda"
 address: "3-1-1 Kudankita, Chiyoda Ward, Tokyo, Japan"
 deities:
   - "The spirits of those who died in service to the nation (approximately 2,466,000 enshrined)"
