@@ -1,0 +1,20 @@
+---
+import ShrineCard from './ShrineCard.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  shrines: CollectionEntry<'shrines' | 'shrinesEn' | 'shrinesZh' | 'shrinesEs' | 'shrinesFr' | 'shrinesKo'>[];
+  heading: string;
+}
+
+const { shrines, heading } = Astro.props;
+---
+
+{shrines.length > 0 && (
+  <section class="mt-10">
+    <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">{heading}</h2>
+    <div class="mt-4 grid gap-4 sm:grid-cols-3">
+      {shrines.map((shrine) => <ShrineCard shrine={shrine} />)}
+    </div>
+  </section>
+)}

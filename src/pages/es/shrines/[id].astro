@@ -8,22 +8,25 @@ import ActivitiesSection from '../../../components/ActivitiesSection.astro';
 import TwitterTimeline from '../../../components/TwitterTimeline.astro';
 import FavoriteButton from '../../../components/FavoriteButton.astro';
 import VisitedButton from '../../../components/VisitedButton.astro';
+import RelatedShrines from '../../../components/RelatedShrines.astro';
 import { Image, getImage } from 'astro:assets';
 import { getCollection, render } from 'astro:content';
 import { buildShrineDescription, buildShrineStructuredData, buildFaqStructuredData } from '../../../lib/seo';
 import { benefitTranslationsEs } from '../../../data/benefitTranslationsEs';
+import { findRelatedShrines } from '../../../lib/related';
 
 export async function getStaticPaths() {
   const shrines = await getCollection('shrinesEs');
   return shrines.map((shrine) => ({
     params: { id: shrine.id },
-    props: { shrine },
+    props: { shrine, allShrines: shrines },
   }));
 }
 
-const { shrine } = Astro.props;
+const { shrine, allShrines } = Astro.props;
 const { data } = shrine;
 const { Content } = await render(shrine);
+const relatedShrines = findRelatedShrines(shrine, allShrines);
 
 const photos = [
   ...(data.image ? [{ image: data.image, alt: data.name, credit: data.imageCredit }] : []),
@@ -105,6 +108,8 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
           </dl>
         </section>
       )}
+
+      <RelatedShrines shrines={relatedShrines} heading="Santuarios Relacionados" />
     </article>
 
     <!-- Sidebar: basic info -->
