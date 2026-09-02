@@ -36,4 +36,5 @@ export const benefitTranslations: Record<string, string> = {
   国土安泰: 'Peace of the Nation',
   交通安全: 'Traffic Safety',
   出世: 'Career Success',
+  八方除け: 'Protection from All Directions',
 };
