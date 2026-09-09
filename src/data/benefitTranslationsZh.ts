@@ -37,4 +37,5 @@ export const benefitTranslationsZh: Record<string, string> = {
   交通安全: '交通平安',
   出世: '事業高升',
   八方除け: '化解八方煞氣',
+  足腰健康: '腳腰健康',
 };

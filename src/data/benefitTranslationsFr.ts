@@ -37,4 +37,5 @@ export const benefitTranslationsFr: Record<string, string> = {
   交通安全: 'Sécurité Routière',
   出世: 'Réussite Professionnelle',
   八方除け: 'Protection depuis Toutes les Directions',
+  足腰健康: 'Santé des Jambes et des Hanches',
 };

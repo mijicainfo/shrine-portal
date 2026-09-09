@@ -37,4 +37,5 @@ export const benefitTranslationsKo: Record<string, string> = {
   交通安全: '교통 안전',
   出世: '출세',
   八方除け: '팔방 액막이',
+  足腰健康: '다리와 허리 건강',
 };
