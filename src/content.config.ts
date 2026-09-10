@@ -94,4 +94,24 @@ const shrinesKo = defineCollection({
   schema: shrineSchema,
 });
 
-export const collections = { shrines, shrinesEn, shrinesZh, shrinesEs, shrinesFr, shrinesKo };
+// Editorial "top N" ranking articles (e.g. "10 famous shrines for enmusubi"), linking out to
+// entries in the `shrines` collection. JA-only pilot for now — see how it performs before
+// deciding whether to translate into the other 5 locales.
+const guideSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  publishDate: z.coerce.date(),
+  entries: z.array(
+    z.object({
+      shrineId: z.string(),
+      note: z.string(),
+    }),
+  ),
+});
+
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  schema: guideSchema,
+});
+
+export const collections = { shrines, shrinesEn, shrinesZh, shrinesEs, shrinesFr, shrinesKo, guides };

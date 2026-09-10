@@ -82,6 +82,8 @@ const navLinks = [
   { href: `${base}/#guide`, label: t.guide },
   { href: `${base}/items/`, label: t.items },
   { href: `${base}/glossary/`, label: t.glossary },
+  // JA-only pilot for now — see src/content/guides.
+  ...(lang === 'ja' ? [{ href: '/guides/', label: '特集記事' }] : []),
   { href: `${base}/mypage/`, label: t.mypage },
 ];
 ---

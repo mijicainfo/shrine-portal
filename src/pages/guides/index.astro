@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const guides = (await getCollection('guides')).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+---
+
+<Layout
+  title="特集記事"
+  description="縁結び・金運など、テーマ別におすすめの神社をご紹介する特集記事の一覧です。"
+>
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">特集記事</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">
+        テーマ別に、おすすめの神社をまとめてご紹介します。
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+    <div class="grid gap-5 sm:grid-cols-2">
+      {guides.map((guide) => (
+        <a
+          href={`/guides/${guide.id}/`}
+          class="group block rounded-2xl border border-shrine-gold/25 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h2 class="font-serif-jp text-lg font-bold text-shrine-ink group-hover:text-shrine-vermillion-dark">
+            {guide.data.title}
+          </h2>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">{guide.data.description}</p>
+          <p class="mt-3 text-xs text-shrine-vermillion">神社{guide.data.entries.length}社を紹介 →</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

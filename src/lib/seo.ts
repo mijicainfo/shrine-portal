@@ -145,6 +145,25 @@ export function buildFaqStructuredData(faq: FaqItem[]) {
   };
 }
 
+interface ItemListEntry {
+  name: string;
+  url: string;
+}
+
+export function buildItemListStructuredData(name: string, items: ItemListEntry[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
+
 export function buildShrineStructuredData(data: ShrineStructuredDataInput) {
   return {
     '@context': 'https://schema.org',
