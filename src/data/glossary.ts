@@ -257,7 +257,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '摂社・末社',
-    icon: '🏠',
+    icon: '⛩️',
     reading: 'せっしゃ・まっしゃ',
     category: '神様・信仰',
     description:

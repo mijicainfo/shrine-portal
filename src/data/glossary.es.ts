@@ -257,7 +257,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Sessha / Massha',
-    icon: '🏠',
+    icon: '⛩️',
     reading: '摂社・末社 / sessha, massha',
     category: 'Deidades y Fe',
     description:

@@ -257,7 +257,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '攝社與末社',
-    icon: '🏠',
+    icon: '⛩️',
     reading: '摂社・末社 / sessha, massha',
     category: '神明與信仰',
     description:

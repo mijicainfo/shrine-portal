@@ -257,7 +257,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '셋샤・맛샤(摂社・末社)',
-    icon: '🏠',
+    icon: '⛩️',
     reading: 'せっしゃ / sessha, まっしゃ / massha',
     category: '신과 신앙',
     description:
