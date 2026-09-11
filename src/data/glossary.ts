@@ -73,7 +73,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '二礼二拍手一礼',
-    icon: '🎭',
+    icon: '🙇',
     reading: 'にれいにはくしゅいちれい',
     category: '参拝作法',
     description:
@@ -81,7 +81,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '初穂料',
-    icon: '🏚️',
+    icon: '💴',
     reading: 'はつほりょう',
     category: '参拝作法',
     description:
@@ -89,7 +89,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '御朱印',
-    icon: '🚧',
+    icon: '🖋️',
     reading: 'ごしゅいん',
     category: '参拝作法',
     description:
@@ -97,7 +97,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '御神体',
-    icon: '🏢',
+    icon: '✨',
     reading: 'ごしんたい',
     category: '参拝作法',
     description:
@@ -105,7 +105,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '八百万の神',
-    icon: '🌳',
+    icon: '🌌',
     reading: 'やおよろずのかみ',
     category: '神様・信仰',
     description:
@@ -113,7 +113,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '氏神',
-    icon: '🙇',
+    icon: '🏘️',
     reading: 'うじがみ',
     category: '神様・信仰',
     description:
@@ -121,7 +121,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '産土神',
-    icon: '💴',
+    icon: '👶',
     reading: 'うぶすながみ',
     category: '神様・信仰',
     description:
@@ -129,7 +129,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '宮司',
-    icon: '🖋️',
+    icon: '👘',
     reading: 'ぐうじ',
     category: '神様・信仰',
     description:
@@ -137,7 +137,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '式年遷宮',
-    icon: '✨',
+    icon: '🏗️',
     reading: 'しきねんせんぐう',
     category: '行事・その他',
     description:
@@ -145,7 +145,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神在月・神無月',
-    icon: '🪙',
+    icon: '🗓️',
     reading: 'かみありづき・かんなづき',
     category: '行事・その他',
     description:
@@ -153,7 +153,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '例大祭',
-    icon: '🎯',
+    icon: '🎊',
     reading: 'れいたいさい',
     category: '行事・その他',
     description:
@@ -161,7 +161,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神楽殿',
-    icon: '🌿',
+    icon: '🎭',
     reading: 'かぐらでん',
     category: '建築・境内',
     description:
@@ -169,7 +169,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '千木・鰹木',
-    icon: '🌌',
+    icon: '🏯',
     reading: 'ちぎ・かつおぎ',
     category: '建築・境内',
     description:
@@ -177,7 +177,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '玉垣',
-    icon: '🏘️',
+    icon: '🚧',
     reading: 'たまがき',
     category: '建築・境内',
     description:
@@ -185,7 +185,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '社務所',
-    icon: '👶',
+    icon: '🏢',
     reading: 'しゃむしょ',
     category: '建築・境内',
     description:
@@ -193,7 +193,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '御神木',
-    icon: '👘',
+    icon: '🌳',
     reading: 'ごしんぼく',
     category: '建築・境内',
     description:
@@ -201,7 +201,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '賽銭',
-    icon: '📿',
+    icon: '🪙',
     reading: 'さいせん',
     category: '参拝作法',
     description:
@@ -209,7 +209,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '正中',
-    icon: '💃',
+    icon: '🎯',
     reading: 'せいちゅう',
     category: '参拝作法',
     description:
@@ -217,7 +217,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '玉串奉奠',
-    icon: '🕊️',
+    icon: '🌿',
     reading: 'たまぐしほうてん',
     category: '参拝作法',
     description:
@@ -225,7 +225,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神職',
-    icon: '🦊',
+    icon: '📿',
     reading: 'しんしょく',
     category: '神様・信仰',
     description:
@@ -233,7 +233,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '巫女',
-    icon: '🏮',
+    icon: '💃',
     reading: 'みこ',
     category: '神様・信仰',
     description:
@@ -241,7 +241,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '祭神',
-    icon: '🏗️',
+    icon: '🕊️',
     reading: 'さいじん',
     category: '神様・信仰',
     description:
@@ -249,7 +249,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神使',
-    icon: '🗓️',
+    icon: '🦊',
     reading: 'しんし',
     category: '神様・信仰',
     description:
@@ -257,7 +257,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '摂社・末社',
-    icon: '🎊',
+    icon: '🏮',
     reading: 'せっしゃ・まっしゃ',
     category: '神様・信仰',
     description:

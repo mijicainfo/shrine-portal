@@ -73,7 +73,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '二拜二拍手一拜',
-    icon: '🎭',
+    icon: '🙇',
     reading: '二礼二拍手一礼 / nirei nihakushu ichirei',
     category: '參拜禮儀',
     description:
@@ -81,7 +81,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '初穗料',
-    icon: '🏚️',
+    icon: '💴',
     reading: '初穂料 / hatsuho-ryō',
     category: '參拜禮儀',
     description:
@@ -89,7 +89,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '御朱印',
-    icon: '🚧',
+    icon: '🖋️',
     reading: '御朱印 / goshuin',
     category: '參拜禮儀',
     description:
@@ -97,7 +97,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '御神體',
-    icon: '🏢',
+    icon: '✨',
     reading: '御神体 / goshintai',
     category: '參拜禮儀',
     description:
@@ -105,7 +105,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '八百萬神明',
-    icon: '🌳',
+    icon: '🌌',
     reading: '八百万の神 / yaoyorozu no kami',
     category: '神明與信仰',
     description:
@@ -113,7 +113,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '氏神',
-    icon: '🙇',
+    icon: '🏘️',
     reading: '氏神 / ujigami',
     category: '神明與信仰',
     description:
@@ -121,7 +121,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '產土神',
-    icon: '💴',
+    icon: '👶',
     reading: '産土神 / ubusunagami',
     category: '神明與信仰',
     description:
@@ -129,7 +129,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '宮司',
-    icon: '🖋️',
+    icon: '👘',
     reading: '宮司 / gūji',
     category: '神明與信仰',
     description:
@@ -137,7 +137,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '式年遷宮',
-    icon: '✨',
+    icon: '🏗️',
     reading: '式年遷宮 / shikinen sengū',
     category: '祭典與其他',
     description:
@@ -145,7 +145,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神在月與神無月',
-    icon: '🪙',
+    icon: '🗓️',
     reading: '神無月・神在月 / kannazuki, kamiarizuki',
     category: '祭典與其他',
     description:
@@ -153,7 +153,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '例大祭',
-    icon: '🎯',
+    icon: '🎊',
     reading: '例大祭 / reitaisai',
     category: '祭典與其他',
     description:
@@ -161,7 +161,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神樂殿',
-    icon: '🌿',
+    icon: '🎭',
     reading: '神楽殿 / kaguraden',
     category: '建築與境內',
     description:
@@ -169,7 +169,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '千木與鰹木',
-    icon: '🌌',
+    icon: '🏯',
     reading: '千木・鰹木 / chigi, katsuogi',
     category: '建築與境內',
     description:
@@ -177,7 +177,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '玉垣',
-    icon: '🏘️',
+    icon: '🚧',
     reading: '玉垣 / tamagaki',
     category: '建築與境內',
     description:
@@ -185,7 +185,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '社務所',
-    icon: '👶',
+    icon: '🏢',
     reading: '社務所 / shamusho',
     category: '建築與境內',
     description:
@@ -193,7 +193,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '御神木',
-    icon: '👘',
+    icon: '🌳',
     reading: '御神木 / goshinboku',
     category: '建築與境內',
     description:
@@ -201,7 +201,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '賽錢',
-    icon: '📿',
+    icon: '🪙',
     reading: '賽銭 / saisen',
     category: '參拜禮儀',
     description:
@@ -209,7 +209,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '正中',
-    icon: '💃',
+    icon: '🎯',
     reading: '正中 / seichū',
     category: '參拜禮儀',
     description:
@@ -217,7 +217,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '玉串奉奠',
-    icon: '🕊️',
+    icon: '🌿',
     reading: '玉串奉奠 / tamagushi hōten',
     category: '參拜禮儀',
     description:
@@ -225,7 +225,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神職',
-    icon: '🦊',
+    icon: '📿',
     reading: '神職 / shinshoku',
     category: '神明與信仰',
     description:
@@ -233,7 +233,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '巫女',
-    icon: '🏮',
+    icon: '💃',
     reading: '巫女 / miko',
     category: '神明與信仰',
     description:
@@ -241,7 +241,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '祭神',
-    icon: '🏗️',
+    icon: '🕊️',
     reading: '祭神 / saijin',
     category: '神明與信仰',
     description:
@@ -249,7 +249,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神使',
-    icon: '🗓️',
+    icon: '🦊',
     reading: '神使 / shinshi',
     category: '神明與信仰',
     description:
@@ -257,7 +257,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '攝社與末社',
-    icon: '🎊',
+    icon: '🏮',
     reading: '摂社・末社 / sessha, massha',
     category: '神明與信仰',
     description:

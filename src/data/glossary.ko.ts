@@ -73,7 +73,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '니레이 니하쿠슈 이치레이(二礼二拍手一礼)',
-    icon: '🎭',
+    icon: '🙇',
     reading: 'にれいにはくしゅいちれい / nirei nihakushu ichirei',
     category: '참배 예절',
     description:
@@ -81,7 +81,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '하쓰호료(初穂料)',
-    icon: '🏚️',
+    icon: '💴',
     reading: 'はつほりょう / hatsuho-ryō',
     category: '참배 예절',
     description:
@@ -89,7 +89,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '고슈인(御朱印)',
-    icon: '🚧',
+    icon: '🖋️',
     reading: 'ごしゅいん / goshuin',
     category: '참배 예절',
     description:
@@ -97,7 +97,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '고신타이(御神体)',
-    icon: '🏢',
+    icon: '✨',
     reading: 'ごしんたい / goshintai',
     category: '참배 예절',
     description:
@@ -105,7 +105,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '야오요로즈노카미(八百万の神)',
-    icon: '🌳',
+    icon: '🌌',
     reading: 'やおよろずのかみ / yaoyorozu no kami',
     category: '신과 신앙',
     description:
@@ -113,7 +113,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '우지가미(氏神)',
-    icon: '🙇',
+    icon: '🏘️',
     reading: 'うじがみ / ujigami',
     category: '신과 신앙',
     description:
@@ -121,7 +121,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '우부스나가미(産土神)',
-    icon: '💴',
+    icon: '👶',
     reading: 'うぶすながみ / ubusunagami',
     category: '신과 신앙',
     description:
@@ -129,7 +129,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '구지(宮司)',
-    icon: '🖋️',
+    icon: '👘',
     reading: 'ぐうじ / gūji',
     category: '신과 신앙',
     description:
@@ -137,7 +137,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '시키넨 센구(式年遷宮)',
-    icon: '✨',
+    icon: '🏗️',
     reading: 'しきねんせんぐう / shikinen sengū',
     category: '행사와 기타',
     description:
@@ -145,7 +145,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '간나즈키·가미아리즈키(神無月・神在月)',
-    icon: '🪙',
+    icon: '🗓️',
     reading: 'かんなづき、かみありづき / kannazuki, kamiarizuki',
     category: '행사와 기타',
     description:
@@ -153,7 +153,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '레이타이사이(例大祭)',
-    icon: '🎯',
+    icon: '🎊',
     reading: 'れいたいさい / reitaisai',
     category: '행사와 기타',
     description:
@@ -161,7 +161,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '가구라덴(神楽殿)',
-    icon: '🌿',
+    icon: '🎭',
     reading: 'かぐらでん / kaguraden',
     category: '건축과 경내',
     description:
@@ -169,7 +169,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '지기・가쓰오기(千木・鰹木)',
-    icon: '🌌',
+    icon: '🏯',
     reading: 'ちぎ / chigi, かつおぎ / katsuogi',
     category: '건축과 경내',
     description:
@@ -177,7 +177,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '다마가키(玉垣)',
-    icon: '🏘️',
+    icon: '🚧',
     reading: 'たまがき / tamagaki',
     category: '건축과 경내',
     description:
@@ -185,7 +185,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '샤무쇼(社務所)',
-    icon: '👶',
+    icon: '🏢',
     reading: 'しゃむしょ / shamusho',
     category: '건축과 경내',
     description:
@@ -193,7 +193,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '고신보쿠(御神木)',
-    icon: '👘',
+    icon: '🌳',
     reading: 'ごしんぼく / goshinboku',
     category: '건축과 경내',
     description:
@@ -201,7 +201,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '사이센(賽銭)',
-    icon: '📿',
+    icon: '🪙',
     reading: 'さいせん / saisen',
     category: '참배 예절',
     description:
@@ -209,7 +209,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '세이추(正中)',
-    icon: '💃',
+    icon: '🎯',
     reading: 'せいちゅう / seichū',
     category: '참배 예절',
     description:
@@ -217,7 +217,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '다마구시호텐(玉串奉奠)',
-    icon: '🕊️',
+    icon: '🌿',
     reading: 'たまぐしほうてん / tamagushi hōten',
     category: '참배 예절',
     description:
@@ -225,7 +225,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '신쇼쿠(神職)',
-    icon: '🦊',
+    icon: '📿',
     reading: 'しんしょく / shinshoku',
     category: '신과 신앙',
     description:
@@ -233,7 +233,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '미코(巫女)',
-    icon: '🏮',
+    icon: '💃',
     reading: 'みこ / miko',
     category: '신과 신앙',
     description:
@@ -241,7 +241,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '사이진(祭神)',
-    icon: '🏗️',
+    icon: '🕊️',
     reading: 'さいじん / saijin',
     category: '신과 신앙',
     description:
@@ -249,7 +249,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '신시(神使)',
-    icon: '🗓️',
+    icon: '🦊',
     reading: 'しんし / shinshi',
     category: '신과 신앙',
     description:
@@ -257,7 +257,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '셋샤・맛샤(摂社・末社)',
-    icon: '🎊',
+    icon: '🏮',
     reading: 'せっしゃ / sessha, まっしゃ / massha',
     category: '신과 신앙',
     description:
