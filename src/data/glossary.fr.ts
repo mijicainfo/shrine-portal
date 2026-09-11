@@ -8,6 +8,62 @@ export interface GlossaryTerm {
 
 export const glossaryTermsFr: GlossaryTerm[] = [
   {
+    term: 'Jinja',
+    icon: '⛩️',
+    reading: '神社 / jinja',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Le terme le plus fondamental et le plus courant désignant un lieu consacré à un kami. « Jingu » et « Taisha » sont eux aussi, au sens large, des sanctuaires shinto — ils ne se distinguent que par leur shagō (la façon dont leur nom est formé).',
+  },
+  {
+    term: 'Jingu',
+    icon: '👑',
+    reading: '神宮 / jingū',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Un shagō réservé aux sanctuaires ayant des liens particulièrement étroits avec la famille impériale. On le retrouve souvent dans les sanctuaires vénérant une divinité ancestrale impériale ou un empereur, comme Ise Jingu (Amaterasu Omikami) ou Meiji Jingu (l\'empereur Meiji). Par convention, « Jingu » employé seul désigne souvent Ise Jingu.',
+  },
+  {
+    term: 'Taisha',
+    icon: '🏯',
+    reading: '大社 / taisha',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Un shagō signifiant « grand sanctuaire », traditionnellement réservé aux sanctuaires de grande envergure ayant rassemblé une ferveur particulière. Avant-guerre, seul Izumo Taisha portait officiellement ce nom ; depuis l\'après-guerre, de nombreux autres sanctuaires influents à travers le pays, comme Suwa Taisha ou Sumiyoshi Taisha, ont eux aussi adopté l\'appellation « Taisha ».',
+  },
+  {
+    term: 'Gu',
+    icon: '👑',
+    reading: '宮 / gū',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Comme « Jingu », un shagō souvent employé pour les sanctuaires liés à la famille impériale, ou ceux qui vénèrent une figure historique déifiée. Le Toshogu, qui vénère Tokugawa Ieyasu, ou les Tenmangu évoqués plus loin, en sont des exemples.',
+  },
+  {
+    term: 'Hachimangu',
+    icon: '🏹',
+    reading: '八幡宮 / hachimangū',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Les sanctuaires vénérant Hachiman, divinité de la fortune militaire et de la victoire. Avec plus de 40 000 sanctuaires à travers le Japon, il s\'agit de la lignée la plus nombreuse du pays. Tsurugaoka Hachimangu ou Usa Jingu (le sanctuaire principal de tous les Hachimangu, bien qu\'il porte le nom de « Jingu ») en sont des exemples représentatifs.',
+  },
+  {
+    term: 'Tenmangu et Tenjin',
+    icon: '📚',
+    reading: '天満宮・天神 / tenmangū, tenjin',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Les sanctuaires vénérant Sugawara no Michizane, déifié sous le nom de « Tenjin-sama », divinité du savoir et des études. Dazaifu Tenmangu et Kitano Tenmangu sont particulièrement célèbres, et accueillent une affluence de visiteurs venus prier pour la réussite aux examens durant la saison des concours.',
+  },
+  {
+    term: 'Inari Jinja',
+    icon: '🦊',
+    reading: '稲荷神社 / inari jinja',
+    category: 'Suffixes de Noms de Sanctuaires',
+    description:
+      'Les sanctuaires vénérant Inari, divinité des récoltes abondantes et de la prospérité des affaires. Ils se distinguent par leurs statues de renards, messagers (shinshi) de la divinité, et leurs tunnels de torii vermillon appelés « senbon torii » ; Fushimi Inari Taisha en est le sanctuaire principal.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',
@@ -334,62 +390,6 @@ export const glossaryTermsFr: GlossaryTerm[] = [
     category: 'Amulettes et Porte-bonheur',
     description:
       'Une flèche décorative censée repousser le mal et le malheur. Particulièrement appréciée comme porte-bonheur du Nouvel An, elle est généralement placée en hauteur dans la maison ou près de l\'entrée.',
-  },
-  {
-    term: 'Jinja',
-    icon: '⛩️',
-    reading: '神社 / jinja',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Le terme le plus fondamental et le plus courant désignant un lieu consacré à un kami. « Jingu » et « Taisha » sont eux aussi, au sens large, des sanctuaires shinto — ils ne se distinguent que par leur shagō (la façon dont leur nom est formé).',
-  },
-  {
-    term: 'Jingu',
-    icon: '👑',
-    reading: '神宮 / jingū',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Un shagō réservé aux sanctuaires ayant des liens particulièrement étroits avec la famille impériale. On le retrouve souvent dans les sanctuaires vénérant une divinité ancestrale impériale ou un empereur, comme Ise Jingu (Amaterasu Omikami) ou Meiji Jingu (l\'empereur Meiji). Par convention, « Jingu » employé seul désigne souvent Ise Jingu.',
-  },
-  {
-    term: 'Taisha',
-    icon: '🏯',
-    reading: '大社 / taisha',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Un shagō signifiant « grand sanctuaire », traditionnellement réservé aux sanctuaires de grande envergure ayant rassemblé une ferveur particulière. Avant-guerre, seul Izumo Taisha portait officiellement ce nom ; depuis l\'après-guerre, de nombreux autres sanctuaires influents à travers le pays, comme Suwa Taisha ou Sumiyoshi Taisha, ont eux aussi adopté l\'appellation « Taisha ».',
-  },
-  {
-    term: 'Gu',
-    icon: '👑',
-    reading: '宮 / gū',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Comme « Jingu », un shagō souvent employé pour les sanctuaires liés à la famille impériale, ou ceux qui vénèrent une figure historique déifiée. Le Toshogu, qui vénère Tokugawa Ieyasu, ou les Tenmangu évoqués plus loin, en sont des exemples.',
-  },
-  {
-    term: 'Hachimangu',
-    icon: '🏹',
-    reading: '八幡宮 / hachimangū',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Les sanctuaires vénérant Hachiman, divinité de la fortune militaire et de la victoire. Avec plus de 40 000 sanctuaires à travers le Japon, il s\'agit de la lignée la plus nombreuse du pays. Tsurugaoka Hachimangu ou Usa Jingu (le sanctuaire principal de tous les Hachimangu, bien qu\'il porte le nom de « Jingu ») en sont des exemples représentatifs.',
-  },
-  {
-    term: 'Tenmangu et Tenjin',
-    icon: '📚',
-    reading: '天満宮・天神 / tenmangū, tenjin',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Les sanctuaires vénérant Sugawara no Michizane, déifié sous le nom de « Tenjin-sama », divinité du savoir et des études. Dazaifu Tenmangu et Kitano Tenmangu sont particulièrement célèbres, et accueillent une affluence de visiteurs venus prier pour la réussite aux examens durant la saison des concours.',
-  },
-  {
-    term: 'Inari Jinja',
-    icon: '🦊',
-    reading: '稲荷神社 / inari jinja',
-    category: 'Suffixes de Noms de Sanctuaires',
-    description:
-      'Les sanctuaires vénérant Inari, divinité des récoltes abondantes et de la prospérité des affaires. Ils se distinguent par leurs statues de renards, messagers (shinshi) de la divinité, et leurs tunnels de torii vermillon appelés « senbon torii » ; Fushimi Inari Taisha en est le sanctuaire principal.',
   },
 ];
 

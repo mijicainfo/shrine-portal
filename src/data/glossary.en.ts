@@ -8,6 +8,62 @@ export interface GlossaryTerm {
 
 export const glossaryTermsEn: GlossaryTerm[] = [
   {
+    term: 'Jinja',
+    icon: '⛩️',
+    reading: '神社 / jinja',
+    category: 'Shrine Name Suffixes',
+    description:
+      'The most basic and general term for a facility enshrining kami. "Jingu" and "Taisha" are, in a broad sense, also types of jinja — they simply use a different shago (the convention by which a shrine\'s name is formed).',
+  },
+  {
+    term: 'Jingu',
+    icon: '👑',
+    reading: '神宮 / jingū',
+    category: 'Shrine Name Suffixes',
+    description:
+      'A shago used for shrines with especially deep ties to the imperial household. It appears often among shrines enshrining an imperial ancestral deity or a past emperor, such as Ise Jingu (Amaterasu Omikami) and Meiji Jingu (Emperor Meiji). By convention, "Jingu" on its own is often understood to mean Ise Jingu specifically.',
+  },
+  {
+    term: 'Taisha',
+    icon: '🏯',
+    reading: '大社 / taisha',
+    category: 'Shrine Name Suffixes',
+    description:
+      'Literally "great shrine," a shago traditionally reserved for shrines of especially large scale that have long drawn deep devotion. Before the war, only Izumo Taisha officially carried this name; afterward, many other major shrines — including Suwa Taisha and Sumiyoshi Taisha — adopted "Taisha" as well.',
+  },
+  {
+    term: 'Gu',
+    icon: '👑',
+    reading: '宮 / gū',
+    category: 'Shrine Name Suffixes',
+    description:
+      'Like "Jingu," a shago often used for shrines with imperial connections or those enshrining a deified historical figure. Toshogu, which enshrines Tokugawa Ieyasu, and the Tenmangu shrines described below are examples of this naming pattern.',
+  },
+  {
+    term: 'Hachimangu',
+    icon: '🏹',
+    reading: '八幡宮 / hachimangū',
+    category: 'Shrine Name Suffixes',
+    description:
+      'Shrines enshrining Hachiman, the deity of martial fortune and victory. With more than 40,000 shrines nationwide, it is the most numerous shrine lineage in Japan. Tsurugaoka Hachimangu is a well-known example; notably, Usa Jingu — the head shrine of the entire Hachiman lineage — carries the name "Jingu" rather than "Hachimangu."',
+  },
+  {
+    term: 'Tenmangu / Tenjin',
+    icon: '📚',
+    reading: '天満宮・天神 / tenmangū, tenjin',
+    category: 'Shrine Name Suffixes',
+    description:
+      'Shrines enshrining Sugawara no Michizane, deified as "Tenjin," the god of scholarship. Dazaifu Tenmangu and Kitano Tenmangu are the most famous, and both draw crowds of students praying for success on their exams during exam season.',
+  },
+  {
+    term: 'Inari Jinja',
+    icon: '🦊',
+    reading: '稲荷神社 / inari jinja',
+    category: 'Shrine Name Suffixes',
+    description:
+      'Shrines dedicated to Inari, the deity of agriculture and business prosperity. They are known for fox (kitsune) statues — regarded as the deity\'s messengers — and for long tunnels of vermillion torii gates known as "Senbon Torii." Fushimi Inari Taisha is the head shrine of the Inari lineage.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',
@@ -334,62 +390,6 @@ export const glossaryTermsEn: GlossaryTerm[] = [
     category: 'Amulets & Charms',
     description:
       'A decorative arrow believed to ward off evil and misfortune. Especially popular as a New Year charm, it\'s typically displayed somewhere high in the home or near the entrance.',
-  },
-  {
-    term: 'Jinja',
-    icon: '⛩️',
-    reading: '神社 / jinja',
-    category: 'Shrine Name Suffixes',
-    description:
-      'The most basic and general term for a facility enshrining kami. "Jingu" and "Taisha" are, in a broad sense, also types of jinja — they simply use a different shago (the convention by which a shrine\'s name is formed).',
-  },
-  {
-    term: 'Jingu',
-    icon: '👑',
-    reading: '神宮 / jingū',
-    category: 'Shrine Name Suffixes',
-    description:
-      'A shago used for shrines with especially deep ties to the imperial household. It appears often among shrines enshrining an imperial ancestral deity or a past emperor, such as Ise Jingu (Amaterasu Omikami) and Meiji Jingu (Emperor Meiji). By convention, "Jingu" on its own is often understood to mean Ise Jingu specifically.',
-  },
-  {
-    term: 'Taisha',
-    icon: '🏯',
-    reading: '大社 / taisha',
-    category: 'Shrine Name Suffixes',
-    description:
-      'Literally "great shrine," a shago traditionally reserved for shrines of especially large scale that have long drawn deep devotion. Before the war, only Izumo Taisha officially carried this name; afterward, many other major shrines — including Suwa Taisha and Sumiyoshi Taisha — adopted "Taisha" as well.',
-  },
-  {
-    term: 'Gu',
-    icon: '👑',
-    reading: '宮 / gū',
-    category: 'Shrine Name Suffixes',
-    description:
-      'Like "Jingu," a shago often used for shrines with imperial connections or those enshrining a deified historical figure. Toshogu, which enshrines Tokugawa Ieyasu, and the Tenmangu shrines described below are examples of this naming pattern.',
-  },
-  {
-    term: 'Hachimangu',
-    icon: '🏹',
-    reading: '八幡宮 / hachimangū',
-    category: 'Shrine Name Suffixes',
-    description:
-      'Shrines enshrining Hachiman, the deity of martial fortune and victory. With more than 40,000 shrines nationwide, it is the most numerous shrine lineage in Japan. Tsurugaoka Hachimangu is a well-known example; notably, Usa Jingu — the head shrine of the entire Hachiman lineage — carries the name "Jingu" rather than "Hachimangu."',
-  },
-  {
-    term: 'Tenmangu / Tenjin',
-    icon: '📚',
-    reading: '天満宮・天神 / tenmangū, tenjin',
-    category: 'Shrine Name Suffixes',
-    description:
-      'Shrines enshrining Sugawara no Michizane, deified as "Tenjin," the god of scholarship. Dazaifu Tenmangu and Kitano Tenmangu are the most famous, and both draw crowds of students praying for success on their exams during exam season.',
-  },
-  {
-    term: 'Inari Jinja',
-    icon: '🦊',
-    reading: '稲荷神社 / inari jinja',
-    category: 'Shrine Name Suffixes',
-    description:
-      'Shrines dedicated to Inari, the deity of agriculture and business prosperity. They are known for fox (kitsune) statues — regarded as the deity\'s messengers — and for long tunnels of vermillion torii gates known as "Senbon Torii." Fushimi Inari Taisha is the head shrine of the Inari lineage.',
   },
 ];
 
