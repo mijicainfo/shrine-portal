@@ -95,8 +95,7 @@ const shrinesKo = defineCollection({
 });
 
 // Editorial "top N" ranking articles (e.g. "10 famous shrines for enmusubi"), linking out to
-// entries in the `shrines` collection. JA-only pilot for now — see how it performs before
-// deciding whether to translate into the other 5 locales.
+// entries in the matching-locale shrines collection (guidesEn -> shrinesEn, etc.).
 const guideSchema = z.object({
   title: z.string(),
   description: z.string(),
@@ -114,4 +113,32 @@ const guides = defineCollection({
   schema: guideSchema,
 });
 
-export const collections = { shrines, shrinesEn, shrinesZh, shrinesEs, shrinesFr, shrinesKo, guides };
+const guidesEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-en' }),
+  schema: guideSchema,
+});
+
+const guidesZh = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-zh' }),
+  schema: guideSchema,
+});
+
+const guidesEs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-es' }),
+  schema: guideSchema,
+});
+
+const guidesFr = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-fr' }),
+  schema: guideSchema,
+});
+
+const guidesKo = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides-ko' }),
+  schema: guideSchema,
+});
+
+export const collections = {
+  shrines, shrinesEn, shrinesZh, shrinesEs, shrinesFr, shrinesKo,
+  guides, guidesEn, guidesZh, guidesEs, guidesFr, guidesKo,
+};
