@@ -1,6 +1,6 @@
 ---
-title: "5 Shrines Famous for Money Luck"
-description: "From Kamochi Jinja, whose auspicious name has made it a sensation, to Imamiya Ebisu Jinja, famed for business prosperity, we introduce five shrines known for their blessings of financial luck and business success."
+title: "6 Shrines Famous for Money Luck"
+description: "From Kamochi Jinja, whose auspicious name has made it a sensation, to Imamiya Ebisu Jinja, famed for business prosperity, we introduce six shrines known for their blessings of financial luck and business success."
 publishDate: 2026-09-10
 entries:
   - shrineId: "kamochi-jinja"
@@ -13,6 +13,8 @@ entries:
     note: "Enoshima Jinja in Kanagawa Prefecture is known for enshrining Benzaiten, goddess of wealth and the arts, and is counted among Japan's \"Three Great Benzaiten Shrines.\" It's also famous for the \"coin-washing\" custom near Okutsunomiya, the shrine furthest along the island. Another appeal is how easily a visit pairs with a stroll around Enoshima itself, one of the scenic highlights of the Shonan coast."
   - shrineId: "kanazawa-jinja"
     note: "Kanazawa Jinja in Ishikawa Prefecture carries a financial-luck legend said to be the very origin of the city name \"Kanazawa\" (\"gold marsh\") itself — the tale of a poor young man who washed mountain yams in the shrine's sacred spring, only to find gold dust pouring out with them. The shrine also enshrines Sugawara no Michizane, the god of scholarship, making it a beloved destination for visitors hoping to pray for both financial luck and academic success together."
+  - shrineId: "koami-jinja"
+    note: "Koami Jinja in Chuo Ward, Tokyo, is known as \"Tokyo's money-washing Benzaiten,\" thanks to the \"money-washing well\" beneath its statue of Benzaiten. Tradition holds that money washed here and kept unspent for a year becomes tanesen — \"seed money\" believed to multiply and attract further wealth. It's also one of the shrines on the popular Nihonbashi Seven Lucky Gods pilgrimage."
 ---
 
 ## Tips for Visiting Money-Luck Shrines

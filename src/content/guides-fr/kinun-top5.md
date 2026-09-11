@@ -1,6 +1,6 @@
 ---
-title: "5 sanctuaires réputés pour la chance financière"
-description: "Du Kamochi Jinja, dont le nom même fait parler de lui, à l'Imamiya Ebisu Jinja, célèbre pour la prospérité des affaires, découvrez 5 sanctuaires japonais réputés pour la chance financière et la réussite commerciale."
+title: "6 sanctuaires réputés pour la chance financière"
+description: "Du Kamochi Jinja, dont le nom même fait parler de lui, à l'Imamiya Ebisu Jinja, célèbre pour la prospérité des affaires, découvrez 6 sanctuaires japonais réputés pour la chance financière et la réussite commerciale."
 publishDate: 2026-09-10
 entries:
   - shrineId: "kamochi-jinja"
@@ -13,6 +13,8 @@ entries:
     note: "L'Enoshima Jinja, dans la préfecture de Kanagawa, vénère les trois déesses Munakata — Tagirihime no Mikoto, Ichikishimahime no Mikoto et Tagitsuhime no Mikoto —, identifiées à Benzaiten, divinité de la richesse et des arts, et compte parmi les « Trois Grands Sanctuaires de Benzaiten » du Japon. La coutume du « lavage de pièces » près de l'Okutsunomiya est elle aussi très appréciée, et le site se prête à merveille à une promenade sur l'île pittoresque d'Enoshima, dans la région du Shonan."
   - shrineId: "kanazawa-jinja"
     note: "Le Kanazawa Jinja, dans la préfecture d'Ishikawa, est associé à la légende d'or qui aurait donné son nom même à la ville de Kanazawa. Il vénère aussi Sugawara no Michizane, dieu du savoir, ce qui en fait un sanctuaire apprécié pour prier à la fois pour la chance financière et la réussite scolaire."
+  - shrineId: "koami-jinja"
+    note: "Le Koami Jinja, dans l'arrondissement de Chuo à Tokyo, est connu comme le « Benzaiten laveur d'argent de Tokyo », grâce au puits situé sous sa statue de Benzaiten où les visiteurs lavent pièces et billets. Selon la tradition, l'argent ainsi lavé et gardé sans être dépensé pendant un an devient du tanesen, un « argent-semence » censé attirer une richesse encore plus grande. Le sanctuaire est aussi l'une des étapes du populaire pèlerinage des Sept Dieux du Bonheur de Nihonbashi."
 ---
 
 ## Conseils pour visiter les sanctuaires de la chance financière

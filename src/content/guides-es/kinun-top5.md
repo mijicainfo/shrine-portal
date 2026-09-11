@@ -1,6 +1,6 @@
 ---
-title: "5 santuarios con fama de traer suerte financiera"
-description: "Del célebre Kamochi Jinja, cuyo propio nombre significa \"persona adinerada\", al muy visitado Imamiya Ebisu Jinja, patrón del comercio, presentamos 5 santuarios de Japón conocidos por sus bendiciones de suerte financiera y prosperidad en los negocios."
+title: "6 santuarios con fama de traer suerte financiera"
+description: "Del célebre Kamochi Jinja, cuyo propio nombre significa \"persona adinerada\", al muy visitado Imamiya Ebisu Jinja, patrón del comercio, presentamos 6 santuarios de Japón conocidos por sus bendiciones de suerte financiera y prosperidad en los negocios."
 publishDate: 2026-09-10
 entries:
   - shrineId: "kamochi-jinja"
@@ -13,6 +13,8 @@ entries:
     note: "Enoshima Jinja, en la prefectura de Kanagawa, es conocido por consagrar a Benzaiten, diosa de la riqueza y las artes, y es célebre por la costumbre de \"lavar monedas\" junto al Okutsunomiya, en el recinto. Su atractivo se completa con la posibilidad de combinar la visita al santuario con un paseo por la pintoresca isla de Enoshima, en Shonan."
   - shrineId: "kanazawa-jinja"
     note: "Kanazawa Jinja, en la prefectura de Ishikawa, es un santuario con una leyenda de suerte financiera que, según se cuenta, dio origen al propio topónimo de \"Kanazawa\" (\"pantano de oro\"). También es conocido por consagrar a Sugawara no Michizane, dios del aprendizaje, lo que lo convierte en un santuario apreciado tanto para la suerte financiera como para el éxito académico."
+  - shrineId: "koami-jinja"
+    note: "Koami Jinja, en el distrito de Chuo, en Tokio, es conocido como el \"Benzaiten que lava el dinero de Tokio\", gracias al pozo situado bajo su estatua de Benzaiten donde los visitantes lavan monedas y billetes. Según la tradición, el dinero lavado aquí y guardado sin gastar durante un año se convierte en tanesen, un \"dinero semilla\" que atrae aún más riqueza. También es una parada popular en la peregrinación de los Siete Dioses de la Fortuna de Nihonbashi."
 ---
 
 ## Consejos para recorrer santuarios de suerte financiera
