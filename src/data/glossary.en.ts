@@ -161,7 +161,7 @@ export const glossaryTermsEn: GlossaryTerm[] = [
   },
   {
     term: 'Kaguraden',
-    icon: '🎭',
+    icon: '🕺',
     reading: '神楽殿 / kaguraden',
     category: 'Architecture & Grounds',
     description:

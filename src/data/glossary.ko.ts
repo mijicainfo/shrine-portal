@@ -161,7 +161,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '가구라덴(神楽殿)',
-    icon: '🎭',
+    icon: '🕺',
     reading: 'かぐらでん / kaguraden',
     category: '건축과 경내',
     description:

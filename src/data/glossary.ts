@@ -161,7 +161,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神楽殿',
-    icon: '🎭',
+    icon: '🕺',
     reading: 'かぐらでん',
     category: '建築・境内',
     description:

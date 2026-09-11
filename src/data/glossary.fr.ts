@@ -161,7 +161,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Kagura-den',
-    icon: '🎭',
+    icon: '🕺',
     reading: '神楽殿 / kagura-den',
     category: 'Architecture & Terrain',
     description:

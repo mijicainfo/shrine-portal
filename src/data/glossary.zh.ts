@@ -161,7 +161,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神樂殿',
-    icon: '🎭',
+    icon: '🕺',
     reading: '神楽殿 / kaguraden',
     category: '建築與境內',
     description:
