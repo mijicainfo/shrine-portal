@@ -140,9 +140,156 @@ export const glossaryTermsEn: GlossaryTerm[] = [
       'A shrine\'s most important annual festival, held on a fixed date each year. It\'s often tied to a date connected with the shrine\'s founding or its enshrined kami, and draws large crowds of visitors.',
   },
   {
+    term: 'Kaguraden',
+    reading: '神楽殿 / kaguraden',
+    category: 'Architecture & Grounds',
+    description:
+      'A building used for performing kagura — sacred dance and music offered to the kami. Weddings and prayer services are sometimes held here too, and it\'s usually located near the haiden at many shrines.',
+  },
+  {
+    term: 'Chigi / Katsuogi',
+    reading: '千木・鰹木 / chigi, katsuogi',
+    category: 'Architecture & Grounds',
+    description:
+      'Chigi are the crossed decorative beams extending from either end of the honden\'s roof, while katsuogi are the log-shaped ornaments laid horizontally along the ridge. Their shapes vary by shrine and are sometimes said to indicate the gender of the enshrined kami.',
+  },
+  {
+    term: 'Tamagaki',
+    reading: '玉垣 / tamagaki',
+    category: 'Architecture & Grounds',
+    description:
+      'A fence or low wall enclosing the honden or other sacred ground. It marks a boundary between the sacred precinct and the world outside, and the names of donors are sometimes inscribed on it.',
+  },
+  {
+    term: 'Shamusho',
+    reading: '社務所 / shamusho',
+    category: 'Architecture & Grounds',
+    description:
+      'The building where a shrine\'s administrative work is carried out. Goshuin and omamori are usually issued here, and prayer requests are typically accepted at this office or the adjoining juyosho.',
+  },
+  {
+    term: 'Goshinboku',
+    reading: '御神木 / goshinboku',
+    category: 'Architecture & Grounds',
+    description:
+      'A sacred tree on the shrine grounds believed to be a dwelling place of the kami. It\'s often wrapped in a shimenawa, and many such trees are centuries-old giants.',
+  },
+  {
+    term: 'Saisen',
+    reading: '賽銭 / saisen',
+    category: 'Visiting Etiquette',
+    description:
+      'The money placed in the offertory box when visiting a shrine. It\'s offered as an expression of gratitude and prayer to the kami; there\'s no fixed amount, though some people favor a five-yen coin for its pun on go-en, meaning "good connection."',
+  },
+  {
+    term: 'Seichu',
+    reading: '正中 / seichū',
+    category: 'Visiting Etiquette',
+    description:
+      'The center line of the sando approach path. Since it\'s considered the kami\'s own route, proper etiquette calls for visitors to avoid the seichu and walk slightly to one side instead.',
+  },
+  {
+    term: 'Tamagushi Hoten',
+    reading: '玉串奉奠 / tamagushi hōten',
+    category: 'Visiting Etiquette',
+    description:
+      'The formal ritual of presenting a tamagushi — a sprig of sakaki adorned with shide paper strips — before the kami during a prayer service or other formal ceremony. It\'s usually carried out following the priest\'s instructions.',
+  },
+  {
+    term: 'Shinshoku',
+    reading: '神職 / shinshoku',
+    category: 'Deities & Faith',
+    description:
+      'A general term for those who serve at a shrine and conduct its rites and ceremonies. Guji refers specifically to the highest-ranking priest at a given shrine, while shinshoku is used for Shinto priests in general.',
+  },
+  {
+    term: 'Miko',
+    reading: '巫女 / miko',
+    category: 'Deities & Faith',
+    description:
+      'A woman who serves at a shrine, performing sacred kagura, assisting the priests, and issuing omamori and goshuin. She\'s widely recognized by her white robe paired with a scarlet hibakama skirt.',
+  },
+  {
+    term: 'Saijin',
+    reading: '祭神 / saijin',
+    category: 'Deities & Faith',
+    description:
+      'The kami enshrined at a particular shrine. At shrines that enshrine multiple kami, the principal one is specifically called the shusaijin.',
+  },
+  {
+    term: 'Shinshi',
+    reading: '神使 / shinshi',
+    category: 'Deities & Faith',
+    description:
+      'An animal regarded as a messenger of the kami. Different shrines have their own shinshi — the fox at Inari shrines, the ox at Tenmangu shrines, the monkey at Hie shrines, and so on.',
+  },
+  {
+    term: 'Sessha / Massha',
+    reading: '摂社・末社 / sessha, massha',
+    category: 'Deities & Faith',
+    description:
+      'Small subsidiary shrines located within or near a main shrine\'s grounds. They often enshrine a kami closely connected to the main shrine\'s own deity, or one that has been worshipped on that land since ancient times.',
+  },
+  {
+    term: 'Hatsumode',
+    reading: '初詣 / hatsumōde',
+    category: 'Events & Other',
+    description:
+      'The custom of visiting a shrine or temple for the first time in the new year to pray for safety and happiness in the year ahead. Many shrines see especially large crowds from New Year\'s Eve through the first three days of January.',
+  },
+  {
+    term: 'Shichi-Go-San',
+    reading: '七五三 / shichi-go-san',
+    category: 'Events & Other',
+    description:
+      'A shrine visit celebrating the growth of children who have turned three, five, or seven years old. It usually takes place around November 15th, when families dressed in their finest can be seen visiting shrines across the country.',
+  },
+  {
+    term: 'Mikoshi',
+    reading: '神輿 / mikoshi',
+    category: 'Events & Other',
+    description:
+      'A palanquin-shaped vehicle carried through the streets during festivals, bearing the kami\'s spirit. As the bearers parade it through the town, the kami\'s power is believed to be carried out into the community.',
+  },
+  {
+    term: 'Chinowa Kuguri',
+    reading: '茅の輪くぐり / chinowa kuguri',
+    category: 'Events & Other',
+    description:
+      'A purification ritual in which passing through a large ring woven from kaya reeds cleanses half a year\'s worth of impurity. It\'s held at many shrines around the end of June, during the Nagoshi no Harae season.',
+  },
+  {
+    term: 'Omamori',
+    reading: '御守り / omamori',
+    category: 'Amulets & Charms',
+    description:
+      'A protective charm imbued with the kami\'s blessing, said to guard the bearer and help fulfill their wishes. Shrines offer many varieties, for health, academic success, romantic connection, and more.',
+  },
+  {
+    term: 'Ema',
+    reading: '絵馬 / ema',
+    category: 'Amulets & Charms',
+    description:
+      'A small wooden plaque on which visitors write a wish or a message of thanks before dedicating it at the shrine. It\'s said to have originated as a simplified version of the old custom of offering a live horse to the kami.',
+  },
+  {
+    term: 'Omikuji',
+    reading: 'おみくじ / omikuji',
+    category: 'Amulets & Charms',
+    description:
+      'A paper fortune-telling slip. Alongside an overall fortune ranging from great blessing to misfortune, it offers advice on specific topics like love, work, and health, and it\'s customary to tie it to a tree branch or rack on the shrine grounds.',
+  },
+  {
+    term: 'Ofuda',
+    reading: '御札 / ofuda',
+    category: 'Amulets & Charms',
+    description:
+      'A paper or wooden tablet believed to hold the sacred power of the kami. It\'s typically enshrined on a kamidana or placed somewhere high in the home, as a prayer for household safety, business prosperity, and the like.',
+  },
+  {
     term: 'Hamaya',
     reading: '破魔矢 / hamaya',
-    category: 'Events & Other',
+    category: 'Amulets & Charms',
     description:
       'A decorative arrow believed to ward off evil and misfortune. Especially popular as a New Year charm, it\'s typically displayed somewhere high in the home or near the entrance.',
   },

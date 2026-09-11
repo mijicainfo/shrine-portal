@@ -140,9 +140,156 @@ export const glossaryTermsEs: GlossaryTerm[] = [
       'El festival anual más importante de un santuario, celebrado en una fecha fija cada año. Suele estar vinculado a una fecha relacionada con la fundación del santuario o con su kami principal, y atrae a grandes multitudes.',
   },
   {
+    term: 'Kagura-den',
+    reading: '神楽殿 / kagura-den',
+    category: 'Arquitectura y Recinto',
+    description:
+      'El edificio donde se representa el kagura, danza y música ofrecidas al kami. En ocasiones también se celebran allí bodas y oraciones, y suele estar situado cerca del haiden en muchos santuarios.',
+  },
+  {
+    term: 'Chigi / Katsuogi',
+    reading: '千木・鰹木 / chigi, katsuogi',
+    category: 'Arquitectura y Recinto',
+    description:
+      'Los chigi son los maderos decorativos que se cruzan en ambos extremos del tejado del honden, mientras que los katsuogi son los adornos en forma de tronco colocados horizontalmente sobre el tejado. Su forma varía según el santuario, y se dice que puede indicar el género de la deidad venerada.',
+  },
+  {
+    term: 'Tamagaki',
+    reading: '玉垣 / tamagaki',
+    category: 'Arquitectura y Recinto',
+    description:
+      'La cerca o valla que rodea el honden o el área sagrada de un santuario. Funciona como límite entre lo sagrado y lo cotidiano, y en ocasiones lleva grabados los nombres de las personas que hicieron donaciones.',
+  },
+  {
+    term: 'Shamusho',
+    reading: '社務所 / shamusho',
+    category: 'Arquitectura y Recinto',
+    description:
+      'El edificio donde se gestionan los asuntos administrativos de un santuario. El goshuin, la entrega de amuletos y la recepción de solicitudes de oración suelen tramitarse aquí o en la oficina de entrega (juyosho).',
+  },
+  {
+    term: 'Goshinboku',
+    reading: '御神木 / goshinboku',
+    category: 'Arquitectura y Recinto',
+    description:
+      'Un árbol sagrado dentro del recinto del santuario en el que se cree que reside un kami. Suele estar rodeado de una shimenawa, y no es raro encontrar ejemplares centenarios de gran tamaño.',
+  },
+  {
+    term: 'Saisen',
+    reading: '賽銭 / saisen',
+    category: 'Etiqueta de Visita',
+    description:
+      'El dinero que se deposita en la caja de ofrendas (saisen-bako) durante la visita. Se ofrece como muestra de gratitud o para expresar un deseo al kami; no existe una cantidad fija, aunque algunas personas prefieren la moneda de 5 yenes por su juego de palabras con "en" (vínculo o destino).',
+  },
+  {
+    term: 'Seichu',
+    reading: '正中 / seichū',
+    category: 'Etiqueta de Visita',
+    description:
+      'La línea central del sando, el camino de acceso al santuario. Se considera la ruta reservada al kami, por lo que la etiqueta correcta es evitarla y caminar ligeramente hacia un lado.',
+  },
+  {
+    term: 'Tamagushi Hoten',
+    reading: '玉串奉奠 / tamagushi hōten',
+    category: 'Etiqueta de Visita',
+    description:
+      'El acto ritual, realizado durante oraciones y ceremonias oficiales, de ofrecer al kami un tamagushi: una rama de sakaki con tiras de papel shide. Generalmente se lleva a cabo siguiendo las indicaciones de un sacerdote sintoísta.',
+  },
+  {
+    term: 'Shinshoku',
+    reading: '神職 / shinshoku',
+    category: 'Deidades y Fe',
+    description:
+      'El término general para las personas que sirven en un santuario y llevan a cabo ritos y ceremonias. Mientras que gūji designa al sacerdote de mayor rango de un santuario en concreto, shinshoku se usa para referirse a los sacerdotes sintoístas en general.',
+  },
+  {
+    term: 'Miko',
+    reading: '巫女 / miko',
+    category: 'Deidades y Fe',
+    description:
+      'Una mujer que sirve en el santuario, participando en las ofrendas de kagura, asistiendo a los sacerdotes y entregando amuletos y goshuin. Es conocida por su atuendo tradicional de kimono blanco (byakue) y hakama rojo (hibakama).',
+  },
+  {
+    term: 'Saijin',
+    reading: '祭神 / saijin',
+    category: 'Deidades y Fe',
+    description:
+      'La deidad venerada en un santuario determinado. En los santuarios que veneran a varias deidades, se llama shusaijin a la que ocupa el lugar central.',
+  },
+  {
+    term: 'Shinshi',
+    reading: '神使 / shinshi',
+    category: 'Deidades y Fe',
+    description:
+      'El animal considerado mensajero de un kami. Por ejemplo, el zorro en los santuarios Inari, el buey en los Tenman o el mono en los Hie: cada santuario transmite su propio shinshi.',
+  },
+  {
+    term: 'Sessha / Massha',
+    reading: '摂社・末社 / sessha, massha',
+    category: 'Deidades y Fe',
+    description:
+      'Los pequeños santuarios subordinados situados dentro o cerca del recinto del santuario principal. Suelen albergar deidades estrechamente relacionadas con el kami principal, o divinidades veneradas en ese lugar desde tiempos antiguos.',
+  },
+  {
+    term: 'Hatsumode',
+    reading: '初詣 / hatsumōde',
+    category: 'Eventos y Otros',
+    description:
+      'La costumbre de visitar un santuario o templo por primera vez en el nuevo año para orar por la seguridad y la felicidad durante todo el año. Muchos santuarios reciben una gran afluencia de visitantes desde la víspera de Año Nuevo hasta los primeros tres días de enero.',
+  },
+  {
+    term: 'Shichi-Go-San',
+    reading: '七五三 / shichi-go-san',
+    category: 'Eventos y Otros',
+    description:
+      'La celebración del crecimiento de los niños de 3, 5 y 7 años mediante una visita al santuario. Suele tener lugar alrededor del 15 de noviembre, y es habitual ver por todo el país a familias ataviadas con trajes de gala para la ocasión.',
+  },
+  {
+    term: 'Mikoshi',
+    reading: '神輿 / mikoshi',
+    category: 'Eventos y Otros',
+    description:
+      'Un vehículo con forma de palanquín que transporta el espíritu del kami y se pasea por las calles durante los festivales. Se cree que, al recorrer la ciudad a hombros de los porteadores, el poder del kami se extiende por toda la zona.',
+  },
+  {
+    term: 'Chinowa Kuguri',
+    reading: '茅の輪くぐり / chinowa kuguri',
+    category: 'Eventos y Otros',
+    description:
+      'El ritual de atravesar un gran aro tejido con cañas (kaya) para purificarse de las impurezas acumuladas durante medio año. Se celebra en muchos santuarios a finales de junio, durante el rito conocido como Nagoshi no Harae.',
+  },
+  {
+    term: 'Omamori',
+    reading: '御守り / omamori',
+    category: 'Amuletos y Talismanes',
+    description:
+      'Un amuleto imbuido con la bendición de un kami para proteger a quien lo porta y ayudar a cumplir sus deseos. Se entregan muchos tipos distintos, como los dedicados a la salud, al éxito académico o al buen amor (enmusubi).',
+  },
+  {
+    term: 'Ema',
+    reading: '絵馬 / ema',
+    category: 'Amuletos y Talismanes',
+    description:
+      'Una placa de madera en la que se escribe un deseo o un mensaje de agradecimiento antes de ofrecerla en el santuario. Se dice que es una versión simplificada de la antigua costumbre de ofrecer un caballo vivo al kami.',
+  },
+  {
+    term: 'Omikuji',
+    reading: 'おみくじ / omikuji',
+    category: 'Amuletos y Talismanes',
+    description:
+      'Una tira de papel con la que se adivina la buena o mala fortuna. Además del nivel de suerte (gran fortuna, mala fortuna, etc.), incluye consejos por categorías como el amor, el trabajo o la salud, y suele atarse a la rama de un árbol dentro del recinto.',
+  },
+  {
+    term: 'Ofuda',
+    reading: '御札 / ofuda',
+    category: 'Amuletos y Talismanes',
+    description:
+      'Un talismán de papel o madera en el que se cree que reside el poder divino de un kami. Se suele colocar en un kamidana (altar doméstico) o en un lugar alto de la casa, con la intención de proteger el hogar o favorecer la prosperidad, entre otros fines.',
+  },
+  {
     term: 'Hamaya',
     reading: '破魔矢 / hamaya',
-    category: 'Eventos y Otros',
+    category: 'Amuletos y Talismanes',
     description:
       'Una flecha decorativa que se cree que ahuyenta el mal y la mala suerte. Especialmente popular como amuleto de Año Nuevo, suele exhibirse en un lugar alto del hogar o cerca de la entrada.',
   },

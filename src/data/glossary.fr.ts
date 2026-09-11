@@ -140,9 +140,156 @@ export const glossaryTermsFr: GlossaryTerm[] = [
       'La fête annuelle la plus importante d\'un sanctuaire, célébrée à date fixe chaque année. Elle est souvent liée à une date associée à la fondation du sanctuaire ou à son kami vénéré, et attire de nombreux visiteurs.',
   },
   {
+    term: 'Kagura-den',
+    reading: '神楽殿 / kagura-den',
+    category: 'Architecture & Terrain',
+    description:
+      'Le pavillon dédié aux représentations de kagura (danses et musiques sacrées) offertes aux kami. Des mariages et des bénédictions y sont parfois célébrés ; on le trouve généralement à proximité du haiden.',
+  },
+  {
+    term: 'Chigi et Katsuogi',
+    reading: '千木・鰹木 / chigi, katsuogi',
+    category: 'Architecture & Terrain',
+    description:
+      'Les chigi sont les pièces décoratives qui se croisent aux deux extrémités du toit du honden, tandis que les katsuogi sont les pièces en forme de rondins disposées horizontalement au sommet du toit. Leur forme varie selon les sanctuaires et indiquerait même le genre du kami vénéré.',
+  },
+  {
+    term: 'Tamagaki',
+    reading: '玉垣 / tamagaki',
+    category: 'Architecture & Terrain',
+    description:
+      'La clôture ou palissade entourant le honden ou le domaine sacré. Elle marque la frontière entre le lieu sacré et le reste du terrain, et porte parfois les noms des donateurs qui ont financé sa construction.',
+  },
+  {
+    term: 'Shamusho',
+    reading: '社務所 / shamusho',
+    category: 'Architecture & Terrain',
+    description:
+      'Le bâtiment administratif d\'un sanctuaire. C\'est généralement ici, ou au bureau des授与 (授与所), que l\'on reçoit le goshuin et les amulettes, et que l\'on s\'inscrit pour une bénédiction.',
+  },
+  {
+    term: 'Goshinboku',
+    reading: '御神木 / goshinboku',
+    category: 'Architecture & Terrain',
+    description:
+      'Un arbre sacré du terrain, censé abriter un kami. Il est souvent entouré d\'un shimenawa, et nombre d\'entre eux sont des arbres majestueux vieux de plusieurs siècles.',
+  },
+  {
+    term: 'Saisen',
+    reading: '賽銭 / saisen',
+    category: 'Étiquette de Visite',
+    description:
+      'L\'offrande d\'argent déposée dans le tronc dédié lors du culte. Elle est offerte en signe de gratitude ou pour accompagner un vœu ; il n\'existe pas de montant fixé, bien que certains privilégient une pièce de cinq yens pour son homophone évoquant le lien (go-en).',
+  },
+  {
+    term: 'Seichu',
+    reading: '正中 / seichū',
+    category: 'Étiquette de Visite',
+    description:
+      'La partie centrale du sando, l\'allée menant au sanctuaire. Considérée comme le passage réservé aux kami, il est de bon usage pour les visiteurs de l\'éviter en marchant légèrement sur le côté.',
+  },
+  {
+    term: 'Tamagushi Hoten',
+    reading: '玉串奉奠 / tamagushi hōten',
+    category: 'Étiquette de Visite',
+    description:
+      'Le geste, lors d\'un culte cérémoniel comme une bénédiction, consistant à offrir devant le kami un tamagushi — une branche de sakaki ornée de bandes de papier shide. Il se pratique en suivant les indications du prêtre shinto.',
+  },
+  {
+    term: 'Shinshoku',
+    reading: '神職 / shinshoku',
+    category: 'Divinités & Croyances',
+    description:
+      'Le terme général désignant les personnes au service d\'un sanctuaire qui célèbrent les rites et cérémonies shinto. Le guji désigne le prêtre le plus haut placé d\'un sanctuaire, tandis que shinshoku s\'emploie pour désigner les prêtres shinto en général.',
+  },
+  {
+    term: 'Miko',
+    reading: '巫女 / miko',
+    category: 'Divinités & Croyances',
+    description:
+      'Une femme au service d\'un sanctuaire, qui participe aux offrandes de kagura, assiste les prêtres shinto et délivre amulettes et goshuin. Sa tenue traditionnelle, une robe blanche et un hakama écarlate (hibakama), est largement reconnaissable.',
+  },
+  {
+    term: 'Saijin',
+    reading: '祭神 / saijin',
+    category: 'Divinités & Croyances',
+    description:
+      'Le ou les kami vénérés dans un sanctuaire donné. Lorsqu\'un sanctuaire honore plusieurs divinités, celle qui occupe la place centrale est appelée « shusaijin ».',
+  },
+  {
+    term: 'Shinshi',
+    reading: '神使 / shinshi',
+    category: 'Divinités & Croyances',
+    description:
+      'Un animal considéré comme le messager d\'un kami. Le renard des sanctuaires Inari, le bœuf des sanctuaires Tenman-gū ou le singe du sanctuaire Hie-jinja en sont des exemples, chaque sanctuaire ayant son propre messager.',
+  },
+  {
+    term: 'Sessha et Massha',
+    reading: '摂社・末社 / sessha, massha',
+    category: 'Divinités & Croyances',
+    description:
+      'Les petits sanctuaires annexes situés sur le terrain d\'un sanctuaire principal ou à ses abords. Ils honorent souvent des kami étroitement liés au kami principal, ou des divinités vénérées de longue date sur ce site.',
+  },
+  {
+    term: 'Hatsumode',
+    reading: '初詣 / hatsumōde',
+    category: 'Fêtes & Autres',
+    description:
+      'La coutume de se rendre pour la première fois de l\'année dans un sanctuaire ou un temple, pour prier pour la sécurité et le bonheur durant l\'année à venir. La plupart des sanctuaires connaissent une affluence particulièrement importante entre le réveillon du Nouvel An et les trois premiers jours de janvier.',
+  },
+  {
+    term: 'Shichi-Go-San',
+    reading: '七五三 / shichi-go-san',
+    category: 'Fêtes & Autres',
+    description:
+      'Une cérémonie où l\'on célèbre la croissance des enfants de trois, cinq et sept ans en les emmenant au sanctuaire. Elle se déroule généralement autour du 15 novembre, et l\'on peut voir dans tout le Japon des familles habillées de leurs plus beaux vêtements pour l\'occasion.',
+  },
+  {
+    term: 'Mikoshi',
+    reading: '神輿 / mikoshi',
+    category: 'Fêtes & Autres',
+    description:
+      'Un palanquin sacré transportant l\'esprit d\'un kami lors des processions de festival. Porté à travers les rues par des porteurs, il est censé répandre la puissance du kami dans le quartier.',
+  },
+  {
+    term: 'Chinowa Kuguri',
+    reading: '茅の輪くぐり / chinowa kuguri',
+    category: 'Fêtes & Autres',
+    description:
+      'Un rite de purification consistant à traverser un grand anneau tressé de roseaux (chigaya) afin de se débarrasser des impuretés accumulées durant les six derniers mois. Il est célébré dans de nombreux sanctuaires à l\'occasion du Nagoshi no Harae, fin juin.',
+  },
+  {
+    term: 'Omamori',
+    reading: '御守り / omamori',
+    category: 'Amulettes et Porte-bonheur',
+    description:
+      'Une amulette protectrice censée porter chance et exaucer les vœux grâce à la bénédiction du kami. On en trouve pour la santé, la réussite aux examens, l\'amour et bien d\'autres domaines encore.',
+  },
+  {
+    term: 'Ema',
+    reading: '絵馬 / ema',
+    category: 'Amulettes et Porte-bonheur',
+    description:
+      'Une petite plaquette de bois sur laquelle on inscrit un vœu ou un message de gratitude avant de l\'offrir au sanctuaire. La coutume serait issue d\'une simplification de l\'ancienne offrande de chevaux vivants aux kami.',
+  },
+  {
+    term: 'Omikuji',
+    reading: 'おみくじ / omikuji',
+    category: 'Amulettes et Porte-bonheur',
+    description:
+      'Un billet de papier prédisant la fortune. Il indique un degré de chance — du grand bonheur au malheur — accompagné de conseils détaillés sur l\'amour, le travail ou la santé ; on le noue généralement à une branche d\'arbre ou un support prévu à cet effet dans l\'enceinte du sanctuaire.',
+  },
+  {
+    term: 'Ofuda',
+    reading: '御札 / ofuda',
+    category: 'Amulettes et Porte-bonheur',
+    description:
+      'Une tablette de papier ou de bois censée abriter la puissance sacrée du kami. On la place généralement sur un autel domestique (kamidana) ou en hauteur dans la maison, pour prier la sécurité du foyer ou la prospérité des affaires.',
+  },
+  {
     term: 'Hamaya',
     reading: '破魔矢 / hamaya',
-    category: 'Fêtes & Autres',
+    category: 'Amulettes et Porte-bonheur',
     description:
       'Une flèche décorative censée repousser le mal et le malheur. Particulièrement appréciée comme porte-bonheur du Nouvel An, elle est généralement placée en hauteur dans la maison ou près de l\'entrée.',
   },
