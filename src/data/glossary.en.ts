@@ -112,6 +112,22 @@ export const glossaryTermsEn: GlossaryTerm[] = [
       'A ritual held after a Shinto ceremony in which participants share the omiki (sacred sake) and shinsen (food offerings) that had been presented to the kami. Eating together with the kami in this way is believed to let worshippers receive a portion of the kami\'s power.',
   },
   {
+    term: 'Onmyodo',
+    icon: '☯️',
+    reading: '陰陽道 / onmyōdō',
+    category: 'Shinto',
+    description:
+      'A system of divination and magic that developed uniquely in Heian-period Japan out of yin-yang and five-elements (wuxing) thought imported from ancient China. Its practitioners read the stars, the calendar, directional taboos, and omens to judge what was auspicious or inauspicious, and the art was woven deeply into the imperial court\'s major rituals and political decisions. Onmyodo is a distinct tradition from Shinto itself, but the two share many elements — including purification and the marking of sacred boundaries — and have long influenced one another.',
+  },
+  {
+    term: 'Onmyoji',
+    icon: '🔮',
+    reading: '陰陽師 / onmyōji',
+    category: 'Shinto',
+    description:
+      'A specialist in onmyodo. During the Heian period, onmyoji served in the Onmyoryo, the imperial court\'s bureau of yin-yang, where their duties included astronomical observation, compiling the calendar, divination, and warding off misfortune through ritual magic. Seimei Jinja in Kyoto, dedicated to the best-known onmyoji, Abe no Seimei, is said to have been founded in honor of his achievements.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',

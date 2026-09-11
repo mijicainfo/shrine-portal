@@ -112,6 +112,22 @@ export const glossaryTermsFr: GlossaryTerm[] = [
       'Le rite qui suit une cérémonie shinto, au cours duquel les participants partagent le saké sacré (omiki) et les offrandes alimentaires (shinsen) présentés au kami. Partager ce repas avec la divinité est censé permettre de recevoir une part de sa puissance.',
   },
   {
+    term: 'Onmyodo',
+    icon: '☯️',
+    reading: '陰陽道 / onmyōdō',
+    category: 'Shintoïsme',
+    description:
+      'Un système de divination et de sorcellerie né au Japon à l\'époque de Heian, à partir de la pensée chinoise du yin-yang et des cinq éléments importée de la Chine antique. Il s\'appuyait sur l\'astronomie, le calendrier, la géomancie et la divination des présages fastes et néfastes, et jouait un rôle central dans les cérémonies de la cour impériale ainsi que dans les décisions politiques. Bien que distinct du shintoïsme à proprement parler, il en partage de nombreux éléments — comme le harai ou les barrières spirituelles (kekkai) — et les deux traditions se sont mutuellement influencées.',
+  },
+  {
+    term: 'Onmyoji',
+    icon: '🔮',
+    reading: '陰陽師 / onmyōji',
+    category: 'Shintoïsme',
+    description:
+      'Les spécialistes de l\'onmyōdō. Sous l\'époque de Heian, ils appartenaient à l\'Onmyōryō, le bureau de la cour impériale chargé de ces arts, et se consacraient à l\'observation astronomique, à l\'élaboration du calendrier, ainsi qu\'à la divination et aux rites d\'exorcisme contre le malheur. Abe no Seimei, le plus célèbre d\'entre eux, est vénéré à Seimei Jinja, à Kyoto, un sanctuaire qui aurait été fondé en hommage à ses mérites.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',

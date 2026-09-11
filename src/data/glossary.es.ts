@@ -112,6 +112,22 @@ export const glossaryTermsEs: GlossaryTerm[] = [
       'Un rito celebrado tras una ceremonia sintoísta, en el que los participantes comparten el sake sagrado (omiki) y las ofrendas de comida (shinsen) presentadas al kami. Compartir la comida con el kami simboliza recibir una parte de su poder.',
   },
   {
+    term: 'Onmyodo',
+    icon: '☯️',
+    reading: '陰陽道 / onmyōdō',
+    category: 'Sintoísmo',
+    description:
+      'Un sistema de artes esotéricas y adivinatorias basado en el pensamiento chino del yin-yang y los cinco elementos, que se desarrolló de forma singular en el Japón del período Heian. Empleaba técnicas de observación astronómica, elaboración del calendario, orientación y adivinación de la buena y mala fortuna, y estuvo profundamente implicado en las ceremonias más importantes de la corte imperial y en las decisiones políticas. Aunque es un sistema distinto del sintoísmo en sí, comparte con él numerosos elementos, como los ritos de purificación (harai) o las barreras espirituales, y ambos se han influido mutuamente a lo largo de la historia.',
+  },
+  {
+    term: 'Onmyoji',
+    icon: '🔮',
+    reading: '陰陽師 / onmyōji',
+    category: 'Sintoísmo',
+    description:
+      'Los expertos que practicaban el onmyodo. Durante el período Heian pertenecían al Onmyoryo, la oficina de la corte imperial encargada de esta disciplina, y se ocupaban de la observación astronómica, la elaboración del calendario, la adivinación y los ritos de protección contra el mal. Seimei Jinja, en Kioto, está dedicado a Abe no Seimei, el más célebre de todos los onmyoji, y se dice que fue fundado en reconocimiento a sus logros.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',
