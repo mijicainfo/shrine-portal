@@ -249,7 +249,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '神使',
-    icon: '🦊',
+    icon: '🐴',
     reading: 'しんし',
     category: '神様・信仰',
     description:

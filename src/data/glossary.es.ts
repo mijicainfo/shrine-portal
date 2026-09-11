@@ -249,7 +249,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Shinshi',
-    icon: '🦊',
+    icon: '🐴',
     reading: '神使 / shinshi',
     category: 'Deidades y Fe',
     description:

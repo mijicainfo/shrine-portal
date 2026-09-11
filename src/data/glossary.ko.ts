@@ -249,7 +249,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '신시(神使)',
-    icon: '🦊',
+    icon: '🐴',
     reading: 'しんし / shinshi',
     category: '신과 신앙',
     description:

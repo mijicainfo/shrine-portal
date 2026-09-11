@@ -249,7 +249,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '神使',
-    icon: '🦊',
+    icon: '🐴',
     reading: '神使 / shinshi',
     category: '神明與信仰',
     description:
