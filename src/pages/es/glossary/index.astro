@@ -29,12 +29,20 @@ import { glossaryTermsEs, glossaryCategoriesEs } from '../../../data/glossary.es
             {glossaryTermsEs
               .filter((t) => t.category === category)
               .map((t) => (
-                <div class="glossary-item p-5" data-term={`${t.term} ${t.reading} ${t.description}`}>
-                  <dt class="flex flex-wrap items-baseline gap-2">
-                    <span class="font-serif-jp text-base font-bold text-shrine-ink">{t.term}</span>
-                    <span class="text-xs text-shrine-ink-soft">{t.reading}</span>
-                  </dt>
-                  <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{t.description}</dd>
+                <div class="glossary-item flex gap-4 p-5" data-term={`${t.term} ${t.reading} ${t.description}`}>
+                  <span
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-shrine-vermillion-light text-xl"
+                    aria-hidden="true"
+                  >
+                    {t.icon}
+                  </span>
+                  <div class="min-w-0 flex-1">
+                    <dt class="flex flex-wrap items-baseline gap-2">
+                      <span class="font-serif-jp text-base font-bold text-shrine-ink">{t.term}</span>
+                      <span class="text-xs text-shrine-ink-soft">{t.reading}</span>
+                    </dt>
+                    <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{t.description}</dd>
+                  </div>
                 </div>
               ))}
           </dl>

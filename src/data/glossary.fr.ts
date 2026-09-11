@@ -1,5 +1,6 @@
 export interface GlossaryTerm {
   term: string;
+  icon: string;
   reading: string;
   category: string;
   description: string;
@@ -8,6 +9,7 @@ export interface GlossaryTerm {
 export const glossaryTermsFr: GlossaryTerm[] = [
   {
     term: 'Torii',
+    icon: '⛩️',
     reading: '鳥居 / torii',
     category: 'Architecture & Terrain',
     description:
@@ -15,6 +17,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Sando',
+    icon: '🚶',
     reading: '参道 / sandō',
     category: 'Architecture & Terrain',
     description:
@@ -22,6 +25,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Honden',
+    icon: '🏛️',
     reading: '本殿 / honden',
     category: 'Architecture & Terrain',
     description:
@@ -29,6 +33,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Haiden',
+    icon: '🙏',
     reading: '拝殿 / haiden',
     category: 'Architecture & Terrain',
     description:
@@ -36,6 +41,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Temizuya',
+    icon: '💧',
     reading: '手水舎 / temizuya, chōzuya',
     category: 'Architecture & Terrain',
     description:
@@ -43,6 +49,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shimenawa',
+    icon: '🪢',
     reading: '注連縄 / shimenawa',
     category: 'Architecture & Terrain',
     description:
@@ -50,6 +57,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Komainu',
+    icon: '🦁',
     reading: '狛犬 / komainu',
     category: 'Architecture & Terrain',
     description:
@@ -57,6 +65,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Chinju no Mori',
+    icon: '🌲',
     reading: '鎮守の杜 / chinju no mori',
     category: 'Architecture & Terrain',
     description:
@@ -64,6 +73,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Nirei Nihakushu Ichirei (Deux Révérences, Deux Battements de Mains, Une Révérence)',
+    icon: '🎭',
     reading: '二礼二拍手一礼 / nirei nihakushu ichirei',
     category: 'Étiquette de Visite',
     description:
@@ -71,6 +81,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Hatsuho-ryo',
+    icon: '🏚️',
     reading: '初穂料 / hatsuho-ryō',
     category: 'Étiquette de Visite',
     description:
@@ -78,6 +89,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Goshuin',
+    icon: '🚧',
     reading: '御朱印 / goshuin',
     category: 'Étiquette de Visite',
     description:
@@ -85,6 +97,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Goshintai',
+    icon: '🏢',
     reading: '御神体 / goshintai',
     category: 'Étiquette de Visite',
     description:
@@ -92,6 +105,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Yaoyorozu no Kami',
+    icon: '🌳',
     reading: '八百万の神 / yaoyorozu no kami',
     category: 'Divinités & Croyances',
     description:
@@ -99,6 +113,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Ujigami',
+    icon: '🙇',
     reading: '氏神 / ujigami',
     category: 'Divinités & Croyances',
     description:
@@ -106,6 +121,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Ubusunagami',
+    icon: '💴',
     reading: '産土神 / ubusunagami',
     category: 'Divinités & Croyances',
     description:
@@ -113,6 +129,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Guji',
+    icon: '🖋️',
     reading: '宮司 / gūji',
     category: 'Divinités & Croyances',
     description:
@@ -120,6 +137,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shikinen Sengu',
+    icon: '✨',
     reading: '式年遷宮 / shikinen sengū',
     category: 'Fêtes & Autres',
     description:
@@ -127,6 +145,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Kannazuki / Kamiarizuki',
+    icon: '🪙',
     reading: '神無月・神在月 / kannazuki, kamiarizuki',
     category: 'Fêtes & Autres',
     description:
@@ -134,6 +153,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Reitaisai',
+    icon: '🎯',
     reading: '例大祭 / reitaisai',
     category: 'Fêtes & Autres',
     description:
@@ -141,6 +161,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Kagura-den',
+    icon: '🌿',
     reading: '神楽殿 / kagura-den',
     category: 'Architecture & Terrain',
     description:
@@ -148,6 +169,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Chigi et Katsuogi',
+    icon: '🌌',
     reading: '千木・鰹木 / chigi, katsuogi',
     category: 'Architecture & Terrain',
     description:
@@ -155,6 +177,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Tamagaki',
+    icon: '🏘️',
     reading: '玉垣 / tamagaki',
     category: 'Architecture & Terrain',
     description:
@@ -162,6 +185,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shamusho',
+    icon: '👶',
     reading: '社務所 / shamusho',
     category: 'Architecture & Terrain',
     description:
@@ -169,6 +193,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Goshinboku',
+    icon: '👘',
     reading: '御神木 / goshinboku',
     category: 'Architecture & Terrain',
     description:
@@ -176,6 +201,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Saisen',
+    icon: '📿',
     reading: '賽銭 / saisen',
     category: 'Étiquette de Visite',
     description:
@@ -183,6 +209,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Seichu',
+    icon: '💃',
     reading: '正中 / seichū',
     category: 'Étiquette de Visite',
     description:
@@ -190,6 +217,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Tamagushi Hoten',
+    icon: '🕊️',
     reading: '玉串奉奠 / tamagushi hōten',
     category: 'Étiquette de Visite',
     description:
@@ -197,6 +225,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shinshoku',
+    icon: '🦊',
     reading: '神職 / shinshoku',
     category: 'Divinités & Croyances',
     description:
@@ -204,6 +233,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Miko',
+    icon: '🏮',
     reading: '巫女 / miko',
     category: 'Divinités & Croyances',
     description:
@@ -211,6 +241,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Saijin',
+    icon: '🏗️',
     reading: '祭神 / saijin',
     category: 'Divinités & Croyances',
     description:
@@ -218,6 +249,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shinshi',
+    icon: '🗓️',
     reading: '神使 / shinshi',
     category: 'Divinités & Croyances',
     description:
@@ -225,6 +257,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Sessha et Massha',
+    icon: '🎊',
     reading: '摂社・末社 / sessha, massha',
     category: 'Divinités & Croyances',
     description:
@@ -232,6 +265,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Hatsumode',
+    icon: '🎍',
     reading: '初詣 / hatsumōde',
     category: 'Fêtes & Autres',
     description:
@@ -239,6 +273,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Shichi-Go-San',
+    icon: '🎏',
     reading: '七五三 / shichi-go-san',
     category: 'Fêtes & Autres',
     description:
@@ -246,6 +281,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Mikoshi',
+    icon: '🎐',
     reading: '神輿 / mikoshi',
     category: 'Fêtes & Autres',
     description:
@@ -253,6 +289,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Chinowa Kuguri',
+    icon: '⭕',
     reading: '茅の輪くぐり / chinowa kuguri',
     category: 'Fêtes & Autres',
     description:
@@ -260,6 +297,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Omamori',
+    icon: '🧧',
     reading: '御守り / omamori',
     category: 'Amulettes et Porte-bonheur',
     description:
@@ -267,6 +305,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Ema',
+    icon: '📝',
     reading: '絵馬 / ema',
     category: 'Amulettes et Porte-bonheur',
     description:
@@ -274,6 +313,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Omikuji',
+    icon: '🎋',
     reading: 'おみくじ / omikuji',
     category: 'Amulettes et Porte-bonheur',
     description:
@@ -281,6 +321,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Ofuda',
+    icon: '📄',
     reading: '御札 / ofuda',
     category: 'Amulettes et Porte-bonheur',
     description:
@@ -288,6 +329,7 @@ export const glossaryTermsFr: GlossaryTerm[] = [
   },
   {
     term: 'Hamaya',
+    icon: '🏹',
     reading: '破魔矢 / hamaya',
     category: 'Amulettes et Porte-bonheur',
     description:
