@@ -21,10 +21,21 @@ import { glossaryTermsEs, glossaryCategoriesEs } from '../../../data/glossary.es
       class="w-full rounded-full border border-shrine-gold/40 bg-white px-5 py-2.5 text-sm text-shrine-ink placeholder:text-shrine-ink-soft focus:outline-none focus:ring-2 focus:ring-shrine-vermillion"
     />
 
+    <nav class="mt-6 flex flex-wrap gap-2" aria-label="Índice de categorías">
+      {glossaryCategoriesEs.map((category, i) => (
+        <a
+          href={`#glossary-category-${i}`}
+          class="rounded-full border border-shrine-gold/30 bg-white px-3 py-1.5 text-xs text-shrine-ink-soft transition hover:border-shrine-vermillion hover:text-shrine-vermillion-dark"
+        >
+          {category}
+        </a>
+      ))}
+    </nav>
+
     <div class="mt-8 space-y-10">
-      {glossaryCategoriesEs.map((category) => (
+      {glossaryCategoriesEs.map((category, i) => (
         <div class="glossary-category">
-          <h2 class="font-serif-jp text-lg font-bold text-shrine-vermillion-dark">{category}</h2>
+          <h2 id={`glossary-category-${i}`} class="scroll-mt-24 font-serif-jp text-lg font-bold text-shrine-vermillion-dark">{category}</h2>
           <dl class="mt-4 divide-y divide-shrine-gold/15 rounded-2xl border border-shrine-gold/20 bg-white">
             {glossaryTermsEs
               .filter((t) => t.category === category)
