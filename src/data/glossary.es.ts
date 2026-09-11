@@ -257,7 +257,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Sessha / Massha',
-    icon: '🏮',
+    icon: '🏠',
     reading: '摂社・末社 / sessha, massha',
     category: 'Deidades y Fe',
     description:
@@ -281,7 +281,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Mikoshi',
-    icon: '🎐',
+    icon: '🏮',
     reading: '神輿 / mikoshi',
     category: 'Eventos y Otros',
     description:
