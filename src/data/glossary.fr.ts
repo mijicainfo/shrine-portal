@@ -64,6 +64,54 @@ export const glossaryTermsFr: GlossaryTerm[] = [
       'Les sanctuaires vénérant Inari, divinité des récoltes abondantes et de la prospérité des affaires. Ils se distinguent par leurs statues de renards, messagers (shinshi) de la divinité, et leurs tunnels de torii vermillon appelés « senbon torii » ; Fushimi Inari Taisha en est le sanctuaire principal.',
   },
   {
+    term: 'Shinto',
+    icon: '⛩️',
+    reading: '神道 / shintō',
+    category: 'Shintoïsme',
+    description:
+      'La croyance ancestrale du Japon. Sans fondateur ni texte sacré précis, elle vénère les phénomènes naturels eux-mêmes — montagnes, mer, vent et pluie — ainsi que les ancêtres, en tant que kami, et accorde une grande importance à la pureté et à l\'harmonie avec la nature. Plutôt qu\'une religion où l\'on choisit d\'« y croire ou non » comme le bouddhisme, il s\'est transmis comme une coutume et une culture profondément ancrées dans la vie quotidienne.',
+  },
+  {
+    term: 'Shinbutsu Shugo et Shinbutsu Bunri',
+    icon: '☯️',
+    reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',
+    category: 'Shintoïsme',
+    description:
+      'Le processus par lequel le shintoïsme et le bouddhisme, fusionnés au fil des siècles, en sont venus à mêler leurs pratiques — un bouddha vénéré dans un sanctuaire, ou un torii devant un temple bouddhiste — est appelé « shinbutsu shūgō ». L\'édit de séparation du shinto et du bouddhisme (shinbutsu bunri), promulgué en 1868 (1re année de l\'ère Meiji), a séparé institutionnellement sanctuaires et temples, mais les traces de ce lien ancien restent visibles aujourd\'hui dans de nombreux sanctuaires à travers le pays.',
+  },
+  {
+    term: 'Ujiko',
+    icon: '🏘️',
+    reading: '氏子 / ujiko',
+    category: 'Shintoïsme',
+    description:
+      'Les habitants vivant aux abords d\'un sanctuaire qui vénère leur ujigami, et qui soutiennent ce sanctuaire au sein de la communauté locale. Ils participent souvent à l\'organisation des fêtes et à l\'entretien du sanctuaire — en somme, le lien vivant entre le sanctuaire et son quartier.',
+  },
+  {
+    term: 'Sukeisha',
+    icon: '🙏',
+    reading: '崇敬者 / sūkeisha',
+    category: 'Shintoïsme',
+    description:
+      'Contrairement aux ujiko, ces fidèles ne résident pas nécessairement à proximité du sanctuaire, mais lui vouent une dévotion personnelle et viennent parfois de loin pour s\'y recueillir ou y faire des offrandes. Plus un sanctuaire est réputé à l\'échelle nationale, plus il tend à compter de nombreux sūkeisha.',
+  },
+  {
+    term: 'Kegare et Harai',
+    icon: '💧',
+    reading: '穢れ・祓い / kegare, harai',
+    category: 'Shintoïsme',
+    description:
+      'Dans le shintoïsme, les impuretés que l\'on croit s\'accumuler sur le corps et l\'esprit au fil de la vie quotidienne sont appelées « kegare », et l\'acte de les éliminer, « harai ». Les ablutions au Temizuya, le passage sous l\'anneau du Chinowa Kuguri ou les rites de purification (oharai) accomplis par un prêtre sont autant de pratiques destinées à purifier ces impuretés.',
+  },
+  {
+    term: 'Naorai',
+    icon: '🍶',
+    reading: '直会 / naorai',
+    category: 'Shintoïsme',
+    description:
+      'Le rite qui suit une cérémonie shinto, au cours duquel les participants partagent le saké sacré (omiki) et les offrandes alimentaires (shinsen) présentés au kami. Partager ce repas avec la divinité est censé permettre de recevoir une part de sa puissance.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',

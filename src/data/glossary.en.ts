@@ -64,6 +64,54 @@ export const glossaryTermsEn: GlossaryTerm[] = [
       'Shrines dedicated to Inari, the deity of agriculture and business prosperity. They are known for fox (kitsune) statues — regarded as the deity\'s messengers — and for long tunnels of vermillion torii gates known as "Senbon Torii." Fushimi Inari Taisha is the head shrine of the Inari lineage.',
   },
   {
+    term: 'Shinto',
+    icon: '⛩️',
+    reading: '神道 / shintō',
+    category: 'Shinto',
+    description:
+      'Japan\'s indigenous faith. It has no single founder or scripture, and instead reveres natural phenomena themselves — mountains, the sea, wind and rain — as well as ancestors, as kami, placing great value on purity and harmony with nature. Rather than a religion one consciously chooses to believe in, as with Buddhism, it has been passed down as a custom and culture woven into everyday life.',
+  },
+  {
+    term: 'Shinbutsu Shugo / Shinbutsu Bunri',
+    icon: '☯️',
+    reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',
+    category: 'Shinto',
+    description:
+      'Shinbutsu shugo refers to the centuries-long blending of Shinto and Buddhism, a fusion so thorough that shrines once enshrined Buddhist figures and temples had their own torii gates. The Shinbutsu Bunri edict of 1868, the first year of the Meiji era, officially separated shrines and temples — yet traces of that old connection can still be seen at shrines across Japan today.',
+  },
+  {
+    term: 'Ujiko',
+    icon: '🏘️',
+    reading: '氏子 / ujiko',
+    category: 'Shinto',
+    description:
+      'The people who live near a shrine enshrining their ujigami and support that shrine as members of the local community. Ujiko are often involved in running festivals and maintaining the shrine — in effect, the link between a shrine and its neighborhood.',
+  },
+  {
+    term: 'Sukeisha',
+    icon: '🙏',
+    reading: '崇敬者 / sūkeisha',
+    category: 'Shinto',
+    description:
+      'Unlike ujiko, sukeisha are not tied to living in a shrine\'s local area — they are devotees who worship a shrine out of personal faith, traveling from afar to visit and make offerings. Shrines with a strong nationwide reputation tend to have especially large numbers of sukeisha.',
+  },
+  {
+    term: 'Kegare / Harai',
+    icon: '💧',
+    reading: '穢れ・祓い / kegare, harai',
+    category: 'Shinto',
+    description:
+      'In Shinto, the impurities believed to accumulate on the body and spirit through everyday life are called kegare, and the acts that remove them are called harai. Purifying the hands and mouth at the temizuya, passing through the chinowa kuguri ring, and formal harai rites are all ways of cleansing this kegare.',
+  },
+  {
+    term: 'Naorai',
+    icon: '🍶',
+    reading: '直会 / naorai',
+    category: 'Shinto',
+    description:
+      'A ritual held after a Shinto ceremony in which participants share the omiki (sacred sake) and shinsen (food offerings) that had been presented to the kami. Eating together with the kami in this way is believed to let worshippers receive a portion of the kami\'s power.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',

@@ -64,6 +64,54 @@ export const glossaryTermsEs: GlossaryTerm[] = [
       'Un santuario que venera a Inari, la deidad de la abundancia de los cinco cereales y de la prosperidad comercial. Se caracteriza por las estatuas de zorro (kitsune), consideradas los mensajeros (shinshi) de la deidad, y por los "Senbon Torii", las hileras de torii bermellón. Fushimi Inari Taisha es su santuario principal.',
   },
   {
+    term: 'Shinto',
+    icon: '⛩️',
+    reading: '神道 / shintō',
+    category: 'Sintoísmo',
+    description:
+      'La fe autóctona de Japón. No tiene un fundador ni escrituras específicas, y se caracteriza por venerar como kami los propios fenómenos naturales —montañas, mar, viento y lluvia— así como a los antepasados, valorando la pureza y la armonía con la naturaleza. Más que una religión que se «cree o no se cree», como ocurre con el budismo, se ha transmitido como una costumbre y una cultura arraigadas en la vida cotidiana.',
+  },
+  {
+    term: 'Shinbutsu Shugo / Shinbutsu Bunri',
+    icon: '☯️',
+    reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',
+    category: 'Sintoísmo',
+    description:
+      'El sintoísmo y el budismo se fueron fusionando a lo largo de los siglos, hasta el punto de que había budas venerados en santuarios y torii en templos budistas; a este estado se le llama «shinbutsu shūgō». El edicto de separación del sintoísmo y el budismo (shinbutsu bunri), promulgado en 1868, el primer año de la era Meiji, separó institucionalmente santuarios y templos, aunque hoy en día todavía pueden verse en muchos santuarios vestigios de aquella antigua unión.',
+  },
+  {
+    term: 'Ujiko',
+    icon: '🏘️',
+    reading: '氏子 / ujiko',
+    category: 'Sintoísmo',
+    description:
+      'Las personas que viven en los alrededores del santuario donde se venera a su ujigami y que sostienen ese santuario dentro de la comunidad. A menudo participan en la organización de festivales y en el mantenimiento del santuario, actuando como el nexo entre el santuario y la comunidad local.',
+  },
+  {
+    term: 'Sukeisha',
+    icon: '🙏',
+    reading: '崇敬者 / sūkeisha',
+    category: 'Sintoísmo',
+    description:
+      'A diferencia de los ujiko, no viven necesariamente en un área concreta, pero veneran un santuario determinado y acuden a él —a menudo desde lejos— para visitarlo y hacer ofrendas. Cuanto más famoso es un santuario a nivel nacional, mayor suele ser el número de sūkeisha que tiene.',
+  },
+  {
+    term: 'Kegare / Harai',
+    icon: '💧',
+    reading: '穢れ・祓い / kegare, harai',
+    category: 'Sintoísmo',
+    description:
+      'En el sintoísmo, se denomina «kegare» a la impureza que se cree que se va acumulando en el cuerpo y el espíritu a lo largo de la vida cotidiana, y «harai» al acto de eliminarla. El lavado ritual en el temizuya, el paso a través del chinowa (aro de juncos) o los ritos de purificación son todos ellos formas de purificar esta kegare.',
+  },
+  {
+    term: 'Naorai',
+    icon: '🍶',
+    reading: '直会 / naorai',
+    category: 'Sintoísmo',
+    description:
+      'Un rito celebrado tras una ceremonia sintoísta, en el que los participantes comparten el sake sagrado (omiki) y las ofrendas de comida (shinsen) presentadas al kami. Compartir la comida con el kami simboliza recibir una parte de su poder.',
+  },
+  {
     term: 'Torii',
     icon: '⛩️',
     reading: '鳥居 / torii',
