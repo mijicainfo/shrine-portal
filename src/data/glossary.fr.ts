@@ -72,6 +72,14 @@ export const glossaryTermsFr: GlossaryTerm[] = [
       'La croyance ancestrale du Japon. Sans fondateur ni texte sacré précis, elle vénère les phénomènes naturels eux-mêmes — montagnes, mer, vent et pluie — ainsi que les ancêtres, en tant que kami, et accorde une grande importance à la pureté et à l\'harmonie avec la nature. Plutôt qu\'une religion où l\'on choisit d\'« y croire ou non » comme le bouddhisme, il s\'est transmis comme une coutume et une culture profondément ancrées dans la vie quotidienne.',
   },
   {
+    term: 'Otera',
+    icon: '🪷',
+    reading: 'お寺 / otera',
+    category: 'Shintoïsme',
+    description:
+      'Un lieu de culte fondé sur les enseignements du bouddhisme, où l\'on vénère des statues de bouddha et où les moines pratiquent ascèse et rituels. Alors que le sanctuaire (jinja) vénère les kami du shinto, le temple vénère les bouddhas, objets de la foi bouddhiste — telle est la différence entre les deux. Au Japon, sanctuaires et temples ont parfois coexisté sur un même site au fil d\'une longue histoire ; ce lien est présenté dans l\'entrée suivante, « Shinbutsu Shugo et Shinbutsu Bunri ».',
+  },
+  {
     term: 'Shinbutsu Shugo et Shinbutsu Bunri',
     icon: '☯️',
     reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',

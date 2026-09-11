@@ -72,6 +72,14 @@ export const glossaryTermsEn: GlossaryTerm[] = [
       'Japan\'s indigenous faith. It has no single founder or scripture, and instead reveres natural phenomena themselves — mountains, the sea, wind and rain — as well as ancestors, as kami, placing great value on purity and harmony with nature. Rather than a religion one consciously chooses to believe in, as with Buddhism, it has been passed down as a custom and culture woven into everyday life.',
   },
   {
+    term: 'Otera',
+    icon: '🪷',
+    reading: 'お寺 / otera',
+    category: 'Shinto',
+    description:
+      'A facility based on Buddhist teachings, where Buddhist images are enshrined and priests carry out religious training and ceremonies. Whereas a jinja (Shinto shrine) enshrines kami, a temple instead enshrines butsu, the objects of Buddhist devotion. Japan has a long history of shrines and temples coexisting on the same grounds, a relationship covered in the next entry, Shinbutsu Shugo / Shinbutsu Bunri.',
+  },
+  {
     term: 'Shinbutsu Shugo / Shinbutsu Bunri',
     icon: '☯️',
     reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',

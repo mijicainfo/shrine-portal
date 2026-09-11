@@ -72,6 +72,14 @@ export const glossaryTermsEs: GlossaryTerm[] = [
       'La fe autóctona de Japón. No tiene un fundador ni escrituras específicas, y se caracteriza por venerar como kami los propios fenómenos naturales —montañas, mar, viento y lluvia— así como a los antepasados, valorando la pureza y la armonía con la naturaleza. Más que una religión que se «cree o no se cree», como ocurre con el budismo, se ha transmitido como una costumbre y una cultura arraigadas en la vida cotidiana.',
   },
   {
+    term: 'Otera',
+    icon: '🪷',
+    reading: 'お寺 / otera',
+    category: 'Sintoísmo',
+    description:
+      'Un recinto basado en las enseñanzas budistas donde se venera una imagen de Buda y los monjes budistas realizan su formación y sus ceremonias. A diferencia de un santuario (jinja), que venera a los kami del sintoísmo, un templo venera a los budas, el objeto de fe del budismo. En Japón, a lo largo de su larga historia, hubo épocas en que santuarios y templos coexistían dentro de un mismo recinto; esa relación se explica en la siguiente entrada, «Shinbutsu Shugo / Shinbutsu Bunri».',
+  },
+  {
     term: 'Shinbutsu Shugo / Shinbutsu Bunri',
     icon: '☯️',
     reading: '神仏習合・神仏分離 / shinbutsu shūgō, shinbutsu bunri',
