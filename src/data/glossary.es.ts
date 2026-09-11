@@ -33,7 +33,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Haiden',
-    icon: '🙏',
+    icon: '🛕',
     reading: '拝殿 / haiden',
     category: 'Arquitectura y Recinto',
     description:
@@ -73,7 +73,7 @@ export const glossaryTermsEs: GlossaryTerm[] = [
   },
   {
     term: 'Nirei Nihakushu Ichirei (Dos Reverencias, Dos Palmadas, Una Reverencia)',
-    icon: '🙇',
+    icon: '🙏',
     reading: '二礼二拍手一礼 / nirei nihakushu ichirei',
     category: 'Etiqueta de Visita',
     description:

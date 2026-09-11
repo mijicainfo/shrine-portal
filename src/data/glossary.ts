@@ -33,7 +33,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '拝殿',
-    icon: '🙏',
+    icon: '🛕',
     reading: 'はいでん',
     category: '建築・境内',
     description:
@@ -73,7 +73,7 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     term: '二礼二拍手一礼',
-    icon: '🙇',
+    icon: '🙏',
     reading: 'にれいにはくしゅいちれい',
     category: '参拝作法',
     description:

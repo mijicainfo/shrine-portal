@@ -33,7 +33,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '하이덴(拝殿)',
-    icon: '🙏',
+    icon: '🛕',
     reading: 'はいでん / haiden',
     category: '건축과 경내',
     description:
@@ -73,7 +73,7 @@ export const glossaryTermsKo: GlossaryTerm[] = [
   },
   {
     term: '니레이 니하쿠슈 이치레이(二礼二拍手一礼)',
-    icon: '🙇',
+    icon: '🙏',
     reading: 'にれいにはくしゅいちれい / nirei nihakushu ichirei',
     category: '참배 예절',
     description:

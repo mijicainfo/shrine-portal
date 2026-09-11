@@ -33,7 +33,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '拜殿',
-    icon: '🙏',
+    icon: '🛕',
     reading: '拝殿 / haiden',
     category: '建築與境內',
     description:
@@ -73,7 +73,7 @@ export const glossaryTermsZh: GlossaryTerm[] = [
   },
   {
     term: '二拜二拍手一拜',
-    icon: '🙇',
+    icon: '🙏',
     reading: '二礼二拍手一礼 / nirei nihakushu ichirei',
     category: '參拜禮儀',
     description:
