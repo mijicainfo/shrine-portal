@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ShrineCard from '../../components/ShrineCard.astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 import { buildItemListStructuredData } from '../../lib/seo';
 
 export async function getStaticPaths() {
@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { data } = guide;
+const { Content } = await render(guide);
 
 const entries = await Promise.all(
   data.entries.map(async (entry) => {
@@ -65,5 +66,9 @@ const structuredData = buildItemListStructuredData(
         </li>
       ))}
     </ol>
+
+    <div class="prose prose-neutral mt-10 max-w-none border-t border-shrine-gold/15 pt-10 prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion">
+      <Content />
+    </div>
   </section>
 </Layout>
