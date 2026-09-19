@@ -130,6 +130,11 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
 <script>
   const PAGE_SIZE = 30;
 
+  // カタカナをひらがなに正規化して、表記ゆれ（例:「イセ」「いせ」）を吸収する
+  function normalizeKana(str: string): string {
+    return str.replace(/[ァ-ヶ]/g, (ch) => String.fromCharCode(ch.charCodeAt(0) - 0x60));
+  }
+
   const params = new URLSearchParams(window.location.search);
   const searchInput = document.getElementById('search-input') as HTMLInputElement;
   const prefSelect = document.getElementById('pref-select') as HTMLSelectElement;
@@ -161,7 +166,7 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
   function applyFilter(resetLimit = true) {
     if (resetLimit) visibleLimit = PAGE_SIZE;
 
-    const query = searchInput.value.trim().toLowerCase();
+    const query = normalizeKana(searchInput.value.trim().toLowerCase());
     const pref = prefSelect.value;
     const selectedBenefits = benefitCheckboxes.filter((cb) => cb.checked).map((cb) => cb.value);
     const requireGoshuin = goshuinOnly.checked;
@@ -170,10 +175,10 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
     const matched: HTMLElement[] = [];
 
     for (const item of items) {
-      const name = (item.dataset.name ?? '').toLowerCase();
+      const name = normalizeKana((item.dataset.name ?? '').toLowerCase());
       const benefitsStr = item.dataset.benefits ?? '';
       const deitiesStr = item.dataset.deities ?? '';
-      const location = (item.dataset.location ?? '').toLowerCase();
+      const location = normalizeKana((item.dataset.location ?? '').toLowerCase());
       const prefecture = item.dataset.prefecture ?? '';
       const region = item.dataset.region ?? '';
       const hasGoshuin = item.dataset.goshuin === 'true';
@@ -184,8 +189,8 @@ const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].so
         !query ||
         name.includes(query) ||
         location.includes(query) ||
-        benefitsStr.toLowerCase().includes(query) ||
-        deitiesStr.toLowerCase().includes(query);
+        normalizeKana(benefitsStr.toLowerCase()).includes(query) ||
+        normalizeKana(deitiesStr.toLowerCase()).includes(query);
       const matchesPref = !pref || prefecture === pref;
       const matchesRegion = !selectedRegion || region === selectedRegion;
       const matchesBenefits = selectedBenefits.length === 0 || selectedBenefits.some((b) => itemBenefits.includes(b));
