@@ -71,4 +71,3 @@ Shiogama est réputée pour ses fruits de mer frais, et de nombreux visiteurs vi
 
 - <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AF%E3%82%8C%E3%81%BE%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E5%A1%A9%E7%AB%88%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>Cafe Harema</strong></a> : Situé entre la gare de Hon-Shiogama JR et le sanctuaire, ce café aménagé dans une ancienne auberge du début de l'ère Meiji sert des douceurs et des repas légers aux saveurs locales de Shiogama.
 - Autour de la gare de Hon-Shiogama, plusieurs confiseries locales servent des douceurs comme les goshiki dango (boulettes cinq couleurs), parfaites pour une pause gourmande en flânant après la visite.
-</content>

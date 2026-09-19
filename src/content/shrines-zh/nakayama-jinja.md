@@ -82,4 +82,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E6%9C%AC%E5%85%89%E5%AF%BA%20%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%B4%A5%E5%B1%B1%E5%B8%82%E4%B8%80%E5%AE%AE" target="_blank" rel="noopener noreferrer"><strong>本光寺</strong></a>：與中山神社同位於一宮地區的黃檗宗寺院，以樹齡約300年、津山市指定天然紀念物的兩株「龍木犀」聞名。從中山神社步行可達，適合順道造訪。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E7%BE%8E%E4%BD%9C%E7%B7%8F%E7%A4%BE%E5%AE%AE%20%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%B4%A5%E5%B1%B1%E5%B8%82%E7%B7%8F%E7%A4%BE" target="_blank" rel="noopener noreferrer"><strong>美作總社宮</strong></a>：與中山神社、高野神社並列為「美作三社」之一，合祀美作65鄉912社神明的神社。本殿與中山神社同樣傳承「中山造」樣式，為國家指定重要文化財，適合比較兩者的建築樣式一同參觀。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%81%93%E3%81%AE%E9%A7%85%E4%B9%85%E7%B1%B3%E3%81%AE%E9%87%8C%20%E5%B2%A1%E5%B1%B1%E7%9C%8C%E6%B4%A5%E5%B1%B1%E5%B8%82%E5%AE%AE%E5%B0%BE" target="_blank" rel="noopener noreferrer"><strong>道之驛 久米之里</strong></a>：設有販售當地蔬菜與特產的直銷所，以及活用津山食材的農家餐廳。參拜往返途中順道造訪，可品嚐津山獨有的美食。
-</content>

@@ -105,4 +105,3 @@ Au-delà du sanctuaire principal, l'allée traversant le Naiku longe plusieurs b
 - <a href="https://www.google.com/maps/search/?api=1&query=Akafuku%20Honten%20Ise%20Mie" target="_blank" rel="noopener noreferrer"><strong>Akafuku Honten</strong></a> : Un salon de thé historique qui daterait de 1707, célèbre pour ses mochis akafuku.
 - <a href="https://www.google.com/maps/search/?api=1&query=Fukusuke%20Ise%20Mie" target="_blank" rel="noopener noreferrer"><strong>Fukusuke</strong></a> : Un restaurant d'udon d'Ise très prisé, situé dans Okage Yokocho.
 - <a href="https://www.google.com/maps/search/?api=1&query=Sengukan%20Ise%20Mie" target="_blank" rel="noopener noreferrer"><strong>Sengukan</strong></a> : Un musée situé à côté du Geku, dédié au Shikinen Sengu, où l'on peut en apprendre davantage sur les techniques de reconstruction et les trésors sacrés.
-</content>

@@ -86,4 +86,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E8%89%AF%E5%B1%B1%E7%A5%9E%E7%B1%A0%E7%9F%B3%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>高良山神籠石</strong></a>：高良大社の背後に広がる古代山城の遺構で、巨大な切り石が連なる様子を実際に歩いて見学できる国指定史跡です。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E6%B0%B4%E5%A4%A9%E5%AE%AE%20%E7%A6%8F%E5%B2%A1%E7%9C%8C%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>水天宮</strong></a>：全国に鎮座する水天宮の総本宮で、高良大社から車で10分ほどの久留米市街にあります。安産・子授けの神として篤く信仰されています。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E6%A9%8B%E6%96%87%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%20%E4%B9%85%E7%95%99%E7%B1%B3%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>石橋文化センター</strong></a>：久留米市美術館や日本庭園、バラ園を擁する複合文化施設で、久留米市中心部の代表的な観光スポットのひとつです。
-</content>

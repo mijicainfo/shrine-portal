@@ -85,4 +85,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E5%9B%BD%E5%96%B6%E3%81%B2%E3%81%9F%E3%81%A1%E6%B5%B7%E6%B5%9C%E5%85%AC%E5%9C%92%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%B2%E3%81%9F%E3%81%A1%E3%81%AA%E3%81%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>國營常陸海濱公園</strong></a>：以春季粉蝶花、秋季掃帚草聞名全國的廣闊國營公園，從酒列磯前神社開車約10分鐘可達。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%82%A3%E7%8F%82%E6%B9%8A%E3%81%8A%E3%81%95%E3%81%8B%E3%81%AA%E5%B8%82%E5%A0%B4%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%B2%E3%81%9F%E3%81%A1%E3%81%AA%E3%81%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>那珂湊魚市場</strong></a>：處理那珂湊漁港捕獲鮮魚的市場，周邊食堂可品嚐海鮮蓋飯與海邊燒烤。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E5%B9%B3%E7%A3%AF%E6%B5%B7%E5%B2%B8%20%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%B2%E3%81%9F%E3%81%A1%E3%81%AA%E3%81%8B%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>平磯海岸</strong></a>：緊鄰酒列磯前神社的礁岩海岸，可觀察潮池生物、體驗戲水樂趣，深受當地人喜愛。
-</content>

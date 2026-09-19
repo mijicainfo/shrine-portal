@@ -92,4 +92,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E6%9D%A5%E3%82%89%E3%81%A3%E3%81%9B%E6%9C%AC%E5%BA%97%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>來らっせ本店</strong></a>：距二荒山神社步行約4分鐘，是宇都宮餃子名店雲集的餃子專門設施，可在此吃遍宇都宮名物餃子，是觀光客喜愛的景點。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E6%9D%BE%E3%81%8C%E5%B3%B0%E6%95%99%E4%BC%9A%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>天主教松峰教會</strong></a>：從二荒山神社穿過獵戶座通約步行15分鐘。以大谷石建成的雙塔令人印象深刻，是建於昭和初期的教堂。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%AA%E3%83%AA%E3%82%AA%E3%83%B3%E9%80%9A%E3%82%8A%20%E6%A0%83%E6%9C%A8%E7%9C%8C%E5%AE%87%E9%83%BD%E5%AE%AE%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>獵戶座通</strong></a>：從二荒山神社附近延伸的拱廊商店街，餐飲店與商店林立，是漫步宇都宮街頭的據點。
-</content>
