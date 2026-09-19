@@ -12,6 +12,7 @@ export const benefitTranslationsZh: Record<string, string> = {
   必勝祈願: '祈求必勝',
   五穀豊穣: '五穀豐收',
   海上安全: '海上平安',
+  水難除け: '水患消除',
   武運長久: '武運長久',
   安産: '安產',
   学業成就: '學業有成',

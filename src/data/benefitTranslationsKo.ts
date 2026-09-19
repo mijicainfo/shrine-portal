@@ -12,6 +12,7 @@ export const benefitTranslationsKo: Record<string, string> = {
   必勝祈願: '필승 기원',
   五穀豊穣: '오곡 풍요',
   海上安全: '해상 안전',
+  水難除け: '수해 방지',
   武運長久: '무운장구',
   安産: '순산',
   学業成就: '학업 성취',

@@ -12,6 +12,7 @@ export const benefitTranslationsEs: Record<string, string> = {
   必勝祈願: 'Victoria en la Competencia',
   五穀豊穣: 'Cosecha Abundante',
   海上安全: 'Seguridad Marítima',
+  水難除け: 'Protección contra Inundaciones',
   武運長久: 'Victoria en la Batalla',
   安産: 'Parto Seguro',
   学業成就: 'Éxito Académico',
