@@ -1,6 +1,6 @@
 ---
-title: "14 Shrines That Enshrine Japan's Real Historical Figures"
-description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, Date Masamune, and the legendary swordsman Miyamoto Musashi, we introduce fourteen shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
+title: "12 Shrines That Enshrine Japan's Real Historical Figures"
+description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, Date Masamune, and the legendary swordsman Miyamoto Musashi, we introduce twelve shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
 publishDate: 2026-09-20
 entries:
   - shrineId: "tanzan-jinja"
@@ -25,10 +25,6 @@ entries:
     note: "Musashi Jinja, in Mimasaka, Okayama Prefecture, enshrines Miyamoto Musashi, the legendary swordsman said never to have lost a duel. Founder of the Niten Ichi-ryu two-sword style and famed for his duel with Sasaki Kojiro on Ganryujima island, Musashi spent his final years in Kumamoto writing his treatise on strategy, The Book of Five Rings, before his death in 1645. His actual birthplace remains disputed to this day, with competing traditions pointing to both this area of Okayama and Harima Province in present-day Hyogo. The shrine itself is a comparatively recent creation, built in 1971 through donations gathered nationwide to honor the sword saint's memory."
   - shrineId: "hotoku-ninomiya-jinja"
     note: "Hotoku Ninomiya Jinja, in Odawara, enshrines Ninomiya Sontoku (Ninomiya Kinjiro), a farmer-philosopher of the late Edo period. Born into poverty, he taught himself to read and write, and over his lifetime is credited with rebuilding the finances of more than 600 struggling villages and domains through his \"Hotoku\" method. He died in 1856, and it wasn't until 1894 — a comparatively recent founding — that admirers built this shrine on his birthplace within Odawara Castle."
-  - shrineId: "meiji-jingu"
-    note: "Meiji Jingu, in Shibuya, Tokyo, enshrines Emperor Meiji, who guided Japan's modernization, together with Empress Shoken. Following the emperor's death in July 1912, voices from across the country calling to honor his memory led to the shrine's founding in 1920 on land in Yoyogi. The roughly 700,000-square-meter \"Meiji Jingu Forest\" surrounding the grounds is a man-made forest deliberately planned to mature over a century."
-  - shrineId: "nogi-jinja"
-    note: "Nogi Jinja, in Tokyo's Minato Ward, enshrines General Nogi Maresuke, who commanded the Siege of Port Arthur during the Russo-Japanese War, together with his wife, Nogi Shizuko. On the night of September 13, 1912 — the evening of Emperor Meiji's state funeral — the couple took their own lives at their residence in an act of ritual loyalty (junshi) to their departed sovereign. Moved by their devotion, admirers founded the shrine in 1923 on the very site where they had lived."
   - shrineId: "togo-jinja"
     note: "Togo Jinja, in Shibuya, Tokyo, enshrines Admiral Togo Heihachiro, Commander-in-Chief of the Combined Fleet who defeated Russia's Baltic Fleet at the Battle of Tsushima during the Russo-Japanese War. Hailed abroad as the \"Nelson of the East,\" Togo died in 1934, and donations from naval circles and the public nationwide funded the shrine's founding in 1940 at Harajuku. Known today as the \"god of victory,\" it still draws devoted visitors before any high-stakes contest."
 ---
@@ -37,12 +33,11 @@ entries:
 
 Japan's shrines don't only enshrine mythological deities like Amaterasu, the sun goddess of Shinto legend — many also honor real historical figures as kami. Revering the spirit of someone who served the nation, or who died in an act of great loyalty, and hoping to draw on their virtue, is a tradition sometimes called "hitogami" (person-as-deity) worship, and it forms an important strand of Shinto practice.
 
-This guide introduces fourteen shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
+This guide introduces twelve shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
 
 ## Things to Know Before You Visit
 
 - **Most of these shrines are surprisingly recent foundations, dating from the Meiji era or later.** Although many of the figures honored here lived centuries earlier, the shrines themselves were often founded well after their deaths. Deifying a warlord or statesman turns out to be less an ancient, unbroken tradition than a distinctly modern phenomenon — the Meiji government actively promoted such figures as models of loyalty and service for a nation rebuilding its identity. The one clear exception is Tanzan Jinja in Nara, founded in 678 during the Asuka period — a genuinely ancient shrine with over 1,300 years of continuous history.
-- **Separate legend from established fact.** Historical figures inevitably accumulate legends over time, like the popular but largely discredited story that Takeda Shingen was killed by a sniper's bullet. This guide draws primarily on the verified history already documented on each shrine's own page, and flags points that remain disputed among historians.
-- **Approach Nogi Jinja's story with its historical weight in mind, not as a dramatic curiosity.** The ritual suicide of General Nogi Maresuke and his wife, Shizuko, following Emperor Meiji's death was a solemn act reflecting one way of facing a defining turning point in Japanese history — worth visiting with that context in mind rather than treating it as a sensational tale.
+- **Separate legend from established fact.** Historical figures inevitably accumulate legends over time, like the popular but largely discredited story that Takeda Shingen was killed by a sniper's bullet, or the ongoing dispute over Miyamoto Musashi's true birthplace. This guide draws primarily on the verified history already documented on each shrine's own page, and flags points that remain disputed among historians.
 
 You can find full details on each shrine's history, access, and goshuin information on its individual page.
