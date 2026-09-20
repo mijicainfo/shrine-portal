@@ -55,7 +55,7 @@ faq:
 
 ## History
 
-Toyokuni Jinja enshrines Toyotomi Hideyoshi, a man born the son of a poor peasant farmer who rose through the ranks under Oda Nobunaga to eventually unify all of Japan under his own rule. Hideyoshi's climb from a low-ranking foot soldier to Chancellor (Kampaku) and Grand Minister of State stands as one of the most remarkable stories of self-made success in Japanese history.
+Toyokuni Jinja enshrines Toyotomi Hideyoshi, a man born the son of a poor peasant farmer who rose through the ranks under Oda Nobunaga to eventually unify all of Japan under his own rule. Hideyoshi's climb from a low-ranking foot soldier to Chancellor (Kampaku) and Grand Minister of State stands as one of the most remarkable stories of self-made success in Japanese history — and, by most accounts, in world history as well.
 
 Hideyoshi died at Fushimi Castle on September 18, 1598, at the age of 63. In accordance with his will, a mausoleum was built the following year, in 1599, on the slopes of Mt. Amidagamine in Kyoto's Higashiyama district, and the imperial court granted him the divine title "Toyokuni Daimyojin" ("Great Illuminating Deity of the Bountiful Realm"), deifying him as a kami. The shrine's original buildings were said to have been built on an unprecedented scale, with lavish special festivals held there in its earliest years.
 

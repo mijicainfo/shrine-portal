@@ -55,7 +55,7 @@ faq:
 
 ## Histoire
 
-Toyokuni Jinja vénère Toyotomi Hideyoshi, un homme né fils d'un modeste paysan, qui gravit les échelons sous les ordres d'Oda Nobunaga avant de finir par unifier tout le Japon sous sa propre autorité. L'ascension de Hideyoshi, d'humble fantassin à chancelier (Kampaku) puis grand ministre d'État, reste l'une des plus remarquables histoires d'ascension personnelle de l'histoire japonaise.
+Toyokuni Jinja vénère Toyotomi Hideyoshi, un homme né fils d'un modeste paysan, qui gravit les échelons sous les ordres d'Oda Nobunaga avant de finir par unifier tout le Japon sous sa propre autorité. L'ascension de Hideyoshi, d'humble fantassin à chancelier (Kampaku) puis grand ministre d'État, reste l'une des plus remarquables histoires d'ascension personnelle de l'histoire japonaise — et, selon bien des avis, de l'histoire mondiale tout entière.
 
 Hideyoshi mourut au château de Fushimi le 18 septembre 1598, à l'âge de 63 ans. Conformément à son testament, un mausolée fut érigé l'année suivante, en 1599, sur les pentes du mont Amidagamine, dans le quartier de Higashiyama à Kyoto, et la cour impériale lui accorda le titre divin « Toyokuni Daimyojin » (« grande divinité illuminatrice du royaume abondant »), le déifiant ainsi comme kami. Les bâtiments d'origine du sanctuaire auraient été construits à une échelle sans précédent, et de fastueuses fêtes spéciales y furent célébrées dans ses premières années.
 

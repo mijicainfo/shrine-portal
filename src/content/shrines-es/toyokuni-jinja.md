@@ -55,7 +55,7 @@ faq:
 
 ## Historia
 
-Toyokuni Jinja venera a Toyotomi Hideyoshi, un hombre nacido hijo de un humilde campesino que ascendió bajo las órdenes de Oda Nobunaga hasta llegar a unificar todo Japón bajo su propio mando. El ascenso de Hideyoshi, desde soldado de infantería de bajo rango hasta canciller (Kampaku) y gran ministro de Estado, es una de las historias de éxito personal más extraordinarias de la historia japonesa.
+Toyokuni Jinja venera a Toyotomi Hideyoshi, un hombre nacido hijo de un humilde campesino que ascendió bajo las órdenes de Oda Nobunaga hasta llegar a unificar todo Japón bajo su propio mando. El ascenso de Hideyoshi, desde soldado de infantería de bajo rango hasta canciller (Kampaku) y gran ministro de Estado, es una de las historias de éxito personal más extraordinarias de la historia japonesa, y muchos dirían que también de la historia mundial.
 
 Hideyoshi murió en el castillo de Fushimi el 18 de septiembre de 1598, a los 63 años. Conforme a su testamento, al año siguiente, en 1599, se erigió un mausoleo en las laderas del monte Amidagamine, en el distrito de Higashiyama de Kioto, y la corte imperial le concedió el título divino «Toyokuni Daimyojin» («Gran Deidad Iluminadora del Reino Fértil»), deificándolo como kami. Se dice que los edificios originales del santuario se construyeron a una escala sin precedentes, con suntuosos festivales especiales celebrados allí en sus primeros años.
 
