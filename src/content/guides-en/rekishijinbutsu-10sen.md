@@ -1,6 +1,6 @@
 ---
-title: "10 Shrines That Enshrine Japan's Real Historical Figures"
-description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, we introduce ten shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
+title: "13 Shrines That Enshrine Japan's Real Historical Figures"
+description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, and Date Masamune, we introduce thirteen shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
 publishDate: 2026-09-20
 entries:
   - shrineId: "tanzan-jinja"
@@ -9,12 +9,18 @@ entries:
     note: "Minatogawa Jinja, in Kobe, enshrines Kusunoki Masashige — \"Dai-Nanko,\" the Great Lord Kusunoki — a general of the Nanboku-cho period famed for his unwavering loyalty to Emperor Go-Daigo. In 1336, hopelessly outnumbered by the forces of Ashikaga Takauji, Masashige was defeated at Minatogawa and took his own life alongside his brother and clansmen. More than 500 years later, in 1872, Emperor Meiji ordered a shrine built on the very site of his death. The grounds still hold the grave monument raised by Tokugawa Mitsukuni in 1692."
   - shrineId: "takeda-jinja"
     note: "Takeda Jinja, in Kofu, enshrines Takeda Shingen, one of the Sengoku period's most brilliant strategists, famous for his \"Furinkazan\" banner and his battles with Uesugi Kenshin at Kawanakajima. In 1573, while campaigning against Tokugawa forces at the Siege of Noda Castle, Shingen fell seriously ill and died soon after — a popular legend that he was shot by a sniper is now considered unreliable by most historians. The shrine was founded in 1919 on the ruins of Tsutsujigasaki Yakata, the residence of three generations of the Takeda clan."
+  - shrineId: "uesugi-jinja"
+    note: "Uesugi Jinja, in Yonezawa, Yamagata Prefecture, enshrines Uesugi Kenshin, the Echigo warlord famed for his five battles with Takeda Shingen at Kawanakajima and revered in his own time as a \"god of war\" and the \"Dragon of Echigo.\" Kenshin died suddenly in 1578; tradition holds that his body was sealed, still in armor, inside a large jar and carried by the Uesugi clan through every relocation that followed — from Kasugayama Castle to Aizu, and finally to Yonezawa Castle. In 1872, following the Meiji-era separation of Shinto and Buddhism, the memorial was reestablished as a proper shrine on the castle's former main compound, where banners bearing \"Bi\" (for Bishamonten) and \"Dragon\" still fly today."
   - shrineId: "kenkun-jinja"
     note: "Kenkun Jinja, atop Kyoto's Mt. Funaoka, enshrines Oda Nobunaga, who came within reach of unifying Japan only to meet a violent end. In June 1582, Nobunaga's own retainer Akechi Mitsuhide turned on him in a surprise attack at Kyoto's Honnoji temple, and with no escape possible, Nobunaga took his own life — the famous Honnoji Incident. Some 300 years later, in 1869, Emperor Meiji ordered the shrine built by imperial decree on this site tied to Nobunaga's own history."
+  - shrineId: "toyokuni-jinja"
+    note: "Toyokuni Jinja, in Kyoto's Higashiyama Ward, enshrines Toyotomi Hideyoshi, who rose from a peasant foot soldier to become the ruler who unified Japan. Hideyoshi died in 1598 and, by his own wish, was deified as \"Toyokuni Daimyojin\" — but after the Toyotomi clan's fall in the Siege of Osaka, Tokugawa Ieyasu had the title stripped and the shrine abolished. It was restored some 260 years later by imperial decree of Emperor Meiji, on the former grounds of Hoko-ji temple's Great Buddha Hall. Its National Treasure Karamon gate, a dazzling structure with ties to Fushimi Castle, remains one of Kyoto's most striking sights."
   - shrineId: "oyama-jinja-kanazawa"
     note: "Oyama Jinja, in Kanazawa, enshrines Maeda Toshiie, founder of the mighty Kaga Domain, together with his wife, Lady Matsu. Toshiie died in 1599, but given the domain's delicate relationship with the Tokugawa shogunate, openly deifying a former lord was politically difficult at the time — the shrine wasn't actually founded until 1873, in the early Meiji era. It's nationally known for its Shinmon gate, a National Important Cultural Property blending Japanese, Chinese, and Western architectural styles."
   - shrineId: "nikko-toshogu"
     note: "Nikko Toshogu, in Tochigi Prefecture, enshrines Tokugawa Ieyasu, founder of the Edo shogunate. Ieyasu died in 1616, and in accordance with his will, was enshrined the following year at Nikko — long a sacred site of mountain worship — as \"Tosho Daigongen.\" The dazzlingly ornate shrine buildings seen today, the result of a lavish rebuilding under the third shogun, Tokugawa Iemitsu, are registered as a UNESCO World Heritage Site."
+  - shrineId: "aoba-jinja"
+    note: "Aoba Jinja, in Sendai, enshrines Date Masamune, the \"One-Eyed Dragon\" who founded the Sendai Domain. Masamune died in 1636 and was laid to rest in the Zuihoden mausoleum on Mt. Kyogamine — but this is a separate site from Aoba Jinja itself, which former Sendai domain retainers successfully petitioned to have founded in 1874 on a different hill, Mt. Kitayama, specifically to worship him as a kami. The shrine's own spring grand festival gave rise to what is now the large, citywide Sendai Aoba Festival held every May."
   - shrineId: "hotoku-ninomiya-jinja"
     note: "Hotoku Ninomiya Jinja, in Odawara, enshrines Ninomiya Sontoku (Ninomiya Kinjiro), a farmer-philosopher of the late Edo period. Born into poverty, he taught himself to read and write, and over his lifetime is credited with rebuilding the finances of more than 600 struggling villages and domains through his \"Hotoku\" method. He died in 1856, and it wasn't until 1894 — a comparatively recent founding — that admirers built this shrine on his birthplace within Odawara Castle."
   - shrineId: "meiji-jingu"
@@ -29,7 +35,7 @@ entries:
 
 Japan's shrines don't only enshrine mythological deities like Amaterasu, the sun goddess of Shinto legend — many also honor real historical figures as kami. Revering the spirit of someone who served the nation, or who died in an act of great loyalty, and hoping to draw on their virtue, is a tradition sometimes called "hitogami" (person-as-deity) worship, and it forms an important strand of Shinto practice.
 
-This guide introduces ten shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
+This guide introduces thirteen shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
 
 ## Things to Know Before You Visit
 

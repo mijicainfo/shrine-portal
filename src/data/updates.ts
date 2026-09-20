@@ -27,13 +27,17 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-09-20',
+    shrineSlugs: ['toyokuni-jinja', 'uesugi-jinja', 'aoba-jinja'],
+  },
+  {
+    date: '2026-09-20',
     note: {
-      ja: '特集記事「歴史に名を残した武将・偉人を祀る神社10選」を公開しました',
-      en: 'Published a new featured guide: "10 Shrines That Enshrine Japan’s Real Historical Figures"',
-      zh: '發布了新的精選文章「供奉青史留名武將・偉人的神社10選」',
-      es: 'Publicamos un nuevo artículo destacado: "10 Santuarios que Consagran a Verdaderas Figuras Históricas de Japón"',
-      fr: 'Publication d’un nouvel article à la une : « 10 sanctuaires qui consacrent de vraies figures historiques japonaises »',
-      ko: '새로운 특집 기사 "역사에 이름을 남긴 무장・위인을 모신 신사 10선"을 공개했습니다',
+      ja: '特集記事「歴史に名を残した武将・偉人を祀る神社13選」を公開しました（豊臣秀吉・上杉謙信・伊達政宗を追加）',
+      en: 'Published a new featured guide: "13 Shrines That Enshrine Japan’s Real Historical Figures" (now including Toyotomi Hideyoshi, Uesugi Kenshin, and Date Masamune)',
+      zh: '發布了新的精選文章「供奉青史留名武將・偉人的神社13選」（新增豐臣秀吉、上杉謙信、伊達政宗）',
+      es: 'Publicamos un nuevo artículo destacado: "13 Santuarios que Consagran a Verdaderas Figuras Históricas de Japón" (ahora incluye a Toyotomi Hideyoshi, Uesugi Kenshin y Date Masamune)',
+      fr: 'Publication d’un nouvel article à la une : « 13 sanctuaires qui consacrent de vraies figures historiques japonaises » (avec désormais Toyotomi Hideyoshi, Uesugi Kenshin et Date Masamune)',
+      ko: '새로운 특집 기사 "역사에 이름을 남긴 무장・위인을 모신 신사 13선"을 공개했습니다 (도요토미 히데요시・우에스기 겐신・다테 마사무네 추가)',
       href: '/guides/rekishijinbutsu-10sen/',
     },
   },
