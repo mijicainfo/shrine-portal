@@ -12,14 +12,17 @@ const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0,
 
 const shrineById = new Map(shrines.map((s) => [s.id, s]));
 const updateItems = updates
-  .map((u) => ({
-    date: u.date,
-    shrines: u.shrineSlugs
+  .map((u) => {
+    if (u.note) {
+      return { date: u.date, kind: 'note' as const, text: u.note.es, href: u.note.href ? `/es${u.note.href}` : undefined };
+    }
+    const resolved = (u.shrineSlugs ?? [])
       .map((slug) => shrineById.get(slug))
       .filter((s): s is NonNullable<typeof s> => Boolean(s))
-      .map((s) => ({ name: s.data.name, href: `/es/shrines/${s.id}/` })),
-  }))
-  .filter((u) => u.shrines.length > 0)
+      .map((s) => ({ name: s.data.name, href: `/es/shrines/${s.id}/` }));
+    return resolved.length > 0 ? { date: u.date, kind: 'shrines' as const, shrines: resolved } : null;
+  })
+  .filter((u): u is NonNullable<typeof u> => Boolean(u))
   .slice(0, 5);
 
 const heroCandidateIds = [
@@ -231,13 +234,21 @@ const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsEs[b
             <li class="flex flex-col gap-1 py-3 text-sm sm:flex-row sm:items-baseline sm:gap-3">
               <span class="shrink-0 font-mono text-xs text-shrine-ink-soft sm:w-24">{item.date}</span>
               <span class="text-shrine-ink-soft">
-                Se añadieron{' '}
-                {item.shrines.map((s, i) => (
+                {item.kind === 'shrines' ? (
                   <>
-                    {i > 0 && ', '}
-                    <a href={s.href} class="text-shrine-vermillion hover:underline">{s.name}</a>
+                    Se añadieron{' '}
+                    {item.shrines.map((s, i) => (
+                      <>
+                        {i > 0 && ', '}
+                        <a href={s.href} class="text-shrine-vermillion hover:underline">{s.name}</a>
+                      </>
+                    ))}
                   </>
-                ))}
+                ) : item.href ? (
+                  <a href={item.href} class="text-shrine-vermillion hover:underline">{item.text}</a>
+                ) : (
+                  item.text
+                )}
               </span>
             </li>
           ))}
