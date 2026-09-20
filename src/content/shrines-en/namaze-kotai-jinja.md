@@ -25,7 +25,7 @@ goshuin:
 themeColor: "gold"
 featured: false
 order: 159
-publishDate: 2026-09-21
+publishDate: 2026-09-20
 image: "./namaze-kotai-jinja.jpg"
 imageCredit:
   author: "Hiroyuki0904"

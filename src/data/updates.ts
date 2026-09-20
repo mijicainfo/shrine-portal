@@ -10,12 +10,15 @@ export interface UpdateEntry {
 // shrine names/links stay correctly localized without any translation work here.
 export const updates: UpdateEntry[] = [
   {
-    date: '2026-09-21',
-    shrineSlugs: ['namaze-kotai-jinja', 'benten-jinja-shikaribetsu', 'eda-jinja'],
-  },
-  {
     date: '2026-09-20',
-    shrineSlugs: ['ishimuro-jinja', 'oyama-jinja-kanazawa', 'ikushima-tarushima-jinja'],
+    shrineSlugs: [
+      'ishimuro-jinja',
+      'oyama-jinja-kanazawa',
+      'ikushima-tarushima-jinja',
+      'namaze-kotai-jinja',
+      'benten-jinja-shikaribetsu',
+      'eda-jinja',
+    ],
   },
   {
     date: '2026-09-19',

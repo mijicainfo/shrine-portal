@@ -24,7 +24,7 @@ officialUrl: "https://edajinja.com/"
 themeColor: "indigo"
 featured: false
 order: 161
-publishDate: 2026-09-21
+publishDate: 2026-09-20
 image: "./eda-jinja.jpg"
 imageCredit:
   author: "Saigen Jiro"

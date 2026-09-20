@@ -25,7 +25,7 @@ goshuin:
 themeColor: "indigo"
 featured: false
 order: 160
-publishDate: 2026-09-21
+publishDate: 2026-09-20
 image: "../shrines/benten-jinja-shikaribetsu.jpg"
 imageCredit:
   author: "pakku"
