@@ -5,9 +5,22 @@ import SeigaihaWave from '../../components/SeigaihaWave.astro';
 import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
 import { benefitTranslationsKo } from '../../data/benefitTranslationsKo';
+import { updates } from '../../data/updates';
 
 const shrines = await getCollection('shrinesKo');
 const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+
+const shrineById = new Map(shrines.map((s) => [s.id, s]));
+const updateItems = updates
+  .map((u) => ({
+    date: u.date,
+    shrines: u.shrineSlugs
+      .map((slug) => shrineById.get(slug))
+      .filter((s): s is NonNullable<typeof s> => Boolean(s))
+      .map((s) => ({ name: s.data.name, href: `/ko/shrines/${s.id}/` })),
+  }))
+  .filter((u) => u.shrines.length > 0)
+  .slice(0, 5);
 
 const heroCandidateIds = [
   'fujisan-sengen-taisha',
@@ -208,6 +221,31 @@ const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsKo[b
   </section>
 
   <!-- Browse by Prefecture -->
+  <!-- 업데이트 정보 -->
+  {updateItems.length > 0 && (
+    <section id="updates" class="mx-auto max-w-6xl px-4 pt-4 sm:px-6">
+      <div class="rounded-2xl border border-shrine-gold/25 bg-white px-5 py-6 sm:px-8">
+        <h2 class="font-serif-jp text-lg font-bold text-shrine-ink sm:text-xl">업데이트 정보</h2>
+        <ul class="mt-4 divide-y divide-shrine-gold/15">
+          {updateItems.map((item) => (
+            <li class="flex flex-col gap-1 py-3 text-sm sm:flex-row sm:items-baseline sm:gap-3">
+              <span class="shrink-0 font-mono text-xs text-shrine-ink-soft sm:w-24">{item.date}</span>
+              <span class="text-shrine-ink-soft">
+                {item.shrines.map((s, i) => (
+                  <>
+                    {i > 0 && ', '}
+                    <a href={s.href} class="text-shrine-vermillion hover:underline">{s.name}</a>
+                  </>
+                ))}
+                {' '}신사를 추가했습니다
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
   <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">지역별로 찾아보기</h2>
     <p class="mt-1 text-sm text-shrine-ink-soft">관심 있는 지역의 신사를 찾아보세요.</p>
