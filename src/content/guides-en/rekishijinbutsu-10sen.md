@@ -1,6 +1,6 @@
 ---
-title: "13 Shrines That Enshrine Japan's Real Historical Figures"
-description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, and Date Masamune, we introduce thirteen shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
+title: "14 Shrines That Enshrine Japan's Real Historical Figures"
+description: "From Oda Nobunaga and Tokugawa Ieyasu to Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, Date Masamune, and the legendary swordsman Miyamoto Musashi, we introduce fourteen shrines that enshrine real historical figures as kami — actual samurai, statesmen, and modern-era leaders, not mythological gods. Knowing their life stories first makes each visit far more meaningful."
 publishDate: 2026-09-20
 entries:
   - shrineId: "tanzan-jinja"
@@ -21,6 +21,8 @@ entries:
     note: "Nikko Toshogu, in Tochigi Prefecture, enshrines Tokugawa Ieyasu, founder of the Edo shogunate. Ieyasu died in 1616, and in accordance with his will, was enshrined the following year at Nikko — long a sacred site of mountain worship — as \"Tosho Daigongen.\" The dazzlingly ornate shrine buildings seen today, the result of a lavish rebuilding under the third shogun, Tokugawa Iemitsu, are registered as a UNESCO World Heritage Site."
   - shrineId: "aoba-jinja"
     note: "Aoba Jinja, in Sendai, enshrines Date Masamune, the \"One-Eyed Dragon\" who founded the Sendai Domain. Masamune died in 1636 and was laid to rest in the Zuihoden mausoleum on Mt. Kyogamine — but this is a separate site from Aoba Jinja itself, which former Sendai domain retainers successfully petitioned to have founded in 1874 on a different hill, Mt. Kitayama, specifically to worship him as a kami. The shrine's own spring grand festival gave rise to what is now the large, citywide Sendai Aoba Festival held every May."
+  - shrineId: "musashi-jinja"
+    note: "Musashi Jinja, in Mimasaka, Okayama Prefecture, enshrines Miyamoto Musashi, the legendary swordsman said never to have lost a duel. Founder of the Niten Ichi-ryu two-sword style and famed for his duel with Sasaki Kojiro on Ganryujima island, Musashi spent his final years in Kumamoto writing his treatise on strategy, The Book of Five Rings, before his death in 1645. His actual birthplace remains disputed to this day, with competing traditions pointing to both this area of Okayama and Harima Province in present-day Hyogo. The shrine itself is a comparatively recent creation, built in 1971 through donations gathered nationwide to honor the sword saint's memory."
   - shrineId: "hotoku-ninomiya-jinja"
     note: "Hotoku Ninomiya Jinja, in Odawara, enshrines Ninomiya Sontoku (Ninomiya Kinjiro), a farmer-philosopher of the late Edo period. Born into poverty, he taught himself to read and write, and over his lifetime is credited with rebuilding the finances of more than 600 struggling villages and domains through his \"Hotoku\" method. He died in 1856, and it wasn't until 1894 — a comparatively recent founding — that admirers built this shrine on his birthplace within Odawara Castle."
   - shrineId: "meiji-jingu"
@@ -35,7 +37,7 @@ entries:
 
 Japan's shrines don't only enshrine mythological deities like Amaterasu, the sun goddess of Shinto legend — many also honor real historical figures as kami. Revering the spirit of someone who served the nation, or who died in an act of great loyalty, and hoping to draw on their virtue, is a tradition sometimes called "hitogami" (person-as-deity) worship, and it forms an important strand of Shinto practice.
 
-This guide introduces thirteen shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
+This guide introduces fourteen shrines dedicated to real historical figures, from Sengoku-era warlords to modern military leaders and philosophers. Many of these names will be familiar from history books or popular period dramas. Knowing the life story behind each shrine before you visit adds real depth to the experience.
 
 ## Things to Know Before You Visit
 

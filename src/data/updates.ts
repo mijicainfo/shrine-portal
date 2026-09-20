@@ -40,6 +40,10 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-09-21',
+    shrineSlugs: ['musashi-jinja'],
+  },
+  {
     date: '2026-09-20',
     shrineSlugs: ['toyokuni-jinja', 'uesugi-jinja', 'aoba-jinja'],
   },
@@ -47,12 +51,12 @@ export const updates: UpdateEntry[] = [
     date: '2026-09-20',
     category: 'guide',
     note: {
-      ja: '特集記事「歴史に名を残した武将・偉人を祀る神社13選」を公開しました',
-      en: 'Published a new featured guide: "13 Shrines That Enshrine Japan’s Real Historical Figures"',
-      zh: '發布了新的精選文章「供奉青史留名武將・偉人的神社13選」',
-      es: 'Publicamos un nuevo artículo destacado: "13 Santuarios que Consagran a Verdaderas Figuras Históricas de Japón"',
-      fr: 'Publication d’un nouvel article à la une : « 13 sanctuaires qui consacrent de vraies figures historiques japonaises »',
-      ko: '새로운 특집 기사 "역사에 이름을 남긴 무장・위인을 모신 신사 13선"을 공개했습니다',
+      ja: '特集記事「歴史に名を残した武将・偉人を祀る神社14選」を公開しました',
+      en: 'Published a new featured guide: "14 Shrines That Enshrine Japan’s Real Historical Figures"',
+      zh: '發布了新的精選文章「供奉青史留名武將・偉人的神社14選」',
+      es: 'Publicamos un nuevo artículo destacado: "14 Santuarios que Consagran a Verdaderas Figuras Históricas de Japón"',
+      fr: 'Publication d’un nouvel article à la une : « 14 sanctuaires qui consacrent de vraies figures historiques japonaises »',
+      ko: '새로운 특집 기사 "역사에 이름을 남긴 무장・위인을 모신 신사 14선"을 공개했습니다',
       href: '/guides/rekishijinbutsu-10sen/',
     },
   },
@@ -70,16 +74,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-09-19',
     shrineSlugs: ['hikotake-gu', 'hirose-taisha', 'washinomiya-jinja'],
-  },
-  {
-    date: '2026-09-18',
-    shrineSlugs: [
-      'ikisu-jinja',
-      'kora-taisha',
-      'tatsuta-taisha',
-      'utsunomiya-futaarayama-jinja',
-      'sakatsura-isosaki-jinja',
-      'nakayama-jinja',
-    ],
   },
 ];

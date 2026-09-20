@@ -1,6 +1,6 @@
 ---
-title: "13 santuarios que veneran a personajes históricos reales de Japón"
-description: "De Oda Nobunaga y Tokugawa Ieyasu a Takeda Shingen, presentamos trece santuarios que veneran como kami a personajes históricos reales —samuráis, estadistas y líderes de la era moderna que de verdad existieron, no dioses mitológicos—. Conocer su historia de antemano hace que cada visita cobre mucho más sentido."
+title: "14 santuarios que veneran a personajes históricos reales de Japón"
+description: "De Oda Nobunaga y Tokugawa Ieyasu a Takeda Shingen y Miyamoto Musashi, presentamos catorce santuarios que veneran como kami a personajes históricos reales —samuráis, estadistas y líderes de la era moderna que de verdad existieron, no dioses mitológicos—. Conocer su historia de antemano hace que cada visita cobre mucho más sentido."
 publishDate: 2026-09-20
 entries:
   - shrineId: "tanzan-jinja"
@@ -21,6 +21,8 @@ entries:
     note: "Nikko Toshogu, en la prefectura de Tochigi, venera a Tokugawa Ieyasu, fundador del shogunato Edo. Ieyasu murió en 1616 y, conforme a su testamento, fue venerado al año siguiente en Nikko —desde antiguo un lugar sagrado de culto a la montaña— bajo el nombre de «Tosho Daigongen». Los deslumbrantes y ornamentados edificios que pueden verse hoy son fruto de una fastuosa reconstrucción llevada a cabo bajo el tercer shogun, Tokugawa Iemitsu, y están inscritos como Patrimonio de la Humanidad por la UNESCO."
   - shrineId: "aoba-jinja"
     note: "Aoba Jinja, en el monte Kitayama de Sendai, venera a Date Masamune, el señor fundador del dominio de Sendai, conocido como el «Dragón Tuerto» tras perder la vista de un ojo por la viruela en su infancia. Masamune murió en 1636, a los 70 años, y fue enterrado en el cercano mausoleo Zuihoden; pero antiguos vasallos del dominio, deseosos de venerarlo formalmente como kami y no solo honrarlo en su tumba, lograron la fundación de este santuario independiente en 1874."
+  - shrineId: "musashi-jinja"
+    note: "Musashi Jinja, en la ciudad de Mimasaka, prefectura de Okayama, venera a Miyamoto Musashi, el legendario espadachín conocido como fundador de la escuela Niten Ichi-ryu de esgrima con dos espadas, autor de El libro de los cinco anillos y famoso por no haber conocido nunca la derrota en más de sesenta duelos. Musashi murió en 1645, y este santuario, de historia mucho más reciente, no se construyó hasta 1971, gracias a donativos de admiradores de todo el país, en un terreno que la tradición señala como uno de sus posibles lugares de nacimiento —aunque la cuestión sigue siendo objeto de debate entre los historiadores, con la provincia de Harima como teoría rival."
   - shrineId: "hotoku-ninomiya-jinja"
     note: "Hotoku Ninomiya Jinja, en Odawara, venera a Ninomiya Sontoku (Ninomiya Kinjiro), un filósofo y reformador agrícola de finales del período Edo. Nacido en la pobreza, aprendió a leer y escribir por su cuenta, y a lo largo de su vida se le atribuye haber saneado las finanzas de más de 600 aldeas y dominios en apuros gracias a su método «Hotoku». Murió en 1856, y no fue hasta 1894 —una fundación relativamente reciente— cuando sus admiradores construyeron este santuario en su lugar de nacimiento, dentro del recinto del castillo de Odawara."
   - shrineId: "meiji-jingu"
@@ -35,7 +37,7 @@ entries:
 
 Los santuarios de Japón no solo veneran a deidades mitológicas como Amaterasu, la diosa del sol de la leyenda sintoísta: muchos honran también como kami a personajes históricos reales. Reverenciar el espíritu de quienes sirvieron a la nación, o que murieron en un acto de gran lealtad, con la esperanza de participar de su virtud, es una tradición conocida a veces como culto «hitogami» (la persona convertida en deidad), y constituye una vertiente importante de la práctica sintoísta.
 
-Esta guía presenta diez santuarios dedicados a personajes históricos reales, desde señores de la guerra del período Sengoku hasta líderes militares y pensadores de la era moderna. Muchos de estos nombres resultarán familiares por los libros de historia o por populares dramas históricos. Conocer la historia de vida que hay detrás de cada santuario antes de la visita añade una auténtica profundidad a la experiencia.
+Esta guía presenta catorce santuarios dedicados a personajes históricos reales, desde señores de la guerra del período Sengoku hasta líderes militares y pensadores de la era moderna. Muchos de estos nombres resultarán familiares por los libros de historia o por populares dramas históricos. Conocer la historia de vida que hay detrás de cada santuario antes de la visita añade una auténtica profundidad a la experiencia.
 
 ## Qué tener presente al visitar
 

@@ -1,6 +1,6 @@
 ---
-title: "13 sanctuaires qui vénèrent de véritables personnages historiques du Japon"
-description: "D'Oda Nobunaga et Tokugawa Ieyasu à Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin et Date Masamune, découvrez treize sanctuaires qui honorent comme kami des personnages historiques bien réels — samouraïs, hommes d'État et figures de l'ère moderne, et non des divinités mythologiques. Connaître d'abord leur vie donne à chaque visite une tout autre profondeur."
+title: "14 sanctuaires qui vénèrent de véritables personnages historiques du Japon"
+description: "D'Oda Nobunaga et Tokugawa Ieyasu à Takeda Shingen, Toyotomi Hideyoshi, Uesugi Kenshin, Date Masamune et Miyamoto Musashi, découvrez quatorze sanctuaires qui honorent comme kami des personnages historiques bien réels — samouraïs, hommes d'État et figures de l'ère moderne, et non des divinités mythologiques. Connaître d'abord leur vie donne à chaque visite une tout autre profondeur."
 publishDate: 2026-09-20
 entries:
   - shrineId: "tanzan-jinja"
@@ -21,6 +21,8 @@ entries:
     note: "Nikko Toshogu, dans la préfecture de Tochigi, vénère Tokugawa Ieyasu, fondateur du shogunat d'Edo. Ieyasu mourut en 1616 et, conformément à son testament, fut déifié l'année suivante à Nikko — un site sacré de culte de la montagne depuis les temps anciens — sous le nom de « Tosho Daigongen ». Les bâtiments du sanctuaire, d'un éclat somptueux, tels qu'on les voit aujourd'hui sont le fruit d'une reconstruction fastueuse menée par le troisième shogun, Tokugawa Iemitsu, et l'ensemble est inscrit au patrimoine mondial de l'UNESCO."
   - shrineId: "aoba-jinja"
     note: "Aoba Jinja, à Sendai, vénère Date Masamune, le « Dragon Borgne » qui fonda le domaine de Sendai. Mort en 1636, il fut inhumé au mausolée Zuihoden, sur le mont Kyogamine — un site distinct d'Aoba Jinja, que d'anciens vassaux du domaine obtinrent par pétition de faire fonder en 1874, sur le mont Kitayama, spécifiquement pour le vénérer comme kami. La grande fête de printemps du sanctuaire est à l'origine de l'actuelle Fête Aoba de Sendai, célébrée chaque mois de mai."
+  - shrineId: "musashi-jinja"
+    note: "Musashi Jinja, à Mimasaka, préfecture d'Okayama, vénère Miyamoto Musashi, le légendaire maître d'escrime auteur du Traité des cinq roues et fondateur de l'école Niten Ichi-ryu, resté invaincu, selon ses propres écrits, en plus de soixante duels — dont le plus célèbre, en 1612, contre Sasaki Kojiro sur l'île de Ganryujima. Mort à Kumamoto en 1645, son lieu de naissance reste réellement disputé entre cette région de Mimasaka et la province de Harima (actuelle Hyogo), que Musashi lui-même désigne dans son traité. Le sanctuaire ne fut édifié qu'en 1971, grâce aux dons de plus de 1 300 admirateurs à travers tout le pays, réunis par la « Musashi Hosankai »."
   - shrineId: "hotoku-ninomiya-jinja"
     note: "Hotoku Ninomiya Jinja, à Odawara, vénère Ninomiya Sontoku (Ninomiya Kinjiro), agronome et penseur de la fin de l'époque d'Edo. Né dans une famille pauvre, il apprit à lire et à écrire en autodidacte, et l'on crédite son action, tout au long de sa vie, du redressement financier de plus de 600 villages et domaines en difficulté grâce à sa méthode « Hotoku ». Il mourut en 1856, et ce n'est qu'en 1894 — une fondation relativement récente — que ses admirateurs firent construire ce sanctuaire sur son lieu de naissance, dans l'enceinte du château d'Odawara."
   - shrineId: "meiji-jingu"
@@ -35,7 +37,7 @@ entries:
 
 Les sanctuaires japonais ne vénèrent pas uniquement des divinités mythologiques comme Amaterasu, la déesse du soleil de la légende shinto — beaucoup honorent aussi comme kami de véritables personnages historiques. Révérer l'esprit d'une personne qui a servi la nation, ou qui est morte dans un acte de grande loyauté, dans l'espoir de puiser dans sa vertu, relève d'une tradition parfois appelée culte « hitogami » (l'humain déifié), et constitue un aspect important de la pratique shinto.
 
-Ce guide présente dix sanctuaires dédiés à de véritables personnages historiques, des seigneurs de guerre de l'époque Sengoku aux militaires et penseurs de l'ère moderne. Beaucoup de ces noms vous seront familiers grâce aux livres d'histoire ou aux séries historiques populaires. Connaître l'histoire de vie qui se cache derrière chaque sanctuaire avant de le visiter donne une réelle profondeur à l'expérience.
+Ce guide présente quatorze sanctuaires dédiés à de véritables personnages historiques, des seigneurs de guerre de l'époque Sengoku aux militaires et penseurs de l'ère moderne. Beaucoup de ces noms vous seront familiers grâce aux livres d'histoire ou aux séries historiques populaires. Connaître l'histoire de vie qui se cache derrière chaque sanctuaire avant de le visiter donne une réelle profondeur à l'expérience.
 
 ## Ce qu'il est utile de savoir avant de visiter
 
