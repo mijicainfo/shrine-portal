@@ -10,10 +10,6 @@ A small altar for enshrining, with sincerity, the o-fuda (sacred paper talisman)
 
 This article walks step by step through how to choose a miyagata (the altar shrine itself), where to place it, how to arrange the altar fittings, and the daily worship etiquette — for anyone newly welcoming a kamidana into their home. We also introduce altar fittings that are actually easy to get hold of, as a reference for choosing your own. For a more detailed explanation of how to arrange your o-fuda and where to place them, please also see our [How to Enshrine a Kamidana](/en/kamidana/) page.
 
-<div class="not-prose my-6 rounded-xl border border-shrine-gold/30 bg-shrine-paper/60 px-4 py-3 text-xs leading-relaxed text-shrine-ink-soft">
-This article contains links using Rakuten Ichiba's affiliate program (Ad). If you make a purchase through one of these links, this site may receive a referral fee, but this will not change the price of the product. Prices and stock availability may change, so please check each product page for the latest information.
-</div>
-
 ## Choosing a Miyagata (Altar Shrine)
 
 There are several types of miyagata, differing in the number of doors. If you have only a single o-fuda, or if this is your first time enshrining a kamidana, a simple "issha-zukuri" (single-door style) with one door is often chosen. If you would like to enshrine multiple o-fuda side by side, choosing a "sansha-zukuri" (three-door style) with three doors lined up makes the relative rank of each o-fuda visually easy to understand.

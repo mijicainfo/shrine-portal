@@ -10,10 +10,6 @@ Plutôt que de laisser simplement sur une étagère l'ofuda reçu au sanctuaire,
 
 Cet article s'adresse à celles et ceux qui souhaitent accueillir un nouveau kamidana, et présente étape par étape le choix du miyagata (le sanctuaire miniature lui-même), l'emplacement, la disposition des objets sacrés et les gestes quotidiens de prière. Nous vous proposons également une sélection d'objets sacrés faciles à se procurer, pour vous aider à choisir votre matériel. Pour un guide plus détaillé sur la disposition des ofuda et le choix de l'emplacement, consultez également la page [Comment installer et vénérer un kamidana](/fr/kamidana/).
 
-<div class="not-prose my-6 rounded-xl border border-shrine-gold/30 bg-shrine-paper/60 px-4 py-3 text-xs leading-relaxed text-shrine-ink-soft">
-PR | Cet article contient des liens affiliés vers le programme Rakuten Ichiba. Si vous effectuez un achat via ces liens, notre site peut percevoir une commission, sans que cela n'affecte le prix du produit. Les prix et disponibilités pouvant varier, merci de vérifier les informations les plus récentes sur la page de chaque produit.
-</div>
-
 ## Choisir le miyagata (le sanctuaire miniature)
 
 Il existe plusieurs types de miyagata selon le nombre de portes. Pour un unique ofuda, ou pour une première installation de kamidana, on choisit souvent le modèle simple à une seule porte, l'« issha-zukuri » (一社造). Pour vénérer plusieurs ofuda côte à côte, on préférera le « sansha-zukuri » (三社造), à trois portes alignées, qui rend visuellement plus clair le rang de chaque ofuda.

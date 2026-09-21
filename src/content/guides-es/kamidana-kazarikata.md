@@ -10,10 +10,6 @@ El kamidana (神棚) es un pequeño altar donde se venera con devoción el ofuda
 
 En este artículo, dirigido a quienes van a instalar un kamidana por primera vez, explicamos paso a paso cómo elegir el miyagata (宮形, el altar en sí), dónde colocarlo, cómo disponer los objetos sagrados (shingu) y cuál es el ritual diario de oración. También presentamos objetos sagrados recomendados y fáciles de conseguir, como referencia para elegir tus utensilios. Para una explicación más detallada sobre cómo disponer el ofuda y dónde colocarlo, consulta también la página [Cómo honrar el kamidana](/es/kamidana/).
 
-<div class="not-prose my-6 rounded-xl border border-shrine-gold/30 bg-shrine-paper/60 px-4 py-3 text-xs leading-relaxed text-shrine-ink-soft">
-Los productos presentados en este artículo incluyen enlaces del programa de afiliados de Rakuten Ichiba (PR). Si realizas una compra a través de estos enlaces, es posible que este sitio reciba una comisión, pero el precio del producto no se ve afectado. Los precios y la disponibilidad pueden cambiar, así que confirma la información más reciente en la página de cada producto.
-</div>
-
 ## Elegir el miyagata (el altar en sí)
 
 Existen varios tipos de miyagata según el número de puertas. Cuando se tiene un solo ofuda, o para quienes instalan un kamidana por primera vez, suele elegirse el sencillo "isshazukuri" (一社造), con una sola puerta. Si se desea venerar varios ofuda colocados uno junto a otro, el "sanshazukuri" (三社造), con tres puertas, permite distinguir visualmente con más claridad la jerarquía de cada ofuda.
