@@ -49,25 +49,27 @@ const structuredData = buildItemListStructuredData(
   </section>
 
   <section class="mx-auto max-w-4xl px-4 py-10 sm:px-6">
-    <ol class="space-y-10">
-      {entries.map(({ entry, shrine }, i) => shrine && (
-        <li class="border-b border-shrine-gold/15 pb-10 last:border-0 last:pb-0">
-          <div class="flex items-start gap-4">
-            <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-shrine-vermillion font-serif-jp text-base font-bold text-white">
-              {i + 1}
-            </span>
-            <div class="min-w-0 flex-1">
-              <p class="mb-4 text-sm leading-relaxed text-shrine-ink-soft">{entry.note}</p>
-              <div class="max-w-sm">
-                <ShrineCard shrine={shrine} />
+    {entries.length > 0 && (
+      <ol class="space-y-10">
+        {entries.map(({ entry, shrine }, i) => shrine && (
+          <li class="border-b border-shrine-gold/15 pb-10 last:border-0 last:pb-0">
+            <div class="flex items-start gap-4">
+              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-shrine-vermillion font-serif-jp text-base font-bold text-white">
+                {i + 1}
+              </span>
+              <div class="min-w-0 flex-1">
+                <p class="mb-4 text-sm leading-relaxed text-shrine-ink-soft">{entry.note}</p>
+                <div class="max-w-sm">
+                  <ShrineCard shrine={shrine} />
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      ))}
-    </ol>
+          </li>
+        ))}
+      </ol>
+    )}
 
-    <div class="prose prose-neutral mt-10 max-w-none border-t border-shrine-gold/15 pt-10 prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion">
+    <div class:list={["prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion", entries.length > 0 && "mt-10 border-t border-shrine-gold/15 pt-10"]}>
       <Content />
     </div>
   </section>

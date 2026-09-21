@@ -41,24 +41,24 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-09-21',
+    category: 'guide',
+    note: {
+      ja: '特集記事「自宅に神棚を飾ろう｜置き場所・祀り方・お参りの作法とおすすめ神具」を公開しました',
+      en: 'Published a new featured guide: "How to Set Up a Kamidana (Home Shrine)"',
+      zh: '發布了新的精選文章「在家中供奉神棚：擺放位置・祭祀方法・參拜禮儀與推薦神具」',
+      es: 'Publicamos un nuevo artículo destacado: "Cómo instalar un kamidana (altar sintoísta) en casa"',
+      fr: 'Publication d’un nouvel article à la une : « Comment installer un kamidana (autel shinto) chez soi »',
+      ko: '새로운 특집 기사 "집에 신단(가미다나) 모시는 법"을 공개했습니다',
+      href: '/guides/kamidana-kazarikata/',
+    },
+  },
+  {
+    date: '2026-09-21',
     shrineSlugs: ['musashi-jinja'],
   },
   {
     date: '2026-09-20',
     shrineSlugs: ['toyokuni-jinja', 'uesugi-jinja', 'aoba-jinja'],
-  },
-  {
-    date: '2026-09-20',
-    category: 'guide',
-    note: {
-      ja: '特集記事「歴史に名を残した武将・偉人を祀る神社12選」を公開しました',
-      en: 'Published a new featured guide: "12 Shrines That Enshrine Japan’s Real Historical Figures"',
-      zh: '發布了新的精選文章「供奉青史留名武將・偉人的神社12選」',
-      es: 'Publicamos un nuevo artículo destacado: "12 Santuarios que Consagran a Verdaderas Figuras Históricas de Japón"',
-      fr: 'Publication d’un nouvel article à la une : « 12 sanctuaires qui consacrent de vraies figures historiques japonaises »',
-      ko: '새로운 특집 기사 "역사에 이름을 남긴 무장・위인을 모신 신사 12선"을 공개했습니다',
-      href: '/guides/rekishijinbutsu-10sen/',
-    },
   },
   {
     date: '2026-09-20',

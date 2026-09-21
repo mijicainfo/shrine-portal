@@ -50,6 +50,18 @@ export function buildRakutenSearchUrl(query: string): string {
 }
 
 /**
+ * 楽天市場の任意の商品ページURLを、楽天アフィリエイトのリンク経由に変換します。
+ * 特集記事などで商品を紹介する際に使用します。
+ */
+export function buildRakutenAffiliateUrl(targetUrl: string): string {
+  if (affiliateConfig.rakutenAffiliateId) {
+    const wrapped = new URLSearchParams({ pc: targetUrl, m: targetUrl });
+    return `https://hb.afl.rakuten.co.jp/hgc/${affiliateConfig.rakutenAffiliateId}/?${wrapped.toString()}`;
+  }
+  return targetUrl;
+}
+
+/**
  * Klookの検索結果ページURLを生成します。
  * klookAffiliateIdが設定されている場合は、アフィリエイトのリダイレクト経由になります。
  */

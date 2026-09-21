@@ -31,7 +31,9 @@ const guides = (await getCollection('guidesEs')).sort(
             {guide.data.title}
           </h2>
           <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">{guide.data.description}</p>
-          <p class="mt-3 text-xs text-shrine-vermillion">{guide.data.entries.length} santuarios destacados →</p>
+          <p class="mt-3 text-xs text-shrine-vermillion">
+            {guide.data.entries.length > 0 ? `${guide.data.entries.length} santuarios destacados` : 'Leer más'} →
+          </p>
         </a>
       ))}
     </div>

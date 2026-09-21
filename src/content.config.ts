@@ -100,12 +100,15 @@ const guideSchema = z.object({
   title: z.string(),
   description: z.string(),
   publishDate: z.coerce.date(),
+  // Optional: "top N shrines" guides list entries here (rendered as a numbered
+  // shrine list above the body). A guide with no shrine list (e.g. a how-to /
+  // shopping article) omits this and puts everything in the markdown body.
   entries: z.array(
     z.object({
       shrineId: z.string(),
       note: z.string(),
     }),
-  ),
+  ).default([]),
 });
 
 const guides = defineCollection({
