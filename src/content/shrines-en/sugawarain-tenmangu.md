@@ -20,7 +20,7 @@ parking: "None"
 goshuin:
   available: true
   hours: "6:00–17:00"
-  fee: "¥300"
+  fee: "¥500"
 officialUrl: "https://sugawarain.jp/"
 themeColor: "gold"
 featured: false
@@ -47,7 +47,7 @@ faq:
   - question: "What are the visiting hours?"
     answer: "6:00–17:00 (special hours apply around New Year). The grounds are free to enter."
   - question: "Can I get a goshuin here?"
-    answer: "Yes, for ¥300 at the shrine office. Goshuin are also available for the sub-shrine Umemaru Daimyojin and the on-site Itsukushima Shrine."
+    answer: "Yes, for ¥500 at the shrine office. Goshuin are also available for the sub-shrine Umemaru Daimyojin and the on-site Itsukushima Shrine."
   - question: "Is there parking?"
     answer: "No, there is no parking on site. Visiting by subway (Marutamachi Station) is recommended."
   - question: "What is the 'birth-bath well'?"
@@ -76,7 +76,7 @@ Michizane was also famously devoted to plum blossoms throughout his life, a conn
 
 ## Visiting Tips
 
-Visiting hours are 6:00–17:00, and the grounds are free to enter. Goshuin are available at the shrine office for ¥300, covering the main shrine as well as Umemaru Daimyojin and the on-site Itsukushima Shrine. There is no parking on site, so visiting by subway — about a 5-minute walk from Exit 2 of Marutamachi Station on the Karasuma Line — is recommended.
+Visiting hours are 6:00–17:00, and the grounds are free to enter. Goshuin are available at the shrine office for ¥500, covering the main shrine as well as Umemaru Daimyojin and the on-site Itsukushima Shrine. There is no parking on site, so visiting by subway — about a 5-minute walk from Exit 2 of Marutamachi Station on the Karasuma Line — is recommended.
 
 Beyond the shrine's core academic-success and exam-success blessings, the birth-bath well's water is considered beneficial before exams or during illness, and Umemaru Daimyojin draws visitors specifically praying for recovery from cancer. Given its location right across from Kyoto Gyoen, the shrine pairs naturally with a walk through the Imperial Palace grounds.
 

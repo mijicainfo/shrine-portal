@@ -20,7 +20,7 @@ parking: "Aucun parking disponible"
 goshuin:
   available: true
   hours: "6h00–17h00"
-  fee: "¥300"
+  fee: "¥500"
 officialUrl: "https://sugawarain.jp/"
 themeColor: "gold"
 featured: false
@@ -47,7 +47,7 @@ faq:
   - question: "Quels sont les horaires de visite ?"
     answer: "De 6h00 à 17h00 (des horaires spéciaux s'appliquent autour du Nouvel An). L'accès à l'enceinte est libre et gratuit."
   - question: "Peut-on obtenir un goshuin ici ?"
-    answer: "Oui, pour ¥300 au bureau du sanctuaire. Des goshuin sont également disponibles pour le sanctuaire secondaire Umemaru Daimyojin et le sanctuaire Itsukushima présent sur le site."
+    answer: "Oui, pour ¥500 au bureau du sanctuaire. Des goshuin sont également disponibles pour le sanctuaire secondaire Umemaru Daimyojin et le sanctuaire Itsukushima présent sur le site."
   - question: "Y a-t-il un parking ?"
     answer: "Non, il n'y a pas de parking sur place. Il est recommandé de s'y rendre à pied depuis la station Marutamachi, sur la ligne de métro Karasuma."
   - question: "Qu'est-ce que le « puits du bain de naissance » ?"
@@ -76,7 +76,7 @@ Michizane était également connu pour son amour profond des fleurs de prunier t
 
 ## Conseils de Visite
 
-Les horaires de visite sont de 6h00 à 17h00, et l'accès à l'enceinte est libre et gratuit. Les goshuin sont disponibles au bureau du sanctuaire pour ¥300, couvrant le sanctuaire principal ainsi qu'Umemaru Daimyojin et le sanctuaire Itsukushima présent sur le site. Il n'y a pas de parking sur place ; la visite en métro est recommandée, à environ 5 minutes à pied de la sortie 2 de la station Marutamachi sur la ligne Karasuma.
+Les horaires de visite sont de 6h00 à 17h00, et l'accès à l'enceinte est libre et gratuit. Les goshuin sont disponibles au bureau du sanctuaire pour ¥500, couvrant le sanctuaire principal ainsi qu'Umemaru Daimyojin et le sanctuaire Itsukushima présent sur le site. Il n'y a pas de parking sur place ; la visite en métro est recommandée, à environ 5 minutes à pied de la sortie 2 de la station Marutamachi sur la ligne Karasuma.
 
 Au-delà des bienfaits classiques du sanctuaire pour la réussite scolaire et aux examens, l'eau du puits du bain de naissance est réputée bénéfique avant un examen ou pendant une maladie, et Umemaru Daimyojin attire de nombreux fidèles venus prier spécifiquement pour la guérison du cancer. Sa situation, juste en face de Kyoto Gyoen, en fait une étape naturelle à combiner avec une promenade dans le parc du palais impérial.
 

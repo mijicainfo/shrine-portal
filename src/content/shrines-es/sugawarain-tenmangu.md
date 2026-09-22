@@ -20,7 +20,7 @@ parking: "No hay aparcamiento"
 goshuin:
   available: true
   hours: "6:00–17:00"
-  fee: "¥300"
+  fee: "¥500"
 officialUrl: "https://sugawarain.jp/"
 themeColor: "gold"
 featured: false
@@ -47,7 +47,7 @@ faq:
   - question: "¿Cuál es el horario de visita?"
     answer: "De 6:00 a 17:00 (en fin y principio de año rige un horario especial). El recinto es de entrada libre y gratuita."
   - question: "¿Se puede obtener un goshuin aquí?"
-    answer: "Sí, por ¥300 en la oficina del santuario. También hay goshuin disponibles para el santuario auxiliar Umemaru Daimyojin y para el santuario Itsukushima dentro del recinto."
+    answer: "Sí, por ¥500 en la oficina del santuario. También hay goshuin disponibles para el santuario auxiliar Umemaru Daimyojin y para el santuario Itsukushima dentro del recinto."
   - question: "¿Hay aparcamiento?"
     answer: "No hay aparcamiento en el recinto. Se recomienda visitar a pie desde la estación Marutamachi de la línea de metro Karasuma."
   - question: "¿Qué es el pozo del baño de nacimiento (Ubuyu no Ido)?"
@@ -76,7 +76,7 @@ Michizane fue conocido, a lo largo de toda su vida, por su profundo amor a las f
 
 ## Consejos para la Visita
 
-El horario de visita es de 6:00 a 17:00, con entrada libre y gratuita al recinto. El goshuin puede obtenerse en la oficina del santuario por ¥300, e incluye también los goshuin de Umemaru Daimyojin y del santuario Itsukushima dentro del recinto. No hay aparcamiento, por lo que se recomienda llegar a pie, a unos 5 minutos de la salida 2 de la estación Marutamachi de la línea de metro Karasuma.
+El horario de visita es de 6:00 a 17:00, con entrada libre y gratuita al recinto. El goshuin puede obtenerse en la oficina del santuario por ¥500, e incluye también los goshuin de Umemaru Daimyojin y del santuario Itsukushima dentro del recinto. No hay aparcamiento, por lo que se recomienda llegar a pie, a unos 5 minutos de la salida 2 de la estación Marutamachi de la línea de metro Karasuma.
 
 Además de las bendiciones para el éxito académico y los exámenes, se dice que el agua del pozo del baño de nacimiento trae buena fortuna en época de exámenes o de enfermedad, y Umemaru Daimyojin es ampliamente venerado por sus oraciones contra el cáncer. Al estar situado justo frente a Kioto Gyoen, resulta un lugar fácil de combinar con un paseo por los alrededores del Palacio Imperial.
 
