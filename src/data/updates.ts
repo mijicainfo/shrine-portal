@@ -41,6 +41,10 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-09-25',
+    shrineSlugs: ['okazaki-jinja', 'shiramine-jingu'],
+  },
+  {
+    date: '2026-09-25',
     shrineSlugs: ['tagata-jinja', 'oagata-jinja', 'yaegaki-jinja'],
   },
   {
@@ -63,9 +67,5 @@ export const updates: UpdateEntry[] = [
       ko: '새로운 특집 기사 "집에 신단(가미다나) 모시는 법"을 공개했습니다',
       href: '/guides/kamidana-kazarikata/',
     },
-  },
-  {
-    date: '2026-09-21',
-    shrineSlugs: ['musashi-jinja'],
   },
 ];
