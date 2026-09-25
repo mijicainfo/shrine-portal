@@ -51,6 +51,25 @@ const { title, description = defaultDescription[lang], image = '/og-image.png' }
 const fullTitle = `${title}${titleSeparator[lang]}${titleSuffix[lang]}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(image, Astro.site).toString();
+
+// Every page exists under the same path in all 6 locales (ja lives at the
+// root path with no prefix; see astro.config.mjs i18n.routing). Strip
+// whichever locale prefix the current URL has, then rebuild it for each
+// locale so Google can be told these are translations of one another —
+// without this, each locale's copy is discovered and crawled as an
+// unrelated new URL instead of a known alternate of an already-indexed page.
+const localePrefixPattern = /^\/(en|zh|es|fr|ko)(\/|$)/;
+const basePath = Astro.url.pathname.replace(localePrefixPattern, '/');
+const hreflangPath: Record<Lang, string> = {
+  ja: basePath,
+  en: `/en${basePath}`,
+  zh: `/zh${basePath}`,
+  es: `/es${basePath}`,
+  fr: `/fr${basePath}`,
+  ko: `/ko${basePath}`,
+};
+const hreflangCode: Record<Lang, string> = { ja: 'ja', en: 'en', zh: 'zh-Hant', es: 'es', fr: 'fr', ko: 'ko' };
+const hreflangUrl = (l: Lang) => new URL(hreflangPath[l], Astro.site).toString();
 ---
 
 <!doctype html>
@@ -65,6 +84,10 @@ const ogImageUrl = new URL(image, Astro.site).toString();
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalUrl} />
+    {(Object.keys(hreflangPath) as Lang[]).map((l) => (
+      <link rel="alternate" hreflang={hreflangCode[l]} href={hreflangUrl(l)} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={hreflangUrl('ja')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
