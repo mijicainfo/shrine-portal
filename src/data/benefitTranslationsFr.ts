@@ -39,4 +39,10 @@ export const benefitTranslationsFr: Record<string, string> = {
   出世: 'Réussite Professionnelle',
   八方除け: 'Protection depuis Toutes les Directions',
   足腰健康: 'Santé des Jambes et des Hanches',
+  病気平癒: 'Guérison des Maladies',
+  '再生・甦り': 'Renaissance et Renouveau',
+  開運招福: 'Bonne Fortune et Prospérité',
+  安産祈願: 'Accouchement Sans Risque',
+  勝運: 'Chance à la Victoire',
+  金運上昇: 'Augmentation de la Fortune Financière',
 };

@@ -39,4 +39,10 @@ export const benefitTranslationsEs: Record<string, string> = {
   出世: 'Éxito Profesional',
   八方除け: 'Protección desde Todas las Direcciones',
   足腰健康: 'Salud de Piernas y Caderas',
+  病気平癒: 'Recuperación de Enfermedades',
+  '再生・甦り': 'Renacimiento y Renovación',
+  開運招福: 'Buena Fortuna y Prosperidad',
+  安産祈願: 'Parto Seguro',
+  勝運: 'Suerte en la Victoria',
+  金運上昇: 'Aumento de la Fortuna Financiera',
 };
