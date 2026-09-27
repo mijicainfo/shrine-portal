@@ -45,4 +45,7 @@ export const benefitTranslationsEs: Record<string, string> = {
   安産祈願: 'Parto Seguro',
   勝運: 'Suerte en la Victoria',
   金運上昇: 'Aumento de la Fortuna Financiera',
+  火難除け: 'Protección contra Incendios',
+  健康長寿: 'Salud y Longevidad',
+  子孫繁栄: 'Prosperidad de los Descendientes',
 };
