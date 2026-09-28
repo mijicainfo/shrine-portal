@@ -12,6 +12,7 @@ export const benefitTranslationsFr: Record<string, string> = {
   必勝祈願: 'Victoire en Compétition',
   五穀豊穣: 'Récolte Abondante',
   海上安全: 'Sécurité Maritime',
+  海上交通安全: 'Sécurité Maritime',
   水難除け: 'Protection contre les Inondations',
   武運長久: 'Victoire au Combat',
   安産: 'Accouchement Sans Risque',
@@ -44,8 +45,10 @@ export const benefitTranslationsFr: Record<string, string> = {
   開運招福: 'Bonne Fortune et Prospérité',
   安産祈願: 'Accouchement Sans Risque',
   勝運: 'Chance à la Victoire',
+  勝運祈願: 'Victoire en Compétition',
   金運上昇: 'Augmentation de la Fortune Financière',
   火難除け: 'Protection contre le Feu',
   健康長寿: 'Santé et Longévité',
   子孫繁栄: 'Prospérité de la Descendance',
+  大漁満足: 'Pêche Abondante',
 };
