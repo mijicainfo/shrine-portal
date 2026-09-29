@@ -6,7 +6,9 @@
 export const benefitTranslationsFr: Record<string, string> = {
   厄除け: 'Protection contre le Malheur',
   開運: 'Bonne Fortune',
+  厄除開運: 'Protection contre le Malheur et Bonne Fortune',
   縁結び: 'Bonnes Relations',
+  縁起: 'Bon Présage',
   家内安全: 'Sécurité du Foyer',
   商売繁盛: 'Prospérité des Affaires',
   必勝祈願: 'Victoire en Compétition',
@@ -35,6 +37,7 @@ export const benefitTranslationsFr: Record<string, string> = {
   延命長寿: 'Longévité',
   平和祈願: 'Prières pour la Paix',
   子授け: 'Bénédiction d\'Enfants',
+  '子授け・子供守護': 'Bénédiction et Protection des Enfants',
   国土安泰: 'Paix de la Nation',
   交通安全: 'Sécurité Routière',
   出世: 'Réussite Professionnelle',
@@ -51,4 +54,6 @@ export const benefitTranslationsFr: Record<string, string> = {
   健康長寿: 'Santé et Longévité',
   子孫繁栄: 'Prospérité de la Descendance',
   大漁満足: 'Pêche Abondante',
+  諸願成就: 'Réalisation de Tous les Vœux',
+  美容健康: 'Beauté et Santé',
 };

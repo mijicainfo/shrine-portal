@@ -51,4 +51,9 @@ export const benefitTranslationsEs: Record<string, string> = {
   海上交通安全: 'Seguridad del Tráfico Marítimo',
   勝運祈願: 'Victoria en la Competencia',
   大漁満足: 'Pesca Abundante',
+  縁起: 'Buen Augurio',
+  '子授け・子供守護': 'Bendición y Protección de los Niños',
+  諸願成就: 'Cumplimiento de Deseos',
+  厄除開運: 'Protección contra la Mala Suerte y Buena Fortuna',
+  美容健康: 'Belleza y Salud',
 };

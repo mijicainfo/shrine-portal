@@ -6,7 +6,9 @@
 export const benefitTranslationsZh: Record<string, string> = {
   厄除け: '消災解厄',
   開運: '開運',
+  厄除開運: '消災解厄開運',
   縁結び: '締結良緣',
+  縁起: '吉祥如意',
   家内安全: '闔家平安',
   商売繁盛: '生意興隆',
   必勝祈願: '祈求必勝',
@@ -37,6 +39,7 @@ export const benefitTranslationsZh: Record<string, string> = {
   延命長寿: '延年益壽',
   平和祈願: '祈求和平',
   子授け: '賜子求嗣',
+  '子授け・子供守護': '賜子・護佑兒童',
   国土安泰: '護國佑民',
   交通安全: '交通平安',
   出世: '事業高升',
@@ -48,4 +51,6 @@ export const benefitTranslationsZh: Record<string, string> = {
   火難除け: '防治火災',
   健康長寿: '健康長壽',
   子孫繁栄: '子孫繁榮',
+  諸願成就: '心想事成',
+  美容健康: '美容保健',
 };
