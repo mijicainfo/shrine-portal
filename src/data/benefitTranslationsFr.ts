@@ -56,4 +56,8 @@ export const benefitTranslationsFr: Record<string, string> = {
   大漁満足: 'Pêche Abondante',
   諸願成就: 'Réalisation de Tous les Vœux',
   美容健康: 'Beauté et Santé',
+  産業開発: 'Développement Industriel',
+  国土開発: 'Développement Territorial',
+  温泉守護: 'Protection des Sources Thermales',
+  '厄除け・浄化': 'Protection contre le Malheur et Purification',
 };

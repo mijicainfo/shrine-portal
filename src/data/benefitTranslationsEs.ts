@@ -56,4 +56,8 @@ export const benefitTranslationsEs: Record<string, string> = {
   諸願成就: 'Cumplimiento de Deseos',
   厄除開運: 'Protección contra la Mala Suerte y Buena Fortuna',
   美容健康: 'Belleza y Salud',
+  産業開発: 'Desarrollo Industrial',
+  国土開発: 'Desarrollo Territorial',
+  温泉守護: 'Protección de las Aguas Termales',
+  '厄除け・浄化': 'Protección contra la Mala Suerte y Purificación',
 };
