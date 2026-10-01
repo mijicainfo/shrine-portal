@@ -57,4 +57,8 @@ export const benefitTranslationsZh: Record<string, string> = {
   国土開発: '國土開發',
   温泉守護: '溫泉守護',
   '厄除け・浄化': '消災解厄・淨化',
+  火防: '防火',
+  盗難除け: '盜難消除',
+  大願成就: '大願成就',
+  勝運: '勝運亨通',
 };

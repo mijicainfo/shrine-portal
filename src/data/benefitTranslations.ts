@@ -45,4 +45,8 @@ export const benefitTranslations: Record<string, string> = {
   火難除け: 'Protection from Fire',
   健康長寿: 'Health and Longevity',
   子孫繁栄: 'Prosperity of Descendants',
+  勝運: 'Luck in Victory',
+  大願成就: 'Fulfillment of Great Wishes',
+  火防: 'Fire Prevention',
+  盗難除け: 'Protection from Theft',
 };

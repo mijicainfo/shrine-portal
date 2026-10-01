@@ -33,6 +33,7 @@ export const benefitTranslationsFr: Record<string, string> = {
   産業繁栄: 'Prospérité Industrielle',
   生命力向上: 'Vitalité',
   '火防（防火）': 'Prévention des Incendies',
+  火防: 'Prévention des Incendies',
   方除け: 'Protection contre les Directions Néfastes',
   延命長寿: 'Longévité',
   平和祈願: 'Prières pour la Paix',
@@ -60,4 +61,6 @@ export const benefitTranslationsFr: Record<string, string> = {
   国土開発: 'Développement Territorial',
   温泉守護: 'Protection des Sources Thermales',
   '厄除け・浄化': 'Protection contre le Malheur et Purification',
+  盗難除け: 'Protection contre le Vol',
+  大願成就: 'Réalisation des Grands Vœux',
 };

@@ -60,4 +60,7 @@ export const benefitTranslationsEs: Record<string, string> = {
   国土開発: 'Desarrollo Territorial',
   温泉守護: 'Protección de las Aguas Termales',
   '厄除け・浄化': 'Protección contra la Mala Suerte y Purificación',
+  火防: 'Prevención de Incendios',
+  盗難除け: 'Protección contra Robos',
+  大願成就: 'Cumplimiento de Grandes Deseos',
 };
