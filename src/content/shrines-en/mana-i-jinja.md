@@ -20,7 +20,7 @@ parking: "There is no dedicated parking at Mana-i Jinja itself; visitors use Kon
 goshuin:
   available: true
   hours: "9:00–16:30 (issued at Kono Jinja's shrine office, except on the few days each month when Mana-i Jinja's own office is staffed)"
-  fee: "¥400 for Kono Jinja alone, or ¥500 for a combined goshuin covering both the main shrine and the okunomiya Mana-i Jinja"
+  fee: "¥500 for Kono Jinja alone, or ¥500 for a combined goshuin covering both the main shrine and the okunomiya Mana-i Jinja"
 officialUrl: "https://www.motoise.jp/about/okunomiya/"
 themeColor: "indigo"
 featured: false
@@ -47,7 +47,7 @@ faq:
   - question: "Is photography allowed at Mana-i Jinja?"
     answer: "Photography is restricted in part of the grounds. Beyond the second torii, the stone steps leading up to the main hall and the iwakura sacred rocks behind it are treated as forbidden ground (kinsokuchi), where both entry and photography are prohibited. This has been enforced more strictly in recent years as visitor numbers have grown with the site's reputation as a \"power spot.\" The approach and the area up to the base of the stairs can still be freely photographed, but visitors should follow any posted signage or staff instructions in the restricted zone."
   - question: "Where can I get a goshuin for Mana-i Jinja?"
-    answer: "Mana-i Jinja is normally unstaffed, with its own on-site office open only a few designated days each month (dates are announced on Kono Jinja's official website). On other days, goshuin are obtained at Kono Jinja's shrine office at the base of the hill: ¥400 for Kono Jinja alone, or ¥500 for a combined goshuin covering both the main shrine and the okunomiya Mana-i Jinja."
+    answer: "Mana-i Jinja is normally unstaffed, with its own on-site office open only a few designated days each month (dates are announced on Kono Jinja's official website). On other days, goshuin are obtained at Kono Jinja's shrine office at the base of the hill: ¥500 for Kono Jinja alone, or ¥500 for a combined goshuin covering both the main shrine and the okunomiya Mana-i Jinja."
 ---
 
 ## History

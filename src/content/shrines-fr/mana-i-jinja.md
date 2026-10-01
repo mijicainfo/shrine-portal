@@ -20,7 +20,7 @@ parking: "Il n'y a pas de parking dédié à Mana-i Jinja lui-même ; les visite
 goshuin:
   available: true
   hours: "9h00–16h30 (délivré au bureau du sanctuaire de Kono Jinja, sauf les quelques jours par mois où le bureau propre à Mana-i Jinja est tenu)"
-  fee: "¥400 pour Kono Jinja seul, ou ¥500 pour un goshuin combiné couvrant à la fois le sanctuaire principal et l'okunomiya Mana-i Jinja"
+  fee: "¥500 pour Kono Jinja seul, ou ¥500 pour un goshuin combiné couvrant à la fois le sanctuaire principal et l'okunomiya Mana-i Jinja"
 officialUrl: "https://www.motoise.jp/about/okunomiya/"
 themeColor: "indigo"
 featured: false
@@ -47,7 +47,7 @@ faq:
   - question: "La photographie est-elle autorisée à Mana-i Jinja ?"
     answer: "La photographie est restreinte dans une partie de l'enceinte. Au-delà du second torii, les marches de pierre menant au bâtiment principal ainsi que les rochers sacrés de l'iwakura derrière celui-ci sont considérés comme terre interdite (kinsokuchi), où l'entrée comme la photographie sont toutes deux prohibées. Cette règle a été appliquée plus strictement ces dernières années à mesure que le nombre de visiteurs augmentait avec la réputation du site comme « lieu de pouvoir ». Le chemin d'accès et la zone jusqu'au bas des marches restent librement photographiables, mais les visiteurs doivent suivre toute signalétique ou instruction du personnel dans la zone restreinte."
   - question: "Où peut-on obtenir un goshuin pour Mana-i Jinja ?"
-    answer: "Mana-i Jinja est normalement sans personnel, son propre bureau sur place n'étant ouvert que quelques jours désignés par mois (les dates sont annoncées sur le site officiel de Kono Jinja). Les autres jours, le goshuin est délivré au bureau du sanctuaire de Kono Jinja, au pied de la colline : ¥400 pour Kono Jinja seul, ou ¥500 pour un goshuin combiné couvrant à la fois le sanctuaire principal et l'okunomiya Mana-i Jinja."
+    answer: "Mana-i Jinja est normalement sans personnel, son propre bureau sur place n'étant ouvert que quelques jours désignés par mois (les dates sont annoncées sur le site officiel de Kono Jinja). Les autres jours, le goshuin est délivré au bureau du sanctuaire de Kono Jinja, au pied de la colline : ¥500 pour Kono Jinja seul, ou ¥500 pour un goshuin combiné couvrant à la fois le sanctuaire principal et l'okunomiya Mana-i Jinja."
 ---
 
 ## Histoire

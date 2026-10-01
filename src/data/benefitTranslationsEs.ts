@@ -63,4 +63,10 @@ export const benefitTranslationsEs: Record<string, string> = {
   火防: 'Prevención de Incendios',
   盗難除け: 'Protección contra Robos',
   大願成就: 'Cumplimiento de Grandes Deseos',
+  導き: 'Guía',
+  技芸上達: 'Progreso en Habilidades y Carrera',
+  '健康祈願・家内安全': 'Salud y Seguridad del Hogar',
+  子宝: 'Fertilidad',
+  工事安全: 'Seguridad en la Construcción',
+  良縁: 'Buenas Relaciones y Matrimonio',
 };

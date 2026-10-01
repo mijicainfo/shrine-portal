@@ -63,4 +63,10 @@ export const benefitTranslationsFr: Record<string, string> = {
   '厄除け・浄化': 'Protection contre le Malheur et Purification',
   盗難除け: 'Protection contre le Vol',
   大願成就: 'Réalisation des Grands Vœux',
+  導き: 'Guidance',
+  技芸上達: 'Progrès des Compétences et de la Carrière',
+  '健康祈願・家内安全': 'Santé et Sécurité du Foyer',
+  子宝: 'Bénédiction de la Fertilité',
+  工事安全: 'Sécurité des Chantiers',
+  良縁: 'Bonnes Relations',
 };

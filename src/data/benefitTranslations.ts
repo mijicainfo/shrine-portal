@@ -49,4 +49,10 @@ export const benefitTranslations: Record<string, string> = {
   大願成就: 'Fulfillment of Great Wishes',
   火防: 'Fire Prevention',
   盗難除け: 'Protection from Theft',
+  導き: 'Guidance',
+  技芸上達: 'Skill & Career Advancement',
+  '健康祈願・家内安全': 'Health & Household Safety',
+  子宝: 'Conceiving Children',
+  工事安全: 'Safety in Construction',
+  良縁: 'Good Relationships & Matchmaking',
 };
