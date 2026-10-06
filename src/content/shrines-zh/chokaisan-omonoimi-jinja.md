@@ -111,4 +111,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E6%B5%B7%E3%83%96%E3%83%AB%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%B3%20%E5%B1%B1%E5%BD%A2%E7%9C%8C%E9%81%8A%E4%BD%90%E7%94%BA" target="_blank" rel="noopener noreferrer"><strong>鳥海藍色公路</strong></a>：鄰近吹浦口之宮，蜿蜒於鳥海山半山腰、連結山形與秋田的山岳觀光道路。可欣賞櫻花、杜鵑與壯闊的日本海景致，是熱門的兜風路線。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%B3%A5%E6%B5%B7%E6%B9%96%E6%B2%BC%20%E3%81%B5%E3%81%8F%E3%82%89%E3%81%AE%E9%87%8C%E6%B0%B4%20%E5%B1%B1%E5%BD%A2%E7%9C%8C%E9%81%8A%E4%BD%90%E7%94%BA" target="_blank" rel="noopener noreferrer"><strong>丸池樣（丸池神社）</strong></a>：鳥海山伏流水湧出、閃耀鈷藍色澤的神秘池水。位於遊佐町內，許多參拜者會與吹浦口之宮一併造訪，是熱門景點。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E9%85%92%E7%94%B0%E5%B8%82%E7%AB%8B%E5%85%83%E5%88%A9%E4%BC%91%E9%A4%8A%20%E6%A1%92%E6%9E%97%E5%85%AC%E5%9C%92" target="_blank" rel="noopener noreferrer"><strong>山居倉庫・酒田街景</strong></a>：鄰接的酒田市代表性觀光景點。以明治時代的米倉建築群聞名，可從中感受鳥海山信仰與庄內平原農業之間的深厚連結。
-</content>

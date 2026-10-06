@@ -74,4 +74,3 @@ faq:
 
 - <a href="https://www.google.com/maps/search/?api=1&query=%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AF%E3%82%8C%E3%81%BE%20%E5%AE%AE%E5%9F%8E%E7%9C%8C%E5%A1%A9%E7%AB%88%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>カフェはれま</strong></a>：位於JR本鹽竈站與神社之間，由明治初期的旅館改建而成的咖啡廳，可品嚐與塩竈相關的甜點與輕食。
 - 本鹽竈站周邊也散布著販售當地和菓子店五色糰子等點心的店家，很適合參拜後邊走邊吃。
-</content>

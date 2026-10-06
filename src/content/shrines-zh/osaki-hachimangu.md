@@ -77,4 +77,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E5%9F%8E%E6%A4%B8%E5%B0%8F%E8%B7%AF%E3%80%80%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>大崎八幡宮北參道周邊的城下町街區</strong></a>：從北參道鳥居前延伸而出的街道上，餐飲店與甜品店星羅棋布，方便在參拜前後順道造訪。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E5%AE%9A%E7%A6%85%E5%AF%BA%E9%80%9A%20%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>定禪寺通</strong></a>：以櫸木林蔭道聞名、仙台首屈一指的象徵性街道，從大崎八幡宮前往交通便利。沿路咖啡廳與藝廊林立，也是熱門的散步去處。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E4%BB%99%E5%8F%B0%E5%9F%8E%E8%B7%A1%20%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>仙台城跡（青葉城跡）</strong></a>：伊達政宗所築仙台城的遺址，設有政宗公的騎馬像及可眺望仙台市街的展望台。與大崎八幡宮同為政宗淵源之地，許多觀光客會一併造訪。
-</content>

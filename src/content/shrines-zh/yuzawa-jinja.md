@@ -74,4 +74,3 @@ faq:
 - <a href="https://www.google.com/maps/search/?api=1&query=%E7%AC%AC%E4%B8%80%E6%BB%9D%E6%9C%AC%E9%A4%A8%20%E5%8C%97%E6%B5%B7%E9%81%93%E7%99%BB%E5%88%A5%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>第一瀧本館</strong></a>：座落於湯澤神社正對面，登別溫泉歷史最悠久的老字號旅館。承襲了作為神社由來的瀧本金藏所創辦的旅宿血脈，其大浴場亦開放當日入浴，廣受歡迎。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E7%99%BB%E5%88%A5%E5%9C%B0%E7%8D%84%E8%B0%B7%20%E5%8C%97%E6%B5%B7%E9%81%93%E7%99%BB%E5%88%A5%E5%B8%82" target="_blank" rel="noopener noreferrer"><strong>地獄谷</strong></a>：湯澤神社創建之緣起——原本供奉小祠之地，是登別溫泉源泉湧出的景勝地。位於神社步行可達範圍內，絕大多數觀光客都會一併造訪。
 - <a href="https://www.google.com/maps/search/?api=1&query=%E6%A5%B5%E6%A5%BD%E9%80%9A%E3%82%8A%20%E7%99%BB%E5%88%A5%E6%B8%A9%E6%B3%89" target="_blank" rel="noopener noreferrer"><strong>極樂通（極樂商店街）</strong></a>：連接湯澤神社參道入口的登別溫泉主要街道。沿路林立著土產店、餐飲店與足湯，也以閻魔堂「鬼火傳說」的機關報時鐘聞名。
-</content>
