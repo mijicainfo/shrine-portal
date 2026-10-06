@@ -3,7 +3,7 @@ name: "Jonangu Shrine"
 kana: "Jonangu"
 prefecture: "Kyoto Prefecture"
 city: "Fushimi-ku, Kyoto"
-bookingCity: "Kyoto"
+bookingCity: "Fushimi Ward"
 address: "7 Nakajima Toba Rikyu-cho, Fushimi-ku, Kyoto, Japan"
 deities:
   - "Kuninotokotachi no Mikoto"

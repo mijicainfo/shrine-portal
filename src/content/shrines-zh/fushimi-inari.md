@@ -3,7 +3,7 @@ name: "伏見稲荷大社"
 kana: "Fushimi Inari Taisha"
 prefecture: "京都府"
 city: "京都市伏見区"
-bookingCity: "Fushimi-ku, Kyoto"
+bookingCity: "Fushimi Ward"
 bookingPrefecture: "Kyoto"
 address: "京都府京都市伏見区深草藪之内町68"
 deities:

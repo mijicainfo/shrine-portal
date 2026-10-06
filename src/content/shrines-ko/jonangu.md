@@ -3,7 +3,7 @@ name: "조난구"
 kana: "Jonangu"
 prefecture: "Kyoto Prefecture"
 city: "Fushimi-ku, Kyoto"
-bookingCity: "Kyoto"
+bookingCity: "Fushimi Ward"
 address: "7 Nakajima Toba Rikyu-cho, Fushimi-ku, Kyoto, Japan"
 deities:
   - "구니노토코타치노미코토"

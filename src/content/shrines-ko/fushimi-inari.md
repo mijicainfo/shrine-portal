@@ -3,6 +3,7 @@ name: "Fushimi Inari Taisha"
 kana: "Fushimi Inari Taisha"
 prefecture: "Kyoto Prefecture"
 city: "Fushimi-ku, Kyoto"
+bookingCity: "Fushimi Ward"
 address: "68 Fukakusa Yabunouchicho, Fushimi-ku, Kyoto, Japan"
 deities:
   - "우카노미타마노오카미"

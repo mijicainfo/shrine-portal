@@ -3,7 +3,7 @@ name: "城南宮"
 kana: "Jonangu"
 prefecture: "京都府"
 city: "京都市伏見区"
-bookingCity: "Kyoto"
+bookingCity: "Fushimi Ward"
 bookingPrefecture: "Kyoto"
 address: "京都府京都市伏見区中島鳥羽離宮町7"
 deities:
