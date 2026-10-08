@@ -24,7 +24,7 @@ officialUrl: "https://sugajinjya.or.jp/"
 themeColor: "vermillion"
 featured: false
 order: 242
-publishDate: 2026-10-15
+publishDate: 2026-10-08
 image: "../shrines/suga-jinja-tokyo.jpg"
 imageCredit:
   author: "Yuet Man Lee"

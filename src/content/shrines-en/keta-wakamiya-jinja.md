@@ -26,7 +26,7 @@ goshuin:
 themeColor: "indigo"
 featured: false
 order: 244
-publishDate: 2026-10-15
+publishDate: 2026-10-08
 image: "../shrines/keta-wakamiya-jinja.jpg"
 imageCredit:
   author: "Opqr"

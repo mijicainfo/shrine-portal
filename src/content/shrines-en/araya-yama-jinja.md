@@ -23,7 +23,7 @@ officialUrl: "https://www.yamajinja.jp/"
 themeColor: "gold"
 featured: false
 order: 240
-publishDate: 2026-10-15
+publishDate: 2026-10-08
 image: "../shrines/araya-yama-jinja.jpg"
 imageCredit:
   author: "立志堂"

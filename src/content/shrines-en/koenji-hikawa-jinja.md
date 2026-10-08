@@ -24,7 +24,7 @@ officialUrl: "https://koenji-hikawa.com/"
 themeColor: "indigo"
 featured: false
 order: 243
-publishDate: 2026-10-15
+publishDate: 2026-10-08
 image: "../shrines/koenji-hikawa-jinja.jpg"
 imageCredit:
   author: "Kakidai"

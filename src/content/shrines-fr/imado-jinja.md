@@ -25,7 +25,7 @@ officialUrl: "https://imadojinja1063.crayonsite.net/"
 themeColor: "vermillion"
 featured: false
 order: 241
-publishDate: 2026-10-22
+publishDate: 2026-10-08
 image: "../shrines/imado-jinja.jpg"
 imageCredit:
   author: "yoppy"
