@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { gaMeasurementId } from '../data/analytics';
+import { availableLangs } from '../lib/content';
 
 interface Props {
   title: string;
@@ -70,6 +71,10 @@ const hreflangPath: Record<Lang, string> = {
 };
 const hreflangCode: Record<Lang, string> = { ja: 'ja', en: 'en', zh: 'zh-Hant', es: 'es', fr: 'fr', ko: 'ko' };
 const hreflangUrl = (l: Lang) => new URL(hreflangPath[l], Astro.site).toString();
+// Scheduled publishing: only advertise translations that are actually live
+// (a shrine/guide page can be released language by language; see src/lib/content.ts).
+const liveLangs = await availableLangs(basePath);
+const xDefaultLang: Lang = liveLangs.includes('ja') ? 'ja' : liveLangs[0];
 ---
 
 <!doctype html>
@@ -84,10 +89,10 @@ const hreflangUrl = (l: Lang) => new URL(hreflangPath[l], Astro.site).toString()
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalUrl} />
-    {(Object.keys(hreflangPath) as Lang[]).map((l) => (
+    {(Object.keys(hreflangPath) as Lang[]).filter((l) => liveLangs.includes(l)).map((l) => (
       <link rel="alternate" hreflang={hreflangCode[l]} href={hreflangUrl(l)} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={hreflangUrl('ja')} />
+    <link rel="alternate" hreflang="x-default" href={hreflangUrl(xDefaultLang)} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

@@ -1,0 +1,39 @@
+# Scheduled publishing ("予約投稿"): the site is static, so content whose publishDate has
+# not arrived yet is left out of the build (src/lib/content.ts). This workflow runs
+# every day just after midnight JST and, only on days when something is due, asks Vercel
+# to rebuild so the newly-due pages go live.
+#
+# One-time setup (see README / the hand-off notes):
+#   1. Vercel project -> Settings -> Git -> Deploy Hooks -> create a hook for the
+#      production branch (main) and copy its URL.
+#   2. GitHub repo -> Settings -> Secrets and variables -> Actions -> New repository
+#      secret named VERCEL_DEPLOY_HOOK_URL with that URL.
+name: Scheduled release
+
+on:
+  schedule:
+    # 15:05 UTC = 00:05 JST (GitHub cron runs in UTC and can be a few minutes late)
+    - cron: '5 15 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Is anything due today (or yesterday) in JST?
+        id: due
+        run: echo "due=$(node scripts/release-schedule.mjs --due)" >> "$GITHUB_OUTPUT"
+      - name: Trigger Vercel deploy
+        if: steps.due.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK_URL secret is not set" >&2
+            exit 1
+          fi
+          curl -fsS -X POST "$HOOK"

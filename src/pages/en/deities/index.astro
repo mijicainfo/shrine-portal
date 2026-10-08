@@ -1,10 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import { deityInsightsEn } from '../../../data/deityInsights.en';
+import { getPublished } from '../../../lib/content';
 
-const shrines = (await getCollection('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="Kami Guide: Gods of Japanese Shrines" description="Who are the kami? Explore the gods enshrined at shrines across Japan — their mythological roles and the traditional chants (norito) still recited today.">

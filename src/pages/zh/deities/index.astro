@@ -1,10 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import { deityInsightsZh } from '../../../data/deityInsights.zh';
+import { getPublished } from '../../../lib/content';
 
-const shrines = (await getCollection('shrinesZh')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrinesZh')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="神明指南" description="介紹日本各地神社所供奉的神明——祂們在神話中的角色，以及流傳下來的唱誦詞。">

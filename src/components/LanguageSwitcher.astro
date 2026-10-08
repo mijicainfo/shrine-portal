@@ -1,4 +1,6 @@
 ---
+import { availableLangs } from '../lib/content';
+
 const path = Astro.url.pathname;
 const locales = ['en', 'zh', 'es', 'fr', 'ko'] as const;
 type Locale = 'ja' | (typeof locales)[number];
@@ -8,8 +10,15 @@ const currentLang: Locale = matched ?? 'ja';
 
 const localePattern = new RegExp(`^/(${locales.join('|')})`);
 const basePath = currentLang === 'ja' ? path : path.replace(localePattern, '') || '/';
-const buildPath = (lang: Locale) =>
-  lang === 'ja' ? basePath : `/${lang}${basePath === '/' ? '' : basePath}`;
+// Scheduled publishing: a shrine/guide page may not be live in every language yet
+// (see src/lib/content.ts). For a language where this page isn't released, link to
+// that language's shrine/guide list instead of a page that doesn't exist.
+const liveLangs = await availableLangs(basePath);
+const listPath = basePath.startsWith('/guides/') ? '/guides/' : '/shrines/';
+const buildPath = (lang: Locale) => {
+  const target = liveLangs.includes(lang) ? basePath : listPath;
+  return lang === 'ja' ? target : `/${lang}${target === '/' ? '' : target}`;
+};
 
 const links = [
   { lang: 'ja' as const, label: '日本語' },

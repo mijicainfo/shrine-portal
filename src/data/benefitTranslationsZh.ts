@@ -6,6 +6,7 @@
 export const benefitTranslationsZh: Record<string, string> = {
   厄除け: '消災解厄',
   開運: '開運',
+  天気祈願: '祈求好天氣',
   厄除開運: '消災解厄開運',
   縁結び: '締結良緣',
   縁起: '吉祥如意',

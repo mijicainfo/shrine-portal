@@ -1,10 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import { deityInsightsKo } from '../../../data/deityInsights.ko';
+import { getPublished } from '../../../lib/content';
 
-const shrines = (await getCollection('shrinesKo')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrinesKo')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="신 가이드" description="일본 각지 신사에 모셔진 신들을 소개합니다 — 신화 속 역할과 함께 전해지는 신주(神呪)까지 함께 알아봅니다.">

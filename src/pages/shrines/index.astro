@@ -1,10 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ShrineCard from '../../components/ShrineCard.astro';
-import { getCollection } from 'astro:content';
 import { regions, getRegionId } from '../../data/regions';
+import { getPublished } from '../../lib/content';
 
-const shrines = (await getCollection('shrines')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrines')).sort((a, b) => a.data.order - b.data.order);
 const prefectures = [...new Set(shrines.map((s) => s.data.prefecture))].sort();
 const allBenefits = [...new Set(shrines.flatMap((s) => s.data.benefits ?? []))].sort();
 const allDeities = [...new Set(shrines.flatMap((s) => s.data.deities ?? []))].sort();

@@ -29,6 +29,17 @@ For the pre-existing backlog of older shrines that predate this process, work th
 
 Every shrine page automatically shows a "関連する神社" (Related Shrines) block linking to a few other shrines that share the same `prefecture` and/or `benefits` tags — see [src/lib/related.ts](src/lib/related.ts) and [src/components/RelatedShrines.astro](src/components/RelatedShrines.astro), wired into all six `src/pages/{,en/,zh/,es/,fr/,ko/}shrines/[id].astro` templates. This is fully automatic: it only reads `prefecture` and `benefits`, which every shrine already has, so newly added shrines (including ones authored outside this repo/session) get related links with zero extra work — never add manual "related shrine IDs" to frontmatter for this.
 
+## Scheduled publishing ("予約投稿") — release languages on different days
+
+A shrine/guide entry is only built once its frontmatter `publishDate` has arrived (Japan time) — see [src/lib/content.ts](src/lib/content.ts). All 6 language files are still written together, but each language file carries its OWN `publishDate`, so e.g. ja/zh can go live today, en a week later, es/fr/ko two weeks later. Nothing else changes in how shrines are authored.
+
+- Every page/query must go through `getPublished()` / `getPublishedEntry()` from `src/lib/content.ts`, never raw `getCollection()` / `getEntry()` (that would publish future-dated entries immediately).
+- `hreflang` tags (Layout.astro) and the language switcher only list languages that are live for a given shrine/guide page.
+- The site is static, so a release needs a rebuild on/after the date. `.github/workflows/scheduled-release.yml` runs daily at 00:05 JST and, only if `node scripts/release-schedule.mjs --due` says something is due, POSTs the `VERCEL_DEPLOY_HOOK_URL` secret (Vercel deploy hook). Any normal push also rebuilds.
+- `node scripts/release-schedule.mjs` prints the upcoming-release schedule grouped by date, shrine and language (report it to the user after adding shrines).
+- Test an "as of" date: `PUBLISH_AS_OF=2026-10-01 npm run build` (use `2099-01-01` to include everything).
+- Don't mix this up with `src/data/updates.ts` (the homepage feed): add a shrine to the feed only when its ja page goes live; the feed already skips slugs that aren't live in the current locale.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build

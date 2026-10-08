@@ -1,11 +1,12 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import ShrineCard from '../../../components/ShrineCard.astro';
-import { getCollection, getEntry, render } from 'astro:content';
+import { render } from 'astro:content';
 import { buildItemListStructuredData } from '../../../lib/seo';
+import { getPublished, getPublishedEntry } from '../../../lib/content';
 
 export async function getStaticPaths() {
-  const guides = await getCollection('guidesZh');
+  const guides = await getPublished('guidesZh');
   return guides.map((guide) => ({
     params: { id: guide.id },
     props: { guide },
@@ -18,7 +19,7 @@ const { Content } = await render(guide);
 
 const entries = await Promise.all(
   data.entries.map(async (entry) => {
-    const shrine = await getEntry('shrinesZh', entry.shrineId);
+    const shrine = await getPublishedEntry('shrinesZh', entry.shrineId);
     return { entry, shrine };
   }),
 );

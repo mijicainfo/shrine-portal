@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
+import { getPublished } from '../../lib/content';
 
-const shrines = await getCollection('shrinesKo');
+const shrines = await getPublished('shrinesKo');
 const shrineData = await Promise.all(
   shrines.map(async (s) => {
     let imageSrc: string | null = null;

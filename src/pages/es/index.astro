@@ -2,12 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import ShrineCard from '../../components/ShrineCard.astro';
 import SeigaihaWave from '../../components/SeigaihaWave.astro';
-import { getCollection } from 'astro:content';
 import { getImage } from 'astro:assets';
 import { benefitTranslationsEs } from '../../data/benefitTranslationsEs';
 import { updates } from '../../data/updates';
+import { getPublished } from '../../lib/content';
 
-const shrines = await getCollection('shrinesEs');
+const shrines = await getPublished('shrinesEs');
 const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
 
 const shrineById = new Map(shrines.map((s) => [s.id, s]));

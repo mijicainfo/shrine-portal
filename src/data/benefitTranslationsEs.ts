@@ -6,6 +6,7 @@
 export const benefitTranslationsEs: Record<string, string> = {
   厄除け: 'Protección contra la Mala Suerte',
   開運: 'Buena Fortuna',
+  天気祈願: 'Oración por el Buen Tiempo',
   縁結び: 'Buenas Relaciones',
   家内安全: 'Seguridad del Hogar',
   商売繁盛: 'Prosperidad en los Negocios',

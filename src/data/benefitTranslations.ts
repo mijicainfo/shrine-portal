@@ -6,6 +6,7 @@
 export const benefitTranslations: Record<string, string> = {
   厄除け: 'Protection from Misfortune',
   開運: 'Good Fortune',
+  天気祈願: 'Prayers for Good Weather',
   諸願成就: 'Fulfillment of Wishes',
   縁結び: 'Good Relationships',
   家内安全: 'Household Safety',

@@ -1,11 +1,11 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import ShrineCard from '../../../components/ShrineCard.astro';
-import { getCollection } from 'astro:content';
 import { regions, getRegionId } from '../../../data/regions';
 import { benefitTranslations } from '../../../data/benefitTranslations';
+import { getPublished } from '../../../lib/content';
 
-const shrines = (await getCollection('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrinesEn')).sort((a, b) => a.data.order - b.data.order);
 // Some shrine entries use "X Prefecture", others just "X" — normalize so both
 // resolve to the same filter option/value instead of appearing as duplicates.
 const normalizePref = (p: string) => p.replace(/\s*Prefecture$/i, '').trim();

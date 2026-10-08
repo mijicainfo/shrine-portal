@@ -1,10 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import { deityInsightsEs } from '../../../data/deityInsights.es';
+import { getPublished } from '../../../lib/content';
 
-const shrines = (await getCollection('shrinesEs')).sort((a, b) => a.data.order - b.data.order);
+const shrines = (await getPublished('shrinesEs')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout title="Guía de los Kami" description="Una introducción a los kami venerados en los santuarios de todo Japón — sus funciones mitológicas y los cánticos tradicionales asociados a ellos.">

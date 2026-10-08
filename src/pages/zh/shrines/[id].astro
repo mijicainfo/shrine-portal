@@ -10,13 +10,14 @@ import FavoriteButton from '../../../components/FavoriteButton.astro';
 import VisitedButton from '../../../components/VisitedButton.astro';
 import RelatedShrines from '../../../components/RelatedShrines.astro';
 import { Image, getImage } from 'astro:assets';
-import { getCollection, render } from 'astro:content';
+import { render } from 'astro:content';
 import { buildShrineDescription, buildShrineStructuredData, buildFaqStructuredData } from '../../../lib/seo';
 import { benefitTranslationsZh } from '../../../data/benefitTranslationsZh';
 import { findRelatedShrines } from '../../../lib/related';
+import { getPublished } from '../../../lib/content';
 
 export async function getStaticPaths() {
-  const shrines = await getCollection('shrinesZh');
+  const shrines = await getPublished('shrinesZh');
   return shrines.map((shrine) => ({
     params: { id: shrine.id },
     props: { shrine, allShrines: shrines },

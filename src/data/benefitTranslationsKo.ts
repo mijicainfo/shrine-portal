@@ -6,6 +6,7 @@
 export const benefitTranslationsKo: Record<string, string> = {
   厄除け: '액막이',
   開運: '개운',
+  天気祈願: '날씨 기원',
   厄除開運: '액막이·개운',
   縁結び: '인연 맺기',
   縁起: '길운',
