@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import JuyohinIcon from '../../../components/JuyohinIcon.astro';
 import { juyohinItemsFr } from '../../../data/juyohin.fr';
+import AmazonPicks from '../../../components/AmazonPicks.astro';
 ---
 
 <Layout title="Guide des Amulettes & Porte-Bonheur" description="Un guide illustré des omamori, goshuincho, hamaya, ema, et autres objets que l'on peut recevoir dans un sanctuaire.">
@@ -53,6 +54,10 @@ import { juyohinItemsFr } from '../../../data/juyohin.fr';
           </div>
         </div>
       ))}
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set="items" />
     </div>
 
     <p class="mt-10 text-center text-xs text-shrine-ink-soft">

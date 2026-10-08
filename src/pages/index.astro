@@ -5,6 +5,7 @@ import SeigaihaWave from '../components/SeigaihaWave.astro';
 import { getImage } from 'astro:assets';
 import { updates } from '../data/updates';
 import { getPublished } from '../lib/content';
+import AmazonPicks from '../components/AmazonPicks.astro';
 
 const shrines = await getPublished('shrines');
 const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0, 6);
@@ -334,6 +335,10 @@ const benefitCategories = [
   </section>
 
   <!-- 初心者向けガイド -->
+  <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <AmazonPicks set="home" />
+  </section>
+
   <section id="guide" class="bg-shrine-indigo py-16 text-shrine-paper">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <h2 class="font-serif-jp text-xl font-bold sm:text-2xl">はじめての参拝ガイド</h2>

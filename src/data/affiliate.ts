@@ -15,11 +15,15 @@
  * - Klook アフィリエイトプログラム:
  *   https://affiliate.klook.com/
  *   （登録・承認後に発行される「aid」をklookAffiliateIdに設定）
+ * - Amazonアソシエイト（amazon.co.jp）:
+ *   https://affiliate.amazon.co.jp/
+ *   （発行されるトラッキングIDをamazonAssociateTagに設定）
  */
 export const affiliateConfig = {
   bookingAid: '', // 例: '000000'
   rakutenAffiliateId: '56c886ca.b45eb0da.56c886cb.c7bcc58d',
   klookAffiliateId: '132325',
+  amazonAssociateTag: 'shrine036-22',
 };
 
 /**
@@ -80,4 +84,16 @@ export function buildKlookSearchUrl(query: string, lang: 'ja' | 'en' | 'zh' | 'e
     return `https://affiliate.klook.com/redirect?${params.toString()}`;
   }
   return targetUrl;
+}
+
+/**
+ * Amazon.co.jp の検索結果ページURLを生成します（アソシエイトのトラッキングID付き）。
+ * 日本語以外のページでは、Amazon.co.jpを英語表示で開きます（language=en_US、動作確認済み）。
+ * 商品画像・価格はAPI利用資格が必要なため使わず、検索リンクのみで紹介します。
+ */
+export function buildAmazonSearchUrl(keyword: string, lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko' = 'ja'): string {
+  const params = new URLSearchParams({ k: keyword });
+  if (lang !== 'ja') params.set('language', 'en_US');
+  if (affiliateConfig.amazonAssociateTag) params.set('tag', affiliateConfig.amazonAssociateTag);
+  return `https://www.amazon.co.jp/s?${params.toString()}`;
 }

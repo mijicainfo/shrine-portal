@@ -4,6 +4,7 @@ import ShrineCard from '../../../components/ShrineCard.astro';
 import { render } from 'astro:content';
 import { buildItemListStructuredData } from '../../../lib/seo';
 import { getPublished, getPublishedEntry } from '../../../lib/content';
+import AmazonPicks from '../../../components/AmazonPicks.astro';
 
 export async function getStaticPaths() {
   const guides = await getPublished('guidesZh');
@@ -72,6 +73,10 @@ const structuredData = buildItemListStructuredData(
 
     <div class:list={["prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion", entries.length > 0 && "mt-10 border-t border-shrine-gold/15 pt-10"]}>
       <Content />
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set={`guide:${guide.id}`} />
     </div>
   </section>
 </Layout>

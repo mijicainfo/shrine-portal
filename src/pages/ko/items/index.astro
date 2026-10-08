@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import JuyohinIcon from '../../../components/JuyohinIcon.astro';
 import { juyohinItemsKo } from '../../../data/juyohin.ko';
+import AmazonPicks from '../../../components/AmazonPicks.astro';
 ---
 
 <Layout title="부적 & 기념품 가이드" description="오마모리, 고슈인초, 하마야, 에마 등 신사에서 받을 수 있는 물품을 그림과 함께 소개하는 가이드입니다.">
@@ -53,6 +54,10 @@ import { juyohinItemsKo } from '../../../data/juyohin.ko';
           </div>
         </div>
       ))}
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set="items" />
     </div>
 
     <p class="mt-10 text-center text-xs text-shrine-ink-soft">

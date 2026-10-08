@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import JuyohinIcon from '../../components/JuyohinIcon.astro';
 import { juyohinItems } from '../../data/juyohin';
+import AmazonPicks from '../../components/AmazonPicks.astro';
 ---
 
 <Layout title="授与品ガイド" description="お守り、御朱印帳、破魔矢、絵馬など、神社でいただける授与品をイラストつきでご紹介します。">
@@ -53,6 +54,10 @@ import { juyohinItems } from '../../data/juyohin';
           </div>
         </div>
       ))}
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set="items" />
     </div>
 
     <p class="mt-10 text-center text-xs text-shrine-ink-soft">

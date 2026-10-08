@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import JuyohinIcon from '../../../components/JuyohinIcon.astro';
 import { juyohinItemsEs } from '../../../data/juyohin.es';
+import AmazonPicks from '../../../components/AmazonPicks.astro';
 ---
 
 <Layout title="Guía de Amuletos y Talismanes" description="Una guía ilustrada sobre omamori, goshuincho, hamaya, ema y otros objetos que puedes recibir en un santuario.">
@@ -53,6 +54,10 @@ import { juyohinItemsEs } from '../../../data/juyohin.es';
           </div>
         </div>
       ))}
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set="items" />
     </div>
 
     <p class="mt-10 text-center text-xs text-shrine-ink-soft">

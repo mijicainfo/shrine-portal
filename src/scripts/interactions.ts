@@ -57,7 +57,7 @@ function initButtons(selector: string, key: string) {
 initButtons('[data-favorite-btn]', FAVORITES_KEY);
 initButtons('[data-visited-btn]', VISITED_KEY);
 
-type AffiliatePartner = 'booking' | 'rakuten' | 'klook';
+type AffiliatePartner = 'booking' | 'rakuten' | 'klook' | 'amazon';
 
 function detectAffiliatePartner(href: string): AffiliatePartner | null {
   let hostname: string;
@@ -69,6 +69,7 @@ function detectAffiliatePartner(href: string): AffiliatePartner | null {
   if (hostname.includes('booking.com')) return 'booking';
   if (hostname.includes('rakuten.co.jp')) return 'rakuten';
   if (hostname.includes('klook.com')) return 'klook';
+  if (hostname.includes('amazon.co.jp')) return 'amazon';
   return null;
 }
 

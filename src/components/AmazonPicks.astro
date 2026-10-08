@@ -1,0 +1,48 @@
+---
+// Amazonアソシエイトの紹介ブロック（検索リンクのみ。商品画像・価格は使わない）。
+// 内容は src/data/amazonPicks.ts、リンク生成は src/data/affiliate.ts。
+import { buildAmazonSearchUrl } from '../data/affiliate';
+import { amazonPickSets, amazonDisclosure, amazonBadge, amazonButton, amazonNote, type Lang } from '../data/amazonPicks';
+
+interface Props {
+  /** amazonPickSets のキー（例: 'home' / 'kamidana' / 'items' / 'guide:enmusubi-top10'） */
+  set: string;
+  /** wide: 横長（ページ下部・トップ）／ side: 縦並び（サイドバー） */
+  variant?: 'wide' | 'side';
+}
+
+const { set, variant = 'wide' } = Astro.props;
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const data = amazonPickSets[set];
+const note = amazonNote[lang];
+---
+
+{data && (
+  <aside class="rounded-2xl border border-shrine-gold/30 bg-white p-5 shadow-sm" aria-label={data.title[lang]}>
+    <p class="inline-block rounded-full bg-shrine-paper-dark px-2.5 py-0.5 text-[10px] font-bold tracking-wide text-shrine-vermillion">
+      {amazonBadge[lang]}
+    </p>
+    <h2 class="mt-2 font-serif-jp text-base font-bold text-shrine-ink">{data.title[lang]}</h2>
+    <p class="mt-1 text-sm leading-relaxed text-shrine-ink-soft">{data.lead[lang]}</p>
+
+    <ul class:list={['mt-4 grid gap-2', variant === 'wide' ? 'sm:grid-cols-2 lg:grid-cols-4' : 'grid-cols-1']}>
+      {data.picks.map((p) => (
+        <li>
+          <a
+            href={buildAmazonSearchUrl(p.keyword, lang)}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="block rounded-xl border border-shrine-gold/30 px-4 py-3 text-sm transition hover:border-shrine-vermillion hover:bg-shrine-vermillion-light"
+          >
+            <span class="block font-medium text-shrine-ink">{p.label[lang]}</span>
+            <span class="mt-0.5 block text-xs text-shrine-vermillion">{amazonButton[lang]} →</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    {note && <p class="mt-3 text-[11px] leading-relaxed text-shrine-ink-soft">{note}</p>}
+    <p class="mt-2 text-[11px] leading-relaxed text-shrine-ink-soft">{amazonDisclosure[lang]}</p>
+  </aside>
+)}

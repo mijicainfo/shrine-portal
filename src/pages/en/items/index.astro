@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import JuyohinIcon from '../../../components/JuyohinIcon.astro';
 import { juyohinItemsEn } from '../../../data/juyohin.en';
+import AmazonPicks from '../../../components/AmazonPicks.astro';
 ---
 
 <Layout title="Amulets & Charms Guide" description="An illustrated guide to omamori, goshuincho, hamaya, ema, and other items you can receive at a shrine.">
@@ -53,6 +54,10 @@ import { juyohinItemsEn } from '../../../data/juyohin.en';
           </div>
         </div>
       ))}
+    </div>
+
+    <div class="mt-10">
+      <AmazonPicks set="items" />
     </div>
 
     <p class="mt-10 text-center text-xs text-shrine-ink-soft">
