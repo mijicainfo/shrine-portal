@@ -20,7 +20,7 @@ export interface AmazonPickSet {
   picks: AmazonPick[];
 }
 
-/** Amazonの規約で表示が求められる文言（各ブロックのすぐ近くに表示します） */
+/** Amazonの規約で表示が求められる文言。各ブロックには出さず、プライバシーポリシー（各言語）に記載している。ここは文言の控え */
 export const amazonDisclosure: L10n = {
   ja: 'Amazonのアソシエイトとして、当サイトは適格販売により収入を得ています。',
   en: 'As an Amazon Associate, we earn from qualifying purchases.',

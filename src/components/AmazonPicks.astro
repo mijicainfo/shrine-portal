@@ -2,7 +2,7 @@
 // Amazonアソシエイトの紹介ブロック（検索リンクのみ。商品画像・価格は使わない）。
 // 内容は src/data/amazonPicks.ts、リンク生成は src/data/affiliate.ts。
 import { buildAmazonSearchUrl } from '../data/affiliate';
-import { amazonPickSets, amazonDisclosure, amazonBadge, amazonButton, amazonNote, type Lang } from '../data/amazonPicks';
+import { amazonPickSets, amazonBadge, amazonButton, amazonNote, type Lang } from '../data/amazonPicks';
 
 interface Props {
   /** amazonPickSets のキー（例: 'home' / 'kamidana' / 'items' / 'guide:enmusubi-top10'） */
@@ -43,6 +43,5 @@ const note = amazonNote[lang];
     </ul>
 
     {note && <p class="mt-3 text-[11px] leading-relaxed text-shrine-ink-soft">{note}</p>}
-    <p class="mt-2 text-[11px] leading-relaxed text-shrine-ink-soft">{amazonDisclosure[lang]}</p>
   </aside>
 )}
