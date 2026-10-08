@@ -115,10 +115,13 @@ const hreflangUrl = (l: Lang) => new URL(hreflangPath[l], Astro.site).toString()
       <>
         <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
         <script define:vars={{ gaMeasurementId }}>
+          // define:vars wraps this script in a function scope, so a bare `function gtag`
+          // would NOT be global. Assign to window so other scripts (e.g. the
+          // affiliate_click tracker in src/scripts/interactions.ts) can call window.gtag.
           window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-          gtag('config', gaMeasurementId);
+          window.gtag = function gtag() { window.dataLayer.push(arguments); };
+          window.gtag('js', new Date());
+          window.gtag('config', gaMeasurementId);
         </script>
       </>
     )}

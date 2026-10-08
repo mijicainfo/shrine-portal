@@ -4,6 +4,8 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { satteri } from '@astrojs/markdown-satteri';
+import fs from 'node:fs';
+import path from 'node:path';
 
 // Astro's Markdown parser (satteri) enables GFM strikethrough by default, and
 // its strikethrough rule accepts a *single* tilde as a delimiter, not just
@@ -46,6 +48,53 @@ const fixSingleTildeStrikethrough = {
   },
 };
 
+// --- Sitemap <lastmod> -------------------------------------------------------
+// Accurate per-URL lastmod helps Google prioritise crawling new/changed pages.
+// Shrine and guide pages use their own frontmatter `publishDate`; hub pages
+// (home, shrine list, guide list) use the newest shrine publishDate. Other pages
+// get no lastmod rather than a made-up one. Dates are clamped to today.
+const SITE = 'https://shrine-jp.net';
+const SITEMAP_LANGS = ['en', 'zh', 'es', 'fr', 'ko'];
+// Astro bundles this config to a temp file, so import.meta.url is not the project root;
+// build/dev always run from the project root, so resolve against the cwd.
+const contentRoot = path.resolve(process.cwd(), 'src/content');
+const today = new Date().toISOString().slice(0, 10);
+const lastmodByUrl = new Map();
+let newestShrineDate = '';
+for (const kind of ['shrines', 'guides']) {
+  for (const lang of ['', ...SITEMAP_LANGS]) {
+    const dir = path.join(contentRoot, lang ? `${kind}-${lang}` : kind);
+    if (!fs.existsSync(dir)) continue;
+    for (const file of fs.readdirSync(dir)) {
+      if (!file.endsWith('.md')) continue;
+      let head = '';
+      try {
+        head = fs.readFileSync(path.join(dir, file), 'utf8').slice(0, 4000);
+      } catch {
+        continue;
+      }
+      const m = head.match(/^publishDate:\s*['"]?(\d{4}-\d{2}-\d{2})/m);
+      if (!m) continue;
+      const date = m[1] > today ? today : m[1];
+      const prefix = lang ? `/${lang}` : '';
+      lastmodByUrl.set(`${SITE}${prefix}/${kind}/${file.replace(/\.md$/, '')}/`, date);
+      if (kind === 'shrines' && date > newestShrineDate) newestShrineDate = date;
+    }
+  }
+}
+const hubUrls = new Set();
+for (const lang of ['', ...SITEMAP_LANGS]) {
+  const prefix = lang ? `/${lang}` : '';
+  hubUrls.add(`${SITE}${prefix}/`);
+  hubUrls.add(`${SITE}${prefix}/shrines/`);
+  hubUrls.add(`${SITE}${prefix}/guides/`);
+}
+function serializeSitemapItem(item) {
+  const lastmod = lastmodByUrl.get(item.url) ?? (hubUrls.has(item.url) ? newestShrineDate : undefined);
+  if (lastmod) item.lastmod = `${lastmod}T00:00:00.000Z`;
+  return item;
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://shrine-jp.net',
@@ -56,7 +105,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [sitemap()],
+  integrations: [sitemap({ serialize: serializeSitemapItem })],
   markdown: {
     processor: satteri({
       mdastPlugins: [fixSingleTildeStrikethrough],
