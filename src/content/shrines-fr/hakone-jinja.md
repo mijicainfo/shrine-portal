@@ -65,7 +65,7 @@ La chronique du XIIIe siècle « Azuma Kagami » rapporte que Gyojitsu, grand pr
 
 Le torii vermillon « Heiwa no Torii » (Torii de la Paix), qui se dresse dans le lac Ashi, fut érigé en 1952 pour commémorer à la fois la signature du traité de San Francisco et la cérémonie d'investiture du prince héritier Akihito de l'époque. Les caractères signifiant « paix » sur la plaque du portail furent calligraphiés par l'ancien Premier ministre Shigeru Yoshida. Avec le mont Fuji se dressant au-delà du torii, de l'autre côté de l'eau, cette scène est l'une des vues les plus célèbres de Hakone et attire visiteurs et photographes du monde entier.
 
-L'enceinte abrite également le sanctuaire annexe Kuzuryu Jinja (Shingu), dédié à un dragon à neuf têtes autrefois redoutable, que Mangan Shonin aurait soumis et qui, une fois amendé, serait devenu la divinité gardienne du lac Ashi. Il est vénéré pour la fortune financière, la prospérité des affaires et les bonnes relations. Le lieu de naissance originel de la divinité-dragon est honoré au Kuzuryu Jinja Honengu, sur la rive opposée du lac, et les fêtes mensuelles du 13 — en particulier la grande fête du 13 juin — attirent de grandes foules.
+L'enceinte abrite également le sanctuaire annexe Kuzuryu Jinja (Shingu), dédié à un dragon à neuf têtes autrefois redoutable, que Mangan Shonin aurait soumis et qui, une fois amendé, serait devenu la divinité gardienne du lac Ashi. Il est vénéré pour la fortune financière, la prospérité des affaires et les bonnes relations. Le lieu de naissance originel de la divinité-dragon est honoré au Kuzuryu Jinja Hongu, sur la rive opposée du lac, et les fêtes mensuelles du 13 — en particulier la grande fête du 13 juin — attirent de grandes foules.
 
 ## Conseils de Visite
 
@@ -74,7 +74,8 @@ L'allée menant au bâtiment principal serpente sous une voûte de grands cèdre
 ## Fêtes Annuelles
 
 - **Fête de Setsubun (3 février)** : En plus du traditionnel lancer de haricots, l'événement phare de la fête voit un acteur déguisé en démon fuir sur le lac Ashi en ski nautique pendant que les visiteurs lui lancent des haricots depuis des bateaux — une variante lacustre du rituel de « chasse au démon ». Un feu d'artifice est tiré la veille au soir.
-- **Fête mensuelle de Kuzuryu Jinja (le 13 de chaque mois)** : Célébrée au sanctuaire annexe Kuzuryu Jinja (Shingu), la grande fête du 13 juin attirant des foules particulièrement nombreuses.
+- **Fête mensuelle de Kuzuryu Jinja (le 13 de chaque mois)** : Célébrée au Hongu (sanctuaire principal) de Kuzuryu Jinja, de l'autre côté du lac, que l'on rejoint par le bateau de pèlerinage du sanctuaire. En cas de mauvais temps ou si le bateau ne circule pas, elle a lieu au Kuzuryu Jinja Shingu, à côté de Hakone Jinja (selon le site officiel). En juin, c'est la fête annuelle qui est célébrée.
+- **Fête mensuelle Ryosha-mairi (le 15 de chaque mois)** : La fête mensuelle de Kuzuryu Jinja (Shingu) est célébrée à la suite de celle de Hakone Jinja.
 - **Fête des Eaux du Lac (31 juillet)** : Une cérémonie tenue sur l'eau pour rendre grâce à Kuzuryu Okami, la divinité gardienne du lac Ashi.
 - **Grande Fête Annuelle (1er août)** : L'une des célébrations annuelles les plus importantes de Hakone Jinja.
 

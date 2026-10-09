@@ -65,7 +65,7 @@ The 13th-century chronicle "Azuma Kagami" records that Gyojitsu, the shrine's ch
 
 The vermillion "Heiwa no Torii" (Torii of Peace) standing in Lake Ashi was erected in 1952 to commemorate both the signing of the Treaty of San Francisco and the investiture ceremony of then-Crown Prince Akihito. The characters for "peace" on the gate's plaque were written by former Prime Minister Shigeru Yoshida. With Mt. Fuji rising beyond the torii across the water, the scene is one of Hakone's most celebrated views and draws visitors and photographers from around the world.
 
-The grounds are also home to the sub-shrine Kuzuryu Jinja (Shingu), said to enshrine a once-fearsome nine-headed dragon that Mangan Shonin subdued and who, having reformed, became the guardian deity of Lake Ashi. It is revered for financial fortune, business prosperity, and good relationships. The dragon deity's original birthplace is honored at the Kuzuryu Jinja Honengu on the far shore of the lake, and monthly festivals on the 13th — especially the June 13 grand festival — draw large crowds.
+The grounds are also home to the sub-shrine Kuzuryu Jinja (Shingu), said to enshrine a once-fearsome nine-headed dragon that Mangan Shonin subdued and who, having reformed, became the guardian deity of Lake Ashi. It is revered for financial fortune, business prosperity, and good relationships. The dragon deity's original birthplace is honored at the Kuzuryu Jinja Hongu on the far shore of the lake, and monthly festivals on the 13th — especially the June 13 grand festival — draw large crowds.
 
 ## Visiting Tips
 
@@ -74,7 +74,8 @@ The approach to the main hall runs beneath a canopy of tall cedars and a series 
 ## Annual Festivals
 
 - **Setsubun Festival (February 3)**: Alongside the traditional bean-throwing, the festival's signature event sees a performer dressed as a demon fleeing across Lake Ashi on water skis while visitors pelt him with beans from boats — a lakeside twist on the "chasing away the demon" ritual. Fireworks are held the evening before.
-- **Kuzuryu Jinja Monthly Festival (13th of every month)**: Held at the Kuzuryu Jinja sub-shrine (Shingu), with the June 13 grand festival drawing especially large crowds.
+- **Kuzuryu Jinja Monthly Festival (13th of every month)**: Held at the Kuzuryu Jinja Hongu (main shrine) across the lake, which worshippers reach by the shrine's pilgrimage boat. In bad weather or if the boat does not run, it is held at the Kuzuryu Jinja Shingu next to Hakone Jinja (per the official site). In June the annual festival is held in its place.
+- **Ryosha-mairi Monthly Festival (15th of every month)**: The monthly festival of Kuzuryu Jinja (Shingu) is held right after the monthly festival of Hakone Jinja.
 - **Lake Water Festival (July 31)**: A ceremony held on the water to give thanks to Kuzuryu Okami, the guardian deity of Lake Ashi.
 - **Main Grand Festival (August 1)**: One of Hakone Jinja's most important annual observances.
 

@@ -65,7 +65,7 @@ La crónica del siglo XIII «Azuma Kagami» relata que Gyojitsu, el sumo sacerdo
 
 El bermellón «Heiwa no Torii» (Torii de la Paz), erigido en el lago Ashi, se construyó en 1952 para conmemorar tanto la firma del Tratado de San Francisco como la ceremonia de investidura del entonces príncipe heredero Akihito. Los caracteres de «paz» en la placa de la puerta fueron escritos por el antiguo primer ministro Shigeru Yoshida. Con el monte Fuji alzándose al otro lado del agua, más allá del torii, la escena es una de las vistas más célebres de Hakone y atrae a visitantes y fotógrafos de todo el mundo.
 
-El recinto también alberga el santuario auxiliar Kuzuryu Jinja (Shingu), que se dice consagra a un otrora temible dragón de nueve cabezas al que Mangan Shonin sometió y que, tras enmendarse, se convirtió en la deidad guardiana del lago Ashi. Se le venera por la fortuna económica, la prosperidad de los negocios y las buenas relaciones. El lugar de nacimiento original de la deidad dragón se honra en el Kuzuryu Jinja Honengu, en la orilla opuesta del lago, y los festivales mensuales del día 13 —especialmente el gran festival del 13 de junio— reúnen a grandes multitudes.
+El recinto también alberga el santuario auxiliar Kuzuryu Jinja (Shingu), que se dice consagra a un otrora temible dragón de nueve cabezas al que Mangan Shonin sometió y que, tras enmendarse, se convirtió en la deidad guardiana del lago Ashi. Se le venera por la fortuna económica, la prosperidad de los negocios y las buenas relaciones. El lugar de nacimiento original de la deidad dragón se honra en el Kuzuryu Jinja Hongu, en la orilla opuesta del lago, y los festivales mensuales del día 13 —especialmente el gran festival del 13 de junio— reúnen a grandes multitudes.
 
 ## Consejos para la Visita
 
@@ -74,7 +74,8 @@ El camino de acceso al salón principal transcurre bajo un dosel de altos cedros
 ## Festivales Anuales
 
 - **Festival de Setsubun (3 de febrero)**: Además del tradicional lanzamiento de judías, el evento distintivo del festival consiste en un intérprete disfrazado de demonio que huye sobre esquís acuáticos por el lago Ashi mientras los visitantes le lanzan judías desde barcas —una variante lacustre del ritual de «ahuyentar al demonio». La noche anterior se celebran fuegos artificiales.
-- **Festival Mensual de Kuzuryu Jinja (día 13 de cada mes)**: Se celebra en el santuario auxiliar Kuzuryu Jinja (Shingu), y el gran festival del 13 de junio reúne multitudes especialmente numerosas.
+- **Festival Mensual de Kuzuryu Jinja (día 13 de cada mes)**: Se celebra en el Hongu (santuario principal) de Kuzuryu Jinja, al otro lado del lago, al que se llega en el barco de peregrinación del santuario. Si hace mal tiempo o el barco no sale, se celebra en el Kuzuryu Jinja Shingu, junto a Hakone Jinja (según el sitio web oficial). En junio se celebra en su lugar el festival anual.
+- **Festival Mensual de Ryosha-mairi (día 15 de cada mes)**: Tras el festival mensual de Hakone Jinja se celebra el de Kuzuryu Jinja (Shingu).
 - **Festival del Agua del Lago (31 de julio)**: Una ceremonia celebrada sobre el agua para dar gracias a Kuzuryu Okami, la deidad guardiana del lago Ashi.
 - **Gran Festival Principal (1 de agosto)**: Una de las celebraciones anuales más importantes de Hakone Jinja.
 
