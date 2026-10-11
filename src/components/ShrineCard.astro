@@ -8,6 +8,9 @@ import { benefitTranslationsZh } from '../data/benefitTranslationsZh';
 import { benefitTranslationsEs } from '../data/benefitTranslationsEs';
 import { benefitTranslationsFr } from '../data/benefitTranslationsFr';
 import { benefitTranslationsKo } from '../data/benefitTranslationsKo';
+import { buildAmazonSearchUrl } from '../data/affiliate';
+import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import { cardText, prepKeywords } from '../data/monetization';
 
 interface Props {
   shrine: CollectionEntry<'shrines' | 'shrinesEn' | 'shrinesZh' | 'shrinesEs' | 'shrinesFr' | 'shrinesKo'>;
@@ -32,11 +35,19 @@ const benefitTranslationsByLang: Partial<Record<Lang, Record<string, string>>> =
 const translateBenefit = (tag: string) => benefitTranslationsByLang[lang]?.[tag] ?? tag;
 
 const locationSeparator: Record<Lang, string> = { ja: '・', en: ', ', zh: '、', es: ', ', fr: ', ', ko: '・' };
+
+// 一覧から直接、宿泊・御朱印帳へ（日本語版は楽天トラベル、それ以外はBooking.com）
+const accommodationInput = { city: data.city, prefecture: data.prefecture, bookingCity: data.bookingCity, bookingPrefecture: data.bookingPrefecture };
+const hotelUrl = lang === 'ja'
+  ? buildAccommodationRakutenUrl(data.name, accommodationInput)
+  : buildAccommodationBookingUrl(lang, accommodationInput);
+const goshuinUrl = buildAmazonSearchUrl(prepKeywords.goshuincho, lang);
 ---
 
+<div class="group relative flex flex-col overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
 <a
   href={`${base}/shrines/${id}/`}
-  class="group block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+  class="block flex-1 after:absolute after:inset-0 after:content-['']"
 >
   <div class="relative h-40 overflow-hidden">
     <div class="absolute right-2 top-2 z-10">
@@ -69,3 +80,9 @@ const locationSeparator: Record<Lang, string> = { ja: '・', en: ', ', zh: '、'
     )}
   </div>
 </a>
+  <div class="relative z-10 flex flex-wrap items-center gap-2 border-t border-shrine-gold/15 px-5 py-3 text-xs">
+    <span class="rounded bg-shrine-paper-dark px-1.5 py-0.5 text-[10px] font-bold text-shrine-ink-soft">{cardText.pr}</span>
+    <a href={hotelUrl} target="_blank" rel="noopener noreferrer sponsored" class="text-shrine-vermillion hover:underline">🏨 {cardText.hotel[lang]}</a>
+    <a href={goshuinUrl} target="_blank" rel="nofollow sponsored noopener" class="text-shrine-vermillion hover:underline">📕 {cardText.goshuincho[lang]}</a>
+  </div>
+</div>

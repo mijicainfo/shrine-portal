@@ -1,0 +1,87 @@
+---
+// 神社ページの「参拝準備」セクション：周辺ホテル（ページ内の宿泊セクションへ）／御朱印帳／ガイドブック／参拝グッズ、
+// ご利益に合うアイテム（縁結び・学業成就・金運）。商品リンクはAmazonの検索結果（日本語版は楽天市場も添える）。
+// 文言・キーワードは src/data/monetization.ts。
+import { buildAmazonSearchUrl, buildRakutenAffiliateUrl } from '../data/affiliate';
+import { prepText, prepKeywords, benefitItemSets, type Lang } from '../data/monetization';
+
+interface Props {
+  /** 神社のご利益タグ（各言語のコンテンツでも日本語のまま） */
+  benefits?: string[];
+  /** 「周辺ホテルを見る」の遷移先（既定: ページ内の宿泊セクション） */
+  hotelHref?: string;
+}
+
+const { benefits = [], hotelHref = '#accommodation' } = Astro.props;
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+
+const amazon = (keyword: string) => buildAmazonSearchUrl(keyword, lang);
+const rakuten = (keyword: string) =>
+  buildRakutenAffiliateUrl(`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(keyword)}/`);
+
+const tiles = [
+  { icon: '🏨', label: prepText.hotel[lang], href: hotelHref, external: false },
+  { icon: '📕', label: prepText.goshuincho[lang], href: amazon(prepKeywords.goshuincho), external: true },
+  { icon: '📖', label: prepText.guidebook[lang], href: amazon(prepKeywords.guidebook), external: true },
+  { icon: '🎒', label: prepText.goods[lang], href: amazon(prepKeywords.goods), external: true },
+];
+
+const benefitSet = benefitItemSets.find((set) => set.tags.some((tag) => benefits.includes(tag)));
+const amazonNote = prepText.amazonNote[lang];
+---
+
+<section class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm" aria-label={prepText.heading[lang]}>
+  <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">{prepText.heading[lang]}</h2>
+  <p class="mt-1 text-sm leading-relaxed text-shrine-ink-soft">{prepText.lead[lang]}</p>
+
+  <ul class="mt-4 grid gap-2.5 sm:grid-cols-2">
+    {tiles.map((tile) => (
+      <li>
+        <a
+          href={tile.href}
+          {...(tile.external ? { target: '_blank', rel: 'nofollow sponsored noopener' } : {})}
+          class="flex items-center gap-3 rounded-xl border border-shrine-gold/30 bg-shrine-paper-dark px-4 py-3 text-sm transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          <span class="text-xl" aria-hidden="true">{tile.icon}</span>
+          <span class="font-medium text-shrine-ink">{tile.label}</span>
+          <span class="ml-auto text-shrine-vermillion" aria-hidden="true">{tile.external ? '↗' : '↓'}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  {lang === 'ja' && (
+    <p class="mt-3 text-xs leading-relaxed text-shrine-ink-soft">
+      {prepText.rakutenIchiba.ja}：
+      <a href={rakuten(prepKeywords.goshuincho)} target="_blank" rel="nofollow sponsored noopener" class="text-shrine-vermillion underline">御朱印帳</a>
+      ／<a href={rakuten(prepKeywords.guidebook)} target="_blank" rel="nofollow sponsored noopener" class="text-shrine-vermillion underline">ガイドブック</a>
+      ／<a href={rakuten(prepKeywords.goods)} target="_blank" rel="nofollow sponsored noopener" class="text-shrine-vermillion underline">参拝グッズ</a>
+    </p>
+  )}
+
+  {benefitSet && (
+    <div class="mt-6 border-t border-shrine-gold/20 pt-5">
+      <h3 class="font-serif-jp text-base font-bold text-shrine-vermillion-dark">{prepText.benefitHeading[lang]}</h3>
+      <p class="mt-0.5 text-xs text-shrine-ink-soft">{benefitSet.title[lang]}</p>
+      <ul class="mt-3 grid gap-2.5 sm:grid-cols-3">
+        {benefitSet.picks.map((pick) => (
+          <li>
+            <a
+              href={amazon(pick.keyword)}
+              target="_blank"
+              rel="nofollow sponsored noopener"
+              class="block rounded-xl border border-shrine-gold/30 px-4 py-3 text-sm transition hover:border-shrine-vermillion hover:bg-shrine-vermillion-light"
+            >
+              <span class="block font-medium text-shrine-ink">{pick.label[lang]}</span>
+              <span class="mt-0.5 block text-xs text-shrine-vermillion">{prepText.amazonSub[lang]} →</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  {amazonNote && <p class="mt-4 text-[11px] leading-relaxed text-shrine-ink-soft">{amazonNote}</p>}
+  <p class="mt-2 text-[11px] leading-relaxed text-shrine-ink-soft">{prepText.prNote[lang]}</p>
+</section>

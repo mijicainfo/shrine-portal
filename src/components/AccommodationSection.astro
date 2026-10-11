@@ -1,5 +1,5 @@
 ---
-import { buildBookingSearchUrl, buildRakutenSearchUrl } from '../data/affiliate';
+import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
 
 interface Props {
   shrineName: string;
@@ -17,25 +17,13 @@ const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro
 // うまく場所を認識できないことがあるため、括弧書きの部分は取り除く
 // bookingCityが指定されている場合は、地図表示用のcityではなくこちらを検索に使う
 // （小規模な町村名がBooking.comの地名データベースで正しく認識されない場合の回避策）
-const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
-// Booking.comの目的地検索は、Rakutenのような自由語検索ではなく地名データベースとの
-// 突き合わせに近い挙動で、①「Mie Prefecture」のような「Prefecture」付き表記や
-// 「Fushimi-ku」のような区レベルの地名、②都道府県と市区町村の間にスペースが無い表記
-// （例:「山口県長門市」）、③データベースに無い（特にあまり有名でない）神社名を含めた
-// クエリ、のいずれも正しく解釈できず、無関係な場所へリダイレクトされることを実機で確認
-// 済み（例:「元乃隅神社 山口県長門市」→スペイン・マラガ県のホテル一覧に誤誘導）。
-// そのため神社名は含めず、都道府県と市区町村をスペースで区切った形のみを使う。
-// zh's `prefecture` prop is kept in Japanese kanji for display, so it can't be used
-// directly in a romanized Booking.com query the way en/es/fr/ko's already-romanized
-// prefecture can; bookingPrefecture supplies the romanized override in that case.
-const resolvedBookingPrefecture = (bookingPrefecture ?? prefecture).replace(/\s*Prefecture$/i, '');
-const bookingQuery = lang !== 'ja'
-  ? (cleanCity ? `${cleanCity}, ${resolvedBookingPrefecture}, Japan` : `${resolvedBookingPrefecture}, Japan`)
-  : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
-const bookingUrl = buildBookingSearchUrl(bookingQuery);
+// Booking.com / 楽天トラベルの検索クエリ生成ロジック（括弧書きの除去、「Prefecture」の除去、bookingCity/bookingPrefectureによる上書き）は
+// src/lib/accommodation.ts に集約している（神社カード・旅行先ページと共通）。経緯はそちらのコメントを参照。
+const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture };
+const bookingUrl = buildAccommodationBookingUrl(lang, accommodationInput);
 // 楽天トラベルのキーワード検索は日本語専用で、日本語以外のクエリでは
 // 地名が一致せず常に検索結果0件になるため、日本語版以外では表示しない
-const rakutenUrl = buildRakutenSearchUrl(`${shrineName} ${prefecture}${cleanCity}`);
+const rakutenUrl = buildAccommodationRakutenUrl(shrineName, accommodationInput);
 const t = {
   ja: {
     heading: '周辺の宿泊施設',
@@ -88,7 +76,7 @@ const t = {
 }[lang];
 ---
 
-<div class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
+<div id="accommodation" class="scroll-mt-24 rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm">
   <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{t.heading}</h2>
   <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">
     {t.body}

@@ -9,6 +9,7 @@ import TwitterTimeline from '../../../components/TwitterTimeline.astro';
 import FavoriteButton from '../../../components/FavoriteButton.astro';
 import VisitedButton from '../../../components/VisitedButton.astro';
 import RelatedShrines from '../../../components/RelatedShrines.astro';
+import PrepSection from '../../../components/PrepSection.astro';
 import { Image, getImage } from 'astro:assets';
 import { render } from 'astro:content';
 import { buildShrineDescription, buildShrineStructuredData, buildFaqStructuredData } from '../../../lib/seo';
@@ -109,6 +110,13 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
           </dl>
         </section>
       )}
+
+      <div class="mt-10">
+
+        <PrepSection benefits={data.benefits} />
+
+      </div>
+
 
       <RelatedShrines shrines={relatedShrines} heading="관련 신사" />
     </article>

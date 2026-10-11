@@ -1,0 +1,89 @@
+---
+// 旅行先ページ（/travel/<slug>/）：旅行先 → 神社一覧 → 周辺ホテル → 参拝準備 の順に表示する。
+// 各言語の src/pages/**/travel/[slug].astro から使う。
+import Layout from '../layouts/Layout.astro';
+import ShrineCard from './ShrineCard.astro';
+import PrepSection from './PrepSection.astro';
+import { destinations, travelText, type Lang } from '../data/monetization';
+import { getDestinationShrines } from '../lib/travel';
+import { buildAccommodationBookingUrl } from '../lib/accommodation';
+import { buildRakutenSearchUrl } from '../data/affiliate';
+
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const dest = destinations.find((d) => d.slug === slug);
+if (!dest) throw new Error(`Unknown destination: ${slug}`);
+
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+
+const name = dest.name[lang];
+const shrines = await getDestinationShrines(dest, lang);
+const bookingInput = lang === 'ja' ? dest.booking.ja : dest.booking.en;
+const bookingUrl = buildAccommodationBookingUrl(lang, bookingInput);
+const rakutenUrl = buildRakutenSearchUrl(`${dest.booking.ja.prefecture}${dest.booking.ja.city}`);
+const title = travelText.pageTitle(name)[lang];
+---
+
+<Layout title={title} description={dest.blurb[lang]}>
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="text-xs text-shrine-paper/70">
+        <a href={`${base}/travel/`} class="underline hover:text-white">{travelText.backToIndex[lang]}</a>
+      </p>
+      <h1 class="mt-2 font-serif-jp text-2xl font-bold sm:text-3xl">{title}</h1>
+      <p class="mt-2 max-w-3xl text-sm leading-relaxed text-shrine-paper/80">{dest.blurb[lang]}</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    <section aria-labelledby="travel-shrines">
+      <h2 id="travel-shrines" class="font-serif-jp text-xl font-bold text-shrine-ink">
+        {travelText.shrinesHeading[lang]}
+        <span class="ml-2 text-sm font-normal text-shrine-vermillion">{travelText.shrineCount(shrines.length)[lang]}</span>
+      </h2>
+      {shrines.length > 0 ? (
+        <div class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {shrines.map((shrine) => <ShrineCard shrine={shrine} />)}
+        </div>
+      ) : (
+        <p class="mt-4 text-sm text-shrine-ink-soft">{travelText.noShrines[lang]}</p>
+      )}
+    </section>
+
+    <section id="accommodation" class="mt-12 scroll-mt-24" aria-labelledby="travel-hotels">
+      <h2 id="travel-hotels" class="font-serif-jp text-xl font-bold text-shrine-ink">{travelText.hotelsHeading[lang]}</h2>
+      <p class="mt-2 text-sm text-shrine-ink-soft">{travelText.hotelsBody(name)[lang]}</p>
+      <div class="mt-4 grid gap-2.5 sm:grid-cols-2">
+        <a
+          href={bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-white px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          <span class="font-bold">{travelText.hotelsBooking[lang]}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+        {lang === 'ja' && (
+          <a
+            href={rakutenUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-white px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+          >
+            <span class="font-bold">{travelText.hotelsRakuten.ja}</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        )}
+      </div>
+    </section>
+
+    <div class="mt-12">
+      <PrepSection hotelHref="#accommodation" />
+    </div>
+  </div>
+</Layout>

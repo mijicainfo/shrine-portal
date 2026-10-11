@@ -40,6 +40,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-10-12',
+    category: 'other',
+    note: {
+      ja: '「旅行先から探す」を追加しました。伊勢・出雲・京都・箱根・宮島・奈良の神社・宿泊・参拝準備をまとめて探せます。各神社ページにも「参拝準備」を加えました',
+      en: 'Added "Find by Destination" — shrines, stays and visit prep for Ise, Izumo, Kyoto, Hakone, Miyajima and Nara. Every shrine page now has a "Plan Your Visit" section too',
+      zh: '新增「依旅遊地點尋找」，整合伊勢、出雲、京都、箱根、宮島、奈良的神社、住宿與參拜準備。各神社頁面也新增了「參拜準備」',
+      es: 'Añadimos «Buscar por destino»: santuarios, alojamiento y preparativos para Ise, Izumo, Kioto, Hakone, Miyajima y Nara. Cada página de santuario también tiene ahora «Prepara tu visita»',
+      fr: 'Ajout de « Chercher par destination » : sanctuaires, hébergements et préparatifs pour Ise, Izumo, Kyoto, Hakone, Miyajima et Nara. Chaque page de sanctuaire propose aussi « Préparer votre visite »',
+      ko: '"여행지로 찾기"를 추가했습니다. 이세·이즈모·교토·하코네·미야지마·나라의 신사·숙박·참배 준비를 한곳에서 찾을 수 있으며, 각 신사 페이지에도 "참배 준비"를 더했습니다',
+      href: '/travel/',
+    },
+  },
+  {
     date: '2026-10-11',
     shrineSlugs: ['otori-jinja-asakusa', 'onoterusaki-jinja', 'inage-sengen-jinja', 'hitsuji-jinja-nagoya', 'oji-inari-jinja'],
   },

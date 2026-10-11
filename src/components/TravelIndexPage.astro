@@ -1,0 +1,37 @@
+---
+// 旅行先の一覧ページ（/travel/）。各言語の src/pages/**/travel/index.astro から使う。
+import Layout from '../layouts/Layout.astro';
+import { destinations, travelText, type Lang } from '../data/monetization';
+import { getDestinationCounts } from '../lib/travel';
+
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const counts = await getDestinationCounts();
+---
+
+<Layout title={travelText.indexTitle[lang]} description={travelText.indexDescription[lang]}>
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">{travelText.indexTitle[lang]}</h1>
+      <p class="mt-2 text-sm text-shrine-paper/75">{travelText.indexDescription[lang]}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+    <div class="grid gap-5 sm:grid-cols-2">
+      {destinations.map((dest) => (
+        <a
+          href={`${base}/travel/${dest.slug}/`}
+          class="group block rounded-2xl border border-shrine-gold/25 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h2 class="font-serif-jp text-lg font-bold text-shrine-ink group-hover:text-shrine-vermillion-dark">
+            {dest.name[lang]}
+          </h2>
+          <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft">{dest.blurb[lang]}</p>
+          <p class="mt-3 text-xs text-shrine-vermillion">{travelText.shrineCount(counts[dest.slug] ?? 0)[lang]} →</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

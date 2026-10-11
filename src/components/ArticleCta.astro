@@ -1,0 +1,41 @@
+---
+// 記事（特集記事・用語集・御祭神ガイドなど）の読了直後に出す共通CTA「参拝をもっと楽しむ」。
+// 宿泊は旅行先ページ（/travel/）へ、商品はAmazonの検索結果へ。文言・キーワードは src/data/monetization.ts。
+import { buildAmazonSearchUrl } from '../data/affiliate';
+import { prepText, prepKeywords, type Lang } from '../data/monetization';
+
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+
+const amazon = (keyword: string) => buildAmazonSearchUrl(keyword, lang);
+const tiles = [
+  { icon: '🏨', label: prepText.ctaHotel[lang], href: `${base}/travel/`, external: false },
+  { icon: '📕', label: prepText.goshuincho[lang], href: amazon(prepKeywords.goshuincho), external: true },
+  { icon: '📖', label: prepText.guidebook[lang], href: amazon(prepKeywords.guidebook), external: true },
+  { icon: '🎒', label: prepText.goods[lang], href: amazon(prepKeywords.goods), external: true },
+];
+---
+
+<aside class="rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark p-6" aria-label={prepText.ctaHeading[lang]}>
+  <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{prepText.ctaHeading[lang]}</h2>
+  <ul class="mt-4 grid gap-2.5 sm:grid-cols-2">
+    {tiles.map((tile) => (
+      <li>
+        <a
+          href={tile.href}
+          {...(tile.external ? { target: '_blank', rel: 'nofollow sponsored noopener' } : {})}
+          class="flex items-center gap-3 rounded-xl border border-shrine-gold/30 bg-white px-4 py-3 text-sm transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
+        >
+          <span class="text-xl" aria-hidden="true">{tile.icon}</span>
+          <span class="font-medium text-shrine-ink">{tile.label}</span>
+          <span class="ml-auto text-shrine-vermillion" aria-hidden="true">{tile.external ? '↗' : '→'}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="mt-4 text-right">
+    <a href={`${base}/items/`} class="text-sm font-medium text-shrine-vermillion underline hover:text-shrine-vermillion-dark">▶ {prepText.ctaMore[lang]}</a>
+  </p>
+  <p class="mt-2 text-[11px] leading-relaxed text-shrine-ink-soft">{prepText.prNote[lang]}</p>
+</aside>

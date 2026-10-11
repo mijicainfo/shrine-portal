@@ -1,4 +1,5 @@
 ---
+import TravelDestinations from '../../components/TravelDestinations.astro';
 import Layout from '../../layouts/Layout.astro';
 import ShrineCard from '../../components/ShrineCard.astro';
 import SeigaihaWave from '../../components/SeigaihaWave.astro';
@@ -257,6 +258,9 @@ const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsKo[b
       </div>
     </section>
   )}
+
+  <TravelDestinations />
+
 
   <section id="prefectures" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
     <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">지역별로 찾아보기</h2>

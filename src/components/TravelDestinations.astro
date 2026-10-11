@@ -1,0 +1,33 @@
+---
+// トップページの「旅行先から探す」。参拝旅行の行き先ごとの旅行先ページ（/travel/<slug>/）への入口。
+import { destinations, travelText, type Lang } from '../data/monetization';
+import { getDestinationCounts } from '../lib/travel';
+
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const counts = await getDestinationCounts();
+---
+
+<section id="travel" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  <h2 class="font-serif-jp text-xl font-bold text-shrine-ink sm:text-2xl">{travelText.homeHeading[lang]}</h2>
+  <p class="mt-1 text-sm text-shrine-ink-soft">{travelText.homeLead[lang]}</p>
+  <ul class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+    {destinations.map((dest) => (
+      <li>
+        <a
+          href={`${base}/travel/${dest.slug}/`}
+          class="block rounded-2xl border border-shrine-gold/30 bg-white px-4 py-4 text-center transition hover:-translate-y-0.5 hover:border-shrine-vermillion hover:shadow-md"
+        >
+          <span class="block font-serif-jp text-lg font-bold text-shrine-ink">{dest.name[lang]}</span>
+          <span class="mt-1 block text-xs text-shrine-vermillion">{travelText.shrineCount(counts[dest.slug] ?? 0)[lang]}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+  <p class="mt-4">
+    <a href={`${base}/travel/`} class="text-sm font-medium text-shrine-vermillion underline hover:text-shrine-vermillion-dark">
+      {travelText.indexTitle[lang]} →
+    </a>
+  </p>
+</section>

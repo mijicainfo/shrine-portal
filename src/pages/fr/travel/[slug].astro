@@ -1,0 +1,12 @@
+---
+import TravelDestinationPage from '../../../components/TravelDestinationPage.astro';
+import { destinations } from '../../../data/monetization';
+
+export function getStaticPaths() {
+  return destinations.map((dest) => ({ params: { slug: dest.slug } }));
+}
+
+const { slug } = Astro.params;
+---
+
+<TravelDestinationPage slug={slug as string} />

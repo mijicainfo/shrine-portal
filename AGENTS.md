@@ -44,6 +44,17 @@ A shrine/guide entry is only built once its frontmatter `publishDate` has arrive
 - Test an "as of" date: `PUBLISH_AS_OF=2026-10-01 npm run build` (use `2099-01-01` to include everything).
 - Don't mix this up with `src/data/updates.ts` (the homepage feed): add a shrine to the feed only when its ja page goes live; the feed already skips slugs that aren't live in the current locale.
 
+## Monetization funnel (参拝準備 / 記事下CTA / 旅行先ページ)
+
+Strings and keyword data live in [src/data/monetization.ts](src/data/monetization.ts) (6 languages). Components detect the locale from `Astro.currentLocale`, so there is no per-locale page text to maintain:
+
+- [PrepSection.astro](src/components/PrepSection.astro) — "参拝準備" block at the end of every shrine page (hotel anchor → `#accommodation`, Amazon search links for goshuin books / guidebooks / goods, ja also Rakuten Ichiba; plus a benefit-specific item set when the shrine has 縁結び / 学業成就 / 金運 tags). Fully automatic for new shrines.
+- [ArticleCta.astro](src/components/ArticleCta.astro) — "参拝をもっと楽しむ" CTA under guides, glossary and deities pages.
+- [ShrineCard.astro](src/components/ShrineCard.astro) — every card has 🏨 (ja: Rakuten Travel, others: Booking.com) and 📕 (Amazon) links, marked "PR".
+- Travel pages `/travel/` and `/travel/<slug>/` (6 locales): destinations are the `destinations` array in monetization.ts (slug, 6-language name + blurb, a `match` rule against the ja shrine data, and live-tested Booking.com city/prefecture values). To add a destination, append one entry — all 6 locales get a page; test both the ja and en Booking.com queries first (see the Booking.com rural-city notes).
+- Booking.com/Rakuten query logic is shared in [src/lib/accommodation.ts](src/lib/accommodation.ts) (used by AccommodationSection, ShrineCard and travel pages); use the bare prefecture name in en ("Kanagawa", never "Kanagawa Prefecture").
+- Not implemented on purpose: per-hotel listings with ratings/walking distance (no data source — would need Booking.com/Rakuten APIs) and Jalan / Yahoo! Travel links (no affiliate accounts).
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
