@@ -48,7 +48,7 @@ faq:
   - question: "How do I get to the Hongu, and what is the admission fee?"
     answer: "The Hongu can be reached only by boat or on foot; cars cannot go there. On foot, walk about 30 minutes along the lakeside path from Hakone-en (The Prince Hakone Lake Ashinoko) and pass through Hakone Kuzuryu-no-Mori. Admission is ¥600 for adults and ¥300 for children (age 4 to elementary school), cash only, open 9:00 AM–5:00 PM with last entry at 4:30 PM (may vary by season). The official site says visitors arriving by motorboat enter free."
   - question: "Can I get a goshuin (goshin-in)?"
-    answer: "Hakone Jinja's official site calls it a \"goshin-in,\" and seals are offered for four shrines: Hakone Jinja, Kuzuryu Jinja, the Hakone Seven Lucky Gods Ebisu shrine, and Hakone Motomiya. The office is open 8:15 AM–5:00 PM, and the ¥1,500 goshin-in book includes one shrine's seal. No separate fee for Kuzuryu Jinja alone is listed on the official site, so please ask at the office."
+    answer: "Hakone Jinja's official site calls it a \"goshin-in,\" and seals are offered for four shrines: Hakone Jinja, Kuzuryu Jinja, the Hakone Seven Lucky Gods Ebisu shrine, and Hakone Mototsumiya. The office is open 8:15 AM–5:00 PM, and the ¥1,500 goshin-in book includes one shrine's seal. No separate fee for Kuzuryu Jinja alone is listed on the official site, so please ask at the office."
   - question: "Is the shrine known for matchmaking?"
     answer: "Hakone Jinja's official site introduces Kuzuryu Okami as a deity whose virtue covers business prosperity, financial protection, fulfillment of heartfelt wishes, and good matches. Hakone Jinja also offers the \"Kuzuryu En-musubi Omamori\" (¥1,000), described as a charm for ties in love, work, and life."
 ---

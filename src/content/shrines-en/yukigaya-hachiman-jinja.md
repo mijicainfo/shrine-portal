@@ -49,7 +49,7 @@ faq:
   - question: "When is the annual grand festival?"
     answer: "According to the official site, it is held on a Saturday and Sunday in mid-September every year. In 2026 it fell on September 19 (Sat) and 20 (Sun). The eve festival takes place on Saturday and the main Shinto rites on Sunday, with festival music by the Yukigaya Hayashi Preservation Society and the portable shrines of the six parishioner neighborhood associations being carried into the shrine."
   - question: "Has the shrine been featured on TV?"
-    answer: "Yes. In the September 9, 2023 (Saturday) broadcast of TV Tokyo's \"Shutsubotsu! Ad-machic Tengoku\" on the Yukigaya-Otsuka area, the program's official page lists \"Yukigaya Hachiman Shrine & Mitake Shrine\" together at No. 3. The page mentions the shrine's founding in the 16th century and that Taiho donated the Shusse-ishi stone."
+    answer: "Yes. In the September 9, 2023 (Saturday) broadcast of TV Tokyo's \"Shutsubotsu! Ad-machic Tengoku\" on the Yukigaya-Otsuka area, the program's official page lists \"Yukigaya Hachiman Shrine & Ontake Shrine\" together at No. 3. The page mentions the shrine's founding in the 16th century and that Taiho donated the Shusse-ishi stone."
 ---
 
 ## History
@@ -70,7 +70,7 @@ The buildings were destroyed in the air raids of May 1945, and thanks to the eff
 
 **Subsidiary shrines**: Visitor accounts and guide sites mention subsidiary shrines in the grounds such as Yaku, Inari, Tenjin, Kato, Sarutahiko and Sui (water) shrines (the descriptions of their layout differ between sources). The official event calendar also lists a Tenjin festival (January 25) and a Water God festival (February 11).
 
-**On TV**: The shrine was featured on TV Tokyo's "Shutsubotsu! Ad-machic Tengoku" in its September 9, 2023 (Saturday) broadcast on the Yukigaya-Otsuka area, where the program's official page lists "Yukigaya Hachiman Shrine & Mitake Shrine" together at No. 3. The page is headed "The guardian shrine watching over the town" and mentions the shrine's founding in the 16th century and that Taiho donated the Shusse-ishi (the information is described as current at the time of broadcast). Please note that this was a 2023 broadcast.
+**On TV**: The shrine was featured on TV Tokyo's "Shutsubotsu! Ad-machic Tengoku" in its September 9, 2023 (Saturday) broadcast on the Yukigaya-Otsuka area, where the program's official page lists "Yukigaya Hachiman Shrine & Ontake Shrine" together at No. 3. The page is headed "The guardian shrine watching over the town" and mentions the shrine's founding in the 16th century and that Taiho donated the Shusse-ishi (the information is described as current at the time of broadcast). Please note that this was a 2023 broadcast.
 
 ## Visiting Tips
 
@@ -100,5 +100,5 @@ The main events on the official calendar are:
 
 ## Nearby Food & Sightseeing
 
-- <a href="https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E5%B6%BD%E7%A5%9E%E7%A4%BE%20%E5%8C%97%E5%B6%BA%E7%94%BA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>Mitake Shrine</strong></a>: A separate shrine in Minemachi, Ota Ward, listed together with Yukigaya Hachiman Shrine in the same No. 3 entry on the TV program's page. The page describes it as a mountain-faith shrine dedicated to Mt. Ontake in Kiso, Nagano, whose hall, built in Tenpo 2, has detailed carvings. The distance from Yukigaya Hachiman Shrine has not been confirmed, so please check a map before heading over.
+- <a href="https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E5%B6%BD%E7%A5%9E%E7%A4%BE%20%E5%8C%97%E5%B6%BA%E7%94%BA%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>Ontake Shrine</strong></a>: A separate shrine in Minemachi, Ota Ward, listed together with Yukigaya Hachiman Shrine in the same No. 3 entry on the TV program's page. The page describes it as a mountain-faith shrine dedicated to Mt. Ontake in Kiso, Nagano, whose hall, built in Tenpo 2, has detailed carvings. The distance from Yukigaya Hachiman Shrine has not been confirmed, so please check a map before heading over.
 - <a href="https://www.google.com/maps/search/?api=1&query=%E5%8B%9D%E6%B5%B7%E8%88%9F%E8%A8%98%E5%BF%B5%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%94%B0%E5%8C%BA" target="_blank" rel="noopener noreferrer"><strong>Katsu Kaishu Memorial Hall</strong></a>: A facility listed among the historic sites of the Yukigaya-Senzoku area on Ota Ward's history and sites guide (opening days and distance are unconfirmed, so please check Ota Ward's information before visiting).
