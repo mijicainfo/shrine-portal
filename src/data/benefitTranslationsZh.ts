@@ -20,6 +20,7 @@ export const benefitTranslationsZh: Record<string, string> = {
   武運長久: '武運長久',
   大漁満足: '大漁豐收',
   安産: '安產',
+  子育て: '育兒平安',
   学業成就: '學業有成',
   夫婦円満: '夫妻圓滿',
   芸能上達: '技藝精進',

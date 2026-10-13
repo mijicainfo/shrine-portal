@@ -66,6 +66,7 @@ export const benefitTranslationsKo: Record<string, string> = {
   技芸上達: '기예 향상',
   '健康祈願・家内安全': '건강 기원・가내 안전',
   子宝: '자녀 복',
+  子育て: '육아',
   工事安全: '공사 안전',
   良縁: '좋은 인연',
 };

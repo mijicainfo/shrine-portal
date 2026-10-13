@@ -70,4 +70,5 @@ export const benefitTranslationsFr: Record<string, string> = {
   子宝: 'Bénédiction de la Fertilité',
   工事安全: 'Sécurité des Chantiers',
   良縁: 'Bonnes Relations',
+  子育て: 'Éducation des Enfants',
 };

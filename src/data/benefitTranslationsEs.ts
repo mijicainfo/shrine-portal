@@ -68,6 +68,7 @@ export const benefitTranslationsEs: Record<string, string> = {
   技芸上達: 'Progreso en Habilidades y Carrera',
   '健康祈願・家内安全': 'Salud y Seguridad del Hogar',
   子宝: 'Fertilidad',
+  子育て: 'Crianza de los Hijos',
   工事安全: 'Seguridad en la Construcción',
   良縁: 'Buenas Relaciones y Matrimonio',
 };
