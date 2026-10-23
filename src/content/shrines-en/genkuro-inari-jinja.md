@@ -48,7 +48,7 @@ faq:
   - question: "How do I get there, and is there parking?"
     answer: "According to the official site, it is about a 10-minute walk from Koriyama Station on either the Kintetsu Kashihara Line or the JR Yamatoji Line. The official site does not mention parking and a travel guide article lists none, so going by train is the safer choice."
   - question: "Does the shrine have a connection to the NHK Taiga drama \"Toyotomi Kyodai!\"?"
-    answer: "The official site says the shrine is said to have been founded by Yamato Dainagon Toyotomi Hidenaga as the guardian shrine of Koriyama Castle, and announces that it is issuing the limited-edition goshuin \"Hidenaga-san\" in 2026 to mark the NHK Taiga drama."
+    answer: "The official site says the shrine is said to have been founded by Yamato Dainagon Toyotomi Hidenaga as the guardian shrine of Koriyama Castle, and announces that it is issuing the limited-edition goshuin \"Hidenaga-san\" in 2026 to mark the NHK Taiga drama. However, the official site gives no distribution period or end date; to confirm current availability, contact the shrine office."
   - question: "When are the shrine's festivals?"
     answer: "The official site's 2026 (Reiwa 8) schedule lists the annual festival on Sunday, March 29 at 10:00 AM, with the \"Byakko Togyo\" white-fox procession the same day at 1:30 PM. Other events include the summer purification rite (June 30), the Hitaki fire festival (November 8, 2:00 PM) and the year-end purification and New Year's Eve service. Dates can change from year to year, so check the official site for the latest."
 ---

@@ -48,7 +48,7 @@ faq:
   - question: "¿Cómo se llega y hay aparcamiento?"
     answer: "Según el sitio oficial, se tarda unos 10 minutos a pie desde la estación Koriyama, ya sea en la línea Kashihara de Kintetsu o en la línea Yamatoji de JR. El sitio oficial no menciona aparcamiento y un artículo de guía de viajes indica que no hay, así que es más seguro ir en tren."
   - question: "¿Tiene el santuario relación con el drama Taiga de NHK «Toyotomi Kyodai!»?"
-    answer: "El sitio oficial dice que el santuario fue fundado, según la tradición, por Yamato Dainagon Toyotomi Hidenaga como santuario guardián del castillo de Koriyama, y anuncia que en 2026 distribuye el goshuin de edición limitada «Hidenaga-san» para conmemorar el drama Taiga de NHK."
+    answer: "El sitio oficial dice que el santuario fue fundado, según la tradición, por Yamato Dainagon Toyotomi Hidenaga como santuario guardián del castillo de Koriyama, y anuncia que en 2026 distribuye el goshuin de edición limitada «Hidenaga-san» para conmemorar el drama Taiga de NHK. Sin embargo, el sitio oficial no indica el período de distribución ni la fecha de fin; para confirmar su disponibilidad actual, conviene consultar la oficina del santuario."
   - question: "¿Cuándo son los festivales del santuario?"
     answer: "El calendario de 2026 (Reiwa 8) del sitio oficial indica el festival anual el domingo 29 de marzo a las 10:00, con la procesión del zorro blanco «Byakko Togyo» ese mismo día a las 13:30. Entre otros actos figuran el rito de purificación de verano (30 de junio), el festival del fuego Hitaki (8 de noviembre, 14:00) y el rito de purificación y el servicio de Nochevieja. Las fechas pueden cambiar de un año a otro, así que consulte el sitio oficial para la información más reciente."
 ---

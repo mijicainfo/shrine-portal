@@ -48,7 +48,7 @@ faq:
   - question: "Comment s'y rendre, et y a-t-il un parking ?"
     answer: "Selon le site officiel, il faut compter environ 10 minutes à pied depuis la gare de Koriyama, que ce soit sur la ligne Kintetsu Kashihara ou sur la ligne JR Yamatoji. Le site officiel ne mentionne pas de parking et un article de guide de voyage n'en indique aucun ; le train est donc le choix le plus sûr."
   - question: "Le sanctuaire a-t-il un lien avec le drame Taiga de la NHK « Toyotomi Kyodai! » ?"
-    answer: "Le site officiel indique qu'on dit que le sanctuaire fut fondé par Yamato Dainagon Toyotomi Hidenaga comme sanctuaire protecteur du château de Koriyama, et annonce qu'il émet en 2026 le goshuin en édition limitée « Hidenaga-san » pour marquer le drame Taiga de la NHK."
+    answer: "Le site officiel indique qu'on dit que le sanctuaire fut fondé par Yamato Dainagon Toyotomi Hidenaga comme sanctuaire protecteur du château de Koriyama, et annonce qu'il émet en 2026 le goshuin en édition limitée « Hidenaga-san » pour marquer le drame Taiga de la NHK. Toutefois, le site officiel n'indique ni la période de distribution ni la date de fin ; pour vérifier la disponibilité actuelle, il vaut mieux contacter le bureau du sanctuaire."
   - question: "Quand ont lieu les fêtes du sanctuaire ?"
     answer: "Le calendrier 2026 (Reiwa 8) du site officiel indique la fête annuelle le dimanche 29 mars à 10h00, avec la procession du renard blanc « Byakko Togyo » le même jour à 13h30. Parmi les autres événements figurent le rite de purification d'été (30 juin), la fête du feu Hitaki (8 novembre, 14h00) et la purification et le service de la Saint-Sylvestre. Les dates peuvent changer d'une année à l'autre ; consultez le site officiel pour les informations les plus récentes."
 ---
