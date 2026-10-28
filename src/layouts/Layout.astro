@@ -26,13 +26,14 @@ const defaultDescription: Record<Lang, string> = {
   ko: '일본 전국의 신사를 소개하는 포털 사이트. 유래, 교통편, 고슈인 정보는 물론 주변 숙박 정보까지, 처음 참배하는 분들도 이해하기 쉽게 안내합니다.',
 };
 
+// Keep the suffix short: the long tagline used to push the page-specific keywords out of the visible title in search results.
 const titleSuffix: Record<Lang, string> = {
-  ja: '日本の神社情報・近隣宿泊施設なども紹介する神社 The Pantheon',
-  en: 'Shrine The Pantheon — Japan Shrine Guide & Nearby Stays',
-  zh: '神社 The Pantheon——日本神社導覽與周邊住宿資訊',
-  es: 'Shrine The Pantheon — Guía de Santuarios de Japón y Alojamientos Cercanos',
-  fr: 'Shrine The Pantheon — Guide des Sanctuaires du Japon et Hébergements à Proximité',
-  ko: '神社 The Pantheon — 일본 신사 가이드 및 주변 숙박 정보',
+  ja: '神社 The Pantheon',
+  en: 'Shrine The Pantheon',
+  zh: '神社 The Pantheon',
+  es: 'Shrine The Pantheon',
+  fr: 'Shrine The Pantheon',
+  ko: '神社 The Pantheon',
 };
 
 const titleSeparator: Record<Lang, string> = { ja: '｜', en: ' | ', zh: '｜', es: ' | ', fr: ' | ', ko: ' | ' };
@@ -49,7 +50,7 @@ const siteName: Record<Lang, string> = {
 const ogLocale: Record<Lang, string> = { ja: 'ja_JP', en: 'en_US', zh: 'zh_TW', es: 'es_ES', fr: 'fr_FR', ko: 'ko_KR' };
 
 const { title, description = defaultDescription[lang], image = '/og-image.png' } = Astro.props;
-const fullTitle = `${title}${titleSeparator[lang]}${titleSuffix[lang]}`;
+const fullTitle = title.includes('The Pantheon') ? title : `${title}${titleSeparator[lang]}${titleSuffix[lang]}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(image, Astro.site).toString();
 
