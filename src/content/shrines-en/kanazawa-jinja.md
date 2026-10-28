@@ -15,12 +15,12 @@ benefits:
   - "Business Prosperity"
   - "Traffic Safety"
 founded: "Kansei 6 (1794)"
-hours: "Grounds open to visitors at all times (shrine office and goshuin 9:00–17:00)"
+hours: "Grounds open to visitors at all times (shrine office and goshuin 9:30–17:00)"
 access: "About 3 min walk from the Hokutetsu bus stop \"Hirosaka / 21st Century Museum,\" or about 2 min walk from \"Prefectural Art Museum / Traditional Crafts Museum.\" Just outside Kenroku-en Garden's Zuishin-zaka exit."
 parking: "No dedicated shrine parking (use the paid parking lots around Kenroku-en Garden)"
 goshuin:
   available: true
-  hours: "9:00–17:00"
+  hours: "9:30–17:00"
   fee: "¥500 (includes gold leaf accent)"
 officialUrl: "https://www.kanazawa-jj.or.jp/"
 themeColor: "gold"
@@ -45,9 +45,9 @@ gallery:
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Stream_-_Kanizawa_Shrine_-_Kanazawa,_Japan_-_DSC09958.jpg"
 faq:
   - question: "What are the visiting hours?"
-    answer: "The grounds are open to visitors at all times; the shrine office and goshuin desk are open 9:00–17:00."
+    answer: "The grounds are open to visitors at all times; the shrine office and goshuin desk are open 9:30–17:00."
   - question: "When is the goshuin office open?"
-    answer: "9:00–17:00, for ¥500 (includes a gold leaf accent)."
+    answer: "9:30–17:00, for ¥500 (includes a gold leaf accent)."
   - question: "Is there parking?"
     answer: "No dedicated shrine parking — use the paid lots around Kenroku-en Garden."
   - question: "Is it close to Kenroku-en Garden?"
@@ -60,23 +60,23 @@ faq:
 
 Kanazawa Jinja was founded in 1794 (Kansei 6) by Maeda Harunaga, the 11th lord of the Kaga domain, at the same time he established the domain school Meirindo. As the school's tutelary shrine, he enshrined a divided spirit of Sugawara no Michizane — the deity of scholarship and a forebear of the Maeda family — beside Kinjo Reitaku, a sacred spring on the grounds. That spring is said to be the very origin of the name "Kanazawa" ("gold marsh"): according to legend, a poor young man named Imohori Togoro washed mountain yams he had dug up in its waters, only to find flecks of gold dust pouring out with them. The spring is still regarded today as a spot for financial luck and good fortune.
 
-When Meirindo later relocated to make way for the development of Kenroku-en Garden, the shrine became the tutelary shrine of the Takezawa Palace, a retreat used by successive domain lords, and came to be known as "Takezawa Tenjin." After the abolition of the domains, in 1874 (Meiji 7) — the same year Kenroku-en opened to the public — it was renamed to its present name, Kanazawa Jinja, and has since drawn students and scholars seeking its blessing on their studies. The shrine grounds also enshrine the Hakuja Ryujin (White Snake Dragon God) for financial luck and protection from misfortune, Inari Daimyojin for business prosperity, and Kotohira no Okami for traffic safety, making it a shrine known for a wide range of blessings.
+When Meirindo later relocated to make way for the development of Kenroku-en Garden, the shrine became the tutelary shrine of the Takezawa Palace, a retreat used by successive domain lords, and came to be known as "Takezawa Tenjin." After the abolition of the domains, in 1874 (Meiji 7) — the same year Kenroku-en opened to the public — it was renamed to its present name, Kanazawa Jinja, and has since drawn students and scholars seeking its blessing on their studies. According to the official site, the Hakuja Ryujin (White Snake Dragon God, popularly called "Hakuja-san" or "Mi-san") is enshrined as a co-enshrined deity (aidono) and revered for protection from fire, water and other calamities, as well as for financial luck and business prosperity. The shrine also enshrines Inari Daimyojin for business prosperity and Kotohira no Okami for traffic safety, making it a shrine known for a wide range of blessings.
 
 ## Highlights
 
 The single greatest highlight is Kinjo Reitaku, the sacred spring bubbling up right beside the main hall. Regarded as the birthplace of the name "Kanazawa" itself, this spring is said to still be home to a dragon deity who brings good fortune; its clear water and moss-covered rock face speak quietly to centuries of devotion. The goshuin stamps available at the shrine office are finished with a touch of real gold leaf, a distinctly Kanazawa-style souvenir that visitors love to collect.
 
-Behind the main hall stands a smaller shrine dedicated to the Hakuja Ryujin, a rare pairing of white snake and dragon deity worship found in few other places in Japan. Located right outside Kenroku-en's Zuishin-zaka exit, Kanazawa Jinja is a natural stop to round off a stroll through the garden, and its grounds — wrapped in greenery through every season — offer a pocket of calm just steps from one of Japan's busiest tourist spots.
+The Hakuja Ryujin ("Hakuja-san" or "Mi-san") is, according to the official site, enshrined as a co-enshrined deity in the main hall. Its sacred objects — a male and female pair — are shown on the 1st of every month ("Hakuja-san Day"), when the male one is displayed, and at New Year, when both are displayed, according to the official site. Located right outside Kenroku-en's Zuishin-zaka exit, Kanazawa Jinja is a natural stop to round off a stroll through the garden, and its grounds — wrapped in greenery through every season — offer a pocket of calm just steps from one of Japan's busiest tourist spots.
 
 ## Visiting Tips
 
-The grounds are compact, and a visit including Kinjo Reitaku takes only about 15–20 minutes. There is no dedicated shrine parking, so visitors should use one of the paid lots around Kenroku-en or come by public transit. Goshuin stamps are available at the shrine office from 9:00 to 17:00, and the gold-leaf-accented goshuin makes a memorable Kanazawa souvenir. Since the shrine sits just a minute's walk from Kenroku-en's Zuishin-zaka exit, most visitors combine their shrine visit with a walk through the garden.
+The grounds are compact, and a visit including Kinjo Reitaku takes only about 15–20 minutes. There is no dedicated shrine parking, so visitors should use one of the paid lots around Kenroku-en or come by public transit. Goshuin stamps are available at the shrine office from 9:30 to 17:00, and the gold-leaf-accented goshuin makes a memorable Kanazawa souvenir. Since the shrine sits just a minute's walk from Kenroku-en's Zuishin-zaka exit, most visitors combine their shrine visit with a walk through the garden.
 
 ## Annual Festivals
 
 - **Grand Festivals (Spring: April 25, Autumn: September 25)**: The shrine's principal annual observances, giving thanks for divine protection and praying for the peace of the community and the nation.
 - **Oyama Festival (mid-September)**: Commemorates the historic transport of stone for Kanazawa Castle's construction, with rites recalling the era.
-- **White Snake Day (1st of every month)**: A monthly service for the Hakuja Ryujin, deity of financial luck and protection from misfortune.
+- **White Snake Day (1st of every month)**: A monthly service for the Hakuja Ryujin, the co-enshrined deity. According to the official site, the sacred object is displayed on this day and prayers for good fortune and protection from misfortune are offered.
 - **Inari Day (15th of every month)**: A monthly service for Inari Daimyojin, deity of business prosperity.
 - **Tenjin Day / Academic Success Prayer Service (25th of every month)**: A monthly service for Sugawara no Michizane, with special prayers for success in one's studies.
 

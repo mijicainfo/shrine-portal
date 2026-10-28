@@ -43,6 +43,19 @@ export const updates: UpdateEntry[] = [
     date: '2026-10-28',
     category: 'guide',
     note: {
+      ja: '特集記事「年末の神棚｜古札の納め方・大掃除・榊の替え方」を公開しました',
+      en: 'Published a new featured guide: "Year-End Kamidana Care | Returning Old Ofuda, Cleaning, and Replacing Sakaki"',
+      zh: '發布了新的精選文章「年末的神棚｜舊御札的歸還方式・大掃除・榊的更換」',
+      es: 'Publicamos un nuevo artículo destacado: "El kamidana a fin de año | Devolver los ofuda antiguos, limpiar y cambiar el sakaki"',
+      fr: 'Publication d’un nouvel article à la une : « Le kamidana en fin d’année | Rapporter les anciens ofuda, nettoyer et remplacer le sakaki »',
+      ko: '새로운 특집 기사 "연말의 가미다나｜오래된 오후다 반납·대청소·사카키 교체"를 공개했습니다',
+      href: '/guides/kamidana-nenmatsu/',
+    },
+  },
+  {
+    date: '2026-10-28',
+    category: 'guide',
+    note: {
       ja: '特集記事「白蛇・蛇の神様ゆかりの神社7選」を公開しました',
       en: 'Published a new featured guide: "7 Shrines Associated with the White Snake and Snake Deities"',
       zh: '發布了新的精選文章「白蛇・蛇神淵源神社7選」',
@@ -63,9 +76,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-10-24',
     shrineSlugs: ['sumida-inari-jinja', 'kamimeguro-hikawa-jinja', 'senzoku-hachiman-jinja', 'goshokomagataki-jinja', 'takarada-ebisu-jinja'],
-  },
-  {
-    date: '2026-10-24',
-    shrineSlugs: ['genkuro-inari-jinja', 'nagahama-hachimangu', 'kanegasaki-gu', 'musashino-hachimangu', 'inage-jinja-kawasaki'],
   },
 ];

@@ -16,7 +16,7 @@ benefits:
   - "Good Fortune"
   - "Good Relationships"
   - "Career Success"
-founded: "Genko 2 (1322)"
+founded: "Kamakura period, c. 1323 (per the official site)"
 hours: "Grounds open to visitors at all times (shrine office 9:00–17:00)"
 access: "5–6 min walk from Nakanobu Station (Toei Asakusa Line / Tokyu Oimachi Line); 8 min walk from Nishi-Oi Station (JR Yokosuka Line); 12 min walk from Togoshi-koen Station (Tokyu Oimachi Line)"
 parking: "No on-site visitor parking (use nearby paid parking lots)"
@@ -55,7 +55,7 @@ faq:
 
 ## History
 
-Hebikubo Jinja was founded, according to tradition, in Genko 2 (1322), in the late Kamakura period, on land once known as "Hebikubo" (snake hollow). The area was gripped by a severe drought at the time, and when local villagers prayed for rain at a shrine dedicated to a dragon deity, heavy rains soon followed. In gratitude, they built a shrine on the spot — the origin of Hebikubo Jinja today. The shrine's principal deity is Amaterasu Omikami, enshrined together with Amenokoyane no Mikoto and Emperor Ojin, and the deities of the shrine and its sub-shrines are collectively known as "Hebikubo Daimyojin." The shrine was formally known as Tenso Jinja (Kamishinmei Tenso Jinja) for most of its history, and only adopted "Hebikubo Jinja," after the old place name, as its official name in 2019.
+Hebikubo Jinja stands on land once known as "Hebikubo" (snake hollow). The official site's history page gives its founding as "Kamakura period, around 1323 (Western calendar)." The abridged history on the same official page says that in Genko 2 (1322), when a severe drought struck the whole Musashi region, the priest Homitsu Shonin of Gonshoji temple made a fasting prayer for rain at a dragon-deity shrine and heavy rain fell; the former retainers of Tokichiyo, grateful for this, invited the deity to Hebikubo and enshrined it there, which is regarded as the origin of the present shrine (citing the Ebara-kushi). It also notes one account that a wealthy local farmer, the Moriya family, built it in the Kamakura period. The shrine's principal deity is Amaterasu Omikami, enshrined together with Amenokoyane no Mikoto and Emperor Ojin, and the deities of the shrine and its sub-shrines are collectively known as "Hebikubo Daimyojin." According to the official site, the shrine's formal name is Tenso Jinja (its former name was Shinmeisha), and on May 1, 2019 (Reiwa 1) the frequently asked-about alternative name "Hebikubo Jinja" was upgraded to its commonly used designation.
 
 The grounds also preserve an old legend about a white snake. A white snake was said to have lived in a spring near the shrine; after the spring dried up, the snake reportedly appeared in a local resident's dream, pleading to return to its original home. In response, a Benzaiten shrine with a sacred pond was built to welcome it back. The white snake is regarded as the messenger, or even the living form, of Ichikishimahime no Mikoto — a goddess of the arts, learning, and wealth who is identified with Benzaiten — and is venerated as a bringer of fortune. Enshrining a white snake deity together with a dragon deity is unusual among Japan's shrines: Hebikubo Jinja is counted, alongside sites in Iwakuni (Yamaguchi Prefecture) and Oigami Onsen (Gunma Prefecture), as one of Japan's "Three Great White Snake Sacred Sites," and it is the only one of the three located in Tokyo, making it the city's foremost shrine for white snake worship.
 

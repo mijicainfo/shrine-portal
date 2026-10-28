@@ -15,12 +15,12 @@ benefits:
   - "商売繁盛"
   - "交通安全"
 founded: "Kansei 6 (1794)"
-hours: "El recinto está abierto a los visitantes en todo momento (oficina del santuario y goshuin de 9:00 a 17:00)"
+hours: "El recinto está abierto a los visitantes en todo momento (oficina del santuario y goshuin de 9:30 a 17:00)"
 access: "Unos 3 min a pie desde la parada de autobús Hokutetsu \"Hirosaka / Museo del Siglo XXI\", o unos 2 min a pie desde \"Museo de Arte Prefectural / Museo de Artesanías Tradicionales\". Justo a la salida de Zuishin-zaka del Jardín Kenroku-en."
 parking: "No hay aparcamiento propio del santuario (usar los aparcamientos de pago alrededor del Jardín Kenroku-en)"
 goshuin:
   available: true
-  hours: "9:00 a 17:00"
+  hours: "9:30 a 17:00"
   fee: "¥500 (incluye un toque de pan de oro)"
 officialUrl: "https://www.kanazawa-jj.or.jp/"
 themeColor: "gold"
@@ -45,9 +45,9 @@ gallery:
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Stream_-_Kanizawa_Shrine_-_Kanazawa,_Japan_-_DSC09958.jpg"
 faq:
   - question: "¿Cuál es el horario de visita?"
-    answer: "El recinto está abierto a los visitantes en todo momento; la oficina del santuario y el mostrador de goshuin abren de 9:00 a 17:00."
+    answer: "El recinto está abierto a los visitantes en todo momento; la oficina del santuario y el mostrador de goshuin abren de 9:30 a 17:00."
   - question: "¿Cuándo está abierta la oficina de goshuin?"
-    answer: "De 9:00 a 17:00, por ¥500 (incluye un toque de pan de oro)."
+    answer: "De 9:30 a 17:00, por ¥500 (incluye un toque de pan de oro)."
   - question: "¿Hay estacionamiento?"
     answer: "No hay aparcamiento propio del santuario; usar los aparcamientos de pago alrededor del Jardín Kenroku-en."
   - question: "¿Está cerca del Jardín Kenroku-en?"
@@ -60,23 +60,23 @@ faq:
 
 Kanazawa Jinja fue fundado en 1794 (Kansei 6) por Maeda Harunaga, el 11º señor del dominio Kaga, al mismo tiempo que establecía la escuela del dominio Meirindo. Como santuario tutelar de la escuela, consagró un espíritu dividido de Sugawara no Michizane, deidad de la erudición y antepasado de la familia Maeda, junto a Kinjo Reitaku, un manantial sagrado en el recinto. Se dice que ese manantial es el mismísimo origen del nombre "Kanazawa" ("pantano de oro"): según la leyenda, un pobre joven llamado Imohori Togoro lavó en sus aguas unos ñames de montaña que había desenterrado, solo para descubrir que salían motas de polvo de oro junto con ellos. El manantial todavía es considerado hoy un lugar de suerte financiera y buena fortuna.
 
-Cuando Meirindo se trasladó más tarde para dar paso al desarrollo del Jardín Kenroku-en, el santuario se convirtió en el santuario tutelar del Palacio Takezawa, un retiro utilizado por los sucesivos señores del dominio, y llegó a ser conocido como "Takezawa Tenjin". Tras la abolición de los dominios, en 1874 (Meiji 7), el mismo año en que Kenroku-en se abrió al público, fue renombrado a su nombre actual, Kanazawa Jinja, y desde entonces ha atraído a estudiantes y eruditos que buscan su bendición para sus estudios. El recinto del santuario también consagra al Hakuja Ryujin (Dios Dragón de la Serpiente Blanca) para la suerte financiera y la protección contra la mala suerte, a Inari Daimyojin para la prosperidad de los negocios, y a Kotohira no Okami para la seguridad vial, convirtiéndolo en un santuario conocido por una amplia gama de bendiciones.
+Cuando Meirindo se trasladó más tarde para dar paso al desarrollo del Jardín Kenroku-en, el santuario se convirtió en el santuario tutelar del Palacio Takezawa, un retiro utilizado por los sucesivos señores del dominio, y llegó a ser conocido como "Takezawa Tenjin". Tras la abolición de los dominios, en 1874 (Meiji 7), el mismo año en que Kenroku-en se abrió al público, fue renombrado a su nombre actual, Kanazawa Jinja, y desde entonces ha atraído a estudiantes y eruditos que buscan su bendición para sus estudios. Según el sitio oficial, el Hakuja Ryujin (Dios Dragón de la Serpiente Blanca, llamado popularmente "Hakuja-san" o "Mi-san") está consagrado como deidad compartida (aidono) y es venerado como protector contra el fuego, el agua y otras calamidades, y también por la suerte financiera y la prosperidad de los negocios. El santuario consagra además a Inari Daimyojin para la prosperidad de los negocios y a Kotohira no Okami para la seguridad vial, convirtiéndolo en un santuario conocido por una amplia gama de bendiciones.
 
 ## Puntos Destacados
 
 El mayor punto destacado es Kinjo Reitaku, el manantial sagrado que brota justo al lado del salón principal. Considerado el lugar de nacimiento del nombre "Kanazawa" mismo, se dice que este manantial todavía alberga a una deidad dragón que trae buena fortuna; su agua clara y su cara de roca cubierta de musgo hablan silenciosamente de siglos de devoción. Los sellos goshuin disponibles en la oficina del santuario están acabados con un toque de pan de oro real, un souvenir de estilo claramente propio de Kanazawa que los visitantes adoran coleccionar.
 
-Detrás del salón principal se encuentra un santuario más pequeño dedicado al Hakuja Ryujin, una rara combinación de culto a la serpiente blanca y al dios dragón que se encuentra en pocos otros lugares de Japón. Situado justo a la salida de Zuishin-zaka de Kenroku-en, Kanazawa Jinja es una parada natural para completar un paseo por el jardín, y su recinto, envuelto en vegetación en cada estación, ofrece un rincón de calma a solo unos pasos de uno de los lugares turísticos más concurridos de Japón.
+El Hakuja Ryujin ("Hakuja-san" o "Mi-san") está consagrado, según el sitio oficial, como deidad compartida en el salón principal. Según el sitio oficial, sus objetos sagrados, una pareja macho y hembra, se muestran el día 1 de cada mes ("Día de Hakuja-san"), cuando se exhibe el macho, y en Año Nuevo, cuando se exhiben ambos. Situado justo a la salida de Zuishin-zaka de Kenroku-en, Kanazawa Jinja es una parada natural para completar un paseo por el jardín, y su recinto, envuelto en vegetación en cada estación, ofrece un rincón de calma a solo unos pasos de uno de los lugares turísticos más concurridos de Japón.
 
 ## Consejos para la Visita
 
-El recinto es compacto, y una visita que incluya Kinjo Reitaku toma solo unos 15-20 minutos. No hay aparcamiento propio del santuario, así que los visitantes deberían usar uno de los aparcamientos de pago alrededor de Kenroku-en o venir en transporte público. Los sellos goshuin están disponibles en la oficina del santuario de 9:00 a 17:00, y el goshuin con toque de pan de oro es un souvenir memorable de Kanazawa. Dado que el santuario se encuentra a solo un minuto a pie de la salida de Zuishin-zaka de Kenroku-en, la mayoría de los visitantes combinan su visita al santuario con un paseo por el jardín.
+El recinto es compacto, y una visita que incluya Kinjo Reitaku toma solo unos 15-20 minutos. No hay aparcamiento propio del santuario, así que los visitantes deberían usar uno de los aparcamientos de pago alrededor de Kenroku-en o venir en transporte público. Los sellos goshuin están disponibles en la oficina del santuario de 9:30 a 17:00, y el goshuin con toque de pan de oro es un souvenir memorable de Kanazawa. Dado que el santuario se encuentra a solo un minuto a pie de la salida de Zuishin-zaka de Kenroku-en, la mayoría de los visitantes combinan su visita al santuario con un paseo por el jardín.
 
 ## Festivales Anuales
 
 - **Grandes Festivales (Primavera: 25 de abril, Otoño: 25 de septiembre)**: Las observancias anuales principales del santuario, en agradecimiento por la protección divina y en oración por la paz de la comunidad y la nación.
 - **Festival de Oyama (mediados de septiembre)**: Conmemora el transporte histórico de piedra para la construcción del Castillo de Kanazawa, con ritos que recuerdan la época.
-- **Día de la Serpiente Blanca (día 1 de cada mes)**: Un servicio mensual para el Hakuja Ryujin, deidad de la suerte financiera y la protección contra la mala suerte.
+- **Día de la Serpiente Blanca (día 1 de cada mes)**: Un servicio mensual para el Hakuja Ryujin, la deidad compartida. Según el sitio oficial, ese día se muestra el objeto sagrado y se ofrecen oraciones por la buena fortuna y la protección contra la mala suerte.
 - **Día de Inari (día 15 de cada mes)**: Un servicio mensual para Inari Daimyojin, deidad de la prosperidad de los negocios.
 - **Día de Tenjin / Servicio de Oración por el Éxito Académico (día 25 de cada mes)**: Un servicio mensual para Sugawara no Michizane, con oraciones especiales por el éxito en los estudios.
 
