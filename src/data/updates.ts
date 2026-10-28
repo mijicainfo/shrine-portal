@@ -40,6 +40,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-10-28',
+    category: 'guide',
+    note: {
+      ja: '特集記事「白蛇・蛇の神様ゆかりの神社7選」を公開しました',
+      en: 'Published a new featured guide: "7 Shrines Associated with the White Snake and Snake Deities"',
+      zh: '發布了新的精選文章「白蛇・蛇神淵源神社7選」',
+      es: 'Publicamos un nuevo artículo destacado: "7 santuarios vinculados a la serpiente blanca y a las deidades serpiente"',
+      fr: 'Publication d’un nouvel article à la une : « 7 sanctuaires liés au serpent blanc et aux divinités-serpents »',
+      ko: '새로운 특집 기사 "흰 뱀·뱀신과 인연이 깊은 신사 7선"을 공개했습니다',
+      href: '/guides/shirohebi-jinja/',
+    },
+  },
+  {
     date: '2026-10-27',
     shrineSlugs: ['katano-jinja', 'himure-hachimangu', 'kushihiki-hachimangu', 'yoyogi-hachimangu', 'haritsuna-jinja'],
   },
@@ -54,18 +67,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-10-24',
     shrineSlugs: ['genkuro-inari-jinja', 'nagahama-hachimangu', 'kanegasaki-gu', 'musashino-hachimangu', 'inage-jinja-kawasaki'],
-  },
-  {
-    date: '2026-09-21',
-    category: 'guide',
-    note: {
-      ja: '特集記事「自宅に神棚を飾ろう｜置き場所・祀り方・お参りの作法とおすすめ神具」を公開しました',
-      en: 'Published a new featured guide: "How to Set Up a Kamidana (Home Shrine)"',
-      zh: '發布了新的精選文章「在家中供奉神棚：擺放位置・祭祀方法・參拜禮儀與推薦神具」',
-      es: 'Publicamos un nuevo artículo destacado: "Cómo instalar un kamidana (altar sintoísta) en casa"',
-      fr: 'Publication d’un nouvel article à la une : « Comment installer un kamidana (autel shinto) chez soi »',
-      ko: '새로운 특집 기사 "집에 신단(가미다나) 모시는 법"을 공개했습니다',
-      href: '/guides/kamidana-kazarikata/',
-    },
   },
 ];

@@ -1,0 +1,37 @@
+---
+title: "7 Shrines Associated with the White Snake and Snake Deities"
+description: "From Hebikubo Jinja in Tokyo and Iwakuni Shirohebi Shrine in Yamaguchi to Kanazawa, Kamakura, Enoshima and Lake Shikaribetsu in Hokkaido, we introduce seven shrines with traditions of white snakes and snake deities."
+publishDate: 2026-10-28
+entries:
+  - shrineId: "hebikubo-jinja"
+    note: "Hebikubo Jinja in Shinagawa Ward, Tokyo, enshrines the Shirohebi Benzaiten-sha (White Snake Benzaiten shrine) on its grounds and is known as \"Tokyo's White Snake.\" According to the shrine's official website, in the Kamakura period a white snake that lived at a spring-fed washing place beside the main hall appeared in the dream of a local old family's head and begged to be returned to its former home, and a Benzaiten shrine was built as a result, so the story goes. The official site also carries a video on the white-snake \"seed coin\" money-circling and money-washing etiquette, along with notices about special prayers on Snake Days (mi-no-hi) and goshuin handling on Tsuchinoto-mi days."
+  - shrineId: "iwakuni-shirohebi-jinja"
+    note: "Iwakuni Shirohebi Shrine in Iwakuni, Yamaguchi Prefecture, was founded in 2012 against a background of protecting, and holding in faith, the \"Iwakuni white snakes,\" a national natural monument. According to the shrine's official website, white snakes have lived in Iwakuni for more than 300 years and were believed to have guarded the rice storehouse of the Kikkawa family, the lords of Iwakuni domain, from rats; at some point they came to be merged with Benzaiten. The site explains that the white snake is not itself a deity but is revered as the \"messenger\" of the four enshrined deities. A viewing facility next to the shrine is introduced as a place where visitors can see the white snakes."
+  - shrineId: "kanazawa-jinja"
+    note: "Kanazawa Jinja in Ishikawa Prefecture enshrines Sugawara no Michizane, the god of scholarship, as its main deity, and also venerates Hakuja Ryujin (the White Snake Dragon Deity, popularly called \"Shirohebi-san\" or \"Mi-san\") as an aidono (co-enshrined deity). According to the official website, Hakuja Ryujin is revered as a deity who wards off fire, water and other calamities and is associated with financial luck and business prosperity, and on the first of every month, designated \"White Snake Day,\" the sacred object is shown to worshippers and prayers are offered. The site explains that the dragon-snake faith merged with the gold-dust legend of the nearby Kinjo Reitaku spring, so the deity also came to be revered as a god of financial luck."
+  - shrineId: "zeniarai-benzaiten-jinja"
+    note: "Zeniarai Benzaiten Ugafuku Shrine in Kamakura takes its name from the deity \"Ugafukujin.\" According to Kanagawa's official tourism site, Kanagawa Kanko NOW, the shrine's origin is traditionally traced to the year 1185, when the water deity Ugafukujin — said to have a human head and a snake's body — appeared in Minamoto no Yoritomo's dream on a snake day, in a snake month, of a snake year, and gave him an oracle (a tradition). Visiting on a snake day (mi-no-hi), the day of Benzaiten's festival, is said to be especially auspicious, and the site also mentions the custom of offering eggs, said to be a favorite food of snakes."
+  - shrineId: "enoshima-jinja"
+    note: "Enoshima Jinja in Kanagawa Prefecture stands on the island of Enoshima and has long been venerated as Enoshima Benzaiten. According to the official website, the Taiheiki records that Hojo Tokimasa shut himself in a cave on Enoshima, and on the night his vigil ended Benzaiten appeared, turned into a great serpent and vanished into the sea, leaving three scales behind, which Tokimasa is said to have adopted as his family crest; the shrine's own crest is also said to derive from this legend. The site also states that dragon-deity worship has merged with Benzaiten worship, and each April the shrine holds its Hatsumi Reitaisai (First Snake Day grand festival)."
+  - shrineId: "ikejiri-inari-jinja"
+    note: "Ikejiri Inari Shrine in Setagaya Ward, Tokyo, is an Inari shrine with sub-shrines connected to snakes. According to its official website, the sacred object of Kiyohime Inari Shrine, on the left side of the main hall, is said to possibly be a white snake. The Suijin Shrine in front of the purification fountain is enshrined as \"water deity = snake,\" and the site states that it would not be an exaggeration to credit the \"snake deity\" for the shrine's well water never running dry. It is also close to Shibuya and Sangenjaya, making it an easy place to pay respects to a snake deity within Tokyo."
+  - shrineId: "benten-jinja-shikaribetsu"
+    note: "Benten Jinja is a small shrine on Bentenjima, an islet in Lake Shikaribetsu, Hokkaido. The islet is introduced as home to an enshrined Benzaiten, and every July the \"Hakujahime Matsuri\" (White Snake Princess Festival) is held on the lakeshore, featuring a dance inspired by the lake's \"Hakujahime Monogatari\" (White Snake Princess story). According to tourism information, the dance is based on a legend in which a white snake led Ainu villagers to the lake and saved them from crop failure; its highlight is a snake dance by a 13-meter parent snake and an 8-meter young snake. The islet is normally closed to visitors, so worship is generally done by viewing the torii gate from the lakeshore or a sightseeing boat."
+---
+
+## Tips for Visiting White Snake Shrines
+
+In Japan, snakes have long been associated with water and bountiful harvests. White snakes in particular are said, in folk belief, to be messengers or manifestations of Benzaiten and to bring financial luck. These are traditions of popular faith, however, and how a snake is enshrined, and why, differs from shrine to shrine.
+
+The shrines in this guide are a varied group: some enshrine the white snake itself, some are tied to Benzaiten or Ugajin, some overlap with dragon-deity worship, and one is an Inari shrine whose sub-shrines preserve snake lore. Most of these stories are traditions handed down by the shrines themselves and have not been verified as historical fact. Likewise, the blessings mentioned here are simply the beliefs each shrine conveys.
+
+At many snake-related shrines, snake days (mi-no-hi, which come around every 12 days, named for the "snake" in the Chinese zodiac) and Tsuchinoto-mi days (once every 60 days) are treated as special festival days, and limited-edition amulets and goshuin may be prepared.
+
+## Things to Keep in Mind When You Visit
+
+- **Snake days and Tsuchinoto-mi days get crowded**: On festival days, visitor numbers rise and lines can form. If you would rather worship at a relaxed pace, consider visiting on another day. Check each shrine's official website in advance for what is offered and how it is handled.
+- **Check access and visiting conditions**: Bentenjima in Lake Shikaribetsu is normally closed to landing, and Iwakuni Shirohebi Shrine is some distance from major cities. Confirm transportation and visiting conditions before you go.
+- **Enjoy the legends as legends**: Stories such as "the white snake is Benzaiten's messenger" are beliefs and traditions passed down in various places. They do not guarantee any blessing. Please visit quietly and with respect.
+- **When viewing live white snakes**: Follow the instructions posted on site. There may also be rules about photography.
+
+You can find full details on each shrine's history, access, and goshuin information on its individual page.
