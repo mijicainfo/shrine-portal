@@ -72,7 +72,7 @@ Chusha seule peut se visiter en environ 30 minutes, mais Togakushi Jinja ne se r
 
 - **Fête du Nouvel An (1er janvier)** : Un rite accueillant la nouvelle année et priant pour une année de sécurité et de prospérité.
 - **Fête Annuelle (8 août)** : La fête la plus importante de Chusha, mettant en scène des représentations de danse kagura sacrée et attirant de grandes foules.
-- **Shikinen Taisai (une fois tous les sept ans, l'année du Bœuf et l'année de la Chèvre)** : Un rite spécial au cours duquel la divinité de Hokosha rend visite à Chusha, classé aux côtés du Festival Onbashira de Suwa Taisha parmi les grandes fêtes périodiques de la région.
+- **Shikinen Taisai (tous les six ans, l'année du Bœuf et l'année du Mouton ; le site officiel annonce la prochaine édition du 25 avril au 25 mai 2027)** : Un rite spécial au cours duquel la divinité de Hokosha rend visite à Chusha, classé aux côtés du Festival Onbashira de Suwa Taisha parmi les grandes fêtes périodiques de la région.
 - **Grand Rite de Purification (30 juin et 31 décembre)** : Une cérémonie purifiant les impuretés du semestre écoulé et accueillant la saison à venir dans un esprit renouvelé.
 
 ## Restauration et Visites à Proximité

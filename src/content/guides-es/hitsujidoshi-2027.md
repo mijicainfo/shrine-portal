@@ -1,0 +1,39 @@
+---
+title: "Guía de visitas para 2027, Año de la Oveja: santuarios de la oveja y festivales del Año de la Oveja"
+description: "2027 es el Año de la Oveja (Hitsuji-doshi). Presentamos 4 santuarios útiles para visitar en este año: los \"santuarios de la oveja\" de Gunma y Nagoya, el gran festival Shikinen Taisai del Togakushi Jinja y el Tanashi Jinja, que prevé ema de \"el sol y la oveja\"."
+publishDate: 2026-10-31
+entries:
+  - shrineId: "hitsuji-jinja-annaka"
+    note: "Hitsuji Jinja, en la ciudad de Annaka, prefectura de Gunma, fue fundado, según el sitio web oficial del Santuario Sakisaki, en la era Enpo (1673–81). Sus deidades son Ame-no-Koyane-no-Mikoto y Tago no Hitsujidayu Fujiwara no Munekatsu-ko, y es un santuario sin personal fijo, atendido por el sacerdote principal del Santuario Sakisaki. Un artículo del sitio de turismo de Gunma lo presenta como \"guardián del Año de la Oveja\", muy querido, con una \"koma-hitsuji\" (oveja guardiana) con una campanilla al cuello y ema de ovejas de nariz roja. El goshuin no se recibe en el recinto, sino en la entrada del Santuario Sakisaki (en santuarios atendidos por otro sacerdote la ofrenda es de 300 yenes, según el sitio oficial). En octubre de 2026, no se encontraba en el sitio oficial ningún anuncio de artículos exclusivos de 2027."
+  - shrineId: "hitsuji-jinja-nagoya"
+    note: "Hitsuji Jinja, en el distrito de Kita, en la ciudad de Nagoya, es, según la guía turística de la ciudad de Nagoya, un santuario antiguo que figura en el registro de deidades del Engishiki como \"Hitsuji Jinja, distrito de Yamada, provincia de Owari\" (se considera uno de los candidatos a santuario Shikinaisha, y existen otras opiniones). Esa misma guía recoge la tradición de que el nombre del santuario procede de que Hitsujidayu, cuyo nombre está grabado en la estela de Tago, tuvo su residencia en esta zona y veneró a una deidad del fuego. Las deidades son Hinokagutsuchi-no-Kami y Amaterasu Omikami, por lo que no es un santuario que consagre ovejas. Según un relato de visita, hay muchos elementos relacionados con la oveja en el recinto, como el agua que sale de la boca de una oveja en el chozuya (pabellón de purificación) y las estatuas de ovejas madre e hija (koma-hitsuji)."
+  - shrineId: "togakushi-jinja"
+    note: "Togakushi Jinja, en la ciudad de Nagano, es un santuario formado por cinco: Okusha, Chusha, Hokosha, Kuzuryusha e Hinomikosha. Según el sitio web oficial, el Shikinen Taisai se celebra desde antiguo \"cada seis años, en los años del Buey y de la Oveja\" y es \"el mayor festival del Togakushi Jinja\"; para Reiwa 9 (2027) se anuncia del 25 de abril (domingo) al 25 de mayo (martes), con la ceremonia Togyo-no-gi el 9 de mayo (domingo), la ceremonia Okusha Hokokusai el 15 de mayo (sábado) y la ceremonia Kangyo-no-gi el 23 de mayo (domingo). Se indica que la hora y el lugar de cada acto se comunicarán en el sitio oficial y en Instagram en cuanto se decidan."
+  - shrineId: "tanashi-jinja"
+    note: "Tanashi Jinja, en la ciudad de Nishitokyo, en Tokio, es conocido como santuario que consagra a las cinco deidades dragón (Goryujin). Según la página de resultados del concurso de diseño de ema del sitio web oficial, el tema de la 10.ª edición fue \"el sol y la oveja\"; de las 177 obras presentadas, las de los 4 premiados se adoptarán como diseño de los ema del Tanashi Jinja de Reiwa 9 (2027), y se prepararán como ema en torno al Año Nuevo. En octubre de 2026 aún no se había hecho público el día concreto de entrega."
+---
+
+## Qué es el Año de la Oveja (Hitsuji-doshi)
+
+El Año de la Oveja es el año que corresponde a "未" (hitsuji) del zodiaco chino, y el próximo es 2027 (Reiwa 9). Según la tabla del zodiaco chino de la wiki del calendario del Observatorio Astronómico Nacional de Japón, "未" corresponde a la hora de las 13:00 a las 15:00 aproximadamente, y el suroeste, entre "未" y "申", se denomina la dirección "Hitsujisaru" (坤).
+
+Sobre el carácter "未" en sí hay desde antiguo varias teorías: representa, por ejemplo, la imagen de la vegetación que crece espesa y oscurece (昧) o la de la fruta que madura y adquiere sabor (味); suele explicarse que el animal, la oveja, se le asignó después para que fuera más fácil de recordar. Los santuarios que presentamos aquí se relacionan con el año de formas muy distintas: uno lleva el nombre de la oveja, otro conserva tradiciones sobre ella, otro celebra un festival propio de los Años de la Oveja y otro prevé ema de la oveja.
+
+## Un festival distinto del Año de la Oveja: Shimosa Sanzan Nana-nen Matsuri
+
+En la prefectura de Chiba se celebra el "Shimosa Sanzan Nana-nen Matsuri" (Festival de los Siete Años de las Tres Montañas de Shimosa), que tiene lugar en los Años del Buey y de la Oveja. Según las guías de la prefectura de Chiba y de las ciudades de Funabashi y Chiba, es un festival en el que participan 9 santuarios de las ciudades de Funabashi, Chiba, Yachiyo y Narashino, y está designado Bien Cultural Folclórico Inmaterial de la prefectura de Chiba (designado en marzo de 2004). Su ciclo es de 6 años, en los Años del Buey y de la Oveja, y se llama "festival de los siete años" porque, contando por la edad tradicional, corresponde al séptimo año. Consta de un festival menor en septiembre y uno mayor en noviembre, y la guía de la ciudad de Chiba recoge también el dicho de que "en el festival de las Tres Montañas, lo último va primero".
+
+El año 2027 es precisamente un Año de la Oveja, pero todavía no se han podido confirmar las fechas concretas de 2027 en las páginas de las guías de las ciudades de Funabashi y Chiba ni de la prefectura de Chiba (a octubre de 2026). Si piensa visitarlo o verlo, consulte la información más reciente de cada ciudad (<a href="https://www.city.funabashi.lg.jp/kurashi/gakushu/0005/p008851.html" target="_blank" rel="noopener noreferrer">página de información de la ciudad de Funabashi</a>). Cabe añadir que este sitio todavía no cuenta con páginas de los santuarios que participan en el Shimosa Sanzan Nana-nen Matsuri.
+
+## Un evento del mismo año en Nagano (templo)
+
+Aunque no es un santuario, en el templo Zenkoji de la ciudad de Nagano está previsto, según indica el sitio oficial de la Gokaicho, celebrar en Reiwa 9 (2027) la Maedachi Honzon Gokaicho (exhibición pública especial de la réplica de la imagen principal) del 4 de abril al 19 de junio. Como su periodo coincide con el del Shikinen Taisai del Togakushi Jinja (del 25 de abril al 25 de mayo), sirve de referencia al organizar un viaje por la zona de Nagano.
+
+## Qué conviene saber al visitar en el Año de la Oveja
+
+- **Los artículos del zodiaco suelen empezar a ofrecerse a finales de año**: en muchos santuarios, la entrega de artículos del zodiaco, como ema y amuletos, empieza desde finales de año hasta el Año Nuevo, y el contenido y las fechas varían de un santuario a otro. En octubre de 2026, lo único de 2027 cuyo anuncio oficial se pudo confirmar fueron los ema del Tanashi Jinja que presentamos aquí. Consulte en el sitio web oficial de cada santuario si se ofrecen y cuándo.
+- **El Hitsuji Jinja de Annaka es un santuario sin personal fijo**: el goshuin y los artículos se reciben en la entrada del Santuario Sakisaki, que lo atiende. Antes de visitarlo, conviene consultar el horario de atención del Santuario Sakisaki.
+- **Del Shikinen Taisai del Togakushi Jinja, esté atento a las novedades del programa**: el periodo está anunciado oficialmente, pero la hora y el lugar de cada acto se darán a conocer cuando se decidan. Durante esas fechas también puede haber aglomeraciones.
+- **Distinga la fuente de la información de los artículos**: cosas como la "koma-hitsuji" o las figuras de ovejas se presentan sobre todo en sitios de turismo y relatos de visita, y no en el sitio web oficial de los santuarios. Compruebe cómo es el lugar en su propia visita.
+
+Encontrará información detallada sobre la historia, el acceso y los goshuin de cada santuario en su propia página.

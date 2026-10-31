@@ -41,6 +41,19 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-10-31',
+    category: 'guide',
+    note: {
+      ja: '特集記事「2027年・未年の参拝ガイド｜羊の神社と、未年に行われる祭り」を公開しました',
+      en: 'Published a new featured guide: "2027 Year of the Sheep Shrine Guide: Sheep Shrines and Festivals Held in Sheep Years"',
+      zh: '發布了新的精選文章「2027年・未年參拜指南｜羊神社與未年舉行的祭典」',
+      es: 'Publicamos un nuevo artículo destacado: "Guía de visitas para 2027, Año de la Oveja: santuarios de la oveja y festivales del Año de la Oveja"',
+      fr: 'Publication d’un nouvel article à la une : « Guide de visite de l’année du Mouton 2027 : sanctuaires du mouton et fêtes des années du Mouton »',
+      ko: '새로운 특집 기사 "2027년 양의 해(히쓰지도시) 참배 가이드｜양 신사와 양의 해에 열리는 축제"를 공개했습니다',
+      href: '/guides/hitsujidoshi-2027/',
+    },
+  },
+  {
+    date: '2026-10-31',
     shrineSlugs: ['hitsuji-jinja-annaka', 'sanya-hachiman-jinja', 'suitengu-tokyo', 'takeo-jinja', 'miyazaki-jingu'],
   },
   {
@@ -62,19 +75,6 @@ export const updates: UpdateEntry[] = [
       fr: 'Publication d’un nouvel article à la une : « Le kamidana en fin d’année | Rapporter les anciens ofuda, nettoyer et remplacer le sakaki »',
       ko: '새로운 특집 기사 "연말의 가미다나｜오래된 오후다 반납·대청소·사카키 교체"를 공개했습니다',
       href: '/guides/kamidana-nenmatsu/',
-    },
-  },
-  {
-    date: '2026-10-28',
-    category: 'guide',
-    note: {
-      ja: '特集記事「白蛇・蛇の神様ゆかりの神社7選」を公開しました',
-      en: 'Published a new featured guide: "7 Shrines Associated with the White Snake and Snake Deities"',
-      zh: '發布了新的精選文章「白蛇・蛇神淵源神社7選」',
-      es: 'Publicamos un nuevo artículo destacado: "7 santuarios vinculados a la serpiente blanca y a las deidades serpiente"',
-      fr: 'Publication d’un nouvel article à la une : « 7 sanctuaires liés au serpent blanc et aux divinités-serpents »',
-      ko: '새로운 특집 기사 "흰 뱀·뱀신과 인연이 깊은 신사 7선"을 공개했습니다',
-      href: '/guides/shirohebi-jinja/',
     },
   },
 ];

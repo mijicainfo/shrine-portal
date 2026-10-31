@@ -72,7 +72,7 @@ Chusha alone can be visited in about 30 minutes, but Togakushi Jinja truly revea
 
 - **New Year's Festival (January 1)**: A rite welcoming the new year and praying for a year of safety and prosperity.
 - **Annual Festival (August 8)**: Chusha's most important festival, featuring sacred kagura dance performances and drawing large crowds.
-- **Shikinen Taisai (once every seven years, in the Year of the Ox and Year of the Sheep)**: A special rite in which Hokosha's deity visits Chusha, ranked alongside Suwa Taisha's Onbashira Festival as one of the region's great periodic festivals.
+- **Shikinen Taisai (every six years, in the Year of the Ox and Year of the Sheep; the official site announces the next one for April 25 to May 25, 2027)**: A special rite in which Hokosha's deity visits Chusha, ranked alongside Suwa Taisha's Onbashira Festival as one of the region's great periodic festivals.
 - **Great Purification Rite (June 30 and December 31)**: A ceremony cleansing the impurities of the past half-year and welcoming the season ahead with a renewed spirit.
 
 ## Nearby Food & Sightseeing

@@ -72,7 +72,7 @@ Chusha por sí solo puede visitarse en unos 30 minutos, pero el Santuario Togaku
 
 - **Festival de Año Nuevo (1 de enero)**: Un rito que da la bienvenida al nuevo año y ora por un año de seguridad y prosperidad.
 - **Festival Anual (8 de agosto)**: El festival más importante de Chusha, con representaciones de la danza sagrada kagura y gran afluencia de público.
-- **Shikinen Taisai (una vez cada siete años, en el Año del Buey y el Año de la Oveja)**: Un rito especial en el que la deidad de Hokosha visita Chusha, considerado, junto con el Festival Onbashira de Suwa Taisha, uno de los grandes festivales periódicos de la región.
+- **Shikinen Taisai (cada seis años, en el Año del Buey y el Año de la Oveja; el sitio oficial anuncia la próxima edición del 25 de abril al 25 de mayo de 2027)**: Un rito especial en el que la deidad de Hokosha visita Chusha, considerado, junto con el Festival Onbashira de Suwa Taisha, uno de los grandes festivales periódicos de la región.
 - **Gran Rito de Purificación (30 de junio y 31 de diciembre)**: Una ceremonia que purifica las impurezas del medio año pasado y da la bienvenida a la temporada siguiente con el espíritu renovado.
 
 ## Gastronomía y turismo cercanos
