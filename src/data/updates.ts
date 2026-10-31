@@ -40,6 +40,10 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-10-31',
+    shrineSlugs: ['nakano-numabukuro-hikawa-jinja', 'yatsuya-shinmeisha', 'nishina-shinmeigu', 'shikaumi-jinja', 'oi-zao-gongen-jinja'],
+  },
+  {
     date: '2026-10-30',
     shrineSlugs: ['hinomisaki-jinja', 'kattamine-jinja', 'kotohira-jinja-furubira', 'azabu-hikawa-jinja', 'itsukushima-jinja-motomachi'],
   },
@@ -72,9 +76,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-10-27',
     shrineSlugs: ['katano-jinja', 'himure-hachimangu', 'kushihiki-hachimangu', 'yoyogi-hachimangu', 'haritsuna-jinja'],
-  },
-  {
-    date: '2026-10-26',
-    shrineSlugs: ['gokonomiya-jinja', 'shirahige-jinja-mukojima', 'hokoku-jinja-osaka', 'takasu-jinja', 'ookawakami-birafu-jinja'],
   },
 ];
