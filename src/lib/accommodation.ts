@@ -20,6 +20,10 @@ export interface AccommodationInput {
 export function buildAccommodationQuery(lang: Lang, { city, prefecture, bookingCity, bookingPrefecture }: AccommodationInput): string {
   const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
   const resolvedBookingPrefecture = (bookingPrefecture ?? prefecture).replace(/\s*Prefecture$/i, '');
+  if (lang === 'ja' && bookingCity && /^[ -~]+$/.test(cleanCity)) {
+    // 日本語の地名では誤解決される市（例: 観音寺市→高松市）向け: 実機確認済みのローマ字名だけを、都道府県を付けずにそのまま検索する
+    return cleanCity;
+  }
   return lang !== 'ja'
     ? (cleanCity ? `${cleanCity}, ${resolvedBookingPrefecture}, Japan` : `${resolvedBookingPrefecture}, Japan`)
     : (cleanCity ? `${prefecture} ${cleanCity}` : prefecture);
@@ -31,6 +35,9 @@ export function buildAccommodationBookingUrl(lang: Lang, input: AccommodationInp
 
 /** 楽天トラベルのキーワード検索は日本語専用（日本語版でのみ使う） */
 export function buildAccommodationRakutenUrl(shrineName: string, { city, prefecture, bookingCity }: AccommodationInput): string {
-  const cleanCity = (bookingCity ?? city).replace(/[（(].*?[）)]/g, '').trim();
+  // ローマ字の bookingCity は Booking.com 用の上書きなので、楽天トラベルには日本語の市区町村名を使う
+  const isLatinOverride = !!bookingCity && /^[ -~]+$/.test(bookingCity);
+  const useCity = isLatinOverride ? city : (bookingCity ?? city);
+  const cleanCity = useCity.replace(/[（(].*?[）)]/g, '').trim();
   return buildRakutenSearchUrl(`${shrineName} ${prefecture}${cleanCity}`);
 }
