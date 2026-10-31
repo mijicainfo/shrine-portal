@@ -3,6 +3,7 @@ name: "Eda Jinja"
 kana: "Eda Jinja"
 prefecture: "Miyazaki"
 city: "Miyazaki City"
+bookingCity: "Miyazaki"
 address: "127 Ubusan, Awagihara-cho, Miyazaki, Miyazaki, Japan"
 deities:
   - "Izanagi no Mikoto"

@@ -3,6 +3,8 @@ name: "江田神社"
 kana: "Eda Jinja"
 prefecture: "宮崎県"
 city: "宮崎市"
+bookingCity: "Miyazaki"
+bookingPrefecture: "Miyazaki"
 address: "宮崎県宮崎市阿波岐原町産母127"
 deities:
   - "伊邪那岐命（日本神話中創生國土之男神，主祭神）"

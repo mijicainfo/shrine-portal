@@ -3,6 +3,7 @@ name: "Aoshima Jinja"
 kana: "Aoshima-jinja"
 prefecture: "Miyazaki"
 city: "Miyazaki City"
+bookingCity: "Miyazaki"
 address: "2-13-1 Aoshima, Miyazaki City, Miyazaki, Japan"
 deities:
   - "Hikohohodemi no Mikoto (also known as Yamasachihiko, or Hoori no Mikoto)"

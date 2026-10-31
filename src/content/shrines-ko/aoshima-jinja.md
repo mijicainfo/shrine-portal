@@ -3,6 +3,7 @@ name: "Aoshima Jinja"
 kana: "Aoshima-jinja"
 prefecture: "Miyazaki"
 city: "Miyazaki City"
+bookingCity: "Miyazaki"
 address: "2-13-1 Aoshima, Miyazaki City, Miyazaki, Japan"
 deities:
   - "히코호호데미노미코토(彦火火出見命, 야마사치히코)"
