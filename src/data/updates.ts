@@ -41,6 +41,10 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-10-31',
+    shrineSlugs: ['hitsuji-jinja-annaka', 'sanya-hachiman-jinja', 'suitengu-tokyo', 'takeo-jinja', 'miyazaki-jingu'],
+  },
+  {
+    date: '2026-10-31',
     shrineSlugs: ['nakano-numabukuro-hikawa-jinja', 'yatsuya-shinmeisha', 'nishina-shinmeigu', 'shikaumi-jinja', 'oi-zao-gongen-jinja'],
   },
   {
@@ -72,9 +76,5 @@ export const updates: UpdateEntry[] = [
       ko: '새로운 특집 기사 "흰 뱀·뱀신과 인연이 깊은 신사 7선"을 공개했습니다',
       href: '/guides/shirohebi-jinja/',
     },
-  },
-  {
-    date: '2026-10-27',
-    shrineSlugs: ['katano-jinja', 'himure-hachimangu', 'kushihiki-hachimangu', 'yoyogi-hachimangu', 'haritsuna-jinja'],
   },
 ];
