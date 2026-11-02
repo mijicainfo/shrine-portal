@@ -40,6 +40,10 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-03',
+    shrineSlugs: ['fujinomori-jinja', 'kumano-taisha-nanyo', 'izusan-jinja', 'kamikawa-jinja-asahikawa', 'gojo-tenjinja'],
+  },
+  {
     date: '2026-11-02',
     shrineSlugs: ['takemizuwake-jinja', 'nanasha-jinja', 'nashinoki-jinja', 'inaba-jinja-gifu', 'suitengu-kurume'],
   },
@@ -59,10 +63,6 @@ export const updates: UpdateEntry[] = [
       ko: '새로운 특집 기사 "2027년 양의 해(히쓰지도시) 참배 가이드｜양 신사와 양의 해에 열리는 축제"를 공개했습니다',
       href: '/guides/hitsujidoshi-2027/',
     },
-  },
-  {
-    date: '2026-10-31',
-    shrineSlugs: ['hitsuji-jinja-annaka', 'sanya-hachiman-jinja', 'suitengu-tokyo', 'takeo-jinja', 'miyazaki-jingu'],
   },
   {
     date: '2026-10-28',
