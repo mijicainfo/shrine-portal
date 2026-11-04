@@ -41,15 +41,15 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-11-03',
+    shrineSlugs: ['yuzuruha-jinja', 'aoi-aso-jinja', 'owari-okunitama-jinja', 'utou-jinja-aomori', 'nunakuma-jinja'],
+  },
+  {
+    date: '2026-11-03',
     shrineSlugs: ['fujinomori-jinja', 'kumano-taisha-nanyo', 'izusan-jinja', 'kamikawa-jinja-asahikawa', 'gojo-tenjinja'],
   },
   {
     date: '2026-11-02',
     shrineSlugs: ['takemizuwake-jinja', 'nanasha-jinja', 'nashinoki-jinja', 'inaba-jinja-gifu', 'suitengu-kurume'],
-  },
-  {
-    date: '2026-11-01',
-    shrineSlugs: ['ueno-toshogu', 'tenkawa-daibenzaitensha', 'kogane-jinja', 'kotohiki-hachimangu', 'shoin-jinja-hagi'],
   },
   {
     date: '2026-10-31',
