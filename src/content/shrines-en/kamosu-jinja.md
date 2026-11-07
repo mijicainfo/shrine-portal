@@ -49,7 +49,7 @@ faq:
   - question: "What is special about the main hall?"
     answer: "The main hall, a National Treasure, was rebuilt in 1583 and is the oldest surviving example of the Taisha-zukuri style. It closely resembles the main hall of Izumo Taisha but is smaller, and its interior layout is the reverse of Izumo Taisha's, known as the \"mezukuri\" (female) type."
   - question: "When is the shrine's annual festival?"
-    answer: "The annual grand festival (Reisai) is held on October 18. Other rites are said to include the Kinensai and Kamibi Sozoku (Hitsugi) ceremony on April 18, the Shinzaisai on November 11, and the Niinamesai and Okama Shinji on December 13."
+    answer: "The annual grand festival (Reisai) is held on October 18. Other rites are said to include the Spring Festival (Haru-matsuri) on April 18, the Kamiarisai on November 11–18 (the old-calendar dates of the 10th month, the 11th to 18th, applied to the new calendar; the gods are said to be welcomed on the night of the 11th), and the Niinamesai and Okama Shinji on December 13."
 ---
 
 ## History
@@ -72,9 +72,9 @@ From JR Matsue Station, take the Matsue City Bus bound for "Kanbe no Sato" to th
 
 ## Annual Festivals
 
-- **Kinensai and Kamibi Sozoku (Hitsugi) ceremony (April 18)**: The day of the spring Kinensai, also given as the date of the Kamibi Sozoku rite. The Kamibi Sozoku ceremony is known as a special rite performed when the Izumo Kokuso passes the office to a successor.
+- **Spring Festival (Haru-matsuri) (April 18)**: Said to be the day of the spring festival. The Kamibi Sozoku ceremony, performed when the Izumo Kokuso passes the office to a successor, is known as a special rite, but we could not confirm that it is an annual April 18 event.
 - **Reisai, the annual grand festival (October 18)**: The shrine's main annual festival.
-- **Shinzaisai (November 11)**: Given as the date of the Shinzaisai.
+- **Kamiarisai (November 11–18)**: Said to apply the old-calendar dates of the 10th month (the 11th to 18th) to the new calendar; the gods are said to be welcomed on the night of the 11th and sent off on the 18th. The Shimane Tourism Federation's guide also lists the 2026 Kamiarisai at this shrine as November 11–18.
 - **Niinamesai and Okama Shinji (December 13)**: The Niinamesai and the Okama Shinji rite associated with the Okama-no-miya.
 
 Note: Dates and viewing access may change. Please check the latest information before your visit.

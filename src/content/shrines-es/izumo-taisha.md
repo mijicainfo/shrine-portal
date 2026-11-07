@@ -75,8 +75,8 @@ Las inmensas cuerdas sagradas shimenawa que cuelgan del Haiden (salón de oraci�
 ## Festivales Anuales
 
 - **Taisairei / Reisai (14–16 de mayo)** — El festival más prestigioso de Izumo Taisha, al que asiste un enviado imperial durante el Reisai el primer día. Debido a que antiguamente se celebraba en el tercer mes lunar, también se lo conoce desde hace mucho tiempo como "Sangatsu-e".
-- **Kamimukae-sai y Kamizai-sai (del 10 al 17 del décimo mes lunar)** — Ritos exclusivos del Kamiarizuki, en los que los dioses de Japón son recibidos en la playa de Inasa-no-Hama y alojados en el Jukyusha, el salón de diecinueve compartimentos del santuario.
-- **Kamizai-sai y Enmusubi Taisai (durante el período del Kamizai-sai)** — Ritos celebrados mientras los dioses están reunidos, orando por las buenas relaciones de los fieles.
+- **Kamimukae-sai y Kamiarisai (del 10 al 17 del décimo mes lunar)** — Ritos exclusivos del Kamiarizuki, en los que los dioses de Japón son recibidos en la playa de Inasa-no-Hama y alojados en el Jukusha (十九社), los santuarios del recinto (este y oeste) que sirven de alojamiento a los dioses.
+- **Kamiarisai y Enmusubi Taisai (durante el período del Kamiarisai)** — Ritos celebrados mientras los dioses están reunidos, orando por las buenas relaciones de los fieles.
 
 ## Comida y Turismo Cercano
 

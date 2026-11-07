@@ -49,7 +49,7 @@ faq:
   - question: "Qu'a de particulier le hall principal ?"
     answer: "Le hall principal, Trésor national, a été reconstruit en 1583 et constitue le plus ancien exemple conservé du style Taisha-zukuri. Il ressemble beaucoup au hall principal d'Izumo Taisha mais est plus petit, et son agencement intérieur est l'inverse de celui d'Izumo Taisha, de type « mezukuri » (féminin)."
   - question: "Quand a lieu la fête annuelle du sanctuaire ?"
-    answer: "La grande fête annuelle (Reisai) a lieu le 18 octobre. Parmi les autres rites, on cite le Kinensai et la cérémonie de Kamibi Sozoku (Hitsugi) le 18 avril, le Shinzaisai le 11 novembre, ainsi que le Niinamesai et l'Okama Shinji le 13 décembre."
+    answer: "La grande fête annuelle (Reisai) a lieu le 18 octobre. Parmi les autres rites, on cite la fête du printemps (Haru-matsuri) le 18 avril, le Kamiarisai du 11 au 18 novembre (dates du 10e mois lunaire, du 11 au 18, appliquées au calendrier actuel ; on dit que les divinités sont accueillies la nuit du 11), ainsi que le Niinamesai et l'Okama Shinji le 13 décembre."
 ---
 
 ## Histoire
@@ -72,9 +72,9 @@ Depuis la gare JR de Matsue, prenez le bus municipal de Matsue en direction de �
 
 ## Fêtes Annuelles
 
-- **Kinensai et cérémonie de Kamibi Sozoku (Hitsugi) (18 avril)** : Le jour du Kinensai de printemps, également indiqué comme la date du rite de Kamibi Sozoku. La cérémonie de Kamibi Sozoku est connue comme un rite spécial célébré lorsque les Izumo Kokuso transmettent leur charge à un successeur.
+- **Fête du printemps (Haru-matsuri) (18 avril)** : On dit que c'est le jour de la fête du printemps. La cérémonie de Kamibi Sozoku, célébrée lorsque les Izumo Kokuso transmettent leur charge à un successeur, est connue comme un rite spécial, mais nous n'avons pas pu confirmer qu'il s'agisse d'un événement annuel du 18 avril.
 - **Reisai, la grande fête annuelle (18 octobre)** : La principale fête annuelle du sanctuaire.
-- **Shinzaisai (11 novembre)** : Indiqué comme la date du Shinzaisai.
+- **Kamiarisai (du 11 au 18 novembre)** : Les dates du 10e mois lunaire (du 11 au 18) appliquées au calendrier actuel ; on dit que les divinités sont accueillies la nuit du 11 et reconduites le 18. Le guide de la Fédération du tourisme de Shimane indique aussi le Kamiarisai de ce sanctuaire en 2026 du 11 au 18 novembre.
 - **Niinamesai et Okama Shinji (13 décembre)** : Le Niinamesai et le rite de l'Okama Shinji associé à l'Okama-no-miya.
 
 Remarque : les dates et l'accès aux visites peuvent changer. Veuillez consulter les informations les plus récentes avant votre visite.

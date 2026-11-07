@@ -75,8 +75,8 @@ Les immenses cordes sacrées shimenawa suspendues au Haiden (hall de culte) et a
 ## Fêtes Annuelles
 
 - **Taisairei / Reisai (14–16 mai)** — La fête la plus prestigieuse d'Izumo Taisha, à laquelle un messager impérial assiste lors du Reisai, le premier jour. Ayant autrefois lieu au troisième mois lunaire, elle est aussi connue de longue date sous le nom de « Sangatsu-e ».
-- **Kamimukae-sai et Kamizai-sai (du 10e au 17e jour du 10e mois lunaire)** — Des rites propres au Kamiarizuki, au cours desquels les dieux du Japon sont accueillis sur la plage d'Inasa-no-Hama puis logés dans le Jukyusha, le hall aux dix-neuf travées du sanctuaire.
-- **Kamizai-sai et Enmusubi Taisai (pendant la période du Kamizai-sai)** — Des rites tenus pendant que les dieux sont rassemblés, priant pour les bonnes relations des fidèles.
+- **Kamimukae-sai et Kamiarisai (du 10e au 17e jour du 10e mois lunaire)** — Des rites propres au Kamiarizuki, au cours desquels les dieux du Japon sont accueillis sur la plage d'Inasa-no-Hama puis logés dans le Jukusha (十九社), les sanctuaires de l'enceinte (est et ouest) qui leur servent de logement.
+- **Kamiarisai et Enmusubi Taisai (pendant la période du Kamiarisai)** — Des rites tenus pendant que les dieux sont rassemblés, priant pour les bonnes relations des fidèles.
 
 ## Restauration et Visites à Proximité
 

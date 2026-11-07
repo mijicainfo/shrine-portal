@@ -49,7 +49,7 @@ faq:
   - question: "¿Qué tiene de especial el salón principal?"
     answer: "El salón principal, Tesoro Nacional, fue reconstruido en 1583 y es el ejemplo más antiguo que se conserva del estilo Taisha-zukuri. Se parece mucho al salón principal de Izumo Taisha, pero es más pequeño, y la disposición de su interior es la inversa de la de Izumo Taisha, conocida como el tipo «mezukuri» (femenino)."
   - question: "¿Cuándo se celebra el festival anual del santuario?"
-    answer: "El gran festival anual (Reisai) se celebra el 18 de octubre. Se dice que otros ritos incluyen el Kinensai y la ceremonia Kamibi Sozoku (Hitsugi) el 18 de abril, el Shinzaisai el 11 de noviembre, y el Niinamesai y el Okama Shinji el 13 de diciembre."
+    answer: "El gran festival anual (Reisai) se celebra el 18 de octubre. Se dice que otros ritos incluyen la fiesta de primavera (Haru-matsuri) el 18 de abril, el Kamiarisai del 11 al 18 de noviembre (las fechas del décimo mes lunar, del 11 al 18, aplicadas al calendario nuevo; se dice que los dioses son recibidos la noche del 11) y el Niinamesai y el Okama Shinji el 13 de diciembre."
 ---
 
 ## Historia
@@ -72,9 +72,9 @@ Desde la estación JR Matsue, tome el autobús municipal de Matsue con destino �
 
 ## Festivales Anuales
 
-- **Kinensai y ceremonia Kamibi Sozoku (Hitsugi) (18 de abril)**: El día del Kinensai de primavera, indicado también como la fecha del rito Kamibi Sozoku. La ceremonia Kamibi Sozoku es conocida como un rito especial que se celebra cuando el Izumo Kokuso traspasa el cargo a un sucesor.
+- **Fiesta de primavera (Haru-matsuri) (18 de abril)**: Se dice que es el día de la fiesta de primavera. La ceremonia Kamibi Sozoku, que se celebra cuando el Izumo Kokuso traspasa el cargo a un sucesor, es conocida como un rito especial, pero no hemos podido confirmar que sea un evento anual del 18 de abril.
 - **Reisai, el gran festival anual (18 de octubre)**: El principal festival anual del santuario.
-- **Shinzaisai (11 de noviembre)**: Indicado como la fecha del Shinzaisai.
+- **Kamiarisai (del 11 al 18 de noviembre)**: Se dice que corresponde a las fechas del décimo mes lunar (del 11 al 18) aplicadas al calendario nuevo; los dioses serían recibidos la noche del 11 y despedidos el 18. La guía de la Federación de Turismo de Shimane también indica el Kamiarisai de este santuario en 2026 del 11 al 18 de noviembre.
 - **Niinamesai y Okama Shinji (13 de diciembre)**: El Niinamesai y el rito Okama Shinji asociado al Okama-no-miya.
 
 Nota: las fechas y la posibilidad de visitar el interior pueden cambiar. Consulte la información más reciente antes de su visita.

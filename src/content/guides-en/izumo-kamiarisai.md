@@ -26,7 +26,7 @@ On Izumo Taisha's official "Reiwa 8 Kamiarisai (Guide)" page, the 2026 Kamiarizu
 - **Evening of November 18, Kamimukae rite and Kamimukae-sai**: At Inasa-no-Hama, about 1 km west of Izumo Taisha, the Kamimukae rite welcoming the gods of all of Japan is held. The page says the gods who arrive are led to Izumo Taisha by the messenger deity Ryuja (龍蛇神), and the Kamimukae-sai is held at the Haiden (worship hall). White gohei are given out at the entrance to the Inasa-no-Hama ceremony site.
 - **November 19, 23 and 25, Kamiarisai**: The gods' council, "Kamihakari," is said to be presided over by Okuninushi no Okami. At the Upper Shrine (上宮), a temporary shrine where the council is held, rites are offered each day.
 - **November 23 and 25, Enmusubi Taisai**: Held with the Kamiarisai, at 10:00 AM on both days. The official site says applications to attend have reached capacity for both days.
-- **November 25, 4:00 PM, Karasade-sai**: The gods move from their lodgings, the Jukyusha (十九社), to the Haiden, where the farewell rite is held.
+- **November 25, 4:00 PM, Karasade-sai**: The gods move from their lodgings, the Jukusha (十九社), to the Haiden, where the farewell rite is held.
 - **November 19 to 24, from 5:00 PM, Yokagura prayers**: Prayer rites held at the Kaguraden (sacred dance hall).
 
 These are the 2026 dates. Because the Kamiarisai is held in the period corresponding to the old-calendar tenth month, the dates in the current calendar change from year to year. Hinomisaki Shrine's notice lists its 2026 Kamimukae-sai alongside "the 11th of the old-calendar tenth month." If you are going in a later year, please be sure to check that year's official guide for the schedule.

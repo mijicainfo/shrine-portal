@@ -34,7 +34,7 @@ Ces légendes sont aussi un miroir de la longue histoire de chaque sanctuaire, e
 ## Ce qu'il convient de garder à l'esprit lors de la visite
 
 - **Accueillez ces légendes comme des traditions, sans plus** : la plupart des récits présentés ici ne sont pas des faits historiquement établis. Recevez-les plutôt comme une clé pour mieux comprendre l'origine et la dimension spirituelle de chaque sanctuaire.
-- **Vérifiez à l'avance le calendrier des rites** : certains phénomènes, comme le Kamizai-sai d'Izumo Taisha ou l'Omiwatari Haikan Shinji de Suwa Taisha, ne sont visibles qu'à des périodes bien précises de l'année. Renseignez-vous sur les dates avant de vous y rendre.
+- **Vérifiez à l'avance le calendrier des rites** : certains phénomènes, comme le Kamiarisai d'Izumo Taisha ou l'Omiwatari Haikan Shinji de Suwa Taisha, ne sont visibles qu'à des périodes bien précises de l'année. Renseignez-vous sur les dates avant de vous y rendre.
 - **Visitez avec respect** : même chargés de légendes étranges, ces sanctuaires demeurent aujourd'hui encore des lieux sacrés où de nombreuses personnes viennent prier. Abordez-les avec curiosité, certes, mais toujours avec respect.
 
 Vous trouverez l'histoire détaillée, l'accès et les informations sur les goshuin de chaque sanctuaire sur sa propre page.

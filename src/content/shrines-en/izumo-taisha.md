@@ -75,8 +75,8 @@ The immense shimenawa sacred ropes hanging at the Haiden (worship hall) and the 
 ## Annual Festivals
 
 - **Taisairei / Reisai (May 14–16)** — Izumo Taisha's most prestigious festival, at which an imperial messenger attends the Reisai on the first day. Because it was formerly held in the third lunar month, it has also long been known as "Sangatsu-e."
-- **Kamimukae-sai and Kamizai-sai (10th–17th of the 10th lunar month)** — Rites unique to Kamiarizuki, in which the gods of Japan are welcomed at Inasa-no-Hama Beach and lodged in the Jukyusha, the shrine's nineteen-bay hall.
-- **Kamizai-sai and Enmusubi Taisai (during the Kamizai-sai period)** — Rites held while the gods are gathered, praying for worshippers' good relationships.
+- **Kamimukae-sai and Kamiarisai (10th–17th of the 10th lunar month)** — Rites unique to Kamiarizuki, in which the gods of Japan are welcomed at Inasa-no-Hama Beach and lodged in the Jukusha (十九社), the shrine's east and west lodging shrines for the gods.
+- **Kamiarisai and Enmusubi Taisai (during the Kamiarisai period)** — Rites held while the gods are gathered, praying for worshippers' good relationships.
 
 ## Nearby Food & Sightseeing
 
