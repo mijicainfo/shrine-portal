@@ -1,0 +1,87 @@
+---
+// 月のカレンダー表（日曜始まり）。mode='koyomi' は暦注の色ドット、mode='rokuyo' は六曜（参考）。
+import { buildMonthGrid } from '../lib/calendar';
+import { calendarText } from '../data/calendarText';
+import { rokuyoByDate } from '../data/rokuyo2027';
+import { koyomiStyle, rokuyoKanji } from '../lib/calendarStyle';
+import { calendarYear } from '../data/calendar2027';
+
+interface Props {
+  month: number;
+  lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+  mode?: 'koyomi' | 'rokuyo';
+  compact?: boolean;
+  /** 月名を見出しとしてリンクにする（年間ページ用） */
+  href?: string;
+}
+
+const { month, lang, mode = 'koyomi', compact = false, href } = Astro.props;
+const t = calendarText[lang];
+const weeks = buildMonthGrid(month);
+const monthLabel = `${calendarYear}/${String(month).padStart(2, '0')}`;
+---
+
+<div class="rounded-2xl border border-shrine-gold/25 bg-white p-3 shadow-sm">
+  <p class="mb-2 text-center font-serif-jp text-sm font-bold text-shrine-ink">
+    {href ? <a href={href} class="hover:text-shrine-vermillion-dark">{t.monthName(month)}</a> : t.monthName(month)}
+    <span class="ml-1 text-[10px] font-normal text-shrine-ink-soft">{monthLabel}</span>
+  </p>
+  <table class="w-full table-fixed border-collapse text-center">
+    <thead>
+      <tr>
+        {t.weekdays.map((w, i) => (
+          <th scope="col" class={`pb-1 text-[10px] font-medium ${i === 0 ? 'text-red-500' : i === 6 ? 'text-shrine-indigo-dark' : 'text-shrine-ink-soft'}`}>{w}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {weeks.map((week) => (
+        <tr>
+          {week.map((cell) => {
+            if (!cell) return <td class="p-0.5"></td>;
+            const info = cell.info;
+            const isRed = cell.weekday === 0 || !!info?.holiday;
+            const numClass = isRed ? 'text-red-500' : cell.weekday === 6 ? 'text-shrine-indigo-dark' : 'text-shrine-ink';
+            const koyomi = info?.koyomi ?? [];
+            const rk = rokuyoByDate[cell.date];
+            const isTensha = koyomi.includes('tensha');
+            const labelParts = [
+              ...koyomi.map((k) => t.koyomi[k].label),
+              ...(info?.holiday ? [t.holidays[info.holiday]] : []),
+              ...(info?.sekki ? [t.sekki[info.sekki]] : []),
+              ...(info?.moon ? [t.moon[info.moon]] : []),
+            ];
+            return (
+              <td class="p-0.5 align-top">
+                <div
+                  class={`flex ${compact ? 'min-h-[2.6rem]' : 'min-h-[3.4rem]'} flex-col items-center justify-start rounded-lg px-0.5 py-1 ${isTensha && mode === 'koyomi' ? 'bg-shrine-vermillion-light ring-1 ring-shrine-vermillion-dark/50' : 'bg-shrine-paper/60'}`}
+                  title={mode === 'koyomi' ? labelParts.join(' / ') : undefined}
+                >
+                  <span class={`text-xs font-bold leading-none ${numClass}`}>{cell.day}</span>
+                  {mode === 'koyomi' ? (
+                    <>
+                      <span class="mt-1 flex flex-wrap justify-center gap-[3px]">
+                        {koyomi.map((k) => <span class={`inline-block h-2 w-2 rounded-full ${koyomiStyle[k].dot}`}></span>)}
+                      </span>
+                      {info?.moon && <span class="mt-0.5 text-[10px] leading-none" aria-hidden="true">{info.moon === 'new' ? '🌑' : '🌕'}</span>}
+                      {labelParts.length > 0 && <span class="sr-only">{labelParts.join(', ')}</span>}
+                    </>
+                  ) : (
+                    rk && (
+                      <>
+                        <span class={`mt-1 text-[11px] font-bold leading-none ${rk[0] === 'taian' ? 'text-shrine-vermillion-dark' : rk[0] === 'butsumetsu' ? 'text-shrine-ink-soft' : 'text-shrine-ink'}`}>
+                          {rokuyoKanji[rk[0]]}
+                        </span>
+                        <span class="mt-0.5 text-[9px] leading-none text-shrine-ink-soft">{rk[1]}</span>
+                      </>
+                    )
+                  )}
+                </div>
+              </td>
+            );
+          })}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

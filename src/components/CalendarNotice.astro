@@ -1,0 +1,28 @@
+---
+// 注意書きと出典（開運カレンダーの全ページ共通）。
+import { calendarText } from '../data/calendarText';
+
+interface Props {
+  lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+}
+const { lang } = Astro.props;
+const t = calendarText[lang];
+---
+
+<section class="rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark/60 p-5" aria-labelledby="calendar-notice">
+  <h2 id="calendar-notice" class="font-serif-jp text-base font-bold text-shrine-ink">{t.ui.notice.heading}</h2>
+  <p class="mt-2 text-sm leading-relaxed text-shrine-ink">{t.ui.notice.body}</p>
+  <h3 class="mt-4 text-xs font-bold text-shrine-ink-soft">{t.ui.sources.heading}</h3>
+  <ul class="mt-1.5 space-y-1 text-xs leading-relaxed text-shrine-ink-soft">
+    {t.ui.sources.items.map((item) => (
+      <li>
+        <span class="font-bold">{item.label}</span>:
+        {item.href ? (
+          <a href={item.href} target="_blank" rel="noopener noreferrer" class="underline hover:text-shrine-vermillion-dark">{item.text}</a>
+        ) : (
+          item.text
+        )}
+      </li>
+    ))}
+  </ul>
+</section>

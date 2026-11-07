@@ -1,0 +1,128 @@
+---
+// 開運カレンダー 月別ページ（/calendar/2027/MM/）。各言語の src/pages/**/calendar/2027/[month].astro から使う。
+import Layout from '../layouts/Layout.astro';
+import CalendarGrid from './CalendarGrid.astro';
+import CalendarLegend from './CalendarLegend.astro';
+import CalendarNotice from './CalendarNotice.astro';
+import CalendarShrineList from './CalendarShrineList.astro';
+import { calendarText } from '../data/calendarText';
+import { koyomiStyle } from '../lib/calendarStyle';
+import { KOYOMI_ORDER, koyomiDaysInMonth, officialDaysInMonth, tenshaDatesInMonth, parseDate, calendarYear } from '../lib/calendar';
+import { getDayShrines, ruleKeysFor } from '../lib/calendarShrines';
+
+interface Props {
+  month: number;
+}
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const t = calendarText[lang];
+const ui = t.ui;
+
+const { month } = Astro.props;
+const pad = (n: number) => String(n).padStart(2, '0');
+const monthHref = (m: number) => `${base}/calendar/2027/${pad(m)}/`;
+
+const tenshaShort = tenshaDatesInMonth(month).map((d) => `${month}/${Number(d.slice(8, 10))}`);
+const title = ui.month.title(month, tenshaShort.length ? tenshaShort.join(', ') : null);
+
+const koyomiDays = koyomiDaysInMonth(month);
+const days = await Promise.all(
+  koyomiDays.map(async (day) => {
+    const { day: d, weekday } = parseDate(day.date);
+    const shrines = ruleKeysFor(day).length ? await getDayShrines(day.date, lang) : [];
+    const extras = [
+      ...(day.holiday ? [t.holidays[day.holiday]] : []),
+      ...(day.sekki ? [t.sekki[day.sekki]] : []),
+      ...(day.zassetsu ?? []).map((z) => t.zassetsu[z]),
+      ...(day.moon ? [t.moon[day.moon]] : []),
+    ];
+    return { day, d, weekday, shrines, extras };
+  }),
+);
+const official = officialDaysInMonth(month);
+---
+
+<Layout title={title} description={ui.month.description(month)}>
+  <section class="bg-shrine-indigo-dark py-12 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="text-xs text-shrine-paper/70">
+        <a href={`${base}/calendar/2027/`} class="underline hover:text-white">{ui.month.backToYear}</a>
+      </p>
+      <h1 class="mt-2 font-serif-jp text-2xl font-bold sm:text-3xl">{ui.month.h1(month)}</h1>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-5xl space-y-10 px-4 py-10 sm:px-6">
+    <section aria-labelledby="calendar-grid" class="grid gap-6 md:grid-cols-[minmax(0,26rem)_1fr] md:items-start">
+      <div>
+        <h2 id="calendar-grid" class="sr-only">{ui.month.gridHeading}</h2>
+        <CalendarGrid month={month} lang={lang} />
+        <div class="mt-4 flex items-center justify-between text-sm">
+          {month > 1 ? <a href={monthHref(month - 1)} class="text-shrine-vermillion-dark underline">{ui.month.prev(month - 1)}</a> : <span></span>}
+          {month < 12 ? <a href={monthHref(month + 1)} class="text-shrine-vermillion-dark underline">{ui.month.next(month + 1)}</a> : <span></span>}
+        </div>
+      </div>
+      <CalendarLegend lang={lang} />
+    </section>
+
+    <section aria-labelledby="calendar-days">
+      <h2 id="calendar-days" class="font-serif-jp text-xl font-bold text-shrine-ink">
+        {ui.month.detailHeading}
+        <span class="ml-2 text-sm font-normal text-shrine-vermillion">{days.length}</span>
+      </h2>
+      {days.length === 0 ? (
+        <p class="mt-3 text-sm text-shrine-ink-soft">{ui.month.noKoyomi}</p>
+      ) : (
+        <ol class="mt-4 space-y-5">
+          {days.map(({ day, d, weekday, shrines, extras }) => (
+            <li id={`d${pad(d)}`} class="rounded-2xl border border-shrine-gold/25 bg-white p-4 shadow-sm">
+              <h3 class="font-serif-jp text-base font-bold text-shrine-ink">{t.dateShort(month, d, weekday)}</h3>
+              <p class="mt-2 flex flex-wrap gap-1.5">
+                {KOYOMI_ORDER.filter((k) => day.koyomi?.includes(k)).map((k) => (
+                  <span class={`inline-block rounded-full px-2.5 py-0.5 text-xs font-bold ${koyomiStyle[k].badge}`}>{t.koyomi[k].label}</span>
+                ))}
+                {extras.map((e) => (
+                  <span class="inline-block rounded-full border border-shrine-gold/40 bg-shrine-paper px-2.5 py-0.5 text-xs text-shrine-ink">{e}</span>
+                ))}
+              </p>
+              {shrines.length > 0 && (
+                <div class="mt-3">
+                  <p class="mb-2 text-xs font-bold text-shrine-ink-soft">{ui.month.relatedHeading}</p>
+                  <CalendarShrineList shrines={shrines} lang={lang} />
+                </div>
+              )}
+            </li>
+          ))}
+        </ol>
+      )}
+      {days.some((x) => x.shrines.length > 0) && (
+        <p class="mt-4 text-xs leading-relaxed text-shrine-ink-soft">{ui.month.relatedNote}</p>
+      )}
+    </section>
+
+    <section aria-labelledby="calendar-official">
+      <h2 id="calendar-official" class="font-serif-jp text-lg font-bold text-shrine-ink">{ui.month.officialHeading}</h2>
+      <ul class="mt-3 grid gap-x-6 gap-y-1.5 text-sm text-shrine-ink sm:grid-cols-2">
+        {official.map((day) => {
+          const { day: d, weekday } = parseDate(day.date);
+          const items = [
+            ...(day.holiday ? [t.holidays[day.holiday]] : []),
+            ...(day.sekki ? [t.sekki[day.sekki]] : []),
+            ...(day.zassetsu ?? []).map((z) => t.zassetsu[z]),
+            ...(day.moon ? [t.moon[day.moon]] : []),
+          ];
+          return (
+            <li>
+              <span class="font-bold">{t.dateShort(month, d, weekday)}</span> {items.join(' / ')}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+
+    <CalendarNotice lang={lang} />
+  </div>
+</Layout>

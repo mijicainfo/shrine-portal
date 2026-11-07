@@ -1,0 +1,12 @@
+---
+import CalendarMonthPage from '../../../../components/CalendarMonthPage.astro';
+import { MONTHS } from '../../../../lib/calendar';
+
+export function getStaticPaths() {
+  return MONTHS.map((m) => ({ params: { month: String(m).padStart(2, '0') }, props: { month: m } }));
+}
+
+const { month } = Astro.props;
+---
+
+<CalendarMonthPage month={month} />

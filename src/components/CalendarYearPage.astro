@@ -1,0 +1,109 @@
+---
+// 開運カレンダー 年間ページ（/calendar/2027/）。各言語の src/pages/**/calendar/2027/index.astro から使う。
+import Layout from '../layouts/Layout.astro';
+import CalendarGrid from './CalendarGrid.astro';
+import CalendarLegend from './CalendarLegend.astro';
+import CalendarNotice from './CalendarNotice.astro';
+import { calendarText } from '../data/calendarText';
+import { MONTHS, yearSummary, formatDates, calendarYear } from '../lib/calendar';
+import { getPublishedEntry } from '../lib/content';
+import { buildFaqStructuredData } from '../lib/seo';
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const t = calendarText[lang];
+const ui = t.ui;
+
+const yearWord: Record<Lang, string> = { ja: `${calendarYear}年`, zh: `${calendarYear}年`, ko: `${calendarYear}년`, en: String(calendarYear), es: String(calendarYear), fr: String(calendarYear) };
+const sum = yearSummary();
+const faq = ui.faq({
+  year: yearWord[lang],
+  tensha: formatDates(lang, sum.tensha),
+  tenshaCount: sum.tensha.length,
+  tenshaIchiryu: formatDates(lang, sum.tenshaIchiryu),
+  tenshaIchiryuCount: sum.tenshaIchiryu.length,
+  tsuchinotomi: formatDates(lang, sum.tsuchinotomi),
+  tsuchinotomiCount: sum.tsuchinotomi.length,
+  ichiryuCount: sum.ichiryuCount,
+});
+const structuredData = buildFaqStructuredData(faq.map((f) => ({ question: f.q, answer: f.a })));
+
+const guideCollection = { ja: 'guides', en: 'guidesEn', zh: 'guidesZh', es: 'guidesEs', fr: 'guidesFr', ko: 'guidesKo' } as const;
+const kinun = await getPublishedEntry(guideCollection[lang], 'kinun-top5');
+const enmusubi = await getPublishedEntry(guideCollection[lang], 'enmusubi-top10');
+const guideLinks = [
+  kinun && { href: `${base}/guides/kinun-top5/`, label: kinun.data.title },
+  enmusubi && { href: `${base}/guides/enmusubi-top10/`, label: enmusubi.data.title },
+].filter(Boolean) as { href: string; label: string }[];
+---
+
+<Layout title={ui.year.title} description={ui.year.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="text-xs text-shrine-paper/70">{ui.sectionName} · {t.yearLabel}</p>
+      <h1 class="mt-1 font-serif-jp text-2xl font-bold sm:text-3xl">{ui.year.h1}</h1>
+      <p class="mt-3 max-w-3xl text-sm leading-relaxed text-shrine-paper/85">{ui.year.lead}</p>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-6xl space-y-10 px-4 py-10 sm:px-6">
+    <section aria-labelledby="calendar-keydates" class="rounded-2xl border border-shrine-vermillion/30 bg-shrine-vermillion-light/50 p-5">
+      <h2 id="calendar-keydates" class="font-serif-jp text-lg font-bold text-shrine-ink">{ui.year.keyDatesHeading}</h2>
+      <ul class="mt-3 space-y-2 text-sm leading-relaxed text-shrine-ink">
+        <li>{ui.year.tenshaLine(sum.tensha.length, formatDates(lang, sum.tensha))}</li>
+        <li>{ui.year.overlapLine(sum.tenshaIchiryu.length, formatDates(lang, sum.tenshaIchiryu))}</li>
+        <li>{ui.year.tsuchinotomiLine(sum.tsuchinotomi.length, formatDates(lang, sum.tsuchinotomi))}</li>
+      </ul>
+    </section>
+
+    <CalendarLegend lang={lang} />
+
+    <section aria-labelledby="calendar-months">
+      <h2 id="calendar-months" class="font-serif-jp text-xl font-bold text-shrine-ink">{ui.year.monthsHeading}</h2>
+      <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {MONTHS.map((m) => (
+          <CalendarGrid month={m} lang={lang} compact href={`${base}/calendar/2027/${String(m).padStart(2, '0')}/`} />
+        ))}
+      </div>
+      <ul class="mt-5 flex flex-wrap gap-2 text-sm">
+        {MONTHS.map((m) => (
+          <li>
+            <a href={`${base}/calendar/2027/${String(m).padStart(2, '0')}/`} class="inline-block rounded-full border border-shrine-gold/40 bg-white px-3 py-1 text-shrine-ink hover:border-shrine-vermillion hover:text-shrine-vermillion-dark">{ui.year.monthLink(m)}</a>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-4 text-sm text-shrine-ink-soft">
+        <a href={`${base}/calendar/2027/rokuyo/`} class="underline hover:text-shrine-vermillion-dark">{ui.year.rokuyoPromo}</a>
+      </p>
+    </section>
+
+    {guideLinks.length > 0 && (
+      <section aria-labelledby="calendar-guides">
+        <h2 id="calendar-guides" class="font-serif-jp text-lg font-bold text-shrine-ink">{ui.year.guidesHeading}</h2>
+        <ul class="mt-3 space-y-1.5 text-sm">
+          {guideLinks.map((g) => (
+            <li><a href={g.href} class="text-shrine-vermillion-dark underline hover:text-shrine-vermillion">{g.label}</a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section aria-labelledby="calendar-faq">
+      <h2 id="calendar-faq" class="font-serif-jp text-xl font-bold text-shrine-ink">{ui.year.faqHeading}</h2>
+      <dl class="mt-4 space-y-4">
+        {faq.map((f) => (
+          <div class="rounded-2xl border border-shrine-gold/25 bg-white p-4">
+            <dt class="font-bold text-shrine-ink">{f.q}</dt>
+            <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <CalendarNotice lang={lang} />
+  </div>
+</Layout>
