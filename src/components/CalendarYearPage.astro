@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import CalendarGrid from './CalendarGrid.astro';
 import CalendarLegend from './CalendarLegend.astro';
 import CalendarNotice from './CalendarNotice.astro';
+import CalendarLegendBar from './CalendarLegendBar.astro';
 import { calendarText } from '../data/calendarText';
 import { MONTHS, yearSummary, formatDates, calendarYear } from '../lib/calendar';
 import { getPublishedEntry } from '../lib/content';
@@ -105,5 +106,6 @@ const guideLinks = [
     </section>
 
     <CalendarNotice lang={lang} />
+    <CalendarLegendBar lang={lang} />
   </div>
 </Layout>

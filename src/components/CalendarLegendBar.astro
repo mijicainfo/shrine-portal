@@ -1,0 +1,25 @@
+---
+// 画面下に貼り付く細い凡例バー。カレンダーを読み進めても「色・印の見方」が常に見えるようにする。
+// ページ末尾（コンテナの最後）に置くと、スクロール中は画面下端に固定され、最後まで来ると元の位置に収まる。
+import { calendarText } from '../data/calendarText';
+import { koyomiStyle } from '../lib/calendarStyle';
+import { KOYOMI_ORDER } from '../lib/calendar';
+
+interface Props {
+  lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+}
+const { lang } = Astro.props;
+const t = calendarText[lang];
+---
+
+<div class="sticky bottom-0 z-40 -mx-4 border-t border-shrine-gold/40 bg-white/95 px-4 py-2 shadow-[0_-2px_8px_rgba(92,79,69,0.08)] backdrop-blur sm:-mx-6 sm:px-6" role="note" aria-label={t.ui.legendHeading}>
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-1 text-[11px] leading-tight text-shrine-ink">
+    <span class="font-bold text-shrine-ink-soft">{t.ui.legendHeading}</span>
+    {KOYOMI_ORDER.map((k) => (
+      <span class="inline-flex items-center gap-1">
+        <span class={`inline-block h-2.5 w-2.5 shrink-0 rounded-full ${koyomiStyle[k].dot}`}></span>
+        {t.koyomi[k].label}
+      </span>
+    ))}
+  </div>
+</div>

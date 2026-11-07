@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import CalendarGrid from './CalendarGrid.astro';
 import CalendarLegend from './CalendarLegend.astro';
 import CalendarNotice from './CalendarNotice.astro';
+import CalendarLegendBar from './CalendarLegendBar.astro';
 import CalendarShrineList from './CalendarShrineList.astro';
 import { calendarText } from '../data/calendarText';
 import { koyomiStyle } from '../lib/calendarStyle';
@@ -124,5 +125,6 @@ const official = officialDaysInMonth(month);
     </section>
 
     <CalendarNotice lang={lang} />
+    <CalendarLegendBar lang={lang} />
   </div>
 </Layout>
