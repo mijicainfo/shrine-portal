@@ -1,0 +1,38 @@
+---
+// トップページ用の目立つ告知カード（開運カレンダー2027）。各言語の src/pages/**/index.astro から使う。
+import { calendarPromo } from '../data/calendarPromo';
+import { yearSummary } from '../lib/calendar';
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const p = calendarPromo[lang];
+const tenshaCount = yearSummary().tensha.length;
+const dots = ['bg-shrine-vermillion-dark', 'bg-shrine-gold', 'bg-emerald-500', 'bg-violet-500', 'bg-shrine-indigo-dark', 'bg-teal-500'];
+---
+
+<section class="mx-auto max-w-6xl px-4 pt-8 sm:px-6" aria-labelledby="calendar-promo-title">
+  <a
+    href={`${base}/calendar/2027/`}
+    class="group relative block overflow-hidden rounded-3xl border border-shrine-gold/40 bg-gradient-to-br from-shrine-vermillion-light via-shrine-paper to-shrine-paper-dark p-6 shadow-md transition hover:-translate-y-0.5 hover:shadow-xl sm:p-8"
+  >
+    <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <div class="max-w-2xl">
+        <p class="inline-flex items-center gap-2 rounded-full bg-shrine-vermillion-dark px-3 py-0.5 text-[11px] font-bold text-white">
+          <span aria-hidden="true">★</span>{p.eyebrow}
+        </p>
+        <h2 id="calendar-promo-title" class="mt-3 font-serif-jp text-2xl font-bold text-shrine-ink sm:text-3xl">{p.title}</h2>
+        <p class="mt-2 text-sm leading-relaxed text-shrine-ink-soft sm:text-base">{p.body(tenshaCount)}</p>
+        <p class="mt-2 flex items-center gap-1.5" aria-hidden="true">
+          {dots.map((d) => <span class={`inline-block h-3 w-3 rounded-full ${d}`}></span>)}
+        </p>
+        <p class="mt-2 text-[11px] text-shrine-ink-soft">{p.note}</p>
+      </div>
+      <span class="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-shrine-vermillion-dark px-6 py-3 text-sm font-bold text-white shadow transition group-hover:bg-shrine-vermillion-dark/90 sm:text-base">
+        {p.cta}
+        <span aria-hidden="true" class="transition group-hover:translate-x-1">→</span>
+      </span>
+    </div>
+  </a>
+</section>

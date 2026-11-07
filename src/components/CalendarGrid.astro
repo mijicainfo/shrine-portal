@@ -22,10 +22,23 @@ const monthLabel = `${calendarYear}/${String(month).padStart(2, '0')}`;
 ---
 
 <div class="rounded-2xl border border-shrine-gold/25 bg-white p-3 shadow-sm">
-  <p class="mb-2 text-center font-serif-jp text-sm font-bold text-shrine-ink">
-    {href ? <a href={href} class="hover:text-shrine-vermillion-dark">{t.monthName(month)}</a> : t.monthName(month)}
-    <span class="ml-1 text-[10px] font-normal text-shrine-ink-soft">{monthLabel}</span>
-  </p>
+  {href ? (
+    <a
+      href={href}
+      class="mb-2 flex items-center justify-between gap-2 rounded-xl border border-shrine-vermillion/40 bg-shrine-vermillion-light/70 px-3 py-1.5 font-serif-jp text-sm font-bold text-shrine-vermillion-dark transition hover:bg-shrine-vermillion-light hover:shadow-sm"
+    >
+      <span>{t.ui.year.monthLink(month)}</span>
+      <span class="flex items-center gap-1.5 text-[10px] font-normal text-shrine-ink-soft">
+        {monthLabel}
+        <span class="text-base font-bold leading-none text-shrine-vermillion-dark" aria-hidden="true">→</span>
+      </span>
+    </a>
+  ) : (
+    <p class="mb-2 text-center font-serif-jp text-sm font-bold text-shrine-ink">
+      {t.monthName(month)}
+      <span class="ml-1 text-[10px] font-normal text-shrine-ink-soft">{monthLabel}</span>
+    </p>
+  )}
   <table class="w-full table-fixed border-collapse text-center">
     <thead>
       <tr>

@@ -1,0 +1,22 @@
+---
+// 全ページ共通の細い告知帯（ヘッダーの下）。トップページと開運カレンダー自身のページでは出さない（Layout 側で判定）。
+import { calendarPromo } from '../data/calendarPromo';
+
+interface Props {
+  lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+}
+const { lang } = Astro.props;
+const base = lang === 'ja' ? '' : `/${lang}`;
+const p = calendarPromo[lang];
+---
+
+<div class="border-b border-shrine-vermillion/30 bg-shrine-vermillion-light/70 text-center">
+  <a
+    href={`${base}/calendar/2027/`}
+    class="mx-auto flex max-w-6xl items-center justify-center gap-2 px-4 py-1.5 text-xs text-shrine-ink transition hover:bg-shrine-vermillion-light sm:text-sm"
+  >
+    <span class="shrink-0 text-shrine-vermillion-dark" aria-hidden="true">★</span>
+    <span class="min-w-0 truncate sm:whitespace-normal">{p.strip}</span>
+    <span class="shrink-0 rounded-full bg-shrine-vermillion-dark px-2.5 py-0.5 text-[11px] font-bold text-white">{p.stripLink} →</span>
+  </a>
+</div>

@@ -1,6 +1,7 @@
 ---
 import TravelDestinations from '../../components/TravelDestinations.astro';
 import Layout from '../../layouts/Layout.astro';
+import CalendarPromo from '../../components/CalendarPromo.astro';
 import ShrineCard from '../../components/ShrineCard.astro';
 import SeigaihaWave from '../../components/SeigaihaWave.astro';
 import { getImage } from 'astro:assets';
@@ -184,6 +185,8 @@ const benefitCategories = benefitCategoriesJa.map((b) => benefitTranslationsZh[b
     <span class="mx-1">/</span>
     <a href="/ko/" class="font-medium text-shrine-vermillion hover:underline">한국어</a>
   </div>
+
+  <CalendarPromo />
 
   <!-- About Shrines & Kami -->
   <section id="shinto" class="bg-white py-16">

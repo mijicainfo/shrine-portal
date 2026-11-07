@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CalendarStrip from '../components/CalendarStrip.astro';
 import { gaMeasurementId } from '../data/analytics';
 import { availableLangs } from '../lib/content';
 
@@ -76,6 +77,8 @@ const hreflangUrl = (l: Lang) => new URL(hreflangPath[l], Astro.site).toString()
 // (a shrine/guide page can be released language by language; see src/lib/content.ts).
 const liveLangs = await availableLangs(basePath);
 const xDefaultLang: Lang = liveLangs.includes('ja') ? 'ja' : liveLangs[0];
+// 開運カレンダーの告知帯は、トップページ（専用カードがある）と開運カレンダー自身のページでは出さない
+const showCalendarStrip = basePath !== '/' && !basePath.startsWith('/calendar/');
 ---
 
 <!doctype html>
@@ -134,6 +137,7 @@ const xDefaultLang: Lang = liveLangs.includes('ja') ? 'ja' : liveLangs[0];
   </head>
   <body class="flex min-h-screen flex-col font-sans-jp">
     <Header />
+    {showCalendarStrip && <CalendarStrip lang={lang} />}
     <main class="flex-1">
       <slot />
     </main>
