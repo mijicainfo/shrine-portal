@@ -41,6 +41,19 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-11-07',
+    category: 'other',
+    note: {
+      ja: '開運カレンダー2027（天赦日・一粒万倍日・己巳の日などの月別一覧と、六曜の参考ページ）を公開しました',
+      en: 'Published the 2027 Auspicious Days Calendar (Tenshabi, Ichiryumanbai and more, month by month, plus a reference page for rokuyo)',
+      zh: '發布了「2027年開運日曆」（天赦日、一粒萬倍日等的月別一覽，以及六曜參考頁面）',
+      es: 'Publicamos el Calendario de días propicios 2027 (Tenshanichi, Ichiryū-manbai-bi y más, mes a mes, y una página de referencia sobre el rokuyō)',
+      fr: 'Publication du Calendrier des jours fastes 2027 (Tenshanichi, Ichiryū-manbai-bi et plus, mois par mois, et une page de référence sur les rokuyō)',
+      ko: '2027 개운 캘린더(덴샤니치·이치류만바이비 등의 월별 일람과 로쿠요 참고 페이지)를 공개했습니다',
+      href: '/calendar/2027/',
+    },
+  },
+  {
+    date: '2026-11-07',
     shrineSlugs: ['shiba-toshogu', 'kameyama-hachimangu-shimonoseki', 'mihashira-jinja', 'futenma-gu', 'imizu-jinja'],
   },
   {

@@ -1,34 +1,48 @@
 ---
-// 凡例：暦注の色と意味、公的発表の印。
+// 凡例：暦注の色と意味、公的発表の印。折りたたみ式（画面下の凡例バーで色は常に確認できる）。
 import { calendarText } from '../data/calendarText';
 import { koyomiStyle } from '../lib/calendarStyle';
 import { KOYOMI_ORDER } from '../lib/calendar';
 
 interface Props {
   lang: 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+  /** true なら最初から開いた状態にする */
+  open?: boolean;
 }
-const { lang } = Astro.props;
+const { lang, open = false } = Astro.props;
 const t = calendarText[lang];
 ---
 
-<section class="rounded-2xl border border-shrine-gold/25 bg-white p-5 shadow-sm" aria-labelledby="calendar-legend">
-  <h2 id="calendar-legend" class="font-serif-jp text-base font-bold text-shrine-ink">{t.ui.legendHeading}</h2>
-  <p class="mt-3 text-xs font-bold text-shrine-ink-soft">{t.ui.legendKoyomi}</p>
-  <ul class="mt-2 grid gap-2.5 sm:grid-cols-2">
-    {KOYOMI_ORDER.map((k) => (
-      <li class="flex gap-2.5 text-sm text-shrine-ink">
-        <span class={`mt-1.5 inline-block h-3 w-3 shrink-0 rounded-full ${koyomiStyle[k].dot}`}></span>
-        <span>
-          <span class="font-bold">{t.koyomi[k].name}</span>
-          <span class="block text-xs leading-relaxed text-shrine-ink-soft">{t.koyomi[k].desc}</span>
-        </span>
-      </li>
-    ))}
-  </ul>
-  <p class="mt-4 text-xs font-bold text-shrine-ink-soft">{t.ui.legendOfficial}</p>
-  <ul class="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-shrine-ink">
-    <li><span class="font-bold text-red-500">12</span> {t.ui.legendHoliday}</li>
-    <li><span aria-hidden="true">🌑</span> {t.moon.new}</li>
-    <li><span aria-hidden="true">🌕</span> {t.moon.full}</li>
-  </ul>
-</section>
+<details class="group rounded-2xl border border-shrine-gold/25 bg-white shadow-sm" open={open}>
+  <summary class="flex cursor-pointer list-none items-center justify-between gap-3 p-4 marker:content-none [&::-webkit-details-marker]:hidden">
+    <span class="flex flex-wrap items-center gap-x-3 gap-y-1">
+      <span class="font-serif-jp text-base font-bold text-shrine-ink">{t.ui.legendHeading}</span>
+      <span class="flex items-center gap-1" aria-hidden="true">
+        {KOYOMI_ORDER.map((k) => <span class={`inline-block h-2.5 w-2.5 rounded-full ${koyomiStyle[k].dot}`}></span>)}
+      </span>
+    </span>
+    <svg class="h-4 w-4 shrink-0 text-shrine-ink-soft transition-transform group-open:rotate-180" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M5 8l5 5 5-5" />
+    </svg>
+  </summary>
+  <div class="border-t border-shrine-gold/20 px-5 pb-5 pt-3">
+    <p class="text-xs font-bold text-shrine-ink-soft">{t.ui.legendKoyomi}</p>
+    <ul class="mt-2 grid gap-2.5 sm:grid-cols-2">
+      {KOYOMI_ORDER.map((k) => (
+        <li class="flex gap-2.5 text-sm text-shrine-ink">
+          <span class={`mt-1.5 inline-block h-3 w-3 shrink-0 rounded-full ${koyomiStyle[k].dot}`}></span>
+          <span>
+            <span class="font-bold">{t.koyomi[k].name}</span>
+            <span class="block text-xs leading-relaxed text-shrine-ink-soft">{t.koyomi[k].desc}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+    <p class="mt-4 text-xs font-bold text-shrine-ink-soft">{t.ui.legendOfficial}</p>
+    <ul class="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-xs text-shrine-ink">
+      <li><span class="font-bold text-red-500">12</span> {t.ui.legendHoliday}</li>
+      <li><span aria-hidden="true">🌑</span> {t.moon.new}</li>
+      <li><span aria-hidden="true">🌕</span> {t.moon.full}</li>
+    </ul>
+  </div>
+</details>
