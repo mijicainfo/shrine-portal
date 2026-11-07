@@ -262,4 +262,5 @@ export const amazonPickSets: Record<string, AmazonPickSet> = {
   'guide:rekishijinbutsu-10sen': guideSetFor([pick.historybook, pick.guidebook, pick.goshuincho]),
   'guide:shirohebi-jinja': guideSetFor([pick.guidebook, pick.goshuincho, pick.omamoriCase]),
   'guide:hitsujidoshi-2027': guideSetFor([pick.guidebook, pick.goshuincho, pick.omamoriCase]),
+  'guide:izumo-kamiarisai': guideSetFor([pick.guidebook, pick.goshuincho, pick.omamoriCase]),
 };

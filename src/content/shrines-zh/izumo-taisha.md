@@ -13,12 +13,12 @@ benefits:
   - "夫婦円満"
   - "商売繁盛"
 founded: "神代（傳說）"
-hours: "6:00〜20:00（依季節調整）"
+hours: "6:00〜19:00（本殿後方至16:30）"
 access: "從一畑電車「出雲大社前駅」步行約5分鐘"
 parking: "設有大型免費停車場"
 goshuin:
   available: true
-  hours: "8:30〜17:00"
+  hours: "8:30〜16:30"
   fee: "初穗料 500日圓"
 officialUrl: "https://izumooyashiro.or.jp/"
 themeColor: "indigo"
@@ -45,7 +45,7 @@ faq:
   - question: "出雲大社的參拜方式和其他神社不一樣嗎？"
     answer: "是的。與一般神社常見的「二拜二拍手一拜」不同，出雲大社的參拜方式是「二拜四拍手一拜」。境內的告示牌上也有說明，不必擔心會弄錯。"
   - question: "御朱印的受理時間是？"
-    answer: "8:30〜17:00，初穗料為500日圓。"
+    answer: "8:30〜16:30，初穗料為500日圓。"
   - question: "有停車場嗎？"
     answer: "設有大型免費停車場。"
   - question: "「神在月」是什麼意思？"

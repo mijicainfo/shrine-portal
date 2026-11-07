@@ -11,12 +11,12 @@ benefits:
   - "Marital Harmony"
   - "Business Prosperity"
 founded: "Age of the Gods (tradition)"
-hours: "6:00–20:00 (varies by season)"
+hours: "6:00–19:00 (area behind the main hall until 4:30 PM)"
 access: "About 5 min walk from Izumo-taisha-mae Station on the Ichibata Electric Railway"
 parking: "Large free parking lot available"
 goshuin:
   available: true
-  hours: "8:30–17:00"
+  hours: "8:30–16:30"
   fee: "From ¥500"
 officialUrl: "https://izumooyashiro.or.jp/"
 themeColor: "indigo"
@@ -43,7 +43,7 @@ faq:
   - question: "Is the worship style different at Izumo Taisha?"
     answer: "Yes. Instead of the usual \"two bows, two claps, one bow,\" Izumo Taisha uses \"two bows, four claps, one bow.\" Signs on the grounds explain the steps."
   - question: "When can I get a goshuin?"
-    answer: "The goshuin office is open 8:30–17:00, and the fee is ¥500."
+    answer: "The goshuin office is open 8:30–16:30, and the fee is ¥500."
   - question: "Is there parking?"
     answer: "Yes, a large free parking lot is available."
   - question: "What is Kamiarizuki?"

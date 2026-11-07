@@ -44,6 +44,19 @@ export const updates: UpdateEntry[] = [
     shrineSlugs: ['shiba-toshogu', 'kameyama-hachimangu-shimonoseki', 'mihashira-jinja', 'futenma-gu', 'imizu-jinja'],
   },
   {
+    date: '2026-11-07',
+    category: 'guide',
+    note: {
+      ja: '特集記事「神在祭（出雲）ガイド｜旧暦10月、神様が集まる『神在月』の参拝」を公開しました',
+      en: 'Published a new featured guide: "Kamiarisai Guide (Izumo): Visiting in Kamiarizuki, the Old-Calendar Tenth Month When the Gods Gather"',
+      zh: '發布了新的精選文章「神在祭（出雲）指南｜舊曆10月、眾神齊聚的「神在月」參拜」',
+      es: 'Publicamos un nuevo artículo destacado: "Guía del Kamiarisai (Izumo): visitar en Kamiarizuki, el décimo mes del calendario antiguo en que se reúnen los dioses"',
+      fr: 'Publication d’un nouvel article à la une : « Guide du Kamiarisai (Izumo) : visiter pendant le Kamiarizuki, le dixième mois de l’ancien calendrier où les divinités se réunissent »',
+      ko: '새로운 특집 기사 "가미아리사이(이즈모) 가이드｜음력 10월, 신들이 모이는 ‘가미아리즈키’ 참배"를 공개했습니다',
+      href: '/guides/izumo-kamiarisai/',
+    },
+  },
+  {
     date: '2026-11-04',
     shrineSlugs: ['hanazono-inari-jinja', 'tokiwa-jinja-mito', 'sakurayama-hachimangu', 'sanada-jinja-ueda', 'atago-jinja-kyoto'],
   },
@@ -62,19 +75,6 @@ export const updates: UpdateEntry[] = [
       fr: 'Publication d’un nouvel article à la une : « Guide de visite de l’année du Mouton 2027 : sanctuaires du mouton et fêtes des années du Mouton »',
       ko: '새로운 특집 기사 "2027년 양의 해(히쓰지도시) 참배 가이드｜양 신사와 양의 해에 열리는 축제"를 공개했습니다',
       href: '/guides/hitsujidoshi-2027/',
-    },
-  },
-  {
-    date: '2026-10-28',
-    category: 'guide',
-    note: {
-      ja: '特集記事「年末の神棚｜古札の納め方・大掃除・榊の替え方」を公開しました',
-      en: 'Published a new featured guide: "Year-End Kamidana Care | Returning Old Ofuda, Cleaning, and Replacing Sakaki"',
-      zh: '發布了新的精選文章「年末的神棚｜舊御札的歸還方式・大掃除・榊的更換」',
-      es: 'Publicamos un nuevo artículo destacado: "El kamidana a fin de año | Devolver los ofuda antiguos, limpiar y cambiar el sakaki"',
-      fr: 'Publication d’un nouvel article à la une : « Le kamidana en fin d’année | Rapporter les anciens ofuda, nettoyer et remplacer le sakaki »',
-      ko: '새로운 특집 기사 "연말의 가미다나｜오래된 오후다 반납·대청소·사카키 교체"를 공개했습니다',
-      href: '/guides/kamidana-nenmatsu/',
     },
   },
 ];

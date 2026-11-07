@@ -11,12 +11,12 @@ benefits:
   - "夫婦円満"
   - "商売繁盛"
 founded: "Era de los Dioses (tradición)"
-hours: "6:00–20:00 (varía según la estación)"
+hours: "6:00–19:00 (la zona tras el edificio principal, hasta las 16:30)"
 access: "Unos 5 min a pie desde la estación Izumo-taisha-mae, en la línea eléctrica Ichibata"
 parking: "Amplio aparcamiento gratuito disponible"
 goshuin:
   available: true
-  hours: "8:30–17:00"
+  hours: "8:30–16:30"
   fee: "Desde ¥500"
 officialUrl: "https://izumooyashiro.or.jp/"
 themeColor: "indigo"
@@ -43,7 +43,7 @@ faq:
   - question: "¿El estilo de veneración es diferente en Izumo Taisha?"
     answer: "Sí. En lugar del habitual \"dos reverencias, dos palmadas, una reverencia\", en Izumo Taisha se practica \"dos reverencias, cuatro palmadas, una reverencia\". Hay carteles en el recinto que explican los pasos."
   - question: "¿Cuándo puedo obtener un goshuin?"
-    answer: "La oficina de goshuin abre de 8:30 a 17:00, y la tarifa es de ¥500."
+    answer: "La oficina de goshuin abre de 8:30 a 16:30, y la tarifa es de ¥500."
   - question: "¿Hay estacionamiento?"
     answer: "Sí, hay disponible un amplio estacionamiento gratuito."
   - question: "¿Qué es el Kamiarizuki?"
