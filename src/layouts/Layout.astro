@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CalendarStrip from '../components/CalendarStrip.astro';
 import { gaMeasurementId } from '../data/analytics';
+import { adsenseClient, adsenseEnabled } from '../data/adsense';
 import { availableLangs } from '../lib/content';
 
 interface Props {
@@ -104,6 +105,12 @@ const showCalendarStrip = basePath !== '/' && !basePath.startsWith('/calendar/')
       rel="stylesheet"
     />
     <title>{fullTitle}</title>
+    {adsenseEnabled && (
+      <>
+        <meta name="google-adsense-account" content={adsenseClient} />
+        <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`} crossorigin="anonymous"></script>
+      </>
+    )}
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={siteName[lang]} />

@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import ToriiArt from '../../../components/ToriiArt.astro';
 import PhotoGallery from '../../../components/PhotoGallery.astro';
 import GoogleMap from '../../../components/GoogleMap.astro';
@@ -97,6 +98,8 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
         <Content />
       </div>
 
+      <AdSlot placement="shrine-mid" />
+
       {data.faq.length > 0 && (
         <section class="mt-10">
           <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">자주 묻는 질문</h2>
@@ -119,6 +122,8 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
 
 
       <RelatedShrines shrines={relatedShrines} heading="관련 신사" />
+
+      <AdSlot placement="shrine-end" />
     </article>
 
     <!-- Sidebar: basic info -->
