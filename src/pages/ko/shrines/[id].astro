@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import TripBar from '../../../components/TripBar.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import ToriiArt from '../../../components/ToriiArt.astro';
 import PhotoGallery from '../../../components/PhotoGallery.astro';
@@ -88,6 +89,8 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
       </p>
     )}
   </section>
+
+  <TripBar mode="shrine" shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} />
 
   <PhotoGallery photos={photos} />
 
@@ -248,4 +251,5 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
       </a>
     </aside>
   </div>
+  <div class="h-16 sm:hidden" aria-hidden="true"></div>
 </Layout>

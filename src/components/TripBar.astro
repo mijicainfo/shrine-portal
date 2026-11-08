@@ -1,0 +1,122 @@
+---
+// 神社ページ・特集記事の上部に置く「旅の準備」の帯（宿・ツアー体験）。
+// 以前は宿泊・体験のリンクがページの60〜85%の深さにあり、ほとんど目に入らなかったため、
+// 見出しの直下に出す。スマホでは、少しスクロールすると画面下にも同じ導線が固定表示される（神社ページのみ）。
+//  - 神社ページ: 日本語は楽天トラベル、他言語はBooking.com（宿）と、Klook（周辺のツアー・体験）。
+//  - 特集記事: 宿は旅行先ページ（/travel/）へ、体験は日本の神社のKlook検索へ。
+import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import { buildKlookSearchUrl } from '../data/affiliate';
+
+interface Props {
+  mode: 'shrine' | 'guide';
+  shrineName?: string;
+  city?: string;
+  prefecture?: string;
+  bookingCity?: string;
+  bookingPrefecture?: string;
+}
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const { mode, shrineName = '', city = '', prefecture = '', bookingCity, bookingPrefecture } = Astro.props;
+
+const text: Record<Lang, { heading: string; hotel: string; tours: string; near: (c: string) => string; hotelGuide: string; toursGuide: string; guideKlook: string; sub: string }> = {
+  ja: { heading: '旅の準備', hotel: '宿を探す', tours: '周辺のツアー・体験', near: (c) => `${c}周辺`, hotelGuide: '旅行先から宿を探す', toursGuide: '神社のツアー・体験', guideKlook: '神社', sub: '（楽天トラベル）' },
+  en: { heading: 'Plan your trip', hotel: 'Find a hotel', tours: 'Tours & activities', near: (c) => `Near ${c}`, hotelGuide: 'Find hotels by destination', toursGuide: 'Shrine tours & activities', guideKlook: 'shrine Japan', sub: '' },
+  zh: { heading: '旅行準備', hotel: '查找住宿', tours: '行程與體驗', near: (c) => `${c}周邊`, hotelGuide: '依旅遊地點找住宿', toursGuide: '神社行程與體驗', guideKlook: '日本 神社', sub: '' },
+  es: { heading: 'Prepara tu viaje', hotel: 'Buscar hotel', tours: 'Tours y actividades', near: (c) => `Cerca de ${c}`, hotelGuide: 'Buscar hotel por destino', toursGuide: 'Tours de santuarios', guideKlook: 'santuario Japón', sub: '' },
+  fr: { heading: 'Préparer votre voyage', hotel: 'Trouver un hôtel', tours: 'Visites et activités', near: (c) => `Près de ${c}`, hotelGuide: 'Hôtels par destination', toursGuide: 'Visites de sanctuaires', guideKlook: 'sanctuaire Japon', sub: '' },
+  ko: { heading: '여행 준비', hotel: '숙소 찾기', tours: '투어·체험', near: (c) => `${c} 주변`, hotelGuide: '여행지별 숙소 찾기', toursGuide: '신사 투어·체험', guideKlook: '일본 신사', sub: '' },
+};
+const t = text[lang];
+
+const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
+const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture };
+const klookQuery = lang !== 'ja' ? `${cleanCity}, ${prefecture.replace(/\s*Prefecture$/i, '')}` : `${prefecture}${cleanCity}`;
+
+const items =
+  mode === 'shrine'
+    ? [
+        {
+          icon: '🏨',
+          label: t.hotel,
+          sub: `${t.near(cleanCity || city)}${t.sub}`,
+          href: lang === 'ja' ? buildAccommodationRakutenUrl(shrineName, accommodationInput) : buildAccommodationBookingUrl(lang, accommodationInput),
+          external: true,
+        },
+        { icon: '🎫', label: t.tours, sub: t.near(cleanCity || city), href: buildKlookSearchUrl(klookQuery, lang), external: true },
+      ]
+    : [
+        { icon: '🏨', label: t.hotelGuide, sub: '', href: `${base}/travel/`, external: false },
+        { icon: '🎫', label: t.toursGuide, sub: '', href: buildKlookSearchUrl(t.guideKlook, lang), external: true },
+      ];
+const rel = 'noopener noreferrer sponsored';
+---
+
+<nav class="border-b border-shrine-gold/30 bg-white" aria-label={t.heading}>
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 sm:px-6">
+    <p class="hidden items-center gap-1.5 text-xs font-bold text-shrine-ink-soft sm:flex">
+      <span class="rounded bg-shrine-ink-soft/15 px-1.5 py-0.5 text-[10px] font-bold text-shrine-ink-soft">PR</span>{t.heading}
+    </p>
+    <div class="grid flex-1 grid-cols-2 gap-2 sm:flex sm:flex-none sm:gap-3">
+      {items.map((it) => (
+        <a
+          href={it.href}
+          {...(it.external ? { target: '_blank', rel } : {})}
+          class="flex items-center gap-2 rounded-xl border border-shrine-vermillion/40 bg-shrine-vermillion-light/60 px-3 py-2 text-sm font-bold text-shrine-vermillion-dark transition hover:bg-shrine-vermillion-light hover:shadow-sm"
+        >
+          <span class="text-lg" aria-hidden="true">{it.icon}</span>
+          <span class="min-w-0 leading-tight">
+            <span class="block">{it.label}</span>
+            {it.sub && <span class="block truncate text-[10px] font-normal text-shrine-ink-soft">{it.sub}</span>}
+          </span>
+          <span class="ml-auto shrink-0" aria-hidden="true">{it.external ? '↗' : '→'}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+{mode === 'shrine' && (
+  <div id="trip-sticky" class="pointer-events-none fixed inset-x-0 bottom-0 z-40 translate-y-full border-t border-shrine-gold/40 bg-white/95 px-3 py-2 shadow-[0_-2px_8px_rgba(92,79,69,0.12)] backdrop-blur transition-transform duration-300 sm:hidden" aria-hidden="true">
+    <div class="grid grid-cols-2 gap-2">
+      {items.map((it) => (
+        <a
+          href={it.href}
+          target="_blank"
+          rel={rel}
+          tabindex="-1"
+          class="flex items-center justify-center gap-1.5 rounded-xl bg-shrine-vermillion-dark px-3 py-2.5 text-sm font-bold text-white"
+        >
+          <span aria-hidden="true">{it.icon}</span>
+          <span class="leading-tight">{it.label}</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      ))}
+    </div>
+    <p class="mt-1 text-center text-[10px] text-shrine-ink-soft"><span class="mr-1 rounded bg-shrine-ink-soft/15 px-1 py-px font-bold">PR</span>{t.heading}</p>
+  </div>
+)}
+
+{mode === 'shrine' && (
+  <script>
+    // 少しスクロールしたら、スマホの画面下に導線を出す（ページ最下部のフッター付近では隠す）
+    const bar = document.getElementById('trip-sticky');
+    if (bar) {
+      const update = () => {
+        const doc = document.documentElement;
+        const y = window.scrollY;
+        const nearBottom = window.innerHeight + y > doc.scrollHeight - 160;
+        const show = y > 500 && !nearBottom;
+        bar.classList.toggle('translate-y-full', !show);
+        bar.classList.toggle('pointer-events-none', !show);
+        bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+        bar.querySelectorAll('a').forEach((a) => a.setAttribute('tabindex', show ? '0' : '-1'));
+      };
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    }
+  </script>
+)}
