@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import AccessHotelLink from '../../../components/AccessHotelLink.astro';
 import TripBar from '../../../components/TripBar.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import ToriiArt from '../../../components/ToriiArt.astro';
@@ -177,7 +178,10 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
           {data.access && (
             <div>
               <dt class="font-bold text-shrine-vermillion-dark">Accès</dt>
-              <dd class="mt-1 text-shrine-ink-soft">{data.access}</dd>
+              <dd class="mt-1 text-shrine-ink-soft">
+                {data.access}
+                <AccessHotelLink shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} />
+              </dd>
             </div>
           )}
           {data.parking && (
