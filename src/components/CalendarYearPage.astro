@@ -6,6 +6,7 @@ import CalendarLegend from './CalendarLegend.astro';
 import CalendarNotice from './CalendarNotice.astro';
 import CalendarLegendBar from './CalendarLegendBar.astro';
 import { calendarText } from '../data/calendarText';
+import { calendarRokuyoUi } from '../data/calendarRokuyoUi';
 import { MONTHS, yearSummary, formatDates, calendarYear } from '../lib/calendar';
 import { getPublishedEntry } from '../lib/content';
 import { buildFaqStructuredData } from '../lib/seo';
@@ -16,6 +17,7 @@ const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro
 const base = lang === 'ja' ? '' : `/${lang}`;
 const t = calendarText[lang];
 const ui = t.ui;
+const ru = calendarRokuyoUi[lang];
 
 const yearWord: Record<Lang, string> = { ja: `${calendarYear}年`, zh: `${calendarYear}年`, ko: `${calendarYear}년`, en: String(calendarYear), es: String(calendarYear), fr: String(calendarYear) };
 const sum = yearSummary();
@@ -59,6 +61,9 @@ const guideLinks = [
         <li>{ui.year.overlapLine(sum.tenshaIchiryu.length, formatDates(lang, sum.tenshaIchiryu))}</li>
         <li>{ui.year.tsuchinotomiLine(sum.tsuchinotomi.length, formatDates(lang, sum.tsuchinotomi))}</li>
       </ul>
+      <p class="mt-4">
+        <a href={`${base}/calendar/2027/rokuyo/`} class="inline-flex items-center rounded-full border border-shrine-vermillion/50 bg-white px-4 py-1.5 text-sm font-bold text-shrine-vermillion-dark transition hover:bg-shrine-vermillion-light">{ru.yearButton}</a>
+      </p>
     </section>
 
     <CalendarLegend lang={lang} />
@@ -96,10 +101,13 @@ const guideLinks = [
     <section aria-labelledby="calendar-faq">
       <h2 id="calendar-faq" class="font-serif-jp text-xl font-bold text-shrine-ink">{ui.year.faqHeading}</h2>
       <dl class="mt-4 space-y-4">
-        {faq.map((f) => (
+        {faq.map((f, i) => (
           <div class="rounded-2xl border border-shrine-gold/25 bg-white p-4">
             <dt class="font-bold text-shrine-ink">{f.q}</dt>
             <dd class="mt-1.5 text-sm leading-relaxed text-shrine-ink-soft">{f.a}</dd>
+            {i === faq.length - 1 && (
+              <dd class="mt-2 text-sm"><a href={`${base}/calendar/2027/rokuyo/`} class="font-bold text-shrine-vermillion-dark underline hover:text-shrine-vermillion">{ru.faqLink}</a></dd>
+            )}
           </div>
         ))}
       </dl>

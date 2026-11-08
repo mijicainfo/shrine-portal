@@ -13,15 +13,19 @@ interface Props {
   compact?: boolean;
   /** 月名を見出しとしてリンクにする（年間ページ用） */
   href?: string;
+  /** 六曜の層を持たせる（月別ページ用。初期は非表示で、スイッチで表示する） */
+  rokuyoLayer?: boolean;
+  /** ページ内リンク用のid */
+  id?: string;
 }
 
-const { month, lang, mode = 'koyomi', compact = false, href } = Astro.props;
+const { month, lang, mode = 'koyomi', compact = false, href, rokuyoLayer = false, id } = Astro.props;
 const t = calendarText[lang];
 const weeks = buildMonthGrid(month);
 const monthLabel = `${calendarYear}/${String(month).padStart(2, '0')}`;
 ---
 
-<div class="rounded-2xl border border-shrine-gold/25 bg-white p-3 shadow-sm">
+<div id={id} data-cal-grid class="scroll-mt-24 rounded-2xl border border-shrine-gold/25 bg-white p-3 shadow-sm">
   {href ? (
     <a
       href={href}
@@ -77,6 +81,11 @@ const monthLabel = `${calendarYear}/${String(month).padStart(2, '0')}`;
                         {koyomi.map((k) => <span class={`inline-block h-2 w-2 rounded-full ${koyomiStyle[k].dot}`}></span>)}
                       </span>
                       {info?.moon && <span class="mt-0.5 text-[10px] leading-none" aria-hidden="true">{info.moon === 'new' ? '🌑' : '🌕'}</span>}
+                      {rokuyoLayer && rk && (
+                        <span class={`rk-cell mt-0.5 text-[10px] font-bold leading-none ${rk[0] === 'taian' ? 'text-shrine-vermillion-dark' : rk[0] === 'butsumetsu' ? 'text-shrine-ink-soft' : 'text-shrine-ink/80'}`}>
+                          {rokuyoKanji[rk[0]]}
+                        </span>
+                      )}
                       {labelParts.length > 0 && <span class="sr-only">{labelParts.join(', ')}</span>}
                     </>
                   ) : (
@@ -98,3 +107,8 @@ const monthLabel = `${calendarYear}/${String(month).padStart(2, '0')}`;
     </tbody>
   </table>
 </div>
+
+<style is:global>
+  [data-cal-grid] .rk-cell { display: none; }
+  [data-cal-grid].rokuyo-on .rk-cell { display: block; }
+</style>

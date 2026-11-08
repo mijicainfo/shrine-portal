@@ -46,7 +46,7 @@ const keys = Object.keys(rokuyoKanji) as (keyof typeof rokuyoKanji)[];
       <h2 id="rokuyo-table" class="font-serif-jp text-xl font-bold text-shrine-ink">{p.tableHeading}</h2>
       <p class="mt-1 text-xs text-shrine-ink-soft">{p.calcNote}</p>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {MONTHS.map((m) => <CalendarGrid month={m} lang={lang} mode="rokuyo" compact />)}
+        {MONTHS.map((m) => <CalendarGrid month={m} lang={lang} mode="rokuyo" compact id={`m${String(m).padStart(2, '0')}`} />)}
       </div>
     </section>
 

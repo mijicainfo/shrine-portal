@@ -7,6 +7,7 @@ import CalendarNotice from './CalendarNotice.astro';
 import CalendarLegendBar from './CalendarLegendBar.astro';
 import CalendarShrineList from './CalendarShrineList.astro';
 import { calendarText } from '../data/calendarText';
+import { calendarRokuyoUi } from '../data/calendarRokuyoUi';
 import { koyomiStyle } from '../lib/calendarStyle';
 import { KOYOMI_ORDER, koyomiDaysInMonth, officialDaysInMonth, tenshaDatesInMonth, parseDate, calendarYear } from '../lib/calendar';
 import { getDayShrines, ruleKeysFor } from '../lib/calendarShrines';
@@ -21,6 +22,7 @@ const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro
 const base = lang === 'ja' ? '' : `/${lang}`;
 const t = calendarText[lang];
 const ui = t.ui;
+const ru = calendarRokuyoUi[lang];
 
 const { month } = Astro.props;
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -60,7 +62,17 @@ const official = officialDaysInMonth(month);
     <section aria-labelledby="calendar-grid" class="grid gap-6 md:grid-cols-[minmax(0,26rem)_1fr] md:items-start">
       <div>
         <h2 id="calendar-grid" class="sr-only">{ui.month.gridHeading}</h2>
-        <CalendarGrid month={month} lang={lang} />
+        <CalendarGrid month={month} lang={lang} rokuyoLayer />
+        <div class="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 text-sm">
+          <label class="inline-flex cursor-pointer items-center gap-2 text-shrine-ink">
+            <input id="rokuyo-toggle" type="checkbox" class="peer sr-only" />
+            <span class="relative inline-block h-5 w-9 rounded-full bg-shrine-ink-soft/40 transition peer-checked:bg-shrine-vermillion-dark peer-focus-visible:ring-2 peer-focus-visible:ring-shrine-vermillion peer-checked:[&>span]:translate-x-4" aria-hidden="true">
+              <span class="absolute left-0.5 top-0.5 h-4 w-4 rounded-full bg-white shadow transition-transform"></span>
+            </span>
+            <span class="font-bold">{ru.toggle}</span>
+          </label>
+          <a href={`${base}/calendar/2027/rokuyo/#m${pad(month)}`} class="text-shrine-vermillion-dark underline hover:text-shrine-vermillion">{ru.monthLink}</a>
+        </div>
         <div class="mt-4 flex items-center justify-between text-sm">
           {month > 1 ? <a href={monthHref(month - 1)} class="text-shrine-vermillion-dark underline">{ui.month.prev(month - 1)}</a> : <span></span>}
           {month < 12 ? <a href={monthHref(month + 1)} class="text-shrine-vermillion-dark underline">{ui.month.next(month + 1)}</a> : <span></span>}
@@ -128,3 +140,27 @@ const official = officialDaysInMonth(month);
     <CalendarLegendBar lang={lang} />
   </div>
 </Layout>
+
+<script>
+  // 六曜の表示スイッチ（選択は他の月でも引き継ぐ。保存できない環境でも動く）
+  const grid = document.querySelector('[data-cal-grid]');
+  const toggle = document.getElementById('rokuyo-toggle') as HTMLInputElement | null;
+  if (grid && toggle) {
+    const key = 'cal-rokuyo';
+    const apply = (on: boolean) => {
+      toggle.checked = on;
+      grid.classList.toggle('rokuyo-on', on);
+    };
+    let saved = false;
+    try {
+      saved = localStorage.getItem(key) === '1';
+    } catch {}
+    apply(saved);
+    toggle.addEventListener('change', () => {
+      apply(toggle.checked);
+      try {
+        localStorage.setItem(key, toggle.checked ? '1' : '0');
+      } catch {}
+    });
+  }
+</script>
