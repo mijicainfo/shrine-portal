@@ -40,6 +40,10 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-09',
+    shrineSlugs: ['nagata-jinja-kobe', 'hirano-jinja-kyoto', 'kunozan-toshogu', 'toga-jinja-toyokawa', 'sumiyoshi-jinja-hakata'],
+  },
+  {
     date: '2026-11-08',
     shrineSlugs: ['hoju-inari-jinja-ginza', 'abeoji-jinja', 'miho-jinja-shizuoka', 'yoshida-jinja-kyoto', 'atago-jinja-noda'],
   },
@@ -72,10 +76,6 @@ export const updates: UpdateEntry[] = [
       ko: '새로운 특집 기사 "가미아리사이(이즈모) 가이드｜음력 10월, 신들이 모이는 ‘가미아리즈키’ 참배"를 공개했습니다',
       href: '/guides/izumo-kamiarisai/',
     },
-  },
-  {
-    date: '2026-11-04',
-    shrineSlugs: ['hanazono-inari-jinja', 'tokiwa-jinja-mito', 'sakurayama-hachimangu', 'sanada-jinja-ueda', 'atago-jinja-kyoto'],
   },
   {
     date: '2026-10-31',
