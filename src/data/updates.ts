@@ -40,6 +40,10 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-10',
+    shrineSlugs: ['yusuhara-hachimangu', 'sakurayama-jinja-morioka', 'sendai-toshogu', 'wakasahiko-jinja', 'yohashira-jinja'],
+  },
+  {
     date: '2026-11-09',
     shrineSlugs: ['nagata-jinja-kobe', 'hirano-jinja-kyoto', 'kunozan-toshogu', 'toga-jinja-toyokawa', 'sumiyoshi-jinja-hakata'],
   },
@@ -59,10 +63,6 @@ export const updates: UpdateEntry[] = [
       ko: '2027 개운 캘린더(덴샤니치·이치류만바이비 등의 월별 일람과 로쿠요 참고 페이지)를 공개했습니다',
       href: '/calendar/2027/',
     },
-  },
-  {
-    date: '2026-11-07',
-    shrineSlugs: ['shiba-toshogu', 'kameyama-hachimangu-shimonoseki', 'mihashira-jinja', 'futenma-gu', 'imizu-jinja'],
   },
   {
     date: '2026-11-07',
