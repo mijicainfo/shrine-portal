@@ -6,7 +6,8 @@ import ShrineCard from './ShrineCard.astro';
 import PrepSection from './PrepSection.astro';
 import { destinations, travelText, type Lang } from '../data/monetization';
 import { getDestinationShrines } from '../lib/travel';
-import { buildAccommodationBookingUrl } from '../lib/accommodation';
+import { accommodationPartnerName, buildAccommodationBookingUrl } from '../lib/accommodation';
+import { findTripTarget } from '../data/tripcom';
 import { buildRakutenSearchUrl } from '../data/affiliate';
 
 interface Props {
@@ -23,7 +24,12 @@ const base = lang === 'ja' ? '' : `/${lang}`;
 
 const name = dest.name[lang];
 const shrines = await getDestinationShrines(dest, lang);
-const bookingInput = lang === 'ja' ? dest.booking.ja : dest.booking.en;
+// 繁體中文・韓国語のページは、Trip.com の都市番号がある旅行先なら Trip.com のリンクにする（なければ Booking.com）
+const trip = lang === 'zh' || lang === 'ko' ? findTripTarget(dest.booking.ja.prefecture, dest.booking.ja.city, `travel-${dest.slug}`) : undefined;
+const bookingInput = { ...(lang === 'ja' ? dest.booking.ja : dest.booking.en), trip };
+const hotelsLabel = accommodationPartnerName(lang, bookingInput) === 'Trip.com'
+  ? (lang === 'zh' ? '在 Trip.com 搜尋住宿' : 'Trip.com에서 숙소 검색')
+  : travelText.hotelsBooking[lang];
 const bookingUrl = buildAccommodationBookingUrl(lang, bookingInput);
 const rakutenUrl = buildRakutenSearchUrl(`${dest.booking.ja.prefecture}${dest.booking.ja.city}`);
 const title = travelText.pageTitle(name)[lang];
@@ -65,7 +71,7 @@ const title = travelText.pageTitle(name)[lang];
           rel="noopener noreferrer sponsored"
           class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-white px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
         >
-          <span class="font-bold">{travelText.hotelsBooking[lang]}</span>
+          <span class="font-bold">{hotelsLabel}</span>
           <span aria-hidden="true">↗</span>
         </a>
         {lang === 'ja' && (

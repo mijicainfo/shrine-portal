@@ -7,6 +7,7 @@
  * 値は実機（Booking.com）で確認済みのものだけを bookingCity / bookingPrefecture で上書きする運用。
  */
 import { buildBookingSearchUrl, buildRakutenSearchUrl } from '../data/affiliate';
+import { buildTripcomHotelUrl, type TripHotelTarget } from '../data/tripcom';
 
 export type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 
@@ -15,6 +16,8 @@ export interface AccommodationInput {
   prefecture: string;
   bookingCity?: string;
   bookingPrefecture?: string;
+  /** 繁體中文・韓国語のページで、Trip.com の都市番号が分かる場合に渡す（なければ Booking.com） */
+  trip?: TripHotelTarget;
 }
 
 export function buildAccommodationQuery(lang: Lang, { city, prefecture, bookingCity, bookingPrefecture }: AccommodationInput): string {
@@ -30,7 +33,13 @@ export function buildAccommodationQuery(lang: Lang, { city, prefecture, bookingC
 }
 
 export function buildAccommodationBookingUrl(lang: Lang, input: AccommodationInput): string {
+  if ((lang === 'zh' || lang === 'ko') && input.trip) return buildTripcomHotelUrl(lang, input.trip);
   return buildBookingSearchUrl(buildAccommodationQuery(lang, input));
+}
+
+/** 宿リンクの提携先の表示名（Trip.com のリンクを出すときだけ 'Trip.com'） */
+export function accommodationPartnerName(lang: Lang, input: AccommodationInput): 'Trip.com' | 'Booking.com' {
+  return (lang === 'zh' || lang === 'ko') && input.trip ? 'Trip.com' : 'Booking.com';
 }
 
 /** 楽天トラベルのキーワード検索は日本語専用（日本語版でのみ使う） */

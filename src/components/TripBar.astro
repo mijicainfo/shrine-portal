@@ -5,6 +5,7 @@
 //  - 神社ページ: 日本語は楽天トラベル、他言語はBooking.com（宿）と、Klook（周辺のツアー・体験）。
 //  - 特集記事: 宿は旅行先ページ（/travel/）へ、体験は日本の神社のKlook検索へ。
 import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import type { TripHotelTarget } from '../data/tripcom';
 import { buildKlookSearchUrl } from '../data/affiliate';
 
 interface Props {
@@ -14,13 +15,14 @@ interface Props {
   prefecture?: string;
   bookingCity?: string;
   bookingPrefecture?: string;
+  trip?: TripHotelTarget;
 }
 
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
 const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
 const base = lang === 'ja' ? '' : `/${lang}`;
-const { mode, shrineName = '', city = '', prefecture = '', bookingCity, bookingPrefecture } = Astro.props;
+const { mode, shrineName = '', city = '', prefecture = '', bookingCity, bookingPrefecture, trip } = Astro.props;
 
 const text: Record<Lang, { heading: string; hotel: string; tours: string; near: (c: string) => string; hotelGuide: string; toursGuide: string; guideKlook: string; sub: string }> = {
   ja: { heading: '旅の準備', hotel: '宿を探す', tours: '周辺のツアー・体験', near: (c) => `${c}周辺`, hotelGuide: '旅行先から宿を探す', toursGuide: '神社のツアー・体験', guideKlook: '神社', sub: '（楽天トラベル）' },
@@ -33,7 +35,7 @@ const text: Record<Lang, { heading: string; hotel: string; tours: string; near: 
 const t = text[lang];
 
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
-const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture };
+const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture, trip };
 const klookQuery = lang !== 'ja' ? `${cleanCity}, ${prefecture.replace(/\s*Prefecture$/i, '')}` : `${prefecture}${cleanCity}`;
 
 const items =

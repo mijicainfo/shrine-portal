@@ -2,7 +2,8 @@
 // 神社ページの「アクセス」の説明の直後に置く、周辺の宿を探すリンク。
 // 検索は市区町村単位（駅名では検索しない）なので、「最寄り駅」ではなく「この周辺」と表示する。
 // 日本語は楽天トラベル、他言語はBooking.com（上部の旅の準備バーと同じ検索）。
-import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import { accommodationPartnerName, buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import type { TripHotelTarget } from '../data/tripcom';
 
 interface Props {
   shrineName: string;
@@ -10,24 +11,26 @@ interface Props {
   prefecture: string;
   bookingCity?: string;
   bookingPrefecture?: string;
+  trip?: TripHotelTarget;
 }
 
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
 const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
-const { shrineName, city, prefecture, bookingCity, bookingPrefecture } = Astro.props;
+const { shrineName, city, prefecture, bookingCity, bookingPrefecture, trip } = Astro.props;
 
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim() || city;
-const input = { city, prefecture, bookingCity, bookingPrefecture };
+const input = { city, prefecture, bookingCity, bookingPrefecture, trip };
+const partner = accommodationPartnerName(lang, input);
 const href = lang === 'ja' ? buildAccommodationRakutenUrl(shrineName, input) : buildAccommodationBookingUrl(lang, input);
 
 const text: Record<Lang, { label: string; sub: string }> = {
   ja: { label: 'この周辺の宿を探す', sub: `${cleanCity}周辺・楽天トラベル` },
   en: { label: 'Find a hotel near here', sub: `Near ${cleanCity} · Booking.com` },
-  zh: { label: '查找這附近的住宿', sub: `${cleanCity}周邊・Booking.com` },
+  zh: { label: '查找這附近的住宿', sub: `${cleanCity}周邊・${partner}` },
   es: { label: 'Buscar hotel cerca de aquí', sub: `Cerca de ${cleanCity} · Booking.com` },
   fr: { label: 'Trouver un hôtel à proximité', sub: `Près de ${cleanCity} · Booking.com` },
-  ko: { label: '이 근처 숙소 찾기', sub: `${cleanCity} 주변 · Booking.com` },
+  ko: { label: '이 근처 숙소 찾기', sub: `${cleanCity} 주변 · ${partner}` },
 };
 const t = text[lang];
 ---

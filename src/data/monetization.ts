@@ -66,10 +66,10 @@ export const prepText = {
   prNote: {
     ja: '※ 広告（PR）を含みます。Amazon・楽天・Booking.comなどの外部サイトに移動します。',
     en: '※ Contains ads (PR). Links open external sites such as Amazon, Rakuten and Booking.com.',
-    zh: '※ 內含廣告（PR）。連結將前往 Amazon、樂天、Booking.com 等外部網站。',
+    zh: '※ 內含廣告（PR）。連結將前往 Amazon、樂天、Trip.com、Booking.com 等外部網站。',
     es: '※ Contiene publicidad (PR). Los enlaces abren sitios externos como Amazon, Rakuten y Booking.com.',
     fr: '※ Contient de la publicité (PR). Les liens ouvrent des sites externes tels qu’Amazon, Rakuten et Booking.com.',
-    ko: '※ 광고(PR)를 포함합니다. Amazon·라쿠텐·Booking.com 등 외부 사이트로 이동합니다.',
+    ko: '※ 광고(PR)를 포함합니다. Amazon·라쿠텐·Trip.com·Booking.com 등 외부 사이트로 이동합니다.',
   } as L10n,
   ctaHeading: {
     ja: '参拝をもっと楽しむ', en: 'Enjoy your visit even more', zh: '讓參拜更加充實', es: 'Disfruta aún más tu visita', fr: 'Profitez encore plus de votre visite', ko: '참배를 더 즐겁게',

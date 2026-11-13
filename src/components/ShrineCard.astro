@@ -10,6 +10,7 @@ import { benefitTranslationsFr } from '../data/benefitTranslationsFr';
 import { benefitTranslationsKo } from '../data/benefitTranslationsKo';
 import { buildAmazonSearchUrl } from '../data/affiliate';
 import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import { getTripTargetForShrine } from '../lib/tripcom';
 import { cardText, prepKeywords } from '../data/monetization';
 
 interface Props {
@@ -37,7 +38,8 @@ const translateBenefit = (tag: string) => benefitTranslationsByLang[lang]?.[tag]
 const locationSeparator: Record<Lang, string> = { ja: '・', en: ', ', zh: '、', es: ', ', fr: ', ', ko: '・' };
 
 // 一覧から直接、宿泊・御朱印帳へ（日本語版は楽天トラベル、それ以外はBooking.com）
-const accommodationInput = { city: data.city, prefecture: data.prefecture, bookingCity: data.bookingCity, bookingPrefecture: data.bookingPrefecture };
+const trip = await getTripTargetForShrine(id, lang);
+const accommodationInput = { city: data.city, prefecture: data.prefecture, bookingCity: data.bookingCity, bookingPrefecture: data.bookingPrefecture, trip };
 const hotelUrl = lang === 'ja'
   ? buildAccommodationRakutenUrl(data.name, accommodationInput)
   : buildAccommodationBookingUrl(lang, accommodationInput);

@@ -1,5 +1,6 @@
 ---
-import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import { accommodationPartnerName, buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
+import type { TripHotelTarget } from '../data/tripcom';
 
 interface Props {
   shrineName: string;
@@ -7,9 +8,10 @@ interface Props {
   prefecture: string;
   bookingCity?: string;
   bookingPrefecture?: string;
+  trip?: TripHotelTarget;
 }
 
-const { shrineName, city, prefecture, bookingCity, bookingPrefecture } = Astro.props;
+const { shrineName, city, prefecture, bookingCity, bookingPrefecture, trip } = Astro.props;
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
 const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
@@ -19,7 +21,8 @@ const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro
 // （小規模な町村名がBooking.comの地名データベースで正しく認識されない場合の回避策）
 // Booking.com / 楽天トラベルの検索クエリ生成ロジック（括弧書きの除去、「Prefecture」の除去、bookingCity/bookingPrefectureによる上書き）は
 // src/lib/accommodation.ts に集約している（神社カード・旅行先ページと共通）。経緯はそちらのコメントを参照。
-const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture };
+const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture, trip };
+const partnerName = accommodationPartnerName(lang, accommodationInput);
 const bookingUrl = buildAccommodationBookingUrl(lang, accommodationInput);
 // 楽天トラベルのキーワード検索は日本語専用で、日本語以外のクエリでは
 // 地名が一致せず常に検索結果0件になるため、日本語版以外では表示しない
@@ -90,7 +93,7 @@ const t = {
       class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
     >
       <span>
-        <span class="font-bold">Booking.com</span>
+        <span class="font-bold">{partnerName}</span>
         <span class="block text-xs text-shrine-ink-soft">{t.bookingSub}</span>
       </span>
       <span aria-hidden="true">↗</span>
