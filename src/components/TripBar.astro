@@ -2,10 +2,10 @@
 // 神社ページ・特集記事の上部に置く「旅の準備」の帯（宿・ツアー体験）。
 // 以前は宿泊・体験のリンクがページの60〜85%の深さにあり、ほとんど目に入らなかったため、
 // 見出しの直下に出す。スマホでは、少しスクロールすると画面下にも同じ導線が固定表示される（神社ページのみ）。
-//  - 神社ページ: 日本語は楽天トラベル、他言語はBooking.com（宿）と、Klook（周辺のツアー・体験）。
+//  - 神社ページ: 宿は日本語が楽天トラベル、他言語はTrip.com。ツアー・体験は日本語がKlook、他言語はTrip.com（市の一覧がない市はKlook）。
 //  - 特集記事: 宿は旅行先ページ（/travel/）へ、体験は日本の神社のKlook検索へ。
 import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
-import type { TripHotelTarget } from '../data/tripcom';
+import { buildTripcomActivitiesUrl, type TripHotelTarget } from '../data/tripcom';
 import { buildKlookSearchUrl } from '../data/affiliate';
 
 interface Props {
@@ -48,7 +48,8 @@ const items =
           href: lang === 'ja' ? buildAccommodationRakutenUrl(shrineName, accommodationInput) : buildAccommodationBookingUrl(lang, accommodationInput),
           external: true,
         },
-        { icon: '🎫', label: t.tours, sub: t.near(cleanCity || city), href: buildKlookSearchUrl(klookQuery, lang), external: true },
+        // 日本語以外は Trip.com の「遊び・体験」（市の一覧）。市の一覧がない市と日本語ページは Klook。
+        { icon: '🎫', label: t.tours, sub: t.near(cleanCity || city), href: (trip && buildTripcomActivitiesUrl(lang, trip)) || buildKlookSearchUrl(klookQuery, lang), external: true },
       ]
     : [
         { icon: '🏨', label: t.hotelGuide, sub: '', href: `${base}/travel/`, external: false },

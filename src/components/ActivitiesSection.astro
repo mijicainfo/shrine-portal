@@ -1,19 +1,24 @@
 ---
 import { buildKlookSearchUrl } from '../data/affiliate';
+import { buildTripcomActivitiesUrl, type TripHotelTarget } from '../data/tripcom';
 
 interface Props {
   city: string;
   prefecture: string;
+  trip?: TripHotelTarget;
 }
 
-const { city, prefecture } = Astro.props;
+const { city, prefecture, trip } = Astro.props;
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
 const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
 const bookingPrefecture = prefecture.replace(/\s*Prefecture$/i, '');
 const klookQuery = lang !== 'ja' ? `${cleanCity}, ${bookingPrefecture}` : `${prefecture}${cleanCity}`;
-const klookUrl = buildKlookSearchUrl(klookQuery, lang);
+// 日本語以外は Trip.com の「遊び・体験」（市の一覧）。市の一覧がない市と日本語ページは Klook。
+const tripUrl = trip ? buildTripcomActivitiesUrl(lang, trip) : undefined;
+const klookUrl = tripUrl ?? buildKlookSearchUrl(klookQuery, lang);
+const partnerName = tripUrl ? 'Trip.com' : 'Klook';
 const t = {
   ja: {
     heading: '周辺の観光・体験',
@@ -68,7 +73,7 @@ const t = {
       class="flex items-center justify-between gap-3 rounded-2xl border border-shrine-gold/30 bg-shrine-paper-dark px-4 py-3 text-sm text-shrine-ink transition hover:border-shrine-vermillion hover:text-shrine-vermillion"
     >
       <span>
-        <span class="font-bold">Klook</span>
+        <span class="font-bold">{partnerName}</span>
         <span class="block text-xs text-shrine-ink-soft">{t.klookSub}</span>
       </span>
       <span aria-hidden="true">↗</span>
