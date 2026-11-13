@@ -32,6 +32,26 @@ export const tripcomDomains: Record<TripLang, string> = {
   ko: 'kr.trip.com',
 };
 
+/**
+ * 静的バナー（ホテル・300×250・絶景プール柄）の Ad ID。Trip.com 管理画面の「スタティックバナー」で言語ごとに作成（2026-11-14）。
+ * バナーは Trip.com 提供の iframe。trip_sub1 には神社の識別タグを入れて、どの神社から来た予約か管理画面で追えるようにする。
+ */
+export const tripcomBannerIds: Record<TripLang, string> = {
+  ja: 'SB21168646',
+  en: 'SB21168660',
+  ko: 'SB21168667',
+  zh: 'SB21168681',
+  es: 'SB21168688',
+  fr: 'SB21168716',
+};
+
+export function buildTripcomBannerUrl(lang: TripLang, tag?: string): string {
+  return (
+    `https://${tripcomDomains[lang]}/partners/ad/${tripcomBannerIds[lang]}` +
+    `?Allianceid=${tripcomConfig.allianceId}&SID=${tripcomConfig.siteId}&trip_sub1=${encodeURIComponent(tag ?? '')}`
+  );
+}
+
 export interface TripHotelTarget {
   cityId: number;
   /** Trip.com の display / optionName に入れる、日本語の地名（例: 京都市） */

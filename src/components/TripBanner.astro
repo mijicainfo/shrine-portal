@@ -1,0 +1,56 @@
+---
+import { buildTripcomBannerUrl, type TripLang } from '../data/tripcom';
+
+interface Props {
+  lang: TripLang;
+  /** trip_sub1 に入れる識別タグ（例: shrine-yabo-tenmangu） */
+  tag?: string;
+}
+
+const { lang, tag } = Astro.props;
+const src = buildTripcomBannerUrl(lang, tag);
+const t = {
+  ja: { pr: 'PR', title: 'Trip.com のホテル特集バナー' },
+  en: { pr: 'Ad', title: 'Trip.com hotel deals banner' },
+  zh: { pr: '廣告', title: 'Trip.com 飯店優惠橫幅' },
+  es: { pr: 'Publicidad', title: 'Banner de ofertas de hoteles de Trip.com' },
+  fr: { pr: 'Publicité', title: 'Bannière offres d’hôtels Trip.com' },
+  ko: { pr: '광고', title: 'Trip.com 호텔 특가 배너' },
+}[lang];
+---
+
+<!--
+  Trip.com 提供の 300×250 バナー（iframe）。サイドバーなど親の幅が 300px 未満のときは、
+  iframe の中身を切らずに縮小して収める（下の script が幅に合わせて scale を設定する）。
+-->
+<div class="mt-4 flex flex-col items-center">
+  <span class="mb-1 text-[10px] tracking-wider text-shrine-ink-soft/70">{t.pr} · Trip.com</span>
+  <div class="trip-banner-box overflow-hidden rounded-xl" style="width:300px;height:250px;">
+    <iframe
+      src={src}
+      title={t.title}
+      width="300"
+      height="250"
+      loading="lazy"
+      scrolling="no"
+      frameborder="0"
+      class="border-0"
+      style="width:300px;height:250px;transform-origin:0 0;"></iframe>
+  </div>
+</div>
+
+<script>
+  function fitTripBanners() {
+    document.querySelectorAll<HTMLElement>('.trip-banner-box').forEach((box) => {
+      const parent = box.parentElement;
+      const iframe = box.querySelector('iframe');
+      if (!parent || !iframe) return;
+      const scale = Math.min(1, parent.clientWidth / 300);
+      box.style.width = `${300 * scale}px`;
+      box.style.height = `${250 * scale}px`;
+      iframe.style.transform = scale < 1 ? `scale(${scale})` : '';
+    });
+  }
+  fitTripBanners();
+  window.addEventListener('resize', fitTripBanners);
+</script>
