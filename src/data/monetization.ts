@@ -65,7 +65,7 @@ export const prepText = {
   } as L10n,
   prNote: {
     ja: '※ 広告（PR）を含みます。Amazon・楽天・Booking.comなどの外部サイトに移動します。',
-    en: '※ Contains ads (PR). Links open external sites such as Amazon, Rakuten and Booking.com.',
+    en: '※ Contains ads (PR). Links open external sites such as Amazon, Rakuten, Trip.com and Booking.com.',
     zh: '※ 內含廣告（PR）。連結將前往 Amazon、樂天、Trip.com、Booking.com 等外部網站。',
     es: '※ Contiene publicidad (PR). Los enlaces abren sitios externos como Amazon, Rakuten y Booking.com.',
     fr: '※ Contient de la publicité (PR). Les liens ouvrent des sites externes tels qu’Amazon, Rakuten et Booking.com.',

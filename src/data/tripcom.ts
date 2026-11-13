@@ -1,7 +1,8 @@
 /**
  * Trip.com アフィリエイト（2026-11-14 承認）の設定と、神社の市区町村 → Trip.com 都市番号の対応表。
  *
- * - 繁體中文（zh）・韓国語（ko）のページの「宿を探す」リンクだけを、都市番号がある場合に Trip.com へ切り替える。
+ * - 英語（en）・繁體中文（zh）・韓国語（ko）のページの「宿を探す」リンクだけを、都市番号がある場合に Trip.com へ切り替える。
+ *   英語（en）も同様に Trip.com（www.trip.com）へ切り替える。
  *   番号がない市区町村は、従来どおり Booking.com の検索リンクのまま（src/lib/accommodation.ts を参照）。
  * - 都市番号は Trip.com の目的地検索（getHotelKeywords）で取得した「都市（CT）」の keywordId。
  *   新しい市区町村の神社を追加したときは、下の tripCityIds に `都道府県|市区町村` の行を足す
@@ -12,11 +13,19 @@
 export const tripcomConfig = {
   allianceId: '11305106',
   siteId: '335604802',
-  trackingId: 'D21166518',
+  /** trip_sub3（リンク作成ツールが付ける追跡番号）。言語ごとにツールの出力値をそのまま使う（2026-11-14確認） */
+  trackingIds: { en: 'D21166875', zh: 'D21166518', ko: 'D21166518' } as Record<TripLang, string>,
 };
 
+export type TripLang = 'en' | 'zh' | 'ko';
+
+export function isTripLang(lang: string): lang is TripLang {
+  return lang === 'en' || lang === 'zh' || lang === 'ko';
+}
+
 /** 言語ごとの Trip.com のドメイン（ツールの「リンクの言語」に対応）。ここにない言語では使わない。 */
-export const tripcomDomains: Partial<Record<'zh' | 'ko', string>> = {
+export const tripcomDomains: Record<TripLang, string> = {
+  en: 'www.trip.com',
   zh: 'tw.trip.com',
   ko: 'kr.trip.com',
 };
@@ -48,14 +57,14 @@ export function findTripTarget(prefecture: string, city: string, tag?: string): 
   return { cityId, name: key.split('|')[1], tag };
 }
 
-export function buildTripcomHotelUrl(lang: 'zh' | 'ko', target: TripHotelTarget): string {
+export function buildTripcomHotelUrl(lang: TripLang, target: TripHotelTarget): string {
   const domain = tripcomDomains[lang];
   const name = encodeURIComponent(target.name);
   const tag = encodeURIComponent(target.tag ?? '');
   return (
     `https://${domain}/hotels/list?city=${target.cityId}&display=${name}&optionId=${target.cityId}` +
     `&optionType=City&optionName=${name}&Allianceid=${tripcomConfig.allianceId}&SID=${tripcomConfig.siteId}` +
-    `&trip_sub1=${tag}&trip_sub3=${tripcomConfig.trackingId}`
+    `&trip_sub1=${tag}&trip_sub3=${tripcomConfig.trackingIds[lang]}`
   );
 }
 

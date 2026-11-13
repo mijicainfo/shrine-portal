@@ -19,6 +19,7 @@ import { buildShrineDescription, buildShrineStructuredData, buildFaqStructuredDa
 import { benefitTranslations } from '../../../data/benefitTranslations';
 import { findRelatedShrines } from '../../../lib/related';
 import { getPublished } from '../../../lib/content';
+import { getTripTargetForShrine } from '../../../lib/tripcom';
 
 export async function getStaticPaths() {
   const shrines = await getPublished('shrinesEn');
@@ -32,6 +33,7 @@ const { shrine, allShrines } = Astro.props;
 const { data } = shrine;
 const { Content } = await render(shrine);
 const relatedShrines = findRelatedShrines(shrine, allShrines);
+const trip = await getTripTargetForShrine(shrine.id, 'en');
 
 const photos = [
   ...(data.image ? [{ image: data.image, alt: data.name, credit: data.imageCredit }] : []),
@@ -91,7 +93,7 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
     )}
   </section>
 
-  <TripBar mode="shrine" shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} />
+  <TripBar mode="shrine" shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} trip={trip} />
 
   <PhotoGallery photos={photos} />
 
@@ -180,7 +182,7 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
               <dt class="font-bold text-shrine-vermillion-dark">Access</dt>
               <dd class="mt-1 text-shrine-ink-soft">
                 {data.access}
-                <AccessHotelLink shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} />
+                <AccessHotelLink shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} trip={trip} />
               </dd>
             </div>
           )}
@@ -205,7 +207,7 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
       </div>
 
       <div class="mt-6">
-        <AccommodationSection shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} />
+        <AccommodationSection shrineName={data.name} city={data.city} prefecture={data.prefecture} bookingCity={data.bookingCity} bookingPrefecture={data.bookingPrefecture} trip={trip} />
       </div>
 
       <div class="mt-6">

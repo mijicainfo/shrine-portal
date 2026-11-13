@@ -7,7 +7,7 @@ import PrepSection from './PrepSection.astro';
 import { destinations, travelText, type Lang } from '../data/monetization';
 import { getDestinationShrines } from '../lib/travel';
 import { accommodationPartnerName, buildAccommodationBookingUrl } from '../lib/accommodation';
-import { findTripTarget } from '../data/tripcom';
+import { findTripTarget, isTripLang } from '../data/tripcom';
 import { buildRakutenSearchUrl } from '../data/affiliate';
 
 interface Props {
@@ -24,11 +24,11 @@ const base = lang === 'ja' ? '' : `/${lang}`;
 
 const name = dest.name[lang];
 const shrines = await getDestinationShrines(dest, lang);
-// 繁體中文・韓国語のページは、Trip.com の都市番号がある旅行先なら Trip.com のリンクにする（なければ Booking.com）
-const trip = lang === 'zh' || lang === 'ko' ? findTripTarget(dest.booking.ja.prefecture, dest.booking.ja.city, `travel-${dest.slug}`) : undefined;
+// 英語・繁體中文・韓国語のページは、Trip.com の都市番号がある旅行先なら Trip.com のリンクにする（なければ Booking.com）
+const trip = isTripLang(lang) ? findTripTarget(dest.booking.ja.prefecture, dest.booking.ja.city, `travel-${dest.slug}`) : undefined;
 const bookingInput = { ...(lang === 'ja' ? dest.booking.ja : dest.booking.en), trip };
 const hotelsLabel = accommodationPartnerName(lang, bookingInput) === 'Trip.com'
-  ? (lang === 'zh' ? '在 Trip.com 搜尋住宿' : 'Trip.com에서 숙소 검색')
+  ? (lang === 'en' ? 'Search stays on Trip.com' : lang === 'zh' ? '在 Trip.com 搜尋住宿' : 'Trip.com에서 숙소 검색')
   : travelText.hotelsBooking[lang];
 const bookingUrl = buildAccommodationBookingUrl(lang, bookingInput);
 const rakutenUrl = buildRakutenSearchUrl(`${dest.booking.ja.prefecture}${dest.booking.ja.city}`);
