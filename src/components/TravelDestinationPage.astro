@@ -24,11 +24,11 @@ const base = lang === 'ja' ? '' : `/${lang}`;
 
 const name = dest.name[lang];
 const shrines = await getDestinationShrines(dest, lang);
-// 英語・繁體中文・韓国語のページは、Trip.com の都市番号がある旅行先なら Trip.com のリンクにする（なければ Booking.com）
+// 全言語のページで、Trip.com の都市番号がある旅行先なら Trip.com のリンクにする（なければ Booking.com）
 const trip = isTripLang(lang) ? findTripTarget(dest.booking.ja.prefecture, dest.booking.ja.city, `travel-${dest.slug}`) : undefined;
 const bookingInput = { ...(lang === 'ja' ? dest.booking.ja : dest.booking.en), trip };
 const hotelsLabel = accommodationPartnerName(lang, bookingInput) === 'Trip.com'
-  ? (lang === 'en' ? 'Search stays on Trip.com' : lang === 'zh' ? '在 Trip.com 搜尋住宿' : 'Trip.com에서 숙소 검색')
+  ? { ja: 'Trip.comで宿を検索', en: 'Search stays on Trip.com', zh: '在 Trip.com 搜尋住宿', es: 'Buscar alojamiento en Trip.com', fr: 'Rechercher sur Trip.com', ko: 'Trip.com에서 숙소 검색' }[lang]
   : travelText.hotelsBooking[lang];
 const bookingUrl = buildAccommodationBookingUrl(lang, bookingInput);
 const rakutenUrl = buildRakutenSearchUrl(`${dest.booking.ja.prefecture}${dest.booking.ja.city}`);
