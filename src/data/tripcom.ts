@@ -45,9 +45,20 @@ export const tripcomBannerIds: Record<TripLang, string> = {
   fr: 'SB21168716',
 };
 
-export function buildTripcomBannerUrl(lang: TripLang, tag?: string): string {
+/** 横長（728×90）のホテルバナーの Ad ID。旅行先ページ・開運カレンダーで、幅が足りる画面では横長、狭い画面では上の 300×250 を使う。 */
+export const tripcomWideBannerIds: Record<TripLang, string> = {
+  ja: 'SB21180896',
+  en: 'SB21180924',
+  zh: 'SB21180945',
+  ko: 'SB21181057',
+  es: 'SB21181071',
+  fr: 'SB21181078',
+};
+
+export function buildTripcomBannerUrl(lang: TripLang, tag?: string, wide = false): string {
+  const id = wide ? tripcomWideBannerIds[lang] : tripcomBannerIds[lang];
   return (
-    `https://${tripcomDomains[lang]}/partners/ad/${tripcomBannerIds[lang]}` +
+    `https://${tripcomDomains[lang]}/partners/ad/${id}` +
     `?Allianceid=${tripcomConfig.allianceId}&SID=${tripcomConfig.siteId}&trip_sub1=${encodeURIComponent(tag ?? '')}`
   );
 }

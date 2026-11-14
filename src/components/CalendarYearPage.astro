@@ -5,6 +5,7 @@ import CalendarGrid from './CalendarGrid.astro';
 import CalendarLegend from './CalendarLegend.astro';
 import CalendarNotice from './CalendarNotice.astro';
 import CalendarLegendBar from './CalendarLegendBar.astro';
+import TripWideBanner from './TripWideBanner.astro';
 import { calendarText } from '../data/calendarText';
 import { calendarRokuyoUi } from '../data/calendarRokuyoUi';
 import { MONTHS, yearSummary, formatDates, calendarYear } from '../lib/calendar';
@@ -71,8 +72,16 @@ const guideLinks = [
     <section aria-labelledby="calendar-months">
       <h2 id="calendar-months" class="font-serif-jp text-xl font-bold text-shrine-ink">{ui.year.monthsHeading}</h2>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {MONTHS.map((m) => (
-          <CalendarGrid month={m} lang={lang} compact href={`${base}/calendar/2027/${String(m).padStart(2, '0')}/`} />
+        {MONTHS.map((m, i) => (
+          <>
+            <CalendarGrid month={m} lang={lang} compact href={`${base}/calendar/2027/${String(m).padStart(2, '0')}/`} />
+            {/* 12か月の一覧の6か月目の後ろ（本文の中段より少し上）にバナーを入れる */}
+            {i === 5 && (
+              <div class="col-span-full">
+                <TripWideBanner lang={lang} tag="calendar-2027" />
+              </div>
+            )}
+          </>
         ))}
       </div>
       <ul class="mt-5 flex flex-wrap gap-2 text-sm">

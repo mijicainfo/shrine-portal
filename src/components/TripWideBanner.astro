@@ -1,0 +1,61 @@
+---
+import { buildTripcomBannerUrl, type TripLang } from '../data/tripcom';
+
+interface Props {
+  lang: TripLang;
+  /** trip_sub1 に入れる識別タグ（例: travel-kyoto / calendar-2027-03） */
+  tag?: string;
+}
+
+const { lang, tag } = Astro.props;
+const wideSrc = buildTripcomBannerUrl(lang, tag, true);
+const squareSrc = buildTripcomBannerUrl(lang, tag, false);
+const t = {
+  ja: { pr: 'PR', title: 'Trip.com のホテル特集バナー' },
+  en: { pr: 'Ad', title: 'Trip.com hotel deals banner' },
+  zh: { pr: '廣告', title: 'Trip.com 飯店優惠橫幅' },
+  es: { pr: 'Publicidad', title: 'Banner de ofertas de hoteles de Trip.com' },
+  fr: { pr: 'Publicité', title: 'Bannière offres d’hôtels Trip.com' },
+  ko: { pr: '광고', title: 'Trip.com 호텔 특가 배너' },
+}[lang];
+---
+
+<!--
+  Trip.com 提供のバナー（iframe）。横幅が 728px 以上あれば横長（728×90）、狭ければ 300×250（ほぼ正方形）を表示する。
+  どちらを出すかは下の script が親の幅で決めて src を設定する（1ページで読み込むのは常に1つだけ）。
+  親が各サイズより狭いときは、中身が切れないように縮小する。
+-->
+<aside class="trip-wide-banner my-2 flex flex-col items-center" aria-label={t.title} data-wide-src={wideSrc} data-square-src={squareSrc}>
+  <span class="mb-1 text-[10px] tracking-wider text-shrine-ink-soft/70">{t.pr} · Trip.com</span>
+  <div class="trip-wide-box overflow-hidden rounded-xl" style="width:300px;height:250px;">
+    <iframe title={t.title} loading="lazy" scrolling="no" frameborder="0" class="border-0" style="width:300px;height:250px;transform-origin:0 0;"></iframe>
+  </div>
+</aside>
+
+<script>
+  function layoutTripWideBanners() {
+    document.querySelectorAll<HTMLElement>('.trip-wide-banner').forEach((el) => {
+      const box = el.querySelector<HTMLElement>('.trip-wide-box');
+      const iframe = el.querySelector<HTMLIFrameElement>('iframe');
+      if (!box || !iframe) return;
+      // aside はブロック要素なので、clientWidth が「親の中身の幅」になる
+      const available = el.clientWidth;
+      const wide = available >= 728;
+      const w = wide ? 728 : 300;
+      const h = wide ? 90 : 250;
+      const scale = Math.min(1, available / w);
+      const src = wide ? el.dataset.wideSrc : el.dataset.squareSrc;
+      if (src && iframe.dataset.mode !== (wide ? 'wide' : 'square')) {
+        iframe.dataset.mode = wide ? 'wide' : 'square';
+        iframe.src = src;
+      }
+      iframe.style.width = `${w}px`;
+      iframe.style.height = `${h}px`;
+      iframe.style.transform = scale < 1 ? `scale(${scale})` : '';
+      box.style.width = `${w * scale}px`;
+      box.style.height = `${h * scale}px`;
+    });
+  }
+  layoutTripWideBanners();
+  window.addEventListener('resize', layoutTripWideBanners);
+</script>

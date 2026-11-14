@@ -3,6 +3,7 @@
 import Layout from '../layouts/Layout.astro';
 import CalendarGrid from './CalendarGrid.astro';
 import CalendarNotice from './CalendarNotice.astro';
+import TripWideBanner from './TripWideBanner.astro';
 import { calendarText } from '../data/calendarText';
 import { rokuyoKanji } from '../lib/calendarStyle';
 import { MONTHS } from '../lib/calendar';
@@ -46,7 +47,17 @@ const keys = Object.keys(rokuyoKanji) as (keyof typeof rokuyoKanji)[];
       <h2 id="rokuyo-table" class="font-serif-jp text-xl font-bold text-shrine-ink">{p.tableHeading}</h2>
       <p class="mt-1 text-xs text-shrine-ink-soft">{p.calcNote}</p>
       <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {MONTHS.map((m) => <CalendarGrid month={m} lang={lang} mode="rokuyo" compact id={`m${String(m).padStart(2, '0')}`} />)}
+        {MONTHS.map((m, i) => (
+          <>
+            <CalendarGrid month={m} lang={lang} mode="rokuyo" compact id={`m${String(m).padStart(2, '0')}`} />
+            {/* 12か月の一覧の6か月目の後ろ（本文の中段より少し上）にバナーを入れる */}
+            {i === 5 && (
+              <div class="col-span-full">
+                <TripWideBanner lang={lang} tag="calendar-2027-rokuyo" />
+              </div>
+            )}
+          </>
+        ))}
       </div>
     </section>
 
