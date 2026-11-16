@@ -6,6 +6,7 @@ import CalendarLegend from './CalendarLegend.astro';
 import CalendarNotice from './CalendarNotice.astro';
 import CalendarLegendBar from './CalendarLegendBar.astro';
 import TripWideBanner from './TripWideBanner.astro';
+import { showTripBanners } from '../data/tripcom';
 import { calendarText } from '../data/calendarText';
 import { calendarRokuyoUi } from '../data/calendarRokuyoUi';
 import { MONTHS, yearSummary, formatDates, calendarYear } from '../lib/calendar';
@@ -76,7 +77,7 @@ const guideLinks = [
           <>
             <CalendarGrid month={m} lang={lang} compact href={`${base}/calendar/2027/${String(m).padStart(2, '0')}/`} />
             {/* 12か月の一覧の6か月目の後ろ（本文の中段より少し上）にバナーを入れる */}
-            {i === 5 && (
+            {showTripBanners && i === 5 && (
               <div class="col-span-full">
                 <TripWideBanner lang={lang} tag="calendar-2027" />
               </div>

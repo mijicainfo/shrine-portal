@@ -1,0 +1,329 @@
+---
+// 運営者情報・編集方針ページ（/about/）。各言語の src/pages/**/about/index.astro から使う。
+// 運営者の氏名・住所などの個人情報は載せない（連絡はお問い合わせページ）。
+import Layout from '../layouts/Layout.astro';
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+
+interface Section {
+  h: string;
+  p: string[];
+  ul?: string[];
+}
+interface Text {
+  title: string;
+  description: string;
+  lead: string;
+  contactLabel: string;
+  updated: string;
+  sections: Section[];
+}
+
+const allText: Record<Lang, Text> = {
+  ja: {
+    title: '運営者情報・編集方針',
+    description: '「神社 The Pantheon」の運営について、情報の集め方・書き方、写真と翻訳の扱い、広告・アフィリエイトの開示、訂正の受け付けをご説明します。',
+    lead: '「神社 The Pantheon」がどのような考えで、どのように作られているかをまとめました。',
+    contactLabel: 'お問い合わせページ',
+    updated: '最終更新：2026年11月16日',
+    sections: [
+      {
+        h: 'このサイトについて',
+        p: [
+          '「神社 The Pantheon」は、日本全国の神社を、由緒・アクセス・御朱印・周辺情報まで、初めて参拝される方や海外からの旅行者にも分かりやすく紹介するガイドです。日本語・英語・中国語（繁体字）・スペイン語・フランス語・韓国語の6言語で提供しています。',
+          '運営は個人で行っています。運営者への連絡は、お問い合わせページからお願いします。',
+        ],
+      },
+      {
+        h: '情報の集め方・書き方',
+        p: ['各神社のページは、次の方針で作成しています。'],
+        ul: [
+          '神社の公式サイトを最優先の情報源とし、次いで自治体・観光協会・神社庁・文化庁などの公的な資料を参照します。',
+          '本文には「公式サイトによれば」のように出典を明記し、確認できない事項は「公式サイトに記載がない」「確認できなかった」と書きます。推測で補うことはしません。',
+          '情報源によって住所・読み・日付・数字が食い違う場合は、どちらかに決めてしまわず、食い違いがあることを本文に書きます。',
+          'ご利益や由緒の伝承は、「〜と伝わる」のように断定を避けて書きます。順位や人数などの数字は、出典を確認できるものだけを載せます。',
+          '開門時間・御朱印の頒布・授与品・工事や行事による休止などは変わることがあります。参拝の前に、神社の公式の最新情報をご確認ください。',
+        ],
+      },
+      {
+        h: '写真について',
+        p: ['掲載している写真は、ウィキメディア・コモンズなどで自由に利用できるライセンスのものを使用し、撮影者・ライセンス・出典を各ページに表示しています。'],
+      },
+      {
+        h: '翻訳について',
+        p: ['内容は日本語版を基準に作成し、ほかの5言語に翻訳しています。翻訳の際は、日本語版との食い違い（事実・ただし書き・出典の表記）がないかを確認し、見つけた場合は修正しています。'],
+      },
+      {
+        h: '広告・アフィリエイトの開示',
+        p: [
+          '当サイトには、宿泊・体験ツアー・書籍や授与品関連の商品などの外部サイト（Trip.com、楽天トラベル、Klook、Booking.com、Amazon など）へのリンクがあり、アフィリエイトプログラムを利用したものが含まれます。リンク先でお申し込み・ご購入があった場合、運営者に紹介料が支払われることがあります。',
+          'こうしたリンクの有無や紹介料が、神社の情報の内容や評価に影響することはありません。該当する箇所には「PR」などの表示をしています。詳しくはプライバシーポリシーもご覧ください。',
+        ],
+      },
+      {
+        h: '誤りのご指摘・情報提供',
+        p: ['掲載内容の誤りや、最新の情報（行事の変更、休止、御朱印の頒布状況など）をお気づきの方は、お問い合わせページからお知らせください。確認のうえ、訂正・更新します。サイトの追加・更新の履歴は、トップページの「更新情報」に掲載しています。'],
+      },
+    ],
+  },
+  en: {
+    title: 'About This Site & Editorial Policy',
+    description: 'How "Shrine The Pantheon" is run: how information is gathered and written, how photos and translations are handled, advertising and affiliate disclosure, and how to report corrections.',
+    lead: 'This page explains the thinking behind "Shrine The Pantheon" and how its pages are made.',
+    contactLabel: 'contact page',
+    updated: 'Last updated: November 16, 2026',
+    sections: [
+      {
+        h: 'About this site',
+        p: [
+          '"Shrine The Pantheon" is a guide to shrines across Japan — history, access, goshuin (shrine stamps) and nearby information — written so that first-time visitors and travelers from abroad can follow it easily. It is available in six languages: Japanese, English, Traditional Chinese, Spanish, French and Korean.',
+          'The site is run by an individual. To reach the operator, please use the contact page.',
+        ],
+      },
+      {
+        h: 'How information is gathered and written',
+        p: ['Each shrine page is prepared according to the following policy.'],
+        ul: [
+          'The shrine\'s own official website is the first source, followed by public materials such as municipal pages, tourism associations, shrine associations (jinjacho) and the Agency for Cultural Affairs.',
+          'Sources are named in the text (for example, "according to the official site"). When something cannot be confirmed, the page says so — for example, "not stated on the official site" — and does not fill the gap with guesses.',
+          'When sources disagree on an address, reading, date or number, the page does not silently pick one; it says that the sources differ.',
+          'Legends and benefits are written with hedges such as "is said to". Rankings, visitor numbers and similar figures appear only when a source can be checked.',
+          'Opening hours, goshuin availability, amulets and closures for construction or events can change. Please check the shrine\'s latest official information before you visit.',
+        ],
+      },
+      {
+        h: 'Photos',
+        p: ['Photos come from freely licensed sources such as Wikimedia Commons. The photographer, license and source are shown on each page.'],
+      },
+      {
+        h: 'Translations',
+        p: ['Content is written first in Japanese and then translated into the other five languages. During translation we check that facts, qualifiers and source attributions match the Japanese version, and we fix any differences we find.'],
+      },
+      {
+        h: 'Advertising and affiliate disclosure',
+        p: [
+          'This site contains links to outside sites for accommodation, tours and activities, and products such as books and shrine goods (Trip.com, Rakuten Travel, Klook, Booking.com, Amazon and others), and some of them use affiliate programs. If you sign up or buy through such a link, the operator may receive a referral fee.',
+          'The presence of these links or fees does not affect what is written about a shrine or how it is described. Relevant places are marked with "PR" or similar labels. See also the Privacy Policy.',
+        ],
+      },
+      {
+        h: 'Corrections and information',
+        p: ['If you notice a mistake, or up-to-date information such as a changed event, a closure or the status of goshuin, please tell us through the contact page. We will check it and correct or update the page. A history of additions and updates is shown in the "Updates" section of the home page.'],
+      },
+    ],
+  },
+  zh: {
+    title: '營運者資訊與編輯方針',
+    description: '說明「神社 The Pantheon」的營運方式：資訊的蒐集與撰寫方針、照片與翻譯的處理、廣告與聯盟行銷的揭露，以及更正的受理方式。',
+    lead: '本頁整理了「神社 The Pantheon」的製作理念與方式。',
+    contactLabel: '聯絡頁面',
+    updated: '最後更新：2026年11月16日',
+    sections: [
+      {
+        h: '關於本站',
+        p: [
+          '「神社 The Pantheon」是介紹日本全國神社的指南，從由緒、交通方式、御朱印到周邊資訊，讓第一次參拜的人與海外旅客也能輕鬆閱讀。提供日文、英文、繁體中文、西班牙文、法文、韓文六種語言。',
+          '本站由個人營運。如需聯絡營運者，請透過聯絡頁面。',
+        ],
+      },
+      {
+        h: '資訊的蒐集與撰寫方針',
+        p: ['各神社頁面依下列方針製作。'],
+        ul: [
+          '以神社官方網站為最優先的資訊來源，其次參考地方政府、觀光協會、神社廳、文化廳等公開資料。',
+          '內文會標明出處（例如「依官方網站」），無法確認的事項會寫明「官方網站未記載」「無法確認」，不以推測補足。',
+          '當不同資料的地址、讀音、日期或數字不一致時，不會擅自擇一，而是在內文說明資料之間有出入。',
+          '靈驗與由緒的傳說會以「據傳」等方式避免斷定。排名、人數等數字僅在能確認出處時才會刊載。',
+          '開放時間、御朱印的發放、授與品，以及因施工或活動而休止等情形可能變動。參拜前請務必確認神社官方的最新資訊。',
+        ],
+      },
+      {
+        h: '關於照片',
+        p: ['所刊載的照片皆使用維基共享資源等可自由使用之授權的照片，並在各頁面標示攝影者、授權與出處。'],
+      },
+      {
+        h: '關於翻譯',
+        p: ['內容以日文版為基準撰寫，再翻譯為其他五種語言。翻譯時會確認事實、但書與出處標示是否與日文版一致，發現出入便會修正。'],
+      },
+      {
+        h: '廣告與聯盟行銷的揭露',
+        p: [
+          '本站含有連至住宿、體驗行程，以及書籍、授與品等商品之外部網站（Trip.com、樂天旅遊、Klook、Booking.com、Amazon 等）的連結，其中包含使用聯盟行銷計畫的連結。若您透過連結申請或購買，營運者可能會獲得推薦費用。',
+          '連結的有無與推薦費用，不會影響神社資訊的內容與評價。相關位置會標示「PR（廣告）」等字樣。詳情亦請參閱隱私權政策。',
+        ],
+      },
+      {
+        h: '指正錯誤與提供資訊',
+        p: ['若發現內容有誤，或有最新資訊（活動變更、休止、御朱印發放情形等），歡迎透過聯絡頁面告知。我們會確認後進行更正與更新。網站新增與更新的紀錄，刊載於首頁的「更新資訊」。'],
+      },
+    ],
+  },
+  es: {
+    title: 'Sobre este sitio y política editorial',
+    description: 'Cómo funciona «Shrine The Pantheon»: cómo se reúne y se redacta la información, cómo se tratan las fotos y las traducciones, la divulgación de publicidad y afiliación, y cómo comunicar correcciones.',
+    lead: 'Esta página explica las ideas detrás de «Shrine The Pantheon» y cómo se elaboran sus páginas.',
+    contactLabel: 'página de contacto',
+    updated: 'Última actualización: 16 de noviembre de 2026',
+    sections: [
+      {
+        h: 'Sobre este sitio',
+        p: [
+          '«Shrine The Pantheon» es una guía de santuarios de todo Japón — historia, cómo llegar, goshuin (sellos del santuario) e información cercana — escrita para que quienes visitan por primera vez y los viajeros extranjeros puedan seguirla con facilidad. Está disponible en seis idiomas: japonés, inglés, chino tradicional, español, francés y coreano.',
+          'El sitio lo gestiona una persona. Para ponerse en contacto con el responsable, use la página de contacto.',
+        ],
+      },
+      {
+        h: 'Cómo se reúne y se redacta la información',
+        p: ['Cada página de santuario se elabora según la siguiente política.'],
+        ul: [
+          'La fuente principal es el sitio web oficial del propio santuario; después se consultan materiales públicos como páginas municipales, asociaciones de turismo, asociaciones de santuarios (jinjachō) y la Agencia de Asuntos Culturales.',
+          'Las fuentes se nombran en el texto (por ejemplo, «según el sitio oficial»). Lo que no se puede confirmar se indica así — por ejemplo, «no consta en el sitio oficial» — y no se rellena con suposiciones.',
+          'Cuando las fuentes discrepan en una dirección, una lectura, una fecha o una cifra, la página no elige una en silencio; indica que las fuentes difieren.',
+          'Las leyendas y los beneficios se redactan con cautela, con expresiones como «se dice que». Las clasificaciones, las cifras de visitantes y datos similares solo aparecen cuando se puede comprobar la fuente.',
+          'Los horarios, la disponibilidad de goshuin, los amuletos y los cierres por obras o eventos pueden cambiar. Consulte la información oficial más reciente del santuario antes de visitarlo.',
+        ],
+      },
+      {
+        h: 'Fotografías',
+        p: ['Las fotos proceden de fuentes con licencias libres, como Wikimedia Commons. En cada página se indican el autor, la licencia y la fuente.'],
+      },
+      {
+        h: 'Traducciones',
+        p: ['El contenido se redacta primero en japonés y después se traduce a los otros cinco idiomas. Al traducir se comprueba que los hechos, las salvedades y las atribuciones de fuentes coincidan con la versión japonesa, y se corrigen las diferencias que se encuentran.'],
+      },
+      {
+        h: 'Divulgación de publicidad y afiliación',
+        p: [
+          'Este sitio contiene enlaces a sitios externos de alojamiento, tours y actividades, y productos como libros y objetos de santuario (Trip.com, Rakuten Travel, Klook, Booking.com, Amazon y otros), y algunos usan programas de afiliación. Si se registra o compra a través de uno de estos enlaces, el responsable puede recibir una comisión.',
+          'La existencia de estos enlaces o comisiones no influye en lo que se escribe sobre un santuario ni en cómo se describe. Los lugares correspondientes se marcan con «PR» u otra etiqueta similar. Consulte también la Política de privacidad.',
+        ],
+      },
+      {
+        h: 'Correcciones e información',
+        p: ['Si detecta un error, o información actualizada como un cambio de evento, un cierre o el estado del goshuin, comuníquelo a través de la página de contacto. Lo comprobaremos y corregiremos o actualizaremos la página. El historial de novedades y actualizaciones figura en la sección «Novedades» de la página principal.'],
+      },
+    ],
+  },
+  fr: {
+    title: 'À propos du site et politique éditoriale',
+    description: 'Comment fonctionne « Shrine The Pantheon » : collecte et rédaction des informations, traitement des photos et des traductions, transparence sur la publicité et l’affiliation, et signalement des corrections.',
+    lead: 'Cette page présente les principes de « Shrine The Pantheon » et la façon dont ses pages sont réalisées.',
+    contactLabel: 'page de contact',
+    updated: 'Dernière mise à jour : 16 novembre 2026',
+    sections: [
+      {
+        h: 'À propos du site',
+        p: [
+          '« Shrine The Pantheon » est un guide des sanctuaires du Japon — histoire, accès, goshuin (cachets du sanctuaire) et informations à proximité — rédigé pour que les visiteurs d’une première fois et les voyageurs étrangers puissent le suivre facilement. Il est disponible en six langues : japonais, anglais, chinois traditionnel, espagnol, français et coréen.',
+          'Le site est géré par une personne. Pour joindre le responsable, utilisez la page de contact.',
+        ],
+      },
+      {
+        h: 'Collecte et rédaction des informations',
+        p: ['Chaque page de sanctuaire est préparée selon la politique suivante.'],
+        ul: [
+          'La première source est le site officiel du sanctuaire lui-même, puis des documents publics tels que les pages des municipalités, des offices de tourisme, des associations de sanctuaires (jinjachō) et l’Agence pour les affaires culturelles.',
+          'Les sources sont citées dans le texte (par exemple, « selon le site officiel »). Ce qui ne peut pas être confirmé est indiqué comme tel — par exemple, « non précisé sur le site officiel » — sans combler le vide par des suppositions.',
+          'Lorsque les sources divergent sur une adresse, une lecture, une date ou un chiffre, la page ne tranche pas en silence ; elle indique que les sources diffèrent.',
+          'Les légendes et les bienfaits sont rédigés avec prudence, avec des formules comme « on dit que ». Les classements, les chiffres de fréquentation et autres données semblables ne figurent que lorsque la source peut être vérifiée.',
+          'Les horaires, la disponibilité des goshuin, les amulettes et les fermetures pour travaux ou événements peuvent changer. Consultez les informations officielles les plus récentes du sanctuaire avant votre visite.',
+        ],
+      },
+      {
+        h: 'Photographies',
+        p: ['Les photos proviennent de sources sous licence libre, comme Wikimedia Commons. L’auteur, la licence et la source sont indiqués sur chaque page.'],
+      },
+      {
+        h: 'Traductions',
+        p: ['Le contenu est d’abord rédigé en japonais, puis traduit dans les cinq autres langues. Lors de la traduction, on vérifie que les faits, les réserves et les attributions de sources correspondent à la version japonaise, et l’on corrige les écarts constatés.'],
+      },
+      {
+        h: 'Transparence sur la publicité et l’affiliation',
+        p: [
+          'Ce site contient des liens vers des sites externes d’hébergement, de visites et d’activités, et de produits tels que des livres et des objets de sanctuaire (Trip.com, Rakuten Travel, Klook, Booking.com, Amazon et d’autres), dont certains relèvent de programmes d’affiliation. Si vous vous inscrivez ou achetez via un tel lien, le responsable peut percevoir une commission.',
+          'La présence de ces liens ou commissions n’influence ni le contenu ni la présentation des sanctuaires. Les emplacements concernés portent la mention « PR » ou équivalente. Voir aussi la Politique de confidentialité.',
+        ],
+      },
+      {
+        h: 'Corrections et informations',
+        p: ['Si vous remarquez une erreur, ou une information à jour (changement d’événement, fermeture, état des goshuin…), signalez-la via la page de contact. Nous la vérifierons et corrigerons ou mettrons à jour la page. L’historique des ajouts et mises à jour figure dans la section « Actualités » de la page d’accueil.'],
+      },
+    ],
+  },
+  ko: {
+    title: '운영자 정보 및 편집 방침',
+    description: '「신사 The Pantheon」의 운영 방식을 설명합니다. 정보를 모으고 쓰는 방침, 사진과 번역의 취급, 광고·제휴 링크의 공개, 정정 접수 방법을 안내합니다.',
+    lead: '「신사 The Pantheon」이 어떤 생각으로, 어떻게 만들어지는지 정리했습니다.',
+    contactLabel: '문의 페이지',
+    updated: '최종 업데이트: 2026년 11월 16일',
+    sections: [
+      {
+        h: '이 사이트에 대해',
+        p: [
+          '「신사 The Pantheon」은 일본 전국의 신사를 유래·교통편·고슈인·주변 정보까지, 처음 참배하시는 분과 해외 여행자도 알기 쉽게 소개하는 가이드입니다. 일본어·영어·중국어(번체)·스페인어·프랑스어·한국어의 6개 언어로 제공합니다.',
+          '운영은 개인이 하고 있습니다. 운영자에게 연락하실 때는 문의 페이지를 이용해 주세요.',
+        ],
+      },
+      {
+        h: '정보를 모으고 쓰는 방침',
+        p: ['각 신사 페이지는 다음 방침으로 만듭니다.'],
+        ul: [
+          '신사의 공식 사이트를 가장 우선하는 정보원으로 삼고, 그다음으로 지자체·관광협회·신사청·문화청 등의 공적 자료를 참고합니다.',
+          '본문에는 「공식 사이트에 따르면」처럼 출처를 밝히고, 확인할 수 없는 사항은 「공식 사이트에 기재가 없습니다」「확인하지 못했습니다」라고 씁니다. 추측으로 채우지 않습니다.',
+          '자료에 따라 주소·읽는 법·날짜·숫자가 다를 때는 어느 한쪽으로 정하지 않고, 자료 사이에 차이가 있음을 본문에 씁니다.',
+          '영험이나 유래의 전승은 「~라고 전해집니다」처럼 단정을 피해 씁니다. 순위나 인원수 등의 숫자는 출처를 확인할 수 있는 것만 싣습니다.',
+          '개문 시간, 고슈인 수여, 부적 등의 수여품, 공사나 행사로 인한 휴지 등은 바뀔 수 있습니다. 참배 전에 신사의 공식 최신 정보를 확인해 주세요.',
+        ],
+      },
+      {
+        h: '사진에 대해',
+        p: ['게재한 사진은 위키미디어 커먼즈 등에서 자유롭게 이용할 수 있는 라이선스의 것을 사용하며, 촬영자·라이선스·출처를 각 페이지에 표시합니다.'],
+      },
+      {
+        h: '번역에 대해',
+        p: ['내용은 일본어판을 기준으로 작성하고 다른 5개 언어로 번역합니다. 번역할 때 일본어판과 사실·단서·출처 표기에 차이가 없는지 확인하고, 차이를 발견하면 수정합니다.'],
+      },
+      {
+        h: '광고·제휴 링크의 공개',
+        p: [
+          '이 사이트에는 숙박·체험 투어, 서적이나 수여품 관련 상품 등의 외부 사이트(Trip.com, 라쿠텐 트래블, Klook, Booking.com, Amazon 등)로 가는 링크가 있으며, 제휴 프로그램을 이용한 링크가 포함되어 있습니다. 링크를 통해 신청·구매가 이루어지면 운영자에게 소개 수수료가 지급될 수 있습니다.',
+          '이러한 링크의 유무나 수수료가 신사에 대한 정보의 내용이나 평가에 영향을 주지 않습니다. 해당하는 곳에는 「PR」 등의 표시를 하고 있습니다. 자세한 내용은 개인정보 처리방침도 참고해 주세요.',
+        ],
+      },
+      {
+        h: '오류 지적·정보 제공',
+        p: ['게재 내용의 오류나 최신 정보(행사 변경, 휴지, 고슈인 수여 상황 등)를 발견하셨다면 문의 페이지로 알려 주세요. 확인한 뒤 정정·갱신합니다. 사이트의 추가·갱신 이력은 첫 페이지의 「업데이트 정보」에 게재하고 있습니다.'],
+      },
+    ],
+  },
+};
+const t = allText[lang];
+---
+
+<Layout title={t.title} description={t.description}>
+  <section class="bg-shrine-indigo-dark py-14 text-shrine-paper">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <h1 class="font-serif-jp text-2xl font-bold sm:text-3xl">{t.title}</h1>
+      <p class="mt-2 max-w-3xl text-sm leading-relaxed text-shrine-paper/80">{t.lead}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-4 py-14 sm:px-6">
+    <div class="prose prose-neutral max-w-none prose-headings:font-serif-jp prose-headings:text-shrine-ink prose-a:text-shrine-vermillion">
+      {t.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {s.p.map((para) => <p>{para}</p>)}
+          {s.ul && <ul>{s.ul.map((li) => <li>{li}</li>)}</ul>}
+        </>
+      ))}
+      <p>
+        <a href={`${base}/contact/`}>{t.contactLabel}</a>
+      </p>
+      <p class="text-xs text-shrine-ink-soft">{t.updated}</p>
+    </div>
+  </section>
+</Layout>

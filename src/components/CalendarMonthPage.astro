@@ -7,6 +7,7 @@ import CalendarNotice from './CalendarNotice.astro';
 import CalendarLegendBar from './CalendarLegendBar.astro';
 import CalendarShrineList from './CalendarShrineList.astro';
 import TripWideBanner from './TripWideBanner.astro';
+import { showTripBanners } from '../data/tripcom';
 import { calendarText } from '../data/calendarText';
 import { calendarRokuyoUi } from '../data/calendarRokuyoUi';
 import { koyomiStyle } from '../lib/calendarStyle';
@@ -96,7 +97,7 @@ const bannerAt = days.length >= 6 ? Math.floor(days.length / 3) : -1;
           {days.map(({ day, d, weekday, shrines, extras }, idx) => (
             <>
             {/* バナーは日別リストの3分の1あたり（本文の中段より少し上）に入れる */}
-            {idx === bannerAt && (
+            {showTripBanners && idx === bannerAt && (
               <li class="list-none"><TripWideBanner lang={lang} tag={`calendar-2027-${pad(month)}`} /></li>
             )}
             <li id={`d${pad(d)}`} class="rounded-2xl border border-shrine-gold/25 bg-white p-4 shadow-sm">
@@ -120,7 +121,7 @@ const bannerAt = days.length >= 6 ? Math.floor(days.length / 3) : -1;
           ))}
         </ol>
       )}
-      {days.length > 0 && bannerAt < 0 && <TripWideBanner lang={lang} tag={`calendar-2027-${pad(month)}`} />}
+      {showTripBanners && days.length > 0 && bannerAt < 0 && <TripWideBanner lang={lang} tag={`calendar-2027-${pad(month)}`} />}
       {days.some((x) => x.shrines.length > 0) && (
         <p class="mt-4 text-xs leading-relaxed text-shrine-ink-soft">{ui.month.relatedNote}</p>
       )}

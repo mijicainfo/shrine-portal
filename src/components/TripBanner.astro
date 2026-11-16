@@ -1,5 +1,5 @@
 ---
-import { buildTripcomBannerUrl, type TripLang } from '../data/tripcom';
+import { buildTripcomBannerUrl, showTripBanners, type TripLang } from '../data/tripcom';
 
 interface Props {
   lang: TripLang;
@@ -19,6 +19,8 @@ const t = {
 }[lang];
 ---
 
+{showTripBanners && (
+<>
 <!--
   Trip.com 提供の 300×250 バナー（iframe）。サイドバーなど親の幅が 300px 未満のときは、
   iframe の中身を切らずに縮小して収める（下の script が幅に合わせて scale を設定する）。
@@ -54,3 +56,5 @@ const t = {
   fitTripBanners();
   window.addEventListener('resize', fitTripBanners);
 </script>
+</>
+)}

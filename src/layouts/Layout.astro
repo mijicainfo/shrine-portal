@@ -11,6 +11,8 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  /** true のページは検索結果に出さない（robots noindex）。サイトマップからも外す（astro.config.mjs の filter を参照） */
+  noindex?: boolean;
 }
 
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
@@ -51,7 +53,7 @@ const siteName: Record<Lang, string> = {
 
 const ogLocale: Record<Lang, string> = { ja: 'ja_JP', en: 'en_US', zh: 'zh_TW', es: 'es_ES', fr: 'fr_FR', ko: 'ko_KR' };
 
-const { title, description = defaultDescription[lang], image = '/og-image.png' } = Astro.props;
+const { title, description = defaultDescription[lang], image = '/og-image.png', noindex = false } = Astro.props;
 const fullTitle = title.includes('The Pantheon') ? title : `${title}${titleSeparator[lang]}${titleSuffix[lang]}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(image, Astro.site).toString();
@@ -92,6 +94,7 @@ const showCalendarStrip = basePath !== '/' && !basePath.startsWith('/calendar/')
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalUrl} />
     {(Object.keys(hreflangPath) as Lang[]).filter((l) => liveLangs.includes(l)).map((l) => (

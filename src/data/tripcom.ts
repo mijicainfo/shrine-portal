@@ -16,6 +16,13 @@ export const tripcomConfig = {
   trackingIds: { ja: 'D21166518', en: 'D21166875', zh: 'D21166518', es: 'D21167183', fr: 'D21167183', ko: 'D21166518' } as Record<TripLang, string>,
 };
 
+/**
+ * Trip.com の画像バナー（TripBanner / TripWideBanner）を出すか。
+ * AdSense の審査（「有用性の低いコンテンツ」で不承認）の間は false にして商業色を下げる。承認後に true へ戻せば復活する。
+ * 文字リンク（ホテル・体験ツアー）はこの設定とは関係なく残る。
+ */
+export const showTripBanners = false;
+
 export type TripLang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
 
 export function isTripLang(lang: string): lang is TripLang {

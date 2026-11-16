@@ -1,5 +1,5 @@
 ---
-import { buildTripcomBannerUrl, type TripLang } from '../data/tripcom';
+import { buildTripcomBannerUrl, showTripBanners, type TripLang } from '../data/tripcom';
 
 interface Props {
   lang: TripLang;
@@ -20,6 +20,8 @@ const t = {
 }[lang];
 ---
 
+{showTripBanners && (
+<>
 <!--
   Trip.com 提供のバナー（iframe）。横幅が 728px 以上あれば横長（728×90）、狭ければ 300×250（ほぼ正方形）を表示する。
   どちらを出すかは下の script が親の幅で決めて src を設定する（1ページで読み込むのは常に1つだけ）。
@@ -59,3 +61,5 @@ const t = {
   layoutTripWideBanners();
   window.addEventListener('resize', layoutTripWideBanners);
 </script>
+</>
+)}

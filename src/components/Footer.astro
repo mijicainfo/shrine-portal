@@ -197,6 +197,7 @@ const t = {
     correction: 'お問い合わせ',
     correctionPrefix: '掲載内容に誤りや訂正すべき点がございましたら、',
     correctionSuffix: 'よりお知らせください。',
+    about: '運営者情報・編集方針',
     privacy: 'プライバシーポリシー',
     copyright: '© 2026 神社 The Pantheon',
     languages: '言語',
@@ -206,6 +207,7 @@ const t = {
     correction: 'correction',
     correctionPrefix: 'Spot an error or something out of date? Please let us know via our',
     correctionSuffix: 'page.',
+    about: 'About & Editorial Policy',
     privacy: 'Privacy Policy',
     copyright: '© 2026 Shrine The Pantheon',
     languages: 'Languages',
@@ -215,6 +217,7 @@ const t = {
     correction: '聯絡我們',
     correctionPrefix: '如發現內容有誤或需要更新之處，歡迎透過',
     correctionSuffix: '頁面告訴我們。',
+    about: '營運者資訊與編輯方針',
     privacy: '隱私權政策',
     copyright: '© 2026 神社 The Pantheon',
     languages: '語言',
@@ -224,6 +227,7 @@ const t = {
     correction: 'contacto',
     correctionPrefix: '¿Encontraste un error o algo desactualizado? Avísanos a través de nuestra página de',
     correctionSuffix: '.',
+    about: 'Sobre el sitio y política editorial',
     privacy: 'Política de Privacidad',
     copyright: '© 2026 Shrine The Pantheon',
     languages: 'Idiomas',
@@ -233,6 +237,7 @@ const t = {
     correction: 'contact',
     correctionPrefix: 'Vous avez repéré une erreur ou une information obsolète ? Merci de nous le signaler via notre page de',
     correctionSuffix: '.',
+    about: 'À propos et politique éditoriale',
     privacy: 'Politique de Confidentialité',
     copyright: '© 2026 Shrine The Pantheon',
     languages: 'Langues',
@@ -242,6 +247,7 @@ const t = {
     correction: '문의하기',
     correctionPrefix: '내용에 오류가 있거나 수정이 필요한 부분이 있다면,',
     correctionSuffix: '페이지로 알려주세요.',
+    about: '운영자 정보 및 편집 방침',
     privacy: '개인정보처리방침',
     copyright: '© 2026 神社 The Pantheon',
     languages: '언어',
@@ -301,7 +307,10 @@ const languageLinks: { href: string; label: string }[] = [
       <p class="text-xs text-shrine-paper/60">
         {t.correctionPrefix}<a href={`${base}/contact/`} class="text-shrine-gold underline hover:text-white">{t.correction}</a>{t.correctionSuffix}
       </p>
-      <a href={`${base}/privacy/`} class="text-xs text-shrine-paper/60 underline hover:text-white">{t.privacy}</a>
+      <span class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+        <a href={`${base}/about/`} class="text-xs text-shrine-paper/60 underline hover:text-white">{t.about}</a>
+        <a href={`${base}/privacy/`} class="text-xs text-shrine-paper/60 underline hover:text-white">{t.privacy}</a>
+      </span>
       <p class="text-xs text-shrine-paper/50">
         {t.copyright}
       </p>

@@ -40,6 +40,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-16',
+    category: 'other',
+    note: {
+      ja: '「運営者情報・編集方針」ページを公開しました（情報の集め方、出典の扱い、広告・アフィリエイトの開示）',
+      en: 'Published the "About This Site & Editorial Policy" page (how information is gathered, how sources are handled, advertising and affiliate disclosure)',
+      zh: '發布了「營運者資訊與編輯方針」頁面（資訊的蒐集方式、出處的處理、廣告與聯盟行銷的揭露）',
+      es: 'Publicamos la página «Sobre este sitio y política editorial» (cómo se reúne la información, el tratamiento de las fuentes, divulgación de publicidad y afiliación)',
+      fr: 'Publication de la page « À propos du site et politique éditoriale » (collecte des informations, traitement des sources, transparence sur la publicité et l’affiliation)',
+      ko: '「운영자 정보 및 편집 방침」 페이지를 공개했습니다(정보를 모으는 방법, 출처의 취급, 광고·제휴 링크의 공개)',
+      href: '/about/',
+    },
+  },
+  {
     date: '2026-11-15',
     shrineSlugs: ['kinkasan-koganeyama-jinja', 'shirataki-jinja-happo', 'hotokusan-inari-taisha', 'horikoshi-jinja', 'kozu-gu'],
   },
@@ -50,19 +63,6 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-11-11',
     shrineSlugs: ['ariakeyama-jinja', 'nitta-jinja-satsumasendai', 'hayatani-jinja', 'karatsu-jinja', 'oki-no-gu'],
-  },
-  {
-    date: '2026-11-07',
-    category: 'other',
-    note: {
-      ja: '開運カレンダー2027（天赦日・一粒万倍日・己巳の日などの月別一覧と、六曜の参考ページ）を公開しました',
-      en: 'Published the 2027 Auspicious Days Calendar (Tenshabi, Ichiryumanbai and more, month by month, plus a reference page for rokuyo)',
-      zh: '發布了「2027年開運日曆」（天赦日、一粒萬倍日等的月別一覽，以及六曜參考頁面）',
-      es: 'Publicamos el Calendario de días propicios 2027 (Tenshanichi, Ichiryū-manbai-bi y más, mes a mes, y una página de referencia sobre el rokuyō)',
-      fr: 'Publication du Calendrier des jours fastes 2027 (Tenshanichi, Ichiryū-manbai-bi et plus, mois par mois, et une page de référence sur les rokuyō)',
-      ko: '2027 개운 캘린더(덴샤니치·이치류만바이비 등의 월별 일람과 로쿠요 참고 페이지)를 공개했습니다',
-      href: '/calendar/2027/',
-    },
   },
   {
     date: '2026-11-07',

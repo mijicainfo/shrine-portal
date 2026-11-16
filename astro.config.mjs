@@ -105,7 +105,7 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
-  integrations: [sitemap({ serialize: serializeSitemapItem })],
+  integrations: [sitemap({ serialize: serializeSitemapItem, filter: (page) => !page.includes('/mypage/') })],
   markdown: {
     processor: satteri({
       mdastPlugins: [fixSingleTildeStrikethrough],
