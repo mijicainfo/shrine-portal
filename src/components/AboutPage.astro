@@ -1,6 +1,6 @@
 ---
 // 運営者情報・編集方針ページ（/about/）。各言語の src/pages/**/about/index.astro から使う。
-// 運営者情報（会社名・所在地・代表者・メール・事業内容）は、運営者本人の指示（2026-11-16）で掲載している。変更するときは下の operator を直す。
+// 運営者情報（会社名・所在地・代表者・事業内容。メールアドレスは非公開）は、運営者本人の指示（2026-11-16）で掲載している。変更するときは下の operator を直す。
 import Layout from '../layouts/Layout.astro';
 
 type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
@@ -30,13 +30,13 @@ const allText: Record<Lang, Text> = {
     lead: '「神社 The Pantheon」がどのような考えで、どのように作られているかをまとめました。',
     contactLabel: 'お問い合わせページ',
     updated: '最終更新：2026年11月16日',
-    operator: {"h":"運営者情報","rows":[["運営会社","株式会社ＭＩＪＩＣＡ"],["所在地","大阪府大阪市中央区糸屋町2-1-4 CROSSBLDG.6F"],["代表者","T.YOSHIDA"],["メールアドレス","mijica.info@gmail.com"],["事業内容","WEBサイトの制作・管理・運営業務"]]},
+    operator: {"h":"運営者情報","rows":[["運営会社","株式会社ＭＩＪＩＣＡ"],["所在地","大阪府大阪市中央区糸屋町2-1-4 CROSSBLDG.6F"],["代表者","T.YOSHIDA"],["事業内容","WEBサイトの制作・管理・運営業務"]]},
     sections: [
       {
         h: 'このサイトについて',
         p: [
           '「神社 The Pantheon」は、日本全国の神社を、由緒・アクセス・御朱印・周辺情報まで、初めて参拝される方や海外からの旅行者にも分かりやすく紹介するガイドです。日本語・英語・中国語（繁体字）・スペイン語・フランス語・韓国語の6言語で提供しています。',
-          '当サイトは、下記の「運営者情報」に記載の株式会社ＭＩＪＩＣＡが運営しています。運営者への連絡は、運営者情報のメールアドレス、またはお問い合わせページからお願いします。',
+          '当サイトは、下記の「運営者情報」に記載の株式会社ＭＩＪＩＣＡが運営しています。運営者への連絡は、お問い合わせページからお願いします。',
         ],
       },
       {
@@ -77,13 +77,13 @@ const allText: Record<Lang, Text> = {
     lead: 'This page explains the thinking behind "Shrine The Pantheon" and how its pages are made.',
     contactLabel: 'contact page',
     updated: 'Last updated: November 16, 2026',
-    operator: {"h":"Operator information","rows":[["Operating company","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Address","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Representative","T. Yoshida"],["Email","mijica.info@gmail.com"],["Business","Website production, management and operation"]]},
+    operator: {"h":"Operator information","rows":[["Operating company","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Address","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Representative","T. Yoshida"],["Business","Website production, management and operation"]]},
     sections: [
       {
         h: 'About this site',
         p: [
           '"Shrine The Pantheon" is a guide to shrines across Japan — history, access, goshuin (shrine stamps) and nearby information — written so that first-time visitors and travelers from abroad can follow it easily. It is available in six languages: Japanese, English, Traditional Chinese, Spanish, French and Korean.',
-          'The site is operated by the company listed under "Operator information" below. To reach the operator, please use the email address given there or the contact page.',
+          'The site is operated by the company listed under "Operator information" below. To reach the operator, please use the contact page.',
         ],
       },
       {
@@ -124,13 +124,13 @@ const allText: Record<Lang, Text> = {
     lead: '本頁整理了「神社 The Pantheon」的製作理念與方式。',
     contactLabel: '聯絡頁面',
     updated: '最後更新：2026年11月16日',
-    operator: {"h":"營運者資訊","rows":[["營運公司","株式会社ＭＩＪＩＣＡ（MIJICA Co., Ltd.）"],["所在地","日本大阪府大阪市中央區糸屋町2-1-4 CROSS BLDG. 6F"],["代表人","T. Yoshida"],["電子郵件","mijica.info@gmail.com"],["業務內容","網站的製作、管理與營運"]]},
+    operator: {"h":"營運者資訊","rows":[["營運公司","株式会社ＭＩＪＩＣＡ（MIJICA Co., Ltd.）"],["所在地","日本大阪府大阪市中央區糸屋町2-1-4 CROSS BLDG. 6F"],["代表人","T. Yoshida"],["業務內容","網站的製作、管理與營運"]]},
     sections: [
       {
         h: '關於本站',
         p: [
           '「神社 The Pantheon」是介紹日本全國神社的指南，從由緒、交通方式、御朱印到周邊資訊，讓第一次參拜的人與海外旅客也能輕鬆閱讀。提供日文、英文、繁體中文、西班牙文、法文、韓文六種語言。',
-          '本站由下方「營運者資訊」所載之株式会社ＭＩＪＩＣＡ營運。如需聯絡營運者，請使用營運者資訊中的電子郵件，或透過聯絡頁面。',
+          '本站由下方「營運者資訊」所載之株式会社ＭＩＪＩＣＡ營運。如需聯絡營運者，請透過聯絡頁面。',
         ],
       },
       {
@@ -171,13 +171,13 @@ const allText: Record<Lang, Text> = {
     lead: 'Esta página explica las ideas detrás de «Shrine The Pantheon» y cómo se elaboran sus páginas.',
     contactLabel: 'página de contacto',
     updated: 'Última actualización: 16 de noviembre de 2026',
-    operator: {"h":"Información del operador","rows":[["Empresa operadora","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Dirección","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Representante","T. Yoshida"],["Correo electrónico","mijica.info@gmail.com"],["Actividad","Producción, gestión y operación de sitios web"]]},
+    operator: {"h":"Información del operador","rows":[["Empresa operadora","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Dirección","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Representante","T. Yoshida"],["Actividad","Producción, gestión y operación de sitios web"]]},
     sections: [
       {
         h: 'Sobre este sitio',
         p: [
           '«Shrine The Pantheon» es una guía de santuarios de todo Japón — historia, cómo llegar, goshuin (sellos del santuario) e información cercana — escrita para que quienes visitan por primera vez y los viajeros extranjeros puedan seguirla con facilidad. Está disponible en seis idiomas: japonés, inglés, chino tradicional, español, francés y coreano.',
-          'El sitio lo opera la empresa indicada en «Información del operador», más abajo. Para ponerse en contacto con el operador, use el correo electrónico que figura allí o la página de contacto.',
+          'El sitio lo opera la empresa indicada en «Información del operador», más abajo. Para ponerse en contacto con el operador, use la página de contacto.',
         ],
       },
       {
@@ -218,13 +218,13 @@ const allText: Record<Lang, Text> = {
     lead: 'Cette page présente les principes de « Shrine The Pantheon » et la façon dont ses pages sont réalisées.',
     contactLabel: 'page de contact',
     updated: 'Dernière mise à jour : 16 novembre 2026',
-    operator: {"h":"Informations sur l’exploitant","rows":[["Société exploitante","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Adresse","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Représentant","T. Yoshida"],["E-mail","mijica.info@gmail.com"],["Activité","Création, gestion et exploitation de sites web"]]},
+    operator: {"h":"Informations sur l’exploitant","rows":[["Société exploitante","MIJICA Co., Ltd. (株式会社ＭＩＪＩＣＡ)"],["Adresse","CROSS BLDG. 6F, 2-1-4 Itoyamachi, Chuo-ku, Osaka-shi, Osaka, Japan"],["Représentant","T. Yoshida"],["Activité","Création, gestion et exploitation de sites web"]]},
     sections: [
       {
         h: 'À propos du site',
         p: [
           '« Shrine The Pantheon » est un guide des sanctuaires du Japon — histoire, accès, goshuin (cachets du sanctuaire) et informations à proximité — rédigé pour que les visiteurs d’une première fois et les voyageurs étrangers puissent le suivre facilement. Il est disponible en six langues : japonais, anglais, chinois traditionnel, espagnol, français et coréen.',
-          'Le site est exploité par la société indiquée sous « Informations sur l’exploitant » ci-dessous. Pour joindre l’exploitant, utilisez l’adresse e-mail qui y figure ou la page de contact.',
+          'Le site est exploité par la société indiquée sous « Informations sur l’exploitant » ci-dessous. Pour joindre l’exploitant, utilisez la page de contact.',
         ],
       },
       {
@@ -265,13 +265,13 @@ const allText: Record<Lang, Text> = {
     lead: '「신사 The Pantheon」이 어떤 생각으로, 어떻게 만들어지는지 정리했습니다.',
     contactLabel: '문의 페이지',
     updated: '최종 업데이트: 2026년 11월 16일',
-    operator: {"h":"운영자 정보","rows":[["운영 회사","株式会社ＭＩＪＩＣＡ(MIJICA Co., Ltd.)"],["소재지","일본 오사카부 오사카시 주오구 이토야마치 2-1-4 CROSS BLDG. 6F"],["대표자","T. Yoshida"],["이메일","mijica.info@gmail.com"],["사업 내용","웹사이트의 제작·관리·운영 업무"]]},
+    operator: {"h":"운영자 정보","rows":[["운영 회사","株式会社ＭＩＪＩＣＡ(MIJICA Co., Ltd.)"],["소재지","일본 오사카부 오사카시 주오구 이토야마치 2-1-4 CROSS BLDG. 6F"],["대표자","T. Yoshida"],["사업 내용","웹사이트의 제작·관리·운영 업무"]]},
     sections: [
       {
         h: '이 사이트에 대해',
         p: [
           '「신사 The Pantheon」은 일본 전국의 신사를 유래·교통편·고슈인·주변 정보까지, 처음 참배하시는 분과 해외 여행자도 알기 쉽게 소개하는 가이드입니다. 일본어·영어·중국어(번체)·스페인어·프랑스어·한국어의 6개 언어로 제공합니다.',
-          '이 사이트는 아래 「운영자 정보」에 기재된 회사가 운영합니다. 운영자에게 연락하실 때는 운영자 정보의 이메일 주소 또는 문의 페이지를 이용해 주세요.',
+          '이 사이트는 아래 「운영자 정보」에 기재된 회사가 운영합니다. 운영자에게 연락하실 때는 문의 페이지를 이용해 주세요.',
         ],
       },
       {
