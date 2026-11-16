@@ -61,12 +61,17 @@ const shrineData = await Promise.all(
     }
   }
 
+  // リンクは文字列結合で組み立てる（テンプレート文字列のままだと、Google が未完成のURLとして 404 扱いにするため）
+  function shrineHref(id) {
+    return '/ko/shrines/' + id + '/';
+  }
+
   function cardHtml(shrine) {
     const img = shrine.image
       ? `<img src="${shrine.image}" alt="${shrine.name}" class="h-40 w-full object-cover" />`
       : `<div class="flex h-40 items-center justify-center bg-shrine-indigo text-4xl text-shrine-paper">⛩</div>`;
     return `
-      <a href="/ko/shrines/${shrine.id}/" class="block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <a href="${shrineHref(shrine.id)}" class="block overflow-hidden rounded-2xl border border-shrine-gold/25 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
         ${img}
         <div class="p-5">
           <p class="text-xs font-medium tracking-wide text-shrine-vermillion">${shrine.prefecture}, ${shrine.city}</p>
