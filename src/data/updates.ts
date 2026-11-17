@@ -40,19 +40,6 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
-    date: '2026-11-16',
-    category: 'other',
-    note: {
-      ja: '「運営者情報・編集方針」ページを公開しました（情報の集め方、出典の扱い、広告・アフィリエイトの開示）',
-      en: 'Published the "About This Site & Editorial Policy" page (how information is gathered, how sources are handled, advertising and affiliate disclosure)',
-      zh: '發布了「營運者資訊與編輯方針」頁面（資訊的蒐集方式、出處的處理、廣告與聯盟行銷的揭露）',
-      es: 'Publicamos la página «Sobre este sitio y política editorial» (cómo se reúne la información, el tratamiento de las fuentes, divulgación de publicidad y afiliación)',
-      fr: 'Publication de la page « À propos du site et politique éditoriale » (collecte des informations, traitement des sources, transparence sur la publicité et l’affiliation)',
-      ko: '「운영자 정보 및 편집 방침」 페이지를 공개했습니다(정보를 모으는 방법, 출처의 취급, 광고·제휴 링크의 공개)',
-      href: '/about/',
-    },
-  },
-  {
     date: '2026-11-15',
     shrineSlugs: ['kinkasan-koganeyama-jinja', 'shirataki-jinja-happo', 'hotokusan-inari-taisha', 'horikoshi-jinja', 'kozu-gu'],
   },
