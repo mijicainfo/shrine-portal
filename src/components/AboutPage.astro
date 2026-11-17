@@ -307,6 +307,7 @@ const allText: Record<Lang, Text> = {
     ],
   },
 };
+const contactCta: Record<Lang, [string, string]> = {"ja":["お問い合わせ","お問い合わせはこちら"],"en":["Contact","Contact us here"],"zh":["聯絡我們","請由此聯絡我們"],"es":["Contacto","Contáctenos aquí"],"fr":["Contact","Contactez-nous ici"],"ko":["문의","문의는 여기로"]};
 const t = allText[lang];
 ---
 
@@ -337,6 +338,10 @@ const t = allText[lang];
                     </dd>
                   </div>
                 ))}
+                <div class="grid gap-1 px-4 py-3 sm:grid-cols-[10rem_1fr] sm:gap-4">
+                  <dt class="font-bold text-shrine-ink">{contactCta[lang][0]}</dt>
+                  <dd class="text-shrine-ink"><a href={`${base}/contact/`} class="text-shrine-vermillion-dark underline">{contactCta[lang][1]}</a></dd>
+                </div>
               </dl>
             </>
           )}
