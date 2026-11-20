@@ -29,6 +29,8 @@ El Meiji Jingu divide el horario de recepción de la ceremonia de la primera ora
 
 Hay quien toma como referencia el "matsu no uchi" (el periodo en que se mantienen los adornos de pino de Año Nuevo; suele decirse que va hasta el 7 de enero en la región de Kanto y hasta el 15 de enero en la de Kansai). Sin embargo, esto se menciona sobre todo como costumbre de la vida cotidiana, y no lo pudimos confirmar como un plazo oficial de los santuarios. Para mayor tranquilidad, consulte en el sitio web oficial del santuario que desea visitar el periodo de su ceremonia de la primera oración y de la entrega de artículos.
 
+Hay santuarios que el 15 de enero celebran un rito en el que se queman los adornos de Año Nuevo y los ofuda (el ritual Sagicho del Tsurugaoka Hachimangu y la ceremonia de quema de ofuda antiguos (Tondo) del Sumiyoshi Taisha; se presentan más abajo en "Cómo devolver los ofuda y omamori antiguos").
+
 ## Cómo es la visita (del temizu a la reverencia de oración)
 
 Tomando como ejemplo los pasos que figuran en "Etiqueta y modales de la visita" del sitio web oficial del Santuario de Ise (Jingu) y en "Para quienes visitan" del sitio web oficial del Meiji Jingu, presentamos el recorrido una vez dentro del recinto.
@@ -117,6 +119,32 @@ Algunos santuarios aceptan en un "osamedokoro" (punto de devolución) los ofuda 
 
 Ambos santuarios limitan lo que aceptan a ofuda, omamori y similares. Los adornos de Año Nuevo y los objetos decorativos hay que desecharlos de otra manera, así que antes de llevarlos consulte la guía del santuario donde piensa devolverlos. El lugar de devolución y el periodo de recepción varían según el santuario.
 
+### Devolverlos al santuario donde se recibieron
+
+El sitio web oficial del Kitano Tenmangu explica que los omamori y los ofuda son objetos sagrados que portan el espíritu de la deidad (Tenjin-sama), y pide devolver los antiguos al punto de devolución (nosatsusho). Indica que lo básico es devolverlos al santuario donde se recibieron, aunque quienes viven lejos pueden consultar a un santuario cercano y devolverlos allí.
+
+Sobre el momento de la devolución, el mismo sitio indica lo siguiente. Los de exámenes, de parto seguro y similares se devuelven con gratitud cuando el deseo se ha cumplido. Para los demás omamori y ofuda no hay una fecha fija, pero, como desde antiguo se recibe en Año Nuevo a la deidad del año (Toshigami-sama) y se pide por la felicidad del nuevo año, existe la costumbre de recibir cada año, en Año Nuevo, omamori y ofuda nuevos.
+
+### Quemarlos en el dondo-yaki (Sagicho)
+
+Algunos santuarios queman los adornos de Año Nuevo y los ofuda antiguos en un rito de fuego hacia el 15 de enero. Presentamos, como ejemplo, las páginas de eventos anuales de los sitios web oficiales de dos santuarios.
+
+- **Tsurugaoka Hachimangu**: anuncia el ritual Sagicho el 15 de enero a las 7:00, junto al estanque Genji. El santuario describe el Sagicho como un evento popular que suele llamarse Tondo-yaki o Dondon-yaki, y explica que los adornos de Año Nuevo como el shimekazari y el kadomatsu que se han llevado al santuario se apilan y se queman en un fuego purificador.
+- **Sumiyoshi Taisha**: anuncia la ceremonia de quema de ofuda antiguos (Tondo) el 15 de enero a las 9:00. La describe como un rito en el que se queman, con un fuego sagrado, los ofuda y omamori antiguos que lo protegieron durante el último año, las cuerdas shimenawa de Año Nuevo y los adornos, y explica que se dice que, al recibir el humo de este fuego, se goza de salud y ausencia de enfermedades.
+
+Las fechas y horas pueden variar según el año, y lo que se acepta difiere según el santuario (los puntos de devolución del Meiji Jingu y del Santuario de Ise (Jingu) presentados antes no aceptan los adornos de Año Nuevo ni los objetos decorativos). Si piensa llevar objetos a un dondo-yaki, consulte la guía más reciente de ese santuario.
+
+## Visita al santuario durante el luto (mochu e imichu)
+
+Sobre el hatsumode en un año en que ha fallecido un familiar, el sitio web oficial del Kitano Tenmangu (preguntas frecuentes) y las preguntas y respuestas de la Asociación de Santuarios de Tokio (Tokyo Jinjacho) explican cómo se suele entender. Ambas indican también que las costumbres pueden variar según el santuario y la región.
+
+- **Kitano Tenmangu**: indica que hay diferencias de costumbre según la región y que los periodos pueden variar, pero que, por lo general, se considera que hasta la ceremonia del día 50 (el equivalente sintoísta del día 49 budista) dura el periodo de "imi" (忌, periodo de abstención), y hasta la ceremonia del primer aniversario el de "fuku" (服, periodo de duelo). Durante el periodo de "imi", la visita al santuario y el culto al kamidana deben hacerse una vez pasado ese periodo. En el periodo de "fuku" que sigue, se expresa el pésame por el difunto, pero la visita al santuario no supone ningún problema. Además, pide abstenerse de visitar un santuario el día en que se asiste a un funeral, se visita una tumba o se celebra un servicio conmemorativo (hoji).
+- **Asociación de Santuarios de Tokio (Tokyo Jinjacho)**: explica que hoy, en el caso más grave, la muerte de un padre o una madre, se evita visitar santuarios y rendir culto al kamidana durante 50 días. Añade que el Santuario de Ise (Jingu), siguiendo el ejemplo de la Casa Imperial, pide abstenerse de visitarlo durante un año.
+
+La referencia para el periodo de "imi" varía según el parentesco con la persona fallecida. El Kitano Tenmangu indica 50 días para los padres; 30 días para el esposo, los suegros, los abuelos y los bisabuelos; 20 días para la esposa, los hijos, los hermanos y los tíos; 10 días para los nietos; y 3 días para los sobrinos y los primos (no se aplica a los niños menores de 7 años). La tabla de la Asociación de Santuarios de Tokio difiere en algunos parentescos (por ejemplo, 20 días para los bisabuelos). Como la forma de contar los días varía según el santuario, lo más seguro es consultar al santuario que se desea visitar.
+
+Si el hatsumode cae dentro del periodo de "imi", la idea de las guías oficiales anteriores es visitar el santuario una vez pasado ese periodo. El Kitano Tenmangu escribe que el periodo de abstención por un duelo familiar depende, en última instancia, del estado de ánimo de cada persona, y pide entenderlo como una referencia para marcar el momento de superar la tristeza y volver a la vida cotidiana.
+
 ## Guías oficiales de santuarios populares en el hatsumode
 
 La lista anterior recoge ejemplos de santuarios que publican guías en sus sitios web oficiales en la época del hatsumode. No es una clasificación: presenta el contenido de cada guía. Para la historia, el acceso y los detalles de los goshuin de cada santuario, consulte su propia página.
@@ -135,6 +163,14 @@ El Santuario de Ise (Jingu) y el Meiji Jingu indican el orden de purificar las m
 
 El Meiji Jingu y el Santuario de Ise (Jingu) los reciben en puntos de devolución dentro del recinto (koshinpu osamedokoro y furufuda osamedokoro). Lo que se acepta se limita a ofuda, omamori y similares, y según el santuario, solo los del propio santuario. El lugar de devolución puede cambiar según el día, así que consulte de antemano el sitio web oficial.
 
+### ¿Cuándo es el dondo-yaki (Sagicho)?
+
+El Tsurugaoka Hachimangu anuncia en su página de eventos anuales el ritual Sagicho el 15 de enero a las 7:00, y el Sumiyoshi Taisha, la ceremonia de quema de ofuda antiguos (Tondo) el 15 de enero a las 9:00. Para otros santuarios, consulte cada sitio web oficial.
+
+### ¿Se puede hacer el hatsumode estando de luto?
+
+El Kitano Tenmangu indica que, por lo general, hasta la ceremonia del día 50 dura el periodo de "imi" (忌, periodo de abstención), que durante él la visita al santuario debe hacerse una vez pasado ese periodo, y que en el periodo de "fuku" (服, periodo de duelo) que sigue la visita no supone ningún problema. La Asociación de Santuarios de Tokio (Tokyo Jinjacho) indica que, en el caso de la muerte de un padre o una madre, se evita visitar santuarios durante 50 días. El criterio varía según el parentesco y el santuario, así que consulte al santuario que desea visitar.
+
 ### ¿Se puede ir en coche?
 
 El Meiji Jingu indica que durante los tres primeros días no se puede entrar en coche al recinto, y el Sumiyoshi Taisha indicaba que del 31 de diciembre al 3 de enero no se podía visitar en coche (ambos, Reiwa 8). El Fushimi Inari Taisha mantiene cerrado el aparcamiento del recinto del 30 de diciembre al 6 de enero. Se recomienda usar el transporte público.
@@ -147,4 +183,5 @@ Depende del santuario. El Meiji Jingu y el Sumiyoshi Taisha ofrecían goshuin ex
 
 - Los horarios, los artículos y las restricciones de tráfico corresponden a lo que cada santuario indicaba en su sitio web oficial para el Año Nuevo de Reiwa 8 (2026). Las guías de Reiwa 9 (2027) se publican a fin de año, así que consulte siempre el sitio web oficial más reciente.
 - La etiqueta de la oración y la forma de devolver los ofuda antiguos se basan en las guías de los sitios web oficiales del Santuario de Ise (Jingu), el Meiji Jingu y el Izumo Taisha (comprobadas en noviembre de 2026).
-- Fecha de comprobación: 20 de noviembre de 2026.
+- Lo relativo a devolver los ofuda al santuario donde se recibieron, al dondo-yaki y al luto (mochu e imichu) se basa en las guías de los sitios web oficiales del Kitano Tenmangu, la Asociación de Santuarios de Tokio (Tokyo Jinjacho), el Tsurugaoka Hachimangu y el Sumiyoshi Taisha (comprobadas en noviembre de 2026). No pudimos encontrar una norma oficial de los santuarios sobre la duración del "matsu no uchi".
+- Fecha de comprobación: 21 de noviembre de 2026.

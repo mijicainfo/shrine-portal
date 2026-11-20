@@ -29,6 +29,8 @@ Meiji Jingu divides the reception hours for its New Year first prayer ceremony a
 
 Some people aim to visit within "matsu no uchi," the period when New Year pine decorations are displayed (often said to run to January 7 in eastern Japan and to January 15 in western Japan). This is mostly a custom of daily life, and we could not confirm it as an official deadline set by shrines. If you have a particular shrine in mind, check its official website for the dates of its New Year ceremony and amulet distribution.
 
+Some shrines hold a ritual on January 15 at which New Year decorations and old talismans are burned (Tsurugaoka Hachimangu's Sagicho ritual and Sumiyoshi Taisha's old-talisman burning ceremony; see "Returning old amulets and talismans" below).
+
 ## How to visit: from washing your hands to praying
 
 The steps below follow the official pages of Ise Jingu ("Etiquette and manners for visiting") and Meiji Jingu ("For visitors").
@@ -117,6 +119,32 @@ Some shrines collect the previous year's talismans and amulets at a dedicated co
 
 Both shrines limit what they accept to ofuda, omamori and similar items. New Year decorations and ornaments have to be disposed of in another way, so check the announcement of the shrine you plan to visit before bringing them. Where to return items and when they are accepted differ by shrine.
 
+### Returning them to the shrine where you received them
+
+The Kitano Tenmangu website explains that amulets and talismans are sacred because they carry the spirit of the deity, and asks visitors to return old ones to its collection point (nosatsusho). It says that returning them to the shrine where you received them is the basic rule, but that people who live far away may ask a nearby shrine and return them there.
+
+On timing, the same site says the following. Amulets for exams or safe childbirth are returned with thanks when the wish has been fulfilled. For other amulets and talismans there is no set date, but since it has long been the custom to welcome the New Year deity at New Year and pray for a happy year, there is a custom of receiving new amulets and talismans every year at New Year.
+
+### Burning them at a dondo-yaki (Sagicho) fire ritual
+
+Some shrines burn New Year decorations and old talismans in a fire ritual around January 15. Here are two examples from the annual-events pages of their official websites.
+
+- **Tsurugaoka Hachimangu**: It announces a Sagicho ritual at 7:00 AM on January 15, beside Genji Pond. The shrine describes Sagicho as a folk event commonly called Tondo-yaki or Dondon-yaki, and says that New Year shimekazari ornaments, kadomatsu pine decorations and other items brought to the shrine are piled up and burned in a purifying fire.
+- **Sumiyoshi Taisha**: It announces an old-talisman burning ceremony ("Tondo") at 9:00 AM on January 15. It describes it as a ritual in which old talismans and amulets that protected you over the past year, New Year shimenawa ropes and decorations are burned in a sacred fire, and says that being touched by the smoke of this fire is said to bring good health.
+
+Dates can change from year to year, and what is accepted differs by shrine (the collection points of Meiji Jingu and Ise Jingu introduced above do not accept New Year decorations or ornaments). If you plan to bring items to a fire ritual, check the latest announcement of that shrine.
+
+## Visiting a shrine during mourning
+
+For New Year visits in a year when a family member has died, the FAQ on the Kitano Tenmangu website and the Q&A of the Tokyo Shrine Association (Tokyo-to Jinjacho) explain the usual way of thinking. Both also note that customs can differ by shrine and region.
+
+- **Kitano Tenmangu**: It says customs differ by region and periods can vary, but that generally the period up to the 50th-day memorial (the Shinto counterpart of the Buddhist 49th day) is regarded as "imi" (a period of restraint), and the period up to the first-year memorial as "fuku" (mourning). During the "imi" period, visits to a shrine and the care of a household shrine should wait until the period has passed. In the later "fuku" period, people express their grief, but visiting a shrine is not a problem. It also asks visitors not to visit a shrine on the day they attended a funeral, visited a grave or held a memorial service.
+- **Tokyo Shrine Association**: It explains that today, for the death of a parent (the heaviest case), people refrain from visiting shrines and from caring for a household shrine for 50 days. It also notes that Ise Jingu, following the imperial household's example, asks people to refrain from visiting for one year.
+
+The guideline for the "imi" period depends on the relationship with the person who died. Kitano Tenmangu gives 50 days for parents; 30 days for a husband, parents-in-law, grandparents and great-grandparents; 20 days for a wife, children, siblings, and uncles and aunts; 10 days for grandchildren; and 3 days for nephews, nieces and cousins (not applied to children under 7). The Tokyo Shrine Association's table differs for some relationships (for example, 20 days for great-grandparents). Because the way of counting differs by shrine, it is safest to ask the shrine you plan to visit.
+
+If New Year falls within the "imi" period, the idea in the official announcements above is to visit after the period has passed. Kitano Tenmangu writes that the period of restraint is ultimately a matter of each person's own heart, and should be taken as one guideline for marking the point at which one overcomes grief and returns to everyday life.
+
 ## Official announcements from popular shrines
 
 The list above shows examples of shrines that publish hatsumode information on their official websites. It is not a ranking; it introduces what they announce. For the history, access and goshuin details of each shrine, see its own page.
@@ -135,6 +163,14 @@ Ise Jingu and Meiji Jingu both describe purifying your hands and mouth at the te
 
 Meiji Jingu and Ise Jingu accept them at collection points in their grounds (koshinpu osamedokoro and furufuda osamedokoro). Items are limited to ofuda, omamori and similar things, and some shrines accept only their own. The location can change by day, so check the official website beforehand.
 
+### When is the dondo-yaki (Sagicho) fire ritual?
+
+Tsurugaoka Hachimangu announces a Sagicho ritual at 7:00 AM on January 15, and Sumiyoshi Taisha announces an old-talisman burning ceremony (Tondo) at 9:00 AM on January 15, on their annual-events pages. For other shrines, check each official website.
+
+### Can I make a New Year visit while in mourning?
+
+Kitano Tenmangu says that generally the period up to the 50th-day memorial is the "imi" period, that visits should wait until it has passed, and that visiting a shrine is not a problem in the later "fuku" period. The Tokyo Shrine Association says that for the death of a parent people refrain from visiting for 50 days. Thinking differs by relationship and by shrine, so please check with the shrine you plan to visit.
+
 ### Can I go by car?
 
 Meiji Jingu announced that vehicles cannot enter the grounds during the first three days, and Sumiyoshi Taisha announced that visitors could not come by car from December 31 to January 3 (both 2026). Fushimi Inari Taisha closes its on-site parking from December 30 to January 6. Public transport is recommended.
@@ -147,4 +183,5 @@ It depends on the shrine. Meiji Jingu and Sumiyoshi Taisha offered special New Y
 
 - Times, amulets and traffic restrictions are those that each shrine announced on its official website for New Year 2026 (Reiwa 8). The announcements for 2027 (Reiwa 9) come out at the end of the year, so please always check the latest official website.
 - Etiquette and the return of old talismans are based on the official websites of Ise Jingu, Meiji Jingu and Izumo Taisha (checked in November 2026).
-- Last checked: November 20, 2026.
+- Returning amulets to the shrine where you received them, dondo-yaki and mourning are based on the official websites of Kitano Tenmangu, the Tokyo Shrine Association, Tsurugaoka Hachimangu and Sumiyoshi Taisha (checked in November 2026). We could not find an official rule on the length of "matsu no uchi" set by shrines.
+- Last checked: November 21, 2026.

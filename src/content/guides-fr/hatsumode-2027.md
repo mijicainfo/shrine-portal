@@ -29,6 +29,8 @@ Le Meiji Jingu distingue les heures de réception de la cérémonie de première
 
 Certaines personnes prennent pour repère de venir pendant le « matsu no uchi » (période où les décorations de pin du Nouvel An restent exposées ; on dit souvent jusqu'au 7 janvier dans le Kanto et jusqu'au 15 janvier dans le Kansai). Mais il s'agit surtout d'une habitude de la vie quotidienne, et nous n'avons pas pu la confirmer comme une date limite officielle fixée par les sanctuaires. Pour le sanctuaire où vous souhaitez vous rendre, consultez le site officiel afin de connaître les périodes de la cérémonie de première prière et de la remise des articles de bénédiction.
 
+Le 15 janvier, certains sanctuaires célèbrent un rite où l'on brûle les décorations du Nouvel An et les ofuda (le rite du Sagicho au Tsurugaoka Hachimangu, la cérémonie de crémation des anciens ofuda au Sumiyoshi Taisha). Ils sont présentés plus loin, dans « Comment rendre les anciens ofuda et omamori ».
+
 ## Le déroulement de la visite (du temizu à la prière)
 
 Nous présentons le déroulement d'une visite une fois entré dans l'enceinte, en prenant pour exemples les étapes publiées sur la page « Étiquette et manières pour la visite » du site officiel de l'Ise Jingu et sur la page « À l'attention des visiteurs » du site officiel du Meiji Jingu.
@@ -117,6 +119,32 @@ Certains sanctuaires disposent d'un « point de dépôt » (osamedokoro) où l'o
 
 Dans les deux sanctuaires, ce qui peut être rendu se limite aux ofuda, omamori et objets similaires. Les décorations du Nouvel An et les objets décoratifs doivent être éliminés par un autre moyen : avant de les apporter, consultez les indications du sanctuaire où vous les rendrez. Le lieu de dépôt et la période d'acceptation varient selon les sanctuaires.
 
+### Le principe : les rendre au sanctuaire où on les a reçus
+
+Le site officiel du Kitano Tenmangu explique que les omamori et les ofuda sont des objets sacrés dans lesquels l'esprit de Tenjin-sama a été transféré, et invite à rendre les anciens au point de dépôt des ofuda (納札所). Le principe est de les rendre au sanctuaire où on les a reçus ; les personnes qui habitent loin, par exemple, peuvent aussi les rendre dans un sanctuaire proche de chez elles, après s'être renseignées auprès de lui.
+
+Pour la date du retour, le même site indique ce qui suit. Pour les omamori liés aux examens ou à la protection d'un accouchement, on les rend, avec gratitude, lorsque le vœu a pris fin. Pour les autres omamori et ofuda, il n'y a pas de date fixée ; mais, comme on accueille depuis toujours le dieu de l'année (Toshigami-sama) au Nouvel An pour prier pour le bonheur de l'année qui commence, il existe, dit-il, l'habitude de recevoir de nouveaux omamori et ofuda chaque année au Nouvel An.
+
+### Les brûler lors du Dondo-yaki (Sagicho)
+
+Certains sanctuaires brûlent les décorations du Nouvel An et les anciens ofuda lors d'un rite du feu célébré vers le 15 janvier. Voici deux exemples tirés des pages sur les fêtes annuelles de leurs sites officiels.
+
+- **Tsurugaoka Hachimangu** : il indique célébrer le rite du Sagicho le 15 janvier à 7 h 00, au bord de l'étang Genji. Le sanctuaire décrit le Sagicho comme une fête populaire généralement appelée Tondo-yaki ou Dondon-yaki : les décorations de shimekazari et de kadomatsu du Nouvel An, entre autres objets rapportés au sanctuaire, sont empilées et brûlées par un feu purificateur.
+- **Sumiyoshi Taisha** : il annonce la cérémonie de crémation des anciens ofuda (Tondo) le 15 janvier à 9 h 00. Dans ce rite, on brûle, par un feu sacré, les anciens ofuda et omamori qui ont protégé pendant l'année écoulée, les shimenawa du Nouvel An et les objets décoratifs ; le sanctuaire précise qu'on dit que recevoir la fumée de ce feu apporte la santé, sans maladie.
+
+Les dates et heures peuvent changer selon les années, et les objets acceptés varient selon les sanctuaires (les points de dépôt du Meiji Jingu et de l'Ise Jingu présentés plus haut n'acceptent ni les décorations du Nouvel An ni les objets décoratifs). Si vous comptez apporter vos objets à un Dondo-yaki, consultez les dernières informations du sanctuaire concerné.
+
+## Hatsumode pendant une période de deuil (mochu et imi)
+
+Pour la hatsumode d'une année marquée par un décès dans la famille, la foire aux questions du site officiel du Kitano Tenmangu et les questions-réponses de l'Association des sanctuaires de Tokyo (Tokyo Jinjacho) exposent leur façon de voir. Il y est aussi écrit que les usages peuvent différer selon les sanctuaires et les régions.
+
+- **Kitano Tenmangu** : après avoir précisé que les usages varient selon les régions et que les durées peuvent différer, il explique que l'on considère en général que la période d'« imi » (忌, abstention rituelle) dure jusqu'à la cérémonie des cinquante jours (l'équivalent du 49e jour bouddhique), et la période de « fuku » (服, deuil proprement dit) jusqu'à la cérémonie du premier anniversaire du décès. Pendant la période d'« imi », on attend qu'elle soit passée pour visiter un sanctuaire ou pour faire les offrandes au kamidana (autel domestique). Pendant la période de « fuku » qui suit, on exprime sa peine pour le défunt, mais la visite au sanctuaire ne pose pas de problème. Le sanctuaire demande aussi de s'abstenir de visiter un sanctuaire le jour où l'on assiste à des funérailles, où l'on se rend sur une tombe ou où l'on célèbre un service commémoratif bouddhique.
+- **Association des sanctuaires de Tokyo** : elle explique qu'aujourd'hui, pour le décès le plus grave, celui du père ou de la mère, on s'abstient pendant cinquante jours de visiter un sanctuaire et de faire les offrandes au kamidana. Elle écrit aussi que l'Ise Jingu, suivant l'usage de la famille impériale, demande de s'abstenir de le visiter pendant un an.
+
+La durée indicative de la période d'« imi » dépend du lien avec la personne décédée. Le Kitano Tenmangu indique 50 jours pour un père ou une mère ; 30 jours pour un époux, les parents du conjoint, les grands-parents et les arrière-grands-parents ; 20 jours pour une épouse, un enfant, un frère ou une sœur, un oncle ou une tante ; 10 jours pour un petit-enfant ; 3 jours pour un neveu, une nièce ou un cousin (cela ne s'applique pas aux enfants de moins de 7 ans). Le tableau de l'Association des sanctuaires de Tokyo comporte des durées différentes pour certains liens (par exemple 20 jours pour les arrière-grands-parents). La façon de compter les jours varie selon les sanctuaires : le plus sûr est de se renseigner auprès du sanctuaire où l'on souhaite aller.
+
+Si la hatsumode tombe pendant la période d'« imi », la façon de voir de ces informations officielles est d'attendre qu'elle soit passée pour visiter le sanctuaire. Le Kitano Tenmangu écrit que la période d'abstention après un deuil familial relève, en définitive, de l'état d'esprit de chacun, et qu'il faut la considérer comme un repère pour surmonter son chagrin et marquer le retour à la vie ordinaire.
+
 ## Les informations officielles de sanctuaires prisés pour la hatsumode
 
 La liste ci-dessus présente des exemples de sanctuaires qui publient des informations sur leur site officiel pour la période de la hatsumode. Il ne s'agit pas d'un classement : nous présentons le contenu de leurs annonces. Pour l'histoire, l'accès et les détails sur les goshuin de chaque sanctuaire, consultez leur page respective.
@@ -135,6 +163,14 @@ L'Ise Jingu et le Meiji Jingu présentent le déroulement suivant : se purifier 
 
 Le Meiji Jingu et l'Ise Jingu les acceptent à des points de dépôt dans leur enceinte (Koshinpu Osamedokoro et Furufuda Osamedokoro). Ce qui peut être rendu se limite aux ofuda, omamori et objets similaires, et certains sanctuaires n'acceptent que les leurs. Le lieu de dépôt peut changer selon les jours : vérifiez à l'avance sur le site officiel.
 
+### Quand a lieu le Dondo-yaki (Sagicho) ?
+
+Dans les pages sur leurs fêtes annuelles, le Tsurugaoka Hachimangu indique célébrer le rite du Sagicho le 15 janvier à 7 h 00, et le Sumiyoshi Taisha la cérémonie de crémation des anciens ofuda (Tondo) le 15 janvier à 9 h 00. Pour les autres sanctuaires, vérifiez les dates et heures sur leurs sites officiels respectifs.
+
+### Peut-on faire la hatsumode pendant une période de deuil ?
+
+Le Kitano Tenmangu explique que l'on considère en général que la période d'« imi » (abstention rituelle) dure jusqu'à la cérémonie des cinquante jours, qu'on attend alors qu'elle soit passée pour visiter un sanctuaire, et que, pendant la période de « fuku » (deuil) qui suit, la visite ne pose pas de problème. L'Association des sanctuaires de Tokyo indique que, pour le décès le plus grave, celui du père ou de la mère, on s'abstient de visiter un sanctuaire pendant cinquante jours. Les durées dépendent du lien avec le défunt et du sanctuaire : renseignez-vous auprès du sanctuaire où vous souhaitez aller.
+
 ### Peut-on venir en voiture ?
 
 Le Meiji Jingu indique que les voitures ne peuvent pas entrer dans l'enceinte pendant les trois premiers jours, et le Sumiyoshi Taisha indiquait qu'il n'était pas possible de venir en voiture du 31 décembre au 3 janvier (tous deux en Reiwa 8). Le Fushimi Inari Taisha ferme le parking de son enceinte du 30 décembre au 6 janvier. Le recours aux transports en commun est recommandé.
@@ -147,4 +183,5 @@ Cela dépend des sanctuaires. Le Meiji Jingu et le Sumiyoshi Taisha délivraient
 
 - Les horaires, les articles de bénédiction et les restrictions de circulation sont ceux que chaque sanctuaire annonçait sur son site officiel pour le Nouvel An de Reiwa 8 (2026). Les informations de Reiwa 9 (2027) paraissent en fin d'année : consultez toujours le site officiel le plus récent.
 - Les usages de la prière et la manière de rendre les anciens ofuda s'appuient sur les informations des sites officiels de l'Ise Jingu, du Meiji Jingu et de l'Izumo Taisha (consultés en novembre 2026).
-- Date de vérification : 20 novembre 2026
+- Le lieu où rendre les anciens ofuda, le Dondo-yaki, le deuil (mochu et imi) s'appuient sur les informations des sites officiels du Kitano Tenmangu, de l'Association des sanctuaires de Tokyo, du Tsurugaoka Hachimangu et du Sumiyoshi Taisha (consultés en novembre 2026). Nous n'avons pas pu trouver de règle officielle des sanctuaires sur la durée du « matsu no uchi ».
+- Date de vérification : 21 novembre 2026
