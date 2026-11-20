@@ -15,6 +15,7 @@ const newest = [...shrines].sort((a, b) => a.data.order - b.data.order).slice(0,
 
 const shrineById = new Map(shrines.map((s) => [s.id, s]));
 const updateItems = updates
+  .filter((u) => !u.note?.onlyLangs || u.note.onlyLangs.includes('zh'))
   .map((u) => {
     if (u.note) {
       return { date: u.date, kind: 'note' as const, text: u.note.zh, href: u.note.href ? `/zh${u.note.href}` : undefined };

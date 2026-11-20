@@ -1,10 +1,13 @@
 export interface UpdateNote {
   ja: string;
   en: string;
-  zh: string;
-  es: string;
-  fr: string;
-  ko: string;
+  /** zh/es/fr/ko may be omitted for an item that exists only in some languages (set onlyLangs) */
+  zh?: string;
+  es?: string;
+  fr?: string;
+  ko?: string;
+  /** If set, the item is shown only on the homepages of these languages (e.g. a guide that exists only in ja/en). */
+  onlyLangs?: string[];
   /** Optional relative path from each locale's root (e.g. "/glossary/"); the homepage prefixes it per locale. */
   href?: string;
 }
@@ -44,6 +47,16 @@ export const updates: UpdateEntry[] = [
     shrineSlugs: ['yaizu-jinja', 'hiromine-jinja', 'kato-jinja-kumamoto', 'tamatsukuriyu-jinja', 'matsue-jinja'],
   },
   {
+    date: '2026-11-20',
+    category: 'guide',
+    note: {
+      ja: '特集記事「初詣2027ガイド｜いつまでに行く？ 参拝の流れ・混雑を避けるコツ・古札の納め方」を公開しました',
+      en: 'Published a new featured guide: "Hatsumode 2027 Guide: When to Go, How to Pray, Avoiding Crowds and Returning Old Charms"',
+      href: '/guides/hatsumode-2027/',
+      onlyLangs: ['ja', 'en'],
+    },
+  },
+  {
     date: '2026-11-15',
     shrineSlugs: ['kinkasan-koganeyama-jinja', 'shirataki-jinja-happo', 'hotokusan-inari-taisha', 'horikoshi-jinja', 'kozu-gu'],
   },
@@ -62,19 +75,6 @@ export const updates: UpdateEntry[] = [
       fr: 'Publication d’un nouvel article à la une : « Guide du Kamiarisai (Izumo) : visiter pendant le Kamiarizuki, le dixième mois de l’ancien calendrier où les divinités se réunissent »',
       ko: '새로운 특집 기사 "가미아리사이(이즈모) 가이드｜음력 10월, 신들이 모이는 ‘가미아리즈키’ 참배"를 공개했습니다',
       href: '/guides/izumo-kamiarisai/',
-    },
-  },
-  {
-    date: '2026-10-31',
-    category: 'guide',
-    note: {
-      ja: '特集記事「2027年・未年の参拝ガイド｜羊の神社と、未年に行われる祭り」を公開しました',
-      en: 'Published a new featured guide: "2027 Year of the Sheep Shrine Guide: Sheep Shrines and Festivals Held in Sheep Years"',
-      zh: '發布了新的精選文章「2027年・未年參拜指南｜羊神社與未年舉行的祭典」',
-      es: 'Publicamos un nuevo artículo destacado: "Guía de visitas para 2027, Año de la Oveja: santuarios de la oveja y festivales del Año de la Oveja"',
-      fr: 'Publication d’un nouvel article à la une : « Guide de visite de l’année du Mouton 2027 : sanctuaires du mouton et fêtes des années du Mouton »',
-      ko: '새로운 특집 기사 "2027년 양의 해(히쓰지도시) 참배 가이드｜양 신사와 양의 해에 열리는 축제"를 공개했습니다',
-      href: '/guides/hitsujidoshi-2027/',
     },
   },
 ];
