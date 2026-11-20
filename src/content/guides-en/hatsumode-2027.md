@@ -8,7 +8,7 @@ entries:
   - shrineId: "tsurugaoka-hachimangu"
     note: "In its \"Reiwa 8 Hatsumode Information\" notice, Tsurugaoka Hachimangu in Kamakura, Kanagawa, said the shrine could be visited 24 hours a day from December 31 to January 3. A live camera on its official website shows how crowded the grounds are. It notes that traffic control may be in place when it is crowded, and asks visitors not to bring pets."
   - shrineId: "sumiyoshi-taisha"
-    note: "Sumiyoshi Taisha in Sumiyoshi Ward, Osaka, introduces \"Hattatsu-san\" (Kusunjusha), associated with household safety and business prosperity, in its official hatsumode information (2026 edition). The special New Year Hattatsu goshuin was offered from January 1 to 18 for 1,000 yen. From December 31 to January 4 it did not offer the stone-picking and pouch for its Godairiki amulet, to prevent crowd accidents."
+    note: "Sumiyoshi Taisha in Sumiyoshi Ward, Osaka, introduces \"Hattatsu-san\" (Nankunsha), associated with household safety and business prosperity, in its official hatsumode information (2026 edition). The special New Year Hattatsu goshuin was offered from January 1 to 18 for 1,000 yen. From December 31 to January 4 it did not offer the stone-picking and pouch for its Godairiki amulet, to prevent crowd accidents."
   - shrineId: "fushimi-inari"
     note: "On the access page of its official website, Fushimi Inari Taisha in Fushimi Ward, Kyoto, says the roads around the shrine parking lot become very crowded and asks visitors to use public transport. It says the on-site parking lot is closed from December 30 to January 6, and refers visitors to the Kyoto Prefectural Police website for temporary traffic restrictions during hatsumode."
   - shrineId: "dazaifu-tenmangu"
@@ -104,7 +104,7 @@ For shrines and festivals connected to the Year of the Sheep, see our featured g
 Some shrines offer goshuin (shrine stamps) only at New Year.
 
 - **Meiji Jingu**: In 2026 it offered a limited goshuin from the start of the year, featuring the "Meiji Jingu Painting" dedicated in 1930 (Showa 5) by the painter Yokoyama Taikan.
-- **Sumiyoshi Taisha**: It offered the "Hattatsu goshuin" as a special New Year item from January 1 to 18 (1,000 yen). From January 1 to 17, all four are offered only at Kusunjusha (Hattatsu-san).
+- **Sumiyoshi Taisha**: It offered the "Hattatsu goshuin" as a special New Year item from January 1 to 18 (1,000 yen). From January 1 to 17, the goshuin of all four shrines are given out at Nankunsha (Hattatsu-san).
 
 Special goshuin and arrangements, such as pre-written sheets only (kakioki), differ from shrine to shrine and from year to year. Some shrines also stop writing directly into goshuin books for a period, so please check the official website beforehand.
 
@@ -113,7 +113,7 @@ Special goshuin and arrangements, such as pre-written sheets only (kakioki), dif
 Some shrines collect the previous year's talismans and amulets at a dedicated collection point. Here are two examples from official announcements.
 
 - **Meiji Jingu**: Old items are returned at the "koshinpu osamedokoro." Items accepted are ofuda (talismans), omamori (amulets), guardian arrows and kaburaya, and ema; dolls, household shrines, rakes (kumade) and New Year decorations are not accepted. The location changes by day: the one beside the south temizu hall is permanent, and the ones at each approach entrance were available until January 12 (2026). Remove paper and bags and take them home. Meiji Jingu also says it accepts only its own ofuda and omamori, not lucky charms from elsewhere.
-- **Ise Jingu**: The FAQ on its official website says to return old talismans and amulets to the "furuhuda osamedokoro." At the Geku it is across from the temizu hall on the main approach, and at the Naiku it is in front of the Hinokebashi bridge. It says it cannot take shimenawa ropes, ornaments or anything other than talismans and amulets.
+- **Ise Jingu**: The FAQ on its official website says to return old talismans and amulets to the "furufuda osamedokoro." At the Geku it is across from the temizu hall on the main approach, and at the Naiku it is in front of the Hiyokebashi bridge. It says it cannot take shimenawa ropes, ornaments or anything other than talismans and amulets.
 
 Both shrines limit what they accept to ofuda, omamori and similar items. New Year decorations and ornaments have to be disposed of in another way, so check the announcement of the shrine you plan to visit before bringing them. Where to return items and when they are accepted differ by shrine.
 
@@ -133,7 +133,7 @@ Ise Jingu and Meiji Jingu both describe purifying your hands and mouth at the te
 
 ### Where do I return old talismans and amulets?
 
-Meiji Jingu and Ise Jingu accept them at collection points in their grounds (koshinpu osamedokoro and furuhuda osamedokoro). Items are limited to ofuda, omamori and similar things, and some shrines accept only their own. The location can change by day, so check the official website beforehand.
+Meiji Jingu and Ise Jingu accept them at collection points in their grounds (koshinpu osamedokoro and furufuda osamedokoro). Items are limited to ofuda, omamori and similar things, and some shrines accept only their own. The location can change by day, so check the official website beforehand.
 
 ### Can I go by car?
 

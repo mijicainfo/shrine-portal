@@ -52,8 +52,11 @@ export const updates: UpdateEntry[] = [
     note: {
       ja: '特集記事「初詣2027ガイド｜いつまでに行く？ 参拝の流れ・混雑を避けるコツ・古札の納め方」を公開しました',
       en: 'Published a new featured guide: "Hatsumode 2027 Guide: When to Go, How to Pray, Avoiding Crowds and Returning Old Charms"',
+      zh: '發布了新的精選文章「初詣2027指南｜何時前去參拜？參拜流程、避開人潮的訣竅與舊神札的歸還方式」',
+      es: 'Publicamos un nuevo artículo destacado: "Guía del hatsumode 2027: ¿hasta cuándo ir?, cómo orar, cómo evitar las aglomeraciones y cómo devolver los ofuda antiguos"',
+      fr: 'Publication d’un nouvel article à la une : « Guide de la hatsumode 2027 : jusqu’à quand y aller, étapes de la visite, éviter la foule et rendre les anciens ofuda »',
+      ko: '새로운 특집 기사 "하쓰모데 2027 가이드｜언제까지 가면 될까? 참배 순서・혼잡을 피하는 요령・오래된 오후다 반납법"를 공개했습니다',
       href: '/guides/hatsumode-2027/',
-      onlyLangs: ['ja', 'en'],
     },
   },
   {
