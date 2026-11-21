@@ -1,5 +1,5 @@
 ---
-title: "Guide de la première visite au sanctuaire : torii, temizu et prière expliqués en photos et en illustrations (pour les visiteurs étrangers)"
+title: "Guide de la première visite au sanctuaire : torii, temizu et prière"
 description: "Pour votre première visite dans un sanctuaire japonais : comment franchir le torii, comment se purifier les mains et la bouche au temizuya, le nihai nihakushu ippai (deux révérences, deux battements de mains, une révérence) au haiden, la différence entre sanctuaire et temple, et le savoir-vivre dans l’enceinte. Un résumé en photos et en illustrations, d’après les informations officielles de l’Ise Jingu, du Meiji Jingu, du Kitano Tenmangu et de l’Izumo Taisha, ainsi que les explications de l’Office national du tourisme japonais (JNTO) et de l’Agence du tourisme du Japon."
 publishDate: 2026-11-21
 ---

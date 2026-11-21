@@ -1,5 +1,5 @@
 ---
-title: "Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship Explained with Photos and Illustrations (for Visitors from Taiwan and Elsewhere)"
+title: "Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship"
 description: "A guide for first-time visitors to Japanese shrines: how to pass through a torii, how to purify your hands and mouth at the temizuya, nihai nihakushu ippai (bow twice, clap twice, bow once) at the haiden, the difference between shrines and temples, and etiquette in the grounds. Explained with photos and illustrations, based on the official guidance of Ise Jingu, Meiji Jingu, Kitano Tenmangu and Izumo Taisha, and the commentary of the Japan National Tourism Organization (JNTO) and the Japan Tourism Agency."
 publishDate: 2026-11-21
 ---

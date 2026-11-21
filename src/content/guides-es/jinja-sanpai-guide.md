@@ -1,5 +1,5 @@
 ---
-title: "Guía de la visita a un santuario por primera vez: etiqueta del torii, el temizu y la oración, explicada con fotos e ilustraciones (para visitantes del extranjero)"
+title: "Guía de la visita a un santuario por primera vez: etiqueta del torii, el temizu y la oración"
 description: "Para quienes visitan por primera vez un santuario de Japón: cómo cruzar el torii, cómo purificarse las manos y la boca en el temizuya, las dos reverencias, dos palmadas y una reverencia ante el haiden, la diferencia entre santuarios y templos y la etiqueta en el recinto, explicados con fotos e ilustraciones a partir de las guías oficiales del Santuario de Ise (Jingu), el Meiji Jingu, el Kitano Tenmangu y el Izumo Taisha, y de las explicaciones de la Organización Nacional de Turismo de Japón y la Agencia de Turismo de Japón."
 publishDate: 2026-11-21
 ---
