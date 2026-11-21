@@ -46,7 +46,7 @@ export const updates: UpdateEntry[] = [
     date: '2026-11-21',
     category: 'guide',
     note: {
-      ja: '特集記事「はじめての神社参拝ガイド｜鳥居・手水・拝礼の作法を、写真とイラストで解説（台湾など海外の方へ）」を公開しました',
+      ja: '特集記事「はじめての神社参拝ガイド｜鳥居・手水・拝礼の作法」を公開しました',
       en: 'Published a new featured guide: "Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship Explained with Photos and Illustrations (for Visitors from Taiwan and Elsewhere)"',
       zh: '發布了新的精選文章「第一次參拜神社指南｜鳥居・手水・拜禮的禮儀，以照片與插圖解說（給台灣等海外的朋友）」',
       es: 'Publicamos un nuevo artículo destacado: "Guía de la visita a un santuario por primera vez: etiqueta del torii, el temizu y la oración, explicada con fotos e ilustraciones (para visitantes del extranjero)"',
