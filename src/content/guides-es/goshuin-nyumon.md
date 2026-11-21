@@ -131,6 +131,10 @@ Hay quien los separa, pero separarlos o no depende del gusto de cada persona (ba
 
 La Asociación de Santuarios de Miyagi considera falta de etiqueta asomarse a la fuerza a mirar cómo escriben o fotografiar sin permiso. Si quiere fotografiar, pida permiso antes.
 
+## Conozca también la etiqueta de la oración
+
+El goshuin se recibe después de rendir culto. Cómo cruzar el torii, purificarse en el temizuya y rezar ante el haiden se explica con fotos e ilustraciones en la [Guía de la visita a un santuario por primera vez: etiqueta del torii, el temizu y la oración](/es/guides/jinja-sanpai-guide/).
+
 ## Sobre esta información
 
 - El significado, el origen y la etiqueta del goshuin se basan en las guías oficiales de la Asociación de Santuarios de Miyagi, la Asociación de Santuarios de Tokio, la base de datos de textos explicativos multilingües de la Agencia de Turismo de Japón, la Organización Nacional de Turismo de Japón (JNTO), el Asakusa Jinja y el Sakuragi Jinja. No se ha consultado el sitio de la Asociación Nacional de Santuarios (Jinja Honcho), porque no se pudo mostrar en el momento de la comprobación.

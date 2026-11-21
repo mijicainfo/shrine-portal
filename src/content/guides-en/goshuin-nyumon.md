@@ -131,6 +131,10 @@ Some people keep them separate, but whether to separate them is a matter of pers
 
 The Miyagi Prefecture Shrine Association treats peering at the writing or taking photographs without permission as bad manners. If you want to take a photo, ask for permission first.
 
+## Learn the etiquette of worship too
+
+Goshuin are received after you have prayed. How to pass through a torii, purify at the temizuya and worship at the haiden is explained with photos and illustrations in [Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship](/en/guides/jinja-sanpai-guide/).
+
 ## About this information
 
 - The meaning, origin and etiquette of goshuin are based on the official guidance of the Miyagi Prefecture Shrine Association, the Tokyo Shrine Association, the Japan Tourism Agency's multilingual commentary database, the Japan National Tourism Organization (JNTO), Asakusa Jinja and Sakuragi Jinja. The website of Jinja Honcho could not be displayed when we checked, so we have not referred to it.

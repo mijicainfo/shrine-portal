@@ -131,6 +131,10 @@ Certaines personnes utilisent des carnets distincts, mais séparer ou non relèv
 
 Miyagi Jinjacho considère comme contraire au savoir-vivre le fait de se pencher de force pour regarder la personne qui écrit ou de photographier sans autorisation. Si vous souhaitez photographier, demandez d'abord la permission.
 
+## Découvrez aussi les usages de la prière
+
+Le goshuin se reçoit après la prière. Comment franchir le torii, se purifier au temizuya et prier au haiden est expliqué en photos et en illustrations dans le [Guide de la première visite au sanctuaire : torii, temizu et prière](/fr/guides/jinja-sanpai-guide/).
+
 ## À propos de ces informations
 
 - Le sens, l'origine et les usages du goshuin s'appuient sur les informations officielles de Miyagi Jinjacho, de Tokyo Jinjacho, de la base de données de textes explicatifs multilingues de l'Agence du tourisme du Japon, de l'Office national du tourisme japonais (JNTO), de l'Asakusa Jinja et du Sakuragi Jinja. Le site de Jinja Honcho (Association des sanctuaires du Japon) n'a pas pu s'afficher lors de la vérification ; nous ne l'avons donc pas consulté.
