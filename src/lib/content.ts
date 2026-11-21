@@ -6,8 +6,8 @@
 // own date, e.g. ja/zh today, en +7 days, es/fr/ko +14 days.
 //
 // The site is static, so a release only happens when the site is rebuilt on or
-// after the date: .github/workflows/scheduled-release.yml triggers a Vercel
-// deploy on days when something is due; any normal push also rebuilds.
+// after the date: .github/workflows/scheduled-release.yml triggers a Cloudflare Pages deploy hook (formerly Vercel)
+// on days when something is due; any normal push also rebuilds.
 //
 // Set PUBLISH_AS_OF=YYYY-MM-DD to build "as of" another day (testing). Use a far
 // future date (e.g. 2099-01-01) to include everything.

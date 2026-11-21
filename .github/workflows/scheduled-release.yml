@@ -1,13 +1,13 @@
 # Scheduled publishing ("予約投稿"): the site is static, so content whose publishDate has
 # not arrived yet is left out of the build (src/lib/content.ts). This workflow runs
 # every day just after midnight JST and, only on days when something is due, asks Vercel
-# to rebuild so the newly-due pages go live.
+# to rebuild so the newly-due pages go live. (Hosting moved from Vercel to Cloudflare Pages on 2026-11-21.)
 #
 # One-time setup (see README / the hand-off notes):
-#   1. Vercel project -> Settings -> Git -> Deploy Hooks -> create a hook for the
-#      production branch (main) and copy its URL.
+#   1. Cloudflare dashboard -> Workers & Pages -> shrine-portal -> Settings -> Builds ->
+#      Deploy hooks -> create a hook for the production branch (main) and copy its URL.
 #   2. GitHub repo -> Settings -> Secrets and variables -> Actions -> New repository
-#      secret named VERCEL_DEPLOY_HOOK_URL with that URL.
+#      secret named DEPLOY_HOOK_URL with that URL.
 name: Scheduled release
 
 on:
@@ -27,14 +27,14 @@ jobs:
       - name: Is anything due today (or yesterday) in JST?
         id: due
         run: echo "due=$(node scripts/release-schedule.mjs --due)" >> "$GITHUB_OUTPUT"
-      - name: Trigger Vercel deploy
+      - name: Trigger deploy (Cloudflare Pages deploy hook)
         if: steps.due.outputs.due == 'true' || github.event_name == 'workflow_dispatch'
         env:
-          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+          HOOK: ${{ secrets.DEPLOY_HOOK_URL || secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
           if [ -z "$HOOK" ]; then
             # Not configured (staggered releases are not in use): skip quietly instead of failing every run.
-            echo "::notice::VERCEL_DEPLOY_HOOK_URL secret is not set - skipping scheduled deploy"
+            echo "::notice::DEPLOY_HOOK_URL secret is not set - skipping scheduled deploy"
             exit 0
           fi
           curl -fsS -X POST "$HOOK"
