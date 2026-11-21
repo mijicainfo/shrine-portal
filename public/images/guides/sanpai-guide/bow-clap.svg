@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" role="img" aria-label="Bow twice, clap twice, bow once">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf8f1"/><stop offset="1" stop-color="#f7ecdd"/></linearGradient>
+    <g id="stand">
+      <circle cx="0" cy="-58" r="12" fill="#5c4f45"/>
+      <path d="M-15 -42 Q0 -48 15 -42 L18 14 L-18 14 Z" fill="#7fb0c9"/>
+      <rect x="-12" y="14" width="10" height="34" rx="4" fill="#5c4f45"/><rect x="2" y="14" width="10" height="34" rx="4" fill="#5c4f45"/>
+    </g>
+    <g id="bow">
+      <g transform="rotate(75 0 14)">
+        <circle cx="0" cy="-58" r="12" fill="#5c4f45"/>
+        <path d="M-15 -42 Q0 -48 15 -42 L18 14 L-18 14 Z" fill="#7fb0c9"/>
+      </g>
+      <rect x="-12" y="14" width="10" height="34" rx="4" fill="#5c4f45"/><rect x="2" y="14" width="10" height="34" rx="4" fill="#5c4f45"/>
+    </g>
+    <g id="clap">
+      <use href="#stand"/>
+      <path d="M-9 -22 L0 -32 L9 -22 L0 -10 Z" fill="#fbe9e5" stroke="#e8887a" stroke-width="2"/>
+      <g stroke="#ddb877" stroke-width="4" stroke-linecap="round"><path d="M-30 -36 l-12 -8"/><path d="M30 -36 l12 -8"/></g>
+    </g>
+    <g id="num"><circle r="15" fill="#e8887a"/></g>
+  </defs>
+  <rect width="960" height="250" rx="22" fill="url(#bg)"/>
+  <rect x="2" y="2" width="956" height="246" rx="20" fill="none" stroke="#ddb877" stroke-opacity=".5" stroke-width="2"/>
+  <g fill="none" stroke="#ddb877" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M338 160 l14 0 m-6 -8 l8 8 l-8 8"/><path d="M652 160 l14 0 m-6 -8 l8 8 l-8 8"/>
+  </g>
+  <g transform="translate(110 160)"><use href="#bow"/></g>
+  <g transform="translate(236 160)"><use href="#bow"/></g>
+  <g transform="translate(110 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">1</text></g>
+  <g transform="translate(236 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">2</text></g>
+  <g transform="translate(450 160)"><use href="#clap"/></g>
+  <g transform="translate(566 160)"><use href="#clap"/></g>
+  <g transform="translate(450 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">3</text></g>
+  <g transform="translate(566 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">4</text></g>
+  <g transform="translate(790 160)"><use href="#bow"/></g>
+  <g transform="translate(790 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">5</text></g>
+</svg>

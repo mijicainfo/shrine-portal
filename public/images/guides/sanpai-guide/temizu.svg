@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" role="img" aria-label="Temizu purification in 5 steps">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf8f1"/><stop offset="1" stop-color="#f7ecdd"/></linearGradient>
+    <g id="ladle"><rect x="-4" y="-86" width="8" height="86" rx="4" fill="#a77b4f"/><ellipse cx="0" cy="4" rx="22" ry="11" fill="#c89b6a"/><ellipse cx="0" cy="2" rx="16" ry="6" fill="#a9d2e6"/></g>
+    <g id="hand"><rect x="-20" y="-6" width="40" height="46" rx="16" fill="#f6d7c3" stroke="#e6b99f" stroke-width="2"/><rect x="-26" y="2" width="12" height="26" rx="6" fill="#f6d7c3" stroke="#e6b99f" stroke-width="2"/></g>
+    <g id="drops" fill="#7fb0c9"><path d="M0 0 q6 9 0 14 q-6 -5 0 -14z"/><path d="M16 10 q6 9 0 14 q-6 -5 0 -14z"/><path d="M-16 10 q6 9 0 14 q-6 -5 0 -14z"/></g>
+    <g id="num"><circle r="15" fill="#e8887a"/></g>
+    <g id="wash">
+      <g transform="translate(34 150) rotate(-35)"><use href="#ladle"/></g>
+      <g transform="translate(58 98)"><use href="#hand" transform="scale(.9)"/></g>
+      <path d="M24 148 q-4 18 -12 28" stroke="#7fb0c9" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <g transform="translate(-32 196) rotate(8)"><use href="#hand"/><circle cx="0" cy="18" r="30" fill="none" stroke="#7fb0c9" stroke-width="3" stroke-dasharray="6 5"/></g>
+      <g transform="translate(-12 174) scale(.8)"><use href="#drops"/></g>
+    </g>
+  </defs>
+  <rect width="960" height="250" rx="22" fill="url(#bg)"/>
+  <rect x="2" y="2" width="956" height="246" rx="20" fill="none" stroke="#ddb877" stroke-opacity=".5" stroke-width="2"/>
+
+  <!-- 1: wash the left hand -->
+  <g transform="translate(96 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">1</text></g>
+  <g transform="translate(96 0)"><use href="#wash"/></g>
+
+  <!-- 2: switch hands, wash the right hand (mirrored) -->
+  <g transform="translate(288 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">2</text></g>
+  <g transform="translate(288 0) scale(-1 1)"><use href="#wash"/></g>
+
+  <!-- 3: pour into the palm and rinse the mouth (ladle never touches the mouth) -->
+  <g transform="translate(480 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">3</text></g>
+  <g transform="translate(480 0)">
+    <circle cx="0" cy="104" r="34" fill="#f6d7c3" stroke="#e6b99f" stroke-width="2"/>
+    <circle cx="-11" cy="98" r="3.5" fill="#5c4f45"/><circle cx="11" cy="98" r="3.5" fill="#5c4f45"/>
+    <ellipse cx="0" cy="117" rx="8" ry="6" fill="#d16a5c"/>
+    <g transform="translate(0 170)"><use href="#hand" transform="scale(1.1)"/></g>
+    <g transform="translate(0 178) scale(.9)"><use href="#drops"/></g>
+    <path d="M0 146 l0 10 m-5 -5 l5 6 l5 -6" stroke="#7fb0c9" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 4: wash the left hand again -->
+  <g transform="translate(672 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">4</text></g>
+  <g transform="translate(672 0)"><use href="#wash"/></g>
+
+  <!-- 5: stand the ladle up and rinse its handle -->
+  <g transform="translate(864 40)"><use href="#num"/><text text-anchor="middle" y="6" font-size="17" font-weight="700" fill="#fff" font-family="sans-serif">5</text></g>
+  <g transform="translate(864 0)">
+    <g transform="translate(0 150) rotate(180) scale(.8)"><use href="#ladle"/></g>
+    <path d="M-12 100 q-4 14 2 28 M10 100 q4 14 -2 32" stroke="#7fb0c9" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <g transform="translate(0 180) scale(.9)"><use href="#drops"/></g>
+  </g>
+</svg>
