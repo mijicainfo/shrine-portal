@@ -43,6 +43,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-21',
+    category: 'guide',
+    note: {
+      ja: '特集記事「厄年2027早見表｜前厄・本厄・後厄の年齢と、厄払いに行く時期・作法」を公開しました',
+      en: 'Published a new featured guide: "Yakudoshi 2027 Chart: Unlucky Ages (Mae-yaku, Hon-yaku, Ato-yaku) and When and How to Get a Yakuyoke Blessing"',
+      zh: '發布了新的精選文章「厄年2027對照表｜前厄・本厄・後厄的年齡，以及厄除的時期與禮儀」',
+      es: 'Publicamos un nuevo artículo destacado: "Tabla de yakudoshi 2027: edades de mala suerte (mae-yaku, hon-yaku y ato-yaku) y cuándo y cómo recibir el yakubarai"',
+      fr: 'Publication d’un nouvel article à la une : « Tableau des yakudoshi 2027 : âges néfastes (mae-yaku, hon-yaku, ato-yaku), et quand et comment faire un yakuyoke »',
+      ko: '새로운 특집 기사 "2027년 액년(厄年) 조견표｜마에야쿠・혼야쿠・아토야쿠의 나이와 액막이(야쿠바라이) 시기・작법"를 공개했습니다',
+      href: '/guides/yakudoshi-2027/',
+    },
+  },
+  {
     date: '2026-11-20',
     shrineSlugs: ['yaizu-jinja', 'hiromine-jinja', 'kato-jinja-kumamoto', 'tamatsukuriyu-jinja', 'matsue-jinja'],
   },
@@ -66,18 +79,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-11-14',
     shrineSlugs: ['awashima-jinja', 'iwatsuhime-jinja', 'susaki-jinja-tateyama', 'susa-jinja', 'kumano-kotai-jinja'],
-  },
-  {
-    date: '2026-11-07',
-    category: 'guide',
-    note: {
-      ja: '特集記事「神在祭（出雲）ガイド｜旧暦10月、神様が集まる『神在月』の参拝」を公開しました',
-      en: 'Published a new featured guide: "Kamiarisai Guide (Izumo): Visiting in Kamiarizuki, the Old-Calendar Tenth Month When the Gods Gather"',
-      zh: '發布了新的精選文章「神在祭（出雲）指南｜舊曆10月、眾神齊聚的「神在月」參拜」',
-      es: 'Publicamos un nuevo artículo destacado: "Guía del Kamiarisai (Izumo): visitar en Kamiarizuki, el décimo mes del calendario antiguo en que se reúnen los dioses"',
-      fr: 'Publication d’un nouvel article à la une : « Guide du Kamiarisai (Izumo) : visiter pendant le Kamiarizuki, le dixième mois de l’ancien calendrier où les divinités se réunissent »',
-      ko: '새로운 특집 기사 "가미아리사이(이즈모) 가이드｜음력 10월, 신들이 모이는 ‘가미아리즈키’ 참배"를 공개했습니다',
-      href: '/guides/izumo-kamiarisai/',
-    },
   },
 ];
