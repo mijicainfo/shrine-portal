@@ -17,6 +17,16 @@ Les yakudoshi (années néfastes) se comptent en **kazoedoshi**, l'âge traditio
 
 Selon l'Association des sanctuaires de Tokyo (Tokyo Jinjacho) et le Meiji Jingu, les yakudoshi correspondent en général, en kazoedoshi, aux **âges de 25, 42 et 61 ans pour les hommes, et de 19, 33 et 37 ans pour les femmes**. L'âge de 42 ans pour les hommes et celui de 33 ans pour les femmes sont appelés « taiyaku » (la grande année néfaste). Les années qui précèdent et suivent l'année principale s'appellent « mae-yaku » (année néfaste qui précède) et « ato-yaku » (année néfaste qui suit) ; ensemble, ces trois années sont dites demander une prudence particulière. L'année principale est appelée « hon-yaku ».
 
+### Qu'est-ce que le kazoedoshi (l'âge traditionnel japonais) ?
+
+Le kazoedoshi est une manière traditionnelle de compter l'âge, utilisée au Japon depuis longtemps. On a 1 an l'année de sa naissance, et l'on gagne un an **à chaque Nouvel An (1er janvier)**, et non à son anniversaire.
+
+L'âge que l'on utilise habituellement (l'âge international) commence à 0 à la naissance et augmente à chaque anniversaire ; il diffère donc du kazoedoshi d'un ou deux ans. Le site officiel de Meiji Jingu explique le kazoedoshi comme l'âge international plus 2 ans avant l'anniversaire de cette année, ou plus 1 an après l'anniversaire.
+
+On peut aussi le calculer à partir de l'année de naissance. Le kazoedoshi en 2027 est « 2027 moins l'année de naissance plus 1 ». Par exemple, une personne née en 1990 a 2027 − 1990 + 1 = 38 ans (son âge international en 2027 est de 36 ans avant l'anniversaire et de 37 ans après).
+
+Les tableaux de cet article ont été établis en convertissant les âges du kazoedoshi en années de naissance. Inutile de calculer votre âge : **il suffit de repérer la ligne de votre année de naissance** pour voir votre mae-yaku, hon-yaku et ato-yaku.
+
 ### Hommes
 
 | Âge (kazoedoshi) | Mae-yaku | Hon-yaku | Ato-yaku |

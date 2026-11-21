@@ -17,6 +17,16 @@ Yakudoshi are counted by **kazoedoshi**, the traditional way of counting age: yo
 
 According to the Tokyo Shrine Association and Meiji Jingu, the yakudoshi are generally, in kazoedoshi, **ages 25, 42 and 61 for men and ages 19, 33 and 37 for women**. Age 42 for men and age 33 for women are called "taiyaku" (the major unlucky year). The years before and after the main year are called "mae-yaku" and "ato-yaku," and together these three years are said to call for special care.
 
+### What is kazoedoshi (traditional Japanese age)?
+
+Kazoedoshi is a traditional way of counting age that has been used in Japan since long ago. You are 1 in the year you are born, and you gain one year **every time New Year's Day (January 1) arrives**, not on your birthday.
+
+The age you usually use (international age) starts at 0 at birth and goes up on each birthday, so it differs from kazoedoshi by one or two years. The Meiji Jingu website explains kazoedoshi as your international age plus 2 before your birthday this year, or plus 1 after your birthday.
+
+You can also work it out from your birth year. Kazoedoshi in 2027 is "2027 minus your birth year plus 1." For example, someone born in 1990 is 2027 − 1990 + 1 = 38 (their international age in 2027 is 36 before their birthday and 37 after it).
+
+The tables in this article were made from kazoedoshi ages converted to birth years. You do not need to calculate your age: **just find the row for your birth year** to see your mae-yaku, hon-yaku and ato-yaku.
+
 ### Men
 
 | Age (kazoedoshi) | Mae-yaku | Hon-yaku | Ato-yaku |

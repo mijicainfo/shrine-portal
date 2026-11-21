@@ -17,6 +17,16 @@ Los yakudoshi (años críticos o de mala suerte) se cuentan por el **kazoedoshi*
 
 Según las guías oficiales de la Asociación de Santuarios de Tokio (Tokyo Jinjacho) y del Meiji Jingu, los yakudoshi son, por lo general y en kazoedoshi, **los 25, 42 y 61 años en los hombres y los 19, 33 y 37 años en las mujeres**. Los 42 años del hombre y los 33 de la mujer se llaman "taiyaku" (el gran año crítico). Los años anterior y posterior al año principal se consideran "mae-yaku" (año previo) y "ato-yaku" (año posterior), y se dice que estos tres años en conjunto son edades en las que hay que ser especialmente prudente.
 
+### ¿Qué es el kazoedoshi (la edad tradicional japonesa)?
+
+El kazoedoshi es una forma tradicional de contar la edad que se usa en Japón desde hace mucho tiempo. Se tiene 1 año en el año del nacimiento y se suma un año **cada vez que llega el Año Nuevo (1 de enero)**, no en el cumpleaños.
+
+La edad que se usa normalmente (la edad internacional) empieza en 0 al nacer y sube en cada cumpleaños, por lo que se diferencia del kazoedoshi en uno o dos años. El sitio oficial de Meiji Jingu explica el kazoedoshi como la edad internacional más 2 años antes del cumpleaños de este año, o más 1 año después del cumpleaños.
+
+También se puede calcular a partir del año de nacimiento. El kazoedoshi en 2027 es «2027 menos el año de nacimiento más 1». Por ejemplo, una persona nacida en 1990 tiene 2027 − 1990 + 1 = 38 años (su edad internacional en 2027 es 36 antes del cumpleaños y 37 después).
+
+Las tablas de este artículo se hicieron convirtiendo las edades del kazoedoshi a años de nacimiento. No hace falta calcular la edad: **basta con buscar la fila de su año de nacimiento** para ver su mae-yaku, hon-yaku y ato-yaku.
+
 ### Hombres
 
 | Edad (kazoedoshi) | Mae-yaku | Hon-yaku | Ato-yaku |
