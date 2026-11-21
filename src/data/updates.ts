@@ -46,6 +46,19 @@ export const updates: UpdateEntry[] = [
     date: '2026-11-21',
     category: 'guide',
     note: {
+      ja: '特集記事「御朱印入門ガイド｜御朱印とは？いただき方・マナー・料金・御朱印帳を、神社の公式案内で解説」を公開しました',
+      en: 'Published a new featured guide: "Goshuin for Beginners: What Goshuin Are, How to Receive Them, Etiquette and Fees, Explained with Official Shrine Guidance"',
+      zh: '發布了新的精選文章「御朱印入門指南｜什麼是御朱印？領取方式・禮儀・費用・御朱印帳，依神社官方介紹解說」',
+      es: 'Publicamos un nuevo artículo destacado: "Guía de introducción al goshuin: qué es, cómo recibirlo, etiqueta, precios y goshuincho, según las guías oficiales de los santuarios"',
+      fr: 'Publication d’un nouvel article à la une : « Guide d’initiation au goshuin : qu’est-ce qu’un goshuin ? Comment le recevoir, savoir-vivre, prix et carnet, d’après les informations officielles des sanctuaires »',
+      ko: '새로운 특집 기사 "고슈인(御朱印) 입문 가이드｜고슈인이란? 받는 방법・매너・요금・고슈인초(御朱印帳)를 신사의 공식 안내로 설명"를 공개했습니다',
+      href: '/guides/goshuin-nyumon/',
+    },
+  },
+  {
+    date: '2026-11-21',
+    category: 'guide',
+    note: {
       ja: '特集記事「厄年2027早見表｜前厄・本厄・後厄の年齢と、厄払いに行く時期・作法」を公開しました',
       en: 'Published a new featured guide: "Yakudoshi 2027 Chart: Unlucky Ages (Mae-yaku, Hon-yaku, Ato-yaku) and When and How to Get a Yakuyoke Blessing"',
       zh: '發布了新的精選文章「厄年2027對照表｜前厄・本厄・後厄的年齡，以及厄除的時期與禮儀」',
@@ -58,19 +71,6 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-11-20',
     shrineSlugs: ['yaizu-jinja', 'hiromine-jinja', 'kato-jinja-kumamoto', 'tamatsukuriyu-jinja', 'matsue-jinja'],
-  },
-  {
-    date: '2026-11-20',
-    category: 'guide',
-    note: {
-      ja: '特集記事「初詣2027ガイド｜いつまでに行く？ 参拝の流れ・混雑を避けるコツ・古札の納め方」を公開しました',
-      en: 'Published a new featured guide: "Hatsumode 2027 Guide: When to Go, How to Pray, Avoiding Crowds and Returning Old Charms"',
-      zh: '發布了新的精選文章「初詣2027指南｜何時前去參拜？參拜流程、避開人潮的訣竅與舊神札的歸還方式」',
-      es: 'Publicamos un nuevo artículo destacado: "Guía del hatsumode 2027: ¿hasta cuándo ir?, cómo orar, cómo evitar las aglomeraciones y cómo devolver los ofuda antiguos"',
-      fr: 'Publication d’un nouvel article à la une : « Guide de la hatsumode 2027 : jusqu’à quand y aller, étapes de la visite, éviter la foule et rendre les anciens ofuda »',
-      ko: '새로운 특집 기사 "하쓰모데 2027 가이드｜언제까지 가면 될까? 참배 순서・혼잡을 피하는 요령・오래된 오후다 반납법"를 공개했습니다',
-      href: '/guides/hatsumode-2027/',
-    },
   },
   {
     date: '2026-11-15',
