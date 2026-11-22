@@ -147,7 +147,7 @@ Nous n’avons pas pu trouver d’explication officielle comparant ces usages à
 - **Anciens omamori et ofuda (talismans) :** le Meiji Jingu invite à les rendre au « Furujinpu Osamedokoro » (point de dépôt des anciens talismans) de l’enceinte (à droite en regardant vers le temizuya sud). Le Kitano Tenmangu explique que les anciens omamori et ofuda sont des objets sacrés dans lesquels l’esprit de Tenjin-sama a été transféré, et invite à ne pas les traiter à la légère et à les rendre au point de dépôt des ofuda (osamedokoro). En principe, on les rend au sanctuaire où on les a reçus.
 - **Goshuin :** c’est ce que l’on reçoit comme preuve de sa visite. Pour les détails, consultez l’autre article de fond « [Guide d’initiation au goshuin](/fr/guides/goshuin-nyumon/) ».
 
-## Pour les visiteurs venus de l’étranger, notamment de Taïwan
+## Pour les visiteurs venus de l’étranger
 
 - **Prévoyez de l’argent liquide (des yens).** À certains guichets de remise (juyosho), la carte n’est pas acceptée (par exemple au guichet des goshuin du Meiji Jingu).
 - **Renseignez-vous sur les horaires de réception.** Le juyosho peut fermer plus tôt que l’heure à laquelle on ne peut plus entrer dans l’enceinte.

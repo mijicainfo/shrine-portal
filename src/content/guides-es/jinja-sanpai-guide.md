@@ -147,7 +147,7 @@ No pudimos encontrar una explicación oficial que compare estas diferencias con 
 - **Omamori y ofuda antiguos:** el Meiji Jingu indica que se devuelvan en el "koshinpu osamedokoro" (punto de devolución de ofuda antiguos), situado en el recinto, a la derecha mirando hacia el temizuya sur. El Kitano Tenmangu indica que los omamori y ofuda antiguos son objetos sagrados en los que se ha trasladado el espíritu de Tenjin-sama, por lo que no deben tratarse con descuido, y que se entreguen en el punto de devolución de ofuda (nosatsusho). En principio, se devuelven en el santuario donde se recibieron.
 - **Goshuin:** es lo que se recibe como prueba de haber rendido culto. Para más detalles, consulte el otro artículo especial "[Guía de introducción al goshuin](/es/guides/goshuin-nyumon/)".
 
-## Para quienes visitan desde el extranjero, como Taiwán
+## Para quienes visitan desde el extranjero
 
 - **Prepare efectivo (yenes).** En algunos puestos de entrega de artículos no se puede pagar con tarjeta (por ejemplo, la ventanilla de goshuin del Meiji Jingu).
 - **Averigüe el horario de atención.** El puesto de entrega de artículos puede cerrar antes que la hora hasta la que se puede entrar al recinto.

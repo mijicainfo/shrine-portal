@@ -147,7 +147,7 @@ We could not find an official explanation that compares these with Taiwanese tem
 - **Old amulets and ofuda (talismans):** Meiji Jingu asks visitors to return them to the "koshinpu osamedokoro" (old-talisman collection point) in the grounds (on the right side as you face the south temizuya). Kitano Tenmangu explains that old amulets and ofuda are sacred things that carry the spirit of Tenjin-sama, so you should not treat them carelessly and should return them to the collection point. As a rule, you return them to the shrine where you received them.
 - **Goshuin:** These are received as proof of your visit. For details, please see our separate feature article, "[Goshuin for Beginners](/en/guides/goshuin-nyumon/)."
 
-## For Visitors from Taiwan and Other Countries
+## For Visitors from Overseas
 
 - **Prepare cash (Japanese yen).** Some places, such as the offering counters, do not accept cards (for example, the goshuin counter at Meiji Jingu).
 - **Check the reception hours in advance.** The offering counters can close earlier than the hours when you can enter the grounds.
