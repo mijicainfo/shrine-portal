@@ -10,7 +10,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="신사 참배의 흐름을 6개의 그림 기호로 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">신사 참배의 흐름(6단계)<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">신사 참배의 흐름(6단계)</figcaption>
 </figure>
 
 1. 도리이(鳥居, 신사 입구의 문) 앞에서 한 번 절하고 지나간다
@@ -57,7 +57,7 @@ Ise Jingu가 공식적으로 안내하는 순서는 다음 5단계입니다.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="데미즈(손 씻기) 예법을 5개의 그림 기호로 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">데미즈의 5단계(이세 신궁의 안내에 따름)<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">데미즈의 5단계(이세 신궁의 안내에 따름)</figcaption>
 </figure>
 
 1. 오른손으로 국자를 들고 물을 넉넉히 떠서 왼손을 정화합니다.
@@ -79,7 +79,7 @@ Kitano Tenmangu도 거의 같은 순서를 안내한 뒤, 국자에 직접 입�
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="두 번 절, 두 번 박수, 한 번 절을 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">두 번 절, 두 번 박수, 한 번 절: ①② 깊이 두 번 절, ③④ 박수 두 번, ⑤ 깊이 한 번 절<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">두 번 절, 두 번 박수, 한 번 절: ①② 깊이 두 번 절, ③④ 박수 두 번, ⑤ 깊이 한 번 절</figcaption>
 </figure>
 
 Ise Jingu가 안내하는 순서는 다음과 같습니다.

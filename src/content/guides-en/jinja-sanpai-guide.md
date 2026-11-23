@@ -10,7 +10,7 @@ A shrine visit can be divided into six steps. There are no difficult rules. If y
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="Illustration of the shrine visit in six pictograms" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">The shrine visit in six steps<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">The shrine visit in six steps</figcaption>
 </figure>
 
 1. Bow in front of the torii gate, then pass through
@@ -57,7 +57,7 @@ Ise Jingu officially gives the following five steps.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="Illustration of the temizu purification in five pictograms" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">The five steps of temizu (based on the guidance of Ise Jingu)<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">The five steps of temizu (based on the guidance of Ise Jingu)</figcaption>
 </figure>
 
 1. Take a generous scoop of water with the ladle in your right hand and wash your left hand.
@@ -79,7 +79,7 @@ In front of the haiden (worship hall), you make an offering and then pray. The b
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="Illustration of bowing twice, clapping twice and bowing once" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Bow twice, clap twice, bow once: 1-2 bow deeply twice, 3-4 clap twice, 5 bow deeply once<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Bow twice, clap twice, bow once: 1-2 bow deeply twice, 3-4 clap twice, 5 bow deeply once</figcaption>
 </figure>
 
 The steps given by Ise Jingu are as follows.

@@ -17,7 +17,7 @@ Before choosing a goshuincho, think about these three things.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Illustration of the three things to consider before choosing a goshuincho, shown with three pictograms" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Three things to consider before choosing (1. where to get it  2. how many you will collect  3. how you will carry it)<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Three things to consider before choosing (1. where to get it  2. how many you will collect  3. how you will carry it)</figcaption>
 </figure>
 
 1. Where to get it
@@ -78,7 +78,7 @@ The Japan Tourism Agency's multilingual commentary database (the commentary on t
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="Illustration showing a closed goshuincho and the same book opened out like an accordion" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">An image of a jabara goshuincho (closed, and opened out)<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">An image of a jabara goshuincho (closed, and opened out)</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ The Miyagi Prefecture Shrine Association advises keeping a goshuincho in a clean
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="Illustration showing three ways to carry a goshuincho: a drawstring bag, a case and a bag" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Examples of ways to carry a goshuincho (drawstring bag, case, bag)<br />Illustration: created by this site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Examples of ways to carry a goshuincho (drawstring bag, case, bag)</figcaption>
 </figure>
 
 <figure class="not-prose my-8">

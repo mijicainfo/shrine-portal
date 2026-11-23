@@ -10,7 +10,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="神社参拝の流れを、6つの絵記号で示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">神社参拝の流れ（6ステップ）<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">神社参拝の流れ（6ステップ）</figcaption>
 </figure>
 
 1. 鳥居の前で一礼して、くぐる
@@ -57,7 +57,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="手水の作法を、5つの絵記号で示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">手水の5つの手順（伊勢の神宮の案内にもとづく）<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">手水の5つの手順（伊勢の神宮の案内にもとづく）</figcaption>
 </figure>
 
 1. 右手で柄杓を持ち、たっぷりと水をくんで、左手を清めます。
@@ -79,7 +79,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="二拝二拍手一拝を示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">二拝二拍手一拝：①② 深いお辞儀を2回、③④ 拍手を2回、⑤ 深いお辞儀を1回<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">二拝二拍手一拝：①② 深いお辞儀を2回、③④ 拍手を2回、⑤ 深いお辞儀を1回</figcaption>
 </figure>
 
 伊勢の神宮が案内している手順は、次のとおりです。

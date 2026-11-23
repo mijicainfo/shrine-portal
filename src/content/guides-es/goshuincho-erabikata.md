@@ -17,7 +17,7 @@ Antes de elegir un goshuincho, conviene pensar en estas tres cosas.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Ilustración con tres pictogramas de las tres cosas que conviene pensar antes de elegir un goshuincho" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Tres cosas que pensar antes de elegir (① dónde conseguirlo ② cuántos goshuin piensa reunir ③ cómo lo llevará consigo)<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Tres cosas que pensar antes de elegir (① dónde conseguirlo ② cuántos goshuin piensa reunir ③ cómo lo llevará consigo)</figcaption>
 </figure>
 
 1. Dónde conseguirlo
@@ -78,7 +78,7 @@ La base de datos de textos explicativos multilingües de la Agencia de Turismo d
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="Ilustración de un goshuincho cerrado y del mismo cuaderno desplegado como un acordeón" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Imagen de un goshuincho jabara (cerrado y desplegado)<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Imagen de un goshuincho jabara (cerrado y desplegado)</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ La Asociación de Santuarios de Miyagi indica que el goshuincho se guarde en un 
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="Ilustración de tres maneras de llevar un goshuincho (bolsa con cordón, estuche y bolso)" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Ejemplos de maneras de llevar el goshuincho (bolsa con cordón, estuche y bolso)<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Ejemplos de maneras de llevar el goshuincho (bolsa con cordón, estuche y bolso)</figcaption>
 </figure>
 
 <figure class="not-prose my-8">

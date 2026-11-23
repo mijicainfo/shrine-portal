@@ -10,7 +10,7 @@ Une visite au sanctuaire se compose de 6 étapes. Il n’y a pas de règle compl
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="Illustration de la visite d’un sanctuaire en six pictogrammes" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">La visite du sanctuaire en six étapes<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">La visite du sanctuaire en six étapes</figcaption>
 </figure>
 
 1. S’incliner devant le torii (portique d’entrée du sanctuaire), puis le franchir
@@ -57,7 +57,7 @@ La marche à suivre indiquée officiellement par l’Ise Jingu comporte les 5 é
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="Illustration du temizu (purification) en cinq pictogrammes" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Les cinq étapes du temizu (d’après les indications d’Ise Jingu)<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Les cinq étapes du temizu (d’après les indications d’Ise Jingu)</figcaption>
 </figure>
 
 1. Prenez le hishaku (la louche) de la main droite, puisez de l’eau en quantité suffisante et purifiez votre main gauche.
@@ -79,7 +79,7 @@ Devant le haiden, on dépose son offrande d’argent (saisen), puis on prie. Le 
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="Illustration : deux révérences, deux battements de mains, une révérence" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Deux révérences, deux battements de mains, une révérence : 1-2 révérence profonde deux fois, 3-4 deux battements de mains, 5 révérence profonde une fois<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Deux révérences, deux battements de mains, une révérence : 1-2 révérence profonde deux fois, 3-4 deux battements de mains, 5 révérence profonde une fois</figcaption>
 </figure>
 
 Voici la marche à suivre indiquée par l’Ise Jingu.

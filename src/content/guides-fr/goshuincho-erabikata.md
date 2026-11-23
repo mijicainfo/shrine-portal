@@ -17,7 +17,7 @@ Avant de choisir un goshuincho, posez-vous ces 3 questions.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Illustration des 3 questions à se poser avant de choisir un goshuincho, représentées par 3 pictogrammes" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Les 3 questions à se poser avant de choisir (① où l’obtenir ② combien de goshuin collectionner ③ comment le transporter)<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Les 3 questions à se poser avant de choisir (① où l’obtenir ② combien de goshuin collectionner ③ comment le transporter)</figcaption>
 </figure>
 
 1. Où l’obtenir
@@ -78,7 +78,7 @@ La base de données de textes explicatifs multilingues de l’Agence du tourisme
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="Illustration d’un goshuincho fermé et du même carnet déplié en accordéon" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Un goshuincho jabara (en accordéon), fermé et déplié<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Un goshuincho jabara (en accordéon), fermé et déplié</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ Miyagi Jinjacho (Association des sanctuaires de la préfecture de Miyagi) invite
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="Illustration de 3 façons de transporter un goshuincho (pochette à cordons, étui, sac)" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Exemples de façons de transporter un goshuincho (pochette à cordons, étui, sac)<br />Illustration : réalisée par ce site</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Exemples de façons de transporter un goshuincho (pochette à cordons, étui, sac)</figcaption>
 </figure>
 
 <figure class="not-prose my-8">

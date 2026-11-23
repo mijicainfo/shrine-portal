@@ -17,7 +17,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="以3個圖示表示選擇御朱印帳之前要考慮的3件事的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選擇之前要考慮的3件事（①要在哪裡取得　②打算收集多少　③如何攜帶）<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選擇之前要考慮的3件事（①要在哪裡取得　②打算收集多少　③如何攜帶）</figcaption>
 </figure>
 
 1. 要在哪裡取得
@@ -78,7 +78,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="表示已闔上的御朱印帳，以及同一本冊子像蛇腹一樣展開的樣子的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">蛇腹式御朱印帳的示意（闔上的狀態與展開的狀態）<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">蛇腹式御朱印帳的示意（闔上的狀態與展開的狀態）</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="表示攜帶御朱印帳的3種方式（束口袋、收納盒、包包）的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">攜帶御朱印帳的方式範例（束口袋・收納盒・包包）<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">攜帶御朱印帳的方式範例（束口袋・收納盒・包包）</figcaption>
 </figure>
 
 <figure class="not-prose my-8">

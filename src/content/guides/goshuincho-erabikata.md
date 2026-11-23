@@ -17,7 +17,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="御朱印帳を選ぶ前に考える3つのことを、3つの絵記号で示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選ぶ前に考える3つのこと（①どこで手に入れるか　②どのくらい集めるか　③どう持ち歩くか）<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選ぶ前に考える3つのこと（①どこで手に入れるか　②どのくらい集めるか　③どう持ち歩くか）</figcaption>
 </figure>
 
 1. どこで手に入れるか
@@ -78,7 +78,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="閉じた御朱印帳と、同じ帳面を蛇腹のように広げた様子を示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">蛇腹の御朱印帳のイメージ（閉じた状態と、広げた状態）<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">蛇腹の御朱印帳のイメージ（閉じた状態と、広げた状態）</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="御朱印帳を持ち運ぶ3つの方法（巾着袋、ケース、かばん）を示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">御朱印帳を持ち運ぶ方法の例（巾着袋・ケース・かばん）<br />イラスト：当サイト作成</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">御朱印帳を持ち運ぶ方法の例（巾着袋・ケース・かばん）</figcaption>
 </figure>
 
 <figure class="not-prose my-8">

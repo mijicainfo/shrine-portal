@@ -10,7 +10,7 @@ La visita a un santuario consta, a grandes rasgos, de 6 pasos. No hay reglas dif
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="Ilustración de la visita a un santuario en seis pictogramas" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">La visita al santuario en seis pasos<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">La visita al santuario en seis pasos</figcaption>
 </figure>
 
 1. Haga una reverencia ante el torii y cruce.
@@ -57,7 +57,7 @@ Los pasos que el Santuario de Ise (Jingu) indica oficialmente son estos cinco.
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="Ilustración del temizu (purificación) en cinco pictogramas" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Los cinco pasos del temizu (según la guía de Ise Jingu)<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Los cinco pasos del temizu (según la guía de Ise Jingu)</figcaption>
 </figure>
 
 1. Con la mano derecha, tome con el cucharón (hishaku) abundante agua y purifique la mano izquierda.
@@ -79,7 +79,7 @@ Ante el haiden (pabellón de oración), se hace primero la ofrenda de dinero (sa
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="Ilustración de dos reverencias, dos palmadas y una reverencia" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Dos reverencias, dos palmadas, una reverencia: 1-2 reverencia profunda dos veces, 3-4 dos palmadas, 5 reverencia profunda una vez<br />Ilustración: creada por este sitio</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Dos reverencias, dos palmadas, una reverencia: 1-2 reverencia profunda dos veces, 3-4 dos palmadas, 5 reverencia profunda una vez</figcaption>
 </figure>
 
 Los pasos que indica el Santuario de Ise (Jingu) son los siguientes.

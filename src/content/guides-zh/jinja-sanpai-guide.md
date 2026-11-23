@@ -10,7 +10,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/flow.svg" alt="以6個圖示表示神社參拜流程的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">神社參拜的流程（6個步驟）<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">神社參拜的流程（6個步驟）</figcaption>
 </figure>
 
 1. 在鳥居前一鞠躬，再走進去
@@ -57,7 +57,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/temizu.svg" alt="以5個圖示表示手水禮儀的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">手水的5個步驟（依據伊勢神宮的介紹）<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">手水的5個步驟（依據伊勢神宮的介紹）</figcaption>
 </figure>
 
 1. 右手拿木杓，舀滿水，清潔左手。
@@ -79,7 +79,7 @@ publishDate: 2026-11-21
 
 <figure class="not-prose my-8">
 <img src="/images/guides/sanpai-guide/bow-clap.svg" alt="表示二拜二拍手一拜的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">二拜二拍手一拜：①② 深深鞠躬2次、③④ 拍手2次、⑤ 深深鞠躬1次<br />插圖：本站製作</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">二拜二拍手一拜：①② 深深鞠躬2次、③④ 拍手2次、⑤ 深深鞠躬1次</figcaption>
 </figure>
 
 伊勢的神宮介紹的步驟如下。

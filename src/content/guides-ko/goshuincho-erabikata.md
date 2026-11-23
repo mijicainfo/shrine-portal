@@ -17,7 +17,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/three-questions.svg" alt="고슈인초를 고르기 전에 생각할 3가지를 3개의 그림 기호로 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">고르기 전에 생각할 3가지(① 어디서 구할지　② 얼마나 모을지　③ 어떻게 들고 다닐지)<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">고르기 전에 생각할 3가지(① 어디서 구할지　② 얼마나 모을지　③ 어떻게 들고 다닐지)</figcaption>
 </figure>
 
 1. 어디서 구할지
@@ -78,7 +78,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/jabara.svg" alt="닫힌 고슈인초와, 같은 책자를 자바라처럼 펼친 모습을 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">자바라 고슈인초의 이미지(닫힌 상태와 펼친 상태)<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">자바라 고슈인초의 이미지(닫힌 상태와 펼친 상태)</figcaption>
 </figure>
 
 <div class="not-prose my-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -143,7 +143,7 @@ publishDate: 2026-11-24
 
 <figure class="not-prose my-8">
 <img src="/images/guides/goshuincho-guide/carry.svg" alt="고슈인초를 들고 다니는 3가지 방법(끈 주머니, 케이스, 가방)을 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
-<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">고슈인초를 들고 다니는 방법의 예(끈 주머니・케이스・가방)<br />일러스트: 본 사이트 제작</figcaption>
+<figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">고슈인초를 들고 다니는 방법의 예(끈 주머니・케이스・가방)</figcaption>
 </figure>
 
 <figure class="not-prose my-8">
