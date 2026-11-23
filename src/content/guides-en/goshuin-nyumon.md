@@ -135,6 +135,10 @@ The Miyagi Prefecture Shrine Association treats peering at the writing or taking
 
 Goshuin are received after you have prayed. How to pass through a torii, purify at the temizuya and worship at the haiden is explained with photos and illustrations in [Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship](/en/guides/jinja-sanpai-guide/).
 
+## Choosing a goshuin book
+
+Where to get a goshuin book, and what shapes and sizes there are, is explained in [How to Choose a Goshuincho: Where to Get One, Shapes and Prices Compared](/en/guides/goshuincho-erabikata/).
+
 ## About this information
 
 - The meaning, origin and etiquette of goshuin are based on the official guidance of the Miyagi Prefecture Shrine Association, the Tokyo Shrine Association, the Japan Tourism Agency's multilingual commentary database, the Japan National Tourism Organization (JNTO), Asakusa Jinja and Sakuragi Jinja. The website of Jinja Honcho could not be displayed when we checked, so we have not referred to it.

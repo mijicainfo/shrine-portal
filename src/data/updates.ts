@@ -43,6 +43,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-24',
+    category: 'guide',
+    note: {
+      ja: '特集記事「御朱印帳の選び方｜入手場所・形・値段の違いを解説」を公開しました',
+      en: 'Published a new featured guide: "How to Choose a Goshuincho: Where to Get One, Shapes and Prices Compared"',
+      zh: '發布了新的精選文章「御朱印帳的選擇方式｜取得地點、形式、價格的差異解說」',
+      es: 'Publicamos un nuevo artículo destacado: "Cómo elegir un goshuincho: dónde conseguirlo, formas y precios"',
+      fr: 'Publication d’un nouvel article à la une : « Comment choisir son goshuincho : où l’obtenir, forme, prix et différences expliqués »',
+      ko: '새로운 특집 기사 "고슈인초(御朱印帳) 고르는 법｜구하는 곳・모양・가격의 차이를 설명"를 공개했습니다',
+      href: '/guides/goshuincho-erabikata/',
+    },
+  },
+  {
     date: '2026-11-23',
     shrineSlugs: ['akasaka-hikawa-jinja', 'tamagawa-sengen-jinja', 'atago-jinja-minato', 'shibata-jinja-fukui', 'yanagisawa-jinja'],
   },
@@ -61,19 +74,6 @@ export const updates: UpdateEntry[] = [
       fr: 'Publication d’un nouvel article à la une : « Guide de la première visite au sanctuaire : torii, temizu et prière »',
       ko: '새로운 특집 기사 "처음 가는 신사 참배 가이드｜도리이・데미즈・배례 작법"를 공개했습니다',
       href: '/guides/jinja-sanpai-guide/',
-    },
-  },
-  {
-    date: '2026-11-21',
-    category: 'guide',
-    note: {
-      ja: '特集記事「御朱印入門ガイド｜御朱印とは？いただき方・マナー・料金・御朱印帳を、神社の公式案内で解説」を公開しました',
-      en: 'Published a new featured guide: "Goshuin for Beginners: What Goshuin Are, How to Receive Them, Etiquette and Fees, Explained with Official Shrine Guidance"',
-      zh: '發布了新的精選文章「御朱印入門指南｜什麼是御朱印？領取方式・禮儀・費用・御朱印帳，依神社官方介紹解說」',
-      es: 'Publicamos un nuevo artículo destacado: "Guía de introducción al goshuin: qué es, cómo recibirlo, etiqueta, precios y goshuincho, según las guías oficiales de los santuarios"',
-      fr: 'Publication d’un nouvel article à la une : « Guide d’initiation au goshuin : qu’est-ce qu’un goshuin ? Comment le recevoir, savoir-vivre, prix et carnet, d’après les informations officielles des sanctuaires »',
-      ko: '새로운 특집 기사 "고슈인(御朱印) 입문 가이드｜고슈인이란? 받는 방법・매너・요금・고슈인초(御朱印帳)를 신사의 공식 안내로 설명"를 공개했습니다',
-      href: '/guides/goshuin-nyumon/',
     },
   },
   {

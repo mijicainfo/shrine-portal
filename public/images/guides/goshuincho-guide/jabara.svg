@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 250" role="img" aria-label="A closed goshuin book and the same book unfolded like an accordion">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fdf8f1"/><stop offset="1" stop-color="#f7ecdd"/></linearGradient>
+    <g id="seal"><circle r="13" fill="none" stroke="#d94b3a" stroke-width="4"/><circle r="4" fill="#d94b3a"/></g>
+    <g id="brush" fill="none" stroke="#5c4f45" stroke-width="6" stroke-linecap="round"><path d="M-14 -34 q10 -10 22 -2"/><path d="M-12 -14 q14 -8 26 2"/><path d="M-10 8 q12 -6 24 0"/></g>
+  </defs>
+  <rect width="960" height="250" rx="22" fill="url(#bg)"/>
+  <rect x="2" y="2" width="956" height="246" rx="20" fill="none" stroke="#ddb877" stroke-opacity=".5" stroke-width="2"/>
+
+  <!-- closed book -->
+  <g transform="translate(150 125)">
+    <rect x="-52" y="-84" width="104" height="168" rx="8" fill="#31507a"/>
+    <rect x="-52" y="-84" width="104" height="168" rx="8" fill="none" stroke="#ddb877" stroke-width="3"/>
+    <rect x="-34" y="-62" width="68" height="124" rx="4" fill="none" stroke="#ddb877" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <rect x="-8" y="-84" width="16" height="168" fill="#e8887a"/>
+    <circle cx="0" cy="0" r="14" fill="#fdf8f1"/><circle cx="0" cy="0" r="6" fill="#d94b3a"/>
+  </g>
+
+  <!-- arrow -->
+  <g fill="none" stroke="#ddb877" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 125 l56 0 m-18 -18 l18 18 l-18 18"/>
+  </g>
+
+  <!-- unfolded accordion strip: 6 panels -->
+  <g transform="translate(340 62)">
+    <g stroke="#ddb877" stroke-width="3">
+      <rect x="0"   y="0" width="90" height="126" fill="#fffdf9"/>
+      <rect x="90"  y="0" width="90" height="126" fill="#f3e7d6"/>
+      <rect x="180" y="0" width="90" height="126" fill="#fffdf9"/>
+      <rect x="270" y="0" width="90" height="126" fill="#f3e7d6"/>
+      <rect x="360" y="0" width="90" height="126" fill="#fffdf9"/>
+      <rect x="450" y="0" width="90" height="126" fill="#f3e7d6"/>
+    </g>
+    <g transform="translate(45 64)"><use href="#brush"/></g>
+    <g transform="translate(45 100)"><use href="#seal"/></g>
+    <g transform="translate(135 64)"><use href="#brush"/></g>
+    <g transform="translate(135 102)"><use href="#seal"/></g>
+    <g transform="translate(225 64)"><use href="#brush"/></g>
+    <g transform="translate(225 100)"><use href="#seal"/></g>
+    <g transform="translate(315 64)"><use href="#brush"/></g>
+    <g transform="translate(315 102)"><use href="#seal"/></g>
+    <g transform="translate(405 64)"><use href="#brush"/></g>
+    <g transform="translate(405 100)"><use href="#seal"/></g>
+    <!-- last panels left blank for the next goshuin -->
+    <g fill="none" stroke="#ddb877" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"><path d="M472 40 l66 0"/><path d="M472 90 l66 0"/></g>
+    <!-- side view of the folds -->
+    <path d="M0 150 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18 l22 18 l22 -18" transform="translate(0 4) scale(1 1)" fill="none" stroke="#31507a" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity=".0"/>
+    <path d="M0 160 l45 22 l45 -22 l45 22 l45 -22 l45 22 l45 -22 l45 22 l45 -22 l45 22 l45 -22 l45 22" fill="none" stroke="#31507a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+</svg>
