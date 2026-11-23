@@ -180,5 +180,5 @@ On le reçoit après la prière, au juyosho (shamusho). Les horaires et l’empl
 
 - Les usages de la visite s’appuient sur les sites officiels de l’Ise Jingu, du Meiji Jingu, du Kitano Tenmangu et de l’Izumo Taisha, ainsi que sur les informations de l’Office national du tourisme japonais (JNTO) et de la base de données de textes explicatifs multilingues de l’Agence du tourisme du Japon (vérifié en novembre 2026). Les sites de Jinja Honcho (Association des sanctuaires du Japon) et de Tokyo Jinjacho (Association des sanctuaires de Tokyo) n’ont pas pu s’afficher lors de la vérification ; nous ne les avons donc pas consultés.
 - Les usages peuvent différer dans le détail selon les sanctuaires. Donnez la priorité aux indications et aux panneaux du sanctuaire où vous vous rendez.
-- Les photos sont des photos sous licence libre de Wikimedia Commons. Le photographe et la licence sont indiqués sous chaque photo. Les illustrations ont été réalisées par notre site.
+- Les photos sont des photos sous licence libre de Wikimedia Commons. Le photographe et la licence sont indiqués sous chaque photo.
 - Date de vérification : 21 novembre 2026

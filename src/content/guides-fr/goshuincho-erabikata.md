@@ -209,5 +209,5 @@ Selon les sanctuaires, pendant les périodes d’affluence ou les jours d’év�
 - L’explication de la jabara et de la watoji, ainsi que la question de séparer sanctuaires et temples, s’appuient sur le texte original en anglais de la base de données de textes explicatifs multilingues de l’Agence du tourisme du Japon (explication des temples du pèlerinage de Chichibu). Cette base de données précise que le texte japonais est une traduction (provisoire) de l’anglais ; nous nous appuyons donc sur le texte original en anglais.
 - Les goshuin sur papier et les usages au moment de faire écrire s’appuient sur les informations de Miyagi Jinjacho et de l’Office national du tourisme japonais (JNTO).
 - Les exemples de taille et de nombre de faces des goshuincho s’appuient sur le site officiel de l’Iwashimizu Hachimangu ainsi que sur la page produit et le communiqué de presse de SOWALABO (早和製本株式会社) (explications du fabricant lui-même).
-- Les photos sont des photos sous licence libre de Wikimedia Commons. Le photographe et la licence sont indiqués sous chaque photo. Les illustrations ont été réalisées par notre site.
+- Les photos sont des photos sous licence libre de Wikimedia Commons. Le photographe et la licence sont indiqués sous chaque photo.
 - Date de vérification : 23 novembre 2026

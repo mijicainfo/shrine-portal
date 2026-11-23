@@ -209,5 +209,5 @@ Depending on the shrine, during crowded periods or on event days goshuin are not
 - The explanation of jabara and watoji, and the idea of keeping shrines and temples separate, are based on the English original of the Japan Tourism Agency's multilingual commentary database (the commentary on the Chichibu pilgrimage temples). The database notes that its Japanese text is a translation from the English (a provisional translation), so we have introduced it based on the English original.
 - Paper goshuin and the etiquette for having one written are based on the guidance of the Miyagi Prefecture Shrine Association and the Japan National Tourism Organization (JNTO).
 - The examples of goshuincho sizes and numbers of faces are based on the official website of Iwashimizu Hachimangu and on the product pages and press release of SOWALABO (早和製本株式会社) (the manufacturer's own explanation).
-- The photographs are free-license photographs from Wikimedia Commons. The photographer and license are given below each photograph. The illustrations were created for this site.
+- The photographs are free-license photographs from Wikimedia Commons. The photographer and license are given below each photograph.
 - Last checked: November 23, 2026.

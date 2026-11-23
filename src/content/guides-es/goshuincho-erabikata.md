@@ -209,5 +209,5 @@ En algunos santuarios, en las épocas de aglomeración o en los días de eventos
 - La explicación de jabara y watoji, y la idea de separar los santuarios y los templos, proceden del texto original en inglés de la base de datos de textos explicativos multilingües de la Agencia de Turismo de Japón (explicación de las peregrinaciones de Chichibu). Como la base de datos señala que su texto en japonés es una traducción (provisional) del inglés, aquí nos basamos en el texto original en inglés.
 - El goshuin en papel y las normas al pedir que lo escriban se basan en las guías de la Asociación de Santuarios de Miyagi y de la Organización Nacional de Turismo de Japón (JNTO).
 - Los ejemplos de tamaño y número de caras se basan en el sitio web oficial del Iwashimizu Hachimangu y en la página del producto y el comunicado de prensa de SOWALABO (早和製本) (explicaciones del propio fabricante).
-- Las fotografías son fotos con licencia libre de Wikimedia Commons. El fotógrafo y la licencia figuran bajo cada foto. Las ilustraciones fueron creadas por este sitio.
+- Las fotografías son fotos con licencia libre de Wikimedia Commons. El fotógrafo y la licencia figuran bajo cada foto.
 - Fecha de comprobación: 23 de noviembre de 2026

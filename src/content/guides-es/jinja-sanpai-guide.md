@@ -180,5 +180,5 @@ Se recibe después de rendir culto, en el puesto de entrega de artículos (shamu
 
 - La etiqueta de la visita se basa en las guías de los sitios web oficiales del Santuario de Ise (Jingu), el Meiji Jingu, el Kitano Tenmangu y el Izumo Taisha, de la Organización Nacional de Turismo de Japón (JNTO) y de la base de datos de textos explicativos multilingües de la Agencia de Turismo de Japón (comprobado en noviembre de 2026). No se han consultado los sitios web de la Asociación de Santuarios de Japón (Jinja Honcho) ni de la Asociación de Santuarios de Tokio (Tokyo Jinjacho) porque no se pudieron mostrar en el momento de la comprobación.
 - La etiqueta puede variar en los detalles según el santuario. Dé prioridad a las indicaciones y los carteles del santuario que visite.
-- Las fotografías son fotos con licencia libre de Wikimedia Commons. El fotógrafo y la licencia figuran bajo cada foto. Las ilustraciones fueron creadas por este sitio.
+- Las fotografías son fotos con licencia libre de Wikimedia Commons. El fotógrafo y la licencia figuran bajo cada foto.
 - Fecha de comprobación: 21 de noviembre de 2026

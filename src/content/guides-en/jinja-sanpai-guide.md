@@ -180,5 +180,5 @@ After you have prayed, it is received at the offering counter (shamusho). Hours 
 
 - The etiquette for visiting is based on the official websites of Ise Jingu, Meiji Jingu, Kitano Tenmangu and Izumo Taisha, and on the guidance of the Japan National Tourism Organization (JNTO) and the Japan Tourism Agency's multilingual commentary database (checked in November 2026). The websites of Jinja Honcho and the Tokyo Shrine Association could not be displayed when we checked, so we have not referred to them.
 - Etiquette can differ in its fine points by shrine. Please give priority to the guidance and signs of the shrine you are visiting.
-- The photographs are free-license photographs from Wikimedia Commons. The photographer and license are given below each photograph. The illustrations were created for this site.
+- The photographs are free-license photographs from Wikimedia Commons. The photographer and license are given below each photograph.
 - Last checked: November 21, 2026.
