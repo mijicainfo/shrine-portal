@@ -44,6 +44,10 @@ export interface UpdateEntry {
 export const updates: UpdateEntry[] = [
   {
     date: '2026-11-27',
+    shrineSlugs: ['tamashiki-jinja', 'shakujii-hikawa-jinja', 'sanno-jinja-nagasaki', 'takayama-inari-jinja', 'aguchi-jinja'],
+  },
+  {
+    date: '2026-11-27',
     category: 'guide',
     note: {
       ja: '特集記事「2027年・未年の参拝ガイド」に、東京・関東の参拝先の案内を追加しました',
@@ -75,9 +79,5 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-11-22',
     shrineSlugs: ['kishu-toshogu', 'kanahebisui-jinja', 'konno-hachimangu', 'rikyu-hachimangu', 'sakitama-jinja'],
-  },
-  {
-    date: '2026-11-20',
-    shrineSlugs: ['yaizu-jinja', 'hiromine-jinja', 'kato-jinja-kumamoto', 'tamatsukuriyu-jinja', 'matsue-jinja'],
   },
 ];
