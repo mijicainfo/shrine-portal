@@ -16,7 +16,7 @@ publishDate: 2026-11-24
 在選擇御朱印帳之前，先想想以下3件事。
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="以3個圖示表示選擇御朱印帳之前要考慮的3件事的插圖" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="描繪選擇御朱印帳前要考慮的3件事的插圖（在授與所取得、考慮要收集幾本、放入布袋或包包隨身攜帶）" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選擇之前要考慮的3件事（①要在哪裡取得　②打算收集多少　③如何攜帶）</figcaption>
 </figure>
 

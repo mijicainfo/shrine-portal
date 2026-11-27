@@ -16,7 +16,7 @@ Le goshuincho est un carnet dans lequel on consigne les goshuin reçus et on les
 Avant de choisir un goshuincho, posez-vous ces 3 questions.
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Illustration des 3 questions à se poser avant de choisir un goshuincho, représentées par 3 pictogrammes" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="Illustration de trois points à envisager avant de choisir un goshuincho : se le procurer au bureau du sanctuaire, combien en remplir et le transporter dans une pochette ou un sac" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Les 3 questions à se poser avant de choisir (① où l’obtenir ② combien de goshuin collectionner ③ comment le transporter)</figcaption>
 </figure>
 

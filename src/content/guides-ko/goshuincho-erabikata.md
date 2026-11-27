@@ -16,7 +16,7 @@ publishDate: 2026-11-24
 고슈인초를 고르기 전에 다음 3가지를 생각해 보시기 바랍니다.
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="고슈인초를 고르기 전에 생각할 3가지를 3개의 그림 기호로 나타낸 일러스트" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="고슈인초를 고르기 전에 생각할 세 가지를 그린 일러스트(수여소에서 구하기, 몇 권을 모을지, 주머니나 가방에 넣어 다니기)" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">고르기 전에 생각할 3가지(① 어디서 구할지　② 얼마나 모을지　③ 어떻게 들고 다닐지)</figcaption>
 </figure>
 

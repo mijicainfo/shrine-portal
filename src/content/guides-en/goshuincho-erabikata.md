@@ -16,7 +16,7 @@ A goshuincho is a book for recording and carefully keeping the goshuin you recei
 Before choosing a goshuincho, think about these three things.
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Illustration of the three things to consider before choosing a goshuincho, shown with three pictograms" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="Illustration of three things to think about before choosing a goshuin book: getting one at a shrine office, how many you might fill, and carrying it in a pouch or bag" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Three things to consider before choosing (1. where to get it  2. how many you will collect  3. how you will carry it)</figcaption>
 </figure>
 

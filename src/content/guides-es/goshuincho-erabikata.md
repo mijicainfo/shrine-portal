@@ -16,7 +16,7 @@ El goshuincho es el cuaderno en el que se registran y se conservan con cuidado l
 Antes de elegir un goshuincho, conviene pensar en estas tres cosas.
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="Ilustración con tres pictogramas de las tres cosas que conviene pensar antes de elegir un goshuincho" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="Ilustración de tres cosas que pensar antes de elegir un goshuincho: conseguirlo en la oficina del santuario, cuántos va a llenar y cómo llevarlo en una funda o bolso" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">Tres cosas que pensar antes de elegir (① dónde conseguirlo ② cuántos goshuin piensa reunir ③ cómo lo llevará consigo)</figcaption>
 </figure>
 

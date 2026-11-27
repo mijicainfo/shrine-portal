@@ -16,7 +16,7 @@ publishDate: 2026-11-24
 御朱印帳を選ぶ前に、次の3つを考えてみましょう。
 
 <figure class="not-prose my-8">
-<img src="/images/guides/goshuincho-guide/three-questions.svg" alt="御朱印帳を選ぶ前に考える3つのことを、3つの絵記号で示したイラスト" width="960" height="250" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
+<img src="/images/guides/goshuincho-guide/three-questions.webp" alt="御朱印帳を選ぶ前に考える3つのことを描いたイラスト（授与所で手に取る、冊数を考える、袋やかばんに入れて持ち歩く）" width="1280" height="488" loading="lazy" decoding="async" class="w-full rounded-2xl border border-shrine-gold/25" />
 <figcaption class="mt-2 text-xs leading-relaxed text-shrine-ink-soft">選ぶ前に考える3つのこと（①どこで手に入れるか　②どのくらい集めるか　③どう持ち歩くか）</figcaption>
 </figure>
 
