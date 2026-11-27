@@ -74,6 +74,16 @@ function detectAffiliatePartner(href: string): AffiliatePartner | null {
   return null;
 }
 
+/**
+ * どの場所のボタンが押されたかを返す。各コンポーネントの data-aff-placement を使い、
+ * 印がない本文中のリンクは article-body、それ以外は other。
+ */
+function detectAffiliatePlacement(link: HTMLAnchorElement): string {
+  const marked = link.closest<HTMLElement>('[data-aff-placement]');
+  if (marked?.dataset.affPlacement) return marked.dataset.affPlacement;
+  return link.closest('.prose') ? 'article-body' : 'other';
+}
+
 function initAffiliateClickTracking() {
   document.addEventListener('click', (event) => {
     const link = (event.target as HTMLElement).closest?.('a[href]') as HTMLAnchorElement | null;
@@ -83,6 +93,7 @@ function initAffiliateClickTracking() {
     const gtag = (window as typeof window & { gtag?: (...args: unknown[]) => void }).gtag;
     gtag?.('event', 'affiliate_click', {
       affiliate_partner: partner,
+      affiliate_placement: detectAffiliatePlacement(link),
       link_url: link.href,
       page_path: window.location.pathname,
     });

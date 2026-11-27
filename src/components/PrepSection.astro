@@ -31,7 +31,7 @@ const benefitSet = benefitItemSets.find((set) => set.tags.some((tag) => benefits
 const amazonNote = prepText.amazonNote[lang];
 ---
 
-<section class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm" aria-label={prepText.heading[lang]}>
+<section data-aff-placement="prep" class="rounded-2xl border border-shrine-gold/30 bg-white p-6 shadow-sm" aria-label={prepText.heading[lang]}>
   <h2 class="font-serif-jp text-xl font-bold text-shrine-ink">{prepText.heading[lang]}</h2>
   <p class="mt-1 text-sm leading-relaxed text-shrine-ink-soft">{prepText.lead[lang]}</p>
 

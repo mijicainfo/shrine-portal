@@ -61,7 +61,7 @@ const items =
 const rel = 'noopener noreferrer sponsored';
 ---
 
-<nav class="border-b border-shrine-gold/30 bg-white" aria-label={t.heading}>
+<nav class="border-b border-shrine-gold/30 bg-white" aria-label={t.heading} data-aff-placement="tripbar">
   <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 sm:px-6">
     <p class="hidden items-center gap-1.5 text-xs font-bold text-shrine-ink-soft sm:flex">
       <span class="rounded bg-shrine-ink-soft/15 px-1.5 py-0.5 text-[10px] font-bold text-shrine-ink-soft">PR</span>{t.heading}
@@ -86,7 +86,7 @@ const rel = 'noopener noreferrer sponsored';
 </nav>
 
 {mode === 'shrine' && (
-  <div id="trip-sticky" class="pointer-events-none fixed inset-x-0 bottom-0 z-40 translate-y-full border-t border-shrine-gold/40 bg-white/95 px-3 py-2 shadow-[0_-2px_8px_rgba(92,79,69,0.12)] backdrop-blur transition-transform duration-300 sm:hidden" aria-hidden="true">
+  <div id="trip-sticky" data-aff-placement="tripbar-sticky" class="pointer-events-none fixed inset-x-0 bottom-0 z-40 translate-y-full border-t border-shrine-gold/40 bg-white/95 px-3 py-2 shadow-[0_-2px_8px_rgba(92,79,69,0.12)] backdrop-blur transition-transform duration-300 sm:hidden" aria-hidden="true">
     <div class="grid grid-cols-2 gap-2">
       {items.map((it) => (
         <a
