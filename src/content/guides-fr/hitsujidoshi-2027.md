@@ -1,6 +1,6 @@
 ---
 title: "Guide de visite de l'année du Mouton 2027 : sanctuaires du mouton et fêtes des années du Mouton"
-description: "2027 est une année du Mouton (Hitsuji-doshi). Voici 4 sanctuaires utiles pour préparer vos visites : les « sanctuaires du mouton » de Gunma et de Nagoya, la grande fête Shikinen Taisai du Togakushi Jinja célébrée les années du Bœuf et du Mouton, et le Tanashi Jinja, qui prévoit des ema sur le thème « Soleil et mouton »."
+description: "2027 est une année du Mouton (Hitsuji-doshi). Voici 4 sanctuaires utiles pour préparer vos visites : les « sanctuaires du mouton » de Gunma et de Nagoya, la grande fête Shikinen Taisai du Togakushi Jinja célébrée les années du Bœuf et du Mouton, et le Tanashi Jinja, qui prévoit des ema sur le thème « Soleil et mouton ». Avec aussi des idées à Tokyo et dans la région du Kanto."
 publishDate: 2026-10-31
 entries:
   - shrineId: "hitsuji-jinja-annaka"
@@ -28,6 +28,21 @@ Dans la préfecture de Chiba se tient le « Shimosa Sanzan Nana-nen Matsuri » (
 ## Un événement de la même année à Nagano (temple)
 
 Ce n'est pas un sanctuaire, mais au Zenkoji de Nagano, le site officiel du Gokaicho annonce que le Maedachi Honzon Gokaicho (dévoilement exceptionnel de la réplique de l'image principale) est prévu en Reiwa 9 (2027), du 4 avril au 19 juin. Comme cette période recoupe celle de la Shikinen Taisai du Togakushi Jinja (du 25 avril au 25 mai), cela peut servir de repère pour organiser un voyage dans la région de Nagano.
+
+## Où aller à Tokyo et dans le Kanto en année du Mouton
+
+Si vous organisez votre visite autour de Tokyo, vous pouvez choisir selon votre objectif.
+
+- **Un sanctuaire dont le nom contient « mouton » (Annaka, Gunma)** : [sanctuaire Hitsuji (Annaka, Nakanoya)](/fr/shrines/hitsuji-jinja-annaka/). Sans prêtre résident, il fait délivrer ses goshuin au sanctuaire Sakisaki, qui en a la charge.
+- **Un sanctuaire qui prévoit des ema « Soleil et mouton » pour 2027 (Nishitokyo, Tokyo)** : [Tanashi Jinja](/fr/shrines/tanashi-jinja/). La date exacte de distribution n'était pas annoncée en octobre 2026.
+- **Une fête des années du Mouton (Chiba)** : le Shimosa Sanzan Nana-nen Matsuri présenté plus haut.
+
+Pour les deux sanctuaires suivants, nous n'avons pas confirmé de lien particulier avec l'année du Mouton ; ce sont toutefois des idées de visite à Tokyo.
+
+- **Objets du zodiaque au Nouvel An (Shibuya, Tokyo)** : au Nouvel An 2026, année du Cheval, [Meiji Jingu](/fr/shrines/meiji-jingu/) proposait des clochettes en terre cuite et des ema du zodiaque. Pour 2027, consultez les informations officielles.
+- **Prières de yakuyoke et happo-yoke (Suginami, Tokyo)** : le site officiel d'[Asagaya Shinmeigu](/fr/shrines/asagaya-shinmeigu/) présente sa prière « hachinan-yoke », qui comprend notamment le yakuyoke et le happo-yoke.
+
+Pour savoir si 2027 est pour vous une année néfaste, consultez le [tableau des yakudoshi 2027](/fr/guides/yakudoshi-2027/) ; pour préparer la visite du Nouvel An, le [guide du hatsumode 2027](/fr/guides/hatsumode-2027/).
 
 ## Ce qu'il est utile de savoir pour visiter les sanctuaires en année du Mouton
 

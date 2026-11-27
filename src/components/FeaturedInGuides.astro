@@ -1,0 +1,40 @@
+---
+// 神社ページから、その神社を紹介している特集記事へのリンクを出す。
+// 対象の特集は下の FEATURES に足していく（entries にその神社がある特集だけが表示される）。
+import { getPublishedEntry } from '../lib/content';
+
+interface Props {
+  shrineId: string;
+}
+
+const FEATURES = ['hitsujidoshi-2027'];
+
+type Lang = 'ja' | 'en' | 'zh' | 'es' | 'fr' | 'ko';
+const supportedLangs: Lang[] = ['en', 'zh', 'es', 'fr', 'ko'];
+const lang: Lang = supportedLangs.includes(Astro.currentLocale as Lang) ? (Astro.currentLocale as Lang) : 'ja';
+const base = lang === 'ja' ? '' : `/${lang}`;
+const collection = { ja: 'guides', en: 'guidesEn', zh: 'guidesZh', es: 'guidesEs', fr: 'guidesFr', ko: 'guidesKo' } as const;
+const heading = {
+  ja: 'この神社を紹介している特集',
+  en: 'Featured guides with this shrine',
+  zh: '介紹本神社的特集文章',
+  es: 'Artículos que presentan este santuario',
+  fr: 'Articles qui présentent ce sanctuaire',
+  ko: '이 신사를 소개한 특집 기사',
+}[lang];
+
+const { shrineId } = Astro.props;
+const guides = await Promise.all(FEATURES.map((id) => getPublishedEntry(collection[lang], id)));
+const hits = guides.flatMap((g) => (g && g.data.entries.some((e) => e.shrineId === shrineId) ? [g] : []));
+---
+
+{hits.length > 0 && (
+  <aside class="mt-8 rounded-2xl border border-shrine-gold/30 bg-white p-5">
+    <h2 class="font-serif-jp text-lg font-bold text-shrine-ink">{heading}</h2>
+    <ul class="mt-2 space-y-1.5 text-sm">
+      {hits.map((g) => (
+        <li><a href={`${base}/guides/${g.id}/`} class="text-shrine-vermillion-dark underline hover:text-shrine-vermillion">{g.data.title}</a></li>
+      ))}
+    </ul>
+  </aside>
+)}

@@ -30,3 +30,7 @@ Muchos visitantes aprovechan la ocasión para estrenar cartera o amuleto en el m
 - **Combinarlo con otros santuarios**: santuarios como Enoshima Jinja o Imamiya Ebisu Jinja son fáciles de visitar junto con otras atracciones turísticas cercanas. Intente incorporarlos a su itinerario sin forzar el recorrido.
 
 Encontrará información detallada sobre el origen, el acceso y los goshuin de cada santuario en su propia página.
+
+## 2027 es el Año de la Oveja
+
+El signo del zodiaco de 2027 es la oveja. Los santuarios relacionados con la oveja y los lugares para visitar en Tokio y Kanto se presentan en la [guía del Año de la Oveja 2027](/es/guides/hitsujidoshi-2027/).

@@ -122,6 +122,10 @@ It differs by shrine. Kitano Tenmangu's 2026 information starts at 5,000 yen. Ch
 
 Some shrines hold prayers for people who cannot visit, for example because they live far away. Kitano Tenmangu asks visitors to contact it by phone.
 
+## 2027 Is the Year of the Sheep
+
+The zodiac sign for 2027 is the sheep. Shrines connected with sheep, and places to visit in Tokyo and the Kanto region, are introduced in the [2027 Year of the Sheep shrine guide](/en/guides/hitsujidoshi-2027/).
+
 ## About this information
 
 - The yakudoshi chart was calculated by this site from kazoedoshi. Each shrine's chart for Reiwa 9 (2027) is expected to be published around the end of the year. If a shrine's chart differs, follow the shrine you plan to visit.

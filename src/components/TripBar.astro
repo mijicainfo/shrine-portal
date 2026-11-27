@@ -7,6 +7,7 @@
 import { buildAccommodationBookingUrl, buildAccommodationRakutenUrl } from '../lib/accommodation';
 import { buildTripcomActivitiesUrl, type TripHotelTarget } from '../data/tripcom';
 import { buildKlookSearchUrl } from '../data/affiliate';
+import { buildKlookArea } from '../lib/klook';
 
 interface Props {
   mode: 'shrine' | 'guide';
@@ -36,7 +37,8 @@ const t = text[lang];
 
 const cleanCity = city.replace(/[（(].*?[）)]/g, '').trim();
 const accommodationInput = { city, prefecture, bookingCity, bookingPrefecture, trip };
-const klookQuery = lang !== 'ja' ? `${cleanCity}, ${prefecture.replace(/\s*Prefecture$/i, '')}` : `${prefecture}${cleanCity}`;
+const klook = mode === 'shrine' ? buildKlookArea(lang, prefecture, cleanCity) : undefined;
+const tripTours = mode === 'shrine' && trip ? buildTripcomActivitiesUrl(lang, trip) : undefined;
 
 const items =
   mode === 'shrine'
@@ -49,7 +51,8 @@ const items =
           external: true,
         },
         // 日本語以外は Trip.com の「遊び・体験」（市の一覧）。市の一覧がない市と日本語ページは Klook。
-        { icon: '🎫', label: t.tours, sub: t.near(cleanCity || city), href: (trip && buildTripcomActivitiesUrl(lang, trip)) || buildKlookSearchUrl(klookQuery, lang), external: true },
+        // Klook は検索する地域が市より広いことがあるため、下の小さい文字は実際に検索する地名にする
+        { icon: '🎫', label: t.tours, sub: tripTours ? t.near(cleanCity || city) : klook!.area, href: tripTours || buildKlookSearchUrl(klook!.query, lang), external: true },
       ]
     : [
         { icon: '🏨', label: t.hotelGuide, sub: '', href: `${base}/travel/`, external: false },

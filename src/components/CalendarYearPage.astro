@@ -38,7 +38,9 @@ const structuredData = buildFaqStructuredData(faq.map((f) => ({ question: f.q, a
 const guideCollection = { ja: 'guides', en: 'guidesEn', zh: 'guidesZh', es: 'guidesEs', fr: 'guidesFr', ko: 'guidesKo' } as const;
 const kinun = await getPublishedEntry(guideCollection[lang], 'kinun-top5');
 const enmusubi = await getPublishedEntry(guideCollection[lang], 'enmusubi-top10');
+const hitsuji = await getPublishedEntry(guideCollection[lang], 'hitsujidoshi-2027');
 const guideLinks = [
+  hitsuji && { href: `${base}/guides/hitsujidoshi-2027/`, label: hitsuji.data.title },
   kinun && { href: `${base}/guides/kinun-top5/`, label: kinun.data.title },
   enmusubi && { href: `${base}/guides/enmusubi-top10/`, label: enmusubi.data.title },
 ].filter(Boolean) as { href: string; label: string }[];

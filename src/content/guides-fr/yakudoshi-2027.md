@@ -122,6 +122,10 @@ Il varie selon les sanctuaires. Dans ses informations de Reiwa 8, le Kitano Tenm
 
 Certains sanctuaires célèbrent des prières pour les personnes qui ne peuvent pas venir, par exemple parce qu'elles habitent loin. Le Kitano Tenmangu invite à le contacter par téléphone.
 
+## 2027, année du Mouton
+
+Le signe du zodiaque de 2027 est le mouton. Les sanctuaires liés au mouton et des idées de visite à Tokyo et dans le Kanto sont présentés dans le [guide de l'année du Mouton 2027](/fr/guides/hitsujidoshi-2027/).
+
 ## À propos de ces informations
 
 - Le tableau des yakudoshi a été calculé par notre site à partir du kazoedoshi. Les tableaux de Reiwa 9 (2027) de chaque sanctuaire devraient être publiés vers la fin de l'année. Si le contenu d'un tableau diffère selon les sanctuaires, donnez la priorité aux informations du sanctuaire où vous comptez aller.

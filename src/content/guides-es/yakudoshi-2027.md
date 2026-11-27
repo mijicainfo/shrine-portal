@@ -122,6 +122,10 @@ Varía según el santuario. En la información de Reiwa 8 del Kitano Tenmangu, e
 
 Algunos santuarios realizan oraciones para quienes no pueden acudir, por ejemplo por vivir lejos. El Kitano Tenmangu indica que se le consulte por teléfono.
 
+## 2027 es el Año de la Oveja
+
+El signo del zodiaco de 2027 es la oveja. Los santuarios relacionados con la oveja y los lugares para visitar en Tokio y Kanto se presentan en la [guía del Año de la Oveja 2027](/es/guides/hitsujidoshi-2027/).
+
 ## Sobre esta información
 
 - La tabla de yakudoshi la ha calculado este sitio a partir del kazoedoshi. Se prevé que cada santuario publique su tabla de Reiwa 9 (2027) hacia finales de año. Si el contenido de la tabla difiere según el santuario, dé prioridad a la guía del santuario que va a visitar.

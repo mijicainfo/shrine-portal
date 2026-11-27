@@ -1,6 +1,6 @@
 ---
 title: "Guía de visitas para 2027, Año de la Oveja: santuarios de la oveja y festivales del Año de la Oveja"
-description: "2027 es el Año de la Oveja (Hitsuji-doshi). Presentamos 4 santuarios útiles para visitar en este año: los \"santuarios de la oveja\" de Gunma y Nagoya, el gran festival Shikinen Taisai del Togakushi Jinja y el Tanashi Jinja, que prevé ema de \"el sol y la oveja\"."
+description: "2027 es el Año de la Oveja (Hitsuji-doshi). Presentamos 4 santuarios útiles para visitar en este año: los \"santuarios de la oveja\" de Gunma y Nagoya, el gran festival Shikinen Taisai del Togakushi Jinja y el Tanashi Jinja, que prevé ema de \"el sol y la oveja\". Incluye opciones en Tokio y la región de Kanto."
 publishDate: 2026-10-31
 entries:
   - shrineId: "hitsuji-jinja-annaka"
@@ -28,6 +28,21 @@ El año 2027 es precisamente un Año de la Oveja, pero todavía no se han podido
 ## Un evento del mismo año en Nagano (templo)
 
 Aunque no es un santuario, en el templo Zenkoji de la ciudad de Nagano está previsto, según indica el sitio oficial de la Gokaicho, celebrar en Reiwa 9 (2027) la Maedachi Honzon Gokaicho (exhibición pública especial de la réplica de la imagen principal) del 4 de abril al 19 de junio. Como su periodo coincide con el del Shikinen Taisai del Togakushi Jinja (del 25 de abril al 25 de mayo), sirve de referencia al organizar un viaje por la zona de Nagano.
+
+## Dónde visitar en Tokio y Kanto en el Año de la Oveja
+
+Si organiza su visita en torno a Tokio, puede elegir según lo que busque.
+
+- **Un santuario con la «oveja» en su nombre (Annaka, Gunma)**: [Santuario Hitsuji (Annaka, Nakanoya)](/es/shrines/hitsuji-jinja-annaka/). No tiene sacerdote residente, por lo que el goshuin se recibe en el Santuario Sakisaki, que se encarga de él.
+- **Un santuario que prevé ema de «el sol y la oveja» para 2027 (Nishitokyo, Tokio)**: [Tanashi Jinja](/es/shrines/tanashi-jinja/). A octubre de 2026 no se había anunciado la fecha exacta de entrega.
+- **Un festival del Año de la Oveja (Chiba)**: el Shimosa Sanzan Nana-nen Matsuri presentado más arriba.
+
+En los dos santuarios siguientes no hemos confirmado un vínculo especial con el Año de la Oveja, pero son opciones si busca un lugar que visitar en Tokio.
+
+- **Objetos del zodiaco en Año Nuevo (Shibuya, Tokio)**: [Meiji Jingu](/es/shrines/meiji-jingu/) ofreció campanillas de barro y ema del zodiaco en el Año Nuevo de 2026, Año del Caballo. Para 2027, consulte la información oficial.
+- **Oraciones de yakuyoke y happo-yoke (Suginami, Tokio)**: la web oficial de [Asagaya Shinmeigu](/es/shrines/asagaya-shinmeigu/) presenta su oración «hachinan-yoke», que incluye yakuyoke y happo-yoke, entre otras protecciones.
+
+Para saber si 2027 es para usted un año de mala suerte, consulte la [tabla de yakudoshi 2027](/es/guides/yakudoshi-2027/); para preparar la visita de Año Nuevo, la [guía de hatsumode 2027](/es/guides/hatsumode-2027/).
 
 ## Qué conviene saber al visitar en el Año de la Oveja
 

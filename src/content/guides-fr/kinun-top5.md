@@ -30,3 +30,7 @@ Beaucoup de visiteurs profitent de l'achat d'un nouveau portefeuille ou d'une no
 - **Combinez avec d'autres visites** : d'autres sanctuaires, comme l'Enoshima Jinja ou l'Imamiya Ebisu Jinja, se prêtent facilement à une visite couplée avec les sites touristiques environnants. Pourquoi ne pas les intégrer sans difficulté à votre itinéraire ?
 
 Pour plus de détails sur l'histoire, l'accès et les informations sur les goshuin de chaque sanctuaire, consultez leur page respective.
+
+## 2027, année du Mouton
+
+Le signe du zodiaque de 2027 est le mouton. Les sanctuaires liés au mouton et des idées de visite à Tokyo et dans le Kanto sont présentés dans le [guide de l'année du Mouton 2027](/fr/guides/hitsujidoshi-2027/).

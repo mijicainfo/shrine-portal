@@ -12,6 +12,7 @@ import TwitterTimeline from '../../../components/TwitterTimeline.astro';
 import FavoriteButton from '../../../components/FavoriteButton.astro';
 import VisitedButton from '../../../components/VisitedButton.astro';
 import RelatedShrines from '../../../components/RelatedShrines.astro';
+import FeaturedInGuides from '../../../components/FeaturedInGuides.astro';
 import PrepSection from '../../../components/PrepSection.astro';
 import { Image, getImage } from 'astro:assets';
 import { render } from 'astro:content';
@@ -127,6 +128,7 @@ const faqStructuredData = data.faq.length > 0 ? buildFaqStructuredData(data.faq)
       </div>
 
 
+      <FeaturedInGuides shrineId={shrine.id} />
       <RelatedShrines shrines={relatedShrines} heading="Related Shrines" />
 
       <AdSlot placement="shrine-end" />

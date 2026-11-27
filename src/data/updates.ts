@@ -43,6 +43,19 @@ export interface UpdateEntry {
 // translated line per locale (and an optional `href`).
 export const updates: UpdateEntry[] = [
   {
+    date: '2026-11-27',
+    category: 'guide',
+    note: {
+      ja: '特集記事「2027年・未年の参拝ガイド」に、東京・関東の参拝先の案内を追加しました',
+      en: 'Added Tokyo and Kanto options to our "2027 Year of the Sheep Shrine Guide"',
+      zh: '在精選文章「2027年・未年參拜指南」新增了東京・關東的參拜地點介紹',
+      es: 'Añadimos opciones en Tokio y Kanto a la guía de visitas para 2027, Año de la Oveja',
+      fr: 'Nous avons ajouté des idées à Tokyo et dans le Kanto au guide de l’année du Mouton 2027',
+      ko: '특집 기사 "2027년 양의 해 참배 가이드"에 도쿄・간토의 참배지 안내를 추가했습니다',
+      href: '/guides/hitsujidoshi-2027/',
+    },
+  },
+  {
     date: '2026-11-24',
     category: 'guide',
     note: {
@@ -62,19 +75,6 @@ export const updates: UpdateEntry[] = [
   {
     date: '2026-11-22',
     shrineSlugs: ['kishu-toshogu', 'kanahebisui-jinja', 'konno-hachimangu', 'rikyu-hachimangu', 'sakitama-jinja'],
-  },
-  {
-    date: '2026-11-21',
-    category: 'guide',
-    note: {
-      ja: '特集記事「はじめての神社参拝ガイド｜鳥居・手水・拝礼の作法」を公開しました',
-      en: 'Published a new featured guide: "Shrine Visit Etiquette for Beginners: Torii, Temizu and Worship"',
-      zh: '發布了新的精選文章「第一次參拜神社指南｜鳥居・手水・拜禮的禮儀」',
-      es: 'Publicamos un nuevo artículo destacado: "Guía de la visita a un santuario por primera vez: etiqueta del torii, el temizu y la oración"',
-      fr: 'Publication d’un nouvel article à la une : « Guide de la première visite au sanctuaire : torii, temizu et prière »',
-      ko: '새로운 특집 기사 "처음 가는 신사 참배 가이드｜도리이・데미즈・배례 작법"를 공개했습니다',
-      href: '/guides/jinja-sanpai-guide/',
-    },
   },
   {
     date: '2026-11-20',

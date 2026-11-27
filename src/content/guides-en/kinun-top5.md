@@ -30,3 +30,7 @@ Many visitors time their trip to coincide with buying a new wallet or amulet. It
 - **Pair your visit with other sights**: Shrines like Enoshima Jinja and Imamiya Ebisu Jinja are easy to combine with a visit to the surrounding sightseeing area. Consider working one into your itinerary without too much extra effort.
 
 You can find full details on each shrine's history, access, and goshuin information on its individual page.
+
+## 2027 Is the Year of the Sheep
+
+The zodiac sign for 2027 is the sheep. Shrines connected with sheep, and places to visit in Tokyo and the Kanto region, are introduced in the [2027 Year of the Sheep shrine guide](/en/guides/hitsujidoshi-2027/).

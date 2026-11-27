@@ -1,6 +1,6 @@
 ---
 title: "2027 Year of the Sheep Shrine Guide: Sheep Shrines and Festivals Held in Sheep Years"
-description: "2027 is the Year of the Sheep. We introduce four shrines useful for sheep-year visits: the \"Sheep Shrines\" of Gunma and Nagoya, Togakushi Jinja's Shikinen Taisai held in Ox and Sheep years, and Tanashi Jinja, which plans a \"Sun and Sheep\" ema."
+description: "2027 is the Year of the Sheep. We introduce four shrines useful for sheep-year visits: the \"Sheep Shrines\" of Gunma and Nagoya, Togakushi Jinja's Shikinen Taisai held in Ox and Sheep years, and Tanashi Jinja, which plans a \"Sun and Sheep\" ema. Also includes options in Tokyo and the Kanto region."
 publishDate: 2026-10-31
 entries:
   - shrineId: "hitsuji-jinja-annaka"
@@ -28,6 +28,21 @@ In Chiba Prefecture, the "Shimosa Sanzan Nana-nen Matsuri" (Seven-Year Festival 
 ## Another Event in Nagano That Year (a Temple)
 
 It is not a shrine, but at Zenkoji Temple in Nagano City, the Maedachi Honzon Gokaicho (special public unveiling of the replica of the main image) is scheduled for April 4 to June 19 in Reiwa 9 (2027), according to the official Gokaicho website. Because the period overlaps with Togakushi Jinja's Shikinen Taisai (April 25 to May 25), it can be a useful reference when planning a trip to the Nagano area.
+
+## Choosing a Sheep-Year Visit in Tokyo and the Kanto Region
+
+If you are planning around Tokyo, you can choose by purpose.
+
+- **A shrine with "sheep" in its name (Annaka, Gunma)**: [Hitsuji Shrine (Annaka, Nakanoya)](/en/shrines/hitsuji-jinja-annaka/). It has no resident priest, so goshuin are received at Sakisaki Shrine, which looks after it.
+- **A shrine planning a "Sun and Sheep" ema for 2027 (Nishitokyo, Tokyo)**: [Tanashi Jinja](/en/shrines/tanashi-jinja/). The exact distribution date had not been announced as of October 2026.
+- **A Sheep-year festival (Chiba)**: the Shimosa Sanzan Nana-nen Matsuri introduced above.
+
+We have not confirmed any special Sheep-year connection for the next two shrines, but they are options when looking for a place to visit in Tokyo.
+
+- **Zodiac items at New Year (Shibuya, Tokyo)**: [Meiji Jingu](/en/shrines/meiji-jingu/) offered zodiac clay bells and ema at New Year 2026, the Year of the Horse. Please check the official information for 2027.
+- **Yakuyoke and happo-yoke prayers (Suginami, Tokyo)**: the official site of [Asagaya Shinmeigu](/en/shrines/asagaya-shinmeigu/) describes its "hachinan-yoke" prayer, which covers yakuyoke and happo-yoke among other protections.
+
+To check whether 2027 is an unlucky year for you, see the [2027 yakudoshi chart](/en/guides/yakudoshi-2027/). To prepare for New Year visits, see the [2027 hatsumode guide](/en/guides/hatsumode-2027/).
 
 ## Things to Know When Visiting in a Sheep Year
 
